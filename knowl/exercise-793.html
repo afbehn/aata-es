@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span>
+</h3>
+<div class="para">El polinomio  <span class="process-math">\(x^5-x-1\)</span> tiene todo el grupo simétrico  <span class="process-math">\(S_5\)</span> como su grupo de Galois.  Como <span class="process-math">\(S_5\)</span> es no soluble, sabemos que este polinomio es un ejemplo de un polinomio quíntico que no es soluble por radicales.  Desafortunadamente, pedirle a Sage que calcule este grupo de Galois toma demasiado tiempo.  Así este ejercicio simulará esa experiencia con un ejemplo ligeramente más pequeño.</div> <div class="para">Considere el polinomio <span class="process-math">\(p(x)=x^4+x+1\text{.}\)</span>
+</div> <ol class="lower-alpha">
+<li><div class="para">Construya el cuerpo de descomposición de <span class="process-math">\(p(x)\)</span> una raíz a la vez.  Cree una extensión, factorice allí, descarte factores lineales, use los restantes factores irreducibles para extender una vez más.  Repita hasta que <span class="process-math">\(p(x)\)</span> se factorice completamente.  Asegúrese de hacer una extensión final usando solo un factor lineal.  Esto es un poco tonto, y Sage parecerá ignorar el último generador (de manera que querrá determinar a qué equivale en términos de los generadores previos).  Las direcciones que siguen dependen de tomar este paso adicional.</div></li>
+<li><div class="para">Factorice el polinomio original sobre la extensión final en la torre.  ¿Qué es aburrido de esta factorización en relación a otros ejemplos que hemos hecho?</div></li>
+<li><div class="para">Construya la torre completa como un cuerpo de números absoluto sobre <span class="process-math">\({\mathbb Q}\text{.}\)</span>  Del grado de esta extensión y del grado del polinomio original, infiera el grupo de Galois de este polinomio.</div></li>
+<li><div class="para">Usando las funciones que permiten traducir entre la torre y el cuerpo de números absoluto (obtenido del método <code class="code-inline tex2jax_ignore">.structure()</code>), elija una de las raíces (cualquiera) y exprésela en términos del único generador del cuerpo absoluto.  Después invierta el procedimiento y exprese el generador del cuerpo absoluto en términos de las raíces en la torre.</div></li>
+<li><div class="para">Calcule el grupo de automorfismos del cuerpo absoluto (sin mostrar el grupo en lo que entregue).  Tome las cuatro raíces (incluyendo la tonta del último paso de la construcción de la torre) y aplique cada automorfismo de cuerpos a las cuatro raíces (formando la permutaciones garantizadas de las raíces).  Comente sobre lo que observa.</div></li>
+<li><div class="para">Hay un automorfismo no trivial que tiene una forma especialmente simple (es el segundo para mí) cuando es aplicado al generador del cuerpo absoluto.  ¿Qué le hace este automorfismo a las raíces de  <span class="process-math">\(p(x)\text{?}\)</span>
+</div></li>
+<li><div class="para">Considere la extensión de  <span class="process-math">\({\mathbb Q}\)</span> formada al adjuntar una sola de las raíces.  Este es un subcuerpo del cuerpo de descomposición del polinomio, de manera que es el cuerpo fijo por un subgrupo del grupo de Galois.  Dé una descripción simple del subgrupo correspondientesusando el lenguaje que típicamente solo aplicamos a grupos de permutaciones.</div></li>
+</ol></article><span class="incontext"><a href="galois-sage-exercises.html#exercise-793" class="internal">en contexto</a></span>
+</body>
+</html>

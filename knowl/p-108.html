@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h5 class="heading"><span class="type">Párrafo</span></h5>
+<div class="para logical">
+<div class="para">Sean <span class="process-math">\(A\)</span> y <span class="process-math">\(B\)</span> matrices de <span class="process-math">\(2 \times 2\)</span> con coeficientes reales. Podemos definir una relación de equivalencia en el conjunto de la matrices de <span class="process-math">\(2 \times 2\text{,}\)</span> diciendo que <span class="process-math">\(A \sim B\)</span> si existe una matriz invertible  <span class="process-math">\(P\)</span> tal que <span class="process-math">\(PAP^{-1} = B\text{.}\)</span>  Por ejemplo, si</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A =
+\begin{pmatrix}
+1 &amp; 2 \\
+-1 &amp; 1
+\end{pmatrix}
+\quad \text{y} \quad
+B =
+\begin{pmatrix}
+-18 &amp; 33 \\
+-11 &amp; 20
+\end{pmatrix},
+\end{equation*}
+</div>
+<div class="para">entonces <span class="process-math">\(A \sim B\)</span> pues <span class="process-math">\(PAP^{-1} = B\)</span> para</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P =
+\begin{pmatrix}
+2 &amp; 5 \\
+1 &amp; 3
+\end{pmatrix}.
+\end{equation*}
+</div>
+<div class="para">Sea <span class="process-math">\(I\)</span> la matriz identidad de <span class="process-math">\(2 \times 2\text{;}\)</span> es decir,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I =
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{pmatrix}.
+\end{equation*}
+</div>
+<div class="para">Entonces <span class="process-math">\(IAI^{-1} = IAI = A\text{;}\)</span> por lo tanto, la relación es refleja.  Para demostrar simetría, supongamos que <span class="process-math">\(A \sim B\text{.}\)</span>  Entonces existe una matriz invertible <span class="process-math">\(P\)</span> tal que <span class="process-math">\(PAP^{-1} = B\text{.}\)</span>  Así</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = P^{-1} B P = P^{-1} B (P^{-1})^{-1}.
+\end{equation*}
+</div>
+<div class="para">Finalmente, supongamos que <span class="process-math">\(A \sim B\)</span> y <span class="process-math">\(B \sim C\text{.}\)</span>  Entonces existen matrices <span class="process-math">\(P\)</span> y <span class="process-math">\(Q\)</span> tales que <span class="process-math">\(PAP^{-1} = B\)</span> y  <span class="process-math">\(QBQ^{-1} = C\text{.}\)</span>  Como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+C = QBQ^{-1} = QPAP^{-1} Q^{-1} = (QP)A(QP)^{-1},
+\end{equation*}
+</div>
+<div class="para">la relación es transitiva.  Dos matrices equivalente de esta forma se dicen <dfn class="terminology">similares</dfn>.</div>
+</div>
+<span class="incontext"><a href="section-sets-and-equivalence-relations.html#p-108" class="internal">en contexto</a></span>
+</body>
+</html>

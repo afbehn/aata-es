@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script><script>// Make *any* pre with class 'sage-display' a visible, uneditable Sage cell
+sagecell.makeSagecell({
+  "inputLocation": "pre.sage-display",
+  "editor": "codemirror-readonly",
+  "hide": [
+    "evalButton",
+    "editorToggle",
+    "language"
+  ]
+});
+</script>
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span>
+</h3>
+<div class="para">Puede crear elementos de este grupo coercionando enteros comunes a <code class="code-inline tex2jax_ignore">R</code>, por ejemplo con el comando <code class="code-inline tex2jax_ignore">a = R(7)</code>.   Esto le dirá a Sage que usted quiere ver a <span class="process-math">\(7\)</span> como un elemento de <span class="process-math">\(R\text{,}\)</span> sujeto a las operaciones correspondientes.  Determine los elementos del subgrupo cíclico de <span class="process-math">\(R\)</span> generado por <span class="process-math">\(7\)</span> en una lista como sigue:</div> <pre class="ptx-sagecell sage-display"><script type="text/x-sage">R = Integers(40)
+a = R(7)
+[a^i for i in srange(16)]
+</script></pre> <div class="para">¿Cuál es el orden de  <span class="process-math">\(7\)</span> en <span class="process-math">\(U(40)\text{?}\)</span>
+</div></article><span class="incontext"><a href="cyclic-sage-exercises.html#exercise-184" class="internal">en contexto</a></span>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h5 class="heading"><span class="type">Párrafo</span></h5>
+<div class="para logical">
+<div class="para">Procederemos por inducción en <span class="process-math">\(n\text{.}\)</span> Si <span class="process-math">\(n = 2\text{,}\)</span> entonces el determinante es <span class="process-math">\(\alpha_2 - \alpha_1\text{.}\)</span>  Supongamos demostrado el resultado para <span class="process-math">\(n  - 1\)</span> y consideremos el polinomio <span class="process-math">\(p(x)\)</span> definido por</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p(x) = \det
+\begin{pmatrix}
+1              &amp; 1              &amp; \cdots &amp; 1              &amp; 1 \\
+\alpha_1       &amp; \alpha_2       &amp; \cdots &amp; \alpha_{n-1}   &amp; x \\
+\alpha_1^2     &amp; \alpha_2^2     &amp; \cdots &amp; \alpha_{n-1}^2 &amp; x^2 \\
+\vdots         &amp; \vdots         &amp; \ddots &amp; \vdots         &amp; \vdots \\
+\alpha_1^{n-1} &amp; \alpha_2^{n-1} &amp; \cdots &amp; \alpha_{n-1}^{n-1} &amp; x^{n-1}
+\end{pmatrix}.
+\end{equation*}
+</div>
+<div class="para">Expandiendo este determinante por cofactores en la última columna, vemos que <span class="process-math">\(p(x)\)</span> es un polinomio de grado a lo más <span class="process-math">\(n-1\text{.}\)</span>  Además, las raíces de <span class="process-math">\(p(x)\)</span> son <span class="process-math">\(\alpha_1, \ldots, \alpha_{n-1}\text{,}\)</span> pues la sustitución de cualquiera de esos elementos en la última columna producirá una columna idéntica a otra columna de la matriz.  Recuerde que el determinante de una matriz es cero si esta tiene dos columnas idénticas. Por lo tanto,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p(x) = (x - \alpha_1)(x - \alpha_2) \cdots (x - \alpha_{n-1}) \beta,
+\end{equation*}
+</div>
+<div class="para">donde</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\beta = (-1)^{n + n} \det
+\begin{pmatrix}
+1              &amp; 1              &amp; \cdots &amp; 1 \\
+\alpha_1       &amp; \alpha_2       &amp; \cdots &amp; \alpha_{n-1} \\
+\alpha_1^2     &amp; \alpha_2^2     &amp; \cdots &amp; \alpha_{n-1}^2 \\
+\vdots         &amp; \vdots         &amp; \ddots &amp; \vdots \\
+\alpha_1^{n-2} &amp; \alpha_2^{n-2} &amp; \cdots &amp; \alpha_{n-1}^{n-2} 
+\end{pmatrix}.
+\end{equation*}
+</div>
+<div class="para">Por nuestra hipótesis de inducción,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\beta = (-1)^{n+n} \prod_{1 \leq j \lt i \leq n-1} (\alpha_i - \alpha_j).
+\end{equation*}
+</div>
+<div class="para">Si evaluamos en <span class="process-math">\(x = \alpha_n\text{,}\)</span> el resultados es una consecuencia inmediata.</div>
+</div>
+<span class="incontext"><a href="section-poly-codes.html#p-3485" class="internal">en contexto</a></span>
+</body>
+</html>

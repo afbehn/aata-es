@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span>
+</h3>
+<div class="para">Ejemplifique el Pequeño Teorema de Fermat (en cualquiera de sus variantes) usando el número compuesto <span class="process-math">\(391=17\cdot 23\)</span> como elección de base (ya sea <span class="process-math">\(a\)</span> o <span class="process-math">\(b\)</span>), y para <span class="process-math">\(p\)</span> recorriendo todos los valores primos entre  <span class="process-math">\(100\)</span> y <span class="process-math">\(1000\text{.}\)</span>
+</div> <div class="para">Construya paulatinamente una solución — haga una lista de potencias (empezando por unos pocos primos), luego haga una lista de potencias reducidas en la aritmética modular, luego una lista de comparaciones con el valor predicho, luego verifique todos estos valores lógicos resultantes de la comparación.  Esta es una estrategia útil en muchos problemas similares.  Finalmente podrá escribir una sola línea que realice la verificación completa y devuelva <code class="code-inline tex2jax_ignore">True</code>.  A continuación hay algunas sugerencias de funciones útiles.</div> <pre class="ptx-sagecell sagecell-sage" id="sage-235"><script type="text/x-sage">a = 20
+b = 6
+a.mod(b)
+</script></pre> <pre class="ptx-sagecell sagecell-sage" id="sage-236"><script type="text/x-sage">prime_range(50, 100)
+</script></pre> <pre class="ptx-sagecell sagecell-sage" id="sage-237"><script type="text/x-sage">all([True, True, True, True])
+</script></pre> <pre class="ptx-sagecell sagecell-sage" id="sage-238"><script type="text/x-sage">all([True, True, False, True])
+</script></pre></article><span class="incontext"><a href="cosets-sage-exercises.html#exercise-253" class="internal">en contexto</a></span>
+</body>
+</html>

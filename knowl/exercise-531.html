@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script><script>// Make *any* pre with class 'sage-display' a visible, uneditable Sage cell
+sagecell.makeSagecell({
+  "inputLocation": "pre.sage-display",
+  "editor": "codemirror-readonly",
+  "hide": [
+    "evalButton",
+    "editorToggle",
+    "language"
+  ]
+});
+</script>
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span>
+</h3>
+<div class="para">Este ejercicio ejemplifica el Lema <a href="" class="xref" data-knowl="./knowl/lemma-distinct-conjugates.html" title="Lema 15.1.6">15.1.6</a>.  Sea <span class="process-math">\(G\)</span> el grupo dihedral de orden <span class="process-math">\(36\text{,}\)</span> <span class="process-math">\(D_{18}\text{.}\)</span>  Sea <span class="process-math">\(H\)</span> uno de los <span class="process-math">\(3\)</span>-subgrupos de Sylow.  Sea <span class="process-math">\(K\)</span> el subgrupo de orden <span class="process-math">\(6\)</span> generado por las dos permutaciones <code class="code-inline tex2jax_ignore">a</code> y <code class="code-inline tex2jax_ignore">b</code> dadas abajo.  Primero, forme una lista de los distintos conjugados de <span class="process-math">\(K\)</span> por los elementos de <span class="process-math">\(H\text{,}\)</span> y cuente el número de subgrupos en esta lista.  Compare esto con el índice dado en el enunciado del lema, empleando un solo comando (largo) que haga uso de los métodos <code class="code-inline tex2jax_ignore">.order()</code>, <code class="code-inline tex2jax_ignore">.normalizer()</code> y <code class="code-inline tex2jax_ignore">.intersection()</code> aplicados a <span class="process-math">\(G\text{,}\)</span> <span class="process-math">\(H\)</span> y <span class="process-math">\(K\text{,}\)</span> <em class="emphasis">solamente</em>.</div> <pre class="ptx-sagecell sage-display"><script type="text/x-sage">G = DihedralGroup(18)
+a = G("(1,7,13)(2,8,14)(3,9,15)(4,10,16)(5,11,17)(6,12,18)")
+b = G("(1,5)(2,4)(6,18)(7,17)(8,16)(9,15)(10,14)(11,13)")
+</script></pre></article><span class="incontext"><a href="sylow-sage-exercises.html#exercise-531" class="internal">en contexto</a></span>
+</body>
+</html>

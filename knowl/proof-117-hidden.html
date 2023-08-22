@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Nuestra primera tarea es mostrar que <span class="process-math">\(R[x]\)</span> es un grupo abeliano con la operación de suma de polinomios.  El polinomio cero, <span class="process-math">\(f(x) = 0\text{,}\)</span> es el neutro aditivo.  Dado un polinomio <span class="process-math">\(p(x) = \sum_{i = 0}^{n} a_i x^i\text{,}\)</span> el inverso aditivo de <span class="process-math">\(p(x)\)</span> es <span class="process-math">\(-p(x) = \sum_{i = 0}^{n} (-a_i) x^i = -\sum_{i = 0}^{n} a_i x^i\text{.}\)</span>  La conmutatividad y la asociatividad son consecuencia inmediata de la definición de la suma de polinomios y del hecho que la adición en <span class="process-math">\(R\)</span> es tanto conmutativa como asociativa.</div> <div class="para logical">
+<div class="para">Para mostrar que la multiplicación de polinomios es asociativa, sean</div>
+<div class="displaymath process-math">
+\begin{align*}
+p(x) &amp; = \sum_{i = 0}^{m} a_i x^i,\\
+q(x) &amp; = \sum_{i = 0}^{n} b_i x^i,\\
+r(x) &amp; = \sum_{i = 0}^{p} c_i x^i.
+\end{align*}
+</div>
+<div class="para">Entonces</div>
+<div class="displaymath process-math">
+\begin{align*}
+[p(x) q(x)] r(x) &amp; = \left[ \left( \sum_{i=0}^{m} a_i x^i  \right) \left(  \sum_{i=0}^{n} b_i x^i \right) \right] \left( \sum_{i = 0}^{p} c_i x^i \right)\\
+&amp; = \left[ \sum_{i = 0}^{m+n} \left(  \sum_{j = 0}^{i} a_j b_{i - j} \right) x^i \right] \left( \sum_{i = 0}^{p} c_i x^i \right)\\
+&amp; = \sum_{i = 0}^{m + n + p} \left[ \sum_{j = 0}^{i} \left( \sum_{k=0}^j a_k b_{j-k} \right) c_{i-j} \right] x^i\\
+&amp; = \sum_{i = 0}^{m + n + p} \left(\sum_{j + k + l = i} a_j b_k c_l \right) x^i\\
+&amp; = \sum_{i = 0}^{m+n+p} \left[ \sum_{j = 0}^{i} a_j  \left( \sum_{k = 0}^{i - j} b_k c_{i - j - k} \right) \right]  x^i\\
+&amp; = \left( \sum_{i = 0}^{m} a_i x^i  \right) \left[ \sum_{i = 0}^{n + p}  \left( \sum_{j = 0}^{i} b_j c_{i - j} \right) x^i \right]\\
+&amp; = \left( \sum_{i = 0}^{m} a_i x^i \right) \left[ \left(  \sum_{i = 0}^{n} b_i x^i \right) \left( \sum_{i = 0}^{p} c_i x^i \right) \right]\\
+&amp; = p(x) [ q(x) r(x) ]
+\end{align*}
+</div>
+<div class="para">La conmutatividad y la distributividad se demuestran de forma similar.  Dejaremos estas demostraciones como ejercicios.</div>
+</div></article></body>
+</html>

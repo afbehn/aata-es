@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span>
+</h3>
+<div class="para">Verifique el Teorema de  Euler para todos los valores <span class="process-math">\(0\lt n\lt 100\)</span> y para <span class="process-math">\(1\leq a \leq n\text{.}\)</span>  Esto requerirá bucles <code class="code-inline tex2jax_ignore">for</code> anidados con un condicional.  Nuevamente, a continuación un pequeño ejemplo que puede ser útil para construir su línea única de código Sage.  Note el uso de <code class="code-inline tex2jax_ignore">srange()</code> en este ejemplo.</div> <pre class="ptx-sagecell sagecell-sage" id="sage-239"><script type="text/x-sage">[a/b for a in srange(9) for b in srange(1,a) if gcd(a,b)==1]
+</script></pre></article><span class="incontext"><a href="cosets-sage-exercises.html#exercise-255" class="internal">en contexto</a></span>
+</body>
+</html>

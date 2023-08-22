@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">(1) <span class="process-math">\(\Rightarrow\)</span> (2). Si <span class="process-math">\(f(t)\)</span> está en <span class="process-math">\(C\text{,}\)</span> entonces <span class="process-math">\(g(x) \mid f(x)\)</span> en <span class="process-math">\({\mathbb Z}_2[x]\text{.}\)</span> Luego, para <span class="process-math">\(i = 1, \ldots, 2r\text{,}\)</span> <span class="process-math">\(f( \omega^i) = 0\)</span> pues <span class="process-math">\(g( \omega^i ) = 0\text{.}\)</span> Recíprocamente, supongamos que <span class="process-math">\(f( \omega^i) = 0\)</span> for <span class="process-math">\(1 \leq i \leq d\text{.}\)</span> Entonces <span class="process-math">\(f(x)\)</span> es divisible por cada <span class="process-math">\(m_i(x)\text{,}\)</span> pues <span class="process-math">\(m_i(x)\)</span> es el polinomio minimal de <span class="process-math">\(\omega^i\text{.}\)</span> Por lo tanto, <span class="process-math">\(g(x) \mid f(x)\)</span> por la definición de <span class="process-math">\(g(x)\text{.}\)</span> Así, <span class="process-math">\(f(x)\)</span> es una palabra del código.</div> <div class="para logical">
+<div class="para">(2) <span class="process-math">\(\Rightarrow\)</span> (3). Sea <span class="process-math">\(f(t) = a_0 + a_1 t + \cdots + a_{n - 1}v t^{n - 1}\)</span> en <span class="process-math">\(R_n\text{.}\)</span> La correspondiente <span class="process-math">\(n\)</span>-tupla en <span class="process-math">\({\mathbb Z}_2^n\)</span> es <span class="process-math">\({\mathbf x} = (a_0 a_1 \cdots a_{n - 1})^{\rm t}\text{.}\)</span> Por (2),</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H {\mathbf x} =
+\begin{pmatrix}
+a_0 + a_1 \omega + \cdots + a_{n-1} \omega^{n-1} \\
+a_0 + a_1 \omega^2 + \cdots + a_{n-1} (\omega^2)^{n-1} \\
+\vdots \\
+a_0 + a_1 \omega^{2r} + \cdots + a_{n-1} (\omega^{2r})^{n-1}
+\end{pmatrix}
+=
+\begin{pmatrix}
+f(\omega) \\
+f(\omega^2) \\
+\vdots \\
+f(\omega^{2r})
+\end{pmatrix}
+= 0
+\end{equation*}
+</div>
+<div class="para">precisamente cuando <span class="process-math">\(f(t)\)</span> está en <span class="process-math">\(C\text{.}\)</span> Luego, <span class="process-math">\(H\)</span> es una matriz verificadora para <span class="process-math">\(C\text{.}\)</span>
+</div>
+</div> <div class="para">(3) <span class="process-math">\(\Rightarrow\)</span> (1). Por (3), un polinomio <span class="process-math">\(f(t) = a_0 + a_1 t + \cdots + a_{n - 1} t^{n - 1}\)</span> está en <span class="process-math">\(C\)</span> exactamente cuando <span class="process-math">\(f(\omega^i) = 0\)</span> for <span class="process-math">\(i = 1, \ldots, 2r\text{.}\)</span> El menor tal polinomio es <span class="process-math">\(g(t) = \lcm[ m_1(t),\ldots, m_{2r}(t)]\text{.}\)</span>  Por lo tanto, <span class="process-math">\(C = \langle g(t) \rangle\text{.}\)</span>
+</div></article></body>
+</html>

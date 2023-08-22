@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="es-ES" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Códigos para Detectar y para Corregir Errores</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Algebra Abstracta">
+<meta property="book:author" content="Thomas W. Judson">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=012975021551273728005:y0h32vuqauw"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/images/cover_aata_2017.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta:</span> <span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>[search-results-heading]: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>[no-search-results].</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Índice</span></button><a class="index-button button" href="index-1.html" title="Índice alfabético"><span class="name">Índice alfabético</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="algcodes.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="algcodes.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="section-linear-codes.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="index.html" class="internal"><span class="title">Páginas preliminares</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colofón</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Agradecimentos</span></a></div></li>
+<li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Prefacio</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminares</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
+<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
+<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Listas</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Listas de Enteros</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.5.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="integers.html" class="internal"><span class="codenumber">2</span> <span class="title">Los Enteros</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Principio de Inducción</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-division-algorithm.html" class="internal"><span class="codenumber">2.2</span> <span class="title">El Algoritmo de División</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-euclidean-algorithm" class="internal"><span class="codenumber">2.2.1</span> <span class="title">El Algoritmo de Euclides</span></a></div></li>
+<li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-prime-numbers" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Números Primos</span></a></div></li>
+<li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-historical-note" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-integers.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Algoritmo de División</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Primos y Factorización</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="groups.html" class="internal"><span class="codenumber">3</span> <span class="title">Grupos</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-mod-n-sym.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Clases de Equivalencia de Enteros y Simetrías</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-mod-n-sym.html#groups-subsection-integers-mod-n" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Los Enteros módulo <span class="process-math">\(n\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="section-mod-n-sym.html#groups-subsection-symmetries" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Simetrías</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-groups-define.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Definiciones y Ejemplos</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-groups-define.html#groups-subsection-basic-properties" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Propiedades básicas de los Grupos</span></a></div></li>
+<li><div class="toc-item"><a href="section-groups-define.html#groups-subsection-historical-note" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Nota Histórica</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-subgroups.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Subgrupos</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-subgroups.html#groups-subsection-subgroup-examples" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Definiciones y Ejemplos</span></a></div></li>
+<li><div class="toc-item"><a href="section-subgroups.html#groups-subsection-subgroup-theorems" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Algunos Teoremas para Subgrupos</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-groups.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
+<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Enteros mód n</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Cuaterniones</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Subgrupos</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="cyclic.html" class="internal"><span class="codenumber">4</span> <span class="title">Grupos Cíclicos</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-cyclic-subgroups.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Subgrupos Cíclicos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-cyclic-subgroups.html#cyclic-subsection-cyclic-subgroups" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Subgrupos de Grupos Cíclicos</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-mult-group-c.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Grupo multiplicativo de los números complejos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-mult-group-c.html#cyclic-subsection-circle-group" class="internal"><span class="codenumber">4.2.1</span> <span class="title">El grupo de la circunferencia y las raíces de la unidad</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-method-of-repeated-squares.html" class="internal"><span class="codenumber">4.3</span> <span class="title">El método de los cuadrados repetidos</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-cyclic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios de programación</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.7.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="permute.html" class="internal"><span class="codenumber">5</span> <span class="title">Grupos de Permutaciones</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-permutation-definitions.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definiciones y Notación</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-permutation-definitions.html#permute-subsection-cycle-notation" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Notación cíclica</span></a></div></li>
+<li><div class="toc-item"><a href="section-permutation-definitions.html#permute-subsection-transpositions" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Transposiciones</span></a></div></li>
+<li><div class="toc-item"><a href="section-permutation-definitions.html#permute-subsection-alternating-groups" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Los Grupos Alternantes</span></a></div></li>
+<li><div class="toc-item"><a href="section-permutation-definitions.html#permute-historical-note" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Note Histórica</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-dihedral-groups.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Grupos Dihedrales</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-dihedral-groups.html#permute-subsection-motion-group-cube" class="internal"><span class="codenumber">5.2.1</span> <span class="title">El grupo de movimientos de un Cubo</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="exercises-permute.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li>
+<div class="toc-item"><a href="permute-sage.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="permute-sage.html#subsection-40" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Grupos de Permutaciones y sus Elementos</span></a></div></li>
+<li><div class="toc-item"><a href="permute-sage.html#subsection-41" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Propiedades de Permutaciones (Elementos)</span></a></div></li>
+<li><div class="toc-item"><a href="permute-sage.html#subsection-motion-group-cube" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Grupo de Movimientos de un Cubo</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="permute-sage-exercises.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="cosets.html" class="internal"><span class="codenumber">6</span> <span class="title">Clases Laterales y Teorema de Lagrange</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-cosets.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Clases Laterales</span></a></div></li>
+<li><div class="toc-item"><a href="section-lagranges-theorem.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Teorema de Lagrange</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-fermat-euler.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Teoremas de Fermat y Euler</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-fermat-euler.html#cosets-subsection-historical-note" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="exercises-cosets.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li>
+<div class="toc-item"><a href="cosets-sage.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="cosets-sage.html#subsection-44" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Clases Laterales</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-sage.html#subsection-45" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Subgrupos</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-sage.html#subsection-46" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Subgrupos de Grupos Cíclicos</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-sage.html#subsection-47" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Función Phi de Euler</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="cosets-sage-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="crypt.html" class="internal"><span class="codenumber">7</span> <span class="title">Introducción a la Criptografía</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-private-key-crypt.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Criptografía de Clave Privada</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-public-key-crypt.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Criptografía de Clave Pública</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-public-key-crypt.html#crypt-subsection-rsa" class="internal"><span class="codenumber">7.2.1</span> <span class="title">El Criptosistema <abbr class="acronym">RSA</abbr></span></a></div></li>
+<li><div class="toc-item"><a href="section-public-key-crypt.html#crypt-subsection-message-verification" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Verificación del Mensaje</span></a></div></li>
+<li><div class="toc-item"><a href="section-public-key-crypt.html#crypt-subsection-historical-note" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-crypt.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-exercises-additional.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Ejercicios Adicionales: Primalidad y Factorización</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-references.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="crypt-sage.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="crypt-sage.html#subsection-51" class="internal"><span class="codenumber">7.6.1</span> <span class="title">Construyendo claves</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-sage.html#subsection-52" class="internal"><span class="codenumber">7.6.2</span> <span class="title">Firmando y Encriptando un Mensaje</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-sage.html#subsection-53" class="internal"><span class="codenumber">7.6.3</span> <span class="title">Decriptación y Verificación del Mensaje</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="crypt-sage-exercises.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="algcodes.html" class="internal"><span class="codenumber">8</span> <span class="title">Teoría Algebraica de Códigos</span></a></div>
+<ul class="structural">
+<li class="active">
+<div class="toc-item"><a href="section-error-detecting-correcting-codes.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Códigos para Detectar y para Corregir Errores</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-error-detecting-correcting-codes.html#algcodes-subsection-max-likelihood" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Decodificación de Probabilidad Máxima</span></a></div></li>
+<li><div class="toc-item"><a href="section-error-detecting-correcting-codes.html#algcodes-subsection-block-codes" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Códigos de Bloque</span></a></div></li>
+<li><div class="toc-item"><a href="section-error-detecting-correcting-codes.html#algcodes-subsection-historical-note" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Nota Histórica</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-linear-codes.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Códigos Lineales</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-linear-codes.html#algcodes-subsection-linear-codes" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Códigos Lineales</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-parity-check.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Matrices Verificadora y Generadora</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-efficient-decoding.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Decodificación Eficiente</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-efficient-decoding.html#algcodes-subsection-coset-decoding" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Decodificación por Clases Laterales</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.8.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="isomorph.html" class="internal"><span class="codenumber">9</span> <span class="title">Isomorfismos</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-isomorph-definitions.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Definición y Ejemplos</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-isomorph-definitions.html#isomorph-subsection-cayleys-theorem" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Teorema de Cayley</span></a></div></li>
+<li><div class="toc-item"><a href="section-isomorph-definitions.html#isomorph-subsection-historical-note" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Nota histórica</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-direct-products.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Productos Directos</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-direct-products.html#isomorph-subsection-external-products" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Producto Directo Externo</span></a></div></li>
+<li><div class="toc-item"><a href="section-direct-products.html#isomorph-subsection-internal-products" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Producto Directo Interno</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-isomorph.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li>
+<div class="toc-item"><a href="isomorph-sage.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="isomorph-sage.html#subsection-66" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Verificación de Isomorfía</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-sage.html#subsection-67" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Clasificando Grupos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-sage.html#subsection-68" class="internal"><span class="codenumber">9.4.3</span> <span class="title">Productos Directos Internos</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="isomorph-sage-exercises.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="normal.html" class="internal"><span class="codenumber">10</span> <span class="title">Subgrupos Normales y Grupos Cociente</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-factor-groups.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Grupos Cociente y Subgrupos Normales</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-factor-groups.html#normal-subsection-normal-subgroups" class="internal"><span class="codenumber">10.1.1</span> <span class="title">Subgrupos Normales</span></a></div></li>
+<li><div class="toc-item"><a href="section-factor-groups.html#normal-subsection-factor-groups" class="internal"><span class="codenumber">10.1.2</span> <span class="title">Grupos cociente</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-simplicity-of-an.html" class="internal"><span class="codenumber">10.2</span> <span class="title">La Simplicidad del Grupo Alternante</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-simplicity-of-an.html#normal-subsection-historical-note" class="internal"><span class="codenumber">10.2.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="exercises-normal.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li>
+<div class="toc-item"><a href="normal-sage.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="normal-sage.html#subsection-72" class="internal"><span class="codenumber">10.4.1</span> <span class="title">Multiplicando Clases Laterales</span></a></div></li>
+<li><div class="toc-item"><a href="normal-sage.html#subsection-73" class="internal"><span class="codenumber">10.4.2</span> <span class="title">Métodos de Sage para Subgrupos Normales</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="normal-sage-exercises.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="homomorph.html" class="internal"><span class="codenumber">11</span> <span class="title">Homomorfismos</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-group-homomorphisms.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Homomofismos de Grupos</span></a></div></li>
+<li><div class="toc-item"><a href="section-group-isomorphism-theorems.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Los Teoremas de Isomorfía</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-homomorph.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="homomorph-exercises-automorphisms.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Ejercicios adicionales: Automorfismos</span></a></div></li>
+<li>
+<div class="toc-item"><a href="homomorph-sage.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Sage</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="homomorph-sage.html#subsection-74" class="internal"><span class="codenumber">11.5.1</span> <span class="title">Homomorfismos</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="homomorph-sage-exercises.html" class="internal"><span class="codenumber">11.6</span> <span class="title">Ejercicios Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="matrix.html" class="internal"><span class="codenumber">12</span> <span class="title">Grupos de Matrices y Simetría</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-matrix-groups.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Grupos de Matrices</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-matrix-groups.html#matrix-subsection-linear-algebra" class="internal"><span class="codenumber">12.1.1</span> <span class="title">Algunos Resultados de Álgebra Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="section-matrix-groups.html#matrix-subsection-general-linear-group" class="internal"><span class="codenumber">12.1.2</span> <span class="title">El Grupo Lineal General y el Grupo Lineal Especial</span></a></div></li>
+<li><div class="toc-item"><a href="section-matrix-groups.html#matrix-subsection-orthogonal-group" class="internal"><span class="codenumber">12.1.3</span> <span class="title">El Grupo Ortogonal <span class="process-math">\(O(n)\)</span></span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-symmetry.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Simetría</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-symmetry.html#matrix-subsection-wallpaper" class="internal"><span class="codenumber">12.2.1</span> <span class="title">Los Grupos Cristalográficos del Plano</span></a></div></li>
+<li><div class="toc-item"><a href="section-symmetry.html#matrix-subsection-historical-note" class="internal"><span class="codenumber">12.2.2</span> <span class="title">Nota Histórica</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-matrix.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-references.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-sage.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Sage</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-sage-exercises.html" class="internal"><span class="codenumber">12.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="struct.html" class="internal"><span class="codenumber">13</span> <span class="title">La Estructura de Grupos</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finite-abelian-groups.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Grupos Abelianos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="section-solvable-groups.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Grupos Solubles</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-struct.html" class="internal"><span class="codenumber">13.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="struct-exercises-programming.html" class="internal"><span class="codenumber">13.4</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="struct-references.html" class="internal"><span class="codenumber">13.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="struct-sage.html" class="internal"><span class="codenumber">13.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="struct-sage.html#subsection-80" class="internal"><span class="codenumber">13.6.1</span> <span class="title">Clasificación de Grupos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="struct-sage.html#subsection-81" class="internal"><span class="codenumber">13.6.2</span> <span class="title">Grupos de Orden Pequeño como grupos de Permutaciones</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="struct-sage-exercises.html" class="internal"><span class="codenumber">13.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="actions.html" class="internal"><span class="codenumber">14</span> <span class="title">Acciones de Grupo</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-groups-acting-on-sets.html" class="internal"><span class="codenumber">14.1</span> <span class="title">Grupos Actuando en Conjuntos</span></a></div></li>
+<li><div class="toc-item"><a href="section-class-equation.html" class="internal"><span class="codenumber">14.2</span> <span class="title">La Ecuación de Clase</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-burnsides-counting-theorem.html" class="internal"><span class="codenumber">14.3</span> <span class="title">Teorema de Conteo de Burnside</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-geometric-example" class="internal"><span class="codenumber">14.3.1</span> <span class="title">Un Ejemplo Geométrico</span></a></div></li>
+<li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-switching-functions" class="internal"><span class="codenumber">14.3.2</span> <span class="title">Funciones de Conmutación</span></a></div></li>
+<li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-historical-note" class="internal"><span class="codenumber">14.3.3</span> <span class="title">Nota Histórica</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-actions.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicio de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.7.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.7.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sylow.html" class="internal"><span class="codenumber">15</span> <span class="title">Los Teoremas de Sylow</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-sylow-theorems.html" class="internal"><span class="codenumber">15.1</span> <span class="title">Los Teoremas de Sylow</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-sylow-theorems.html#sylow-subsection-historical-note" class="internal"><span class="codenumber">15.1.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-sylow-applications.html" class="internal"><span class="codenumber">15.2</span> <span class="title">Ejemplos y Aplicaciones</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-sylow-applications.html#sylow-subsection-finite-simple-groups" class="internal"><span class="codenumber">15.2.1</span> <span class="title">Grupos Finitos Simples</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="exercises-sylow.html" class="internal"><span class="codenumber">15.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-exercises-project.html" class="internal"><span class="codenumber">15.4</span> <span class="title">Un Proyecto</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-references.html" class="internal"><span class="codenumber">15.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sylow-sage.html" class="internal"><span class="codenumber">15.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sylow-sage.html#subsection-89" class="internal"><span class="codenumber">15.6.1</span> <span class="title">Subgrupos de Sylow</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-sage.html#subsection-90" class="internal"><span class="codenumber">15.6.2</span> <span class="title">Normalizadores</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-sage.html#subsection-91" class="internal"><span class="codenumber">15.6.3</span> <span class="title">Grupos Finitos Simples</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-sage.html#subsection-92" class="internal"><span class="codenumber">15.6.4</span> <span class="title">Consola e Interfaz <abbr class="acronym">GAP</abbr></span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sylow-sage-exercises.html" class="internal"><span class="codenumber">15.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="rings.html" class="internal"><span class="codenumber">16</span> <span class="title">Anillos</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-rings-definitions.html" class="internal"><span class="codenumber">16.1</span> <span class="title">Anillos</span></a></div></li>
+<li><div class="toc-item"><a href="section-domains-and-fields.html" class="internal"><span class="codenumber">16.2</span> <span class="title">Dominios Integrales y Cuerpos</span></a></div></li>
+<li><div class="toc-item"><a href="section-ring-homomorphisms.html" class="internal"><span class="codenumber">16.3</span> <span class="title">Homomorfismos de Anillos e Ideales</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-maximal-prime-ideals.html" class="internal"><span class="codenumber">16.4</span> <span class="title">Ideales Maximales e Ideales Primos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-maximal-prime-ideals.html#rings-subsection-historical-note" class="internal"><span class="codenumber">16.4.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-software-application.html" class="internal"><span class="codenumber">16.5</span> <span class="title">Una Aplicación al Diseño de Software</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-rings.html" class="internal"><span class="codenumber">16.6</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="rings-exercises-programming.html" class="internal"><span class="codenumber">16.7</span> <span class="title">Ejercicio de programación</span></a></div></li>
+<li><div class="toc-item"><a href="rings-references.html" class="internal"><span class="codenumber">16.8</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="rings-sage.html" class="internal"><span class="codenumber">16.9</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="rings-sage.html#subsection-94" class="internal"><span class="codenumber">16.9.1</span> <span class="title">Creando Anillos</span></a></div></li>
+<li><div class="toc-item"><a href="rings-sage.html#subsection-95" class="internal"><span class="codenumber">16.9.2</span> <span class="title">Propiedades de los Anillos</span></a></div></li>
+<li><div class="toc-item"><a href="rings-sage.html#subsection-96" class="internal"><span class="codenumber">16.9.3</span> <span class="title">Estructuras Cociente</span></a></div></li>
+<li><div class="toc-item"><a href="rings-sage.html#subsection-97" class="internal"><span class="codenumber">16.9.4</span> <span class="title">Homomorfismo de Anillos</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="rings-sage-exercises.html" class="internal"><span class="codenumber">16.10</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="poly.html" class="internal"><span class="codenumber">17</span> <span class="title">Polinomios</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-poly-rings.html" class="internal"><span class="codenumber">17.1</span> <span class="title">Anillos de Polinomios</span></a></div></li>
+<li><div class="toc-item"><a href="section-poly-division-algorithm.html" class="internal"><span class="codenumber">17.2</span> <span class="title">El Algoritmo de División</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-irreducible-poly.html" class="internal"><span class="codenumber">17.3</span> <span class="title">Polinomios Irreducibles</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-irreducible-poly.html#poly-subsection-ideals" class="internal"><span class="codenumber">17.3.1</span> <span class="title">Ideales en <span class="process-math">\(F\lbrack x \rbrack\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="section-irreducible-poly.html#poly-subsection-historical-note" class="internal"><span class="codenumber">17.3.2</span> <span class="title">Nota Histórica</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-poly.html" class="internal"><span class="codenumber">17.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="poly-exercises-cubics-quartics.html" class="internal"><span class="codenumber">17.5</span> <span class="title">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</span></a></div></li>
+<li>
+<div class="toc-item"><a href="poly-sage.html" class="internal"><span class="codenumber">17.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="poly-sage.html#subsection-100" class="internal"><span class="codenumber">17.6.1</span> <span class="title">Anillos de Polinomios y sus Elementos</span></a></div></li>
+<li><div class="toc-item"><a href="poly-sage.html#subsection-101" class="internal"><span class="codenumber">17.6.2</span> <span class="title">Polinomios Irreducibles</span></a></div></li>
+<li><div class="toc-item"><a href="poly-sage.html#subsection-102" class="internal"><span class="codenumber">17.6.3</span> <span class="title">Polinomios sobre Cuerpos</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="poly-sage-exercises.html" class="internal"><span class="codenumber">17.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="domains.html" class="internal"><span class="codenumber">18</span> <span class="title">Dominios Integrales</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-field-of-fractions.html" class="internal"><span class="codenumber">18.1</span> <span class="title">Cuerpos de Fracciones</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-factorization-domains.html" class="internal"><span class="codenumber">18.2</span> <span class="title">Factorización en un Dominio Integral</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-factorization-domains.html#domains-subsection-pids" class="internal"><span class="codenumber">18.2.1</span> <span class="title">Dominios de Ideales Principales</span></a></div></li>
+<li><div class="toc-item"><a href="section-factorization-domains.html#domains-subsection-euclidean-domains" class="internal"><span class="codenumber">18.2.2</span> <span class="title">Dominios Euclideanos</span></a></div></li>
+<li><div class="toc-item"><a href="section-factorization-domains.html#domains-subsection-factorization" class="internal"><span class="codenumber">18.2.3</span> <span class="title">Factorización en <span class="process-math">\(D\lbrack x \rbrack\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="section-factorization-domains.html#domains-subsection-historical-note" class="internal"><span class="codenumber">18.2.4</span> <span class="title">Nota Histórica</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-domains.html" class="internal"><span class="codenumber">18.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="domains-references.html" class="internal"><span class="codenumber">18.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="domains-sage.html" class="internal"><span class="codenumber">18.5</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="domains-sage.html#subsection-107" class="internal"><span class="codenumber">18.5.1</span> <span class="title">Cuerpo de Fracciones</span></a></div></li>
+<li><div class="toc-item"><a href="domains-sage.html#subsection-108" class="internal"><span class="codenumber">18.5.2</span> <span class="title">Subcuerpos Primos</span></a></div></li>
+<li><div class="toc-item"><a href="domains-sage.html#subsection-109" class="internal"><span class="codenumber">18.5.3</span> <span class="title">Dominios Integrales</span></a></div></li>
+<li><div class="toc-item"><a href="domains-sage.html#subsection-110" class="internal"><span class="codenumber">18.5.4</span> <span class="title">Ideales Principales</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="domains-sage-exercises.html" class="internal"><span class="codenumber">18.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="boolean.html" class="internal"><span class="codenumber">19</span> <span class="title">Reticulados y Álgebras Booleanas</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-boolean-lattices.html" class="internal"><span class="codenumber">19.1</span> <span class="title">Reticulados</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-boolean-lattices.html#boolean-subsection-poset" class="internal"><span class="codenumber">19.1.1</span> <span class="title">Conjuntos Parcialmente Ordenados</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-boolean-algebras.html" class="internal"><span class="codenumber">19.2</span> <span class="title">Álgebras Booleanas</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-boolean-algebras.html#boolean-subsection-finite-algebras" class="internal"><span class="codenumber">19.2.1</span> <span class="title">Álgebras Booleanas Finitas</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-algebra-of-circuits.html" class="internal"><span class="codenumber">19.3</span> <span class="title">El Álgebra de los Circuitos Eléctricos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-algebra-of-circuits.html#boolean-subsection-historical-note" class="internal"><span class="codenumber">19.3.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="exercises-boolean.html" class="internal"><span class="codenumber">19.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-exercises-programming.html" class="internal"><span class="codenumber">19.5</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-references.html" class="internal"><span class="codenumber">19.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="boolean-sage.html" class="internal"><span class="codenumber">19.7</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="boolean-sage.html#subsection-114" class="internal"><span class="codenumber">19.7.1</span> <span class="title">Creando Conjuntos Parcialmente Ordenados</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-sage.html#subsection-115" class="internal"><span class="codenumber">19.7.2</span> <span class="title">Propiedades de un conjunto parcialmente ordenado</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-sage.html#subsection-116" class="internal"><span class="codenumber">19.7.3</span> <span class="title">Reticulados</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="boolean-sage-exercises.html" class="internal"><span class="codenumber">19.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="vect.html" class="internal"><span class="codenumber">20</span> <span class="title">Espacios Vectoriales</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-vect-definitions-and-examples.html" class="internal"><span class="codenumber">20.1</span> <span class="title">Definiciones y Ejemplos</span></a></div></li>
+<li><div class="toc-item"><a href="section-subspaces.html" class="internal"><span class="codenumber">20.2</span> <span class="title">Subespacios</span></a></div></li>
+<li><div class="toc-item"><a href="section-linear-independence.html" class="internal"><span class="codenumber">20.3</span> <span class="title">Independencia Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-vect.html" class="internal"><span class="codenumber">20.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="vect-references.html" class="internal"><span class="codenumber">20.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="vect-sage.html" class="internal"><span class="codenumber">20.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="vect-sage.html#subsection-117" class="internal"><span class="codenumber">20.6.1</span> <span class="title">Espacios Vectoriales</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage.html#subsection-118" class="internal"><span class="codenumber">20.6.2</span> <span class="title">Subespacios</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage.html#subsection-119" class="internal"><span class="codenumber">20.6.3</span> <span class="title">Independencia Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage.html#subsection-120" class="internal"><span class="codenumber">20.6.4</span> <span class="title">Espacios Vectoriales Abstractos</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage.html#subsection-121" class="internal"><span class="codenumber">20.6.5</span> <span class="title">Álgebra Lineal</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="vect-sage-exercises.html" class="internal"><span class="codenumber">20.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="fields.html" class="internal"><span class="codenumber">21</span> <span class="title">Cuerpos</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-extension-fields.html" class="internal"><span class="codenumber">21.1</span> <span class="title">Extensiones de cuerpos</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-extension-fields.html#fields-subsection-algebraic-elements" class="internal"><span class="codenumber">21.1.1</span> <span class="title">Elementos Algebraicos</span></a></div></li>
+<li><div class="toc-item"><a href="section-extension-fields.html#fields-subsection-algebraic-closure" class="internal"><span class="codenumber">21.1.2</span> <span class="title">Clausura Algebraica</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-splitting-fields.html" class="internal"><span class="codenumber">21.2</span> <span class="title">Cuerpos de descomposición</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-constructions.html" class="internal"><span class="codenumber">21.3</span> <span class="title">Construcciones Geométricas</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-constructions.html#fields-subsection-constructible-numbers" class="internal"><span class="codenumber">21.3.1</span> <span class="title">Números Constructibles</span></a></div></li>
+<li><div class="toc-item"><a href="section-constructions.html#fields-subsection-doubling-the-cube" class="internal"><span class="codenumber">21.3.2</span> <span class="title">Duplicando el cubo y cuadrando el círculo</span></a></div></li>
+<li><div class="toc-item"><a href="section-constructions.html#fields-subsection-trisect-angle" class="internal"><span class="codenumber">21.3.3</span> <span class="title">Trisecando un Ángulo</span></a></div></li>
+<li><div class="toc-item"><a href="section-constructions.html#fields-subsection-historical-note" class="internal"><span class="codenumber">21.3.4</span> <span class="title">Nota Histórica</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-fields.html" class="internal"><span class="codenumber">21.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="fields-references.html" class="internal"><span class="codenumber">21.5</span> <span class="title">Referencias y Lecturas sugeridas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="fields-sage.html" class="internal"><span class="codenumber">21.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="fields-sage.html#subsection-128" class="internal"><span class="codenumber">21.6.1</span> <span class="title">Cuerpos de números</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage.html#subsection-129" class="internal"><span class="codenumber">21.6.2</span> <span class="title">Cuerpos de Números Absolutos y Relativos</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage.html#subsection-130" class="internal"><span class="codenumber">21.6.3</span> <span class="title">Cuerpos de descomposición</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage.html#subsection-131" class="internal"><span class="codenumber">21.6.4</span> <span class="title">Números Algebraicos</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage.html#subsection-132" class="internal"><span class="codenumber">21.6.5</span> <span class="title">Construcciones geométricas</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="fields-sage-exercises.html" class="internal"><span class="codenumber">21.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="finite.html" class="internal"><span class="codenumber">22</span> <span class="title">Cuerpos Finitos</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finite-field.html" class="internal"><span class="codenumber">22.1</span> <span class="title">Estructura de Cuerpos Finitos</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-poly-codes.html" class="internal"><span class="codenumber">22.2</span> <span class="title">Códigos Polinomiales</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-poly-codes.html#finite-subsection-poly-codes" class="internal"><span class="codenumber">22.2.1</span> <span class="title">Códigos Polinomiales</span></a></div></li>
+<li><div class="toc-item"><a href="section-poly-codes.html#finite-subsection-bch-codes" class="internal"><span class="codenumber">22.2.2</span> <span class="title">Códigos <abbr class="acronym">BCH</abbr></span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-finite.html" class="internal"><span class="codenumber">22.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="finite-exercises-bch-codes.html" class="internal"><span class="codenumber">22.4</span> <span class="title">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></span></a></div></li>
+<li><div class="toc-item"><a href="finite-references.html" class="internal"><span class="codenumber">22.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="finite-sage.html" class="internal"><span class="codenumber">22.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="finite-sage.html#subsection-135" class="internal"><span class="codenumber">22.6.1</span> <span class="title">Creando Cuerpos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="finite-sage.html#subsection-136" class="internal"><span class="codenumber">22.6.2</span> <span class="title">Logaritmos en Cuerpos Finitos</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="finite-sage-exercises.html" class="internal"><span class="codenumber">22.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="galois.html" class="internal"><span class="codenumber">23</span> <span class="title">Teoría de Galois</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-field-automorphisms.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Automorfismos de Cuerpos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-field-automorphisms.html#galois-subsection-separable-extensions" class="internal"><span class="codenumber">23.1.1</span> <span class="title">Extensiones Separables</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-fund-theorem-galois-theory.html" class="internal"><span class="codenumber">23.2</span> <span class="title">El Teorema Fundamental</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-fund-theorem-galois-theory.html#galois-subsection-historical-note" class="internal"><span class="codenumber">23.2.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-galois-applications.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Aplicaciones</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-galois-applications.html#galois-subsection-solvable-by-radicals" class="internal"><span class="codenumber">23.3.1</span> <span class="title">Solubilidad por Radicales</span></a></div></li>
+<li><div class="toc-item"><a href="section-galois-applications.html#galois-subsection-quintic" class="internal"><span class="codenumber">23.3.2</span> <span class="title">Insolubilidad de la Quíntica</span></a></div></li>
+<li><div class="toc-item"><a href="section-galois-applications.html#galois-subsection-fun-theorem-of-algebra" class="internal"><span class="codenumber">23.3.3</span> <span class="title">El Teorema Fundamental del Álgebra</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-galois.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="galois-references.html" class="internal"><span class="codenumber">23.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li>
+<div class="toc-item"><a href="galois-sage.html" class="internal"><span class="codenumber">23.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="galois-sage.html#subsection-142" class="internal"><span class="codenumber">23.6.1</span> <span class="title">Grupos de Galois</span></a></div></li>
+<li><div class="toc-item"><a href="galois-sage.html#subsection-143" class="internal"><span class="codenumber">23.6.2</span> <span class="title">Cuerpo Fijos</span></a></div></li>
+<li><div class="toc-item"><a href="galois-sage.html#subsection-144" class="internal"><span class="codenumber">23.6.3</span> <span class="title">Correspondencia de Galois</span></a></div></li>
+<li><div class="toc-item"><a href="galois-sage.html#subsection-145" class="internal"><span class="codenumber">23.6.4</span> <span class="title">Exensiones Normales</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="galois-sage-exercises.html" class="internal"><span class="codenumber">23.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Referencia</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="appendix-gfdl.html" class="internal"><span class="codenumber">A</span> <span class="title">GNU Free Documentation License</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-2.html" class="internal"><span class="codenumber">B</span> <span class="title">Pistas y Soluciones a Ejercicios Seleccionados</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-3.html" class="internal"><span class="codenumber">C</span> <span class="title">Notación</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Índice alfabético</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colofón</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="section-error-detecting-correcting-codes"><h2 class="heading hide-type">
+<span class="type">Sección</span> <span class="codenumber">8.1</span> <span class="title">Códigos para Detectar y para Corregir Errores</span>
+</h2>
+<section class="introduction" id="introduction-31"><div class="para" id="p-1202">Consideremos un modelo simple de sistema de comunicaciones para el envío y recepción de mensajes codificados (ver la Figura <a href="" class="xref" data-knowl="./knowl/figure-encoding.html" title="Figura 8.1.1">8.1.1</a>).</div> <figure class="figure figure-like" id="figure-encoding"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+					
+						\begin{tikzpicture}[scale=1]
+
+						\draw [-&gt;] (0,8)  node [above] {\emph{mensaje de $m$ dígitos}} -- (0,7.5);
+
+						\node at (0,7) {Codificador};
+						\draw (-1.5,6.5) rectangle (1.5,7.5);
+						\draw (0,6.5)  -- (0,6.25);
+						\draw [-&gt;] (0,5.75)  -- (0,5.5);
+						\node at (0,6) {\emph{palabra de $n$ dígitos en el código}};
+
+						\node at (0,5) {Transmisor};
+						\draw (-1.5,4.5) rectangle (1.5,5.5);
+						\draw (0,4.5)  -- (0,4.25);
+						\draw [-&gt;] (0,3.75)  -- (0,3.5);
+						\node at (0,4) {\emph{Ruido}};
+
+						\node at (0,3) {Receptor};
+						\draw (-1.5,2.5) rectangle (1.5,3.5);
+						\draw (0,2.5)  -- (0,2.25);
+						\draw [-&gt;] (0,1.75)  -- (0,1.5);
+						\node at (0,2) {\emph{palabra recibida de $n$ dígitos}};
+
+						\node at (0,1) {Decodificador};
+						\draw (-1.5,0.5) rectangle (1.5,1.5);
+						\draw [-&gt;] (0,0.5)  -- (0,0) node [below] {\emph{mensaje de $m$ dígitos recibido o error}};
+
+						\end{tikzpicture}
+					
+				</div>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">8.1.1<span class="period">.</span></span><span class="space"> </span>Codificar y Decodificar Mensajes</figcaption></figure> <div class="para" id="p-1203">Mensajes sin codificar pueden estar compuestos de letras o caracteres, pero típicamente consisten de <span class="process-math">\(m\)</span>-tuplas binarias. Estos mensajes se codifican en palabras de un código, que son <span class="process-math">\(n\)</span>-tuplas binarias, a través de un mecanismo llamado <dfn class="terminology">codificador</dfn>. El mensaje es transmitido y luego decodificado. Consideraremos la aparición de errores durante la transmisión. Un <dfn class="terminology">error</dfn> occure si hay un cambio en uno o más bits de la palabra del código. Un <dfn class="terminology">protocolo decodificador</dfn> es un método que ya sea convierte  <span class="process-math">\(n\)</span>-tupla arbitraria recibida en un mensaje decodificado coherente o da un mensaje de error para esa <span class="process-math">\(n\)</span>-tupla. Si el mensaje recibido es una palabra del código (una de las <span class="process-math">\(n\)</span>-tuplas permitidas), entonces el mensaje decodificado debe ser el mensaje que fue codificado en la palabra del código. Para tuplas recibidas que no están en el código, el protocolo dará una indicación de error, o, si somos más astutos, tratará de corregir el error y reconstruir el mensaje original. Nuestro objetivos es transmitir mensajes libres de errores de la forma más barata y rápida posible.</div> <article class="example example-like" id="example-algcodes-repeat"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-algcodes-repeat"><h3 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-algcodes-repeat"><article class="example example-like"><div class="para logical" id="p-1204">
+<div class="para">Un posible mecanismo de codificación sería enviar el mensaje múltiples veces y comparar las copias recibidas entre ellas. Supongamos que el mensaje a codificar es una <span class="process-math">\(n\)</span>-tupla binaria <span class="process-math">\((x_{1}, x_{2}, \ldots, x_{n})\text{.}\)</span> El mensaje se codifica en una <span class="process-math">\(3n\)</span>-tupla binaria simplemente repitiendo el mensaje tres veces:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x_{1}, x_{2}, \ldots, x_{n}) \mapsto (x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n}).
+\end{equation*}
+</div>
+<div class="para">Para decodificar el mensaje, escogemos como el <span class="process-math">\(i\)</span>-ésimo dígito el que aparezca en la <span class="process-math">\(i\)</span>-ésima posición de al menos dos de las tres transmisiones. Por ejemplo, si el mensaje original es <span class="process-math">\((0110)\text{,}\)</span> entonces el mensaje transmitido será <span class="process-math">\((0110\;  0110\;  0110)\text{.}\)</span> Si hay un error de transmisión en el quinto dígito, entonces la palabra recibida será <span class="process-math">\((0110\;  1110\;  0110)\text{,}\)</span> la que será correctamente decodificada como <span class="process-math">\((0110)\text{.}\)</span><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-9" id="fn-9"><sup> 1 </sup></a>  Este método de repetición-triple automáticamente detecta y corrige todos los errores individuales, pero es lento e ineficiente: para enviar un mensaje que consista de <span class="process-math">\(n\)</span> bits, se requieren <span class="process-math">\(2n\)</span> bits adicionales, y solo podemos detectar y corregir errores individuales. Veremos que es posible encontrar mecanismos de codificación que codifiquen un mensaje de <span class="process-math">\(n\)</span> bits en uno de <span class="process-math">\(m\)</span> bits con <span class="process-math">\(m\)</span> mucho menor a <span class="process-math">\(3n\text{.}\)</span>
+</div>
+</div></article></div> <article class="example example-like" id="example-algcodes-even-parity"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-algcodes-even-parity"><h3 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">8.1.3</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-algcodes-even-parity"><article class="example example-like"><div class="para logical" id="p-1205">
+<div class="para">
+<dfn class="terminology">La paridad</dfn>, un mecanismo de codificación usual, es mucho más eficiente que la simple repetición. El código <abbr class="acronym">ASCII</abbr> (American Standard Code for Information Interchange) usa 8-tuplas binarias, dando lugar a <span class="process-math">\(2^{8} = 256\)</span> 8-tuplas posibles. Pero, solo se necesitan 7 bits pues solo hay <span class="process-math">\(2^7 = 128\)</span> caracteres <abbr class="acronym">ASCII</abbr>. ¿Qué se puede o debe hacer con el bit restante? Usando los ocho dígitos, podemos detectar un error individual de transmisión. Por ejemplo, los códigos <abbr class="acronym">ASCII</abbr> para A, B, y C son</div>
+<div class="displaymath process-math" id="md-69">
+\begin{align*}
+\text{A} &amp; = 65_{10} = 01000001_{2},\\
+\text{B} &amp; = 66_{10} = 01000010_{2},\\
+\text{C} &amp; = 67_{10} = 01000011_{2}.
+\end{align*}
+</div>
+<div class="para">Note que el bit de más a la izquierda siempre es 0; es decir, los 128 caracteres <abbr class="acronym">ASCII</abbr> tienen códigos</div>
+<div class="displaymath process-math" id="md-70">
+\begin{align*}
+00000000_{2} &amp; = 0_{10},\\
+&amp; \vdots\\
+01111111_{2} &amp; = 127_{10}.
+\end{align*}
+</div>
+<div class="para">El bit puede ser usado para controlar errores en los otros siete bits. Se pone como 0 o 1 de manera que el número total de bits 1 en la representación del caracter sea par. Usando paridad, los códigos para A, B, y C se convierten en</div>
+<div class="displaymath process-math" id="md-71">
+\begin{align*}
+\text{A} &amp; = 01000001_{2},\\
+\text{B} &amp; = 01000010_{2},\\
+\text{C} &amp; = 11000011_{2}.
+\end{align*}
+</div>
+<div class="para">Supongamos que se envía una A y ocurre un error de transmisión en el sexto bit de manera que se recibe <span class="process-math">\((0100\; 0101)\text{.}\)</span> Sabemos que se produjo un error pues se recibió un número impar de unos, y podemos pedir que la palabra sea retransmitida. Cuando se usa para detectar errores, el bit de más a la izquierda se llama <dfn class="terminology">bit de control de paridad</dfn>.</div>
+</div> <div class="para" id="p-1206">Por lejos el mecanismo más común de detección de errores en los computadores está basado en la adición de un bit de paridad. Típicamente, un computador guarda la información en <span class="process-math">\(m\)</span>-tuplas llamadas <dfn class="terminology">palabras</dfn>. Largos comunes para las palabras son 8, 16, y 32 bits. Un bit en la palabra se reserva como bit de control de paridad, y no se usa para almacenar información. Este bit se pone como 0 o 1, dependiendo del número de unos de la palabra.</div> <div class="para" id="p-1207">Agregar un control de paridad permite la detección de todos los errores únicos pues cualquier cambio a un solo bit, ya sea aumenta o disminuye en uno el número de unos, y en cualquier caso cambia la paridad de par a impar, de manera que la nueva palabra no es una palabra del código.</div></article></div> <div class="para" id="p-1208">El sistema de paridad es fácil de implementar, pero tiene dos desventajas.  En primer lugar, errores múltiples no son detectables. Supongamos que se envía una A y se alteran el primer y séptimo dígitos en la transmisión. La palabra recibida resulta ser una palabra del código, pero será decodificada como una C en lugar de una A. En segundo lugar, no tenemos la habilidad de corregir errores.  Si la 8-tupla <span class="process-math">\((1001\; 1000)\)</span> es recibida, sabemos que ha ocurrido un error, pero no tenemos idea cuál es el bit que se ha cambiado. Investigaremos ahora un mecanismo de codificación que no solo nos permita detectar errores de transmisión, sino que nos permita corregirlos.</div> <figure class="table table-like" id="table-repetition-code"><figcaption><span class="type">Cuadro</span><span class="space"> </span><span class="codenumber">8.1.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t2 lines">Palabra</td>
+<td class="c m b0 r0 l0 t2 lines" colspan="8">Palabra Recibida</td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines">Transmitida</td>
+<td class="c m b2 r0 l0 t0 lines">000</td>
+<td class="c m b2 r0 l0 t0 lines">001</td>
+<td class="c m b2 r0 l0 t0 lines">010</td>
+<td class="c m b2 r0 l0 t0 lines">011</td>
+<td class="c m b2 r0 l0 t0 lines">100</td>
+<td class="c m b2 r0 l0 t0 lines">101</td>
+<td class="c m b2 r0 l0 t0 lines">110</td>
+<td class="c m b2 r0 l0 t0 lines">111</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">000</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines">111</td>
+<td class="c m b2 r0 l0 t0 lines">3</td>
+<td class="c m b2 r0 l0 t0 lines">2</td>
+<td class="c m b2 r0 l0 t0 lines">2</td>
+<td class="c m b2 r0 l0 t0 lines">1</td>
+<td class="c m b2 r0 l0 t0 lines">2</td>
+<td class="c m b2 r0 l0 t0 lines">1</td>
+<td class="c m b2 r0 l0 t0 lines">1</td>
+<td class="c m b2 r0 l0 t0 lines">0</td>
+</tr>
+</table></div></figure> <article class="example example-like" id="example-algcodes-nearest"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-algcodes-nearest"><h3 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">8.1.5</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-algcodes-nearest"><article class="example example-like"><div class="para" id="p-1209">Supongamos que nuestro mensaje original es 0 o 1, y que 0 se codifica en (000) y 1 se codifica en (111). Si ocurre solo un error durante la transmisión, entonces podemos detectar y corregir este error. Por ejemplo, si se recibe un 101, entonces el segundo bit debe haber sido cambiado de 1 a 0.  La palabra transmitida debe haber sido (111). Este método detecterá y corregirá todos los errores únicos.</div> <div class="para" id="p-1210">En la Tabla <a href="" class="xref" data-knowl="./knowl/table-repetition-code.html" title="Cuadro 8.1.4">8.1.4</a>, presentamos todas las posibles palabras que pueden ser recibidas para las palabras transmitidas (000) y (111). La Tabla <a href="" class="xref" data-knowl="./knowl/table-repetition-code.html" title="Cuadro 8.1.4">8.1.4</a> también muestra el número de bits en los que cada 3-tupla difiere de la palabra original.</div></article></div></section><section class="subsection" id="algcodes-subsection-max-likelihood"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">8.1.1</span> <span class="title">Decodificación de Probabilidad Máxima</span>
+</h3>
+<div class="para" id="p-1211">El mecanismo de codificación presentado en el Ejemplo <a href="" class="xref" data-knowl="./knowl/example-algcodes-nearest.html" title="Ejemplo 8.1.5">8.1.5</a> no es una solución completa del problema pues no toma en cuenta la posibilidad de múltiples errores. Por ejemplo, ya sea un (000) o un (111) se podría enviar y se podría recibir un (001). No tenemos forma de decidir a partir de la palabra recibida si se cometió un solo error en el tercer bit o dos errores, uno en el primer bit y uno en el segundo.  Sin importar el mecanismo de codificación usado, un mensaje incorrecto puede ser recibido. Podríamos transmitir un (000), tener errores en los tres bits, y recibir la palabra (111) del código. Es importante explicitar las suposiciones hechas sobre la probabilidad y distribución de los errores de transmisión de manera que, en una aplicación particular, se sabrá si un cierto mecanismo de detección de errores es apropiado. Supondremos que los errores de transmisión son infrecuentes, y, que cuando ocurren, ocurren de forma independiente en cada bit; es decir, si <span class="process-math">\(p\)</span> es la probabilidad de un error en un bit y <span class="process-math">\(q\)</span> es la probabilidad de error en otro bit, entonces la probabilidad de errores en ambos bits al mismo tiempo, es <span class="process-math">\(pq\text{.}\)</span> También supondremos que una <span class="process-math">\(n\)</span>-tupla recibida se decodificará en la palabra del código que esté más cerca; es decir, suponemos que el receptor usa <dfn class="terminology">decodificación de probabilidad máxima</dfn>.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-10" id="fn-10"><sup> 2 </sup></a>
+</div>
+<figure class="figure figure-like" id="figure-channel"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+					
+						\begin{tikzpicture}[scale=1]
+
+						\node at (1.5,0) [below] {$p$};
+						\draw [-&gt;] (0,0)  node [left] {1} -- (3,0) node [right] {1};
+						\node at (1.5,2) [above] {$p$};
+						\draw [-&gt;] (0,2)  node [left] {0} -- (3,2) node [right] {0};
+
+						\draw [-&gt;] (0,0.2) -- (3,1.8);
+						\draw [-&gt;] (0,1.8) -- (3,0.2);
+
+						\node at (1.8,1.15) [above] {$q$};
+						\node at (1.8,0.85) [below] {$q$};
+
+						\end{tikzpicture}
+					
+				</div>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">8.1.6<span class="period">.</span></span><span class="space"> </span>Canal binario simétrico</figcaption></figure><div class="para logical" id="p-1212">
+<div class="para">Un <dfn class="terminology">canal binario simétrico</dfn> es un modelo que consiste de un transmisor capaz de enviar una señal binaria, ya sea un 0 o un 1, junto a un receptor. Sea <span class="process-math">\(p\)</span> la probabilidad de que la señal se recibe correctamente. Entonces <span class="process-math">\(q = 1 - p\)</span> es la probabilidad de recepción incorrecta. Si se envía un 1, entonces la probabilidad de recibir un 1 es <span class="process-math">\(p\)</span> y la probabilidad de recibir un 0 es <span class="process-math">\(q\)</span> (Figura <a href="" class="xref" data-knowl="./knowl/figure-channel.html" title="Figura 8.1.6">8.1.6</a>). La probabilidad de que no ocurra ningún error durante la transmisión de una palabra binaria del código de largo <span class="process-math">\(n\)</span> es <span class="process-math">\(p^{n}\text{.}\)</span> Por ejemplo, si <span class="process-math">\(p=0.999\)</span> y se envía un mensaje consistente de 10,000 bits, entonces la probabilidad de una transmisión perfecta es</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/figure-channel.html">
+\begin{equation*}
+(0.999)^{10,000} \approx 0.00005.
+\end{equation*}
+</div>
+</div>
+<article class="theorem theorem-like" id="theorem-31"><h4 class="heading">
+<span class="type">Teorema</span><span class="space"> </span><span class="codenumber">8.1.7</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-1213">
+<div class="para">Si una <span class="process-math">\(n\)</span>-tupla binaria <span class="process-math">\((x_{1}, \ldots, x_{n})\)</span> es transmitida por un canal binario simétrico con probabilidad <span class="process-math">\(p\)</span> de que no ha ocurrido error en cada coordenada, entonces la probabilidad de que no haya errores en exactamente <span class="process-math">\(k\)</span> coordenadas es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\binom{n}{k} q^kp^{n - k}.
+\end{equation*}
+</div>
+</div></article><article class="hiddenproof" id="proof-45"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-45"><h4 class="heading"><span class="type">Demostración<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-45"><article class="hiddenproof"><div class="para logical" id="p-1214">
+<div class="para">Fijemos <span class="process-math">\(k\)</span> coordenadas diferentes. Calculemos primero la probabilidad de que un error ha ocurrido en este conjunto fijo de coordenadas. La probabilidad de que haya ocurrido un error en una en particular de estas <span class="process-math">\(k\)</span> coordenadas es <span class="process-math">\(q\text{;}\)</span> la probabilidad de que ningún error haya ocurrido en una de las restantes <span class="process-math">\(n-k\)</span> coordenadas es <span class="process-math">\(p\text{.}\)</span> La probabilidad de cada una de estos <span class="process-math">\(n\)</span> eventos independientes es <span class="process-math">\(q^{k}p^{n-k}\text{.}\)</span> El número posible de patrones de error con exactamente <span class="process-math">\(k\)</span> errores es igual a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\binom{n}{k}  = \frac{n!}{k!(n - k)!},
+\end{equation*}
+</div>
+<div class="para">el número de combinaciones de <span class="process-math">\(k\)</span> cosas elegidas entre un total de <span class="process-math">\(n\text{.}\)</span> Cada uno de estos patrones de error tiene probabilidad <span class="process-math">\(q^{k}p^{n-k}\)</span> de ocurrir; luego, la probabilidad de todos estos patrones de error es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\binom{n}{k}  q^{k}p^{n - k}. 
+\end{equation*}
+</div>
+</div></article></div>
+<article class="example example-like" id="example-algcodes-probability"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-algcodes-probability"><h4 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">8.1.8</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-algcodes-probability"><article class="example example-like"><div class="para logical" id="p-1215">
+<div class="para">Supongamos que <span class="process-math">\(p = 0.995\)</span> y que se envía un mensaje de 500-bits. La probabilidad de que el mensaje haya sido enviado sin errores es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p^{n} = (0.995)^{500} \approx 0.082.
+\end{equation*}
+</div>
+<div class="para">La probabilidad de que ocurra exactamente un error es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\binom{n}{1}  qp^{n - 1}= 500(0.005)(0.995)^{499} \approx 0.204.
+\end{equation*}
+</div>
+<div class="para">La probabilidad de exactamente dos errores es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\binom{n}{2} q^{2}p^{n - 2}= \frac{500 \cdot 499}{2}(0.005)^{2}(0.995)^{498} \approx 0.257.
+\end{equation*}
+</div>
+<div class="para">La probabilidad de más de dos errores es aproximadamente</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 - 0.082 - 0.204 - 0.257 = 0.457.
+\end{equation*}
+</div>
+</div></article></div></section><section class="subsection" id="algcodes-subsection-block-codes"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">8.1.2</span> <span class="title">Códigos de Bloque</span>
+</h3>
+<div class="para logical" id="p-1216">
+<div class="para">Si vamos a desarrollar códigos eficientes para detectar y corregir errores, necesitaremos herramientas matemáticas más sofisticadas.  La teoría de grupos permitirá métodos más rápidos y eficientes para codificar y decodificar mensajes. Un código es un  <dfn class="terminology">código de bloque</dfn> <span class="process-math">\((n, m)\)</span> si la información que se codificará se puede dividir en bloques de <span class="process-math">\(m\)</span> dígitos binarios, cada uno de los cuales puede ser codificado en <span class="process-math">\(n\)</span> dígitos binarios. Más específicamente, un código de bloque <span class="process-math">\((n, m)\)</span> consiste de una <dfn class="terminology">función codificadora</dfn>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E:{\mathbb Z}^{m}_{2} \rightarrow {\mathbb Z}^{n}_{2}
+\end{equation*}
+</div>
+<div class="para">y una <dfn class="terminology">función decodificadora</dfn>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D:{\mathbb Z}^{n}_{2} \rightarrow {\mathbb Z}^{m}_{2}.
+\end{equation*}
+</div>
+<div class="para">Una <dfn class="terminology">palabra del código</dfn> es cualquier elemento en la imagen de <span class="process-math">\(E\text{.}\)</span> También requerimos que <span class="process-math">\(E\)</span> sea 1-1 de manera que dos bloques de información no sean codificados en la misma palabra del código.</div>
+</div>
+<article class="example example-like" id="example-algcodes-block-code"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-algcodes-block-code"><h4 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">8.1.9</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-algcodes-block-code"><article class="example example-like"><div class="para logical" id="p-1217">
+<div class="para">El código de paridad desarrollado para detectar errores individuales en caracteres <abbr class="acronym">ASCII</abbr> es un código de bloque <span class="process-math">\((8,7)\text{.}\)</span> La función codificadora es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E(x_7, x_6, \ldots, x_1) = (x_8, x_7,  \ldots, x_1),
+\end{equation*}
+</div>
+<div class="para">donde <span class="process-math">\(x_8 = x_7 + x_6 + \cdots + x_1\)</span> con la suma en <span class="process-math">\({\mathbb Z}_2\text{.}\)</span>
+</div>
+</div></article></div>
+<div class="para" id="p-1218">Sean <span class="process-math">\({\mathbf x} = (x_1, \ldots, x_n)\)</span> y <span class="process-math">\({\mathbf y} = (y_1, \ldots, y_n)\)</span> <span class="process-math">\(n\)</span>-tuplas binarias. La <dfn class="terminology">distancia de Hamming</dfn> o <dfn class="terminology">distancia</dfn>, <span class="process-math">\(d({\mathbf x}, {\mathbf y})\text{,}\)</span> entre <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\)</span> es el número de bits en que <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\)</span> difieren. La distancia entre dos palabras del código es el mínimo número de errores de transmisión necesarios para transformar una de las palabras en la otra. La <dfn class="terminology">distancia mínima</dfn> para un código, <span class="process-math">\(d_{\min}\text{,}\)</span> es el mínimo de todas las distancias <span class="process-math">\(d({\mathbf x}, {\mathbf y})\text{,}\)</span> donde <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\)</span> son palabras distintas del código. El <dfn class="terminology">peso</dfn>, <span class="process-math">\(w({\mathbf x})\text{,}\)</span> de una palabra de un código binario <span class="process-math">\({\mathbf x}\)</span> es el número de unos en <span class="process-math">\({\mathbf x}\text{.}\)</span> Claramente, <span class="process-math">\(w({\mathbf x}) = d({\mathbf x}, {\mathbf 0})\text{,}\)</span> donde <span class="process-math">\({\mathbf 0} = (00 \cdots 0)\text{.}\)</span> </div>
+<article class="example example-like" id="example-algcodes-min-distance"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-algcodes-min-distance"><h4 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">8.1.10</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-algcodes-min-distance"><article class="example example-like"><div class="para logical" id="p-1219">
+<div class="para">Sean <span class="process-math">\({\mathbf x} = (10101)\text{,}\)</span> <span class="process-math">\({\mathbf y} = (11010)\text{,}\)</span> y <span class="process-math">\({\mathbf z} = (00011)\)</span> todas las palabras en un código <span class="process-math">\(C\text{.}\)</span> Entonces tenemos las siguientes distancias de Hamming:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d({\mathbf x},{\mathbf y}) = 4, \qquad d({\mathbf x},{\mathbf z}) = 3, \qquad d({\mathbf y},{\mathbf z}) = 3.
+\end{equation*}
+</div>
+<div class="para">La distancia mínima para este código es 3 y los pesos son:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+w({\mathbf x}) = 3, \qquad w({\mathbf y}) = 3, \qquad w({\mathbf z}) = 2.
+\end{equation*}
+</div>
+</div></article></div>
+<div class="para" id="p-1220">La siguiente proposición lista algunas propiedades básicas sobre el peso de una palabra del código y la distancia entre dos palabras del código. La demostración se deja como ejercicio.</div>
+<article class="proposition theorem-like" id="proposition-20"><h4 class="heading">
+<span class="type">Proposición</span><span class="space"> </span><span class="codenumber">8.1.11</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-1221">
+<div class="para">Sean <span class="process-math">\({\mathbf x}\text{,}\)</span> <span class="process-math">\({\mathbf y}\text{,}\)</span> y <span class="process-math">\({\mathbf z}\)</span>  <span class="process-math">\(n\)</span>-tuplas binarias. Entonces</div>
+<ol class="decimal">
+<li id="li-299"><div class="para" id="p-1222"><span class="process-math">\(w({\mathbf x}) = d( {\mathbf x}, {\mathbf 0})\text{;}\)</span></div></li>
+<li id="li-300"><div class="para" id="p-1223"><span class="process-math">\(d( {\mathbf x}, {\mathbf y}) \geq 0\text{;}\)</span></div></li>
+<li id="li-301"><div class="para" id="p-1224">
+<span class="process-math">\(d( {\mathbf x}, {\mathbf y}) = 0\)</span> si y solo si <span class="process-math">\({\mathbf x} = {\mathbf y}\text{;}\)</span>
+</div></li>
+<li id="li-302"><div class="para" id="p-1225"><span class="process-math">\(d( {\mathbf x}, {\mathbf y})= d( {\mathbf y}, {\mathbf x})\text{;}\)</span></div></li>
+<li id="li-303"><div class="para" id="p-1226"><span class="process-math">\(d( {\mathbf x}, {\mathbf y}) \leq d( {\mathbf x}, {\mathbf z}) + d( {\mathbf z}, {\mathbf y})\text{.}\)</span></div></li>
+</ol>
+</div></article><div class="para" id="p-1227">Los pesos en un código particular son usualmente mucho más fáciles de calcular que las distancias de Hamming entre todas las palabras del código. Si un código se construye cuidadosamente, podemos sacar provecho de este hecho.</div>
+<div class="para" id="p-1228">Supongamos que <span class="process-math">\({\mathbf x} = (1101)\)</span> e <span class="process-math">\({\mathbf y} = (1100)\)</span> son palabras en algún código. Si transmitimos (1101) y un error ocurre en el bit de más a la derecha, entonces se recibirá (1100). Como (1100) es una palabra del código, el decodificador  decodificará (1100) como el mensaje transmitido. Este código claramente no es muy apropiado para la detección de errores. El problema es que <span class="process-math">\(d({\mathbf x}, {\mathbf y}) = 1\text{.}\)</span> Si <span class="process-math">\({\mathbf x} = (1100)\)</span> e <span class="process-math">\({\mathbf y} = (1010)\)</span> son palabras del código, entonces <span class="process-math">\(d({\mathbf x}, {\mathbf y}) = 2\text{.}\)</span> Si <span class="process-math">\({\mathbf x}\)</span> se transmite y ocurre un solo error, entonces <span class="process-math">\({\mathbf y}\)</span> nunca puede ser recibido. La Tabla <a href="" class="xref" data-knowl="./knowl/table-4-bit-words.html" title="Cuadro 8.1.12">8.1.12</a> entrega las distancias entre todas las palabras del código de 4-bits en que los primeros tres bits son de información y el cuarto es un bit de control de paridad. Podemos ver que la distancia mínima acá es 2; luego, el código es apto como código de detección de un error.</div>
+<figure class="table table-like" id="table-4-bit-words"><figcaption><span class="type">Cuadro</span><span class="space"> </span><span class="codenumber">8.1.12<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"></td>
+<td class="c m b2 r2 l0 t2 lines">0000</td>
+<td class="c m b2 r2 l0 t2 lines">0011</td>
+<td class="c m b2 r2 l0 t2 lines">0101</td>
+<td class="c m b2 r2 l0 t2 lines">0110</td>
+<td class="c m b2 r2 l0 t2 lines">1001</td>
+<td class="c m b2 r2 l0 t2 lines">1010</td>
+<td class="c m b2 r2 l0 t2 lines">1100</td>
+<td class="c m b2 r2 l0 t2 lines">1111</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">0000</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">0011</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">0101</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">0110</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">1001</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">1010</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">1100</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">1111</td>
+<td class="c m b2 r2 l0 t0 lines">4</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">0</td>
+</tr>
+</table></div></figure><div class="para logical" id="p-1229">
+<div class="para">Para determinar exactamente cuáles son las capacidades de detección y corrección de errores de un código, debemos analizar la distancia mínima para el código. Sean <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\)</span> palabras del código. Si <span class="process-math">\(d({\mathbf x}, {\mathbf y}) = 1\)</span> y ocurre un error donde difieren <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\text{,}\)</span> entonces <span class="process-math">\({\mathbf x}\)</span> se transforma en <span class="process-math">\({\mathbf y}\text{.}\)</span> La palabra recibida es <span class="process-math">\({\mathbf y}\)</span> y no se produce ningún mensaje de error. Ahora supongamos que <span class="process-math">\(d({\mathbf x}, {\mathbf y}) = 2\text{.}\)</span> Entonces un único error no puede transformar <span class="process-math">\({\mathbf x}\)</span> en <span class="process-math">\({\mathbf y}\text{.}\)</span> Por lo tanto, si <span class="process-math">\(d_{\min} = 2\text{,}\)</span> tenemos la habilidad de detectar errores únicos. Pero, supongamos que <span class="process-math">\(d({\mathbf x}, {\mathbf y}) = 2\text{,}\)</span> <span class="process-math">\({\mathbf y}\)</span> es enviado, y se recibe una palabra <span class="process-math">\({\mathbf z}\)</span> que no está en el código tal que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d({\mathbf x}, {\mathbf z}) = d({\mathbf y}, {\mathbf z}) = 1.
+\end{equation*}
+</div>
+<div class="para">Entonces el decodificador no puede decidir entre <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\text{.}\)</span> Si bien estamos concientes de que se cometió un error, no sabemos cuál fue ese error.</div>
+</div>
+<div class="para" id="p-1230">Supongamos que <span class="process-math">\(d_{\min} \geq 3\text{.}\)</span> Entonces el algoritmo de decodificación de máxima probabilidad corrige todos los errores únicos. Comenzando con una palabra <span class="process-math">\({\mathbf x}\)</span> del código, un error de un único bit en la transmisión da <span class="process-math">\({\mathbf y}\)</span> con <span class="process-math">\(d({\mathbf x}, {\mathbf y}) = 1\text{,}\)</span> pero <span class="process-math">\(d({\mathbf z}, {\mathbf y}) \geq 2\)</span> para cualquier otra palabra <span class="process-math">\({\mathbf z} \neq {\mathbf x}\)</span> del código. Si no necesitamos corregir errores, entonces podemos detectar más de un error cuando un código tiene distancia mínima mayor o igual a 3.</div>
+<article class="theorem theorem-like" id="theorem-min-distance"><h4 class="heading">
+<span class="type">Teorema</span><span class="space"> </span><span class="codenumber">8.1.13</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1231">Sea <span class="process-math">\(C\)</span> un código con <span class="process-math">\(d_{\min} = 2n + 1\text{.}\)</span> Entonces <span class="process-math">\(C\)</span> puede corregir cualquiera <span class="process-math">\(n\)</span> o menos errores.  Alternativamente, <span class="process-math">\(2n\)</span> o menos errores cualquiera pueden ser detectados con <span class="process-math">\(C\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-46"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-46"><h4 class="heading"><span class="type">Demostración<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-46"><article class="hiddenproof"><div class="para logical" id="p-1232">
+<div class="para">Supongamos que se envía una palabra <span class="process-math">\({\mathbf x}\)</span> del código y que se recibe la palabra <span class="process-math">\({\mathbf y}\)</span> con a lo más <span class="process-math">\(n\)</span> errores. Entonces <span class="process-math">\(d( {\mathbf x}, {\mathbf y}) \leq n\text{.}\)</span> Si <span class="process-math">\({\mathbf z}\)</span> es cualquier palabra del código distinta de <span class="process-math">\({\mathbf x}\text{,}\)</span> entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2n+1 \leq d( {\mathbf x}, {\mathbf z}) \leq d( {\mathbf x}, {\mathbf y}) + d( {\mathbf y}, {\mathbf z}) \leq n + d( {\mathbf y}, {\mathbf z}).
+\end{equation*}
+</div>
+<div class="para">Luego, <span class="process-math">\(d({\mathbf y}, {\mathbf z} ) \geq n+1\)</span> e <span class="process-math">\({\mathbf y}\)</span> será decodificada correctamente como <span class="process-math">\({\mathbf x}\text{.}\)</span> Ahora supongamos que se transmite <span class="process-math">\({\mathbf x}\)</span> recibiéndose <span class="process-math">\({\mathbf y}\)</span> y que al menos uno pero no más de <span class="process-math">\(2n\)</span> errores han ocurrido. Entonces <span class="process-math">\(1 \leq d( {\mathbf x}, {\mathbf y} ) \leq 2n\text{.}\)</span>  Como la distancia mínima entre palabras del código es <span class="process-math">\(2n +1\text{,}\)</span> <span class="process-math">\({\mathbf y}\)</span> no puede ser una palabra del código.  Así, el código puede detectar entre  hasta <span class="process-math">\(2n\)</span> errores.</div>
+</div></article></div>
+<article class="example example-like" id="example-algcodes-single-correct"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-algcodes-single-correct"><h4 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">8.1.14</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-algcodes-single-correct"><article class="example example-like"><div class="para" id="p-1233">En la Tabla <a href="" class="xref" data-knowl="./knowl/table-hamming-distance.html" title="Cuadro 8.1.15">8.1.15</a>, las palabras <span class="process-math">\({\mathbf c}_1 = (00000)\text{,}\)</span> <span class="process-math">\({\mathbf c}_2 = (00111)\text{,}\)</span> <span class="process-math">\({\mathbf c}_3 = (11100)\text{,}\)</span> y <span class="process-math">\({\mathbf c}_4 = (11011)\)</span> determinan un código corrector de un error.</div></article></div>
+<figure class="table table-like" id="table-hamming-distance"><figcaption><span class="type">Cuadro</span><span class="space"> </span><span class="codenumber">8.1.15<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"></td>
+<td class="c m b2 r2 l0 t2 lines">00000</td>
+<td class="c m b2 r2 l0 t2 lines">00111</td>
+<td class="c m b2 r2 l0 t2 lines">11100</td>
+<td class="c m b2 r2 l0 t2 lines">11011</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">00000</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">00111</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">11100</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">11011</td>
+<td class="c m b2 r2 l0 t0 lines">4</td>
+<td class="c m b2 r2 l0 t0 lines">3</td>
+<td class="c m b2 r2 l0 t0 lines">3</td>
+<td class="c m b2 r2 l0 t0 lines">0</td>
+</tr>
+</table></div></figure></section><section class="subsection" id="algcodes-subsection-historical-note"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">8.1.3</span> <span class="title">Nota Histórica</span>
+</h3>
+<div class="para" id="p-1234">La teoría moderna de códigos comenzó en 1948 con la publicación de C. Shannon, titulada “A Mathematical Theory of Information” [7]. En su artículo, Shannon ofreció un ejemplo de un código algebraico, y el Teorema de Shannon estableció precisamente qué tan bueno puede llegar a ser un código. Richard Hamming comenzó a trabajar con códigos lineales en Bell Labs a finales de los 1940s y principios de los 1950s después de sufrir la frustración de que los programas que corría no eran capaces de recuperarse de simples errores generados por ruido. La teoría de códigos ha crecido tremendamente en las décadas siguientes a estos trabajos. <em class="emphasis">The Theory of Error-Correcting Codes</em>, de MacWilliams y Sloane [5], publicado en 1977, ya contenía más de 1500 citas. Códigos lineales (códigos de bloque <span class="process-math">\((32, 6)\)</span> de Reed-Muller) fueron usados en las sondas espaciales Mariner de la NASA.  Sondas espaciales posteriores como los Voyager han usado los llamados códigos de convolución.  Actualmente, hay investigación activa respecto a códigos Goppa, que dependen fuertemente de geometría algebraica.</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-9"><div class="fn">Adoptaremos la convención de numerar los dígitos de izquierda a derecha en las <span class="process-math">\(n\)</span>-tuplas binarias.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-10"><div class="fn">Esta sección requiere conocimientos de probabilidad, pero puede saltarse sin pérdida de continuidad.</div></div>
+</div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="algcodes.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-linear-codes.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
+var sc_project=10568106;
+var sc_invisible=1;
+var sc_security="510ba080";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10568106/0/510ba080/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

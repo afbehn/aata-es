@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h4 class="heading"><span class="type">Demostración</span></h4>
+<div class="para">Ya hemos mostrado la equivalencia de (1) y (2).</div> <div class="para logical">
+<div class="para"><span class="process-math">\((2) \Rightarrow (3)\text{.}\)</span></div>
+<div class="displaymath process-math">
+\begin{align*}
+\langle A{\mathbf x}, A{\mathbf y} \rangle &amp; = (A {\mathbf x})^{\rm t} A {\mathbf y}\\
+&amp; = {\mathbf x}^{\rm t} A^{\rm t} A {\mathbf y}\\
+&amp; = {\mathbf x}^{\rm t} {\mathbf y}\\
+&amp; = \langle {\mathbf x}, {\mathbf y} \rangle.
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">
+<span class="process-math">\((3) \Rightarrow (2)\text{.}\)</span> Como</div>
+<div class="displaymath process-math">
+\begin{align*}
+\langle {\mathbf x}, {\mathbf x} \rangle &amp; = \langle A{\mathbf x}, A{\mathbf x} \rangle\\
+&amp; = {\mathbf x}^{\rm t} A^{\rm t} A {\mathbf x}\\
+&amp; = \langle {\mathbf x}, A^{\rm t} A{\mathbf x} \rangle,
+\end{align*}
+</div>
+<div class="para">sabemos que <span class="process-math">\(\langle {\mathbf x}, (A^{\rm t} A - I){\mathbf x} \rangle = 0\)</span> para todo <span class="process-math">\({\mathbf x}\text{.}\)</span>  Por lo tanto, <span class="process-math">\(A^{\rm t} A -I = 0\)</span> o <span class="process-math">\(A^{-1} = A^{\rm t}\text{.}\)</span>
+</div>
+</div>    <div class="para logical">
+<div class="para">
+<span class="process-math">\((3) \Rightarrow (4)\text{.}\)</span> Si <span class="process-math">\(A\)</span> preserva el producto interno, entonces <span class="process-math">\(A\)</span> preserva distancias, pues</div>
+<div class="displaymath process-math">
+\begin{align*}
+\| A{\mathbf x} - A{\mathbf y} \|^2 &amp; = \| A({\mathbf x} - {\mathbf y}) \|^2\\
+&amp; = \langle A({\mathbf x} - {\mathbf y}), A({\mathbf x} - {\mathbf y}) \rangle\\
+&amp; = \langle {\mathbf x} - {\mathbf y}, {\mathbf x} - {\mathbf y} \rangle\\
+&amp; = \| {\mathbf x} - {\mathbf y} \|^2.
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">
+<span class="process-math">\((4) \Rightarrow (5)\text{.}\)</span> Si <span class="process-math">\(A\)</span> preserva distancias, entonces <span class="process-math">\(A\)</span> preserva longitudes. Tomando <span class="process-math">\({\mathbf y} = 0\text{,}\)</span> tenemos</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\| A{\mathbf x}\| = \| A{\mathbf x}- A{\mathbf y} \| = \| {\mathbf x}- {\mathbf y} \| = \| {\mathbf x} \|.
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">
+<span class="process-math">\((5) \Rightarrow (3)\text{.}\)</span> Usamos la siguiente identidad para mostrar que la preservación de longitudes implica la preservación del producto interno:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\langle {\mathbf x}, {\mathbf y} \rangle = \frac{1}{2} \left[ \|{\mathbf x} +{\mathbf y}\|^2 - \|{\mathbf x}\|^2 - \|{\mathbf y}\|^2 \right].
+\end{equation*}
+</div>
+<div class="para">Observe que</div>
+<div class="displaymath process-math">
+\begin{align*}
+\langle A {\mathbf x}, A {\mathbf y} \rangle &amp; = \frac{1}{2} \left[ \|A {\mathbf x} + A {\mathbf y} \|^2 - \|A {\mathbf x} \|^2 -  \|A {\mathbf y} \|^2 \right]\\
+&amp; = \frac{1}{2} \left[ \|A ( {\mathbf x} + {\mathbf y} ) \|^2 - \|A {\mathbf x} \|^2 -  \|A {\mathbf y} \|^2 \right]\\
+&amp; = \frac{1}{2} \left[ \|{\mathbf x} + {\mathbf y}\|^2 - \|{\mathbf x}\|^2 - \|{\mathbf y}\|^2 \right]\\
+&amp; = \langle {\mathbf x}, {\mathbf y} \rangle.
+\end{align*}
+</div>
+</div></article><span class="incontext"><a href="section-matrix-groups.html#proof-78" class="internal">en contexto</a></span>
+</body>
+</html>

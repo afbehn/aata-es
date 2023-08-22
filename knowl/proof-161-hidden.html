@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Para demostrar este teorema, usaremos el método usado en el Ejemplo  <a href="" class="xref" data-knowl="./knowl/example-fields-finite-f4.html" title="Ejemplo 21.1.2">21.1.2</a>. Claramente, podemos suponer que <span class="process-math">\(p(x)\)</span> es un polinomio irreducible. Queremos encontrar una extensión <span class="process-math">\(E\)</span> de <span class="process-math">\(F\)</span> que contenga un elemento <span class="process-math">\(\alpha\)</span> tal que <span class="process-math">\(p(\alpha) = 0\text{.}\)</span> El ideal <span class="process-math">\(\langle p(x) \rangle\)</span> generado por <span class="process-math">\(p(x)\)</span> es un ideal maximal en <span class="process-math">\(F[x]\)</span> por el  Teorema <a href="" class="xref" data-knowl="./knowl/theorem-max-ideal-poly.html" title="Teorema 17.3.12">17.3.12</a>; luego, <span class="process-math">\(F[x]/\langle p(x) \rangle\)</span> es un cuerpo. Afirmamos que  <span class="process-math">\(E = F[x]/\langle p(x) \rangle\)</span> es el cuerpo buscado.</div> <div class="para logical">
+<div class="para">Demostraremos primero que  <span class="process-math">\(E\)</span> es una extensión de <span class="process-math">\(F\text{.}\)</span> Podemos definir un homomorfismo de anillos conmutativos <span class="process-math">\(\psi:F \rightarrow F[x]/\langle p(x) \rangle\text{,}\)</span> donde <span class="process-math">\(\psi(a) = a + \langle p(x)\rangle\)</span> para <span class="process-math">\(a \in F\text{.}\)</span> Es fácil verificar que <span class="process-math">\(\psi\)</span> es realmente un homomorfismo de anillos. Observe que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\psi( a ) + \psi( b ) = (a + \langle p(x) \rangle) + (b + \langle p(x) \rangle) = (a + b) + \langle p(x) \rangle = \psi( a + b )
+\end{equation*}
+</div>
+<div class="para">y</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\psi( a )  \psi( b ) = (a  + \langle p(x) \rangle)  (b + \langle p(x) \rangle) = a  b  + \langle p(x) \rangle = \psi( a  b ).
+\end{equation*}
+</div>
+<div class="para">Para demostrar que <span class="process-math">\(\psi\)</span> es 1-1, supongamos que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a + \langle p(x) \rangle = \psi(a) = \psi(b) = b + \langle p(x) \rangle.
+\end{equation*}
+</div>
+<div class="para">Entonces <span class="process-math">\(a - b\)</span> es un  múltiplo de <span class="process-math">\(p(x)\text{,}\)</span> dado que está en el ideal <span class="process-math">\(\langle p(x) \rangle\text{.}\)</span> Como <span class="process-math">\(p(x)\)</span> es un polinomio no constante, la única posibilidad es que <span class="process-math">\(a - b = 0\text{.}\)</span> Por lo tanto, <span class="process-math">\(a = b\)</span> y <span class="process-math">\(\psi\)</span> es inyectivo. Como <span class="process-math">\(\psi\)</span> es 1-1, podemos identificar <span class="process-math">\(F\)</span> con el subcuerpo <span class="process-math">\(\{ a + \langle p(x) \rangle : a \in F \}\)</span> de <span class="process-math">\(E\)</span> y ver <span class="process-math">\(E\)</span> como un cuerpo de extensión de <span class="process-math">\(F\text{.}\)</span>
+</div>
+</div>  <div class="para logical">
+<div class="para">Nos falta demostrar  que <span class="process-math">\(p(x)\)</span> tiene un cero <span class="process-math">\(\alpha \in E\text{.}\)</span> Sea <span class="process-math">\(\alpha = x + \langle p(x) \rangle\text{.}\)</span> Entonces <span class="process-math">\(\alpha\)</span> está en <span class="process-math">\(E\text{.}\)</span> Si <span class="process-math">\(p(x) = a_0 + a_1 x + \cdots + a_n x^n\text{,}\)</span> entonces</div>
+<div class="displaymath process-math">
+\begin{align*}
+p( \alpha ) &amp; =  a_0 + a_1( x + \langle p(x) \rangle) + \cdots + a_n ( x + \langle p(x) \rangle)^n\\
+&amp; = a_0 + ( a_1 x + \langle p(x) \rangle) + \cdots + (a_n  x^n + \langle p(x) \rangle)\\
+&amp; = a_0 + a_1 x + \cdots + a_n x^n + \langle p(x) \rangle\\
+&amp; = 0 + \langle p(x) \rangle.
+\end{align*}
+</div>
+<div class="para">Por lo tanto, hemos encontrado un elemento <span class="process-math">\(\alpha \in E = F[x]/\langle p(x) \rangle\)</span> tal que <span class="process-math">\(\alpha\)</span> es un cero de <span class="process-math">\(p(x)\text{.}\)</span>
+</div>
+</div></article></body>
+</html>
