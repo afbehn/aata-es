@@ -45,7 +45,7 @@
 
 		<p>En todo este capítulo supondremos que <m>R</m> es un anillo conmutativo con uno.  Una expresión de la forma
 			<me>f(x) = \sum^{n}_{i=0} a_i x^i = a_0 + a_1 x +a_2 x^2 + \cdots + a_n x^n,</me>
-		donde <m>a_i \in R</m> y <m>a_n \neq 0</m>, se llama <term>polinomio sobre <m>R</m></term><idx><h>Polinomio</h><h>definición de</h></idx> con <term>indeterminada</term><idx><h>Indeterminada</h></idx> <m>x</m>.  Los elementos <m>a_0, a_1, \ldots, a_n</m> se llaman <term>coeficientes</term> de <m>f</m>.  El coeficiente <m>a_n</m> se llama <term>coeficiente líder</term><idx><h>Polinomio</h><h>coeficiente líder del</h></idx>.  Un polinomio se llama <term>mónico</term><idx><h>Polinomio mónico</h></idx><idx><h>Mónico</h><h>polinomio</h></idx> si su coeficiente líder es 1.  Si <m>n</m> es el mayor entero no negativo para el que <m>a_n \neq 0</m>, decimos que el <term>grado</term><idx><h>Polinomio</h><h>grado de</h></idx> de <m>f</m> es <m>n</m> y escribimos <m>\deg f(x) = n</m>.  <notation><usage>\deg f(x)</usage><description>grado de un polinomio</description></notation>  Si no existe tal <m>n</m><mdash />es decir, si <m>f=0</m> es el polinomio cero<mdash />entonces el grado de <m>f</m> se define como <m>-\infty</m>.  Denotaremos por <m>R[x]</m> al conjunto de todos los polinomios con coeficientes en un anillo <m>R</m>.  <notation><usage>R[x]</usage><description>anillo de polinomios sobre un anillo <m>R</m></description></notation>  Dos polinomios son iguales exactamente cuando sus coeficientes correspondientes son iguales; es decir, si    
+		donde <m>a_i \in R</m> y <m>a_n \neq 0</m>, se llama <term>polinomio sobre <m>R</m></term><idx><h>Polinomio</h><h>definición de</h></idx> con <term>indeterminada</term><idx><h>Indeterminada</h></idx> <m>x</m>.  Los elementos <m>a_0, a_1, \ldots, a_n</m> se llaman <term>coeficientes</term> de <m>f</m>.  El coeficiente <m>a_n</m> se llama <term>coeficiente líder</term><idx><h>Polinomio</h><h>coeficiente líder del</h></idx>.  Un polinomio se llama <term>mónico</term><idx><h>Polinomio mónico</h></idx><idx><h>Mónico</h><h>polinomio</h></idx> si su coeficiente líder es 1.  Si <m>n</m> es el mayor entero no negativo para el que <m>a_n \neq 0</m>, decimos que el <term>grado</term><idx><h>Polinomio</h><h>grado de</h></idx> de <m>f</m> es <m>n</m> y escribimos <m>\deg f(x) = n</m>.  <notation><usage><m>\deg f(x)</m></usage><description>grado de un polinomio</description></notation>  Si no existe tal <m>n</m><mdash />es decir, si <m>f=0</m> es el polinomio cero<mdash />entonces el grado de <m>f</m> se define como <m>-\infty</m>.  Denotaremos por <m>R[x]</m> al conjunto de todos los polinomios con coeficientes en un anillo <m>R</m>.  <notation><usage><m>R[x]</m></usage><description>anillo de polinomios sobre un anillo <m>R</m></description></notation>  Dos polinomios son iguales exactamente cuando sus coeficientes correspondientes son iguales; es decir, si    
 			<md>
 				<mrow>p(x) &amp; = a_0 + a_1 x + \cdots + a_n x^n</mrow>
 				<mrow>q(x) &amp; = b_0 + b_1 x + \cdots + b_m x^m,</mrow>
@@ -133,11 +133,11 @@
 <!-- Changed p and q to p(x) and q(x).  Suggested by  P. Diethelm. -->
 <!-- TWJ 24/4/2013 -->
 
-		<p>También queremos considerar polinomios en dos o más variables, tales como <m>x^2 - 3 x y + 2 y^3</m>.  Sea <m>R</m> un anillo y supongamos que tenemos dos variables <m>x</m> e <m>y</m>.  Ciertamente podemos formar el anillo <m>(R[x])[y]</m>.  Es directo, aunque quizás tedioso, demostrar que <m>(R[x])[y] \cong R([y])[x]</m>.  Identificaremos estos dos anillos por medio de este isomorfismo y simplemente escribiremos <m>R[x,y]</m>.  El anillo <m>R[x, y]</m> se llama <term>anillo de polinomios en dos variables <m>x</m> e <m>y</m> con coeficientes en </term> <m>R</m>.  Podemos definir similarmente el <term>anillo de polinomios en</term><idx><h>Polinomio en<m>n</m> variables</h></idx> <m>n</m> <term>variables con coeficientes en</term> <m>R</m>.  Denotaremos este anillo por <m>R[x_1, x_2, \ldots, x_n]</m>. <notation><usage>R[x_1, x_2, \ldots, x_n]</usage><description>anillo de polinomios en <m>n</m> variables</description></notation></p>
+		<p>También queremos considerar polinomios en dos o más variables, tales como <m>x^2 - 3 x y + 2 y^3</m>.  Sea <m>R</m> un anillo y supongamos que tenemos dos variables <m>x</m> e <m>y</m>.  Ciertamente podemos formar el anillo <m>(R[x])[y]</m>.  Es directo, aunque quizás tedioso, demostrar que <m>(R[x])[y] \cong R([y])[x]</m>.  Identificaremos estos dos anillos por medio de este isomorfismo y simplemente escribiremos <m>R[x,y]</m>.  El anillo <m>R[x, y]</m> se llama <term>anillo de polinomios en dos variables <m>x</m> e <m>y</m> con coeficientes en </term> <m>R</m>.  Podemos definir similarmente el <term>anillo de polinomios en</term><idx><h>Polinomio en<m>n</m> variables</h></idx> <m>n</m> <term>variables con coeficientes en</term> <m>R</m>.  Denotaremos este anillo por <m>R[x_1, x_2, \ldots, x_n]</m>. <notation><usage><m>R[x_1, x_2, \ldots, x_n]</m></usage><description>anillo de polinomios en <m>n</m> variables</description></notation></p>
 
 		<theorem xml:id="theorem-poly-3">
 			<statement>
-				<p>Sea <m>R</m> un anillo conmutativo con identidad y sea <m>\alpha \in R</m>.  Entonces tenemos un homomorfismo de anillos <m>\phi_{\alpha} : R[x] \rightarrow R</m> definido por <notation><usage>\phi_\alpha</usage><description>homomorfismo de evaluación en <m>\alpha</m></description></notation>
+				<p>Sea <m>R</m> un anillo conmutativo con identidad y sea <m>\alpha \in R</m>.  Entonces tenemos un homomorfismo de anillos <m>\phi_{\alpha} : R[x] \rightarrow R</m> definido por <notation><usage><m>\phi_\alpha</m></usage><description>homomorfismo de evaluación en <m>\alpha</m></description></notation>
 					<me>\phi_{\alpha} (p(x) ) = p( \alpha ) = a_n \alpha^n + \cdots + a_1 \alpha + a_0,</me>
 				donde <m>p( x ) = a_n x^n + \cdots + a_1 x + a_0</m>.</p>
 			</statement>
@@ -159,7 +159,7 @@
 	<section xml:id="section-poly-division-algorithm">
 		<title>El Algoritmo de División</title>
 
-		<p>Recuerde que el algoritmo de división para enteros (Teorema<nbsp /><xref ref="theorem-integers-division_algorithm" />) dice que si <m>a</m> y <m>b</m> son enteros con  <m>b \gt 0</m>, entonces existen únicos enteros <m>q</m> y <m>r</m> tales que <m>a = bq+r</m>, con <m>0 \leq r \lt b</m>.  Un teorema similar existe para polinomios.	El algoritmo de división para polinomios tiene varias consecuencias importantes. Como su demostración es muy similar a la demostración correspondiente para los enteros, resulta conveniente revisar el Teorema<nbsp /><xref ref="theorem-integers-division_algorithm" /> antes de seguir.</p>
+		<p>Recuerde que el algoritmo de división para enteros (<xref ref="theorem-integers-division_algorithm" />) dice que si <m>a</m> y <m>b</m> son enteros con  <m>b \gt 0</m>, entonces existen únicos enteros <m>q</m> y <m>r</m> tales que <m>a = bq+r</m>, con <m>0 \leq r \lt b</m>.  Un teorema similar existe para polinomios.	El algoritmo de división para polinomios tiene varias consecuencias importantes. Como su demostración es muy similar a la demostración correspondiente para los enteros, resulta conveniente revisar el <xref ref="theorem-integers-division_algorithm" /> antes de seguir.</p>
 
 		<theorem>
 			<title>Algoritmo de División</title>
@@ -342,7 +342,7 @@
 			<proof>
 				<p>Procederemos por inducción sobre el grado de <m>p(x)</m>. Si <m>\deg p(x) = 0</m>, entonces <m>p(x)</m> es un polinomio constante y no tiene ceros.  Si <m>\deg p(x) = 1</m>, entonces <m>p(x) = ax +b</m> para ciertos <m>a</m> y <m>b</m> en <m>F</m>. Si <m>\alpha_1</m> y <m>\alpha_2</m> son ceros de <m>p(x)</m>, entonces <m>a\alpha_1 + b = a\alpha_2 +b</m> y <m>\alpha_1 = \alpha_2</m>.</p>
  
-				<p>Ahora supongamos que <m>\deg p(x) \gt 1</m>. Si <m>p(x)</m> no tiene ceros en <m>F</m>, estamos listos.  Por otra parte, si <m>\alpha</m> es un cero de <m>p(x)</m>, entonces <m>p(x) = (x - \alpha ) q(x)</m> para cierto <m>q(x) \in F[x]</m> por el Corolario<nbsp /><xref ref="corollary-poly-factor" />. El grado de <m>q(x)</m> es <m>n-1</m> por la Proposición<nbsp /><xref ref="proposition-poly-integral-domain" />. Sea <m>\beta</m> algún otro cero de <m>p(x)</m> distinto de <m>\alpha</m>. Entonces <m>p(\beta) = (\beta - \alpha) q(\beta) = 0</m>. Como <m>\alpha \neq \beta</m> y <m>F</m> es un cuerpo, <m>q(\beta ) = 0</m>. Por la hipótesis de inducción, <m>q(x)</m> puede tener a lo sumo <m>n -1</m> ceros distintos en <m>F</m>. Por lo tanto, <m>p(x)</m> tiene a lo sumo <m>n</m> ceros distintos en <m>F</m>.</p>
+				<p>Ahora supongamos que <m>\deg p(x) \gt 1</m>. Si <m>p(x)</m> no tiene ceros en <m>F</m>, estamos listos.  Por otra parte, si <m>\alpha</m> es un cero de <m>p(x)</m>, entonces <m>p(x) = (x - \alpha ) q(x)</m> para cierto <m>q(x) \in F[x]</m> por el <xref ref="corollary-poly-factor" />. El grado de <m>q(x)</m> es <m>n-1</m> por la <xref ref="proposition-poly-integral-domain" />. Sea <m>\beta</m> algún otro cero de <m>p(x)</m> distinto de <m>\alpha</m>. Entonces <m>p(\beta) = (\beta - \alpha) q(\beta) = 0</m>. Como <m>\alpha \neq \beta</m> y <m>F</m> es un cuerpo, <m>q(\beta ) = 0</m>. Por la hipótesis de inducción, <m>q(x)</m> puede tener a lo sumo <m>n -1</m> ceros distintos en <m>F</m>. Por lo tanto, <m>p(x)</m> tiene a lo sumo <m>n</m> ceros distintos en <m>F</m>.</p>
 			</proof>
 		</corollary>
 
@@ -384,7 +384,7 @@
 			</proof>
 		</proposition>
  
-		<p>Notemos la similaridad entre la demostración de la Proposición<nbsp /><xref ref="proposition-poly-gcd" /> y la demostración del Teorema<nbsp /><xref ref="theorem-integers-gcd" />.</p>
+		<p>Notemos la similaridad entre la demostración de la <xref ref="proposition-poly-gcd" /> y la demostración del <xref ref="theorem-integers-gcd" />.</p>
 
 	</section>
 
@@ -434,7 +434,7 @@
 					<p>Sea <m>p(x) \in {\mathbb Z}[x]</m> un polinomio mónico tal que <m>p(x)</m> se factoriza como producto de dos polinomios <m>\alpha(x)</m> y <m>\beta(x)</m> en <m>{\mathbb Q}[x]</m>, donde los grados de <m>\alpha(x)</m> y de <m>\beta(x)</m> son menores que el grado de <m>p(x)</m>. Entonces <m>p(x) = a(x) b(x)</m>, donde <m>a(x)</m> y <m>b(x)</m> son polinomios mónicos en <m>{\mathbb Z}[x]</m> con <m>\deg \alpha(x) = \deg a(x)</m> y <m>\deg \beta(x) = \deg b(x)</m>.</p>
 				</statement>
 				<proof>
-					<p>Por el Lema<nbsp /><xref ref="lemma-poly-integer-coef" />, podemos suponer que
+					<p>Por el <xref ref="lemma-poly-integer-coef" />, podemos suponer que
 						<md>
 							<mrow>\alpha(x)  &amp; =  \frac{c_1}{d_1} (a_0 + a_1 x + \cdots + a_m x^m ) = \frac{c_1}{d_1} \alpha_1(x)</mrow>
 							<mrow>\beta(x)  &amp; =  \frac{c_2}{d_2} (b_0 + b_1 x + \cdots + b_n x^n)  = \frac{c_2}{d_2} \beta_1(x),</mrow>
@@ -463,7 +463,7 @@
 			<example xml:id="example-poly-factor">
 				<p>Sea <m>p(x) = x^4 - 2 x^3 + x + 1</m>. Demostraremos que <m>p(x)</m> es irreducible sobre <m>{\mathbb Q}[x]</m>.  Supongamos que <m>p(x)</m> es reducible. Entonces ya sea <m>p(x)</m> tiene un factor lineal, digamos <m>p(x) = (x - \alpha) q(x)</m>, donde <m>q(x)</m> es un polinomio de grado tres, o  <m>p(x)</m> tiene dos factores cuadráticos.</p>
 
-				<p>Si <m>p(x)</m> tiene un factor lineal en <m>{\mathbb Q}[x]</m>, entonces tiene un cero en <m>{\mathbb Z}</m>.  Por el Corolario<nbsp /><xref ref="corollary-rational-roots-theorem" />, cualquier cero debe dividir a 1 y por lo tanto debe ser <m>\pm 1</m>; pero, <m>p(1) = 1</m> y <m>p(-1)= 3</m>. Así hemos descartado la posibilidad de que <m>p(x)</m> tenga un factor lineal.</p>
+				<p>Si <m>p(x)</m> tiene un factor lineal en <m>{\mathbb Q}[x]</m>, entonces tiene un cero en <m>{\mathbb Z}</m>.  Por el <xref ref="corollary-rational-roots-theorem" />, cualquier cero debe dividir a 1 y por lo tanto debe ser <m>\pm 1</m>; pero, <m>p(1) = 1</m> y <m>p(-1)= 3</m>. Así hemos descartado la posibilidad de que <m>p(x)</m> tenga un factor lineal.</p>
 	 
 				<p>Por lo tanto, si <m>p(x)</m> es reducible debe ser como producto de dos factores cuadráticos, digamos
 					<md>
@@ -511,7 +511,7 @@
 	<!-- Suggested by  P. Diethelm. -->
 	<!-- TWJ 24/4/2013 -->
 	 
-			<p>El Criterio de Eisenstein es más útil para construir polinomios irreducibles de cierto grado sobre <m>{\mathbb Q}</m> que para determinar la irreducibilidad de un polinomio arbitrario en <m>{\mathbb Q}[x]</m>: dado cualquier polinomio, no es muy probable que podamos aplicar el  Criterio de Eisenstein.  La importancia del Teorema<nbsp /><xref ref="theorem-eisenstein" /> es que ahora tenemos una herramienta sencilla para generar polinomios irreducibles de cualquier grado.</p>
+			<p>El Criterio de Eisenstein es más útil para construir polinomios irreducibles de cierto grado sobre <m>{\mathbb Q}</m> que para determinar la irreducibilidad de un polinomio arbitrario en <m>{\mathbb Q}[x]</m>: dado cualquier polinomio, no es muy probable que podamos aplicar el  Criterio de Eisenstein.  La importancia del <xref ref="theorem-eisenstein" /> es que ahora tenemos una herramienta sencilla para generar polinomios irreducibles de cualquier grado.</p>
 			
 		</introduction>
 	 
@@ -548,11 +548,15 @@
 					<p>Supongamos que <m>p(x)</m> genera un ideal maximal de <m>F[x]</m>. Entonces <m>\langle p(x) \rangle</m> es también un ideal primo de <m>F[x]</m>. Como un ideal maximal debe estar propiamente contenido en <m>F[x]</m>, <m>p(x)</m> no puede ser un polinoio constante. Supongamos que  <m>p(x)</m> se factoriza en dos polinomios de grado menor, digamos <m>p(x) = f(x) g(x)</m>. Como <m>\langle p(x) \rangle</m> es un ideal primo uno de estos factores, digamos <m>f(x)</m>, está en <m>\langle p(x) \rangle</m> y por lo tanto es un múltiplo de <m>p(x)</m>. Pero esto implicaría que <m>\langle p(x) \rangle \subset \langle f(x) \rangle</m>, lo que es imposible pues <m>\langle p(x) \rangle</m> es maximal.</p>
 	 
 	 
-					<p>Recíprocamente, supongamos que <m>p(x)</m> es irreducible sobre <m>F[x]</m>. Sea <m>I</m> un ideal en <m>F[x]</m> que contenga <m>\langle p(x) \rangle</m>. Por el Teorema<nbsp /><xref ref="theorem-poly-principal-ideal" />, <m>I</m> es un ideal principal; luego, <m>I = \langle f(x) \rangle</m> para algún <m>f(x) \in F[x]</m>. Como <m>p(x) \in I</m>, debe ser que <m>p(x) = f(x) g(x)</m> para algún <m>g(x) \in F[x]</m>. Pero, <m>p(x)</m> es irreducible; luego, ya sea <m>f(x)</m> o <m>g(x)</m> es un polinomio constante. Si <m>f(x)</m> es constante, entonces <m>I = F[x]</m> y estamos listos.  Si <m>f(x)</m> no es constante, entonces <m>f(x)</m> es un múltiplo constante de <m>p(x)</m> e <m>I = \langle p(x) \rangle</m>. Por lo tanto, no existen ideales propios de <m>F[x]</m> que contengan propiamente a <m>\langle p(x)\rangle</m>.</p>
+					<p>Recíprocamente, supongamos que <m>p(x)</m> es irreducible sobre <m>F[x]</m>. Sea <m>I</m> un ideal en <m>F[x]</m> que contenga <m>\langle p(x) \rangle</m>. Por el <xref ref="theorem-poly-principal-ideal" />, <m>I</m> es un ideal principal; luego, <m>I = \langle f(x) \rangle</m> para algún <m>f(x) \in F[x]</m>. Como <m>p(x) \in I</m>, debe ser que <m>p(x) = f(x) g(x)</m> para algún <m>g(x) \in F[x]</m>. Pero, <m>p(x)</m> es irreducible; luego, ya sea <m>f(x)</m> o <m>g(x)</m> es un polinomio constante. Si <m>f(x)</m> es constante, entonces <m>I = F[x]</m> y estamos listos.  Si <m>f(x)</m> no es constante, entonces <m>f(x)</m> es un múltiplo constante de <m>p(x)</m> e <m>I = \langle p(x) \rangle</m>. Por lo tanto, no existen ideales propios de <m>F[x]</m> que contengan propiamente a <m>\langle p(x)\rangle</m>.</p>
 				</proof>
 			</theorem>
 
-			<xi:include href="./sage/poly-info.xml" />
+			<paragraphs>
+				<title>Sage</title>
+			
+				<p>Los anillos de polinomios son muy importantes para el álgebra computacional, y Sage permite calcular de manera fácil con polinomios, tanto sobre anillos como sobre cuerpos.  Y es trivial verificar si un polinomio es irreducible.</p>
+			</paragraphs>
  
 		</subsection>
 
@@ -579,7 +583,342 @@
 
 	</section>
 
-	<xi:include href="./exercises/poly.xml" />	
+	<exercises xml:id="exercises-poly">
+		<title>Ejercicios</title>
+	
+		<exercise number="1">
+			<statement>
+				<p>Liste todos los polinomios de grado menor o igual a 3 en <m>{\mathbb Z}_2[x]</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+				<p>Calcule cada uno de los siguientes.
+					<ol>
+					 
+						<li><p><m>(5x^2 + 3x - 4) + (4x^2 - x + 9)</m> in <m>{\mathbb Z}_{12}</m></p></li>
+						 
+						<li><p><m>(5x^2 + 3x - 4) (4x^2 - x + 9)</m> in <m>{\mathbb Z}_{12}</m></p></li>
+						 
+						<li><p><m>(7x^3 + 3x^2 - x) + (6x^2 - 8x + 4)</m> in <m>{\mathbb Z}_9</m></p></li>
+						 
+						<li><p><m>(3x^2 + 2x - 4) + (4x^2 + 2)</m> in <m>{\mathbb Z}_5</m> </p></li>
+						 
+						<li><p><m>(3x^2 + 2x - 4) (4x^2 + 2)</m> in <m>{\mathbb Z}_5</m></p></li>
+						 
+						<li><p><m>(5x^2 + 3x - 2)^2</m> in <m>{\mathbb Z}_{12}</m></p></li>
+					 
+					</ol></p>
+			</statement>
+			<hint>
+				<p>(a) <m>9x^2 + 2x + 5</m>; (b) <m>8x^4 + 7x^3 + 2x^2 + 7x</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+					<p>Use el algoritmo de división para encontrar <m>q(x)</m> y <m>r(x)</m> tales que <m>a(x) = q(x) b(x) + r(x)</m> con <m>\deg r(x) \lt \deg b(x)</m> para cada uno de los siguientes pares de polinomios.  
+					<ol>
+					 
+						<li><p><m>a(x) = 5 x^3 + 6x^2 -  3 x + 4</m> y <m>b(x) = x - 2</m> in <m>{\mathbb Z}_7[x]</m></p></li>
+						 
+						<li><p><m>a(x) = 6 x^4 - 2 x^3 +  x^2 - 3 x + 1</m> y <m>b(x) = x^2 + x - 2</m> in <m>{\mathbb Z}_7[x]</m></p></li>
+						 
+						<li><p><m>a(x) = 4 x^5 - x^3 + x^2 + 4</m> y <m>b(x) = x^3 - 2</m> in <m>{\mathbb Z}_5[x]</m> </p></li>
+						 
+						<li><p><m>a(x) = x^5 + x^3 -x^2 - x</m> y <m>b(x) = x^3 + x</m> in <m>{\mathbb Z}_2[x]</m></p></li>
+					 
+					</ol></p>
+			</statement>
+			<hint>
+				<p>(a) <m>5 x^3 + 6 x^2 - 3 x + 4 = (5 x^2 + 2x + 1)(x -2) + 6</m>; (c) <m>4x^5 - x^3 + x^2 + 4 = (4x^2 + 4)(x^3 + 3) + 4x^2 + 2</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="4">
+			<statement>
+				<p>Encuentre el máximo común divisor para cada uno de los siguientes pares <m>p(x)</m> y <m>q(x)</m> de polinomios. Si <m>d(x) = \gcd( p(x), q(x) )</m>, encuentre dos polinomios <m>a(x)</m> y <m>b(x)</m> tales que <m>a(x) p(x) + b(x) q(x) = d(x)</m>. 
+					<ol>
+				 
+						<li><p><m>p(x) = x^3 - 6x^2 + 14x - 15</m> y <m>q(x) = x^3 - 8x^2 + 21x - 18</m>, donde <m>p(x), q(x) \in {\mathbb Q}[x]</m></p></li> 
+						 
+						<li><p><m>p(x) = x^3 + x^2 - x + 1</m> y <m>q(x) = x^3 + x - 1</m>, donde <m>p(x), q(x) \in {\mathbb Z}_2[x]</m></p></li> 
+						 
+						<li><p><m>p(x) = x^3 + x^2 - 4x + 4</m> y <m>q(x) = x^3 + 3 x -2</m>, donde <m>p(x), q(x) \in {\mathbb Z}_5[x]</m></p></li> 
+						 
+						<li><p><m>p(x) = x^3 - 2 x + 4</m> y <m>q(x) = 4 x^3 + x + 3</m>, donde <m>p(x), q(x) \in {\mathbb Q}[x]</m></p></li> 
+	
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="5">
+			<statement>
+				<p>Encuentre todos los ceros de cada uno de los polinomios siguientes.
+					<ol cols="2">
+	
+						<li><p><m>5x^3 + 4x^2 - x + 9</m> en <m>{\mathbb Z}_{12}</m></p></li>
+	
+						<li><p><m>3x^3 - 4x^2 - x + 4</m> en <m>{\mathbb Z}_{5}</m></p></li>
+	
+						<li><p><m>5x^4 + 2x^2 - 3</m> en <m>{\mathbb Z}_{7}</m></p></li>
+	
+						<li><p><m>x^3 + x + 1</m> en <m>{\mathbb Z}_2</m></p></li>
+	
+					</ol></p>
+			</statement>
+			<hint>
+				<p>(a) No tiene ceros en <m>{\mathbb Z}_{12}</m>; (c) 3, 4.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="6">
+			<statement>
+				<p>Encuentre todas las unidades en <m>{\mathbb Z}[x]</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="7">
+			<statement>
+				<p>Encuentre una unidad <m>p(x)</m> en <m>{\mathbb Z}_4[x]</m> tal que <m>\deg p(x) \gt 1</m>.</p>
+			</statement>
+			<hint>
+				<p>Considere <m>(2x + 1)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="8">
+			<statement>
+				<p>¿Cuáles de los siguientes polinomios son irreducibles sobre <m>{\mathbb Q}[x]</m>?
+					<ol cols="2">
+	
+						<li><p><m>x^4 - 2x^3 + 2x^2 + x + 4</m></p></li>
+	
+						<li><p><m>x^4 - 5x^3 + 3x - 2</m></p></li>
+	
+						<li><p><m>3x^5 - 4x^3 - 6x^2 + 6</m></p></li>
+	
+						<li><p><m>5x^5 - 6x^4 - 3x^2 + 9 x - 15</m></p></li>
+	
+					</ol></p>
+			</statement>
+			<hint>
+				<p>(a) Reducible; (c) irreducible.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="9">
+			<statement>
+				<p>Encuentre todos los polinomios irreducibles de grado 2 y 3 en <m>{\mathbb Z}_2[x]</m>. </p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="10">
+			<statement>
+				<p>Dé dos factorizaciones diferentes de <m>x^2 + x + 8</m> en <m>{\mathbb Z}_{10}[x]</m>.</p>
+			</statement>
+			<hint>
+				<p>Una factorización es <m>x^2 + x + 8 = (x + 2)(x + 9)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="11">
+			<statement>
+				<p>Demuestre o refute: Existe un polinomio <m>p(x)</m> en <m>{\mathbb Z}_6[x]</m> de grado <m>n</m> con más de <m>n</m> ceros distintos.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="12">
+			<statement>
+				<p>Si <m>F</m> es un cuerpo, muestre que <m>F[x_1, \ldots, x_n]</m> es un dominio integral. </p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish solution.</todo>
+	
+		<exercise number="13">
+			<statement>
+				<p>Muestre que el algoritmo de división no se cumple en <m>{\mathbb Z}[x]</m>.  ¿Por qué falla?</p>
+			</statement>
+			<hint>
+				<p>Los enteros <m>\mathbb Z</m> no forman un cuerpo.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="14">
+			<statement>
+				<p>Demuestre o refute: <m>x^p + a</m> es irreducible para cualquier <m>a \in {\mathbb Z}_p</m>, donde <m>p</m> es primo.</p>
+			</statement>
+			<hint>
+				<p>Falso.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="15">
+			<statement>
+				<p>Sea <m>f(x)</m> irreducible en <m>F[x]</m>, donde <m>F</m> es un cuerpo.  Si <m>f(x) \mid p(x)q(x)</m>, demuestre que ya sea <m>f(x) \mid p(x)</m> o <m>f(x) \mid q(x)</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="16">
+			<statement>
+				<p>Supongamos que <m>R</m> y <m>S</m> son anillos isomorfos.  Demuestre que <m>R[x] \cong S[x]</m>.</p>
+			</statement>
+			<hint>
+				<p>Sea <m>\phi : R \rightarrow S</m> un isomorfismo. Defina <m>\overline{\phi} : R[x] \rightarrow S[x]</m> como <m>\overline{\phi}(a_0 + a_1 x + \cdots + a_n x^n) = \phi(a_0) + \phi(a_1) x + \cdots + \phi(a_n) x^n</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="17">
+			<statement>
+				<p>Sea <m>F</m> un cuerpo y <m>a \in F</m>.  Si <m>p(x) \in F[x]</m>, muestre que <m>p(a)</m> es el resto obtenido al dividir <m>p(x)</m> por <m>x - a</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="18">
+			<title>Teorema de la Raíz Racional</title>
+			<statement>
+				<p>Sea
+					<me>p(x) = a_n x^n + a_{n - 1}x^{n - 1} + \cdots + a_0 \in \mathbb Z[x],</me>
+				donde <m>a_n \neq 0</m>.  Demuestre que si <m>p(r/s) = 0</m>, donde <m>\gcd(r, s) = 1</m>, entonces <m>r \mid a_0</m> y <m>s \mid a_n</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="19">
+			<statement>
+				<p>Sea <m>{\mathbb Q}^*</m> el grupo multiplicativo de los números racionales positivos. Demuestre que <m>{\mathbb Q}^*</m> es isomorfo a <m>( {\mathbb Z}[x], +)</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish the proof.</todo>
+	
+		<exercise number="20" xml:id="exercise-poly-cyclotomic-polynomials">
+			<title>Polinomios Ciclotómicos</title>
+			<statement>
+				<p>El polinomio
+					<me>\Phi_n(x) = \frac{x^n - 1}{x - 1} = x^{n - 1} + x^{n - 2} + \cdots + x + 1</me>
+				se llama <term>polinomio ciclotómico.</term> Muestre que <m>\Phi_p(x)</m> es irreducible sobre <m>{\mathbb Q}</m> para cualquier primo <m>p</m>. </p>
+			</statement>
+			<hint>
+				<p>El polinomio <m>\Phi_n(x+1)</m> es irreducible sobre <m>{\mathbb Q}</m> si y solo si <m>\Phi_n(x)</m> es irreducible sobre <m>{\mathbb Q}</m>. </p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Finish the proof.</todo>
+	
+		<exercise number="21">
+			<statement>
+				<p>Si <m>F</m> es un  cuerpo, muestre que existen infinitos polinomios irreducibles en <m>F[x]</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish the proof.</todo>
+	
+		<exercise number="22">
+			<statement>
+				<p>Sea <m>R</m> un anillo conmutativo con identidad. Demuestre que la multiplicación en <m>R[x]</m> es conmutativa.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="23">
+			<statement>
+				<p>Sea <m>R</m> un anillo conmutativo con identidad. Demuestre que la multiplicación en <m>R[x]</m> es distributiva.</p>
+			</statement>
+	
+			
+		</exercise>
+	
+		<exercise number="24">
+			<statement>
+				<p>Demuestre que <m>x^p - x</m> tiene <m>p</m> ceros distintos en <m>{\mathbb Z}_p</m>, para cualquier primo <m>p</m>. Concluya que 
+					<me>x^p - x = x(x - 1)(x - 2) \cdots (x - (p - 1)).</me></p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="25">
+			<statement>
+				<p>Sea <m>F</m> un cuerpo y sea <m>f(x) = a_0 + a_1 x + \cdots + a_n x^n</m> en <m>F[x]</m>. Defina <m>f'(x) = a_1  + 2 a_2 x + \cdots + n a_n x^{n - 1}</m> como la <term>derivada</term> de <m>f(x)</m>. 
+					<ol>
+					 
+					<li><p>Demuestre que
+						<me>(f + g)'(x) = f'(x) + g'(x).</me>
+					Concluya que podemos definir un homomorfismo de grupos abelianos <m>D : F[x] \rightarrow F[x]</m> como <m>D(f(x)) = f'(x)</m>.</p></li>
+					 
+					<li><p>Calcule el núcleo de <m>D</m> si <m>\chr F = 0</m>.</p></li>
+					 
+					<li><p>Calcule el núcleo de <m>D</m> si <m>\chr F = p</m>.</p></li>
+					 
+					<li><p>Demuestre que
+						<me>(fg)'(x) = f'(x)g(x) + f(x) g'(x).</me></p></li>
+					 
+					<li><p>Supongamos que es posible factorizar un polinomio <m>f(x) \in F[x]</m> en factores lineales, digamos
+						<me>f(x) = a(x - a_1) (x - a_2) \cdots ( x - a_n).</me>
+					Demuestre que <m>f(x)</m> no tiene factores repetidos si y solo si <m>f(x)</m> y <m>f'(x)</m> son relativamente primos.</p></li>
+					 
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="26">
+			<statement>
+				<p>Sea <m>F</m> un cuerpo. Muestre que <m>F[x]</m> nunca es un cuerpo.</p>
+			</statement>
+			<hint>
+				<p>Ecuentre un ideal propio no trivial en <m>F[x]</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="27">
+			<statement>
+				<p>Sea <m>R</m> un dominio integral. Demuestre que <m>R[x_1, \ldots, x_n]</m> es un dominio integral.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="28">
+			<statement>
+				<p>Sea <m>R</m> un anillo conmutativo con identidad. Muestre que <m>R[x]</m> tiene un subanillo <m>R'</m> isomorfo a <m>R</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="29">
+			<statement>
+				<p>Sean <m>p(x)</m> y <m>q(x)</m> polinomios en <m>R[x]</m>, donde <m>R</m> es un anillo conmutativo con identidad. Demuestre que <m>\deg( p(x) + q(x) ) \leq \max( \deg p(x), \deg q(x) )</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+	</exercises>
+	
 
 	<exercises xml:id="poly-exercises-cubics-quartics">
 		<title>Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</title>
@@ -690,16 +1029,16 @@
 
 		<exercise xml:id="exercise-cubic-poly-11">
 			<statement>
-				<p>Muestre que el lado derecho del Ejercicio<nbsp /><xref ref="exercise-cubic-poly-10" /> puede ser puesto en la forma <m>(my + k)^2</m> si y solo si
+				<p>Muestre que el lado derecho del <xref ref="exercise-cubic-poly-10" /> puede ser puesto en la forma <m>(my + k)^2</m> si y solo si
 					<me>q^2 - 4(z - p)\left( \frac{1}{4} z^2 - r \right) = 0.</me></p>
 			</statement>
 		</exercise>
 
 		<exercise>
 			<statement>
-				<p>Del Ejercicio<nbsp /><xref ref="exercise-cubic-poly-11" /> obtenga la <term>ecuación cúbica resolvente</term><idx><h>Resolvente cúbica</h></idx>
+				<p>Del <xref ref="exercise-cubic-poly-11" /> obtenga la <term>ecuación cúbica resolvente</term><idx><h>Resolvente cúbica</h></idx>
 					<me>z^3 - pz^2 - 4rz + (4pr - q^2) = 0.</me>
-				Resolviendo la resolvente cúbica, ponga la ecuación encontrada en el Ejercicio<nbsp /><xref ref="exercise-cubic-poly-10" /> en la forma
+				Resolviendo la resolvente cúbica, ponga la ecuación encontrada en el <xref ref="exercise-cubic-poly-10" /> en la forma
 					<me>\left( y^2 + \frac{1}{2} z \right)^2 = (my + k)^2</me>
 				para obtener la solución de la ecuación cuártica.</p>
 			</statement>
@@ -724,8 +1063,563 @@
 
 	</exercises>
 
-	<xi:include href="./sage/poly-sage.xml" />
-	<xi:include href="./sage/poly-sage-exercises.xml" />
-
+	<section xml:id="poly-sage">
+		<title>Sage</title>
+	
+		<introduction>
+	
+			<p>Sage es particularmente bueno para construir, analizar y manipular anillos de polinomios. Hemos visto algo de esto en el capítulo
+			 anterior.  Comencemos creando tres anillos de polinomios y comprobemos algunas de sus propiedades básicas.  Existen difierentes formas de construir anillos de polinomios, pero la sintaxis usada acá es la más directa.</p>
+	
+		</introduction>
+	
+	
+		<subsection>
+			<title>Anillos de Polinomios y sus Elementos</title>
+	
+			<sage>
+			<input>
+			R.&lt;x&gt; = Integers(8)[]; R
+			</input>
+			<output>
+			Univariate Polynomial Ring in x over Ring of integers modulo 8
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			S.&lt;y&gt; = ZZ[]; S
+			</input>
+			<output>
+			Univariate Polynomial Ring in y over Integer Ring
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			T.&lt;z&gt; = QQ[]; T
+			</input>
+			<output>
+			Univariate Polynomial Ring in z over Rational Field
+			</output>
+			</sage>
+	
+			<p>Las propiedades básicas de los anillos se pueden usar en estos ejemplos.</p>
+	
+			<sage>
+			<input>
+			R.is_finite()
+			</input>
+			<output>
+			False
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			R.is_integral_domain()
+			</input>
+			<output>
+			False
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			S.is_integral_domain()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			T.is_field()
+			</input>
+			<output>
+			False
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			R.characteristic()
+			</input>
+			<output>
+			8
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			T.characteristic()
+			</input>
+			<output>
+			0
+			</output>
+			</sage>
+	
+			<p>Con la construcción y la sintaxis de arriba, las variables se pueden usar para crear elementos del anillo de polinomios sin coercionarlos explícitamente (aunque tenemos que tener cuidado con los polinomios constantes).</p>
+	
+			<sage>
+			<input>
+			y in S
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			x in S
+			</input>
+			<output>
+			False
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			q = (3/2) + (5/4)*z^2
+			q in T
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			3 in S
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			r = 3
+			r.parent()
+			</input>
+			<output>
+			Integer Ring
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			s = 3*y^0
+			s.parent()
+			</input>
+			<output>
+			Univariate Polynomial Ring in y over Integer Ring
+			</output>
+			</sage>
+	
+			<p>Los polinomios pueden ser evaluados como si fueran funciones, de manera que podemos imitar el homomorfismo de evaluación.</p>
+	
+			<sage>
+			<input>
+			p = 3 + 5*x + 2*x^2
+			p.parent()
+			</input>
+			<output>
+			Univariate Polynomial Ring in x over Ring of integers modulo 8
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			p(1)
+			</input>
+			<output>
+			2
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			[p(t) for t in Integers(8)]
+			</input>
+			<output>
+			[3, 2, 5, 4, 7, 6, 1, 0]
+			</output>
+			</sage>
+	
+			<p>Notemos que <c>p</c> es un polinomio de grado dos, sin embargo podemos verificar a fuerza-bruta que solo tiene una raíz, contrario a nuestra expectativa usual.  Puede ser incluso más inusual.</p>
+	
+			<sage>
+			<input>
+			q = 4*x^2+4*x
+			[q(t) for t in Integers(8)]
+			</input>
+			<output>
+			[0, 0, 0, 0, 0, 0, 0, 0]
+			</output>
+			</sage>
+	
+			<p>Sage puede crear y manipular anillos de polinomios en más de una variable, pero no tendremos mayores oportunidades de analizar esa funcionalidad en este curso.</p>
+	
+			<sage>
+			<input>
+			M.&lt;s, t&gt; = QQ[]; M
+			</input>
+			<output>
+			Multivariate Polynomial Ring in s, t over Rational Field
+			</output>
+			</sage>
+	
+		</subsection>
+	
+		<subsection>
+			<title>Polinomios Irreducibles</title>
+	
+			<p>Si un polinomio se factoriza o no, tomando en consideración el anillo usado para sus coeficientes, es una pregunta importante en este capítulo y en muchos de los que siguen.  Sage es capaz de factorizar, y de determinar irreducibilidad, sobre los enteros, los racionales, y los cuerpos finitos.</p>
+	
+			<p>Primero, sobre los racionales.</p>
+	
+			<sage>
+			<input>
+			R.&lt;x&gt; = QQ[]
+			p = 1/4*x^4 - x^3 + x^2 - x - 1/2
+			p.is_irreducible()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			p.factor()
+			</input>
+			<output>
+			(1/4) * (x^4 - 4*x^3 + 4*x^2 - 4*x - 2)
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			q = 2*x^5 + 5/2*x^4 + 3/4*x^3 - 25/24*x^2 - x - 1/2
+			q.is_irreducible()
+			</input>
+			<output>
+			False
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			q.factor()
+			</input>
+			<output>
+			(2) * (x^2 + 3/2*x + 3/4) * (x^3 - 1/4*x^2 - 1/3)
+			</output>
+			</sage>
+	
+			<p>Factorizar sobre los enteros no es realmente diferente a hacerlo sobre los racionales.  Esto es lo que nos dice el <xref ref="theorem-gauss-lemma" /> <mdash /> encontrar una factorización sobre los enteros puede ser convertido en encontrar una factorización sobre los racionales.  Así es en Sage, hay poca diferencia entre trabajar sobre los racionales y sobre los enteros.  Es un poco diferente cuando trabajamos sobre un cuerpo finito.  Un comentario viene más adelante.</p>
+	
+			<sage>
+			<input>
+			F.&lt;a&gt; = FiniteField(5^2)
+			S.&lt;y&gt; = F[]
+			p = 2*y^5 + 2*y^4 + 4*y^3 + 2*y^2 + 3*y + 1
+			p.is_irreducible()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			p.factor()
+			</input>
+			<output>
+			(2) * (y^5 + y^4 + 2*y^3 + y^2 + 4*y + 3)
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			q = 3*y^4+2*y^3-y+4; q.factor()
+			</input>
+			<output>
+			(3) * (y^2 + (a + 4)*y + 2*a + 3) * (y^2 + 4*a*y + 3*a)
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			r = y^4+2*y^3+3*y^2+4; r.factor()
+			</input>
+			<output>
+			(y + 4) * (y^3 + 3*y^2 + y + 1)
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			s = 3*y^4+2*y^3-y+3; s.factor()
+			</input>
+			<output>
+			(3) * (y + 1) * (y + 3) * (y + 2*a + 4) * (y + 3*a + 1)
+			</output>
+			</sage>
+	
+			<p>Para verificar estas factorizaciones, debemos calcular en el cuerpo finito, <c>F</c>, por lo que necesitamos saber como se comporta el símbolo <c>a</c>.  Este símbolo corresponde a una raíz de un polinomio de grado 2 sobre los enteros mód 5, que podemos obtener con el método <c>.modulus()</c>.</p>
+	
+			<sage>
+			<input>
+			F.modulus()
+			</input>
+			<output>
+			x^2 + 4*x + 2
+			</output>
+			</sage>
+	
+			<p>Así <m>a^2+4a+2=0</m>, o <m>a^2=-4a-3=a+2</m>.  Así, al verificar las factorizaciones, cada vez que aparezca <m>a^2</m> lo podemos reemplazar por <m>a+2</m>.  Notemos que por el <xref ref="corollary-poly-factor" /> podríamos encontrar el factor lineal de <c>r</c>, y los cuatro factores lineales de <c>s</c>, mediante una búsqueda a la bruta de sus raíces.  Esto es realizable dado que el cuerpo es finito.</p>
+	
+			<sage>
+			<input>
+			[t for t in F if r(t)==0]
+			</input>
+			<output>
+			[1]
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			[t for t in F if s(t)==0]
+			</input>
+			<output>
+			[2, 3*a + 1, 4, 2*a + 4]
+			</output>
+			</sage>
+	
+			<p>Pero, <c>q</c> se factoriza en dos polinomios de grado 2, de manera que ninguna búsqueda de raíces nos permitirá descubrir estos factores.</p>
+	
+			<p>Por el criterio de Eisenstein, podemos crear polinomios irreducibles, como en el <xref ref="example-poly-eisenstein" />.</p>
+	
+			<sage>
+			<input>
+			W.&lt;w&gt; = QQ[]
+			p = 16*w^5 - 9*w^4 +3*w^2 + 6*w -21
+			p.is_irreducible()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<p>Sobre el cuerpo <m>{\mathbb Z}_p</m>, los polinomios de Conway son elecciones canónicas para un polinomio de grado <m>n</m> irreducible sobre <m>{\mathbb Z}_p</m>.  Vea los ejercicios para aprender más sobre estos polinomios.</p>
+	
+		</subsection>
+	
+		<subsection>
+			<title>Polinomios sobre Cuerpos</title>
+	
+			<p>Si <m>F</m> es un cuerpo, entonces todo ideal de <m>F[x]</m> es principal (<xref ref="theorem-poly-principal-ideal" />).  Nada nos impide darle a Sage dos (o más) generadores para construir un ideal, pero Sage determinará un elemento para usarlo en la descripción del ideal como ideal principal.</p>
+	
+			<sage>
+			<input>
+			W.&lt;w&gt; = QQ[]
+			r = -w^5 + 5*w^4 - 4*w^3 + 14*w^2 - 67*w + 17
+			s = 3*w^5 - 14*w^4 + 12*w^3 - 6*w^2 + w
+			S = W.ideal(r, s)
+			S
+			</input>
+			<output>
+			Principal ideal (w^2 - 4*w + 1) of
+			Univariate Polynomial Ring in w over Rational Field
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			(w^2)*r + (3*w-6)*s in S
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<p>El <xref ref="theorem-max-ideal-poly" /> es el hecho clave que nos permite construir cuerpos finitos fácilmente.  Acá hay una construcción de un cuerpo finito de orden <m>7^5=16\,807</m>.  Todo lo que necesitamos es un polinomio de grado <m>5</m> que sea irreducible sobre <m>{\mathbb Z}_7</m>.</p>
+	
+			<sage>
+			<input>
+			F = Integers(7)
+			R.&lt;x&gt; = F[]
+			p = x^5+ x + 4
+			p.is_irreducible()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			id = R.ideal(p)
+			Q = R.quotient(id); Q
+			</input>
+			<output>
+			Univariate Quotient Polynomial Ring in xbar over
+			Ring of integers modulo 7 with modulus x^5 + x + 4
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			Q.is_field()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			Q.order() == 7^5
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<p>El símbolo <c>xbar</c> es un generador del cuerpo, pero en este momento no es accesible.  <c>xbar</c> es la clase <m>x + \langle x^5+ x + 4\rangle</m>.  Una mejor construcción incluiría la especificación de este generador.</p>
+	
+			<sage>
+			<input>
+			Q.gen(0)
+			</input>
+			<output>
+			xbar
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			Q.&lt;t&gt; = R.quotient(id); Q
+			</input>
+			<output>
+			Univariate Quotient Polynomial Ring in t over
+			Ring of integers modulo 7 with modulus x^5 + x + 4
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			t^5 + t + 4
+			</input>
+			<output>
+			0
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			t^5 == -(t+4)
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			t^5
+			</input>
+			<output>
+			6*t + 3
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			(3*t^3 + t + 5)*(t^2 + 4*t + 2)
+			</input>
+			<output>
+			5*t^4 + 2*t^2 + 5*t + 5
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			a = 3*t^4 - 6*t^3 + 3*t^2 + 5*t + 2
+			ainv = a^-1; ainv
+			</input>
+			<output>
+			6*t^4 + 5*t^2 + 4
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			a*ainv
+			</input>
+			<output>
+			1
+			</output>
+			</sage>
+	
+		</subsection>
+	
+	</section>
+	<exercises xml:id="poly-sage-exercises">
+		<title>Ejercicios en Sage</title>
+	
+		<exercise number="1">
+			<statement>
+				<p>Consideremos el polinomio <m>x^3-3x+4</m>.  Calcule la máxima factorización de este polinomio sobre cada uno de los siguientes cuerpos:  (a) el cuerpo finito <m>{\mathbb Z}_5</m>, (b) el cuerpo finito de orden 125, (c) <m>\mathbb Q</m>, (d) <m>\mathbb R</m> y (e) <m>\mathbb C</m>.  Para hacer esto, construya el anillo de polinomios apropiado, construya el polinomio en este anillo y use el método <c>.factor()</c>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+	
+				<p><q>Los polinomios de Conway</q> son polinomios irreducibles sobre <m>{\mathbb Z}_p</m> que Sage (y otros programas) usa para construir ideales maximales en anillos de polinomio, y por ende anillos cociente que son cuerpos. A grosso modo, son  elecciones <p>canónicas</p>, para cada grado y para cada primo.  El comando <c>conway_polynomial(p, n)</c> entrega un polinomio irreducible de grado <m>n</m> sobre <m>{\mathbb Z}_p</m>.</p>
+	
+				<p>Ejecute el comando <c>conway_polynomial(5, 4)</c> para obtener un polinomio presuntamente irreducible de grado 4 sobre <m>{\mathbb Z}_5</m>:  <m>p = x^{4} + 4x^{2} + 4x + 2</m>.  Construya el anillo de polinomios apropiado (<ie/>, en la indeterminada <m>x</m>) y verifique que <c>p</c> realmente es un elemento de ese anillo de polinomios.</p>
+	
+				<p>Primero verifique que <m>p</m> no tiene factores lineales.  La única posibilidad que queda es que <c>p</c> se factorice como producto de dos polinomios cuadráticos sobre <m>{\mathbb Z}_5</m>.  Use una lista con <em>tres</em> <c>for</c> para crear <em>todos</em> los posibles polinomios cuadráticos sobre <m>{\mathbb Z}_5</m>.  Ahora use esta lista para crear todos los posibles productos de dos polinomios cuadráticos y compruebe si <c>p</c> está en esta lista.</p>
+	
+				<p>Puede encontrar más información sobre los polinomios de Conway en el <url href="http://www.math.rwth-aachen.de/~Frank.Luebeck/data/ConwayPol/index.html">sitio de Frank Lübeck</url>.</p>
+	
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+				<p>Construya un cuerpo finito de orden <m>729</m> como cociente de un anillo de polinomios por un ideal principal generado con un polinomio de Conway.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="4">
+			<statement>
+				<p>Defina los polinomios <m>p = x^3 + 2x^2 + 2x + 4</m> y <m>q = x^4 + 2x^2</m> como polinomios con coeficientes enteros.  Calcule <c>gcd(p, q)</c> y verifique que el resultado divide tanto a <c>p</c> como a <c>q</c> (simlemente forme la fracción en Sage y vea que se simplifica completamente, o use el método <c>.quo_rem()</c> ).</p>
+	
+				<p>La Proposición<nbsp/><xref ref="proposition-poly-gcd"/> dice que existen polinomio <m>r(x)</m> y <m>s(x)</m> tales que el máximo común divisor es <m>r(x)p(x)+s(x)q(x)</m>, <em>si los coeficientes están en un cuerpo</em>.  Como acá tenemos dos polinomios sobre los enteros, investigue los resultados entregados por Sage para el <m>\gcd</m> extendido, <c>xgcd(p, q)</c>.  En particular, muestre que la primera componente del resultado es un múltiplo del <m>\gcd</m>.  Después verifique la propiedad de <q>combinación lineal</q>.</p>
+	
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="5">
+			<statement>
+				<p>Para un anillo de polinomios sobre un cuerpo, todo ideal es principal.  Comience con el anillo de polinomios sobre los racionales.  Experimente construyendo ideales con dos generadores y vea que Sage los convierte en ideales principales con un solo generador.  (Puede obtener este generador con el método <c>.gen()</c> del ideal.)  ¿Puede explicar como se calcula este generador?</p>
+			</statement>
+			
+		</exercise>
+	
+	</exercises>
+	
 </chapter>
  

@@ -26,7 +26,7 @@
 	<section xml:id="section-finite-field">
 		<title>Estructura de Cuerpos Finitos</title>
 
-		<p>Recuerde que un cuerpo <m>F</m> tiene <term>característica</term> <m>p</m> si <m>p</m> es el menor entero positivo tal que para cada elemento no nulo <m>\alpha</m> en <m>F</m>, tenemos <m>p \alpha = 0</m>.  Si no hay tal entero, entonces <m>F</m> tiene característica 0.  Del Teorema<nbsp /><xref ref="theorem-integral-domain-characteristic" /> sabemos que <m>p</m> debe ser primo.  Supongamos que <m>F</m> es un cuerpo finito con <m>n</m> elementos. Entonces <m>n \alpha = 0</m> para todo <m>\alpha</m> en <m>F</m>.  En consecuencia, la característica de <m>F</m> debe ser <m>p</m>, con <m>p</m> un primo que divide a <m>n</m>.  Esta discusión se resume en la siguiente proposición.</p>
+		<p>Recuerde que un cuerpo <m>F</m> tiene <term>característica</term> <m>p</m> si <m>p</m> es el menor entero positivo tal que para cada elemento no nulo <m>\alpha</m> en <m>F</m>, tenemos <m>p \alpha = 0</m>.  Si no hay tal entero, entonces <m>F</m> tiene característica 0.  Del <xref ref="theorem-integral-domain-characteristic" /> sabemos que <m>p</m> debe ser primo.  Supongamos que <m>F</m> es un cuerpo finito con <m>n</m> elementos. Entonces <m>n \alpha = 0</m> para todo <m>\alpha</m> en <m>F</m>.  En consecuencia, la característica de <m>F</m> debe ser <m>p</m>, con <m>p</m> un primo que divide a <m>n</m>.  Esta discusión se resume en la siguiente proposición.</p>
 
 		<proposition>
 			<statement>
@@ -56,7 +56,7 @@
 				para todo entero positivo <m>n</m>.</p>
 			</statement>
 			<proof>
-				<p>Procederemos por inducción en <m>n</m>.  Podemos usar la fórmula del binomio (vea el Capítulo<nbsp /><xref ref="integers" />, Ejemplo<nbsp /><xref ref="example-integers-binomial-theorem" />) para verificar el caso <m>n = 1</m>; es decir,
+				<p>Procederemos por inducción en <m>n</m>.  Podemos usar la fórmula del binomio (vea el Capí<xref ref="integers" />, <xref ref="example-integers-binomial-theorem" />) para verificar el caso <m>n = 1</m>; es decir,
 					<me>(a + b)^p = \sum_{k = 0}^{p} \binom{p}{k} a^k b^{p - k}.</me>
 				Si <m>0 \lt k \lt p</m>, entonces
 					<me>\binom{p}{k} = \frac{p!}{k!(p - k)!}</me>
@@ -111,17 +111,17 @@
 <!-- % Reference to Lemma 22.4 corrected in proof.  Suggested by A. Johnston. -->
 
 			<proof>
-				<p>Sea <m>f(x) = x^{p^n} - x</m> y sea <m>F</m> el cuerpo de descomposición de <m>f(x)</m>.  Por el Lema<nbsp /><xref ref="lemma-separable-derivative" />, <m>f(x)</m> tiene <m>p^n</m> ceros distintos en <m>F</m>, pues <m>f'(x) = p^n x^{p^n - 1} - 1 = -1</m> es relativamente primo con <m>f(x)</m>.  Afirmamos que las raíces de <m>f(x)</m> forman un subcuerpo de <m>F</m>.  Ciertamente 0 y 1 son ceros de <m>f(x)</m>.  Si <m>\alpha</m> y <m>\beta</m> son ceros de <m>f(x)</m>, entonces <m>\alpha + \beta</m> y <m>\alpha \beta</m> también son ceros de <m>f(x)</m>, pues <m>\alpha^{p^n} + \beta^{p^n} =  (\alpha + \beta)^{p^n}</m> y <m>\alpha^{p^n} \beta^{p^n} = (\alpha \beta)^{p^n}</m>. También debemos mostrar que el inverso aditivo y el inverso multiplicativo de cada raíz de <m>f(x)</m> son raíces de <m>f(x)</m>.  Para cualquier cero <m>\alpha</m> de <m>f(x)</m>, sabemos que <m>-\alpha</m> también es cero de <m>f(x)</m>, pues
+				<p>Sea <m>f(x) = x^{p^n} - x</m> y sea <m>F</m> el cuerpo de descomposición de <m>f(x)</m>.  Por el <xref ref="lemma-separable-derivative" />, <m>f(x)</m> tiene <m>p^n</m> ceros distintos en <m>F</m>, pues <m>f'(x) = p^n x^{p^n - 1} - 1 = -1</m> es relativamente primo con <m>f(x)</m>.  Afirmamos que las raíces de <m>f(x)</m> forman un subcuerpo de <m>F</m>.  Ciertamente 0 y 1 son ceros de <m>f(x)</m>.  Si <m>\alpha</m> y <m>\beta</m> son ceros de <m>f(x)</m>, entonces <m>\alpha + \beta</m> y <m>\alpha \beta</m> también son ceros de <m>f(x)</m>, pues <m>\alpha^{p^n} + \beta^{p^n} =  (\alpha + \beta)^{p^n}</m> y <m>\alpha^{p^n} \beta^{p^n} = (\alpha \beta)^{p^n}</m>. También debemos mostrar que el inverso aditivo y el inverso multiplicativo de cada raíz de <m>f(x)</m> son raíces de <m>f(x)</m>.  Para cualquier cero <m>\alpha</m> de <m>f(x)</m>, sabemos que <m>-\alpha</m> también es cero de <m>f(x)</m>, pues
 					<me>f(-\alpha) = (-\alpha)^{p^n} - (-\alpha) = -\alpha^{p^n} + \alpha = -(\alpha^{p^n} - \alpha) = 0,</me>
 				suponiendo que <m>p</m> is impar.  Si <m>p = 2</m>, entonces 
 					<me>f(-\alpha) =  (-\alpha)^{2^n} - (-\alpha) = \alpha + \alpha = 0.</me>
 				Si <m>\alpha \neq 0</m>, entonces <m>(\alpha^{-1})^{p^n} = (\alpha^{p^n})^{-1} = \alpha^{-1}</m>. Como los ceros de <m>f(x)</m> forman un subcuerpo de <m>F</m> y <m>f(x)</m> se descompone en este subcuerpo, el subcuerpo debe ser todo <m>F</m>.</p>
 
-				<p>Sea <m>E</m> cualquier otro cuerpo de orden <m>p^n</m>.  Para mostrar que <m>E</m> es isomorfo a <m>F</m>, debemos mostrar que todo elemento en <m>E</m> es una raíz de <m>f(x)</m>.  Claramente 0 y 1 son raíces de <m>f(x)</m>.  Sea <m>\alpha</m> un elemento no nulo de <m>E</m>.  El orden del grupo multiplicativo de elementos no nulos de <m>E</m> es <m>p^n-1</m>; luego, <m>\alpha^{p^n-1} =1</m> y <m>\alpha^{p^n} -\alpha = 0</m>.  Como <m>E</m> contiene <m>p^n</m> elementos, <m>E</m> debe ser un cuerpo de descomposición de <m>f(x)</m>; pero, por el Corolario<nbsp /><xref ref="corollary-poly-splitting-field" />, el cuerpo de descomposición de cualquier polinomio es único salvo isomorfía.</p>
+				<p>Sea <m>E</m> cualquier otro cuerpo de orden <m>p^n</m>.  Para mostrar que <m>E</m> es isomorfo a <m>F</m>, debemos mostrar que todo elemento en <m>E</m> es una raíz de <m>f(x)</m>.  Claramente 0 y 1 son raíces de <m>f(x)</m>.  Sea <m>\alpha</m> un elemento no nulo de <m>E</m>.  El orden del grupo multiplicativo de elementos no nulos de <m>E</m> es <m>p^n-1</m>; luego, <m>\alpha^{p^n-1} =1</m> y <m>\alpha^{p^n} -\alpha = 0</m>.  Como <m>E</m> contiene <m>p^n</m> elementos, <m>E</m> debe ser un cuerpo de descomposición de <m>f(x)</m>; pero, por el <xref ref="corollary-poly-splitting-field" />, el cuerpo de descomposición de cualquier polinomio es único salvo isomorfía.</p>
 			</proof>
 		</theorem>
 
-		<p>El único cuerpo con <m>p^n</m> elementos se llama <term>cuerpo de Galois </term><idx><h>Cuerpo de Galois</h></idx><idx><h>Galois</h><h>cuerpo de</h></idx> de orden <m>p^n</m>. Denotaremos este cuerpo por <m>\gf(p^n)</m>. <notation><usage>\gf(p^n)</usage><description>Cuerpo de Galois de orden <m>p^n</m></description></notation></p>
+		<p>El único cuerpo con <m>p^n</m> elementos se llama <term>cuerpo de Galois </term><idx><h>Cuerpo de Galois</h></idx><idx><h>Galois</h><h>cuerpo de</h></idx> de orden <m>p^n</m>. Denotaremos este cuerpo por <m>\gf(p^n)</m>. <notation><usage><m>\gf(p^n)</m></usage><description>Cuerpo de Galois de orden <m>p^n</m></description></notation></p>
 
 		<theorem xml:id="theorem-finite-subfields">
 			<statement>
@@ -136,7 +136,7 @@
 
 <!--  2010/05/18 R Beezer, added space before Figure citation -->
 		<example xml:id="example-finite-gf-p24">
-			<p>El reticulado de subcuerpos de <m>\gf(p^{24})</m> está dado en la Figura<nbsp /><xref ref="figure-field-lattice" />.</p>
+			<p>El reticulado de subcuerpos de <m>\gf(p^{24})</m> está dado en la <xref ref="figure-field-lattice" />.</p>
 		</example>
 
 		<figure xml:id="figure-field-lattice">
@@ -177,14 +177,14 @@
 			</image>
 		</figure>
 
-		<p>Con cada cuerpo <m>F</m> tenemos un grupo multiplicativo de elementos no nulos de <m>F</m> que denotaremos por <m>F^*</m>. <notation><usage>F^*</usage><description>grupo multiplicativo de un cuerpo <m>F</m></description></notation> El grupo multiplicativo de un cuerpo finito cualquiera es cíclico.  Este resultado se sigue del resultado más general que demostraremos en el próximo teorema.</p> 
+		<p>Con cada cuerpo <m>F</m> tenemos un grupo multiplicativo de elementos no nulos de <m>F</m> que denotaremos por <m>F^*</m>. <notation><usage><m>F^*</m></usage><description>grupo multiplicativo de un cuerpo <m>F</m></description></notation> El grupo multiplicativo de un cuerpo finito cualquiera es cíclico.  Este resultado se sigue del resultado más general que demostraremos en el próximo teorema.</p> 
 
 		<theorem xml:id="theorem-mult-group-finite-field">
 			<statement>
 				<p>Si <m>G</m> es un subgrupo finito de <m>F^\ast</m>, el grupo multiplicativo de elementos no nulos de un cuerpo <m>F</m>, entonces <m>G</m> es cíclico.</p>
 			</statement>
 			<proof>
-				<p>Sea <m>G</m> un subgrupo finito de <m>F^\ast</m> de orden <m>n</m>.  Por el Teorema Fundamental de Grupos Abelianos (Teorema<nbsp /><xref ref="theorem-finite-abelian-groups" />),  
+				<p>Sea <m>G</m> un subgrupo finito de <m>F^\ast</m> de orden <m>n</m>.  Por el Teorema Fundamental de Grupos Abelianos (<xref ref="theorem-finite-abelian-groups" />),  
 					<me>G \cong {\mathbb Z}_{p_1^{e_1}} \times \cdots \times {\mathbb Z}_{p_k^{e_k}},</me>
 				donde <m>n = p_1^{e_1} \cdots p_k^{e_k}</m> y los  <m>p_1, \ldots, p_k</m> son primos (no necesariamente distintos). Sea <m>m</m> el mínimo común múltiplo de <m>p_1^{e_1}, \ldots, p_k^{e_k}</m>.  Entonces <m>G</m> contiene un elemento de orden <m>m</m>.  Como todo <m>\alpha</m> en <m>G</m> satisface <m>x^r - 1</m> para algún <m>r</m> que divide a <m>m</m>, <m>\alpha</m> debe también ser raíz de <m>x^m - 1</m>.  Como <m>x^m -1</m> tiene a lo más <m>m</m> raíces en <m>F</m>, <m>n \leq m</m>.  Por otra parte, sabemos que <m>m \leq |G|</m>; por lo tanto, <m>m = n</m>. Luego, <m>G</m> contiene un elemento de orden <m>n</m> y tiene que ser cíclico.</p>
 			</proof>
@@ -231,7 +231,7 @@
 
 		<introduction>
 
-			<p>Sabiendo sobre anillos de polinomios y cuerpos finitos, es posible derivar códigos más sofisticados que los del Capítulo<nbsp /><xref ref="algcodes" />.  En primer lugar recordemos que un código de bloques <m>(n, k)</m> consiste de una función codificadora inyectiva <m>E:{\mathbb Z}^{k}_{2} \rightarrow {\mathbb Z}^{n}_{2}</m> y una función decodificadora <m>D:{\mathbb Z}^{n}_{2} \rightarrow {\mathbb Z}^{k}_{2}</m>.  El código es corrector de errores si <m>D</m> es sobreyectivo.  Un código es lineal si es el espacio nulo de una matriz <m>H \in {\mathbb M}_{k \times n}({\mathbb Z}_2)</m>. </p>
+			<p>Sabiendo sobre anillos de polinomios y cuerpos finitos, es posible derivar códigos más sofisticados que los del Capí<xref ref="algcodes" />.  En primer lugar recordemos que un código de bloques <m>(n, k)</m> consiste de una función codificadora inyectiva <m>E:{\mathbb Z}^{k}_{2} \rightarrow {\mathbb Z}^{n}_{2}</m> y una función decodificadora <m>D:{\mathbb Z}^{n}_{2} \rightarrow {\mathbb Z}^{k}_{2}</m>.  El código es corrector de errores si <m>D</m> es sobreyectivo.  Un código es lineal si es el espacio nulo de una matriz <m>H \in {\mathbb M}_{k \times n}({\mathbb Z}_2)</m>. </p>
 
 			<p>Estamos interesados en una clase de códigos conocidos como códigos cíclicos<idx><h>Código</h><h>cíclico</h></idx>.  Sea <m>\phi : {\mathbb Z}_2^k \rightarrow {\mathbb  Z}_2^n</m> un código de bloques <m>(n,k)</m> binario.  Entonces <m>\phi</m> es un <term>código cíclico</term> si para cada palabra <m>(a_1, a_2, \ldots, a_n )</m> en el código, la palabra formada por desplazamiento cíclico, la <m>n</m>-tupla <m>(a_n, a_1, a_2, \ldots, a_{n - 1} )</m> también está en el código.  Los códigos cíclicos son fáciles de implementar en un computador usando registro de shift [2, 3].</p>
 
@@ -292,7 +292,7 @@
 
 			<example xml:id="example-finite-generator-63-code">
 <!-- Changed minimal polynomial from  (1 + x^3)x^3 &amp; = x^2 + x^5 to (1 + x^3)x^2 &amp; = x^2 + x^5.  Discovered by Jon Buller - TWJ 3/25/2011 -->
-				<p>Si <m>g(x)= 1 + x^3</m>, podemos definir un <m>(6,3)</m>-código <m>C</m> como sigue.  Para codificar una 3-tupla <m>( a_0, a_1, a_2 )</m>, multiplicamos el correspondiente polinomio <m>f(x) = a_0 + a_1 x + a_2 x^2</m> por <m>1 + x^3</m>.  Estamos definiendo una función <m>\phi : {\mathbb Z}_2^3 \rightarrow {\mathbb Z}_2^6</m> como <m>\phi  : f(x) \mapsto g(x) f(x)</m>.  Es fácil verificar que esta función es un homomorfismo de grupos.  De hecho, si consideramos <m>{\mathbb Z}_2^n</m> como un espacio vectorial sobre <m>{\mathbb Z}_2</m>, <m>\phi</m> es una transformación lineal de espacios vectoriales (vea el Ejercicio<nbsp /><xref ref="exercise-vect-linear-transformation" />, Capítulo<nbsp /><xref ref="vect" />).  Calculemos el núcleo de <m>\phi</m>.  Observe que <m>\phi ( a_0, a_1, a_2 ) = (000000)</m> exactamente cuando 
+				<p>Si <m>g(x)= 1 + x^3</m>, podemos definir un <m>(6,3)</m>-código <m>C</m> como sigue.  Para codificar una 3-tupla <m>( a_0, a_1, a_2 )</m>, multiplicamos el correspondiente polinomio <m>f(x) = a_0 + a_1 x + a_2 x^2</m> por <m>1 + x^3</m>.  Estamos definiendo una función <m>\phi : {\mathbb Z}_2^3 \rightarrow {\mathbb Z}_2^6</m> como <m>\phi  : f(x) \mapsto g(x) f(x)</m>.  Es fácil verificar que esta función es un homomorfismo de grupos.  De hecho, si consideramos <m>{\mathbb Z}_2^n</m> como un espacio vectorial sobre <m>{\mathbb Z}_2</m>, <m>\phi</m> es una transformación lineal de espacios vectoriales (vea el <xref ref="exercise-vect-linear-transformation" />, Capí<xref ref="vect" />).  Calculemos el núcleo de <m>\phi</m>.  Observe que <m>\phi ( a_0, a_1, a_2 ) = (000000)</m> exactamente cuando 
 					<md>
 						<mrow>0 + 0x + 0x^2 + 0x^3 + 0x^4 + 0 x^5 &amp; = (1 + x^3) ( a_0 + a_1 x + a_2 x^2 )</mrow>
 						<mrow> &amp; = a_0 + a_1 x + a_2 x^2 + a_0 x^3 + a_1 x^4 + a_2 x^5.</mrow>
@@ -305,7 +305,7 @@
 						<mrow>(1 + x^3)x &amp; = x + x^4</mrow>
 						<mrow>(1 + x^3)x^2 &amp; = x^2 + x^5. </mrow>
 					</md>
-				Obtenemos el código correspondiente a la matriz generadora <m>G_1</m> en el Ejemplo<nbsp /><xref ref="example-finite-6-3-linear-code" />.  la matriz de verificación de paridad para este código es
+				Obtenemos el código correspondiente a la matriz generadora <m>G_1</m> en el <xref ref="example-finite-6-3-linear-code" />.  la matriz de verificación de paridad para este código es
 					<me>H
 					= 
 					\begin{pmatrix}<![CDATA[
@@ -339,7 +339,7 @@
  
 			<todo>Revisar esta demostración</todo>
 
-			<p>El Teorema<nbsp /><xref ref="theorem-cyclic-code" /> nos dice que conocer los ideales de <m>R_n</m> es equivalente a conocer los códigos cíclicos en <m>{\mathbb Z}_2^n</m>.  Afortunadamente es fácil describir los ideales en <m>R_n</m>.  El homomorfismo natural <m>\phi : {\mathbb Z}_2[x] \rightarrow R_n</m> definido por <m>\phi[f(x)] = f(t)</m> es un homomorfismo epiyectivo.  El núcleo de <m>\phi</m> es el ideal generado por <m>x^n - 1</m>.  Por el Teorema<nbsp /><xref ref="theorem-correspondence-rings" />, todo ideal <m>C</m> en <m>R_n</m> es de la forma <m>\phi(I)</m>, donde <m>I</m> es un ideal en <m>{\mathbb Z}_2[x]</m> que contiene al ideal <m>\langle x^n - 1 \rangle</m>.  Por el Teorema<nbsp /><xref ref="theorem-poly-principal-ideal" />, sabemos que todo ideal en <m>{\mathbb Z}_2[x]</m> es un ideal principal, pues <m>{\mathbb Z}_2</m> es un cuerpo. Por lo tanto, <m>I = \langle g(x) \rangle</m> para algún polinomio mónico en <m>{\mathbb Z}_2[x]</m>. Como <m>\langle x^n - 1 \rangle</m> está contenido en <m>I</m>, se debe tener que <m>g(x)</m> divide a <m>x^n - 1</m>. Así, todo ideal <m>C</m> en <m>R_n</m> es de la forma 
+			<p>El <xref ref="theorem-cyclic-code" /> nos dice que conocer los ideales de <m>R_n</m> es equivalente a conocer los códigos cíclicos en <m>{\mathbb Z}_2^n</m>.  Afortunadamente es fácil describir los ideales en <m>R_n</m>.  El homomorfismo natural <m>\phi : {\mathbb Z}_2[x] \rightarrow R_n</m> definido por <m>\phi[f(x)] = f(t)</m> es un homomorfismo epiyectivo.  El núcleo de <m>\phi</m> es el ideal generado por <m>x^n - 1</m>.  Por el <xref ref="theorem-correspondence-rings" />, todo ideal <m>C</m> en <m>R_n</m> es de la forma <m>\phi(I)</m>, donde <m>I</m> es un ideal en <m>{\mathbb Z}_2[x]</m> que contiene al ideal <m>\langle x^n - 1 \rangle</m>.  Por el <xref ref="theorem-poly-principal-ideal" />, sabemos que todo ideal en <m>{\mathbb Z}_2[x]</m> es un ideal principal, pues <m>{\mathbb Z}_2</m> es un cuerpo. Por lo tanto, <m>I = \langle g(x) \rangle</m> para algún polinomio mónico en <m>{\mathbb Z}_2[x]</m>. Como <m>\langle x^n - 1 \rangle</m> está contenido en <m>I</m>, se debe tener que <m>g(x)</m> divide a <m>x^n - 1</m>. Así, todo ideal <m>C</m> en <m>R_n</m> es de la forma 
 				<me>C = \langle g(t) \rangle = \{ f(t)g(t) : f(t) \in R_n \text{ y } g(x) \mid (x^n - 1) \text{ en } {\mathbb Z}_2[x] \}.</me>
 			El polinomio único de grado mínimo que genera <m>C</m> se llama <term>polinomio generador minimal</term><idx><h>Polinomio generador minimal</h></idx><idx><h>Generador minimal</h><h>polinomio</h></idx> de <m>C</m>.</p>
 
@@ -347,7 +347,7 @@
 			<example xml:id="example-finite-factor-x7-1">
 				<p>Si factorizamos <m>x^7 - 1</m> en sus componentes irreducibles, tenemos
 					<me>x^7 - 1 = (1 + x)(1 + x + x^3)(1+ x^2 + x^3).</me>
-				Vemos que <m>g(t) = (1 + t + t^3)</m> genera un ideal <m>C</m> en <m>R_7</m>.  Este es un código de bloque <m>(7, 4)</m>.  Como en el Ejemplo<nbsp /><xref ref="example-finite-generator-63-code" />, es fácil calcular una matriz generadora examinando qué le hace <m>g(t)</m> a los polinomios 1, <m>t</m>, <m>t^2</m>, y <m>t^3</m>.  Una matriz generadora para <m>C</m> es 
+				Vemos que <m>g(t) = (1 + t + t^3)</m> genera un ideal <m>C</m> en <m>R_7</m>.  Este es un código de bloque <m>(7, 4)</m>.  Como en el <xref ref="example-finite-generator-63-code" />, es fácil calcular una matriz generadora examinando qué le hace <m>g(t)</m> a los polinomios 1, <m>t</m>, <m>t^2</m>, y <m>t^3</m>.  Una matriz generadora para <m>C</m> es 
 					<me>G =
 					\begin{pmatrix}<![CDATA[
 					1 & 0 & 0 & 0 \\
@@ -388,7 +388,7 @@
 			</proposition>
 
 			<example xml:id="example-finite-parity-check-x7-1">
-				<p>En el Ejemplo<nbsp /><xref ref="example-finite-factor-x7-1" />,
+				<p>En el <xref ref="example-finite-factor-x7-1" />,
 					<me>x^7 - 1 = g(x) h(x) = (1 + x + x^3)(1 + x + x^2 + x^4).</me>
 				Por lo tanto, una matriz verificadora para este código es
 					<me>H =
@@ -487,7 +487,7 @@
 						(\omega^{i_0})^{r+s-1} & (\omega^{i_1})^{r+s-1} & \cdots &
 						(\omega^{i_{s-1}})^{r+s-1} 
 						]]>\end{pmatrix}</me>
-					no es cero por el Lema<nbsp /><xref ref="lemma-vandermode-det" /> y las propiedades básicas de los determinantes (Ejercicio). Por lo tanto, esta solución es <m>a_{i_0} = a_{i_1} = \cdots = a_{i_{s - 1}} = 0</m>.</p>
+					no es cero por el <xref ref="lemma-vandermode-det" /> y las propiedades básicas de los determinantes (Ejercicio). Por lo tanto, esta solución es <m>a_{i_0} = a_{i_1} = \cdots = a_{i_{s - 1}} = 0</m>.</p>
 				</proof>
 			</theorem>
 
@@ -500,7 +500,7 @@
 
 			<p>La idea detrás de los códigos <acro>BCH</acro> es elegir un polinomio generador de grado minimal que tenga la mayor capacidad de detección y corrección de errores. Sea <m>d = 2r + 1</m> para algún <m>r \geq 0</m>.  Supongamos que <m>\omega</m> es una raíz <m>n</m>-ésima primitiva de la unidad sobre <m>{\mathbb Z}_2</m>, y sea <m>m_i(x)</m> el polinomio minimal sobre <m>{\mathbb Z}_2</m> de <m>\omega^i</m>. Si  
 				<me>g(x) = \lcm[ m_1(x), m_{2}(x), \ldots, m_{2r}(x)],</me>
-			entonces el código cíclico <m>\langle g(t) \rangle</m> en <m>R_n</m> se denomina código <term><acro>BCH</acro> de largo</term><idx><h>Código</h><h><acro>BCH</acro></h></idx> <m>n</m> y <term>distancia</term> <m>d</m>. Por el Teorema<nbsp /><xref ref="theorem-min-dist-cyclic-code" />, la distancia mínima de <m>C</m> es al menos <m>d</m>.</p>
+			entonces el código cíclico <m>\langle g(t) \rangle</m> en <m>R_n</m> se denomina código <term><acro>BCH</acro> de largo</term><idx><h>Código</h><h><acro>BCH</acro></h></idx> <m>n</m> y <term>distancia</term> <m>d</m>. Por el <xref ref="theorem-min-dist-cyclic-code" />, la distancia mínima de <m>C</m> es al menos <m>d</m>.</p>
 
 			<theorem>
 				<statement>
@@ -554,7 +554,7 @@
 					<me>x^{15} - 1 = (x + 1)(x^2 + x + 1)(x^4 + x + 1)(x^4 + x^3 + 1)(x^4 + x^3 + x^2 + x + 1),</me>
 				donde cada uno de estos factores es irreducible. Sea <m>\omega</m> una raíz de <m>1 + x + x^4</m>. El cuerpo de Galois <m>\gf(2^4)</m> es
 					<me>\{ a_0 + a_1 \omega + a_2 \omega^2 + a_3 \omega^3 : a_i \in {\mathbb Z}_2 \text{ y } 1 + \omega + \omega^4 = 0 \}.</me>
-				Por el Ejemplo<nbsp /><xref ref="example-finite-gf-p24" />, <m>\omega</m> es una raíz 15 primitiva de la unidad. El polinomio minimal de  <m>\omega</m> es <m>m_1(x) = 1 + x + x^4</m>. Es fácil ver que <m>\omega^2</m> y <m>\omega^4</m> también son raíces de <m>m_1(x)</m>. El polinomio minimal de <m>\omega^3</m> es <m>m_2(x) = 1 + x + x^2 + x^3 + x^4</m>. Por lo tanto, 
+				Por el <xref ref="example-finite-gf-p24" />, <m>\omega</m> es una raíz 15 primitiva de la unidad. El polinomio minimal de  <m>\omega</m> es <m>m_1(x) = 1 + x + x^4</m>. Es fácil ver que <m>\omega^2</m> y <m>\omega^4</m> también son raíces de <m>m_1(x)</m>. El polinomio minimal de <m>\omega^3</m> es <m>m_2(x) = 1 + x + x^2 + x^3 + x^4</m>. Por lo tanto, 
 					<me>g(x) = m_1(x) m_2(x) = 1 + x^4 + x^6 + x^7 + x^8</me>
 				tiene raíces <m>\omega</m>, <m>\omega^2</m>, <m>\omega^3</m>, <m>\omega^4</m>.  Como tanto <m>m_1(x)</m> como <m>m_2(x)</m> dividen a <m>x^{15} - 1</m>, el código <acro>BCH</acro> es un código <m>(15, 7)</m>. Si <m>x^{15} -1 = g(x)h(x)</m>, entonces <m>h(x) = 1 + x^4 + x^6 + x^7</m>; por lo tanto, una matriz verificadora para este código es
 					<me>\left( 	<!-- This matrix is too large for pmatrix - TWJ 8/19/2010 -->
@@ -571,12 +571,348 @@
 					\right).</me></p>
 			</example>
 
-			<xi:include href="./sage/finite-info.xml" />
+			<paragraphs>
+				<title>Sage</title>
+			
+				<p>Los Cuerpos Finitos son importantes en diversas disciplinas aplicadas, tales como criptografía y teoría de códigos (vea la introducción a estos tópicos en otros capítulos).  Sage tiene una excelente implementación de los cuerpos finitos que permite una variedad de cálculos con éstos.</p>
+			</paragraphs>
 
 		</subsection>
 	</section>
 
-<xi:include href="./exercises/finite.xml" />
+	<exercises xml:id="exercises-finite">
+		<title>Ejercicios</title>
+	
+		<exercise number="1">
+		<statement>
+			<p>Calcule.</p>
+	
+				<ol cols="2">
+	
+					<li><p><m>[\gf(3^6) : \gf(3^3)]</m></p></li>
+	
+					<li><p><m>[\gf(128): \gf(16)]</m></p></li>
+	
+					<li><p><m>[\gf(625) : \gf(25) ]</m></p></li>
+	
+					<li><p><m>[\gf(p^{12}): \gf(p^2)]</m></p></li>
+	
+				</ol>
+			</statement>
+			<hint>
+				<p>Asegúrese de tener una extensión de cuerpos.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+				<p>Calcule <m>[\gf(p^m): \gf(p^n)]</m>, con <m>n \mid m</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+				<p>¿Cuál es el reticulado de subcuerpos de <m>\gf(p^{30})</m>?</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="4">
+			<statement>
+				<p>Sea <m>\alpha</m> una raíz de <m>x^3 + x^2 + 1</m> sobre <m>{\mathbb Z}_2</m>. Construya un cuerpo finito de orden 8. Muestre que <m>x^3 + x^2 + 1</m> se descompone en <m>{\mathbb Z}_2(\alpha)</m>.</p>
+			</statement>
+			<hint>
+				<p>Hay ocho elementos en <m>{\mathbb Z}_2(\alpha)</m>. Exhiba dos ceros más de <m>x^3 + x^2 + 1</m> además de <m>\alpha</m> entre estos ocho elementos.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="5">
+			<statement>
+				<p>Construya un cuerpo finito de orden 27.</p>
+			</statement>
+			<hint>
+				<p>Encuentre un polinomio irreducible <m>p(x)</m> en <m>{\mathbb Z}_3[x]</m> de grado 3 y muestre que <m>{\mathbb Z}_3[x]/ \langle p(x) \rangle</m> tiene 27 elementos.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="6">
+			<statement>
+				<p>Demuestre o refute: <m>{\mathbb Q}^\ast</m> es cíclico.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="7">
+			<statement>
+				<p>Factorice cada uno de los siguientes polinomios en <m>{\mathbb Z}_2[x]</m>.
+					<ol cols="2">
+	
+						<li><p><m>x^5- 1</m></p></li>
+	
+						<li><p><m>x^6 + x^5 + x^4 + x^3 + x^2 + x + 1</m></p></li>
+	
+						<li><p><m>x^9 - 1</m></p></li>
+	
+						<li><p><m>x^4 +x^3 + x^2 + x + 1</m></p></li>
+	
+					</ol></p>
+			</statement>
+			<hint>
+				<p>(a) <m>x^5 -1 = (x+1)(x^4+x^3 + x^2 + x+ 1)</m>; (c) <m>x^9 -1 = (x+1)( x^2 + x+ 1)(x^6+x^3+1)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="8">
+			<statement>
+				<p>Demuestre o refute: <m>{\mathbb Z}_2[x] / \langle x^3 + x + 1 \rangle \cong {\mathbb Z}_2[x] / \langle x^3 + x^2 + 1 \rangle</m>. </p>
+			</statement>
+			<hint>
+				<p>Verdadero.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="9">
+			<statement>
+				<p>Determine el número de códigos cíclicos de longitud <m>n</m> para <m>n = 6</m>, 7, 8, 10.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="10">
+			<statement>
+				<p>Demuestre que el ideal <m>\langle t + 1 \rangle</m> en <m>R_n</m> es el código en <m>{\mathbb Z}_2^n</m> que consiste de todas las palabras con un número par de unos.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="11">
+			<statement>
+				<p>Construya todos los códigos <acro>BCH</acro> de
+					<ol cols="2">
+	
+						<li><p>longitud 7.</p></li>
+	
+						<li><p>longitud 15.</p></li>
+	
+				</ol></p>
+			</statement>
+			<hint>
+				<p>(a) Use el hechode que <m>x^7 -1 = (x+1)( x^3 + x+ 1)(x^3+x^2+1)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="12">
+			<statement>
+				<p>Demuestre o refute: Existe un cuerpo finito algebraicamente cerrado.</p>
+			</statement>
+			<hint>
+				<p>Falso.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="13">
+			<statement>
+				<p>Sea <m>p</m> un primo.  Demuestre que el cuerpo de funciones racionales <m>{\mathbb Z}_p(x)</m> es un cuerpo infinito de característica <m>p</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="14">
+			<statement>
+				<p>Sea <m>D</m> un dominio de integridad de característica <m>p</m>.  Demuestre que <m>(a - b)^{p^n} = a^{p^n} - b^{p^n}</m> para todo <m>a, b \in D</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="15" xml:id="exercise-finite-sum-of-squares">
+			<statement>
+				<p>Muestre que todo elemento en un cuerpo finito puede ser escrito como la suma de dos cuadrados.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="16">
+			<statement>
+				<p>Sean <m>E</m> y <m>F</m> be subcuerpos de un cuerpo finito <m>K</m>. Si <m>E</m> es isomorfo a <m>F</m>, muestre que <m>E=F</m>.</p>
+			</statement>
+				
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="17">
+			<statement>
+				<p>Sean <m>F \subset E \subset K</m> cuerpos. Si <m>K</m> es una extensión separable de <m>F</m>, muestre que <m>K</m> también es una extensión separable de <m>E</m>.</p>
+			</statement>
+			<hint>
+				<p>Si <m>p(x) \in F[x]</m>, entonces <m>p(x) \in E[x]</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="18">
+			<statement>
+					<p>Sea <m>E</m> una extensión de un cuerpo finito <m>F</m>, donde <m>F</m> tiene <m>q</m> elementos. Sea <m>\alpha \in E</m> algebraico sobre <m>F</m> de grado <m>n</m>. Demuestre que <m>F( \alpha )</m> tiene <m>q^n</m> elementos. </p>
+			</statement>
+			<hint>
+				<p>Como <m>\alpha</m> es algebraico sobreo <m>F</m> de grado <m>n</m>, podemos escribir cualquier elemento <m>\beta \in F(\alpha)</m> de forma única como <m>\beta = a_0  + a_1 \alpha + \cdots + a_{n-1} \alpha^{n-1}</m> with <m>a_i \in F</m>. Existen <m>q^n</m> posibles <m>n</m>-tuplas <m>(a_0, a_1, \ldots, a_{n-1})</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="19">
+			<statement>
+				<p>Muestre que toda extensión finita de un cuerpo finito <m>F</m> es simple; es decir, si <m>E</m> es una extensión finita de n cuerpo finito <m>F</m>, demuestre que existe un <m>\alpha \in E</m> tal que <m>E = F( \alpha )</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="20">
+			<statement>
+				<p>Muestre que para cada <m>n</m> existe un polinomio irreducible de grado <m>n</m> en <m>{\mathbb Z}_p[x]</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="21" xml:id="exercise-frobenius-map">
+			<statement>
+				<p>Demuestre que la <term>función de Frobenius</term> <m>\Phi : \gf(p^n) \rightarrow \gf(p^n)</m> dada por <m>\Phi : \alpha \mapsto \alpha^p</m> es un automorfismo de orden <m>n</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="22">
+			<statement>
+				<p>Muestre que todo elemento en <m>\gf(p^n)</m> puede ser escrito en la forma <m>a^p</m> para un único <m>a \in \gf(p^n)</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="23">
+			<statement>
+				<p>Sean <m>E</m> y <m>F</m> subcuerpos de <m>\gf(p^n)</m>. Si <m>|E| = p^r</m> y <m>|F| = p^s</m>, ¿cuál es el orden de <m>E \cap F</m>?</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="24">
+			<title>Teoream de Wilson</title>
+			<statement>
+				<p>Sea <m>p</m> un primo.  Demuestre que <m>(p-1)! \equiv -1 \pmod{p}</m>.</p>
+			</statement>
+			<hint>
+				<p>Factorice <m>x^{p-1} - 1</m> sobre <m>{\mathbb Z}_p</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="25">
+			<statement>
+				<p>Si <m>g(t)</m> es el polinomio generador minimal para un código cíclico <m>C</m> en <m>R_n</m>, demuestre que el término constante de <m>g(x)</m> es <m>1</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="26">
+			<statement>
+				<p>Es concebible que una ráfaga de errores pueda ocurrir durante una transmisión, como en el caso de una sobrecarga de energía.  Una ráfaga de interferencia puede alterar varios bits consecutivos de una palabra del código. Los códigos cíclicos permiten detectar tales ráfagas de errores. Sea <m>C</m> un código cíclico
+			<m>(n,k)</m>. Demuestre que cualquier ráfaga de hasta <m>n-k</m> dígitos puede ser detectada.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="27">
+			<statement>
+				<p>Demuestre que los anillos <m>R_n</m> y <m>{\mathbb Z}_2^n</m> son isomorfos como espacios vectoriales.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="28">
+			<statement>
+				<p>Sea <m>C</m> un código en <m>R_n</m> generado por <m>g(t)</m>. Si <m>\langle f(t) \rangle</m> es otro código en <m>R_n</m>, muestre que <m>\langle g(t) \rangle \subset \langle f(t) \rangle</m> si y solo si <m>f(x)</m> divide a <m>g(x)</m> en
+			<m>{\mathbb Z}_2[x]</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Finish proof.</todo>
+	
+		<exercise number="29">
+			<statement>
+				<p>Sea <m>C = \langle g(t) \rangle</m> un código cíclico en <m>R_n</m> y supongamos que <m>x^n - 1 = g(x) h(x)</m>, donde <m>g(x) = g_0 + g_1 x + \cdots + g_{n - k} x^{n - k}</m> y <m>h(x) = h_0 + h_1 x +  \cdots + h_k x^k</m>. Definamos <m>G</m> como la matriz de  <m>n \times k</m>
+					<me>G = 
+					\begin{pmatrix}
+					g_0 &amp; 0   &amp; \cdots &amp; 0 \\
+					g_1 &amp; g_0 &amp; \cdots &amp; 0 \\
+					\vdots &amp; \vdots &amp;\ddots &amp; \vdots \\
+					g_{n-k}   &amp; g_{n-k-1} &amp; \cdots &amp; g_0 \\
+					0   &amp; g_{n-k} &amp; \cdots &amp; g_{1} \\
+					\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+					0   &amp; 0 &amp; \cdots &amp; g_{n-k}
+					\end{pmatrix}</me>
+				y <m>H</m> como la matriz de <m>(n-k) \times n</m>
+					<me>H =
+					\begin{pmatrix}
+					0   &amp; \cdots &amp; 0   &amp; 0      &amp; h_k    &amp; \cdots &amp; h_0 \\
+					0   &amp; \cdots &amp; 0   &amp; h_k    &amp; \cdots &amp; h_0    &amp; 0 \\
+					\cdots &amp; \cdots &amp; \cdots  &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots  \\
+					h_k &amp; \cdots &amp; h_0 &amp; 0      &amp; 0      &amp; \cdots &amp; 0 
+					\end{pmatrix}.</me>
+					<ol>
+	
+						<li><p>Demuestre que <m>G</m> es una matriz generadora para <m>C</m>.</p></li>
+	
+						<li><p>Demuestre que <m>H</m> es una matriz verificadora para <m>C</m>.</p></li>
+	
+						<li><p>Muestre que <m>HG = 0</m>.</p></li>
+	
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+	</exercises>
 
 	<exercises xml:id="finite-exercises-bch-codes">
 		<title>Ejercicios Adicionales: Corrección de Errores para Códigos <acro>BCH</acro></title>
@@ -602,7 +938,7 @@
 
 		<exercise>
 			<statement>
-				<p>Recuerde el código de bloque <acro>BCH</acro> <m>(15,7)</m> en el Ejemplo<nbsp /><xref ref="example-finite-parity-check-x7-1" />.  Por el Teorema<nbsp /><xref ref="theorem-min-distance" />, este código es capaz de corregir dos errores. Supongamos que estos errores ocurren en los bits <m>a_1</m> y <m>a_2</m>. El polinomio localizador de errores es <m>s(x) = (x + \omega^{a_1})(x + \omega^{a_2})</m>. Muestre que
+				<p>Recuerde el código de bloque <acro>BCH</acro> <m>(15,7)</m> en el <xref ref="example-finite-parity-check-x7-1" />.  Por el <xref ref="theorem-min-distance" />, este código es capaz de corregir dos errores. Supongamos que estos errores ocurren en los bits <m>a_1</m> y <m>a_2</m>. El polinomio localizador de errores es <m>s(x) = (x + \omega^{a_1})(x + \omega^{a_2})</m>. Muestre que
 					<me>s(x) = x^2 + s_1 x + \left( s_1^2 + \frac{s_3}{s_1} \right).</me></p>
 			</statement>
 		</exercise>
@@ -643,8 +979,240 @@
 
 	</references>
 
-	<xi:include href="./sage/finite-sage.xml" />
-	<xi:include href="./sage/finite-sage-exercises.xml" />
+	<section xml:id="finite-sage">
+		<title>Sage</title>
+	
+		<introduction>
+			<p>Habrá notado en este capítulo que los cuerpos finitos son bastante estructurados.  También henos visto cuerpos finitos en Sage como ejemplos de anillos y cuerpos.  Ahora podemos combinar los dos, principalmente usando comandos que ya conocemos, además de unos pocos nuevos.</p>
+		</introduction>
+	
+	
+		<subsection>
+			<title>Creando Cuerpos Finitos</title>
+	
+			<p>Por el <xref ref="theorem-finite-splitting-field" /> sabemos que todos los cuerpos finitos de un orden dado son isomorfos y que los órdenes posibles se limitan a las potencias de primos.  Podemos usar el comando <c>FiniteField()</c>, como antes, o uno equivalente más corto que es <c>GF()</c>.  Opcionalmente, podemos especificar un polinomio irreducible para la construcción del cuerpo.  Podemos ver este polinomio como el generador del ideal principal de un anillo de polinomios, o lo podemos ver como una regla de <q>re-escritura</q> para las potencias del generador del cuerpo que nos permite multiplicar elementos y reformularlos como combinaciones lineales de potencias menores.</p>
+	
+			<p>De no proveerse un polinomio irreducible, Sage usará un polinomio de Conway.  Usted puede determinarlos con el comando <c>conway_polynomial()</c>, o simplemente construir un cuerpo finito y recuperar el polinomio que lo define con el método <c>.polynomial()</c>.</p>
+	
+			<sage>
+			<input>
+			F.&lt;a&gt; = GF(7^15); F
+			</input>
+			<output>
+			Finite Field in a of size 7^15
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			F.polynomial()
+			</input>
+			<output>
+			a^15 + 5*a^6 + 6*a^5 + 6*a^4 + 4*a^3 + a^2 + 2*a + 4
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			a^15 + 5*a^6 + 6*a^5 + 6*a^4 + 4*a^3 + a^2 + 2*a + 4
+			</input>
+			<output>
+			0
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			conway_polynomial(7, 15)
+			</input>
+			<output>
+			x^15 + 5*x^6 + 6*x^5 + 6*x^4 + 4*x^3 + x^2 + 2*x + 4
+			</output>
+			</sage>
+	
+			<p>Solo para facilitar la lectura, coercionamos una lista de coeficientes al anillo de polinomios (obtenido con el método <c>.parent()</c> en un polinomio simple) para definir un polinomio.</p>
+	
+			<sage>
+			<input>
+			y = polygen(Integers(7), 'y')
+			P = y.parent()
+			p = P([4, 5, 2, 6, 3, 3, 6, 2, 1, 1, 2, 5, 6, 3, 5, 1]); p
+			</input>
+			<output>
+			y^15 + 5*y^14 + 3*y^13 + 6*y^12 + 5*y^11 + 2*y^10 + y^9 +
+			y^8 + 2*y^7 + 6*y^6 + 3*y^5 + 3*y^4 + 6*y^3 + 2*y^2 + 5*y + 4
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			p.is_irreducible()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			T.&lt;b&gt; = GF(7^15, modulus=p); T
+			</input>
+			<output>
+			Finite Field in b of size 7^15
+			</output>
+			</sage>
+		</subsection>
+	
+		<subsection>
+			<title>Logaritmos en Cuerpos Finitos</title>
+	
+			<p>Un comando útil que no hemos descrito es el método <c>.log()</c> para elementos de un cuerpo finito.  Como sabemos que el grupo multiplicativo de elementos distintos de cero es cíclico, podemos expresar cualquier elemento como una potencia del generador.  El método <c>.log()</c> devuelve esa potencia.</p>
+	
+			<p>Usualmente querremos usar el generador como la base de un cálculo de logaritmos en el cuerpo finito.  Pero también es posible usar otra base, en el entendimiento que si la base no es un generador del grupo, entonces el logaritmo podría no existir (<ie /> puede no haber una solución a la ecuación relevante).</p>
+	
+			<sage>
+			<input>
+			F.&lt;a&gt; = GF(5^4)
+			a^458
+			</input>
+			<output>
+			3*a^3 + 2*a^2 + a + 3
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			(3*a^3 + 2*a^2 + a + 3).log(a)
+			</input>
+			<output>
+			458
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			exponent = (3*a^3 + 2*a^2 + a + 3).log(2*a^3 + 4*a^2 + 4*a)
+			exponent
+			</input>
+			<output>
+			211
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			(2*a^3 + 4*a^2 + 4*a)^exponent == 3*a^3 + 2*a^2 + a + 3
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			(3*a^3 + 2*a^2 + a + 3).log(a^2 + 4*a + 4)
+			</input>
+			<output>
+			Traceback (most recent call last):
+			...
+			ValueError: No discrete log of 3*a^3 + 2*a^2 + a + 3 found
+			to base a^2 + 4*a + 4
+			</output>
+			</sage>
+	
+			<p>Como ya conocemos muchos comandos en Sage, no hay mucho más que sea necesario introducir para trabajar provechosamente con cuerpos finitos. Los ejercicios exploran formas en que podemos examinar y aprovechar la estructura de los cuerpos finitos en Sage.</p>
+	
+		</subsection>
+	
+	</section>
+	
+	<exercises xml:id="finite-sage-exercises">
+		<title>Ejercicios en Sage</title>
+	
+		<exercise number="1">
+			<statement>
+				<p>Cree un cuerpo finito de orden <m>5^2</m> y factorice <m>p(x)=x^{25}-x</m> sobre este cuerpo.  Comente sobre qué es lo interesante de este resultado y por qué no es una sorpresa.</p>
+			</statement>
+	
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+				<p>El Corolario<nbsp/><xref ref="corollary-cyclic-group-finite-field"/> dice que los elementos distintos de cero de un cuerpo finito forman un grupo cíclico con la multiplicación.  El generador usado en Sage es también un generador de este grupo multiplicativo.  Para ver esto, cree un cuerpo finito de orden <m>2^7</m>.  Cree dos listas de los elementos del cuerpo: primero, use el método <c>.list()</c>, luego use una lista por comprensión para generar las potencias del generador especificado en la creación del cuerpo.</p>
+	
+				<p>A la segunda lista le faltará el cero para ser el cuerpo completo. Cree el elemento 0 del cuerpo (quizás coercionando <m>0</m> para que pertenezca al cuerpo) y agréguelo a la lista de potencias usando <c>.append()</c>.  Use el comando <c>sorted()</c> con cada una de las listas y verifique la igualdad.</p>
+			</statement>
+	
+			
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+				<p>Los subcuerpos de un cuerpo finito están completamente clasificados por el Teorema<nbsp/><xref ref="theorem-finite-subfields"/>.  Es posible crear dos cuerpos finitos de los órdenes apropiados para que se cumpla la relación de extensión/subcuerpo, y traducir de uno a otro. Pero en este ejericicio construiremos un subcuerpo de un cuerpo finito desde cero.  Como el grupo de elementos distintos de cero en un cuerpo finito es cíclico, los elementos distintos de cero de un subcuerpo formarán un subgrupo del grupo cíclico, que necesariamente será cíclico.</p>
+	
+				<p>Cree un cuerpo finito de orden <m>3^6</m>.  La teoría dice que existe un subcuerpo de orden <m>3^2</m>, pues <m>2|6</m>.  Determine un generador de orden multiplicactivo <m>8</m> para los elementos distintos de cero de este subcuerpo, y construya estos <m>8</m> elementos.  Agregue el elemento cero del cuerpo a esta lista.  Debiera ser claro que este conjunto de <m>9</m> elementos es cerrado bajo multiplicación.  En ausencia de nuestros teoremas sobre cuerpos finitos y grupos cíclicos, la clausura bajo la suma no es obvia.  Escriba una línea que verifique si este conjunto es cerrado bajo sumas, considerando todas la posibles sumas de elementos del conjunto.</p>
+			</statement>
+	
+			
+		</exercise>
+	
+		<exercise number="4">
+			<statement>
+				<p>Este problema investiga la <q>separabilidad</q> de <m>{\mathbb Q}(\sqrt{3},\sqrt{7})</m>.  Usted puede crear este cuerpo de números rápidamente con el constructor <c>NumberFieldTower</c>, junto con los polinomios <m>x^2-3</m> y <m>x^2-7</m>.  Aplane la torre con el método <c>.absolute_field()</c> y use el método <c>.structure()</c> para recuperar los isomorfismos entre la torre y la versión plana del cuerpo.  Nombre a la torre como <c>N</c> y use  <c>a</c> y <c>b</c> como generadores.  Nombre la versión plana como <c>L</c> con <c>c</c> como generador.</p>
+	
+				<p>Cree un elemento no trivial (<q>aleatorio</q>) de <c>L</c> usando tantas potencias de <c>c</c> como sea posible (verifique el grado de <c>L</c> para ver cuántas potencias linealmente independientes existen).  Solicite a Sage el polinomio minimal de su elemento aleatorio, asegurando así que el elemento es una raíz.  Construya ese polinomio minimal como polinomio sobre <c>N</c>, la torre de cuerpos, y encuentre su factorización.  Esta factorización debiese tener solo factores lineales.  Cada raíz debiese ser una expresión en <c>a</c> y <c>b</c>.  Convierta cada raíz en una expresión con notación matemática que involucre <m>\sqrt{3}</m> y <m>\sqrt{7}</m>.  Use una de las funciones para verificar que una de las raíces corresponde al elemento aleatorio original.</p>
+	
+				<p>Cree unos pocos elementos aleatorios más, y encuentre una factorización (en <c>N</c> o en <c>L</c>).  Para que un cuerpo sea separable, todo elemento del cuerpo debe ser una raíz de <em>algún</em> polinomio separable.  El polinomio minimal es un buen polinomio para probar.  (¿Por qué?)  Basado en esta evidencia, ¿parece que <m>{\mathbb Q}(\sqrt{3},\sqrt{7})</m> fuera una extensión separable?</p>
+			</statement>
+	
+			
+		</exercise>
+	
+		<exercise number="5">
+			<statement>
+				<p>El Ejercicio<nbsp/><xref ref="exercise-frobenius-map"/> describe el automorfismo de Frobenius de un cuerpo finito.  Si <c>F</c> es un cuerpo finito en Sage, entonces <c>End(F)</c> creará el grupo de automorfismos de <c>F</c>.</p>
+	
+				<ol>
+					<li><p>Trabaje el Ejercicio<nbsp/><xref ref="exercise-frobenius-map"/> para mejorar su comprensión de como y por qué la función de Frobenius es un automorfismo de cuerpos.  (Lo que viene será más sencillo si hace esto primero.)</p></li>
+	
+					<li><p>Para algunos cuerpos finitos pequeños, pero no triviales identifique el automorfismo de Frobenius dentro del grupo de automorfismos.  Pequeños podría significar <m>p=2,3,5,7</m> y <m>3\leq n\leq 10</m>, con <m>n</m> primo versus compuesto.</p></li>
+	
+					<li><p>Una vez que haya identificado la función de Frobenius, describa los demás automorfismos.  En otras palabras, con un poco de investigación, debiese ser posible dar una descripción de los automorfismos que le permita predecir correctamente el grupo completo de automorfismos de un cuerpo finito que no haya explorado aún.  (Ayuda: el grupo de automorfismos del grupo es un grupo.  ¿Qué pasa si <q>hace la operación</q> de la función de Frobenius consigo misma?  ¿Qué es exactamente esta operación?  Intente usar la notación multiplicativa de Sage con los elementos del grupode automorfismos.)</p></li>
+	
+					<li><p>¿Cuál es la <q>estructura</q> del grupo de automorfismos?  ¿Cuál es el rol especial de la función de Frobenius en este grupo?</p></li>
+	
+					<li><p>Para cualquier cuerpo, el subcuerpo conocido como cuerpo fijo es una construcción importantes, y será lo será más aún en el siguiente capítulo.  Dado un automorfismo <m>\tau</m> de un cuerpo <m>E</m>, se puede demostrar que el subconjunto, <m>K=\{b\in E\mid\tau(b)=b\}</m>, es un subcuerpo de <m>E</m>.  Se conoce como el <term>cuerpo fijo</term> de <m>\tau</m> en <m>E</m>.  Para cada automorfismo de <m>E=GF(3^6)</m> identifique su cuerpo fijo.  Como entendemos la estructura de subcuerpos de un cuerpo finito, es suficiente con determinar el orden de un cuerpo fijo para identificarlo completamente.</p></li>
+				</ol>
+	
+			</statement>
+	
+			
+		</exercise>
+	
+		<exercise number="6">
+			<statement>
+				<p>El Ejercicio<nbsp/><xref ref="exercise-finite-sum-of-squares"/> sugiere que todo elemento de un cuerpo finito puede ser escrito (expresado) como suma de cuadrados.  Acá se sugieren experimentos computacionales que pueden ayudarle a formular una demostración del ejercicio.</p>
+	
+				<ol>
+					<li><p>Construya dos cuerpos pequeños pero no demasiado pequeños, uno con <m>p=2</m> y el otro con un primo impar.  Repita lo siguiente con cada cuerpo <m>F</m>.</p></li>
+	
+					<li><p>Escoja un elemento <q>aleatorio</q> del cuerpo, digamos <m>a\in F</m>.  Construya los conjuntos <md>
+						<mrow>&amp;\{x^2|x\in F\}&amp;&amp;\{a-x^2|x\in F\}</mrow>
+					</md> usando conjuntos Sage con el constructor <m>Set()</m>.  (Cuidado: <c>set()</c> es un comando Python que se comporta de forma fundamentalmente diferente.)</p></li>
+	
+					<li><p>Examine el tamaño de los dos conjunto y el tamaño de su intersección (<c>.intersection()</c>).  Pruebe con diferentes elementos <m>a</m>, quizás usando un bucle para probar <em>todos</em> los valores posibles. Note que <m>p=2</m> se comportará de forma bastante diferente.</p></li>
+	
+					<li><p>Supongamos que tiene un elemento de la intersección.  (Puede obtener uno con el método <c>.an_element()</c>.)  ¿Cómo lleva esto a la suma de cuadrados propuesta en el ejercicio?</p></li>
+	
+					<li><p>¿Puede escribir una función en Python que reciba un cuerpo finito cuyo orden sea una potencia de un primo impar y luego liste cada elemento como suma de cuadrados?</p></li>
+				</ol>
+	
+			</statement>
+	
+			
+		</exercise>
+	
+	</exercises>
 
 </chapter>
-

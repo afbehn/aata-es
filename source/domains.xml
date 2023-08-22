@@ -101,7 +101,7 @@
 			</proof>
 		</lemma>
  
-		<p>El cuerpo <m>F_D</m> en el Lema<nbsp /><xref ref="lemma-field-of-fractions" /> se llama <term>cuerpo de fracciones</term><idx><h>Cuerpo</h><h>de fracciones</h></idx> o <term>cuerpo de cocientes</term><idx><h>Cuerpo</h><h>de cocientes</h></idx> del dominio integral <m>D</m>.</p> 
+		<p>El cuerpo <m>F_D</m> en el <xref ref="lemma-field-of-fractions" /> se llama <term>cuerpo de fracciones</term><idx><h>Cuerpo</h><h>de fracciones</h></idx> o <term>cuerpo de cocientes</term><idx><h>Cuerpo</h><h>de cocientes</h></idx> del dominio integral <m>D</m>.</p> 
 
 		<theorem xml:id="theorem-field-of-quotients">
 			<statement>
@@ -141,10 +141,10 @@
 		</theorem>
 
 		<example xml:id="example-domains-rational-polys">
-			<p>Como <m>{\mathbb Q}</m> es un cuerpo, <m>{\mathbb Q}[x]</m> es un dominio integral. El cuerpo de fracciones de <m>{\mathbb Q}[x]</m> es el conjunto de todas las expresiones racionales <m>p(x)/q(x)</m>, donde <m>p(x)</m> y <m>q(x)</m> son polinomios sobre los racionales y <m>q(x)</m> no es el polinomio cero. Denotaremos este cuerpo por <m>{\mathbb Q}(x)</m>. <notation><usage>\mathbb Q(x)</usage><description>cuerpo de funciones racionales sobre <m>\mathbb Q</m></description></notation></p>
+			<p>Como <m>{\mathbb Q}</m> es un cuerpo, <m>{\mathbb Q}[x]</m> es un dominio integral. El cuerpo de fracciones de <m>{\mathbb Q}[x]</m> es el conjunto de todas las expresiones racionales <m>p(x)/q(x)</m>, donde <m>p(x)</m> y <m>q(x)</m> son polinomios sobre los racionales y <m>q(x)</m> no es el polinomio cero. Denotaremos este cuerpo por <m>{\mathbb Q}(x)</m>. <notation><usage><m>\mathbb Q(x)</m></usage><description>cuerpo de funciones racionales sobre <m>\mathbb Q</m></description></notation></p>
 		</example>
 
-		<p>Dejaremos como ejercicios las demostraciones de los siguientes corolarios al Teorema<nbsp /><xref ref="theorem-field-of-quotients" />.</p>
+		<p>Dejaremos como ejercicios las demostraciones de los siguientes corolarios al <xref ref="theorem-field-of-quotients" />.</p>
  
 		<corollary xml:id="corollary-char-zero-rationals">
 			<statement>
@@ -195,7 +195,7 @@
 			</example>
 	 
 			<example xml:id="example-domains-not-a-ufd">
-				<p>No todo dominio integral es un dominio de factorización única. El subanillo <m>{\mathbb Z}[ \sqrt{3}\, i ] = \{ a + b \sqrt{3}\, i\}</m> de los números complejos es un dominio integral (Ejercicio<nbsp /><xref ref="exercise-rings-gaussian" />, Capítulo<nbsp /><xref ref="rings" />). Sea <m>z = a + b \sqrt{3}\, i</m> y defina <m>\nu : {\mathbb Z}[ \sqrt{3}\, i ] \rightarrow {\mathbb N} \cup \{ 0 \}</m> por <m>\nu( z) = |z|^2 = a^2 + 3 b^2</m>. Es claro que <m>\nu(z) \geq 0</m> con igualdad cuando <m>z = 0</m>. Además, de nuestro conocimiento de números complejos sabemos que <m>\nu(z w) = \nu(z) \nu(w)</m>. Es fácil mostrar que si <m>\nu(z) = 1</m>, entonces <m>z</m> es una unidad, y que las únicas unidades de <m>{\mathbb Z}[ \sqrt{3}\, i ]</m> son 1 y <m>-1</m>.</p>
+				<p>No todo dominio integral es un dominio de factorización única. El subanillo <m>{\mathbb Z}[ \sqrt{3}\, i ] = \{ a + b \sqrt{3}\, i\}</m> de los números complejos es un dominio integral (<xref ref="exercise-rings-gaussian" />, Capí<xref ref="rings" />). Sea <m>z = a + b \sqrt{3}\, i</m> y defina <m>\nu : {\mathbb Z}[ \sqrt{3}\, i ] \rightarrow {\mathbb N} \cup \{ 0 \}</m> por <m>\nu( z) = |z|^2 = a^2 + 3 b^2</m>. Es claro que <m>\nu(z) \geq 0</m> con igualdad cuando <m>z = 0</m>. Además, de nuestro conocimiento de números complejos sabemos que <m>\nu(z w) = \nu(z) \nu(w)</m>. Es fácil mostrar que si <m>\nu(z) = 1</m>, entonces <m>z</m> es una unidad, y que las únicas unidades de <m>{\mathbb Z}[ \sqrt{3}\, i ]</m> son 1 y <m>-1</m>.</p>
 	 
 				<p>Afirmamos que 4 tiene dos factorizaciones distintas en elementos irreducibles: 
 					<me>4 = 2 \cdot 2 = (1 - \sqrt{3}\, i) (1 + \sqrt{3}\, i).</me>
@@ -247,7 +247,7 @@
 					<p>Sea <m>D</m> un <acro>DIP</acro>. Si <m>p</m> es irreducible, entonces <m>p</m> es primo.</p>
 				</statement>
 				<proof>
-					<p>Sea <m>p</m> un irreducible y supongamos que <m>p \mid ab</m>.  Entonces <m>\langle ab \rangle \subset \langle p \rangle</m>. Por el Corolario<nbsp /><xref ref="corollary-maximal-ideal" />, como <m>\langle p \rangle</m> es un ideal maximal, <m>\langle p \rangle</m> también es un ideal primo. Luego, ya sea <m>a \in \langle p \rangle</m> o <m>b \in \langle p \rangle</m>.  En otras palabras, ya sea <m>p \mid a </m> o <m>p \mid b</m>.</p>
+					<p>Sea <m>p</m> un irreducible y supongamos que <m>p \mid ab</m>.  Entonces <m>\langle ab \rangle \subset \langle p \rangle</m>. Por el <xref ref="corollary-maximal-ideal" />, como <m>\langle p \rangle</m> es un ideal maximal, <m>\langle p \rangle</m> también es un ideal primo. Luego, ya sea <m>a \in \langle p \rangle</m> o <m>b \in \langle p \rangle</m>.  En otras palabras, ya sea <m>p \mid a </m> o <m>p \mid b</m>.</p>
 				</proof>
 			</corollary>
 
@@ -265,16 +265,16 @@
 				</proof>
 			</lemma>
 
-			<p>Cualquier anillo conmutativo que satisfaga la condición en el Lema<nbsp /><xref ref="lemma-acc" /> se dice que satisface la <term>condición de cadenas ascendentes</term>,<idx><h>Condición de cadenas ascendentes</h></idx> o <term>CCA</term>.  Tales anillo se llaman <term>anillos Noetherianos</term>,<idx><h>Noetheriano</h><h>anillo</h></idx> en honor a Emmy Noether.</p>
+			<p>Cualquier anillo conmutativo que satisfaga la condición en el <xref ref="lemma-acc" /> se dice que satisface la <term>condición de cadenas ascendentes</term>,<idx><h>Condición de cadenas ascendentes</h></idx> o <term>CCA</term>.  Tales anillo se llaman <term>anillos Noetherianos</term>,<idx><h>Noetheriano</h><h>anillo</h></idx> en honor a Emmy Noether.</p>
 
 			<theorem>
 				<statement>
 					<p>Todo <acro>DIP</acro> es un <acro>DFU</acro>.</p>
 				</statement>
 				<proof>
-					<p><em>Existencia de una factorización.</em> Sea <m>D</m> un <acro>DIP</acro> y sea <m>a</m> un elemento distinto de cero en <m>D</m> que no sea una unidad. Si <m>a</m> es irreducible, no hay más que probar. Si no, entonces existe una factorización <m>a = a_1 b_1</m>, donde ni  <m>a_1</m> ni <m>b_1</m> son unidades. Por ende, <m>\langle a \rangle \subset \langle a_1 \rangle</m>. Por el Lema<nbsp /><xref ref="lemma-principal-ideal" />, sabemos que <m>\langle a \rangle \neq \langle a_1 \rangle</m>; de lo contrario, <m>a</m> y <m>a_1</m> serían asociados y <m>b_1</m> sería una unidad, lo que sería una contradicción. Ahora supongamos que <m>a_1 =  a_2 b_2</m>, donde ni <m>a_2</m> ni <m>b_2</m> son unidades. Por el mismo argumento de antes, <m>\langle a_1 \rangle \subset \langle a_2 \rangle</m>.  Podemos continuar esta construcción para obtener una cadena ascendente de ideales
+					<p><em>Existencia de una factorización.</em> Sea <m>D</m> un <acro>DIP</acro> y sea <m>a</m> un elemento distinto de cero en <m>D</m> que no sea una unidad. Si <m>a</m> es irreducible, no hay más que probar. Si no, entonces existe una factorización <m>a = a_1 b_1</m>, donde ni  <m>a_1</m> ni <m>b_1</m> son unidades. Por ende, <m>\langle a \rangle \subset \langle a_1 \rangle</m>. Por el <xref ref="lemma-principal-ideal" />, sabemos que <m>\langle a \rangle \neq \langle a_1 \rangle</m>; de lo contrario, <m>a</m> y <m>a_1</m> serían asociados y <m>b_1</m> sería una unidad, lo que sería una contradicción. Ahora supongamos que <m>a_1 =  a_2 b_2</m>, donde ni <m>a_2</m> ni <m>b_2</m> son unidades. Por el mismo argumento de antes, <m>\langle a_1 \rangle \subset \langle a_2 \rangle</m>.  Podemos continuar esta construcción para obtener una cadena ascendente de ideales
 						<me>\langle a \rangle \subset \langle a_1 \rangle \subset \langle a_2 \rangle \subset \cdots.</me>
-					Por el Lema<nbsp /><xref ref="lemma-acc" />, existe un entero positivo <m>N</m> tal que <m>\langle a_n \rangle = \langle a_N \rangle</m> para todo <m>n \geq N</m>. En consecuencia, <m>a_N</m> debe ser irreducible. Hemos mostrado que <m>a</m> es producto de dos elementos, uno de los cuáles tiene que ser irreducible.</p>
+					Por el <xref ref="lemma-acc" />, existe un entero positivo <m>N</m> tal que <m>\langle a_n \rangle = \langle a_N \rangle</m> para todo <m>n \geq N</m>. En consecuencia, <m>a_N</m> debe ser irreducible. Hemos mostrado que <m>a</m> es producto de dos elementos, uno de los cuáles tiene que ser irreducible.</p>
 
 <!-- Label repaired.  Suggested by R. Beezer. -->
 <!-- TWJ 12/19/2011 -->
@@ -287,7 +287,7 @@
 
 					<p><em>Unicidad de la factorización.</em> Para mostrar la unicidad, sea
 						<me>a = p_1 p_2 \cdots p_r = q_1 q_2 \cdots q_s,</me>
-					donde cada <m>p_i</m> y cada <m>q_i</m> es irreducible.  Sin pérdida de generalidad, podemos suponer que <m>r \lt s</m>. Como <m>p_1</m> divide a <m>q_1 q_2 \cdots q_s</m>, por el Corolario<nbsp /><xref ref="corollary-irreducible-pid" /> debe dividir a algún <m>q_i</m>. Reordenando los <m>q_i</m>, podemos suponer que <m>p_1 \mid q_1</m>; así, <m>q_1 = u_1 p_1</m> para alguna unidad <m>u_1</m> en <m>D</m>. Por lo tanto,
+					donde cada <m>p_i</m> y cada <m>q_i</m> es irreducible.  Sin pérdida de generalidad, podemos suponer que <m>r \lt s</m>. Como <m>p_1</m> divide a <m>q_1 q_2 \cdots q_s</m>, por el <xref ref="corollary-irreducible-pid" /> debe dividir a algún <m>q_i</m>. Reordenando los <m>q_i</m>, podemos suponer que <m>p_1 \mid q_1</m>; así, <m>q_1 = u_1 p_1</m> para alguna unidad <m>u_1</m> en <m>D</m>. Por lo tanto,
 						<me>a = p_1 p_2 \cdots p_r = u_1 p_1 q_2 \cdots q_s</me>
 					o
 						<me>p_2 \cdots p_r = u_1 q_2 \cdots q_s.</me>
@@ -308,7 +308,7 @@
 			</corollary>
 
 			<example xml:id="example-domains-zx-ufd">
-				<p>Todo <acro>DIP</acro> es un <acro>DFU</acro>, pero no todo <acro>DFU</acro> es un <acro>DIP</acro>. En el Corolario<nbsp /><xref ref="corollary-integer-poly-ufd" />, demostraremos que <m>{\mathbb Z}[x]</m> es un <acro>DFU</acro>.  Pero, <m>{\mathbb Z}[x]</m> no es un <acro>DIP</acro>.  Sea <m>I = \{ 5 f(x) + x g(x) : f(x), g(x)  \in {\mathbb Z}[x] \}</m>.  Podemos mostrar fácilmente que <m>I</m> es un ideal de <m>{\mathbb Z}[x]</m>.  Supongamos que <m>I = \langle p(x) \rangle</m>.  Como <m>5 \in I</m>,  <m>5 = f(x) p(x)</m>.  En este caso <m>p(x) = p</m> debe ser una constante.  Como <m>x  \in I</m>, <m>x = p g(x)</m>; luego, <m>p = \pm 1</m>. Pero, de esto concluimos que <m>\langle p(x) \rangle = {\mathbb Z}[x]</m>. Pero esto diría que 3 está en <m>I</m>. Por lo tanto, podemos escribir <m>3 = 5 f(x) + x g(x)</m> para ciertos <m>f(x)</m> y <m>g(x)</m> en <m>{\mathbb Z}[x]</m>.  Examinando el término constante de este polinomio, vemos que <m>3 = 5 f(x)</m>, lo que es imposible.</p>
+				<p>Todo <acro>DIP</acro> es un <acro>DFU</acro>, pero no todo <acro>DFU</acro> es un <acro>DIP</acro>. En el <xref ref="corollary-integer-poly-ufd" />, demostraremos que <m>{\mathbb Z}[x]</m> es un <acro>DFU</acro>.  Pero, <m>{\mathbb Z}[x]</m> no es un <acro>DIP</acro>.  Sea <m>I = \{ 5 f(x) + x g(x) : f(x), g(x)  \in {\mathbb Z}[x] \}</m>.  Podemos mostrar fácilmente que <m>I</m> es un ideal de <m>{\mathbb Z}[x]</m>.  Supongamos que <m>I = \langle p(x) \rangle</m>.  Como <m>5 \in I</m>,  <m>5 = f(x) p(x)</m>.  En este caso <m>p(x) = p</m> debe ser una constante.  Como <m>x  \in I</m>, <m>x = p g(x)</m>; luego, <m>p = \pm 1</m>. Pero, de esto concluimos que <m>\langle p(x) \rangle = {\mathbb Z}[x]</m>. Pero esto diría que 3 está en <m>I</m>. Por lo tanto, podemos escribir <m>3 = 5 f(x) + x g(x)</m> para ciertos <m>f(x)</m> y <m>g(x)</m> en <m>{\mathbb Z}[x]</m>.  Examinando el término constante de este polinomio, vemos que <m>3 = 5 f(x)</m>, lo que es imposible.</p>
 			</example>
 
 		</subsection>
@@ -318,7 +318,7 @@
 
 			<p>Hemos usado de forma repetida el algoritmo de la división para probar resultados tanto sobre <m>{\mathbb Z}</m> como sobre <m>F[x]</m>, donde <m>F</m> es un cuerpo.  Nos preguntamos ahora cuándo es que existe un algoritmo de la división para un dominio integral.</p>
 
-			<p>Sea <m>D</m> un dominio integral tal que para cada <m>a \in D</m> existe un entero no negativo <m>\nu(a)</m> que satisface las siguientes condiciones. <notation><usage>\nu(a)</usage><description>Valuación Euclideana de <m>a</m></description></notation>
+			<p>Sea <m>D</m> un dominio integral tal que para cada <m>a \in D</m> existe un entero no negativo <m>\nu(a)</m> que satisface las siguientes condiciones. <notation><usage><m>\nu(a)</m></usage><description>Valuación Euclideana de <m>a</m></description></notation>
 				<ol>
 
 					<li><p>Si <m>a</m> y <m>b</m> son elementos distintos de cero en <m>D</m>, entonces <m>\nu(a) \leq \nu(ab)</m>.</p></li>
@@ -338,7 +338,7 @@
 
 
 			<example xml:id="example-domains-gaussian-valuation">
-				<p>Los enteros Gaussianos en el Ejemplo<nbsp /><xref ref="example-rings-gaussian-integers" /> del Capítulo<nbsp /><xref ref="rings" /> están definidos como
+				<p>Los enteros Gaussianos en el <xref ref="example-rings-gaussian-integers" /> del Capí<xref ref="rings" /> están definidos como
 					<me>{\mathbb Z}[i] = \{  a + b i : a, b \in {\mathbb Z} \}.</me>
 				Usualmente medimos el tamaño de un número complejo <m>a + bi</m> por su valor absoluto, <m>|a + bi| = \sqrt{ a^2 + b^2}</m>; pero, <m>\sqrt{a^2 + b^2}</m> podría no ser un entero. Como valuación elegiremos <m>\nu(a + bi) = a^2 + b^2</m> para asegurarnos de tener un entero.</p>
 
@@ -386,7 +386,7 @@
 		<subsection xml:id="domains-subsection-factorization">
 			<title>Factorización en <m>D\lbrack x \rbrack</m></title>
 
-			<p>Uno de los anillos de polinomios más importantes es <m>{\mathbb Z}[x]</m>. Una de las primeras preguntas que surgen es si <m>{\mathbb Z}[x]</m> es o no un <acro>DFU</acro>.  Demostraremos un resultado más general. Primero obtendremos una generalización del Lema de Gauss (Teorema<nbsp /><xref ref="theorem-gauss-lemma" />).</p>
+			<p>Uno de los anillos de polinomios más importantes es <m>{\mathbb Z}[x]</m>. Una de las primeras preguntas que surgen es si <m>{\mathbb Z}[x]</m> es o no un <acro>DFU</acro>.  Demostraremos un resultado más general. Primero obtendremos una generalización del Lema de Gauss (<xref ref="theorem-gauss-lemma" />).</p>
 
 			<p>Sea <m>D</m> un dominio de factorización única y supongamos que 
 				<me>p(x) = a_n x^n + \cdots + a_1 x + a_0</me>
@@ -430,7 +430,7 @@
 				</proof>
 			</lemma>
 
-			<p>Los siguientes corolarios son consecuencia directa del Lema<nbsp /><xref ref="lemma-ufd-factorization" />.</p>
+			<p>Los siguientes corolarios son consecuencia directa del <xref ref="lemma-ufd-factorization" />.</p>
 
 			<corollary xml:id="corollary-irreducible-poly">
 				<statement>
@@ -449,13 +449,13 @@
 					<p>Si <m>D</m> es un <acro>DFU</acro>, entonces <m>D[x]</m> es un <acro>DFU</acro>.</p>
 				</statement>
 				<proof>
-					<p>Sea <m>p(x)</m> un polinomio distinto de cero en <m>D[x]</m>.  Si <m>p(x)</m> es un polinomio constante, entonces tiene una factorización única pues <m>D</m> es un <acro>DFU</acro>. Ahora supongamos que <m>p(x)</m> es un polinomio de grado positivo en <m>D[x]</m>. Sea <m>F</m> el cuerpo de fracciones de <m>D</m>, y sea <m>p(x) = f_1(x) f_2(x) \cdots f_n(x)</m> una factorización de <m>p(x)</m>, donde cada <m>f_i(x)</m> es irreducible. Escojamos <m>a_i \in D</m> tales que <m>a_i f_i(x)</m> esté en <m>D[x]</m>. Existen <m>b_1, \ldots, b_n \in D</m> tales que <m>a_i f_i(x) = b_i g_i(x)</m>, donde <m>g_i(x)</m> es un polinomio primitivo en <m>D[x]</m>. Por el Corolario<nbsp /><xref ref="corollary-irreducible-poly" />, cada <m>g_i(x)</m> es irreducible en <m>D[x]</m>. Así, podemos escribir
+					<p>Sea <m>p(x)</m> un polinomio distinto de cero en <m>D[x]</m>.  Si <m>p(x)</m> es un polinomio constante, entonces tiene una factorización única pues <m>D</m> es un <acro>DFU</acro>. Ahora supongamos que <m>p(x)</m> es un polinomio de grado positivo en <m>D[x]</m>. Sea <m>F</m> el cuerpo de fracciones de <m>D</m>, y sea <m>p(x) = f_1(x) f_2(x) \cdots f_n(x)</m> una factorización de <m>p(x)</m>, donde cada <m>f_i(x)</m> es irreducible. Escojamos <m>a_i \in D</m> tales que <m>a_i f_i(x)</m> esté en <m>D[x]</m>. Existen <m>b_1, \ldots, b_n \in D</m> tales que <m>a_i f_i(x) = b_i g_i(x)</m>, donde <m>g_i(x)</m> es un polinomio primitivo en <m>D[x]</m>. Por el <xref ref="corollary-irreducible-poly" />, cada <m>g_i(x)</m> es irreducible en <m>D[x]</m>. Así, podemos escribir
 						<me>a_1 \cdots a_n p(x) = b_1 \cdots b_n g_1(x) \cdots g_n(x).</me>
 					Sea <m>b = b_1 \cdots b_n</m>. Como <m>g_1(x) \cdots g_n(x)</m> es primitivo, <m>a_1 \cdots a_n</m> divide a <m>b</m>. Por lo tanto, <m>p(x) = a g_1(x) \cdots g_n(x)</m>, donde <m>a \in D</m>. Como <m>D</m> es un <acro>DFU</acro>, podemos factorizar <m>a</m> como <m>u c_1 \cdots c_k</m>, donde <m>u</m> es una unidad y cada uno de los <m>c_i</m> es irreducible en <m>D</m>.</p>
 
 					<p>Ahora mostraremos la unicidad de esta factorización. Sean
 						<me>p(x) = a_1 \cdots a_m f_1(x) \cdots f_n(x) = b_1 \cdots b_r g_1(x) \cdots g_s(x)</me>
-					dos factorizaciones de <m>p(x)</m>, donde todos los factores son irreducibles en <m>D[x]</m>.  Por el Corolario<nbsp /><xref ref="corollary-irreducible-poly" />, cada uno de los <m>f_i</m> y de los <m>g_i</m> es irreducible en <m>F[x]</m>. Los <m>a_i</m> y los <m>b_i</m> son unidades en <m>F</m>. Como <m>F[x]</m> es un <acro>DIP</acro>, es un <acro>DFU</acro>; por lo tanto, <m>n=s</m>. Reordenamos los <m>g_i(x)</m> de manera que <m>f_i(x)</m> y <m>g_i(x)</m> sean asociados para <m>i = 1, \ldots, n</m>.  Entonces existen <m>c_1, \ldots, c_n</m> y <m>d_1, \ldots, d_n</m> en <m>D</m> tales que <m>(c_i / d_i) f_i(x) = g_i(x)</m> o <m>c_i f_i(x) = d_i g_i(x)</m>. Los polinomios <m>f_i(x)</m> y <m>g_i(x)</m> son primitivos; luego, <m>c_i</m> y <m>d_i</m> son asociados en <m>D</m>. Así, <m>a_1 \cdots a_m = u b_1 \cdots b_r</m> en <m>D</m>, donde <m>u</m> es una unidad en <m>D</m>. Como <m>D</m> es un dominio de factorización única, <m>m = s</m>. Finalmente, podemos reordenar los <m>b_i</m> de manera que <m>a_i</m> y <m>b_i</m> sean asociados para cada <m>i</m>. Esto completa la parte de unicidad de la demostración.</p>
+					dos factorizaciones de <m>p(x)</m>, donde todos los factores son irreducibles en <m>D[x]</m>.  Por el <xref ref="corollary-irreducible-poly" />, cada uno de los <m>f_i</m> y de los <m>g_i</m> es irreducible en <m>F[x]</m>. Los <m>a_i</m> y los <m>b_i</m> son unidades en <m>F</m>. Como <m>F[x]</m> es un <acro>DIP</acro>, es un <acro>DFU</acro>; por lo tanto, <m>n=s</m>. Reordenamos los <m>g_i(x)</m> de manera que <m>f_i(x)</m> y <m>g_i(x)</m> sean asociados para <m>i = 1, \ldots, n</m>.  Entonces existen <m>c_1, \ldots, c_n</m> y <m>d_1, \ldots, d_n</m> en <m>D</m> tales que <m>(c_i / d_i) f_i(x) = g_i(x)</m> o <m>c_i f_i(x) = d_i g_i(x)</m>. Los polinomios <m>f_i(x)</m> y <m>g_i(x)</m> son primitivos; luego, <m>c_i</m> y <m>d_i</m> son asociados en <m>D</m>. Así, <m>a_1 \cdots a_m = u b_1 \cdots b_r</m> en <m>D</m>, donde <m>u</m> es una unidad en <m>D</m>. Como <m>D</m> es un dominio de factorización única, <m>m = s</m>. Finalmente, podemos reordenar los <m>b_i</m> de manera que <m>a_i</m> y <m>b_i</m> sean asociados para cada <m>i</m>. Esto completa la parte de unicidad de la demostración.</p>
 				</proof>
 			</theorem>
  
@@ -483,7 +483,11 @@
 				<p>Es importante destacar que todo dominio Euclideano es un <acro>DIP</acro> y que todo <acro>DIP</acro> es un <acro>DFU</acro>. Sin embargo, como hemos demostrado con ejemplos, los recíprocos de cada una de estas aseveraciones son falsos.  Existen dominios de ideales principales que no son dominios Euclideanos, y existen dominios de factorización única que no son dominios de ideales principales (<m>{\mathbb Z}[x]</m>). </p>
 			</remark>
 
-			<xi:include href="./sage/domains-info.xml" />
+			<paragraphs>
+				<title>Sage</title>
+			
+				<p>Sage permite diferenciar entre anillos en general, dominios, dominios de ideales principales y cuerpos.  Todo suele ir bien con las construcciones y los cálculos con DIP's, pero las cosas se pueden complicar bastante (computacionalmente) cuando el anillo tiene menos estructura.  No todas las preguntas se pueden contestar con Sage en este contexto más general.</p>
+			</paragraphs>
 
 		</subsection>
 
@@ -504,7 +508,261 @@
 
 	</section>
 
-	<xi:include href="./exercises/domains.xml" />
+	<exercises xml:id="exercises-domains">
+		<title>Ejercicios</title>
+	
+		<exercise number="1">
+			<statement>
+				<p>Sea <m>z = a + b \sqrt{3}\, i</m> en <m>{\mathbb Z}[ \sqrt{3}\, i]</m>. Si <m>a^2 + 3 b^2 = 1</m>, muestre que <m>z</m> es una unidad. Muestre que las únicas unidades de <m>{\mathbb Z}[ \sqrt{3}\, i ]</m> son 1 y <m>-1</m>. </p>
+			</statement>
+			<hint>
+				<p>Note que <m>z^{-1} = 1/(a + b\sqrt{3}\, i) = (a -b \sqrt{3}\, i)/(a^2 + 3b^2)</m> está en <m>{\mathbb Z}[\sqrt{3}\, i]</m> si y solo si <m>a^2 + 3 b^2 = 1</m>. Las únicas soluciones enteras de la ecuación son <m>a = \pm 1, b = 0</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+				<p>Los enteros Gaussianos, <m>{\mathbb Z}[i]</m>, forman un <acro>DFU</acro>.  Factorice cada uno de los siguientes elementos en <m>{\mathbb Z}[i]</m> como producto de irreducibles.
+					<ol cols="2">
+	
+						<li><p>5</p></li>
+	
+						<li><p><m>1 + 3i</m></p></li>
+	
+						<li><p><m>6 + 8i</m></p></li>
+	
+					<li><p>2</p></li>
+	
+					</ol></p>
+			</statement>
+			<hint>
+				<p>(a) <m>5 = -i(1 + 2i)(2 + i)</m>; (c) <m>6 + 8i = -i(1 + i)^2(2 + i)^2</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+				<p>Sea <m>D</m> un dominio integral. 
+					<ol>
+			 
+						<li><p>Demuestre que <m>F_D</m> es un grupo abeliano bajo la operación de adición.</p></li>
+	
+						<li><p>Muestre que la operación de multiplicación está bien-definida en el cuerpo de fracciones, <m>F_D</m>.</p></li>
+			 
+						<li><p>Verifique las propiedades asociativa y conmutativa en <m>F_D</m>.</p></li>
+	
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="4">
+			<statement>
+				<p>Demuestre o refute: Cualquier subanillo de un cuerpo <m>F</m> que contenga a 1 es un dominio integral.</p>
+			</statement>
+			<hint>
+				<p>Verdadero.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="5">
+			<statement>
+				<p>Demuestre o refute: Si <m>D</m> es un dominio integral, entonces todo elemento primo en <m>D</m> también es irreducible en <m>D</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Check this solution.</todo>
+	
+		<exercise number="6">
+			<statement>
+				<p>Sea <m>F</m> un cuerpo de característica cero. Demuestre que <m>F</m> contiene un subcuerpo isomorfo a <m>{\mathbb Q}</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="7">
+			<statement>
+				<p>Sea <m>F</m> un cuerpo.
+				<ol>
+	
+					<li><p>Demuestre que el cuerpo de fracciones de <m>F[x]</m>, denotado por <m>F(x)</m>, es isomorfo al conjunto de todas las expresiones racionales <m>p(x) / q(x)</m>, donde <m>q(x)</m> no es el polinomio cero.  <notation><usage>F(x)</usage><description>cuerpo de funciones racionales en <m>x</m></description></notation></p></li>
+	
+					<li><p>Sean <m>p(x_1, \ldots, x_n)</m> y <m>q(x_1, \ldots, x_n)</m> polinomios en <m>F[x_1, \ldots, x_n]</m>. Muestre que el conjunto de todas las expresiones racionales <m>p(x_1, \ldots, x_n) / q(x_1, \ldots, x_n)</m> es isomorfo al cuerpo de fracciones de <m>F[x_1, \ldots, x_n]</m>. Denotamos el cuerpo de fracciones de <m>F[x_1, \ldots, x_n]</m> por <m>F(x_1, \ldots, x_n)</m>.  <notation><usage>F(x_1, \dots, x_n)</usage><description>cuerpo de funciones racionales en <m>x_1, \ldots, x_n</m></description></notation></p></li>
+	
+				</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="8">
+			<statement>
+				<p>Sea <m>p</m> un número primo y denote el cuerpo de fracciones de <m>{\mathbb Z}_p[x]</m> por <m>{\mathbb Z}_p(x)</m>. Demuestre que <m>{\mathbb Z}_p(x)</m> es un cuerpo infinito de característica  <m>p</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="9">
+			<statement>
+				<p>Demuestre que el cuerpo de fracciones de los enteros Gaussianos, <m>{\mathbb Z}[i]</m>, es 
+					<me>{\mathbb Q}(i) = \{ p + q i : p, q \in {\mathbb Q}  \}.</me></p>
+			</statement>
+			<hint>
+				<p>Sean <m>z = a + bi</m> y <m>w = c + di \neq 0</m> en <m>{\mathbb Z}[i]</m>. Demuestre que <m>z/w \in {\mathbb Q}(i)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="10">
+			<statement>
+				<p>Un cuerpo <m>F</m> se llama <term>cuerpo primo</term> si no tiene subcuerpos propios. Si <m>E</m> es un subcuerpo de <m>F</m> y <m>E</m> es un cuerpo primo, entonces <m>E</m> en un <term>subcuerpo primo</term> de <m>F</m>. 
+					<ol>
+					 
+						<li><p>Demuestre que todo cuerpo contiene un único subcuerpo primo.</p></li>
+						 
+						<li><p>Si <m>F</m> es un cuerpo de característica 0, demuestre que el subcuerpo primo de <m>F</m> es isomorfo al cuerpo de los números racionales, <m>{\mathbb Q}</m>.</p></li>
+						 
+						<li><p>Si <m>F</m> es un cuerpo de característica <m>p</m>, demuestre que el subcuerpo primo de <m>F</m> es isomorfo a <m>{\mathbb Z}_p</m>.</p></li>
+					 
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="11">
+			<statement>
+				<p>Sea <m>{\mathbb Z}[ \sqrt{2}\, ] = \{ a + b \sqrt{2} : a, b \in {\mathbb Z} \}</m>. 
+					<ol>
+	
+						<li><p>Demuestre que <m>{\mathbb Z}[ \sqrt{2}\, ]</m> es un dominio integral.</p></li>
+	
+						<li><p>Encuentre todas las unidades en <m>{\mathbb Z}[\sqrt{2}\, ]</m>.</p></li>
+	
+						<li><p>Determine el cuerpo de fracciones de <m>{\mathbb Z}[ \sqrt{2}\, ]</m>.</p></li>
+						 
+						<li><p>Demuestre que  <m>{\mathbb Z}[ \sqrt{2} i ]</m> es un dominio Euclideano con la valuación Euclideana <m>\nu( a + b \sqrt{2}\, i) = a^2 + 2b^2</m>.</p></li>
+				 
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="12">
+			<statement>
+				<p>Sea <m>D</m> un <acro>DFU</acro>. Un elemento <m>d \in D</m> es un <term>máximo divisor común de <m>a</m> y <m>b</m> en <m>D</m></term> si <m>d \mid a</m> y <m>d \mid b</m> y <m>d</m> es divisible por cualquier otro elemento que divida tanto a <m>a</m> como a <m>b</m>.  
+					<ol>
+	
+						<li><p>Si <m>D</m> es un <acro>DIP</acro> y <m>a</m> y <m>b</m> son ambos elementos distintos de cero en <m>D</m>, demuestre que existe un único máximo común divisor de <m>a</m> y <m>b</m> salvo asociados. Es decir, si <m>d</m> y <m>d'</m> son ambos máximo común divisor de <m>a</m> y <m>b</m>, entonces <m>d</m> y <m>d'</m> son asociados.  Escribimos <m>\gcd( a, b)</m> para el máximo común divisor de <m>a</m> y <m>b</m>.</p></li>
+	
+						<li><p>Sea <m>D</m> un <acro>DIP</acro> y sean <m>a</m> y <m>b</m> elementos distintos de cero en <m>D</m>. Demuestre que existen elementos <m>s</m> y <m>t</m> en <m>D</m> tales que <m>\gcd(a, b) = as + bt</m>.</p></li>
+	
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="13">
+			<statement>
+				<p>Sea <m>D</m> un dominio integral. Defina una relación en <m>D</m> como <m>a \sim b</m> si <m>a</m> y <m>b</m> son asociados en <m>D</m>. Demuestre que <m>\sim</m> es una relación de equivalencia en <m>D</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="14">
+			<statement>
+				<p>Sea <m>D</m> un dominio Euclideano con valuación Euclideana <m>\nu</m>. Si <m>u</m> es una unidad en <m>D</m>, demuestre que <m>\nu(u) = \nu(1)</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="15">
+			<statement>
+				<p>Sea <m>D</m> un dominio Euclideano con valuación Euclideana <m>\nu</m>. Si <m>a</m> y <m>b</m> son asociados en <m>D</m>, demuestre que <m>\nu(a) = \nu(b)</m>.</p>
+			</statement>
+			<hint>
+				<p>Sea <m>a = ub</m> con <m>u</m> una unidad. Entonces <m>\nu(b) \leq \nu(ub) \leq \nu(a)</m>. Similarmente, <m>\nu(a) \leq \nu(b)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="16">
+			<statement>
+				<p>Muestre que <m>{\mathbb Z}[\sqrt{5}\, i]</m> no es un dominio de factorización única.</p>
+			</statement>
+			<hint>
+				<p>Muestre que 21 se puede factorizar de dos formas diferentes.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="17">
+			<statement>
+				<p>Demuestre o refute:  Todo subdominio de un <acro>DFU</acro> también es un <acro>DFU</acro>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="18">
+			<statement>
+				<p>Un ideal <m>I</m> en un anillo conmutativo <m>R</m> es <term>finitamente generado</term> si existen elementos <m>a_1, \ldots, a_n</m> en <m>I</m> de manera que cada elemento <m>r \in I</m> pueda escribirse como <m>a_1 r_1 + \cdots + a_n r_n</m> para ciertos <m>r_1, \ldots, r_n</m> en <m>R</m>. Demuestre que <m>R</m> satisface la condición de cadenas ascendentes si y solo si todo ideal de <m>R</m> es finitamente generado.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="19">
+			<statement>
+				<p>Sea <m>D</m> un dominio integral en el que para cualquier cadena descendente de ideales <m>I_1 \supset I_2 \supset I_3 \supset \cdots</m>. existe <m>N</m> tal que <m>I_k = I_N</m> para todo <m>k \geq N</m>. Un anillo que satisface esta condición se dice que satisface la <term>condición de cadenas descendentes</term>, o <term>CCD</term>. Anillos que satisfacen la CCD se llaman <term>anillos Artinianos</term>, en honor a Emil Artin.  Muestre que si <m>D</m> satisface la condición de cadenas descendentes, entonces también satisface la condición de cadenas ascendentes.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="20">
+			<statement>
+				<p>Sea <m>R</m> un anillo conmutativo con identidad. Definimos un <term>subconjunto multiplicativo</term> de <m>R</m> como un subconjunto <m>S</m> tal que <m>1 \in S</m> y <m>ab \in S</m> si <m>a, b \in S</m>. 
+					<ol>
+	
+						<li><p>Definamos una relación <m>\sim</m> en <m>R \times S</m> como <m>(a, s) \sim (a', s')</m> si existe <m>s^\ast \in S</m> tal que <m>s^\ast(s' a -s a') =0</m>. Muestre que  <m>\sim</m> es una relaión de equivalencia en <m>R \times S</m>.</p></li>
+						 
+						<li><p>Denotems por <m>a/s</m> a la clase de equivalencia de <m>(a,s) \in R \times S</m> y sea <m> S^{-1}R</m> el conjunto de todas las clases de equivalencia respecto a <m>\sim</m>. Definamos las operaciones de adición yb multiplicación en <m>S^{-1} R</m> como
+							<md>
+								<mrow>\frac{a}{s} + \frac{b}{t} &amp; = \frac{at + b s}{s t}</mrow>
+								<mrow>\frac{a}{s}  \frac{b}{t} &amp; = \frac{a b}{s t},</mrow>
+							</md>
+						respectivamente. Demuestre que estas operaciones están bien-definidas en <m>S^{-1}R</m> y que <m>S^{-1}R</m> es un anillo con identidad bajo estas operaciones. El anillo <m>S^{-1}R</m> se llama <term>anillo de cocientes</term> de <m>R</m> respecto a <m>S</m>.</p></li>
+						 
+						<li><p>Muestre que la función <m>\psi : R \rightarrow S^{-1}R</m> definida por <m>\psi(a) = a/1</m> es un homomorfismo de anillos.</p></li>
+						 
+						<li><p>Si <m>R</m> no tiene divisores de cero y <m>0 \notin S</m>, muestre que <m>\psi</m> es 1-1.</p></li>
+	
+						<li><p>Demuestre que <m>P</m> es un ideal primo de <m>R</m> si y solo si <m>S = R \setminus P</m> es un subconjunto multiplicativo de <m>R</m>.</p></li>
+						 
+						<li><p>Si <m>P</m> es un ideal primo de <m>R</m> y <m>S = R \setminus P</m>, muestre que el anillo de cocientes <m>S^{-1}R</m> tiene un único ideal maximal. Cualquier anillo que tiene un único ideal maximal se llama <term>anillo local</term>.</p></li> 
+					 
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+	</exercises>
  
 	<references xml:id="domains-references">
 		<title>Referencias y Lecturas Recomendadas</title>
@@ -519,9 +777,264 @@
 
 	</references>
  
-	<xi:include href="./sage/domains-sage.xml" />
-	<xi:include href="./sage/domains-sage-exercises.xml" />
-
+	<section xml:id="domains-sage">
+		<title>Sage</title>
+	
+		<introduction>
+			<p>Ya hemos visto algunos dominios de integridad y de factorización única en los dos capítulos precedentes.  Además de lo que ya hemos visto, Sage se puede usar para algunos de los tópicos de este capítulo, pero la implementación es limitada.  Algunas funciones se pueden usar con algunos anillos y no con otros, mientras otras funciones aún no son parte de Sage.  Daremos algunos ejemplos, pero esto está lejos de ser exhaustivo.</p>
+		</introduction>
+	
+	
+		<subsection>
+			<title>Cuerpo de Fracciones</title>
+	
+			<p>Sage muchas veces es capaz de construir un cuerpo de fracciones, o de identificar un cierto cuerpo como un cuerpo de fracciones.  Por ejemplo, el anillo de enteros y el cuerpo de los números racionales, están ambos implementados en Sage, y los enteros <q>saben</q> que los racionales forman su cuerpo de fracciones.</p>
+	
+			<sage>
+			<input>
+			Q = ZZ.fraction_field(); Q
+			</input>
+			<output>
+			Rational Field
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			Q == QQ
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<p>En los otros casos Sage construye un cuerpo de fracciones, en el espíritu del <xref ref="lemma-field-of-fractions" />.  Luego es posible hacer cálculos básicos en el cuerpo construido.</p>
+	
+			<sage>
+			<input>
+			R.&lt;x&gt; = ZZ[]
+			P = R.fraction_field();P
+			</input>
+			<output>
+			Fraction Field of Univariate Polynomial Ring in x over Integer Ring
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			f = P((x^2+3)/(7*x+4))
+			g = P((4*x^2)/(3*x^2-5*x+4))
+			h = P((-2*x^3+4*x^2+3)/(x^2+1))
+			((f+g)/h).numerator()
+			</input>
+			<output>
+			3*x^6 + 23*x^5 + 32*x^4 + 8*x^3 + 41*x^2 - 15*x + 12
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			((f+g)/h).denominator()
+			</input>
+			<output>
+			-42*x^6 + 130*x^5 - 108*x^4 + 63*x^3 - 5*x^2 + 24*x + 48
+			</output>
+			</sage>
+	
+		</subsection>
+	
+		<subsection>
+			<title>Subcuerpos Primos</title>
+	
+			<p>El <xref ref="corollary-char-p-zp" /> dice que todo cuerpo de característica <m>p</m> tiene un subcuerpo isomorfo a <m>{\mathbb Z}_p</m>.  Para un cuerpo finito, la naturaleza exacta de este subcuerpo no es una sorpresa, y Sage nos permite extraerlo fácilmente.</p>
+	
+			<sage>
+			<input>
+			F.&lt;c&gt; = FiniteField(3^5)
+			F.characteristic()
+			</input>
+			<output>
+			3
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			G = F.prime_subfield(); G
+			</input>
+			<output>
+			Finite Field of size 3
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			G.list()
+			</input>
+			<output>
+			[0, 1, 2]
+			</output>
+			</sage>
+	
+			<p>Más en general, los cuerpos mencionados en las conclusiones del <xref ref="corollary-char-zero-rationals" /> y del <xref ref="corollary-char-p-zp" /> se conocen como el <q>subcuerpo primo</q> del anillo que los contiene.  Acá un ejemplo en el caso de característica cero.</p>
+	
+			<sage>
+			<input>
+			K.&lt;y&gt;=QuadraticField(-7); K
+			</input>
+			<output>
+			Number Field in y with defining polynomial x^2 + 7
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			K.prime_subfield()
+			</input>
+			<output>
+			Rational Field
+			</output>
+			</sage>
+	
+			<p>A grosso modo, todo cuerpo de característica cero contiene una copia de los números racionales (el cuerpo de fracciones de los enteros), lo que puede explicar el extenso soporte en Sage de los anillos y cuerpos que extienden a los enteros y los racionales.</p>
+	
+		</subsection>
+	
+		<subsection>
+			<title>Dominios Integrales</title>
+	
+			<p>Sage puede determinar si algunos anillos son dominios integrales y podemos comprobar productos en ellos.  Pero, nociones de unidades, elementos irreducibles o primos no están implementadas en general (fuera de lo que vimos para polinomios en el capítulo anterior).  Peor aún, la construcción que sigue crea un anillo dentro de un cuerpo mayor y por ello algunas de las funciones (como <c>.is_unit()</c>) se heredan y dan resultados engañosos.  Esto debido a que la construcción de abajo crea un anillo conocido como un <q>orden en un cuerpo de números.</q></p>
+	
+			<sage>
+			<input>
+			K.&lt;x&gt; = ZZ[sqrt(-3)]; K
+			</input>
+			<output>
+			Order in Number Field in a with defining polynomial x^2 + 3
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			K.is_integral_domain()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			K.basis()
+			</input>
+			<output>
+			[1, a]
+			</output>
+			</sage>
+	
+			<sage>
+			<input>x</input>
+			<output>a</output>
+			</sage>
+	
+			<sage>
+			<input>
+			(1+x)*(1-x) == 2*2
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<p>Lo siguiente es un poco engañoso, pues <m>4</m>, como elemento de <m>{\mathbb Z}[\sqrt{3}i]</m> no tiene inverso multiplicativo, pero aparentemente podemos calcular uno.  (Nota de AB: ¿por qué les molesta acá y no en <m>{\mathbb Z}</m>?)</p>
+	
+			<sage>
+			<input>
+			four = K(4)
+			four.is_unit()
+			</input>
+			<output>
+			False
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			four^-1
+			</input>
+			<output>
+			1/4
+			</output>
+			</sage>
+	
+		</subsection>
+	
+		<subsection>
+			<title>Ideales Principales</title>
+	
+			<p>Cuando un anillo es un dominio de ideales principales, como los enteros, o polinomios sobre un cuerpo, Sage funciona bien.  Más allá de eso la cosa se debilita.</p>
+	
+			<sage>
+			<input>
+			T.&lt;x&gt;=ZZ[]
+			T.is_integral_domain()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			J = T.ideal(5, x); J
+			</input>
+			<output>
+			Ideal (5, x) of Univariate Polynomial Ring in x over Integer Ring
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			Q = T.quotient(J); Q
+			</input>
+			<output>
+			Quotient of Univariate Polynomial Ring in x over
+			Integer Ring by the ideal (5, x)
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			J.is_principal()
+			</input>
+			<output>
+			Traceback (most recent call last):
+			...
+			NotImplementedError
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			Q.is_field()
+			</input>
+			<output>
+			Traceback (most recent call last):
+			...
+			NotImplementedError
+			</output>
+			</sage>
+	
+		</subsection>
+	</section>
+	<exercises xml:id="domains-sage-exercises">
+		<title>Ejercicios en Sage</title>
+	
+		<introduction>
+			<p>No hay ejercicios en Sage para esta sección.</p>
+		</introduction>
+	
+	</exercises>
+	
 </chapter>
  
-

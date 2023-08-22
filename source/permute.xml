@@ -13,7 +13,7 @@
 	<introduction>
 		<p>Los grupos de permutaciones tienen un rol central en el estudio de simetrías geométricas y en la teoría de Galois, el estudio de la búsqueda de soluciones de ecuaciones polinomiales.  Además son una fuente de muchos ejemplos de grupos no abelianos.</p>
 
-		<p>Recordemos por un momento las simetrías del triángulo equilátero <m>\bigtriangleup ABC</m> del Capítulo<nbsp /><xref ref="groups" />. Las simetrías de hecho consisten en permutaciones de los tres vértices, donde una <term>permutación</term><idx><h>Permutación</h><h>definición de</h></idx> del conjunto <m>S = \{ A, B, C \}</m> es una biyección <m>\pi :S \rightarrow S</m>. Los tres vértices tienen la siguientes seis permutaciones.
+		<p>Recordemos por un momento las simetrías del triángulo equilátero <m>\bigtriangleup ABC</m> del Capí<xref ref="groups" />. Las simetrías de hecho consisten en permutaciones de los tres vértices, donde una <term>permutación</term><idx><h>Permutación</h><h>definición de</h></idx> del conjunto <m>S = \{ A, B, C \}</m> es una biyección <m>\pi :S \rightarrow S</m>. Los tres vértices tienen la siguientes seis permutaciones.
 			<md>
 				<mrow>\begin{pmatrix}<![CDATA[
 				A & B & C \\
@@ -63,7 +63,7 @@
 		<title>Definiciones y Notación</title>
  
  		<introduction>
-			<p>En general, las permutaciones de un conjunto <m>X</m> forman el grupo <m>S_X</m>. Si <m>X</m> es un conjunto finito, podemos suponer que <m>X=\{ 1, 2, \ldots, n\}</m>. En este caso escribiremos <m>S_n</m> en lugar de <m>S_X</m>. <notation><usage>S_n</usage><description>el grupo simétrico en <m>n</m> símbolos</description></notation> El siguiente teorema dice que <m>S_n</m> es un grupo. A este grupo lo llamaremos <term>grupo simétrico</term><idx><h>Simétrico</h><h>grupo</h></idx> en <m>n</m> símbolos.</p>
+			<p>En general, las permutaciones de un conjunto <m>X</m> forman el grupo <m>S_X</m>. Si <m>X</m> es un conjunto finito, podemos suponer que <m>X=\{ 1, 2, \ldots, n\}</m>. En este caso escribiremos <m>S_n</m> en lugar de <m>S_X</m>. <notation><usage><m>S_n</m></usage><description>el grupo simétrico en <m>n</m> símbolos</description></notation> El siguiente teorema dice que <m>S_n</m> es un grupo. A este grupo lo llamaremos <term>grupo simétrico</term><idx><h>Simétrico</h><h>grupo</h></idx> en <m>n</m> símbolos.</p>
 
 			<theorem>
 				<statement>
@@ -162,7 +162,7 @@
 				<mrow>\sigma( a_2 ) &amp; = a_3</mrow>
 				<mrow>              &amp; \vdots</mrow>
               	<mrow>\sigma( a_k ) &amp; = a_1</mrow>
-             </md> y <m>\sigma( x) =x</m> para todos los demás elementos <m>x \in X</m>. Escribiremos <m>(a_1, a_2, \ldots, a_k )</m> para denotar al ciclo <m>\sigma</m>. <notation><usage>(a_1, a_2, \ldots, a_k )</usage><description>ciclo de largo <m>k</m></description></notation> Los ciclos son los bloques básicos para construir todas las permutaciones.</p>
+             </md> y <m>\sigma( x) =x</m> para todos los demás elementos <m>x \in X</m>. Escribiremos <m>(a_1, a_2, \ldots, a_k )</m> para denotar al ciclo <m>\sigma</m>. <notation><usage><m>(a_1, a_2, \ldots, a_k )</m></usage><description>ciclo de largo <m>k</m></description></notation> Los ciclos son los bloques básicos para construir todas las permutaciones.</p>
 
 
  
@@ -353,21 +353,21 @@
 				</statement> 
 
 				<proof>
-					<p>Supongamos que <me> \sigma = \sigma_1 \sigma_2 \cdots \sigma_m = \tau_1 \tau_2 \cdots \tau_n, </me> con <m>m</m> par. Debemos mostrar que <m>n</m> también es un número par.  La inversa de <m>\sigma</m> es <m>\sigma_m \cdots \sigma_1</m>. Como <me> \identity = \sigma \sigma_m \cdots \sigma_1 = \tau_1  \cdots \tau_n \sigma_m \cdots \sigma_1, </me> <m>n</m> debe ser par por el Lema<nbsp /><xref ref="lemma-identity-even-trans" />. La demostración del caso en el que <m>\sigma</m> puede ser expresada como el producto de un número impar de transposiciones lo dejamos como ejercicio.</p>
+					<p>Supongamos que <me> \sigma = \sigma_1 \sigma_2 \cdots \sigma_m = \tau_1 \tau_2 \cdots \tau_n, </me> con <m>m</m> par. Debemos mostrar que <m>n</m> también es un número par.  La inversa de <m>\sigma</m> es <m>\sigma_m \cdots \sigma_1</m>. Como <me> \identity = \sigma \sigma_m \cdots \sigma_1 = \tau_1  \cdots \tau_n \sigma_m \cdots \sigma_1, </me> <m>n</m> debe ser par por el <xref ref="lemma-identity-even-trans" />. La demostración del caso en el que <m>\sigma</m> puede ser expresada como el producto de un número impar de transposiciones lo dejamos como ejercicio.</p>
 				</proof>
 			</theorem>
 
 			<!-- Typo corrected.  Suggested by B. Whetter -->
 			<!-- TWJ 0212/10/21 -->
  
-			<p>A la luz del Teorema<nbsp /><xref ref="theorem-even-and-odd" />, definimos que una permutación es <term>par</term><idx><h>Par</h><h>permutación</h></idx> si puede ser expresada como el producto de un número par de transposiciones e <term>impar</term><idx><h>Impar</h><h>permutación</h></idx> si puede ser expresada como el producto de un número impar de transposiciones.</p>
+			<p>A la luz del <xref ref="theorem-even-and-odd" />, definimos que una permutación es <term>par</term><idx><h>Par</h><h>permutación</h></idx> si puede ser expresada como el producto de un número par de transposiciones e <term>impar</term><idx><h>Impar</h><h>permutación</h></idx> si puede ser expresada como el producto de un número impar de transposiciones.</p>
 		
 		</subsection>
 
 		<subsection xml:id="permute-subsection-alternating-groups">
 			<title>Los Grupos Alternantes</title>
 
-			<p>Uno de los subgrupos más importantes de <m>S_n</m> es el conjunto de todas las permutaciones pares, <m>A_n</m>.  <notation><usage>A_n</usage><description>el grupo alternante en <m>n</m> símbolos</description></notation> El grupo <m>A_n</m> se llama <term>grupo alternante en <m>n</m> símbolos</term><idx><h>Alternante</h><h>grupo</h></idx>.</p>
+			<p>Uno de los subgrupos más importantes de <m>S_n</m> es el conjunto de todas las permutaciones pares, <m>A_n</m>.  <notation><usage><m>A_n</m></usage><description>el grupo alternante en <m>n</m> símbolos</description></notation> El grupo <m>A_n</m> se llama <term>grupo alternante en <m>n</m> símbolos</term><idx><h>Alternante</h><h>grupo</h></idx>.</p>
 
 
  
@@ -427,7 +427,7 @@
  
 		<introduction>
 
-			<p>Otro tipo especial de grupo de permutaciones es el de los grupos dihedrales. Recordemos el grupo de las simetrías del triángulo equilátero en el Capítulo<nbsp /><xref ref="groups" />. Tales grupos consisten de los movimientos rígidos de un polígono regular de <m>n</m> lados o <m>n</m>-ágono regular. Para <m>n = 3, 4, \ldots</m>, definimos el <term>n-ésimo grupo dihedral</term><idx><h>Dihedral</h><h>grupo</h></idx> como el grupo de los movimientos rígidos de n <m>n</m>-ágono regular.  Denotaremos este grupo por  <m>D_n</m>.  <notation><usage>D_n</usage><description>el grupo dihedral</description></notation> Podemos numerar los vértices de un <m>n</m>-ágono regular con <m>1, 2, \ldots, n</m> (Figura<nbsp /><xref ref="figure-regular" />).  Note que hay exactamente <m>n</m> posibilidades para reemplazar al primer vértice.  Si reemplazamos al primer vértice por <m>k</m>, entonces el segundo vértice debe ser reemplazado por el vértice <m>k+1</m> o por el vértice <m>k-1</m>; luego, hay <m>2n</m> movimientos rígidos posibles del <m>n</m>-ágono.  Resumimos estos resultados en el siguiente teorema.</p>
+			<p>Otro tipo especial de grupo de permutaciones es el de los grupos dihedrales. Recordemos el grupo de las simetrías del triángulo equilátero en el Capí<xref ref="groups" />. Tales grupos consisten de los movimientos rígidos de un polígono regular de <m>n</m> lados o <m>n</m>-ágono regular. Para <m>n = 3, 4, \ldots</m>, definimos el <term>n-ésimo grupo dihedral</term><idx><h>Dihedral</h><h>grupo</h></idx> como el grupo de los movimientos rígidos de n <m>n</m>-ágono regular.  Denotaremos este grupo por  <m>D_n</m>.  <notation><usage><m>D_n</m></usage><description>el grupo dihedral</description></notation> Podemos numerar los vértices de un <m>n</m>-ágono regular con <m>1, 2, \ldots, n</m> (<xref ref="figure-regular" />).  Note que hay exactamente <m>n</m> posibilidades para reemplazar al primer vértice.  Si reemplazamos al primer vértice por <m>k</m>, entonces el segundo vértice debe ser reemplazado por el vértice <m>k+1</m> o por el vértice <m>k-1</m>; luego, hay <m>2n</m> movimientos rígidos posibles del <m>n</m>-ágono.  Resumimos estos resultados en el siguiente teorema.</p>
 
 						<!-- Replaced figure with tikz figure - TWJ 5/7/2010 -->
 			<figure xml:id="figure-regular">
@@ -523,12 +523,12 @@
 				<!-- TWJ, 2010/03/31 -->
 				<!-- I think that this is a correct proof and simplified, but the proof needs to be checked. -->
 				<proof>
-					<p>Los posibles movimientos de un <m>n</m>-ágono regular son reflexiones y rotaciones (Figura<nbsp /><xref ref="figure-rotations" />). Hay exactamente <m>n</m> rotaciones posibles: 
+					<p>Los posibles movimientos de un <m>n</m>-ágono regular son reflexiones y rotaciones (<xref ref="figure-rotations" />). Hay exactamente <m>n</m> rotaciones posibles: 
 						<me>\identity, \frac{360^{\circ} }{n}, 2 \cdot \frac{360^{\circ} }{n}, \ldots, (n-1) \cdot \frac{360^{\circ} }{n}.</me> 
 					Denotaremos la rotación en <m>360^{\circ} /n</m> por <m>r</m>. La rotación <m>r</m> genera todas las rotaciones. Es decir, 
 						<me> r^k = k \cdot \frac{360^{\circ} }{n}.</me></p>
 
-					<p> Etiquete las <m>n</m> reflexiones <m>s_1, s_2, \ldots, s_n</m>, donde <m>s_k</m> es la reflexión que fija el vértice <m>k</m>. Hay dos casos, dependiendo de si <m>n</m> es par o impar. Si hay un número par de vértices, entonces una reflexión fija dos de ellos, y <m>s_1 = s_{n/2 + 1}, s_2 = s_{n/2 + 2}, \ldots, s_{n/2}  = s_n</m>. Si hay un número impar de vértices, entonces una reflexión fija solamente un vértice y <m>s_1, s_2, \ldots, s_n</m> son distintas (Figura<nbsp /><xref ref="figure-types" />). 
+					<p> Etiquete las <m>n</m> reflexiones <m>s_1, s_2, \ldots, s_n</m>, donde <m>s_k</m> es la reflexión que fija el vértice <m>k</m>. Hay dos casos, dependiendo de si <m>n</m> es par o impar. Si hay un número par de vértices, entonces una reflexión fija dos de ellos, y <m>s_1 = s_{n/2 + 1}, s_2 = s_{n/2 + 2}, \ldots, s_{n/2}  = s_n</m>. Si hay un número impar de vértices, entonces una reflexión fija solamente un vértice y <m>s_1, s_2, \ldots, s_n</m> son distintas (<xref ref="figure-types" />). 
 					<!-- Hence, if <m>n = 2m</m> for some integer <m>m</m>, then <m>s_i = s_{i+m}</m> for <m>1 \leq i \leq m</m>.  --> 
 					En cualquier caso, el orden de cada <m>s_k</m> es dos. Sea <m>s = s_1</m>. Entonces <m>s^2 = 1</m> y <m>r^n = 1</m>. Como cualquier movimiento rígido <m>t</m> del <m>n</m>-ágono reemplaza al primer  vértice por el vértice <m>k</m>, el segundo vértice  será reemplazado por el <m>k+1</m> o por el <m>k-1</m>. Si el segundo se reemplaza por <m>k+1</m>, entonces <m>t = r^k</m>. Si el segundo se reemplaza por <m>k-1</m>, entonces <m>t = s r^k</m>. Luego, <m>r</m> y <m>s</m> generan <m>D_n</m>. Es decir, <m>D_n</m> consiste de todos los productos finitos de <m>r</m> y <m>s</m>,
 						<me>D_n = \{1, r, r^2, \ldots, r^{n-1}, s, sr, sr^2, \ldots, sr^{n-1}\}.</me>
@@ -537,7 +537,7 @@
 			</theorem>
 
 			<example xml:id="example-permute-d4-group">
-				<p>El grupo de movimientos de un cuadrado, <m>D_4</m>, consiste de ocho elementos. Con los vértices numerados 1, 2, 3, 4 (Figura<nbsp /><xref ref="figure-d4" />), las rotaciones son <md>
+				<p>El grupo de movimientos de un cuadrado, <m>D_4</m>, consiste de ocho elementos. Con los vértices numerados 1, 2, 3, 4 (<xref ref="figure-d4" />), las rotaciones son <md>
 					<mrow>r   &amp; = (1234)</mrow>
 					<mrow>r^2 &amp; = (13)(24)</mrow>
 					<mrow>r^3 &amp; = (1432)</mrow>
@@ -614,7 +614,7 @@
 				</statement>
 
 				<proof>
-					<p>De la Proposición<nbsp /><xref ref="proposition-motions-cube" />, ya sabemos que el grupo de movimientos del cubo tiene 24 elementos, el mismo número de  elementos que hay en <m>S_4</m>.  Hay exactamente cuatro diagonales en el cubo.  Si etiquetamos estas diagonales con 1, 2, 3, y 4, debemos mostrar que el grupo de movimientos del cubo nos dará cualquier permutación de las diagonales (Figura<nbsp /><xref ref="figure-motions" />). Si podemos obtener todas estas permutaciones, entonces <m>S_4</m> y el grupo de movimientos rígidos del cubo tendrán que ser el mismo. Para obtener una transposición, podemos  rotar el cubo en <m>180^{\circ}</m> en torno al eje que une los puntos medios de aristas opuestas (Figura<nbsp /><xref ref="figure-transpose" />). Hay seis de tales ejes, dando todas las transposiciones en <m>S_4</m>. Como todo elemento en <m>S_4</m> es el producto de un número finito de transposiciones, el grupo de movimientos de un cubo tiene que ser <m>S_4</m>.</p>
+					<p>De la <xref ref="proposition-motions-cube" />, ya sabemos que el grupo de movimientos del cubo tiene 24 elementos, el mismo número de  elementos que hay en <m>S_4</m>.  Hay exactamente cuatro diagonales en el cubo.  Si etiquetamos estas diagonales con 1, 2, 3, y 4, debemos mostrar que el grupo de movimientos del cubo nos dará cualquier permutación de las diagonales (<xref ref="figure-motions" />). Si podemos obtener todas estas permutaciones, entonces <m>S_4</m> y el grupo de movimientos rígidos del cubo tendrán que ser el mismo. Para obtener una transposición, podemos  rotar el cubo en <m>180^{\circ}</m> en torno al eje que une los puntos medios de aristas opuestas (<xref ref="figure-transpose" />). Hay seis de tales ejes, dando todas las transposiciones en <m>S_4</m>. Como todo elemento en <m>S_4</m> es el producto de un número finito de transposiciones, el grupo de movimientos de un cubo tiene que ser <m>S_4</m>.</p>
 				</proof>
 			</theorem>
  
@@ -646,15 +646,922 @@
 				</image>
 			</figure>
 
-		<xi:include href="./sage/permute-info.xml" />
+			<paragraphs>
+				<title>Sage</title>
+			
+				<p>Un grupo de permutaciones es una representación muy concreta de un grupo, y la herramientas de Sage para trabajar con grupos de permutaciones son muy buenas <mdash /> convirtiendo a Sage en un lugar natural para que principiantes aprendan sobre teoría de grupos.</p>
+			</paragraphs>
 
 		</subsection>
 
 	</section>
 
-	<xi:include href="./exercises/permute.xml" />
-	<xi:include href="./sage/permute-sage.xml" />
-	<xi:include href="./sage/permute-sage-exercises.xml" />
+	<exercises xml:id="exercises-permute">
+		<title>Ejercicios</title>
+	
+		<exercise number="1">
+			<statement>
+				<p>Escriba las siguientes permutaciones en notación cíclica.
+					<ol cols="2">
+	 
+						<li><p><me>\begin{pmatrix}
+						1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+						2 &amp; 4 &amp; 1 &amp; 5 &amp; 3
+						\end{pmatrix}</me></p></li>
+	
+						<li><p><me>\begin{pmatrix}
+						1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+						4 &amp; 2 &amp; 5 &amp; 1 &amp; 3
+						\end{pmatrix}</me></p></li>
+	
+						<li><p><me>\begin{pmatrix}
+						1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+						3 &amp; 5 &amp; 1 &amp; 4 &amp; 2
+						\end{pmatrix}</me></p></li>
+	
+						<li><p><me>\begin{pmatrix}
+						1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+						1 &amp; 4 &amp; 3 &amp; 2 &amp; 5
+						\end{pmatrix}</me></p></li>
+	
+					</ol></p>
+			</statement>
+			<hint>
+				<p>(a) <m>(12453)</m>; (c) <m>(13)(25)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="2">
+		<statement>
+			<p>Escriba cada una de las siguientes como producto de ciclos disjuntos.
+				<ol cols="2">
+		 
+					<li><p><m>(1345)(234)</m></p></li>
+					  
+					<li><p><m>(12)(1253)</m></p></li>
+	
+					<li><p><m>(143)(23)(24)</m></p></li>
+	
+					<li><p><m>(1423)(34)(56)(1324)</m></p></li>
+	
+					<li><p><m>(1254)(13)(25)</m></p></li>
+	
+					<li><p><m>(1254) (13)(25)^2</m></p></li>
+					 
+					<li><p><m>(1254)^{-1} (123)(45) (1254)</m></p></li>
+					  
+					<li><p><m>(1254)^2 (123)(45)</m></p></li>
+					 
+					<li><p><m>(123)(45) (1254)^{-2}</m></p></li>
+	
+					<li><p><m>(1254)^{100}</m></p></li>
+					 
+					<li><p><m>|(1254)|</m></p></li>
+					  
+					<li><p><m>|(1254)^2|</m></p></li>
+					  
+					<li><p><m>(12)^{-1}</m></p></li>
+	
+					<li><p><m>(12537)^{-1}</m></p></li>
+					 
+					<li><p><m>[(12)(34)(12)(47)]^{-1}</m></p></li>
+	
+					<li><p><m>[(1235)(467)]^{-1}</m></p></li>
+		 
+				</ol></p>
+	
+			</statement>
+			<hint>
+				<p>(a) <m>(135)(24)</m>; (c) <m>(14)(23)</m>; (e) <m>(1324)</m>; (g) <m>(134)(25)</m>; (n) <m>(17352)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+				<p>Exprese las siguientes permutaciones como producto de transposiciones e identifíquelas como pares o impares.
+					<ol cols="2">
+	 
+						<li><p><m>(14356)</m></p></li>
+	
+						<li><p><m>(156)(234)</m></p></li>
+						 
+						<li><p><m>(1426)(142)</m></p></li>
+						 
+						<li><p><m>(17254)(1423)(154632)</m></p></li>
+						 
+						<li><p><m>(142637)</m></p></li>
+	 
+					</ol></p>
+			</statement>
+			<hint>
+				<p>(a) <m>(16)(15)(13)(14)</m>; (c) <m>(16)(14)(12)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="4">
+			<statement>
+				<p>Encuentre <m>(a_1, a_2, \ldots, a_n)^{-1}</m>.</p>
+			</statement>
+			<hint>
+				<p><m>(a_1, a_2, \ldots, a_n)^{-1} = (a_1, a_{n}, a_{n-1}, \ldots, a_2)</m></p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="5">
+			<statement>
+				<p>Liste todos los subgrupos de <m>S_4</m>. Encuentre cada uno de los siguientes conjuntos. 
+					<ol>
+	 
+						<li><p><m>\{ \sigma \in S_4 : \sigma(1) = 3 \}</m></p></li>
+						 
+						<li><p><m>\{ \sigma \in S_4 : \sigma(2) = 2 \}</m></p></li>
+						 
+						<li><p><m>\{ \sigma \in S_4 : \sigma(1) = 3</m> y <m>\sigma(2) = 2 \}</m></p></li>
+	 
+					</ol>
+				¿Es alguno de estos conjuntos un subgrupo de <m>S_4</m>?</p>
+			</statement>
+			<hint>
+				<p>(a) <m>\{ (13), (13)(24), (132), (134), (1324), (1342) \}</m> no es un subgrupo.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="6">
+			<statement>
+				<p>Encuentre todos los subgrupos de <m>A_4</m>. ¿Cuál es el orden de cada uno de ellos?</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="7">
+			<statement>
+				<p>Encuentre todos los posibles órdenes de elementos en <m>S_7</m> y en <m>A_7</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="8">
+			<statement>
+				<p>Muestre que <m>A_{10}</m> contiene un elemento de orden 15.</p>
+			</statement>
+			<hint>
+				<p><m>(12345)(678)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="9">
+			<statement>
+				<p>¿Contiene <m>A_8</m> un elemento de orden 26?</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="10">
+			<statement>
+				<p>Encuentre un elemento de orden maximal en <m>S_n</m> para <m>n = 3, \ldots, 10</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="11">
+			<statement>
+				<p>¿Cuáles son las posibles estructuras de ciclos de los elementos de <m>A_5</m>? ¿Y de <m>A_6</m>?</p>
+			</statement>
+			<hint>
+				<p>Permutaciones de la forma 
+					<me>(1), (a_1, a_2)(a_3, a_4), (a_1, a_2, a_3), (a_1, a_2, a_3, a_4, a_5)</me>
+				son posibles en <m>A_5</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="12">
+			<statement>
+				<p>Sea <m>\sigma \in S_n</m> un elemento de orden <m>n</m>. Muestre que para todos los enteros <m>i</m> y <m>j</m>, <m>\sigma^i = \sigma^j</m> si y solo si <m>i \equiv j \pmod{n}</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="13" xml:id="exercise-permute-order-product-cycles">
+			<statement>
+				<p>Sea <m>\sigma = \sigma_1 \cdots \sigma_m \in S_n</m> el producto disjunto de ciclos. Demuestre que el orden de <m>\sigma</m> es el mínimo común múltiplo de los largos de los ciclos <m>\sigma_1, \ldots, \sigma_m</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="14">
+			<statement>
+				<p>Usando notación cíclica, liste los elementos en <m>D_5</m>.  ¿Cuáles son <m>r</m> y <m>s</m>?  Escriba todo elemento como producto de <m>r</m> y <m>s</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="15">
+			<statement>
+				<p>Si las diagonales de un cubo están etiquetadas como en la Figura<nbsp/><xref ref="figure-motions"/>, ¿a qué movimiento del cubo corresponde la permutación <m>(12)(34)</m>? ¿Y las otras permutaciones de las diagonales?</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="16">
+			<statement>
+				<p>Encuentre el grupo de movimientos rígidos de un tetraedro.  Muestre que este es el mismo grupo que <m>A_4</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="17">
+			<statement>
+				<p>Demuestre que <m>S_n</m> es no abeliano para <m>n \geq 3</m>.</p>
+			</statement>
+			<hint>
+				<p>Calcule <m>(123)(12)</m> y <m>(12)(123)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="18">
+			<statement>
+				<p>Muestre que  <m>A_n</m> es no abeliano para <m>n \geq 4</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="19">
+			<statement>
+				<p>Demuestre que <m>D_n</m> es no abeliano para <m>n \geq 3</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="20" xml:id="exercise-permute-cycle-n-1-transpositions">
+			<statement>
+				<p>Sea <m>\sigma \in S_n</m> un ciclo. Demuestre que <m>\sigma</m> puede ser escrito como el producto de a lo más <m>n-1</m> transposiciones.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="21">
+			<statement>
+				<p>Sea <m>\sigma \in S_n</m>. Si <m>\sigma</m> no es un ciclo, demuestre que <m>\sigma</m> puede ser escrita como el producto de a lo más <m>n-2</m> transposiciones.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="22">
+			<statement>
+				<p>Si <m>\sigma</m> puede ser expresada como un producto de un número par de transposiciones, muestre que cualquier otro producto de transposiciones que sea igual a <m>\sigma</m> también debe contener un número impar de estas.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="23">
+			<statement>
+				<p>Si <m>\sigma</m> es un ciclo de largo impar, demuestre que <m>\sigma^2</m> también es un ciclo.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="24">
+			<statement>
+				<p>Muestre que un 3-ciclo es una permutación par.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="25">
+			<statement>
+				<p>Demuestre que en <m>A_n</m> con <m>n \geq 3</m>, culaquier permutación es un producto de ciclos de largo 3.</p>
+			</statement>
+			<hint>
+				<p>Considere los casos <m>(ab)(bc)</m> y <m>(ab)(cd)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="26">
+			<statement>
+				<p>Demuestre que todo elemento en <m>S_n</m> puede ser escrito como un producto finito de las siguientes permutaciones.
+					<ol>
+			 
+						<li><p><m>(1 2), (13), \ldots, (1n)</m></p></li>
+			 
+						<li><p><m>(1 2), (23), \ldots, (n- 1,n)</m></p></li>
+			 
+						<li><p><m>(12), (1 2 \ldots n )</m></p></li>
+			 
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="27">
+			<statement>
+				<p>Sea <m>G</m> un grupo y sea <m>\lambda_g : G \rightarrow G</m> una función definida por <m>\lambda_g(a) = g a</m>. Demuestre que <m>\lambda_g</m> es una permutación de <m>G</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="28">
+			<statement>
+				<p>Demuestre que existen <m>n!</m> permutaciones de un conjunto con <m>n</m> elementos.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="29">
+		<statement>
+			<p>Recuerde que el <term>centro</term> de un grupo <m>G</m> es
+				<me>Z(G) = \{ g \in G : gx = xg \text{ para todo } x \in G \}.</me>
+			Encuentre el centro de <m>D_8</m>. ¿Y el centro de <m>D_{10}</m>? ¿Cuál es el  centro de <m>D_n</m>? </p>
+		</statement>
+		
+		</exercise>
+	
+		<exercise number="30">
+			<statement>
+				<p>Sea <m>\tau = (a_1, a_2, \ldots, a_k)</m> un ciclo de largo <m>k</m>.
+					<ol>
+	 
+						<li><p>Demuestre que si <m>\sigma</m> es cualquier permutación, entonces
+							<me>\sigma \tau \sigma^{-1 } = ( \sigma(a_1), \sigma(a_2), \ldots, \sigma(a_k))</me>
+						es un ciclo de largo <m>k</m>.</p></li>
+	 
+						<li><p>Sea <m>\mu</m> un ciclo de largo <m>k</m>. Demuestre que existe una permutación <m>\sigma</m> tal que <m>\sigma \tau \sigma^{-1 } = \mu</m>.</p></li>
+	 
+					</ol></p>
+			</statement>
+			<hint>
+				<p>Para la parte (a), muestre que <m>\sigma \tau \sigma^{-1 }(\sigma(a_i)) = \sigma(a_{i + 1})</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="31">
+			<statement>
+				<p>Para <m>\alpha</m> y <m>\beta</m> en <m>S_n</m>, defina <m>\alpha \sim \beta</m> si existe <m>\sigma \in S_n</m> tal que <m>\sigma \alpha \sigma^{-1} = \beta</m>.  Muestre que <m>\sim</m> es una relación de equivalencia en <m>S_n</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="32">
+			<statement>
+				<p>Sea <m>\sigma \in S_X</m>. Si <m>\sigma^n(x) = y</m>, diremos que <m>x \sim y</m>. 
+					<ol>
+	 
+						<li><p>Muestre que <m>\sim</m> es una relación de equivalencia en <m>X</m>.</p></li>
+	 
+						<li><p>Si <m>\sigma \in A_n</m> y <m>\tau \in S_n</m>, muestre que <m>\tau^{-1} \sigma \tau \in A_n</m>.</p></li> 
+	 
+						<li><p>Defina la <term>órbita</term> de <m>x \in X</m> bajo <m>\sigma \in S_X</m> como el conjunto 
+							<me>{\mathcal O}_{x, \sigma} = \{ y : x \sim y  \}.</me>
+						Calcule las órbitas de cada uno de los siguientes elementos en <m>S_5</m>:
+							<md>
+								<mrow>\alpha &amp; = (1254)</mrow>
+								<mrow>\beta &amp; = (123)(45)</mrow>
+								<mrow>\gamma &amp; = (13)(25).</mrow>
+							</md></p></li>
+	 
+						<li><p>Si <m>{\mathcal O}_{x, \sigma} \cap {\mathcal O}_{y, \sigma} \neq \emptyset</m>, demuestre que <m>{\mathcal O}_{x, \sigma} = {\mathcal O}_{y, \sigma}</m>. Las órbitas bajo una permutación <m>\sigma</m> son las clases de equivalencia correspondientes a la relación <m>\sim</m>.</p></li>
+	
+						<li><p>Un subgrupo <m>H</m> de <m>S_X</m> es <term>transitivo</term> si para cada <m>x, y \in X</m>, existe un <m>\sigma \in H</m> tal que <m>\sigma(x) = y</m>. Demuestre que <m>\langle \sigma \rangle</m> es transitivo si y solo si <m>{\mathcal O}_{x, \sigma} = X</m> para algún <m>x \in X</m>.</p></li>
+	 
+					 </ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="33">
+			<statement>
+				<p>Sea <m>\alpha \in S_n</m> con <m>n \geq 3</m>. Si <m>\alpha \beta = \beta \alpha</m> para todo <m>\beta \in S_n</m>, demuestre que <m>\alpha</m> debe ser la permutación identidad; luego, el centro de <m>S_n</m> es el subgrupo trivial.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="34" xml:id="permute-exercise-inverse-even">
+			<statement>
+				<p>Si <m>\alpha</m> es par, demuestre que <m>\alpha^{-1}</m> también es par. ¿Hay un resultado análogo si <m>\alpha</m> es impar?</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="35">
+			<statement>
+				<p>Muestre que <m>\alpha^{-1} \beta^{-1} \alpha \beta</m> es par para todo <m>\alpha, \beta \in S_n</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="36">
+			<statement>
+				<p>Sean <m>r</m> y <m>s</m> los elementos en <m>D_n</m> descritos en el <xref ref="theorem-dn-generator" />.
+					<ol>
+	 
+						<li><p>Muestre que <m>srs = r^{-1}</m>.</p></li>
+						 
+						<li><p>Muestre que <m>r^k s = s r^{-k}</m> en <m>D_n</m>.</p></li>
+						 
+						<li><p>Demuestre que el orden de <m>r^k \in D_n</m> es <m>n / \gcd(k,n)</m>.</p></li>
+	  
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+	</exercises>
+	<section xml:id="permute-sage">
+		<title>Sage</title>
+	
+		<introduction>
+			<p>Una buena parte de de la implementación de teoría de grupos en Sage está basada en rutinas de <acro>GAP</acro> (Groups, Algorithms, and Programming) en <url href="http://www.gap-system.org/">www.gap-system.org</url>, que está incluido en cada copia de Sage.  Este es un paquete de código abierto maduro, que existe desde 1986.</p>
+	
+			<p>Como hemos visto, los grupos pueden ser descritos de muchas maneras diferentes, tales como conjuntos de matrices, conjuntos de números complejos, o conjuntos de símbolos sujetos a ciertas relaciones.  Una manera muy concreta de repersentar grupos es vía permutaciones (funciones biyectivas de los enteros del <m>1</m> al <m>n</m>), usando la composición de funciones como la operación en el grupo.  Sage tiene muchas rutinas diseñadas para trabajar con grupos de este tipo y son también una buena forma para que las personas que quieran aprender teoría de grupos ganen experiencia con las ideas básicas de la teoría de grupos.  Por estas dos razones, nos concentraremos en este tipo de grupos.</p>
+		</introduction>
+	
+		<subsection>
+			<title>Grupos de Permutaciones y sus Elementos</title>
+	
+			<p>La forma más fácil de trabajar con elementos de grupos de permutación en Sage es escribirlos con notación cíclica.  Como estos son productos de ciclos disjuntos (que conmutan), no necesitamos preocuparnos por el orden en que aparecen los ciclos.  Si escribimos <c>(1,3)(2,4)</c> probablemente entenderemos que se trata de una permutación (el contenido de este capítulo!) y sabemos que podría ser un elemento de <m>S_4</m>, o quizás de un grupo simétrico en más de 4 símbolos.  Sage no puede comenzar tan fácilmente y necesita un poco de contexto, así es que coercionamos una cadena de caracteres escritos con notación de ciclos a pertenecer a un grupo simétrico para producir elementos del grupo.  A continuación algunos ejemplos y cálculos de muestra.  Recuerde que Sage y el texto difieren en el orden usado para componer dos permutaciones en un producto.</p>
+	
+			<sage>
+				<input>
+				G = SymmetricGroup(5)
+				sigma = G("(1,3)(2,5,4)")
+				sigma*sigma
+				</input>
+				<output>(2,4,5)</output>
+			</sage>
+	
+			<sage>
+				<input>
+				rho = G("(2,4)(1,5)")
+				rho^3
+				</input>
+				<output>(1,5)(2,4)</output>
+			</sage>
+	
+			<p>Si los próximos tres ejemplos parecen confusos, o <q>al revés</q>, entonces sería un buen momento para revisar la discusión respecto al orden de la composición de permutaciones en Sage hecha en la subsecció<xref ref="subsection-groups-of-symmetries" text="title" />.</p>
+	
+			<sage>
+				<input>sigma*rho</input>
+				<output>(1,3,5,2)</output>
+			</sage>
+	
+			<sage>
+				<input>rho*sigma</input>
+				<output>(1,4,5,3)</output>
+			</sage>
+	
+			<sage>
+				<input>rho^-1*sigma*rho</input>
+				<output>(1,2,4)(3,5)</output>
+			</sage>
+	
+			<p>Hay formas alternativas de crear elementos de un grupo de permutaciones, que pueden ser útiles en alguna situación particular, pero que no son de uso muy frecuente.</p>
+	
+			<sage>
+				<input>
+				sigma1 = G("(1,3)(2,5,4)")
+				sigma1
+				</input>
+				<output>(1,3)(2,5,4)</output>
+			</sage>
+	
+			<sage>
+				<input>
+				sigma2 = G([(1,3),(2,5,4)])
+				sigma2
+				</input>
+				<output>(1,3)(2,5,4)</output>
+			</sage>
+	
+			<sage>
+				<input>
+				sigma3 = G([3,5,1,2,4])
+				sigma3
+				</input>
+				<output>(1,3)(2,5,4)</output>
+			</sage>
+	
+			<sage>
+				<input>sigma1 == sigma2</input>
+				<output>True</output>
+			</sage>
+	
+			<sage>
+				<input>sigma2 == sigma3</input>
+				<output>True</output>
+			</sage>
+	
+			<sage>
+				<input>sigma2.cycle_tuples()</input>
+				<output>[(1, 3), (2, 5, 4)]</output>
+			</sage>
+	
+			<sage>
+				<input>[sigma3(x) for x in G.domain()]</input>
+				<output>[3, 5, 1, 2, 4]</output>
+			</sage>
+	
+			<p>La segunda versión de <m>\sigma</m> es una lista de <q>tuplas</q>, que requiere muchas comas y estas deben ser incluidas a su vez en una lista.  (Una tupla de largo uno debe ser escrita como <c>(4,)</c> para distinguirla del uso de paréntesis para agrupar, como en <c>5*(4)</c>.)  La tercera versión usa la <q>fila inferior</q> de la notación más engorrosa de dos filas introducida al comienzo del capítulo <mdash /> es una lista ordenada de las <em>imágenes</em> de la permutación cuando es considerada como una función.</p>
+	
+			<p>Vemos que sin importar las tres formas diferentes de ingreso, todas las versiones de <m>\sigma</m> se muestran de la misma manera, y más aún son iguales entre sí.  (Esta es una sutil diferencia entre <mdash /> lo que un objeto <em>es</em> en Sage versus como un objeto se <em>muestra</em>.)</p>
+	
+			<p>Podemos ser aún más cuidadosos sobre la naturaleza de nuestros elementos.  Note que una vez que Sage comienza, puede promover el producto <m>\tau\sigma</m> al grupo mayor de permutaciones.  Podemos <q>promover</q> elementos a grupos mayores de permutaciones, pero sería un error tratar de forzar un elemento en un grupo simétrico demasiado pequeño.</p>
+	
+			<sage>
+				<input>
+				H = SymmetricGroup(4)
+				sigma = H("(1,2,3,4)")
+				G = SymmetricGroup(6)
+				tau = G("(1,2,3,4,5,6)")
+				rho = tau * sigma
+				rho
+				</input>
+				<output>(1,3)(2,4,5,6)</output>
+			</sage>
+	
+			<sage>
+				<input>sigma.parent()</input>
+				<output>Symmetric group of order 4! as a permutation group</output>
+			</sage>
+	
+			<sage>
+				<input>tau.parent()</input>
+				<output>Symmetric group of order 6! as a permutation group</output>
+			</sage>
+	
+			<sage>
+				<input>rho.parent()</input>
+				<output>Symmetric group of order 6! as a permutation group</output>
+			</sage>
+	
+			<sage>
+				<input>tau.parent() == rho.parent()</input>
+				<output>True</output>
+			</sage>
+	
+			<sage>
+				<input>
+				sigmaG = G(sigma)
+				sigmaG.parent()
+				</input>
+				<output>Symmetric group of order 6! as a permutation group</output>
+			</sage>
+	
+			<p>Es un error intentar coercionar una permutación con demasiados símbolos a un grupo de permutaciones que use menos símbolos.</p>
+	
+			<sage>
+				<input>tauH = H(tau)</input>
+				<output>
+				Traceback (most recent call last):
+				...
+				ValueError: Invalid permutation vector: (1,2,3,4,5,6)
+				</output>
+			</sage>
+	
+			<p>Mejor que trabajar simplemente con elementos del grupo simétrico, podemos crear diversos grupos de permutaciones en Sage.  A continuación una muestra para comenzar:</p>
+	
+			<table xml:id="table-sage-permutation-groups">
+				<caption>Algunos grupos de permutaciones en Sage</caption>
+				<tabular halign="left" top="medium">
+					<row bottom="medium">
+						<cell>Comando Sage</cell>
+						<cell>Descripción</cell>
+					</row>
+					<row>
+						<cell><c>SymmetricGroup(n)</c> </cell>
+						<cell>Grupo simétrico en <m>n</m> símbolos, <m>n!</m> elementos</cell>
+					</row>
+					<row>
+						<cell><c>DihedralGroup(n)</c></cell>
+						<cell>Simetrías de un <m>n</m>-ágono, <m>2n</m> elementos.</cell>
+					</row>
+					<row>
+						<cell><c>CyclicPermutationGroup(n)</c></cell>
+						<cell>Rotaciones de un <m>n</m>-ágono, <m>n</m> elementos</cell>
+					</row>
+					<row>
+						<cell><c>AlternatingGroup(n)</c></cell>
+						<cell>Grupo alternante en <m>n</m> símbolos, <m>n!/2</m> elementos</cell>
+					</row>
+					<row bottom="medium">
+						<cell><c>KleinFourGroup()</c></cell>
+						<cell>Un grupo no cíclico de orden 4</cell>
+					</row> 
+				</tabular>
+			</table>
+	
+			<sage type="practice" />
+	
+			<p>Usted también puede localizar grupos de permutaciones en Sage usando el catálogo de <c>grupos</c>.  En la próxima celda ponga el cursor después del punto final y presione la tecla de tabular (TAB).  Obtendrá una lista de métodos que puede usar para crear grupos de permutaciones.  Como siempre, ponga un signo de interrogación después de un método y presione la tecla de tabular para obtener documentación en línea del método.  (esto funciona en una celda de Sage normal pero no parece funcionar en el "libro")</p>
+	
+			<sage doctest="not tested">
+				<input>groups.permutation.</input>
+			</sage>
+	
+		</subsection>
+	
+		<subsection>
+			<title>Propiedades de Permutaciones (Elementos)</title>
+	
+			<p>A veces es más fácil tomar un elemento de una lista de elementos en un grupo de permutaciones, así ya está asociado a un "parent" y no hay necesidad de hacer ninguna coerción.  En lo que sigue, <c>rotate</c> y <c>flip</c> son automáticamente elementos de <c>G</c> por la forma en que fueron obtenidos.</p>
+	
+			<sage>
+				<input>
+				D = DihedralGroup(5)
+				elements = D.list(); elements
+				</input>
+				<output>
+				[(), (1,5)(2,4), (1,2,3,4,5), (1,4)(2,3), (1,3,5,2,4), (2,5)(3,4),
+				 (1,3)(4,5), (1,5,4,3,2), (1,4,2,5,3), (1,2)(3,5)]
+				</output>
+			</sage>
+	
+			<sage>
+				<input>
+				rotate = elements[2]
+				flip = elements[3]
+				flip*rotate == rotate* flip
+				</input>
+				<output>False</output>
+			</sage>
+	
+			<p>Vemos con esta última prueba que el grupo de simetrías de un pentágono es no abeliano.  Pero hay una manera más fácil.</p>
+	
+			<sage>
+				<input>
+				D = DihedralGroup(5)
+				D.is_abelian()
+				</input>
+				<output>False</output>
+			</sage>
+	
+			<p>Existen muchos métodos, tanto para los grupos de permutaciones como para sus elementos.  Use la celda vacía de más abajo para crear un grupo de permutaciones (el que quiera) y un elemento de un grupo de permutaciones (cualquiera).  A continuación usa la tab-completion para ver todos los métodos disponibles para un elemento, o para un grupo (nombre, punto, tecla-tab).  Algunos nombres los puede reconocer, otros los aprenderemos en los capítulos siguientes, algunos son herramientas muy especializadas de investigación que podría usar para desarrollar su tesis de doctorado en  teoría de grupos.  Para cualquiera de estos métodos, recuerde que puede escribir el nombre, seguido de un signo de interrogación, para ver la documentación y ejemplos.  <em>Experimente y explore</em> <mdash /> es realmente difícil hechar a perder algo. </p> 
+	
+			<sage type="practice" />
+	
+			<p>Acá hay algunos ejemplos de varios métodos disponibles.</p>
+	
+			<sage>
+				<input>
+				A4 = AlternatingGroup(4)
+				A4.order()
+				</input>
+				<output>12</output>
+			</sage>
+	
+			<sage>
+				<input>A4.is_finite()</input>
+				<output>True</output>
+			</sage>
+	
+			<sage>
+				<input>A4.is_abelian()</input>
+				<output>False</output>
+			</sage>
+	
+			<sage>
+				<input>A4.is_cyclic()</input>
+				<output>False</output>
+			</sage>
+	
+			<sage>
+				<input>
+				sigma = A4("(1,2,4)")
+				sigma^-1
+				</input>
+				<output>(1,4,2)</output>
+			</sage>
+	
+			<sage>
+				<input>sigma.order()</input>
+				<output>3</output>
+			</sage>
+	
+			<p>Un método útil al estudiar el grupo alternante es el <c>.sign()</c> implementado para elementos de un grupo de permutaciones.  Retorna <c>1</c> si la permutación es par y <c>-1</c> si es impar.</p>
+	
+			<sage>
+				<input>
+				G = SymmetricGroup(3)
+				sigma = G("(1,2)")
+				tau = G("(1,3)")
+				rho = sigma*tau
+				sigma.sign()
+				</input>
+				<output>-1</output>
+			</sage>
+	
+			<sage>
+				<input>rho.sign()</input>
+				<output>1</output>
+			</sage>
+	
+			<p>Podemos crear subgrupos entregándole al grupo una lista de <q>generadores.</q>  Estos elementos se usan para <q>generar</q> un subgrupo <mdash /> imagine multiplicar estos elementos (y sus inversos) una y otra vez, creando nuevos elementos que también deben estar en el subgrupo y que también participan de nuevos productos, hasta que no aparezcan nuevos elementos.  Esta definición termina con un enunciado terriblemente impreciso, pero debiera se suficiente por ahora.  Una mejor definición es que el subgrupo generado por los elementos es el menor subgrupo que contiene todos los generadores <mdash /> lo que está bien si conocemos todos los subgrupos de antemano.</p>
+	
+			<p>Con un único generador, los productos repetidos son simplemente las potencias del generador.  El grupo generado en este caso es cíclico.  Con dos (o más) generadores, especialmente en un grupo no abeliano, la situación puede ser mucho, mucho más complicada.  Empecemos con un generador.  Pero no olvide ponerlo en una lista de todas formas.</p>
+	
+			<sage>
+				<input>
+				A4 = AlternatingGroup(4)
+				sigma = A4("(1,2,4)")
+				sg = A4.subgroup([sigma])
+				sg
+				</input>
+				<output>
+				Subgroup of (Alternating group of order 4!/2 as a permutation group) 
+				generated by [(1,2,4)]
+				</output>
+			</sage>
+	
+			<sage>
+				<input>sg.order()</input>
+				<output>3</output>
+			</sage>
+	
+			<sage>
+				<input>sg.list()</input>
+				<output>[(), (1,2,4), (1,4,2)]</output>
+			</sage>
+	
+			<sage>
+				<input>sg.is_abelian()</input>
+				<output>True</output>
+			</sage>
+	
+			<sage>
+				<input>sg.is_cyclic()</input>
+				<output>True</output>
+			</sage>
+	
+			<sage>
+				<input>sg.is_subgroup(A4)</input>
+				<output>True</output>
+			</sage>
+	
+			<p>Podemos ahora rehacer el ejemplo del principio del capítulo.  Traducimos los elementos a notación cíclica, construimos el subgrupo formado a partir de dos generadores (el subgrupo no es cíclico), y como el subgrupo es abeliano, no es necesario que veamos la tabla de Cayley de Sage como una reflexión diagonal de la tabla obtenida en el <xref ref="example-permute-s5" />.</p>
+	
+			<sage>
+				<input>
+				G = SymmetricGroup(5)
+				sigma = G("(4,5)")
+				tau = G("(1,3)")
+				H = G.subgroup([sigma, tau])
+				H.list()
+				</input>
+				<output>[(), (1,3), (4,5), (1,3)(4,5)]</output>
+			</sage>
+	
+			<sage>
+				<input>
+				text_names = ['id', 'sigma', 'tau', 'mu']
+				H.cayley_table(names=text_names)
+				</input>
+				<output>
+					*     id sigma   tau    mu
+					 +------------------------
+				   id|    id sigma   tau    mu
+				sigma| sigma    id    mu   tau
+				  tau|   tau    mu    id sigma
+				   mu|    mu   tau sigma    id
+				</output>
+			</sage>
+	
+			<sage type="practice" />
+	
+		</subsection>
+	
+		<subsection xml:id="subsection-motion-group-cube">
+			<title>Grupo de Movimientos de un Cubo</title>
+	
+			<p>Podríamos imitar el ejemplo en el texto y crear elementos de <m>S_4</m> como permutaciones de las diagonales.  Una construcción más obvia, pero menos esclarecedora, es considerar las  8 esquinas del cubo como los elementos a permutar.  Entonces algunas simetrías obvias del cubo provienen de pasar un eje por los centros de dos caras opuestas, con cuartos de vueltas y medias vueltas en torno a estos ejes. Con tres ejes y cuatro rotaciones por eje, obtenemos 12 simetrías, excepto que hemos contado la identidad tres veces.</p>
+	
+			<p>Etiquete las cuatro esquinas superiores del <m>1</m> al <m>4</m>, poniendo el <m>1</m> en la esquina delantera-izquierda, y continuando en sentido horario visto desde arriba.  Use del <m>5</m> al <m>8</m> para las esquinas inferiores, de manera que  <m>5</m> quede directamente bajo el <m>1</m>, <m>6</m> bajo <m>2</m>, etc.  Usaremos cuartos de vuelta, en sentido horario, en torno a cada eje, mirando desde arriba, el frente y el lado derecho respectivamente.</p>
+	
+			<sage>
+				<input>
+				G = SymmetricGroup(8)
+				above = G("(1,2,3,4)(5,6,7,8)")
+				front = G("(1,4,8,5)(2,3,7,6)")
+				right = G("(1,2,6,5)(3,7,8,4)")
+				cube = G.subgroup([above, front, right])
+				cube.order()
+				</input>
+				<output>24</output>
+			</sage>
+	
+			<sage>
+				<input>cube.list()</input>
+				<output>
+				[(), (1,2,3,4)(5,6,7,8), (1,2,6,5)(3,7,8,4),
+				 (1,4,8,5)(2,3,7,6), (1,6,8)(2,7,4), (2,4,5)(3,8,6),
+				 (1,3,8)(2,7,5), (1,6)(2,5)(3,8)(4,7), (1,3,6)(4,7,5),
+				 (1,3)(2,4)(5,7)(6,8), (1,8)(2,7)(3,6)(4,5), (1,7)(2,3)(4,6)(5,8),
+				 (1,4)(2,8)(3,5)(6,7), (1,5,6,2)(3,4,8,7), (1,5,8,4)(2,6,7,3),
+				 (1,7)(2,6)(3,5)(4,8), (1,7)(2,8)(3,4)(5,6), (1,4,3,2)(5,8,7,6),
+				 (1,5)(2,8)(3,7)(4,6), (1,2)(3,5)(4,6)(7,8), (1,8,6)(2,4,7),
+				 (2,5,4)(3,6,8), (1,6,3)(4,5,7), (1,8,3)(2,5,7)]
+				</output>
+			</sage>
+	
+			<p>Como sabemos por la discusión en el texto que el grupo de simetrías tiene <m>24</m> elementos, vemos que estos tres generadores son suficientes para crear todas las simetrías.  Esto sugiere varias preguntas que se pueden encontrar en el <xref ref="exercise-cube-symmetry" />.</p>
+	
+			<sage type="practice" />
+	
+		</subsection>
+	</section>
+	<exercises xml:id="permute-sage-exercises">
+		<title>Ejercicios en Sage</title>
+	
+		<introduction>
+			<p>Estos ejercicios tienen el objetivo de familiarizarle con los grupos de permutaciones en Sage.</p>
+		</introduction>
+	
+		<exercise number="1">
+			<statement>
+				<p>Cree el grupo simétrico completo <m>S_{10}</m> con el comando <c>G = SymmetricGroup(10)</c>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+				<p>Cree elementos de <c>G</c> con los siguientes métodos.  Preste atención a las comas, comillas, corchetes, paréntesis.  Los primeros dos usan cadenas de caracteres (texto) como entrada, imitando la forma en que escribimos las permutaciones (pero con comas).  La siguientes dos usan listas de tuplas.</p>
+	
+				<ul>
+					<li><p><c>a = G("(5,7,2,9,3,1,8)")</c></p></li>
+					<li><p><c>b = G("(1,3)(4,5)")</c></p></li>
+					<li><p><c>c = G([(1,2),(3,4)])</c></p></li>
+					<li><p><c>d = G([(1,3),(2,5,8),(4,6,7,9,10)])</c></p></li>
+				</ul>
+	
+				<ol>
+					<li><p>Calcule <m>a^3</m>, <m>bc</m>, <m>ad^{-1}b</m>.</p></li>
+					<li><p>Calcule los órdenes de cada uno de los elemetos individuales (<c>a</c> hasta <c>d</c>) usando un solo método de los elementos del grupo de permutaciones.</p></li>
+					<li><p>Use el método <c>.sign()</c> para determinar si <m>a,b,c,d</m> son pares o impares.</p></li>
+					<li><p>Cree dos subgrupos cíclicos de <m>G</m> con los comandos:
+					<ul>
+						<li><p><c>H = G.subgroup([a])</c></p></li>
+						<li><p><c>K = G.subgroup([d])</c></p></li>
+					</ul>
+					Liste, y estudie, los elementos de cada subgrupo.  Sin usar Sage, indique el orden de cada subgrupo de <m>K</m>.  Luego use  Sage para construir un subgrupo de <m>K</m> de orden 10.</p></li>
+					<li><p>Subgrupos más complicados se pueden formar usando dos o más generadores.  Construya un subgrupo <m>L</m> de <m>G</m> con el comando <c>L = G.subgroup([b,c])</c>.  Calcule el orden de <m>L</m> y liste todos sus elementos.</p></li>
+				</ol>
+			</statement>
+			
+	
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+				<p>Construya el grupo de simetrías del tetraedro (también es el grupo alternante en 4 símbolos, <m>A_4</m>) con el comando <c>A=AlternatingGroup(4)</c>.  Usando herramientas tales como órdenes de elementos, y generadores de subgrupos, vea si puede encontrar <em>todos</em> los subgrupos de <m>A_4</m> (cada uno exactamente una vez).  Haga esto sin usar el método <c>.subgroups()</c> para justificar que su respuesta es correcta (aunque puede ser una forma conveniente de verificar su resultado).</p>
+	
+				<p>Escriba un resumen ordenado de su respuesta<mdash/>no simplemente una lista larga escupida por Sage.  La idea es usar Sage como una herramienta, en la medida en que sea necesario, pero básicamente su respuesta debe ser un párrafo conciso y/o una tabla. Esta es la única parte de esta tarea sin instrucciones precisas y claras, así es que dedique el tiempo suficiente a esta parte para que le quede bien.  Ayuda: ningún subgrupo de  <m>A_4</m> requiere más de dos generadores.</p>
+			</statement>
+			
+	
+		</exercise>
+	
+		<exercise number="4" xml:id="exercise-cube-symmetry">
+			<statement>
+			<p>La subsecció<xref ref="subsection-motion-group-cube" text="title"/> describe las <m>24</m> simetrías de un cubo como un subgrupo del grupo simétrico <m>S_8</m> generado por tres rotaciones.  Conteste las siguientes preguntas sobre este grupo de simetrías.</p>
+			<ol>
+				<li><p>De la lista de elementos del grupo, ¿puede localizar la 10 rotaciones en torno a los ejes?  (Ayuda: la identidad es fácil, las otras nueve nunca envían un símbolo en sí mismo.)</p></li>
+	
+				<li><p>¿Puede identificar las seis simetrías que son transposición de diagonales?  (Ayuda: <c>[g for g in cube if g.order() == 2]</c> es un buen filtro inicial.)</p></li>
+	
+				<li><p>Verifique que cualquiera dos de las rotaciones (<c>above</c>, <c>front</c>, <c>right</c>) son suficientes para generar el grupo completo.  ¿Cómo sabe que cada par genera el grupo completo?</p></li>
+	
+				<li><p>¿Puede expresar una de las transposiciones diagonales como productos de rotaciones?  Este puede ser un problema notablemente difícil, especialmente para un software.  Se conoce como el <q>problema de las palabras.</q></p></li>
+	
+				<li><p>Numere las seis caras del cubo con los números del <m>1</m> al <m>6</m> (de cualquier forma que desee).  Ahora considere las mismas tres simetrías usadas antes (rotaciones en cuarto de vuelta en torno a los ejes), pero ahora vistas como permutaciones de las seis caras.  De esta manera, podemos construir cada simetría como un elemento de  <m>S_6</m>.  Verifique que el subgrupo generado por estas simetrías es el grupo completo de simetrías del cubo.  Nuevamente, en lugar de usar tres generadores, intente usando solo dos.</p></li>
+			</ol>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="5">
+			<statement>
+				<p>Guarde su trabajo, y vea si puede lograr que Sage se caiga construyendo el subgrupo de <m>S_{10}</m> generado por los elementos <c>b</c> y <c>d</c> de orden <m>2</m> y <m>30</m> de antes.  <em>No entregue</em> la lista de elementos de <c>N</c> como parte de su trabajo.</p>
+	
+				<sage type="display">
+					<input>
+					N = G.subgroup([b,d])
+					N.list()
+					</input>
+				</sage>
+	
+				<p>¿Cuál es el orden de <m>N</m>?</p>
+			</statement>
+			
+		</exercise>
+	
+	</exercises>
 
 </chapter>
-

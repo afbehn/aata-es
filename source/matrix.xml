@@ -60,7 +60,7 @@
 				\vdots \\
 				x_n
 				]]>\end{pmatrix}.</me>
-			Con frecuencia abreviaremos la matriz <m>A</m> escribiendo <m>(a_{ij})</m>. <notation><usage>(a_{ij})</usage><description>matriz</description></notation></p> 
+			Con frecuencia abreviaremos la matriz <m>A</m> escribiendo <m>(a_{ij})</m>. <notation><usage><m>(a_{ij})</m></usage><description>matriz</description></notation></p> 
  
 			<p>Recíprocamente, si <m>T : {\mathbb R}^n \rightarrow {\mathbb R}^m</m> es una función lineal, podemos asociar una matriz <m>A</m> con <m>T</m> considerando lo que <m>T</m> le hace a los vectores 
 				<md>
@@ -171,7 +171,7 @@
 					1 & 1 \\
 					0 & 1
 					]]>\end{pmatrix}</me>
-				en <m>SL_2({\mathbb R})</m>. En la Figura<nbsp /><xref ref="figure-sl2" />, el cuadrado unitario correspondiente a los vectores <m>{\mathbf x} = (1,0)^{\rm t}</m> y <m>{\mathbf y} =  (0,1)^{\rm t}</m> es enviado por <m>A</m> al paralelógramo con lados <m>(1,0)^{\rm t}</m> y <m>(1, 1)^{\rm t}</m>; es decir, <m>A {\mathbf x} = (1,0)^{\rm t}</m> y <m>A {\mathbf y} = (1, 1)^{\rm t}</m>. Note que estos dos paralelógramos tienen la misma área.</p>
+				en <m>SL_2({\mathbb R})</m>. En la <xref ref="figure-sl2" />, el cuadrado unitario correspondiente a los vectores <m>{\mathbf x} = (1,0)^{\rm t}</m> y <m>{\mathbf y} =  (0,1)^{\rm t}</m> es enviado por <m>A</m> al paralelógramo con lados <m>(1,0)^{\rm t}</m> y <m>(1, 1)^{\rm t}</m>; es decir, <m>A {\mathbf x} = (1,0)^{\rm t}</m> y <m>A {\mathbf y} = (1, 1)^{\rm t}</m>. Note que estos dos paralelógramos tienen la misma área.</p>
 			</example>
 
 			<figure xml:id="figure-sl2">
@@ -209,7 +209,7 @@
 		<subsection xml:id="matrix-subsection-orthogonal-group">
 			<title>El Grupo Ortogonal <m>O(n)</m></title>
  
-			<p>Otro subgrupo de <m>GL_n({\mathbb R})</m> es el grupo ortogonal. Una matriz <m>A</m> es <term>ortogonal</term><idx><h>Matriz ortogonal</h></idx><idx><h>Matriz</h><h>ortogonal</h></idx> si <m>A^{-1} = A^{\rm t}</m>. El <term>grupo ortogonal</term><idx><h>Grupo</h><h>ortogonal</h></idx><idx><h>El grupo ortogonal</h></idx> consiste en el conjunto de todas las matrices ortogonales. Escribimos <m>O(n)</m> para el grupo ortogonal de <m>n \times n</m>. <notation><usage>O(n)</usage><description>grupo ortogonal</description></notation> Dejamos como ejercicio demostrar que <m>O(n)</m> es un subgrupo de <m>GL_n( {\mathbb R})</m>.</p>
+			<p>Otro subgrupo de <m>GL_n({\mathbb R})</m> es el grupo ortogonal. Una matriz <m>A</m> es <term>ortogonal</term><idx><h>Matriz ortogonal</h></idx><idx><h>Matriz</h><h>ortogonal</h></idx> si <m>A^{-1} = A^{\rm t}</m>. El <term>grupo ortogonal</term><idx><h>Grupo</h><h>ortogonal</h></idx><idx><h>El grupo ortogonal</h></idx> consiste en el conjunto de todas las matrices ortogonales. Escribimos <m>O(n)</m> para el grupo ortogonal de <m>n \times n</m>. <notation><usage><m>O(n)</m></usage><description>grupo ortogonal</description></notation> Dejamos como ejercicio demostrar que <m>O(n)</m> es un subgrupo de <m>GL_n( {\mathbb R})</m>.</p>
  
 			<example xml:id="orthogonal">
 				<p>Las siguiente matrices son ortogonales:
@@ -241,7 +241,7 @@
 				]]>\end{pmatrix}
 				=
 				x_1 y_1 + \cdots + x_n y_n.</me>
-			Definimos la longitud de un vector <m>{\mathbf x}=(x_1, \ldots, x_n)^{\rm t}</m> como <notation><usage>\| {\mathbf x} \|</usage><description>longitud de un vector <m>\mathbf x</m></description></notation>
+			Definimos la longitud de un vector <m>{\mathbf x}=(x_1, \ldots, x_n)^{\rm t}</m> como <notation><usage><m>\| {\mathbf x} \|</m></usage><description>longitud de un vector <m>\mathbf x</m></description></notation>
 				<me>\| {\mathbf x} \| = \sqrt{\langle  {\mathbf x}, {\mathbf x} \rangle}  = \sqrt{x_1^2 + \cdots + x_n^2}.</me>
 			Asociada a la noción de longitud de un vector está la idea de distancia entre dos vectores. Definimos la <term>distancia</term> entre dos vectores <m>{\mathbf x}</m> e <m>{\mathbf y}</m> como <m>\| {\mathbf x}-{\mathbf y} \|</m>. Dejamos como ejercicio demostrar la siguiente proposición sobre las propiedades de los productos internos Euclideanos.</p>  
 
@@ -401,7 +401,7 @@
 					\cos \theta & - \sin \theta \\
 					\sin \theta & \cos \theta
 					]]>\end{pmatrix},</me>
-				donde <m>0 \leq \theta \lt 2 \pi</m>. Una matriz <m>T</m> en <m>O(2)</m> ya sea refleja o rota un vector en <m>{\mathbb R}^2</m> (Figura<nbsp /><xref ref="figure-o2" />). Una reflexión respecto al eje horizontal está dada por la matriz 
+				donde <m>0 \leq \theta \lt 2 \pi</m>. Una matriz <m>T</m> en <m>O(2)</m> ya sea refleja o rota un vector en <m>{\mathbb R}^2</m> (<xref ref="figure-o2" />). Una reflexión respecto al eje horizontal está dada por la matriz 
 					<me>\begin{pmatrix}<![CDATA[
 					1 & 0 \\
 					0 & -1
@@ -414,9 +414,9 @@
 				Una reflexión respecto a una recta <m>\ell</m> es simplemente una relfexión respecto al eje horizontal seguida de una rotación.  Si <m>\det A =-1</m>, entonces <m>A</m> corresponde a una reflexión.</p>
 			</example>
  
-			<p>Dos de los otros grupos de matrices o relacionados a matrices que consideraremos son el grupo ortogonal especial y el grupo de movimientos Euclideanos. El <term>grupo ortogonal especial</term><idx><h>Grupo</h><h>ortogonal especial</h></idx>, <m>SO(n)</m>, e simplemente  la intersección de <m>O(n)</m> y <m>SL_n({\mathbb R})</m>; es decir, aquellos elementos en <m>O(n)</m> con determinante uno. <notation><usage>SO(n)</usage><description>grupo ortogonal especial</description></notation> El <term>grupo Euclideano</term><idx><h>Grupo Euclideano</h></idx><idx><h>Euclideano</h><h>grupo</h></idx>, <m>E(n)</m>, puede ser escrito como pares ordenados <m>(A, {\mathbf x})</m>, donde <m>A</m> está en <m>O(n)</m> y <m>{\mathbf x}</m> está en <m>{\mathbb R}^n</m>. Definimos la multiplicación como <notation><usage>E(n)</usage><description>Grupo Euclideano</description></notation>
+			<p>Dos de los otros grupos de matrices o relacionados a matrices que consideraremos son el grupo ortogonal especial y el grupo de movimientos Euclideanos. El <term>grupo ortogonal especial</term><idx><h>Grupo</h><h>ortogonal especial</h></idx>, <m>SO(n)</m>, e simplemente  la intersección de <m>O(n)</m> y <m>SL_n({\mathbb R})</m>; es decir, aquellos elementos en <m>O(n)</m> con determinante uno. <notation><usage><m>SO(n)</m></usage><description>grupo ortogonal especial</description></notation> El <term>grupo Euclideano</term><idx><h>Grupo Euclideano</h></idx><idx><h>Euclideano</h><h>grupo</h></idx>, <m>E(n)</m>, puede ser escrito como pares ordenados <m>(A, {\mathbf x})</m>, donde <m>A</m> está en <m>O(n)</m> y <m>{\mathbf x}</m> está en <m>{\mathbb R}^n</m>. Definimos la multiplicación como <notation><usage><m>E(n)</m></usage><description>Grupo Euclideano</description></notation>
 				<me>(A, {\mathbf x}) (B, {\mathbf y}) = (AB, A {\mathbf y} +{\mathbf x}).</me>
-			La identidad del grupo es <m>(I,{\mathbf 0})</m>; el inverso de <m>(A, {\mathbf x})</m> es <m>(A^{-1}, -A^{-1} {\mathbf x})</m>. En el Ejercicio<nbsp /><xref ref="exercise-matrix-en-group" />, debe verificar que <m>E(n)</m> es realmente un grupo con esta operación.</p> 
+			La identidad del grupo es <m>(I,{\mathbf 0})</m>; el inverso de <m>(A, {\mathbf x})</m> es <m>(A^{-1}, -A^{-1} {\mathbf x})</m>. En el <xref ref="exercise-matrix-en-group" />, debe verificar que <m>E(n)</m> es realmente un grupo con esta operación.</p> 
  
 			<figure xml:id="figure-isometries">
 				<caption>Traslaciones en <m>\mathbb R^2</m></caption>
@@ -454,9 +454,9 @@
  
 			<p>Una <term>isometría</term><idx><h>Isometría</h></idx> o <term>movimiento rígido</term><idx><h>Movimiento rígido</h></idx> en <m>{\mathbb R}^n</m> es una función <m>f</m> de <m>{\mathbb R}^n</m> en <m>{\mathbb R}^n</m> que preserva distancias. Esto quiere decir que <m>f</m> debe satisfacer
 				<me>\| f({\mathbf x}) - f({\mathbf y}) \| =\|{\mathbf x} - {\mathbf y} \|</me>
-			para todo <m>{\mathbf x}, {\mathbf y} \in {\mathbb R}^n</m>. No es difícil mostrar que <m>f</m> debe ser inyectiva. Por el Teorema<nbsp /><xref ref="theorem-orthnormal-matrix" />, cualquier elemento en <m>O(n)</m> es una isometría en <m>{\mathbb R}^n</m>; pero, <m>O(n)</m> no incluye todas las posibles isometrías en <m>{\mathbb R}^n</m>. La traslación por un vector <m>{\mathbf x}</m>, <m>T_{\mathbf y}({\mathbf x}) = {\mathbf x} + {\mathbf y}</m> también es una isometría (Figura<nbsp /><xref ref="figure-isometries" />); pero, <m>T</m> no puede estar en <m>O(n)</m> pues no es una función lineal. </p>
+			para todo <m>{\mathbf x}, {\mathbf y} \in {\mathbb R}^n</m>. No es difícil mostrar que <m>f</m> debe ser inyectiva. Por el <xref ref="theorem-orthnormal-matrix" />, cualquier elemento en <m>O(n)</m> es una isometría en <m>{\mathbb R}^n</m>; pero, <m>O(n)</m> no incluye todas las posibles isometrías en <m>{\mathbb R}^n</m>. La traslación por un vector <m>{\mathbf x}</m>, <m>T_{\mathbf y}({\mathbf x}) = {\mathbf x} + {\mathbf y}</m> también es una isometría (<xref ref="figure-isometries" />); pero, <m>T</m> no puede estar en <m>O(n)</m> pues no es una función lineal. </p>
 
-			<p>Estamos fundamentalmente interesados en las isometrías en <m>{\mathbb R}^2</m>. De hecho, las únicas isometrías en <m>{\mathbb R}^2</m> son rotaciones en torno al origen, reflexiones respecto a rectas, traslaciones y combinaciones de estas. Por ejemplo, una <term>reflexión deslizante</term><idx><h>Reflexión deslizante</h></idx> es una traslación seguida de una reflexión (Figura<nbsp /><xref ref="figure-glide" />). En <m>{\mathbb R}^n</m> todas las isometrías están dadas de la misma forma. La demostrción se generaliza fácilmente.</p>
+			<p>Estamos fundamentalmente interesados en las isometrías en <m>{\mathbb R}^2</m>. De hecho, las únicas isometrías en <m>{\mathbb R}^2</m> son rotaciones en torno al origen, reflexiones respecto a rectas, traslaciones y combinaciones de estas. Por ejemplo, una <term>reflexión deslizante</term><idx><h>Reflexión deslizante</h></idx> es una traslación seguida de una reflexión (<xref ref="figure-glide" />). En <m>{\mathbb R}^n</m> todas las isometrías están dadas de la misma forma. La demostrción se generaliza fácilmente.</p>
 	 
 			<figure xml:id="figure-glide">
 				<caption>Reflexión deslizante</caption>
@@ -533,7 +533,7 @@
 						<me>\mathbf z = \frac{1}{n} \sum_{i=1}^n \mathbf x_i.</me>
 					Si bien el punto <m>\mathbf z</m> no necesariamente está en el conjunto <m>X</m>, queda fijo por todos los elementos del grupo de simetría. Sin pérdida de generalidad, podemos suponer que <m>\mathbf z</m> es el origen.</p>
 
-					<p>Un grupo de simetría finito <m>G</m> en <m>{\mathbb R}^2</m> que fija el origen debe ser un subgrupo finito de <m>O(2)</m>, pues las traslaciones y traslaciones deslizantes tienen orden infinito.  Por el Ejemplo<nbsp /><xref ref="example-o2" />, los elementos en <m>O(2)</m> son ya sea rotaciones de la forma
+					<p>Un grupo de simetría finito <m>G</m> en <m>{\mathbb R}^2</m> que fija el origen debe ser un subgrupo finito de <m>O(2)</m>, pues las traslaciones y traslaciones deslizantes tienen orden infinito.  Por el <xref ref="example-o2" />, los elementos en <m>O(2)</m> son ya sea rotaciones de la forma
 						<me>R_{\theta}
 						=
 						\begin{pmatrix}<![CDATA[
@@ -574,7 +574,7 @@
 		<subsection xml:id="matrix-subsection-wallpaper">
 			<title>Los Grupos Cristalográficos del Plano</title>
 			
-			<p>Supongamos que queremos deseamos estudiar los patrones de empapelamiento del plano o los cristales en tres dimensiones. Los patrones de empapelamiento son simplemente patrones que se repiten en el plano (Figura<nbsp /><xref ref="figure-wallpaper" />). Los análogos de estos patrones en <m>{\mathbb R}^3</m> son cristales, que podemos entender como patrones repetidos de moléculas en tres dimensiones (Figura<nbsp /><xref ref="figure-crystals" />). El equivalente matemático de un empapelamiento o patrón cristalográfico se llama reticulado.</p>
+			<p>Supongamos que queremos deseamos estudiar los patrones de empapelamiento del plano o los cristales en tres dimensiones. Los patrones de empapelamiento son simplemente patrones que se repiten en el plano (<xref ref="figure-wallpaper" />). Los análogos de estos patrones en <m>{\mathbb R}^3</m> son cristales, que podemos entender como patrones repetidos de moléculas en tres dimensiones (<xref ref="figure-crystals" />). El equivalente matemático de un empapelamiento o patrón cristalográfico se llama reticulado.</p>
 
 			<figure xml:id="figure-wallpaper">
 				<caption>Un patrón de empapelamiento en <m>\mathbb R^2</m></caption>
@@ -655,7 +655,7 @@
 
 			<p>Examinemos los patrones en el plano con un poco más de detalle. Supongamos que <m>{\mathbf x}</m> e <m>{\mathbf y}</m> son vectores linealmente independientes en <m>{\mathbb R}^2</m>; es decir, uno de ellos no puede ser un múltiplo escalar del otro. El <term>reticulado</term><idx><h>Reticulado de puntos</h></idx> de <m>{\mathbf x}</m> e <m>{\mathbf y}</m> es el conjunto de todas las combinaciones lineales <m>m {\mathbf x} + n {\mathbf y}</m>, donde <m>m</m> y <m>n</m> son enteros. Los vectores <m>{\mathbf x}</m> e <m>{\mathbf y}</m> se dice que son una <term>base</term><idx><h>Base de un reticulado</h></idx> para el reticulado.</p>
  
-			<p>Note que un reticulado puede tener diferentes bases. Por ejemplo, los vectores <m>(1,1)^{\rm t}</m> y <m>(2,0)^{\rm t}</m> forman el mismo reticulado que los vectores <m>(-1, 1)^{\rm t}</m> y <m>(-1, -1)^{\rm t}</m> (Figura<nbsp /><xref ref="figure-lattice" />). Pero, cualquier reticulado está completamente determinado por una base. Dadas dos bases para el mismo reticulado, digamos <m>\{ {\mathbf x}_1, {\mathbf x}_2 \}</m> y <m>\{ {\mathbf y}_1, {\mathbf y}_2 \}</m>, podemos escribir 
+			<p>Note que un reticulado puede tener diferentes bases. Por ejemplo, los vectores <m>(1,1)^{\rm t}</m> y <m>(2,0)^{\rm t}</m> forman el mismo reticulado que los vectores <m>(-1, 1)^{\rm t}</m> y <m>(-1, -1)^{\rm t}</m> (<xref ref="figure-lattice" />). Pero, cualquier reticulado está completamente determinado por una base. Dadas dos bases para el mismo reticulado, digamos <m>\{ {\mathbf x}_1, {\mathbf x}_2 \}</m> y <m>\{ {\mathbf y}_1, {\mathbf y}_2 \}</m>, podemos escribir 
 				<md>
 					<mrow>{\mathbf y}_1 &amp; = \alpha_1  {\mathbf x}_1 + \alpha_2 {\mathbf x}_2</mrow>
 					<mrow>{\mathbf y}_2 &amp; = \beta_1  {\mathbf x}_1 + \beta_2 {\mathbf x}_2,</mrow>
@@ -742,7 +742,7 @@
 				</statement>
 			</theorem>
  
-			<p>Para contestar la pregunta de cómo los grupos puntuales y los grupos de trslación pueden ser combinados, debemos mirar los distintos tipos de reticulados. Los reticulados pueden ser clasificados por la estructura de una celda del reticulado. Las posibles formas de celda son paralelógramo, rectangular, cuadrada, rómbica y hexagonal (Figura<nbsp /><xref ref="figure-lattice-types" />). Los grupos cristalográficos planos pueden ahora ser clasificados de acuerdo a los tipos de reflexiones que ocurren en cada grupo: estas son reflexiones ordinarias, reflexiones deslizantes, ambas o ninguna.</p>
+			<p>Para contestar la pregunta de cómo los grupos puntuales y los grupos de trslación pueden ser combinados, debemos mirar los distintos tipos de reticulados. Los reticulados pueden ser clasificados por la estructura de una celda del reticulado. Las posibles formas de celda son paralelógramo, rectangular, cuadrada, rómbica y hexagonal (<xref ref="figure-lattice-types" />). Los grupos cristalográficos planos pueden ahora ser clasificados de acuerdo a los tipos de reflexiones que ocurren en cada grupo: estas son reflexiones ordinarias, reflexiones deslizantes, ambas o ninguna.</p>
 
 			<figure xml:id="figure-lattice-types">
 				<caption>Tipos de reticulados en <m>\mathbb R^2</m></caption>
@@ -903,9 +903,13 @@
 				</image>
 			</figure>
  
-			<p>Los 17 grupos critalográficos planos están listados en la Tabla<nbsp /><xref ref="table-wallpaper" />. Los grupos p3m1 y p31m pueden ser distinguidos según si todos sus centros triples están en los ejes de reflexión: los de p3m1 deben estar, mientras los de p31m puede que no. Similarmente, los centros cuuádruples de p4m deben estar en los ejes de reflexión mientras los de p4g no necesariamente (Figura<nbsp /><xref ref="figure-p4m" />). La demostración completa de este teorema se puede encontar en varias de las referencias la final de este capítulo, incluyendo [5], [6], [10], y [11].</p>
+			<p>Los 17 grupos critalográficos planos están listados en la <xref ref="table-wallpaper" />. Los grupos p3m1 y p31m pueden ser distinguidos según si todos sus centros triples están en los ejes de reflexión: los de p3m1 deben estar, mientras los de p31m puede que no. Similarmente, los centros cuuádruples de p4m deben estar en los ejes de reflexión mientras los de p4g no necesariamente (<xref ref="figure-p4m" />). La demostración completa de este teorema se puede encontar en varias de las referencias la final de este capítulo, incluyendo [5], [6], [10], y [11].</p>
 
-			<xi:include href="./sage/matrix-info.xml" />
+			<paragraphs>
+				<title>Sage</title>
+			
+				<p>Aún no hemos incluido material Sage para este capítulo.</p>
+			</paragraphs>
  
  		</subsection>
  
@@ -915,7 +919,321 @@
 		</subsection>
 	</section>
 
-	<xi:include href="./exercises/matrix.xml" />
+	<exercises xml:id="exercises-matrix">
+		<title>Ejercicios</title>
+	
+		<exercise number="1">
+			<statement>
+				<p>Demuestre la identidad
+				<me>\langle {\mathbf x}, {\mathbf y} \rangle = \frac{1}{2} \left[ \|{\mathbf x} + {\mathbf y}\|^2 - \|{\mathbf x}\|^2 - \| {\mathbf y}\|^2 \right].</me></p>
+			</statement>
+			<hint>
+				<p><md>
+						<mrow>\frac{1}{2} \left[ \|{\mathbf x} + {\mathbf y}\|^2 + \|{\mathbf x}\|^2 - \| {\mathbf y}\|^2 \right] &amp; =  \frac{1}{2} \left[ \langle x + y, x + y \rangle - \|{\mathbf x}\|^2 - \| {\mathbf y}\|^2 \right]</mrow>
+						<mrow>&amp; = \frac{1}{2} \left[ \| {\mathbf x}\|^2 + 2 \langle x, y \rangle + \| {\mathbf y}\|^2 - \|{\mathbf x}\|^2 - \| {\mathbf y}\|^2 \right]</mrow>
+						<mrow>&amp; = \langle {\mathbf x}, {\mathbf y} \rangle.</mrow>
+					</md></p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+				<p>Muestre que <m>O(n)</m> es un grupo.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+				<p>Demuestre que las siguientes matrices son ortogonales. ¿Está alguna de estas matrices en <m>SO(n)</m>?
+					<ol cols="2">
+	
+						<li><p><me>\begin{pmatrix}
+							1/\sqrt{2} &amp; -1/\sqrt{2} \\
+							1/\sqrt{2} &amp; 1/\sqrt{2}
+							\end{pmatrix}</me></p></li>
+	
+						<li><p><me>\begin{pmatrix}
+							1 / \sqrt{5} &amp; 2 / \sqrt{5} \\
+							- 2 /\sqrt{5} &amp; 1/ \sqrt{5}
+							\end{pmatrix}</me></p></li>
+	
+						<li><p><me>\begin{pmatrix}
+							4/ \sqrt{5} &amp; 0 &amp; 3 / \sqrt{5} \\
+							-3 / \sqrt{5} &amp; 0 &amp; 4 / \sqrt{5} \\
+							0 &amp; -1 &amp; 0
+							\end{pmatrix}</me></p></li>
+	
+						<li><p><me>\begin{pmatrix}
+							1/3 &amp; 2/3 &amp; - 2/3 \\
+							- 2/3 &amp; 2/3 &amp; 1/3 \\
+							-2/3 &amp; 1/3 &amp; 2/3
+							\end{pmatrix}</me></p></li>
+	
+					</ol></p>
+		</statement>
+		<hint>
+			<p>(a) está en <m>SO(2)</m>; (c) no está en <m>O(3)</m>.</p>
+		</hint>
+		
+		</exercise>
+	
+		<exercise number="4">
+			<statement>
+				<p>Determine el grupo de simetría de cada una de las figuras en la Figura<nbsp/><xref ref="figure-exercise-symmetry-groups"/>.</p>
+	
+				<figure xml:id="figure-exercise-symmetry-groups">
+					<caption/>
+	
+					 <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
+					<image xml:id="exercise-symmetry-groups">
+						<latex-image-code>
+	<![CDATA[
+							\begin{tikzpicture}[scale=0.7]
+	
+							\draw (-2,0) -- (2,0) -- (2,4) -- (-2,4) -- cycle;
+							\draw (0,0) -- (2,2) -- (0,4) -- (-2,2) -- cycle;
+							\draw (-2,0) -- (2,4) (2,0) -- (-2,4);
+							\node [below] at (0,0) {(b)};
+	
+							\draw (-3,3) -- (-8,3) -- (-8,6) -- (-3,6) -- cycle;
+							\draw (-6,4) ellipse (1.55 and 0.65);
+							\filldraw[fill=black, draw=black] (-4,5.2) circle (0.3);
+							\node [below] at (-5.5,3) {(a)};
+	
+							\draw (5.5,4.5)  +(270:1) circle (1.25);
+							\draw (5.5,4.5)  +(30:1) circle (1.25);
+							\draw (5.5,4.5)  +(150:1) circle (1.25);
+							\node [below] at (5.5,2.35) {(c)};
+							\end{tikzpicture}
+						]]>
+	</latex-image-code>
+					</image>
+	
+				</figure>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="5">
+			<statement>
+				<p>Sean <m>{\mathbf x}</m>, <m>{\mathbf y}</m>, y <m>{\mathbf w}</m> vectores en <m>{\mathbb R}^n</m> y <m>\alpha \in {\mathbb R}</m>.  Demuestre las siguientes propiedades de los productos internos.
+					<ol>
+		 
+						<li><p><m>\langle {\mathbf x}, {\mathbf y} \rangle = \langle {\mathbf y}, {\mathbf x} \rangle</m>.</p></li>
+		 
+						<li><p><m>\langle {\mathbf x}, {\mathbf y} + {\mathbf w} \rangle = \langle {\mathbf x}, {\mathbf y} \rangle + \langle {\mathbf x}, {\mathbf w} \rangle</m>.</p></li>
+		 
+						<li><p><m>\langle \alpha {\mathbf x}, {\mathbf y} \rangle = \langle {\mathbf x}, \alpha {\mathbf y} \rangle = \alpha \langle {\mathbf x}, {\mathbf y} \rangle</m>.</p></li>
+		 
+						<li><p><m>\langle {\mathbf x}, {\mathbf x} \rangle \geq 0</m> con igualdad exactamente cuando <m>{\mathbf x} = 0</m>.</p></li>
+		 
+						<li><p>Si <m>\langle {\mathbf x}, {\mathbf y} \rangle = 0</m>  para todo <m>{\mathbf x}</m> en <m>{\mathbb R}^n</m>, entonces <m>{\mathbf y} = 0</m>.</p></li>
+		 
+					</ol></p>
+			</statement>
+			<hint>
+				<p>(a) <m>\langle {\mathbf x}, {\mathbf y} \rangle = \langle {\mathbf y}, {\mathbf x} \rangle</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="6" xml:id="exercise-matrix-en-group">
+			<statement>
+				<p>Compruebe que
+					<me>E(n) = \{(A, {\mathbf x}) : A \in O(n) \text{ y } {\mathbf x} \in {\mathbb R}^n \}</me>
+				es un grupo.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="7">
+			<statement>
+				<p>Demuestre que <m>\{ (2,1), (1,1) \}</m>  y <m>\{ ( 12, 5), ( 7, 3) \}</m> son bases para el mismo reticulado. </p>
+			</statement>
+			<hint>
+				<p>Use la matriz unimodular
+					<me>\begin{pmatrix}
+					5 &amp; 2 \\
+					2 &amp; 1
+					\end{pmatrix}.</me></p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="8">
+			<statement>
+				<p>Sea <m>G</m> un subgrupo de <m>E(2)</m> y supongamos que <m>T</m> es el subgrupo de traslaciones de <m>G</m>.  Demuestre que el grupo puntual de <m>G</m> es isomorfo a <m>G/T</m>. </p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="9">
+			<statement>
+				<p>Sea <m>A \in SL_2({\mathbb R})</m> y supongamos que los vectores <m>{\mathbf x}</m> y <m>{\mathbf y}</m> forman dos lados de un paralelogramo en <m>{\mathbb R}^2</m>. Demuestre que el área de este paralelogramo es la misma la del paralelogramo de lados <m>A{\mathbf x}</m> y <m>A{\mathbf y}</m>. </p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="10">
+			<statement>
+				<p>Demuestre que <m>SO(n)</m> es un subgrupo normal de <m>O(n)</m>.</p>
+			</statement>
+			<hint>
+				<p>Muestre que el núcleo de la función <m>\det : O(n) \rightarrow {\mathbb R}^*</m> es <m>SO(n)</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="11">
+			<statement>
+				<p>Muestre que cualquier isometría <m>f</m> en <m>{\mathbb R}^n</m> es una función inyectiva.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="12">
+			<statement>
+				<p>Demuestre o refute: Un elemento en <m>E(2)</m> de la forma <m>(A, {\mathbf x})</m>, donde <m>{\mathbf x} \neq 0</m>, tiene orden infinito.</p>
+			</statement>
+			
+		</exercise>
+	
+			<todo>Expand this solution. Complete the PMI part.</todo>
+	
+		<exercise number="13">
+			<statement>
+				<p>Demuestre o refute: Existe un subgrupo abeliano infinito de <m>O(n)</m>.</p>
+			</statement>
+			<hint>
+				<p>True.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Expand this solution.  Find the example.</todo>
+	
+		<exercise number="14">
+			<statement>
+				<p>Sea <m>{\mathbf x} = (x_1, x_2)</m> un punto del círculo unitario en <m>{\mathbb R}^2</m>; es decir, <m>x_1^2 + x_2^2 = 1</m>. Si <m>A \in O(2)</m>, muestre que <m>A {\mathbf x}</m> también pertenece al círculo unitario. </p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="15">
+			<statement>
+				<p>Sea <m>G</m> un grupo con un subgrupo <m>H</m> (no necesariamente normal) y un subgrupo normal <m>N</m>. Entonces <m>G</m> es un <term>producto semidirecto</term> de <m>N</m> por <m>H</m> si  
+					<ul>
+					 
+						<li><p><m>H \cap N = \{ \identity \}</m>;</p></li>
+						 
+						<li><p><m>HN=G</m>.</p></li>
+						 
+					</ul>
+				Muestre que se cumple lo siguiente.
+					<ol>
+					 
+						<li><p><m>S_3</m> es el producto semidirecto de <m>A_3</m> por <m>H = \{(1), (12) \}</m>.</p></li>
+						 
+						<li><p>El grupo de cuaterniones, <m>Q_8</m>, no puede ser escrito como un producto semidirecto (no trivial).</p></li>
+						 
+						<li><p><m>E(2)</m> es el producto semidirecto de <m>O(2)</m> por <m>H</m>, donde <m>H</m> consiste de todas las traslaciones en <m>{\mathbb R}^2</m>.</p></li>
+						 
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand solution.</todo>
+	
+		<exercise number="16">
+			<statement>
+				<p>Determine cuál de los 17 grupos cristalográficos del plano preserva la simetría del patrón en la Figura<nbsp/><xref ref="figure-wallpaper"/>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="17">
+			<statement>
+				<p>Determine cuál de los 17 grupos cristalográficos del plano preserva la simetría del patrón en la Figura<nbsp/><xref ref="figure-exercise-wallpaper"/>.</p>	
+			</statement>
+			<hint>
+				<p><m>p6m</m></p>
+			</hint>
+			
+		</exercise>
+	
+		<figure xml:id="figure-exercise-wallpaper">
+			<caption/>
+	
+			 <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
+			<image xml:id="exercise-wallpaper">
+				<latex-image-code>
+	<![CDATA[
+					\begin{tikzpicture}[scale=0.7]
+	
+					\draw (0.5,0) -- (1.5,0)  (3.5,0) -- (4.5,0) (6.5,0) -- (7.5,0) (9.5,0) -- (10.5,0);
+					\draw (1,0.886) -- (3,0.886) (4,0.886) -- (6,0.886) (7,0.886) -- (9,0.886) (10,0.886) -- (12,0.886);
+					\draw (0.5,1.732) -- (1.5,1.732)  (2.5,1.732) -- (4.5,1.732) (5.5,1.732) -- (7.5,1.732) (8.5,1.732) -- (10.5,1.732) (11.5,1.732) -- (12.5,1.732);
+					\draw (1,2.598) -- (3,2.598) (4,2.598) -- (6,2.598) (7,2.598) -- (9,2.598) (10,2.598) -- (12,2.598);
+					\draw (0.5,3.464) -- (1.5,3.464)  (2.5,3.464) -- (4.5,3.464) (5.5,3.464) -- (7.5,3.464) (8.5,3.464) -- (10.5,3.464) (11.5,3.464) -- (12.5,3.464);
+					\draw (1,4.33) -- (3,4.33) (4,4.33) -- (6,4.33) (7,4.33) -- (9,4.33) (10,4.33) -- (12,4.33);
+					\draw (0.5,5.196) -- (1.5,5.196)  (3.5,5.196) -- (4.5,5.196) (6.5,5.196) -- (7.5,5.196) (9.5,5.196) -- (10.5,5.196);
+	
+					\draw (0.5,0) -- (0,0.886) -- (0.5,1.732) -- (0,2.598) -- (0.5,3.464) -- (0,4.33) -- (0.5,5.196);
+					\draw (0.5,0) -- (1,0.886) -- (0.5,1.732) -- (1,2.598) -- (0.5,3.464) -- (1,4.33) -- (0.5,5.196);
+					\draw (1.5,0) -- (2,0.886) -- (1.5,1.732) -- (2,2.598) -- (1.5,3.464) -- (2,4.33) -- (1.5,5.196);
+					\draw (2,0.886) -- (2.5,1.732) -- (2,2.598) -- (2.5,3.464) -- (2,4.33);
+					\draw (3,0.886) -- (3.5,1.732) -- (3,2.598) -- (3.5,3.464) -- (3,4.33);
+					\draw (3.5,0) -- (3,0.886) (3,4.33) -- (3.5,5.196);
+					\draw (3.5,0) -- (4,0.886) -- (3.5,1.732) -- (4,2.598) -- (3.5,3.464) -- (4,4.33) -- (3.5,5.196);
+					\draw (4.5,0) -- (5,0.886) -- (4.5,1.732) -- (5,2.598) -- (4.5,3.464) -- (5,4.33) -- (4.5,5.196);
+					\draw (5,0.886) -- (5.5,1.732) -- (5,2.598) -- (5.5,3.464) -- (5,4.33);
+					\draw (6.5,0) -- (6,0.886) -- (6.5,1.732) -- (6,2.598) -- (6.5,3.464) -- (6,4.33) -- (6.5,5.196);
+					\draw (6.5,0) -- (7,0.886) -- (6.5,1.732) -- (7,2.598) -- (6.5,3.464) -- (7,4.33) -- (6.5,5.196);
+					\draw (7.5,0) -- (8,0.886) -- (7.5,1.732) -- (8,2.598) -- (7.5,3.464) -- (8,4.33) -- (7.5,5.196);
+					\draw (8,0.886) -- (8.5,1.732) -- (8,2.598) -- (8.5,3.464) -- (8,4.33);
+					\draw (9.5,0) -- (9,0.886) -- (9.5,1.732) -- (9,2.598) -- (9.5,3.464) -- (9,4.33) -- (9.5,5.196);
+					\draw (9.5,0) -- (10,0.886) -- (9.5,1.732) -- (10,2.598) -- (9.5,3.464) -- (10,4.33) -- (9.5,5.196);
+					\draw (10.5,0) -- (11,0.886) -- (10.5,1.732) -- (11,2.598) -- (10.5,3.464) -- (11,4.33) -- (10.5,5.196);
+					\draw (11,0.886) -- (11.5,1.732) -- (11,2.598) -- (11.5,3.464) -- (11,4.33);
+					\draw (12,0.886) -- (12.5,1.732) -- (12,2.598) -- (12.5,3.464) -- (12,4.33);
+	
+					\end{tikzpicture}
+				]]>
+	</latex-image-code>
+			</image>
+	
+		</figure>
+	
+		<exercise number="18">
+			<statement>
+				<p>Encuentre el grupo de rotaciones de un dodecahedro.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Elaborate on this solution.</todo>
+	
+		<exercise number="19">
+			<statement>
+				<p>Para cada uno de los 17 grupos cristalográficos del plano, dibuje un patrón mural que tenga ese grupo como grupo de simetría.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Provide a figure for each of the 17 wallpaper groups.</todo>
+	
+	</exercises>
  
 	<references xml:id="matrix-references">
 		<title>Referencias y Lecturas Recomendadas</title>
@@ -960,8 +1278,18 @@
  
 	</references>
 
-	<xi:include href="./sage/matrix-sage.xml" />
-	<xi:include href="./sage/matrix-sage-exercises.xml" />
-
+	<section xml:id="matrix-sage">
+		<title>Sage</title>
+	
+		<p>No hay material Sage para este capítulo.</p>
+	</section>
+	<exercises xml:id="matrix-sage-exercises">
+		<title>Ejercicios en Sage</title>
+	
+		<introduction>
+			<p>No hay ejercicios en Sage para este capítulo.</p>
+		</introduction>
+	
+	</exercises>
 </chapter>
  

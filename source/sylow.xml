@@ -28,7 +28,7 @@
 
 		<introduction>
 
-			<p>Usaremos lo que hemos aprendido sobre acciones de grupo para demostrar los Teoremas de Sylow.  Recordemos por un momento los que significa que <m>G</m> actúe en sí mismo por conjugación y cómo las clases de conjugación se distribuyen en el grupo de acuerdo a la ecuación de clase, discutida en el Capítulo<nbsp /><xref ref="actions" />. Un grupo  <m>G</m> actúa en sí mismo por conjugación de manera que <m>(g,x) \mapsto gxg^{-1}</m>. Sean <m>x_1, \ldots, x_k</m> representantes de cada una de las distintas clases de conjugación de <m>G</m> que contienen más de un elemento. Entonces la ecuación de clase se escribe como
+			<p>Usaremos lo que hemos aprendido sobre acciones de grupo para demostrar los Teoremas de Sylow.  Recordemos por un momento los que significa que <m>G</m> actúe en sí mismo por conjugación y cómo las clases de conjugación se distribuyen en el grupo de acuerdo a la ecuación de clase, discutida en el Capí<xref ref="actions" />. Un grupo  <m>G</m> actúa en sí mismo por conjugación de manera que <m>(g,x) \mapsto gxg^{-1}</m>. Sean <m>x_1, \ldots, x_k</m> representantes de cada una de las distintas clases de conjugación de <m>G</m> que contienen más de un elemento. Entonces la ecuación de clase se escribe como
 				<me>|G| = |Z(G)| + [G: C(x_1) ] + \cdots + [ G: C(x_k)],</me>
 			donde <m>Z(G) = \{g \in G : gx = xg \text{ para todo } x \in G\}</m> es el centro de <m>G</m> y <m>C(x_i) = \{ g \in G : g x_i = x_i g \}</m> es el subgrupo centralizador de <m>x_i</m>.</p>
 	 
@@ -83,7 +83,7 @@
 				<me>h \cdot K \mapsto hKh^{-1}</me>
 			para <m>K</m> en <m>{\mathcal S}</m>.</p>
 	 
-	 		<p>El conjunto <notation><usage>N(H)</usage><description>normalizador de un subgrupo <m>H</m></description></notation>
+	 		<p>El conjunto <notation><usage><m>N(H)</m></usage><description>normalizador de un subgrupo <m>H</m></description></notation>
 				<me>N(H) = \{  g \in G : g H g^{-1} = H\}</me>
 			es un subgrupo de <m>G</m> llamado <term>normalizador</term><idx><h>Subgrupo</h><h>normalizador de</h></idx><idx><h>Normalizador</h></idx> de <m>H</m> en <m>G</m>. Notemos que <m>H</m> es un subgrupo normal de <m>N(H)</m>. De hecho, <m>N(H)</m> es el mayor subgrupo de <m>G</m> en el que <m>H</m> es normal.</p>
 
@@ -114,11 +114,11 @@
 				<proof>
 					<p>Sea <m>P</m> un <m>p</m>-subgrupo de Sylow de <m>G</m> y supongamos que <m>|G|=p^r m</m> con <m>|P|=p^r</m>. Sea 
 						<me>{\mathcal S} = \{ P = P_1, P_2, \ldots, P_k \}</me>
-					el conjunto de los distintos conjugados de <m>P</m> en <m>G</m>.  Por el Lema<nbsp /><xref ref="lemma-distinct-conjugates" />, <m>k = [G: N(P)]</m>. Notemos que
+					el conjunto de los distintos conjugados de <m>P</m> en <m>G</m>.  Por el <xref ref="lemma-distinct-conjugates" />, <m>k = [G: N(P)]</m>. Notemos que
 						<me>|G|= p^r m = |N(P)| \cdot [G: N(P)]= |N(P)| \cdot k.</me>
 					Como <m>p^r</m> divide a <m>|N(P)|</m>, <m>p</m> no divide a <m>k</m>.</p>
 
-					<p>Dado cualquier otro <m>p</m>-subgrupo de Sylow <m>Q</m>, debemos mostrar que <m>Q \in {\mathcal S}</m>. Consideremos las <m>Q</m>-clases de conjugación de cada <m>P_i</m>. Claramente, estas clases de conjugación forman una partición de <m>{\mathcal S}</m>. El tamaño de la parte que contiene a <m>P_i</m> es <m>[Q :N(P_i) \cap Q]</m> por el Lema<nbsp /><xref ref="lemma-distinct-conjugates" />, y el Teorema de Lagrange nos dice que <m>|Q| = [Q :N(P_i) \cap Q] |N(P_i) \cap Q|</m>.  Así, <m>[Q :N(P_i) \cap Q]</m> divide a  <m>|Q|= p^r</m>.  Luego, el número de conjugados en cada clase de equivalencia de la partición es una potencia de <m>p</m>. Pero, como <m>p</m> no divide a <m>k</m>, una de estas clases de equivalencia solo contiene un único <m>p</m>-subgrupo de Sylow, digamos <m>P_j</m>.  En este caso,  <m>x^{-1} P_j x = P_j</m> para todo <m>x \in Q</m>. Por el Lema<nbsp /><xref ref="lemma-p-order" />, <m>P_j = Q</m>.</p>
+					<p>Dado cualquier otro <m>p</m>-subgrupo de Sylow <m>Q</m>, debemos mostrar que <m>Q \in {\mathcal S}</m>. Consideremos las <m>Q</m>-clases de conjugación de cada <m>P_i</m>. Claramente, estas clases de conjugación forman una partición de <m>{\mathcal S}</m>. El tamaño de la parte que contiene a <m>P_i</m> es <m>[Q :N(P_i) \cap Q]</m> por el <xref ref="lemma-distinct-conjugates" />, y el Teorema de Lagrange nos dice que <m>|Q| = [Q :N(P_i) \cap Q] |N(P_i) \cap Q|</m>.  Así, <m>[Q :N(P_i) \cap Q]</m> divide a  <m>|Q|= p^r</m>.  Luego, el número de conjugados en cada clase de equivalencia de la partición es una potencia de <m>p</m>. Pero, como <m>p</m> no divide a <m>k</m>, una de estas clases de equivalencia solo contiene un único <m>p</m>-subgrupo de Sylow, digamos <m>P_j</m>.  En este caso,  <m>x^{-1} P_j x = P_j</m> para todo <m>x \in Q</m>. Por el <xref ref="lemma-p-order" />, <m>P_j = Q</m>.</p>
 				</proof>
 			</theorem>
 	 
@@ -134,7 +134,7 @@
 	 
 					<p>Ahora consideremos la acción de <m>G</m> en <m>{\mathcal S}</m> por conjugación.  Como todos los <m>p</m>-subgrupos de Sylow son conjugados, solo puede haber una órbita bajo esta acción. Para <m>P \in {\mathcal S}</m>, 
 						<me>|{\mathcal S}| = |\text{órbita de }P| = [G : N(P)]</me>
-					por el Lema<nbsp /><xref ref="lemma-distinct-conjugates" />.  Pero <m>[G : N(P)]</m> es un divisor de <m>|G|</m>; luego, el número de <m>p</m>-subgrupos de Sylow de un grupo finito divide al orden del grupo.</p>
+					por el <xref ref="lemma-distinct-conjugates" />.  Pero <m>[G : N(P)]</m> es un divisor de <m>|G|</m>; luego, el número de <m>p</m>-subgrupos de Sylow de un grupo finito divide al orden del grupo.</p>
 				</proof>
 			</theorem>
 
@@ -166,7 +166,7 @@
 				<proof>
 					<p>Sabemos que <m>G</m> contiene un subgrupo <m>H</m> de orden <m>q</m>. El número de conjugados de <m>H</m>  divide a <m>pq</m> y es igual a <m>1 + kq</m> para  algún <m>k = 0, 1, \ldots</m>. Pero, <m>1 + q</m> ya es demasiado grande para dividir al orden del grupo; luego, <m>H</m> solo puede ser conjugado a sí mismo.  Es decir, <m>H</m> es normal en <m>G</m>.</p> 
 	 
-					<p>El grupo <m>G</m> también tiene un <m>p</m>-subgrupo de Sylow, digamos <m>K</m>. El número de conjugados de <m>K</m>  divide a <m>q</m> y es igual a <m>1 + kp</m> para algún <m>k = 0, 1, \ldots</m>. Como <m>q</m> es primo, ya sea <m>1 + kp = q</m> o <m>1 + kp = 1</m>. Si <m>1 + kp = 1</m>, entonces <m>K</m> es normal en <m>G</m>. En este caso, podemos mostrar fácilmente que <m>G</m> satisface los criterios dados en el Capítulo<nbsp /><xref ref="isomorph" />, para el producto directo interno de <m>H</m> y <m>K</m>.  Como <m>H</m> es isomorfo a <m>{\mathbb Z}_q</m> y <m>K</m> es isomorfo a <m>{\mathbb Z}_p</m>, <m>G \cong {\mathbb Z}_p \times {\mathbb Z}_q  \cong {\mathbb Z}_{pq}</m> por el Teorema<nbsp /><xref ref="theorem-z-pq" />.</p>
+					<p>El grupo <m>G</m> también tiene un <m>p</m>-subgrupo de Sylow, digamos <m>K</m>. El número de conjugados de <m>K</m>  divide a <m>q</m> y es igual a <m>1 + kp</m> para algún <m>k = 0, 1, \ldots</m>. Como <m>q</m> es primo, ya sea <m>1 + kp = q</m> o <m>1 + kp = 1</m>. Si <m>1 + kp = 1</m>, entonces <m>K</m> es normal en <m>G</m>. En este caso, podemos mostrar fácilmente que <m>G</m> satisface los criterios dados en el Capí<xref ref="isomorph" />, para el producto directo interno de <m>H</m> y <m>K</m>.  Como <m>H</m> es isomorfo a <m>{\mathbb Z}_q</m> y <m>K</m> es isomorfo a <m>{\mathbb Z}_p</m>, <m>G \cong {\mathbb Z}_p \times {\mathbb Z}_q  \cong {\mathbb Z}_{pq}</m> por el <xref ref="theorem-z-pq" />.</p>
 				</proof>
 			</theorem>
 	 
@@ -175,7 +175,7 @@
 			</example>
 	 
 			<example xml:id="example-group-99-subgroups">
-				<p>Clasifiquemos todos los grupos de orden <m>99 = 3^2 \cdot 11</m> salvo isomorfismo. Primero mostraremos que todo grupo <m>G</m> de orden 99 es abeliano.  Por el Tercer Teorema de Sylow, hay  <m>1 + 3k</m> 3-subgrupos, cada uno de orden <m>9</m>, para algún <m>k = 0, 1, 2, \ldots</m>.  Además, <m>1 + 3k</m> divide a 11; luego, solo puede haber un 3-subgrupo de Sylow <m>H</m> en <m>G</m> y este es normal.  Similarmente, existen <m>1 +11k</m> 11-subgrupos de Sylow y <m>1 +11k</m> debe dividir a <m>9</m>.  Por ende solo existe uno, digamos <m>K</m> en <m>G</m>.  Por el Corolario<nbsp /><xref ref="corollary-p2abelian" />, cualquier grupo de orden <m>p^2</m> es abeliano si <m>p</m> es primo; luego, <m>H</m> es isomorfo ya sea a <m>{\mathbb Z}_3 \times {\mathbb Z}_3</m> o a <m>{\mathbb Z}_9</m>.  Como <m>K</m> tiene orden 11, debe ser isomorfo a <m>{\mathbb Z}_{11}</m>.  Por lo tanto, los únicos grupos posibles de orden 99 son <m>{\mathbb Z}_3 \times {\mathbb Z}_3 \times {\mathbb Z}_{11}</m> y <m>{\mathbb Z}_9 \times {\mathbb Z}_{11}</m>.</p>
+				<p>Clasifiquemos todos los grupos de orden <m>99 = 3^2 \cdot 11</m> salvo isomorfismo. Primero mostraremos que todo grupo <m>G</m> de orden 99 es abeliano.  Por el Tercer Teorema de Sylow, hay  <m>1 + 3k</m> 3-subgrupos, cada uno de orden <m>9</m>, para algún <m>k = 0, 1, 2, \ldots</m>.  Además, <m>1 + 3k</m> divide a 11; luego, solo puede haber un 3-subgrupo de Sylow <m>H</m> en <m>G</m> y este es normal.  Similarmente, existen <m>1 +11k</m> 11-subgrupos de Sylow y <m>1 +11k</m> debe dividir a <m>9</m>.  Por ende solo existe uno, digamos <m>K</m> en <m>G</m>.  Por el <xref ref="corollary-p2abelian" />, cualquier grupo de orden <m>p^2</m> es abeliano si <m>p</m> es primo; luego, <m>H</m> es isomorfo ya sea a <m>{\mathbb Z}_3 \times {\mathbb Z}_3</m> o a <m>{\mathbb Z}_9</m>.  Como <m>K</m> tiene orden 11, debe ser isomorfo a <m>{\mathbb Z}_{11}</m>.  Por lo tanto, los únicos grupos posibles de orden 99 son <m>{\mathbb Z}_3 \times {\mathbb Z}_3 \times {\mathbb Z}_{11}</m> y <m>{\mathbb Z}_9 \times {\mathbb Z}_{11}</m>.</p>
 			</example>
 	 
 			<p>Para determinar todos los grupos de orden <m>5 \cdot 7 \cdot 47 = 1645</m>, necesitaremos el siguiente teorema.</p>
@@ -186,10 +186,10 @@
 				</statement>
 			</theorem>
 	 
-			<p>El subgrupo <m>G'</m> de <m>G</m> se llama <term>subgrupo conmutador</term><idx><h>Conmutador</h><h>subgrupo</h></idx> de <m>G</m>. Dejamos la demostración de este teorema como un ejercicio (Ejercicio<nbsp /><xref ref="exercise-normal-commutator" /> en el Capítulo<nbsp /><xref ref="normal" />).</p>
+			<p>El subgrupo <m>G'</m> de <m>G</m> se llama <term>subgrupo conmutador</term><idx><h>Conmutador</h><h>subgrupo</h></idx> de <m>G</m>. Dejamos la demostración de este teorema como un ejercicio (<xref ref="exercise-normal-commutator" /> en el Capí<xref ref="normal" />).</p>
 	 
 			<example xml:id="example-sylow-group-1645-subgroups">
-				<p>Mostraremos ahora que todo grupo de orden <m>5 \cdot 7 \cdot 47 = 1645</m> es abeliano, y cíclico or el Corolario<nbsp /><xref ref="theorem-z-pq" />. Por el Tercer Teorema de Sylow, <m>G</m> tiene solo un subgrupo <m>H_1</m> de orden <m>47</m>.  Así <m>G/H_1</m> tiene orden 35 y debe ser abeliano por el Teorema<nbsp /><xref ref="theorem-pq-cyclic" />. Luego, el subgrupo conmutador de <m>G</m> está contenido en <m>H</m> lo que nos dice que <m>|G'|</m> puede ser 1 o 47. Si <m>|G'|=1</m>, estamos listos. Supongamos que <m>|G'|=47</m>. El Tercer Teorema de Sylow nos dice que <m>G</m> tiene solo un subgrupo de orden 5 y un subgrupo de orden 7.  Es decir, existen subgrupos normales <m>H_2</m>  y <m>H_3</m> en <m>G</m>, con <m>|H_2| = 5</m> y <m>|H_3| = 7</m>. En cualquiera de los casos el grupo cociente es abeliano; luego, <m>G'</m> debe ser un subgrupo de  <m>H_i</m>, <m>i= 1, 2</m>. Por lo tanto, el orden de <m>G'</m> es 1, 5, o 7. Pero, ya habíamos determinado que <m>|G'| =1</m> o 47. Así el subgrupo conmutador de <m>G</m> es trivial, y en consecuencia <m>G</m> es abeliano.</p>
+				<p>Mostraremos ahora que todo grupo de orden <m>5 \cdot 7 \cdot 47 = 1645</m> es abeliano, y cíclico or el <xref ref="theorem-z-pq" />. Por el Tercer Teorema de Sylow, <m>G</m> tiene solo un subgrupo <m>H_1</m> de orden <m>47</m>.  Así <m>G/H_1</m> tiene orden 35 y debe ser abeliano por el <xref ref="theorem-pq-cyclic" />. Luego, el subgrupo conmutador de <m>G</m> está contenido en <m>H</m> lo que nos dice que <m>|G'|</m> puede ser 1 o 47. Si <m>|G'|=1</m>, estamos listos. Supongamos que <m>|G'|=47</m>. El Tercer Teorema de Sylow nos dice que <m>G</m> tiene solo un subgrupo de orden 5 y un subgrupo de orden 7.  Es decir, existen subgrupos normales <m>H_2</m>  y <m>H_3</m> en <m>G</m>, con <m>|H_2| = 5</m> y <m>|H_3| = 7</m>. En cualquiera de los casos el grupo cociente es abeliano; luego, <m>G'</m> debe ser un subgrupo de  <m>H_i</m>, <m>i= 1, 2</m>. Por lo tanto, el orden de <m>G'</m> es 1, 5, o 7. Pero, ya habíamos determinado que <m>|G'| =1</m> o 47. Así el subgrupo conmutador de <m>G</m> es trivial, y en consecuencia <m>G</m> es abeliano.</p>
 			</example>
 
 		</introduction>
@@ -204,7 +204,7 @@
 			</example>
  
  			<example xml:id="example-group-pn">
-				<p>Sea <m>G</m> un grupo finito de orden <m>p^n</m>, con <m>n \gt 1</m> y <m>p</m> primo. Por el Teorema<nbsp /><xref ref="theorem-pn" />, <m>G</m> tiene un centro no trivial. Como el centro de cualquier grupo <m>G</m> es un subgrupo normal, <m>G</m> no puede ser un grupo simple. Por lo tanto, los grupos de órdenes 4, 8, 9, 16, 25, 27, 32, 49, 64, y 81 no son simples.  De hecho, los grupos de órdenes 4, 9, 25, y 49 son abelianos por el Corolario<nbsp /><xref ref="corollary-p2abelian" />.</p>
+				<p>Sea <m>G</m> un grupo finito de orden <m>p^n</m>, con <m>n \gt 1</m> y <m>p</m> primo. Por el <xref ref="theorem-pn" />, <m>G</m> tiene un centro no trivial. Como el centro de cualquier grupo <m>G</m> es un subgrupo normal, <m>G</m> no puede ser un grupo simple. Por lo tanto, los grupos de órdenes 4, 8, 9, 16, 25, 27, 32, 49, 64, y 81 no son simples.  De hecho, los grupos de órdenes 4, 9, 25, y 49 son abelianos por el <xref ref="corollary-p2abelian" />.</p>
 			</example>
  
 			<example xml:id="example-group-56">
@@ -241,7 +241,7 @@
 
 <!-- %TWJ 11/30/2011 - Reference to the Lemma fixed.  Suggested by L. Franklin. -->
 
-				<p>Supongamos que tiene tres y que dos de los 2-subgrupos de Sylow son <m>H</m> y <m>K</m>. Afirmamos que <m>|H \cap K| = 8</m>.  Si <m>|H \cap K| \leq 4</m>, entonces por el Lema<nbsp /><xref ref="lemma-hk-subgroup" />, 
+				<p>Supongamos que tiene tres y que dos de los 2-subgrupos de Sylow son <m>H</m> y <m>K</m>. Afirmamos que <m>|H \cap K| = 8</m>.  Si <m>|H \cap K| \leq 4</m>, entonces por el <xref ref="lemma-hk-subgroup" />, 
 					<me>|HK| = \frac{16 \cdot 16}{4} =64,</me>
 				lo que es imposible. Notemos que <m>H \cap K</m> tiene índice dos tanto en <m>H</m> como en <m>K</m>, de manera que es normal en ambos, y tanto <m>H</m> como <m>K</m> están en el normalizador de <m>H \cap K</m>.  Como <m>H</m> es un subgrupo de <m>N(H \cap K)</m> y como <m>N(H \cap K)</m> tiene estrictamente más de 16 elementos, <m>|N(H \cap K)|</m> debe ser un múltiplo estricto de 16 y debe dividir a 48.   La única posibilidad es que <m>|N(H \cap K)|= 48</m>. Luego, <m>N(H \cap K) = G</m>.</p>
 
@@ -262,18 +262,268 @@
  
 			<p>La demostración de este teorema puso los cimientos para un programa que en los años 60' y 70' clasificó todos los grupos finitos simples. El éxito de este programa es uno de los mayores logros de las matemáticas modernas.</p>
 
-			<xi:include href="./sage/sylow-info.xml" />
+			<paragraphs>
+				<title>Sage</title>
+			
+				<p>Sage es capaz de calcular un <m>p</m>-subgrupo de Sylow para cada divisor primo <m>p</m> del orden del grupo.  A partir de éste, todo los <m>p</m>-subgrupos de Sylow se pueden obtener por conjugación.  También se puede obtener el normalizador de un subgrupo.</p>
+			</paragraphs>
 
 		</subsection>
 	</section>
 
-	<xi:include href="./exercises/sylow.xml" />
+	<exercises xml:id="exercises-sylow">
+		<title>Ejercicios</title>
+	
+		<exercise number="1">
+			<statement>
+				<p>¿Cuáles son los órdenes de todos los <m>p</m>-subgrupos de Sylow de <m>G</m> si <m>G</m> es un grupo de orden 18, 24, 54, 72, y 80?</p>
+			</statement>
+			<hint>
+				<p>Si <m>|G| = 18 = 2 \cdot 3^2</m>, entonces el orden de un 2-subgrupo de Sylow es 2, y el orden de on 3-subgrupo de Sylow es 9.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+				<p>Encuente todos los 3-subgrupos de Sylow de <m>S_4</m> y muestre que son todos conjugados.</p>
+			</statement>
+			<hint>
+				<p>Los cuatro 3-subgrupos de Sylow de <m>S_4</m> son <m>P_1 = \{ (1), (123), (132) \}</m>, <m>P_2 = \{ (1), (124), (142) \}</m>, <m>P_3 = \{ (1), (134), (143) \}</m>, <m>P_4 = \{ (1), (234), (243) \}</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Finish solution.</todo>
+	
+		<exercise number="3">
+			<statement>
+				<p>Muestre que todo grupo de orden 45 tiene un subgrupo normal de orden 9.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="4">
+			<statement>
+				<p>Sea <m>H</m> un <m>p</m>-subgrupo de Sylow de <m>G</m>.  Demuestre que <m>H</m> es el único <m>p</m>-subgrupo de Sylow de <m>G</m> contenido en <m>N(H)</m>. </p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="5" xml:id="exercise-sylow-order-96">
+			<statement>
+				<p>Demuestre que ningún grupo de orden 96 es simple.</p>
+			</statement>
+			<hint>
+				<p>Como <m>|G| = 96 = 2^5 \cdot 3</m>, <m>G</m> puede tener uno o tres 2-subgrupos de Sylow por el Terecer Teorema de Sylow. Si solo tiene uno, estamos listos. Si hay tres 2-subgrupos de Sylow, sean <m>H</m> y <m>K</m> dos de ellos. Por lo tanto, <m>|H \cap K| \geq 16</m>; de lo contrario, <m>HK</m> tendría <m>(32 \cdot 32)/8 = 128</m> elementos, lo que es imposible. Luego, <m>H \cap K</m> es normal tanto en <m>H</m> como en <m>K</m> pues tiene índice 2 en ambos grupos.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="6">
+			<statement>
+				<p>Demuestre que ningún grupo de orden 160 es simple.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="7">
+			<statement>
+				<p>Si <m>H</m> es un subgrupo normal de un grupo finito <m>G</m> y <m>|H| = p^k</m> para algún primo <m>p</m>, muestre que <m>H</m> está contenido en todo <m>p</m>-subgrupo de Sylow de <m>G</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="8">
+			<statement>
+				<p>Sea <m>G</m> un grupo de orden <m>p^2 q^2</m>, donde <m>p</m> y <m>q</m> son primos distintos tales que <m>q \nmid p^2 - 1</m> y <m>p \nmid q^2 - 1</m>. Demuestre que  <m>G</m> es abeliano.  Encuentre un par de primos para los que se cumpla esto.</p>
+			</statement>
+			<hint>
+				<p>Muestre que <m>G</m> tiene un <m>p</m>-subgrupo de Sylow normal de orden <m>p^2</m> y un <m>q</m>-subgrupo de Sylow normal de orden <m>q^2</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="9">
+			<statement>
+				<p>Muestre que un grupo de orden 33 solo tiene un 3-subgrupo de Sylow.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="10">
+			<statement>
+				<p>Sea <m>H</m> un subgrupo de un grupo <m>G</m>.  Demuestre o refute que el normalizador de <m>H</m> es normal en <m>G</m>.</p>
+			</statement>
+			<hint>
+				<p>Falso.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="11">
+			<statement>
+				<p>Sea <m>G</m> un grupo finito de orden divisible por un primo <m>p</m>.  Demuestre que si solo hay un <m>p</m>-subgrupo de Sylow en <m>G</m>, entonces es un subgrupo normal de <m>G</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="12">
+			<statement>
+				<p>Sea <m>G</m> un grupo de orden <m>p^r</m>, con <m>p</m> primo. Demuestre que <m>G</m> contiene un subgrupo normal de orden <m>p^{r-1}</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="13">
+			<statement>
+				<p>Supongamos que <m>G</m> es un grupo finito de orden <m>p^n k</m>, con <m>k \lt p</m> y <m>p</m> primo. Demuestre que <m>G</m> tiene un subgrupo normal propio no trivial.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="14">
+			<statement>
+				<p>Sea <m>H</m> un subgrupo de un grupo finito <m>G</m>. Demuestre que <m>g N(H) g^{-1} = N(gHg^{-1})</m> para todo <m>g \in G</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="15">
+			<statement>
+				<p>Demuestre que un grupo de orden 108 tiene un subgrupo normal propio no trivia.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="16">
+			<statement>
+				<p>Clasifique todos los grupos de orden 175 salvo isomorfismo.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="17">
+			<statement>
+				<p>Muestre que todo grupo de orden <m>255</m> es cíclico.</p>
+			</statement>
+			<hint>
+				<p>Si <m>G</m> es abeliano, entonces <m>G</m> es cíclico, pues <m>|G| = 3 \cdot 5 \cdot 17</m>. Ahora vea el Ejemplo<nbsp/><xref ref="example-sylow-group-1645-subgroups"/>.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="18">
+			<statement>
+				<p>Sea <m>G</m> un grupo de orden <m>p_1^{e_1} \cdots p_n^{e_n}</m> y suponga que <m>G</m> tiene <m>n</m> <m>p</m>-subgrupos de Sylow <m>P_1, \ldots, P_n</m> donde <m>|P_i| = p_i^{e_i}</m>. Demuestre que <m>G</m> es isomorfo a <m>P_1 \times \cdots \times P_n</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="19">
+			<statement>
+				<p>Sea <m>P</m> un <m>p</m>-subgrupo de Sylow normal de <m>G</m>.  Demuestre que cualquier automorfismo interno de <m>G</m> fija a <m>P</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="20">
+			<statement>
+				<p>¿Cuál es el menor orden posible para un grupo <m>G</m> tal que <m>G</m> es no-abeliano y <m>|G|</m> es impar?  ¿Puede encontrar tal grupo?</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="21">
+			<title>Lema de Frattini</title>
+			<statement>
+				<p>Si <m>H</m> es un subgrupo normal de un grupo finito <m>G</m> y <m>P</m> es un <m>p</m>-subgrupo de Sylow de <m>H</m>, muestre que para cada <m>g \in G</m> existe <m>h</m> en <m>H</m> tal que <m>gPg^{-1} = hPh^{-1}</m>. Además, muestre que si <m>N</m> es el normalizador de <m>P</m>, entonces <m>G= HN</m>. </p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="22">
+			<statement>
+				<p>Muestre que si el orden de <m>G</m> es <m>p^nq</m>, donde <m>p</m> y <m>q</m> son primos con <m>p&gt;q</m>, entonces <m>G</m> contiene un subgrupo normal (propio y no tirivial). </p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Fix this and complete the solution.</todo>
+	
+		<exercise number="23">
+			<statement>
+				<p>Demuestre que el número de conjugados distintos de un subgrupo <m>H</m> de un grupo finito <m>G</m> es <m>[G : N(H) ]</m>. </p>
+			</statement>
+			<hint>
+				<p>Defina una función entre las clases laterales derechas de <m>N(H)</m> en <m>G</m> y los conjugados de <m>H</m> en <m>G</m> como <m>N(H) g \mapsto g^{-1} H g</m>. Demuestre que esta función es una biyección.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Complete the solution.</todo>
+	
+		<exercise number="24">
+			<statement>
+				<p>Demuestre que un 2-subgrupo de Sylow de <m>S_5</m> es isomorfo a <m>D_4</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="25">
+				<title>Otra demostración de los Teoremas de Sylow</title>
+			<statement>
+				<p><ol>
+						<li><p>Supongamos que <m>p</m> es primo y que <m>p</m> no divide a <m>m</m>.  Muestre que 
+							<me>p \nmid \binom{p^k m}{p^k}.</me></p></li>
+						 
+						<li><p>Sea <m>{\mathcal S}</m> el conjunto de todos los subconjuntos de <m>G</m> con <m>p^k</m> elementos. Muestre que <m>p</m> no divide a <m>|{\mathcal S}|</m>.</p></li>
+						 
+						<li><p>Defina una acción de <m>G</m> en <m>{\mathcal S}</m> por multiplicación izquierda, <m>aT = \{ at : t \in T \}</m> para <m>a \in G</m> y <m>T \in {\mathcal S}</m>. Demuestre que esta es una acción de grupo.</p></li>
+						 
+						<li><p>Demuestre que <m>p \nmid | {\mathcal O}_T|</m> para algún <m>T \in {\mathcal S}</m>.</p></li>
+						 
+						<li><p>Sea <m>\{ T_1, \ldots, T_u \}</m> una órbita tal que <m>p \nmid u</m> y <m>H = \{ g \in G : gT_1 = T_1 \}</m>. Demuestre que <m>H</m> es un subgrupo de <m>G</m> 
+						y muestre que <m>|G| = u |H|</m>.</p></li>
+						 
+						<li><p>Muestre que <m>p^k</m> divide a <m>|H|</m> y <m>p^k \leq |H|</m>.</p></li>
+						 
+						<li><p>Muestre que <m>|H| = |{\mathcal O}_T| \leq p^k</m>; concluya que por lo tanto <m>p^k = |H|</m>.</p></li>
+						 
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="26">
+			<statement>
+				<p>Sea  <m>G</m> un a grupo.  Demuestre que <m>G' = \langle a b a^{-1} b^{-1} : a, b \in G \rangle</m> es un subgrupo normal de <m>G</m> y que <m>G/G'</m> es abeliano. Encuentre un ejemplo para mostrar que <m>\{ a b a^{-1} b^{-1} : a, b \in G \}</m> no necesariamente es un grupo.</p>
+			</statement>
+			<hint>
+				<p>Sean <m>a G', b G' \in G/G'</m>. Entonces <m>(a G')( b G') = ab G' = ab(b^{-1}a^{-1}ba) G' =  (abb^{-1}a^{-1})ba G' = ba G'</m>.</p>
+			</hint>
+			
+		</exercise>
+	
+	</exercises>
 
 	<exercises xml:id="sylow-exercises-project">
 		<title>Un Proyecto</title>
 
 		<introduction>
-			<p>El principal objetivo de la teoría de grupos finitos es el de clasificar todos los posibles grupos finitos salvo isomorfismo.  Este problema es muy difícil, incluso si solo intentamos clasificar todos los grupos de orden menor o igual a  <m>60</m>. Pero podemos descomponer el problema en varios problemas intermedios.  Este es un proyecto desafiante que requiere un buen manejo de la teoría de grupos que hemos visto hasta acá. Incluso si no lo completa, le enseñará bastante sobre grupos finitos. Puede usar la Tabla<nbsp /><xref ref="table-sylow-project" /> como guía.</p>
+			<p>El principal objetivo de la teoría de grupos finitos es el de clasificar todos los posibles grupos finitos salvo isomorfismo.  Este problema es muy difícil, incluso si solo intentamos clasificar todos los grupos de orden menor o igual a  <m>60</m>. Pero podemos descomponer el problema en varios problemas intermedios.  Este es un proyecto desafiante que requiere un buen manejo de la teoría de grupos que hemos visto hasta acá. Incluso si no lo completa, le enseñará bastante sobre grupos finitos. Puede usar la <xref ref="table-sylow-project" /> como guía.</p>
 		</introduction>
 
 		<table xml:id="table-sylow-project">
@@ -376,8 +626,485 @@
 	</references>
  
 
-	<xi:include href="./sage/sylow-sage.xml" />
-	<xi:include href="./sage/sylow-sage-exercises.xml" />
-
+	<section xml:id="sylow-sage">
+		<title>Sage</title>
+	
+		<subsection>
+			<title>Subgrupos de Sylow</title>
+	
+			<p>El método <c>.sylow_subgroup(p)</c>, implementaado para grupos de permutaciones, entregará un <m>p</m>-subgrupo de Sylow.  Si el primo no es un divisor propio del orden del grupo devuelve un subgrupo de orden <m>p^0</m>, en otras palabras, el subgrupo trivial.    A veces, solo necesitaremos <em>un</em> subgrupo de Sylow, pues cualquiera dos <m>p</m>-subgrupos de Sylow son conjugados, y por ende isomorfos (<xref ref="theorem-second-sylow" />).  Esto también quiere decir que podemos crear otros <m>p</m>-subgrupos de Sylow conjugando el que obtuvimos.  El método <c>.conjugate(g)</c> conjugará el grupo por <c>g</c>.</p>
+	
+			<p>Mediante conjugaciones de un solo <m>p</m>-subgrupo de Sylow <m>p</m>, siempre obtendremos subgrupos repetidos.  Necesitamos una construcción un poco más complicada para formar una lista que contenga cada <m>p</m>-subgrupo de Sylow exactamente una vez.  La siguiente rutina que calcula todos los <m>p</m>-subgrupos de Sylow será útil para lo que queda de esta sección.  Se podría hacer más eficiente conjugando solo por un elemento de cada clase lateral del normalizador, pero es suficiente para nuestros propósitos acá.  Asegúrese de ejecutar la próxima celda, para poder usar la función más adelante.</p>
+	
+			<sage>
+				<input>
+				def all_sylow(G, p):
+					'''Form the set of all distinct Sylow p-subgroups of G'''
+					scriptP = []
+					P = G.sylow_subgroup(p)
+					for x in G:
+						H = P.conjugate(x)
+						if not(H in scriptP):
+							scriptP.append(H)
+					return scriptP
+				</input>
+			</sage>
+	
+			<p>Investiguemos los subgrupos de Sylow del grupo dihedral <m>D_{18}</m>.  Como grupo de orden <m>36=2^2\cdot 3^2</m>, sabemos por el Primer Teorema de Sylow que tiene un <m>2</m>-subgrupo de orden <m>4</m> y un <m>3</m>-subgrupo de Sylow de orden <m>9</m>.  Comenzando con <m>p=2</m>, obtenemos un <m>2</m>-subgrupo de Sylow, formamos todos sus conjugados, y formamos una lista de los subgrupos sin repeticiones. </p>
+	
+			<sage>
+			<input>
+			G = DihedralGroup(18)
+			S2 = G.sylow_subgroup(2); S2
+			</input>
+			<output>
+			Subgroup of (Dihedral group of order 36 as a permutation group)
+			generated by
+			[(2,18)(3,17)(4,16)(5,15)(6,14)(7,13)(8,12)(9,11),
+			(1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18)]
+			</output>
+			</sage>
+	
+			<sage>
+				<input>
+				uniqS2 = all_sylow(G, 2)
+				uniqS2
+				</input>
+				<output>
+				[Permutation Group with generators
+				 [(2,18)(3,17)(4,16)(5,15)(6,14)(7,13)(8,12)(9,11),
+				 (1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18)],
+				 Permutation Group with generators
+				 [(1,3)(4,18)(5,17)(6,16)(7,15)(8,14)(9,13)(10,12),
+				 (1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18)],
+				 Permutation Group with generators
+				 [(1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18),
+				 (1,17)(2,16)(3,15)(4,14)(5,13)(6,12)(7,11)(8,10)],
+				 Permutation Group with generators
+				 [(1,5)(2,4)(6,18)(7,17)(8,16)(9,15)(10,14)(11,13),
+				 (1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18)],
+				 Permutation Group with generators
+				 [(1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18),
+				 (1,15)(2,14)(3,13)(4,12)(5,11)(6,10)(7,9)(16,18)],
+				 Permutation Group with generators
+				 [(1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18),
+				 (1,13)(2,12)(3,11)(4,10)(5,9)(6,8)(14,18)(15,17)],
+				 Permutation Group with generators
+				 [(1,7)(2,6)(3,5)(8,18)(9,17)(10,16)(11,15)(12,14),
+				 (1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18)],
+				 Permutation Group with generators
+				 [(1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18),
+				 (1,11)(2,10)(3,9)(4,8)(5,7)(12,18)(13,17)(14,16)],
+				 Permutation Group with generators
+				 [(1,9)(2,8)(3,7)(4,6)(10,18)(11,17)(12,16)(13,15),
+				 (1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18)]]
+				</output>
+			</sage>
+	
+			<sage>
+				<input>
+				len(uniqS2)
+				</input>
+				<output>9</output>
+			</sage>
+	
+			<p>El Tercer Teorema de Sylow nos  dice que para <m>p=2</m> podríamos tener <m>1, 3</m> o <m>9</m> <m>2</m>-subgrupos de Sylow, de manera que los <m>9</m> subgrupos obtenidos son consistentes con lo que predice la teoría.  ¿Puede visualizar cada uno de estos subgrupos como simetrías de un polígono regular de <m>18</m> lados?  Notemos que también tenemos muchos subgrupos de orden <m>2</m> dentro de estos subgrupos de orden <m>4</m>.</p>
+	
+			<p>Ahora para <m>p=3</m>.</p>
+	
+			<sage>
+			<input>
+			G = DihedralGroup(18)
+			S3 = G.sylow_subgroup(3); S3
+			</input>
+			<output>
+			Subgroup of (Dihedral group of order 36 as a permutation group)
+			generated by
+			[(1,7,13)(2,8,14)(3,9,15)(4,10,16)(5,11,17)(6,12,18),
+			(1,15,11,7,3,17,13,9,5)(2,16,12,8,4,18,14,10,6)]
+			</output>
+			</sage>
+	
+			<sage>
+				<input>
+				uniqS3 = all_sylow(G, 3)
+				uniqS3
+				</input>
+				<output>
+				[Permutation Group with generators
+				[(1,7,13)(2,8,14)(3,9,15)(4,10,16)(5,11,17)(6,12,18),
+				(1,15,11,7,3,17,13,9,5)(2,16,12,8,4,18,14,10,6)]]
+				</output>
+			</sage>
+	
+			<sage>
+				<input>
+				len(uniqS3)
+				</input>
+				<output>1</output>
+			</sage>
+	
+			<p>¿Qué es lo que predice el Tercer Teorema de Sylow?  Habiendo encontrado solo un subgrupo de Sylow computacionalmente, sabemos que todos los conjugados de este único <m>3</m>-subgrupo de Sylow son iguales.  En otras palabras el <m>3</m>-subgrupo de Sylow es normal en <m>D_{18}</m>.  Comprobémoslo de todas formas.</p>
+	
+			<sage>
+			<input>
+			S3.is_normal(G)
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<p>Al menos uno de los subgrupos de orden <m>3</m> contenidos en este <m>3</m>-subgrupo de Sylow debiese ser obvio mirando los órdenes de los generadores, y luego podríamos incluso darnos cuenta que los generadores dados se pueden reducir, y uno es una potencia del otro.</p>
+	
+			<sage>
+			<input>
+			S3.is_cyclic()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<p>Recuerde que existen muchos otros subgrupos, de otros órdenes.  Por ejemplo, ¿puede construir un subgrupo de oreden <m>6=2\cdot 3</m> en <m>D_{18}</m>?</p>
+	
+			</subsection>
+	
+			<subsection>
+			<title>Normalizadores</title>
+	
+			<p>Un comando nuevo que resulta relevante para esta sección es la construcción del normalizador.   El comando <c>G.normalizer(H)</c> devolverá el subgrupo de <c>G</c> que contiene todos los elementos que normalizan al subgrupo <c>H</c>.  Ilustraremos su uso con los subgrupos de Sylow de arriba.</p>
+	
+			<sage>
+			<input>
+			G = DihedralGroup(18)
+			S2 = G.sylow_subgroup(2)
+			S3 = G.sylow_subgroup(3)
+			N2 = G.normalizer(S2); N2
+			</input>
+			<output>
+			Subgroup of (Dihedral group of order 36 as a permutation group)
+			generated by
+			[(2,18)(3,17)(4,16)(5,15)(6,14)(7,13)(8,12)(9,11),
+			(1,10)(2,11)(3,12)(4,13)(5,14)(6,15)(7,16)(8,17)(9,18)]
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			N2 == S2
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			N3 = G.normalizer(S3); N3
+			</input>
+			<output>
+			Subgroup of (Dihedral group of order 36 as a permutation group)
+			generated by
+			[(2,18)(3,17)(4,16)(5,15)(6,14)(7,13)(8,12)(9,11),
+			(1,2)(3,18)(4,17)(5,16)(6,15)(7,14)(8,13)(9,12)(10,11),
+			(1,7,13)(2,8,14)(3,9,15)(4,10,16)(5,11,17)(6,12,18),
+			(1,15,11,7,3,17,13,9,5)(2,16,12,8,4,18,14,10,6)]
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			N3 == G
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<p>El normalizador de un subgrupo siempre contiene al subgrupo, de manera que el normalizador de <c>S2</c> este todo lo pequeño que puede ser.  Ya sabíamos que <c>S3</c> es normal en <c>G</c>, así es que no es sorprendente que su normalizador sea todo lo grande que puede ser <mdash /> todo elemento de <c>G</c> normaliza a <c>S3</c>.  Calculemos un normalizador más <q>interesante</q> en <m>D_{18}</m></p>
+	
+			<sage>
+			<input>
+			G = DihedralGroup(18)
+			a = G("(1,7,13)(2,8,14)(3,9,15)(4,10,16)(5,11,17)(6,12,18)")
+			b = G("(1,5)(2,4)(6,18)(7,17)(8,16)(9,15)(10,14)(11,13)")
+			H = G.subgroup([a, b])
+			H.order()
+			</input>
+			<output>
+			6
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			N = G.normalizer(H)
+			N
+			</input>
+			<output>
+			Subgroup of (Dihedral group of order 36 as a permutation group)
+			generated by
+			[(1,2)(3,18)(4,17)(5,16)(6,15)(7,14)(8,13)(9,12)(10,11),
+			(1,5)(2,4)(6,18)(7,17)(8,16)(9,15)(10,14)(11,13),
+			(1,13,7)(2,14,8)(3,15,9)(4,16,10)(5,17,11)(6,18,12)]
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			N.order()
+			</input>
+			<output>
+			12
+			</output>
+			</sage>
+	
+			<p>Para este subgrupo de orden <m>6</m>, el normalizador es estrictamente más grande que el subgrupo, pero estrictamente menor que el grupo completo (y por ende no es normal en el grupo dihedral).  Trivialmente, un subgrupo es normal en su normalizador:</p>
+	
+			<sage>
+			<input>
+			H.is_normal(G)
+			</input>
+			<output>
+			False
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			H.is_normal(N)
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+		</subsection>
+	
+		<subsection>
+			<title>Grupos Finitos Simples</title>
+	
+			<p>Ya vimos el método <c>.is_simple()</c>.  En el <xref ref="example-group-pn" /> que un grupo de orden <m>64</m> nunca es simple.  El grupo dicíclico <c>DiCyclicGroup(16)</c> es un grupo no-abeliano de orden <m>64</m>, así es que podemos poner a prueba el método con este grupo.  Resulta que este grupo tiene muchos subgrupos normales <mdash /> la lista siempre contendrá al grupo trivial y al grupo completo, así cualquier número mayor a <m>2</m> indica un subgrupo normal no-trivial.</p>
+	
+			<sage>
+			<input>
+			DC=DiCyclicGroup(16)
+			DC.order()
+			</input>
+			<output>
+			64
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			DC.is_simple()
+			</input>
+			<output>
+			False
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			ns = DC.normal_subgroups()
+			len(ns)
+			</input>
+			<output>
+			9
+			</output>
+			</sage>
+	
+			<p>Acá viene un grupo bastante interesante, uno de los <m>26</m> grupos simples esporádicos, conocido como el grupo de Higman-Sims, <m>HS</m>.  Los generadores usados abajo vienen de su representación permutacional en 100 puntos en formato <acro>GAP</acro>, disponible en <url href="http://web.mat.bham.ac.uk/atlas/v2.0/spor/HS/">web.mat.bham.ac.uk/atlas/v2.0/spor/HS/</url>.  Dos generadores, uno de orden <m>2</m> y otro de orden <m>5</m> (como se puede ver fácilmente), generando <m>44\,352\,000</m> elementos, pero ningún subgrupo normal.  Impresionante.</p>
+	
+			<sage>
+			<input>
+			G = SymmetricGroup(100)
+			a = G([(1,60),  (2,72),  (3,81),  (4,43),  (5,11),  (6,87),
+					(7,34),  (9,63),  (12,46), (13,28), (14,71), (15,42),
+					(16,97), (18,57), (19,52), (21,32), (23,47), (24,54),
+					(25,83), (26,78), (29,89), (30,39), (33,61), (35,56),
+					(37,67), (44,76), (45,88), (48,59), (49,86), (50,74),
+					(51,66), (53,99), (55,75), (62,73), (65,79), (68,82),
+					(77,92), (84,90), (85,98), (94,100)])
+			b = G([(1,86,13,10,47),  (2,53,30,8,38),
+					(3,40,48,25,17),  (4,29,92,88,43),   (5,98,66,54, 65),
+					(6,27,51,73,24),  (7,83,16,20,28),   (9,23,89,95,61),
+					(11,42,46,91,32), (12,14, 81,55,68), (15,90,31,56,37),
+					(18,69,45,84,76), (19,59,79,35,93),  (21,22,64,39,100),
+					(26,58,96,85,77), (33,52,94,75,44),  (34,62,87,78,50),
+					(36,82,60,74,72), (41,80,70,49,67),  (57,63,71,99,97)])
+			a.order(), b.order()
+			</input>
+			<output>
+			(2, 5)
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			HS = G.subgroup([a, b])
+			HS.order()
+			</input>
+			<output>
+			44352000
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			HS.is_simple()
+			</input>
+			<output>
+			True
+			</output>
+			</sage>
+	
+			<p>Vimos antes este grupo en los Ejercicios del Capí<xref ref="actions" /> sobre acciones de grupo, donde era el único subgrupo normal no trivial del grupo de automorfismos del grafo de Higman-Sims, de ahí su nombre.</p>
+	
+		</subsection>
+	
+		<subsection>
+			<title>Consola e Interfaz <acro>GAP</acro></title>
+	
+			<p>Acá concluimos el estudio exclusivo de teoría de grupos, aunque seguiremos usando algunos grupos en las secciones que siguientes.  Como ya hemos destacado, mucho del lo que hace Sage con grupos es realizado por el programa de código aberto, <q>Groups, Algorithms, and Programming,</q> más conocido como <acro>GAP</acro>.  Si luego de este curso, sus necesidades superan la capacidad de Sage en relación a grupos, entonces aprender <acro>GAP</acro> sería el próximo paso como teórico de grupos. Cada copia de Sage incluye una copia de <acro>GAP</acro> y se puede saber fácilmente cuál es la versión de <acro>GAP</acro> incluida:</p>
+	
+			<sage>
+			<input>gap.version()</input>
+			<output>'4.8.6'</output>
+			</sage>
+	
+			<p>En Sage se puede interactuar con <acro>GAP</acro> de diferentes formas. La más directa es creando un grupo de permutaciones por medio del comando <c>gap()</c> de Sage.</p>
+	
+			<sage>
+			<input>
+			G = gap('Group( (1,2,3,4,5,6), (1,3,5) )')
+			G
+			</input>
+			<output>
+			Group( [ (1,2,3,4,5,6), (1,3,5) ] )
+			</output>
+			</sage>
+	
+			<p>Ahora podemos usar casi cualquier comando <acro>GAP</acro> con <c>G</c>, vía la convención de que la mayoría de los comandos en  <acro>GAP</acro> esperan recibir un grupo como su primer argumento, y en su lugar proveemos el grupo usando la sintaxis orientada al objeto <c>G.</c>.  Si consulta un manual de <acro>GAP</acro> verá que <c>Center</c> es un comando <acro>GAP</acro> que toma un grupo como su único argumento, y <c>Centralizer</c> es un comando <acro>GAP</acro> que requiere dos argumentos <mdash /> un grupo y luego un elemento del grupo.</p>
+	
+			<sage>
+			<input>
+			G.Center()
+			</input>
+			<output>
+			Group( [ ( 1, 3, 5)( 2, 4, 6) ] )
+			</output>
+			</sage>
+	
+			<sage>
+			<input>
+			G.Centralizer('(1, 3, 5)')
+			</input>
+			<output>
+			Group( [ (1,3,5), (2,4,6), (1,3,5)(2,4,6) ] )
+			</output>
+			</sage>
+	
+			<p>Si usa la interfaz Notebook de Sage puede poner <c>%gap</c> en la primera línea de una celda y la celda completa se interpretará como si estuviera interactuando directamente con <acro>GAP</acro>.  Esto significa que ahora puede (y debe) usar la sintaxis de <acro>GAP</acro>, que como puede ver arriba, es ligeramente diferente a la sintaxis de Sage.  También se puede usar el menú en el comienzo de la página para seleccionar <c>gap</c> en lugar de <c>sage</c> y la hoja de trabajo completa será interpretada como <acro>GAP</acro>.  Acá un ejemplo simple, que debiera poder ejecutar en su hoja de trabajo actual.  Este ejemplo particular no correrá bien en una celda Sage en la versión web de esta sección.</p>
+	
+			<sage type="display">
+			<input>
+			%gap
+			G := Group( (1,2,3,4,5,6), (1,3,5) );
+			Centralizer(G, (1,3,5));
+			</input>
+			</sage>
+	
+			<p>Notemos que<ul>
+				<li><p>No es necesario encerrar las permutaciones individuales con tantas cremillas como haríamos en Sage.</p></li>
+	
+				<li><p>La asignación es <c>:=</c> no <c>=</c>.  Si olvida los dos puntos, obtendrá un error del tipo <c>Variable: 'G' must have a value</c></p></li>
+	
+				<li><p>Una línea <em>debe</em> terminar en punto y coma (;).  Si olvida el punto y coma al final la línea, las líneas se fusionarán como si fuera una sola.</p></li>
+			</ul></p>
+	
+			<p>Puede obtener ayuda acerca de los comandos en <acro>GAP</acro> como se muestra más abajo, pero pronto se dará cuenta que <acro>GAP</acro> supone que usted sabe más álgebra de lo que supone Sage.</p>
+	
+			<sage doctest="not tested">
+			<input>
+			print(gap.help('SymmetricGroup', pager=False))
+			</input>
+			</sage>
+	
+			<p>En la versión de línea de comando de Sage, también es posible usar la <q>consola</q> <acro>GAP</acro>.   Nuevamente, será necesario usar la sintaxis de <acro>GAP</acro>, y no tendrá muchas de las comodidades del Notebook Sage.  También es bueno saber de antemano que <c>quit;</c> es la forma de salir de la consola <acro>GAP</acro> y volver a Sage.  Si corre Sage en la línea de comando, use el comando <c>gap_console()</c> para iniciar <acro>GAP</acro>.</p>
+	
+			<p>Es reconfortante saber que con Sage tenemos una copia completa de <acro>GAP</acro>, instalada y lista para correr.  Pero, este no es un tutorial de <acro>GAP</acro>, así es que si le interesa, puede consultar la página oficial de <acro>GAP</acro>: <url href="http://www.gap-system.org">www.gap-system.org</url> para aprender más sobre <acro>GAP</acro>.</p>
+	
+		</subsection>
+	
+	</section>
+	
+	<exercises xml:id="sylow-sage-exercises">
+		<title>Ejercicios en Sage</title>
+	
+		<exercise number="1">
+			<statement>
+				<p>Este ejercicio ejemplifica el Teorema<nbsp/><xref ref="theorem-commutator-subgroup-theorem"/>.  El subgrupo conmutador se puede obtener con el método <c>.commutator()</c>.  Para el grupo dihedral de orden <m>40</m>, <m>D_{20}</m> (<c>DihedralGroup(20)</c> en Sage), calcule el subgrupo conmutador y forme el cociente del grupo dihedral por este subgrupo.  Compruebe que este cociente es abeliano.  ¿Puede identificar a qué grupo conocido es isomorfo este cociente?</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+				<p>Para cada primo para el que tenga sentido, encuentre todos los <m>p</m>-subgrupos de Sylow del grupo alternante <m>A_5</m>.  Confirme que sus resultados son consistentes con el Tercer Teorema de Sylow para cada primo. Sabemos que <m>A_5</m> es un grupo simple.  Diga por qué esto podría ayudar a explicar cierto aspecto de sus respuestas.</p>
+	
+				<p>Cuente el número total de elementos distintos contenidos en la unión de todos los subgrupos de Sylow que acaba de encontrar.  ¿Qué le parece interesante de esta cuenta?</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+				<p>Para el grupo dihedral <m>D_{36}</m> (simetrías de un polígono regular de <m>36</m> lados) y para cada primo, determine los posibles valores para el número de <m>p</m>-subgrupos de Sylow según lo establecido en el Tercer Teorema de Sylow(<xref ref="theorem-third-sylow"/>).  Ahora calcule el número efectivo de <m>p</m>subgrupos de Sylow para cada primo y comente sobre el resultado.</p>
+	
+				<p>Es posible demostrar que <em>ningún grupo</em> de orden <m>72</m> es un grupo simple, usando técnicas como las usadas en los últimos ejemplos de este capítulo.  Discuta este resultado en el contexto de sus cálculos con Sage.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="4">
+			<statement>
+				<p>Este ejercicio ejemplifica el Lema<nbsp/><xref ref="lemma-distinct-conjugates"/>.  Sea <m>G</m> el grupo dihedral de orden <m>36</m>, <m>D_{18}</m>.  Sea <m>H</m> uno de los <m>3</m>-subgrupos de Sylow.  Sea <m>K</m> el subgrupo de orden <m>6</m> generado por las dos permutaciones <c>a</c> y <c>b</c> dadas abajo.  Primero, forme una lista de los distintos conjugados de <m>K</m> por los elementos de <m>H</m>, y cuente el número de subgrupos en esta lista.  Compare esto con el índice dado en el enunciado del lema, empleando un solo comando (largo) que haga uso de los métodos <c>.order()</c>, <c>.normalizer()</c> y <c>.intersection()</c> aplicados a <m>G</m>, <m>H</m> y <m>K</m>, <em>solamente</em>.</p>
+	
+				<sage type="display">
+					<input>
+					G = DihedralGroup(18)
+					a = G("(1,7,13)(2,8,14)(3,9,15)(4,10,16)(5,11,17)(6,12,18)")
+					b = G("(1,5)(2,4)(6,18)(7,17)(8,16)(9,15)(10,14)(11,13)")
+					</input>
+				</sage>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="5">
+			<statement>
+				<p>El Ejemplo<nbsp/><xref ref="example-group-48"/> muestra que todo grupo de orden <m>48</m> tiene un subgrupo normal.  Los grupos dicíclicos forman una familia infinita de grupos no-abelianos de orden <m>4n</m>, que incluye al grupo de los cuaterniones (el caso <m>n=2</m>).  El grupo <c>DiCyclicGroup(12)</c> tiene orden 48.  Use Sage para ilustrar la lógica de la demostración en el Ejemplo<nbsp/><xref ref="example-group-48"/> y obtenga un subgrupo normal.  (En otras palabras, no pida simplemente la lista de subgrupos normales, sino siga las implicaciones del ejemplo para arribar a un subgrupo normal, y luego compruebe su respuesta.)</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="6">
+			<statement>
+				<p>Las demostraciones del Segundo y Tercer Teorema de Sylow (<xref ref="theorem-second-sylow"/>, <xref ref="theorem-third-sylow"/>) emplean una acción de grupo en conjuntos de <m>p</m>-subgrupos de Sylow.  Para el Segundo Teorema, la lista se propone como incompleta y luego se demuestra que contiene <em>todos</em> los <m>p</m>-subgrupos de Sylow.  En este ejercicio veremos como se comportan estas acciones, y como se diferencian cuando usamos distintos grupos actuando en el mismo conjunto.</p>
+	
+				<p>Construya los seis <m>5</m>-subgrupos de Sylow del grupo alternante <m>A_5</m>.  Este será el conjunto de objetos para nuestras dos acciones.  La conjugación de uno de estos <m>5</m>-subgrupos de Sylow por un elemento de <m>A_5</m> producirá otro <m>5</m>-subgrupo de Sylow, y puede por lo tanto ser usada para definir una acción de grupo.  Para una tal acción, para cada elemento del grupo, forme una permutación en Sage numerando los seis subgrupos y usando esos enteros como etiquetas para los subgrupos.  El método para listas <c>.index()</c> de Python le será muy útil.  Ahora use todas estas permutaciones para generar un grupo de permutaciones (un subgrupo de <m>S_6</m>).  Finalmente, use métodos de grupos de permutaciones para la obtención de órbitas y estabilizadores, <etc/> para explorar las acciones.</p>
+	
+				<p>Para la primera acción, utilice todo <m>A_5</m> como su grupo.  Muestre que la acción resultante es transitiva.  En otras palabras, existe una sola órbita.</p>
+	
+				<p>Para la segunda acción, use uno de los <m>5</m>-subgrupos de Sylow como su grupo.  Escriba la ecuación de clases para esta acción que sugiera la parte <q>congruencia a <m>1</m> mod <m>p</m></q> de las conclusiones del Tercer Teorema.</p>
+			</statement>
+			
+		</exercise>
+	
+	</exercises>
+	
 </chapter>
  

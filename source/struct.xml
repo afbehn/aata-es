@@ -103,7 +103,7 @@
 			<proof>
 				<p>Demostraremos este lema por inducción.  Si <m>n = 1</m>, entonces no hay nada que demostrar.  Ahora supongamos que el orden de <m>G</m> es <m>n</m> y que el lema es verdadero para todos los grupos de orden <m>k</m>, donde <m>k \lt n</m>.  Más aún, sea <m>p</m> un primo que divide a <m>n</m>.</p>
 
-				<p>Si <m>G</m> no tiene subgrupos propios no triviales, entonces <m>G = \langle a \rangle</m>, donde <m>a</m> es cualquier elemento distinto de la identidad.  Por el Ejercicio<nbsp /><xref ref="cyclic-exercise-subgroups-exist" />, el orden de <m>G</m> es primo.  Como <m>p</m> divide a <m>n</m>, sabemos que <m>p = n</m>, y <m>G</m> contiene <m>p - 1</m> elementos de orden <m>p</m>.</p>
+				<p>Si <m>G</m> no tiene subgrupos propios no triviales, entonces <m>G = \langle a \rangle</m>, donde <m>a</m> es cualquier elemento distinto de la identidad.  Por el <xref ref="cyclic-exercise-subgroups-exist" />, el orden de <m>G</m> es primo.  Como <m>p</m> divide a <m>n</m>, sabemos que <m>p = n</m>, y <m>G</m> contiene <m>p - 1</m> elementos de orden <m>p</m>.</p>
 
 				<p>Ahora supongamos que <m>G</m> contiene un subgrupo no trivial propio <m>H</m>.  Entonces <m>1 \lt |H| \lt n</m>. Si <m>p \mid |H|</m>, entonces <m>H</m> contiene un elemento de orden <m>p</m> por la hipótesis de inducción y el lema se cumple para <m>G</m>.  Supongamos que <m>p</m> no divide el orden de <m>H</m>.  Como <m>G</m> es abeliano, <m>H</m> es un subgrupo normal de <m>G</m>, y <m>|G| = |H| \cdot |G/H|</m>.  De manera que <m>p</m> divide a <m>|G/H|</m>.  Como <m>|G/H| \lt |G| = n</m>, sabemos que <m>G/H</m> contiene un elemento <m>aH</m> de orden <m>p</m> por la hipótesis de inducción.  Luego,
 					<me>H = (aH)^p = a^pH,</me>
@@ -122,14 +122,14 @@
 
 		</lemma>
 
-		<p>El Lema<nbsp /><xref ref="lemma-cauchy-finite-abelian" /> es un caso particular del Teorema de Cauchy (Teorema<nbsp /><xref ref="theorem-cauchy" />, que dice que si <m>G</m> es un grupo finito y <m>p</m> es un primo que divide el orden de <m>G</m>, entonces <m>G</m> contiene un subgrupo de orden <m>p</m>.  Demostraremos el Teorema de Cauchy en el Capítulo<nbsp /><xref ref="sylow" />.</p>
+		<p>El <xref ref="lemma-cauchy-finite-abelian" /> es un caso particular del Teorema de Cauchy (<xref ref="theorem-cauchy" />, que dice que si <m>G</m> es un grupo finito y <m>p</m> es un primo que divide el orden de <m>G</m>, entonces <m>G</m> contiene un subgrupo de orden <m>p</m>.  Demostraremos el Teorema de Cauchy en el Capí<xref ref="sylow" />.</p>
 
 		<lemma xml:id="lemma-p-group-order">
 			<statement>
 				<p>Un grupo abeliano finito es un <m>p</m>-grupo si y solo si su orden es una potencia de <m>p</m>.</p>
 			</statement>
 			<proof>
-				<p>Si <m>|G| = p^n</m> entonces, por el teorema de Lagrange, el orden de cualquier <m>g \in G</m> divide a <m>p^n</m>, y por lo tanto es una potencia de <m>p</m>. Recíprocamente, si <m>|G|</m> no es una potencia de <m>p</m>, entonces tiene algún otro divisor primo <m>q</m>, y por el Lema<nbsp /><xref ref="lemma-cauchy-finite-abelian" />, <m>G</m> tiene un elemento de orden <m>q</m> por lo que no es un <m>p</m>-grupo.</p>
+				<p>Si <m>|G| = p^n</m> entonces, por el teorema de Lagrange, el orden de cualquier <m>g \in G</m> divide a <m>p^n</m>, y por lo tanto es una potencia de <m>p</m>. Recíprocamente, si <m>|G|</m> no es una potencia de <m>p</m>, entonces tiene algún otro divisor primo <m>q</m>, y por el <xref ref="lemma-cauchy-finite-abelian" />, <m>G</m> tiene un elemento de orden <m>q</m> por lo que no es un <m>p</m>-grupo.</p>
 			</proof>
 		</lemma>
 
@@ -152,7 +152,7 @@
 		</lemma>
 
 
-		<p>Nos falta determinar la posible estructura de cada uno de los <m>p_i</m>-grupos <m>G_i</m> en el Lema<nbsp /><xref ref="lemma-direct-product-p-groups" />.</p>
+		<p>Nos falta determinar la posible estructura de cada uno de los <m>p_i</m>-grupos <m>G_i</m> en el <xref ref="lemma-direct-product-p-groups" />.</p>
 
 
 		<lemma xml:id="lemma-struct-finite-abelian">
@@ -160,7 +160,7 @@
 				<p>Sea <m>G</m> un <m>p</m>-grupo abeliano finito y supongamos que  <m>g \in G</m> tiene orden maximal. Entonces <m>G</m> es isomorfo a <m>\langle g \rangle \times H</m> para algún subgrupo  <m>H</m> de <m>G</m>.</p>
 			</statement>
 			<proof>
-				<p>Por el Lema<nbsp /><xref ref="lemma-p-group-order" />, podemos suponer que el orden de <m>G</m> es <m>p^n</m>.  Procederemos por inducción en <m>n</m>. Si <m>n= 1</m>, entonces <m>G</m> es cíclico de orden <m>p</m> y debe estar generado por <m>g</m>. Supongamos ahora que el lema se cumple para todos los enteros <m>k</m> con <m>1 \leq k \lt n</m> y sea <m>g</m> de orden maximal en <m>G</m>, digamos <m>|g| = p^{m}</m>.  Entonces <m>a^{p^m} = e</m> para todo <m>a \in G</m>. Ahora elijamos <m>h</m> en <m>G</m> tal que <m>h \notin \langle g \rangle</m>, donde <m>h</m> tiene el menor orden posible.  Ciertamente podemos suponer que tal <m>h</m> existe; de otra manera, <m>G = \langle g \rangle</m> y estamos listos.  Sea <m>H = \langle h \rangle</m>.</p>
+				<p>Por el <xref ref="lemma-p-group-order" />, podemos suponer que el orden de <m>G</m> es <m>p^n</m>.  Procederemos por inducción en <m>n</m>. Si <m>n= 1</m>, entonces <m>G</m> es cíclico de orden <m>p</m> y debe estar generado por <m>g</m>. Supongamos ahora que el lema se cumple para todos los enteros <m>k</m> con <m>1 \leq k \lt n</m> y sea <m>g</m> de orden maximal en <m>G</m>, digamos <m>|g| = p^{m}</m>.  Entonces <m>a^{p^m} = e</m> para todo <m>a \in G</m>. Ahora elijamos <m>h</m> en <m>G</m> tal que <m>h \notin \langle g \rangle</m>, donde <m>h</m> tiene el menor orden posible.  Ciertamente podemos suponer que tal <m>h</m> existe; de otra manera, <m>G = \langle g \rangle</m> y estamos listos.  Sea <m>H = \langle h \rangle</m>.</p>
  
 				<p>Afirmamos que <m>\langle g \rangle \cap H = \{ e \}</m>. Es suficiente con mostrar que <m>|H|=p</m>.  Como <m>|h^p| = |h| / p</m>, el orden de <m>h^p</m> es menor que el orden de <m>h</m> y debe estar en <m>\langle g \rangle</m> por la minimalidad del orden de <m>h</m>; es decir, <m>h^p = g^r</m> para algún <m>r</m>. Luego, 
 					<me>(g^r)^{p^{m - 1}} = (h^p)^{p^{m - 1}} = h^{p^{m}} = e,</me>
@@ -180,7 +180,7 @@
 <!-- reflect that we are dealing with direct products.  Suggested by P. Diethelm. -->
 <!-- TWJ 4/24/2013 -->
 
-		<p>La demostración del Teorema Fundamental de los Grupos Abelianos Finitos sigue rápidamente del Lema<nbsp /><xref ref="lemma-struct-finite-abelian" />.  Procediendo por inducción en el orden del grupo, supongamos que <m>G</m> es un grupo abeliano finito y sea <m>g</m> un elemento de orden maximal en  <m>G</m>. Si <m>\langle g \rangle = G</m>, estamos listos; de lo contrario, <m>G \cong {\mathbb Z}_{|g|} \times H</m> para algún subgrupo <m>H</m> contenido en <m>G</m> por el lema. Como <m>|H| \lt |G|</m>, podemos usar la hipótesis de inducción.</p>
+		<p>La demostración del Teorema Fundamental de los Grupos Abelianos Finitos sigue rápidamente del <xref ref="lemma-struct-finite-abelian" />.  Procediendo por inducción en el orden del grupo, supongamos que <m>G</m> es un grupo abeliano finito y sea <m>g</m> un elemento de orden maximal en  <m>G</m>. Si <m>\langle g \rangle = G</m>, estamos listos; de lo contrario, <m>G \cong {\mathbb Z}_{|g|} \times H</m> para algún subgrupo <m>H</m> contenido en <m>G</m> por el lema. Como <m>|H| \lt |G|</m>, podemos usar la hipótesis de inducción.</p>
  
 		<p>Ahora enunciamos el teorema más general que vale para todos los grupos abelianos finitamente generados.  La demostración de este teorema se puede encontrar en cualquiera de las referencias al final del capítulo.</p>
  
@@ -297,7 +297,7 @@
 						<mrow>G = H_n \supset H_{n-1} \supset H_{n-1} \cap K_{m-1} \supset \cdots \supset H_0 \cap K_{m-1} = \{ e \}</mrow>
 						<mrow>G = K_m \supset K_{m-1} \supset K_{m-1} \cap H_{n-1} \supset \cdots \supset K_0 \cap H_{n-1} = \{ e \}.</mrow>
 					</md>
-				Como <m>H_i \cap K_{m-1}</m> es normal en <m>H_{i+1} \cap K_{m-1}</m>, el Segundo Teorema de Isomorfía (Teorema<nbsp /><xref ref="theorem-second-isomorphism" />) implica que 
+				Como <m>H_i \cap K_{m-1}</m> es normal en <m>H_{i+1} \cap K_{m-1}</m>, el Segundo Teorema de Isomorfía (<xref ref="theorem-second-isomorphism" />) implica que 
 					<md>
 						<mrow>(H_{i+1} \cap K_{m-1}) / (H_i \cap K_{m-1}) &amp; =  (H_{i+1} \cap K_{m-1}) / (H_i \cap ( H_{i+1} \cap K_{m-1} ))</mrow>
 						<mrow>&amp; \cong  H_i (H_{i+1} \cap K_{m-1})/ H_i,</mrow>
@@ -333,11 +333,273 @@
 			es una serie de composición para <m>S_n</m> con un cociente no-abeliano. Por lo tanto, <m>S_n</m> no es un grupo soluble para <m>n \geq 5</m>.</p>
 		</example>
 
-		<xi:include href="./sage/struct-info.xml" />
+		<paragraphs>
+			<title>Sage</title>
+		
+			<p>Sage es capaz de crear productos diectos de grupos cíclicos, pero esto se realizan como grupos de permutaciones.  Esta es una situación que debiera mejorar.  Sin embargo, con una clasificación de los grupos abelianos finitos, podemos describir como construir todo grupo de orden menor a 16 en Sage.</p>
+		</paragraphs>
 
 	</section>
 	
-	<xi:include href="./exercises/struct.xml" />
+	<exercises xml:id="exercises-struct">
+		<title>Ejercicios</title>
+	
+		<exercise number="1">
+			<statement>
+				<p>Encuentre todos los grupos abelianos de orden menor o igual a 40.</p>
+			</statement>
+			<hint>
+				<p>Hay tres grupos posibles de orden 40.</p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="2">
+			<statement>
+				<p>Encuentre todos los grupos abelianos de orden 200.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="3">
+			<statement>
+				<p>Encuentre todos los grupos abelianos de orden 720.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="4">
+		<statement>
+			<p>Encuentre todas las series de composición para cada uno de los siguientes grupos.
+				<ol cols="2">
+	
+					<li><p><m>{\mathbb Z}_{12}</m></p></li>
+	
+					<li><p><m>{\mathbb Z}_{48}</m></p></li>
+	
+					<li><p>Los cuaterniones, <m>Q_8</m></p></li>
+	
+					<li><p><m>D_4</m></p></li>
+	
+					<li><p><m>S_3 \times {\mathbb Z}_4</m></p></li>
+	
+					<li><p><m>S_4</m></p></li>
+	
+					<li><p><m>S_n</m>, <m>n \geq 5</m></p></li>
+	
+					<li><p><m>{\mathbb Q}</m></p></li>
+	
+				</ol></p>
+		</statement>
+		<hint>
+			<p>(a) <m>\{ 0 \} \subset \langle 6 \rangle \subset \langle 3 \rangle \subset {\mathbb Z}_{12}</m>; (e) <m>\{ (1) \} \times \{ 0  \} \subset \{ (1), (123), (132) \} \times \{ 0 \} \subset S_3 \times \{ 0 \}  \subset S_3 \times \langle 2 \rangle\subset S_3 \times {\mathbb Z}_4</m>.</p>
+		</hint>
+		
+		</exercise>
+	
+		<exercise number="5">
+			<statement>
+				<p>Demuestre que el producto directo infinito <m>G = {\mathbb Z}_2 \times {\mathbb Z}_2 \times \cdots</m> no es finitamente generado.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="6">
+			<statement>
+				<p>Sea <m>G</m> un grupo abeliano de orden <m>m</m>.  Si <m>n</m> divide a  <m>m</m>, demuestre que <m>G</m> tiene un subgrupo de orden <m>n</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="7">
+			<statement>
+				<p>Un grupo <m>G</m> es un <term>grupo de torsión</term> si todo elemento de <m>G</m> tiene orden finito.  Demuestre que un grupo de torsión abeliano finitamente generado tiene que ser finito.</p>
+			</statement>
+			<hint>
+				<p>Use el Teorema Fundamental de los Grupos Abelianos Finitamente Generados.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="8">
+			<statement>
+				<p>Sean <m>G</m>, <m>H</m>, y <m>K</m> grupos abelianos finitamente generados. Muestre que si <m>G \times H \cong G \times K</m>, entonces <m>H \cong K</m>. Encuentre un contraejemplo para mostrar que esto no es verdadero en general.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="9">
+			<statement>
+				<p>Sean <m>G</m> y <m>H</m> grupos solubles.  Muestre que <m>G \times H</m> también es soluble.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="10">
+			<statement>
+				<p>Si <m>G</m> tiene una serie de composición (principal) y si <m>N</m> es un subgrupo normal propio de <m>G</m>, muestre que existe una serie de composición (principal) que contiene a <m>N</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="11">
+			<statement>
+				<p>Demuestre o refute: Sea <m>N</m> un subgrupo normal de <m>G</m>.  Si <m>N</m> y <m>G/N</m> tienen series de composición, entonces <m>G</m> también tiene serie de composición.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="12">
+			<statement>
+				<p>Sea <m>N</m> un subgrupo normal de <m>G</m>.  Si <m>N</m> y <m>G/N</m> son grupos solubles, muestre que <m>G</m> también es un grupo soluble.</p>
+			</statement>
+			<hint>
+				<p>Si <m>N</m> y <m>G/N</m> son solubles, entonces tienen series solubles
+					<md>
+						<mrow>N = N_n \supset N_{n - 1} \supset \cdots \supset N_1 \supset N_0 = \{ e \}</mrow>
+						<mrow>G/N = G_n/N \supset G_{n - 1}/N \supset \cdots G_1/N \supset G_0/N = \{ N \}.</mrow>
+					</md></p>
+			</hint>
+			
+		</exercise>
+	
+		<exercise number="13">
+			<statement>
+				<p>Demuestre que <m>G</m> es un grupo soluble si y solo si <m>G</m> tiene una serie de subgrupos
+					<me>G = P_n \supset P_{n - 1} \supset \cdots \supset P_1 \supset P_0 = \{ e \}</me>
+				donde <m>P_i</m> es normal en <m>P_{i + 1}</m> y el orden de <m>P_{i + 1} / P_i</m> es primo. </p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="14">
+			<statement>
+				<p>Sea <m>G</m> un grupo soluble. Demuestre que cualquier subgrupo de <m>G</m> también es soluble.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="15">
+			<statement>
+				<p>Sea <m>G</m> un grupo soluble y <m>N</m> un subgrupo normal de <m>G</m>. Demuestre que <m>G/N</m> es soluble.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="16">
+			<statement>
+				<p>Demuestre que <m>D_n</m> es soluble para todo entero <m>n</m>.</p>
+			</statement>
+			<hint>
+				<p>Use el hecho de que <m>D_n</m> tiene un subgrupo cíclico de índice 2.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+	
+		<exercise number="17">
+			<statement>
+				<p>Supongamos que <m>G</m> tiene una serie de composición.  Si <m>N</m> es un subgrupo normal de <m>G</m>, muestre que <m>N</m> y <m>G/N</m> también tienen series de composición.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="18">
+			<statement>
+				<p>Sea <m>G</m> un <m>p</m>-grupo cíclico con subgrupos <m>H</m> y <m>K</m>. Demuestre que ya sea <m>H</m> está contenido en <m>K</m> o <m>K</m> está contenido en <m>H</m>.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="19">
+			<statement>
+				<p>Supuongamos que <m>G</m> es un grupo soluble de orden <m>n \geq 2</m>. Muestre que <m>G</m> contiene un subgrupo normal abeliano no trivial.</p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="20">
+			<statement>
+				<p>Recuerde que el <term>subgrupo conmutador</term> <m>G'</m> de un grupo <m>G</m> está definido como el subgrupo de <m>G</m> generado por los elementos de la forma <m>a^{-1} b ^{-1} ab</m> para <m>a, b \in G</m>.  Podemos definir una serie de subgrupos de <m>G</m> como <m>G^{(0)} = G</m>, <m>G^{(1)} = G'</m>, y <m>G^{(i + 1)} = (G^{(i)})'</m>.
+					<ol>
+			 
+						<li><p>Demuestre que <m>G^{(i+1)}</m> es normal en <m>(G^{(i)})'</m>. La serie de subgrupos
+							<me>G^{(0)} = G \supset G^{(1)} \supset G^{(2)} \supset \cdots</me>
+						se llama <term>serie derivada</term> de <m>G</m>.</p></li>
+			 
+						<li><p>Muestre que <m>G</m> es soluble si y solo si <m>G^{(n)} = \{ e \}</m> para algún entero <m>n</m>.</p></li>
+			 
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<todo>Expand this solution.</todo>
+	
+		<exercise number="21">
+			<statement>
+				<p>Supongamos que <m>G</m> es un grupo soluble de orden <m>n \geq 2</m>. Muestre que <m>G</m> tiene un grupo cociente abeliano no trivial.</p>
+			</statement>
+			<hint>
+				<p><m>G/G'</m> es abeliano.</p>
+			</hint>
+			
+		</exercise>
+	
+		<todo>Expand solution.</todo>
+	
+		<exercise number="22">
+			<title>Lema de Zassenhaus</title>
+			<statement>
+				<p>Sean <m>H</m> y <m>K</m> subgrupos de un grupo <m>G</m>. Supongamos admás que <m>H^*</m> y <m>K^*</m> son subgrupos normales de <m>H</m> y <m>K</m> respectivamente.  Entonces
+					<ol>
+			 
+						<li><p><m>H^* ( H \cap K^*)</m> es un subgrupo normal de <m>H^* ( H \cap K)</m>.</p></li>
+						 
+						<li><p><m>K^* ( H^* \cap K)</m> es un subgrupo normal de <m>K^* ( H \cap K)</m>.</p></li>
+						 
+						<li><p><m>H^* ( H \cap K) / H^* ( H \cap K^*) \cong  K^* ( H \cap K) / K^* ( H^* \cap K) \cong  (H \cap K) / (H^* \cap K)(H \cap K^*)</m>.</p></li>
+	
+					</ol></p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="23">
+			<title>Teorema de Schreier</title>
+			<statement>
+				<p>Use el Lema de Zassenhaus para demostrar que dos series subnormales (normales) de un grupo <m>G</m> tienen refinamientos isomorfos.</p>
+			</statement>
+			
+		</exercise>
+	
+		<exercise number="24">
+			<statement>
+				<p>Use el Teorema de Schreier para demostrar el Teorema de Jordan-Hölder.</p>
+			</statement>
+			
+		</exercise>
+	
+	</exercises>
+	
  
 	<exercises xml:id="struct-exercises-programming">
 		<title>Ejercicios de Programación</title>
@@ -373,8 +635,133 @@
  
 		</references>  
 
-	<xi:include href="./sage/struct-sage.xml" />
-	<xi:include href="./sage/struct-sage-exercises.xml" />
+		<section xml:id="struct-sage">
+			<title>Sage</title>
+		
+			<introduction>
+				<p>Los grupos cíclicos, y los productos directos de grupos cíclicos, están implementados en Sage como grupos de permutaciones.  Pero, estos grupos rápidamente se conviertenen representaciones muy incómodas y debiese haber una mejor forma de trabajar con grupos abelianos finitos en Sage.  Postergaremos la discusión de detalles para este capítulo hasta cuando eso ocurra.  Sin embargo, ahora que entendemos la noción de grupos isomorfos y la estructura de los grupos abelianos finitos, podemos volver a nuestra misión de clasificar todos los grupos de orden menor a <m>16</m>.</p>
+			</introduction>
+		
+		
+			<subsection>
+				<title>Clasificación de Grupos Finitos</title>
+		
+				<p>No se requieren herramientas sofisticadas para entender los grupos de orden <m>2p</m>, donde <m>p</m> es un primo impar.  Hay dos posibilidades <mdash /> un grupo cíclico de orden <m>2p</m> y el grupo dihedral de orden <m>2p</m> que es el conjunto de simetrías del polígono regular de <m>p</m> lados.  La demostración requiere un razonamiento detallado y cuidadoso, pero los teoremas requeridos se refieren principalmente a los órdenes de los elementos, al Teoremas de Lagrange y a clases laterales.  Vea el <xref ref="exercise-classify-2p" />.  Esto resuelve los órdenes <m>n=6,\,10,\,14</m>.</p>
+		
+				<p>Para <m>n=9</m>, el <xref ref="corollary-p2abelian" /> que viene, nos dirá que todo grupo de orden <m>p^2</m> (donde <m>p</m> es un primo) es abeliano.  Así, por lo que sabemos de esta sección, las únicas dos posibilidades son <m>{\mathbb Z}_9</m> y <m>{\mathbb Z}_3\times{\mathbb Z}_3</m>.  Similarmente, el <xref ref="theorem-pq-cyclic" /> que viene, nos dirá que todo grupo de orden <m>n=15</m> es abeliano.  Eso solo deja una posibilidad para este orden: <m>{\mathbb Z}_3\times{\mathbb Z}_5\cong{\mathbb Z}_{15}</m>.</p>
+		
+				<p>Solo nos quedan dos órdenes para analizar:  <m>n=8</m> y <m>n=12</m>.  Las posibilidades son grupos que ya conocemos, con una excepción.  Pero el análisis de que estas son las <em>únicas</em> posibilidades es más complicado, y no lo completaremos ahora, ni en los próximos capítulos.  Notemos que <m>n=16</m> es aún más complicado, con <m>14</m> posibilidades diferentes (lo que explica por qué nos detuvimos acá).</p>
+		
+				<p>Para <m>n=8</m> existen <m>3</m> grupos abelianos, y los dos grupos no-abelianos son el grupo dihedral (simetrías de un cuadrado) y el grupo de los cuaterniones.</p>
+		
+				<p>Para <m>n=12</m> existen <m>2</m> grupos abelianos, y <m>3</m> no-abelianos.  Conocemos dos de los grupos no-abelianos, el grupo dihedral y en grupo alternante en <m>4</m> símbolos (que también es el grupo de simetrías de un tetraedro).  El tercer grupo no-abeliano es un ejemplo de un grupo <q>dicíclico</q>, que es una familia infinita de grupos, cada uno de orden divisible por <m>4</m>.  El grupo dicíclico de orden <m>12</m> también puede ser construido como un <q>producto semidirecto</q> de dos grupos cíclicos  <mdash /> esta es una construcción que vale la pena conocer a medida que prosiga sus estudios de teoría de grupos.  El grupo dicíclico de orden <m>8</m> es el grupo de los cuaterniones y más en general, los grupos dicíclicos de orden <m>2^k</m>, <m>k>2</m> se conocen como <q>grupos de cuaterniones generalizados.</q></p>
+		
+				<p>Los siguientes ejemplos le mostrarán como construir algunos de estos grupos, mientras ejercita algunos de los comandos y nos permite a la vez estar más seguros que la siguiente tabla es correcta.</p>
+		
+				<sage>
+				<input>
+				S = SymmetricGroup(3)
+				D = DihedralGroup(3)
+				S.is_isomorphic(D)
+				</input>
+				<output>
+				True
+				</output>
+				</sage>
+		
+				<sage>
+				<input>
+				C3 = CyclicPermutationGroup(3)
+				C5 = CyclicPermutationGroup(5)
+				DP = direct_product_permgroups([C3, C5])
+				C  = CyclicPermutationGroup(15)
+				DP.is_isomorphic(C)
+				</input>
+				<output>
+				True
+				</output>
+				</sage>
+		
+				<sage>
+				<input>
+				Q  = QuaternionGroup()
+				DI = DiCyclicGroup(2)
+				Q.is_isomorphic(DI)
+				</input>
+				<output>
+				True
+				</output>
+				</sage>
+		
+			</subsection>
+		
+			<subsection>
+				<title>Grupos de Orden Pequeño como grupos de Permutaciones</title>
+		
+				<p>Acá listamos construcciones, como grupos de permutaciones en Sage, para todos los grupos de orden menor a <m>16</m>.</p>
+		
+				<!-- comments are the number of dividing rules following the row in LaTeX original -->
+			   <table>
+					<caption>Los Grupos de Orden <m>\mathbf{15}</m> o Menos en Sage</caption>
+					<tabular halign="left" top="medium">
+						<row bottom="medium">
+							<cell>Orden</cell>
+							<cell>Construcción</cell>
+							<cell>Notas, Alternativas</cell>
+						</row>
+						<row><cell> 1</cell><cell><c>CyclicPermutationGroup(1)</c>              </cell><cell>Trivial </cell></row><!--double-->
+						<row><cell> 2</cell><cell><c>CyclicPermutationGroup(2)</c>              </cell><cell><c>SymmetricGroup(2)</c></cell></row><!--double-->
+						<row><cell> 3</cell><cell><c>CyclicPermutationGroup(3)</c>              </cell><cell>Orden primo </cell></row><!--double-->
+						<row><cell> 4</cell><cell><c>CyclicPermutationGroup(4)</c>              </cell><cell>Cíclico </cell></row><!--single-->
+						<row><cell> 4</cell><cell><c>KleinFourGroup()</c>                       </cell><cell>Abeliano, no-cíclico</cell></row><!--double-->
+						<row><cell> 5</cell><cell><c>CyclicPermutationGroup(5)</c>              </cell><cell>Orden primo </cell></row><!--double-->
+						<row><cell> 6</cell><cell><c>CyclicPermutationGroup(6)</c>              </cell><cell>Cíclico</cell></row><!--single-->
+						<row><cell> 6</cell><cell><c>SymmetricGroup(3)</c>                      </cell><cell>No-abeliano</cell></row><!--none-->
+						<row><cell>  </cell><cell>                                              </cell><cell><c>DihedralGroup(3)</c></cell></row><!--double-->
+						<row><cell> 7</cell><cell><c>CyclicPermutationGroup(7)</c>              </cell><cell>Orden primo </cell></row><!--double-->
+						<row><cell> 8</cell><cell><c>CyclicPermutationGroup(8)</c>              </cell><cell>Cíclico</cell></row><!--single-->
+						<row><cell> 8</cell><cell><c>C2=CyclicPermutationGroup(2)</c>           </cell><cell></cell></row><!--none-->
+						<row><cell>  </cell><cell><c>C4=CyclicPermutationGroup(4)</c>           </cell><cell></cell></row><!--none-->
+						<row><cell>  </cell><cell><c>G=direct_product_permgroups([C2,C4])</c>   </cell><cell>Abeliano, no-cíclico</cell></row><!--single-->
+						<row><cell> 8</cell><cell><c>C2=CyclicPermutationGroup(2)</c>           </cell><cell></cell></row><!--none-->
+						<row><cell>  </cell><cell><c>G=direct_product_permgroups([C2,C2,C2])</c></cell><cell>Abeliano, no-cíclico</cell></row><!--single-->
+						<row><cell> 8</cell><cell><c>DihedralGroup(4)</c>                       </cell><cell>No-abeliano</cell></row><!--single-->
+						<row><cell> 8</cell><cell><c>QuaternionGroup()</c>                      </cell><cell>Cuaterniones</cell></row><!--none-->
+						<row><cell>  </cell><cell>                                              </cell><cell><c>DiCyclicGroup(2)</c></cell></row><!--double-->
+						<row><cell> 9</cell><cell><c>CyclicPermutationGroup(9)</c>              </cell><cell>Cíclico</cell></row><!--single-->
+						<row><cell> 9</cell><cell><c>C3=CyclicPermutationGroup(3)</c>           </cell><cell></cell></row><!--none-->
+						<row><cell>  </cell><cell><c>G=direct_product_permgroups([C3,C3])</c>   </cell><cell>Abeliano, no-cíclico</cell></row><!--double-->
+						<row><cell>10</cell><cell><c>CyclicPermutationGroup(10)</c>             </cell><cell>Cíclico</cell></row><!--single-->
+						<row><cell>10</cell><cell><c>DihedralGroup(5)</c>                       </cell><cell>No-abeliano</cell></row><!--double-->
+						<row><cell>11</cell><cell><c>CyclicPermutationGroup(11)</c>             </cell><cell>Orden primo </cell></row><!--double-->
+						<row><cell>12</cell><cell><c>CyclicPermutationGroup(12)</c>             </cell><cell>Cíclico</cell></row><!--single-->
+						<row><cell>12</cell><cell><c>C2=CyclicPermutationGroup(2)</c>           </cell><cell></cell></row><!--none-->
+						<row><cell>  </cell><cell><c>C6=CyclicPermutationGroup(6)</c>           </cell><cell></cell></row><!--none-->
+						<row><cell>  </cell><cell><c>G=direct_product_permgroups([C2,C6])</c>   </cell><cell>Abeliano, no-cíclico</cell></row><!--single-->
+						<row><cell>12</cell><cell><c>DihedralGroup(6)</c>                       </cell><cell>No-abeliano</cell></row><!--single-->
+						<row><cell>12</cell><cell><c>AlternatingGroup(4)</c>                    </cell><cell>No-abeliano</cell></row><!--none-->
+						<row><cell>  </cell><cell>                                              </cell><cell>Simetrías del tetraedro</cell></row><!--single-->
+						<row><cell>12</cell><cell><c>DiCyclicGroup(3)</c>                       </cell><cell>No-abeliano</cell></row><!--none-->
+						<row><cell>  </cell><cell>                                              </cell><cell>Producto semidirecto <m>Z_3\rtimes Z_4</m></cell></row><!--double-->
+						<row><cell>13</cell><cell><c>CyclicPermutationGroup(13)</c>             </cell><cell>Orden primo </cell></row><!--double-->
+						<row><cell>14</cell><cell><c>CyclicPermutationGroup(14)</c>             </cell><cell>Cíclico</cell></row><!--single-->
+						<row><cell>14</cell><cell><c>DihedralGroup(7)</c>                       </cell><cell>No-abeliano</cell></row><!--double-->
+						<row bottom="medium"><cell>15</cell><cell><c>CyclicPermutationGroup(15)</c>             </cell><cell>Cyclic</cell></row><!--double-->
+					</tabular>
+				</table>
+		
+			</subsection>
+		
+		</section>
+		<exercises xml:id="struct-sage-exercises">
+			<title>Ejercicios en Sage</title>
+		
+			<introduction>
+				<p>No hay ejercicios en Sage para este capítulo.</p>
+			</introduction>
+		
+		</exercises>
+		
 
 </chapter>
  
