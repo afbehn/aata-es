@@ -17,11 +17,12 @@
 
 
 <chapter xml:id="normal" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Subgrupos Normales y Grupos Cociente</title>
+  <title>Subgrupos Normales y Grupos Cociente</title>
 
-	<introduction>
-		<p>Si <m>H</m> es un subgrupo de un grupo <m>G</m>, entonces las clases laterales derechas no son siempre las mismas que las clases laterales izquierdas; es decir, no siempre se cumple que <m>gH = Hg</m> para todo <m>g \in G</m>.  Los subgrupos que tienen esta propiedad juegan un papel crítico en la teoría de grupos<mdash />permiten la construcción de una nueva clase de grupos, llamados grupos cociente.  Los grupos cociente pueden ser estudiados directamente o usando homomorfismos, una generalización de los isomorfismos. Estudiaremos homomorfismos en el Capí<xref ref="homomorph" />.</p>
-	</introduction>
+  <introduction>
+    <p>Si <m>H</m> es un subgrupo de un grupo <m>G</m>, entonces las clases laterales derechas no son siempre las mismas que las clases laterales izquierdas; es decir, no siempre se cumple que <m>gH = Hg</m> para todo <m>g \in G</m>.  Los subgrupos que tienen esta propiedad juegan un papel crítico en la teoría de grupos<mdash />permiten la construcción de una nueva clase de grupos, llamados grupos cociente.  Los grupos cociente pueden ser estudiados directamente o usando homomorfismos, una generalización de los isomorfismos. Estudiaremos homomorfismos en el Capí<xref ref="homomorph" />.
+    </p>
+  </introduction>
 
 <!-- % TWJ, 2010/03/31 -->
 <!-- % The chapter HOMOMORPHISMS AND FACTOR GROUPS is now -->
@@ -29,717 +30,854 @@
 <!-- % (11) HOMOMORPHISMS -->
 
 
-	<section xml:id="section-factor-groups">
-		<title>Grupos Cociente y Subgrupos Normales</title>
+  <section xml:id="section-factor-groups">
+    <title>Grupos Cociente y Subgrupos Normales</title>
 
-		<subsection xml:id="normal-subsection-normal-subgroups">
-			<title>Subgrupos Normales</title>
+    <subsection xml:id="normal-subsection-normal-subgroups">
+      <title>Subgrupos Normales</title>
 
-			<p>Un subgrupo <m>H</m> de un grupo <m>G</m> es <term>normal</term><idx><h>Normal</h><h>subgrupo</h></idx><idx><h>Subgrupo normal</h></idx> en G si <m>gH = Hg</m> para todo <m>g \in G</m>. Es decir, un subgrupo normal de un grupo <m>G</m> es un subgrupo para el que las clases laterales derechas e izquierdas coinciden.</p>
+      <p>Un subgrupo <m>H</m> de un grupo <m>G</m> es <term>normal</term><idx><h>Normal</h><h>subgrupo</h></idx><idx><h>Subgrupo normal</h></idx> en G si <m>gH = Hg</m> para todo <m>g \in G</m>. Es decir, un subgrupo normal de un grupo <m>G</m> es un subgrupo para el que las clases laterales derechas e izquierdas coinciden.
+    </p>
  
 
-			<example xml:id="example-normal-abelian">
-				<p>Sea <m>G</m> un grupo abeliano. Todo subgrupo <m>H</m> de <m>G</m> es un subgrupo normal.  Como <m>gh = hg</m> para todo <m>g \in G</m> y <m>h \in H</m>, siempre se cumple que <m>gH = Hg</m>.</p>
-			</example>
+      <example xml:id="example-normal-abelian">
+        <p>Sea <m>G</m> un grupo abeliano. Todo subgrupo <m>H</m> de <m>G</m> es un subgrupo normal.  Como <m>gh = hg</m> para todo <m>g \in G</m> y <m>h \in H</m>, siempre se cumple que <m>gH = Hg</m>.
+    </p>
+      </example>
  
-			<example xml:id="example-normal-s3">
-				<p>Sea <m>H</m> el subgrupo de <m>S_3</m> que consiste de los elementos <m>(1)</m> y <m>(12)</m>. Como 
-					<me>(123) H = \{ (123), (13) \} \quad \text{y} \quad H (123) = \{ (123), (23) \},</me>
-				<m>H</m> no puede ser un subgrupo normal de <m>S_3</m>.  Sin embargo, el subgrupo <m>N</m>, que consiste de las permutaciones <m>(1)</m>, <m>(123)</m>, y <m>(132)</m>, es normal pues las clases laterales de <m>N</m> son 
-					<md>
-						<mrow>N  =   \{ (1), (123), (132) \}</mrow>
-						<mrow>(12) N =  N (12)  =  \{ (12), (13), (23) \}.</mrow>
-					</md></p>
-			</example>
+      <example xml:id="example-normal-s3">
+        <p>Sea <m>H</m> el subgrupo de <m>S_3</m> que consiste de los elementos <m>(1)</m> y <m>(12)</m>. Como 
+          <me>(123) H = \{ (123), (13) \} \quad \text{y} \quad H (123) = \{ (123), (23) \}</me>,
+        <m>H</m> no puede ser un subgrupo normal de <m>S_3</m>.  Sin embargo, el subgrupo <m>N</m>, que consiste de las permutaciones <m>(1)</m>, <m>(123)</m>, y <m>(132)</m>, es normal pues las clases laterales de <m>N</m> son 
+          <md>
+            <mrow>N  =   \{ (1), (123), (132) \}</mrow>
+            <mrow>(12) N =  N (12)  =  \{ (12), (13), (23) \}</mrow>
+          </md>.
+    </p>
+      </example>
  
-			<p>El siguiente teorema es fundamental para nuestra comprensión de los subgrupo normales.</p>
+      <p>El siguiente teorema es fundamental para nuestra comprensión de los subgrupo normales.
+    </p>
  
-			<theorem xml:id="theorem-normal-equivalents">
-				<statement>
-					<p>Sea <m>G</m> un grupo y <m>N</m> un subgrupo de <m>G</m>. Entonces las siguientes proposiciones son equivalentes.
-					<ol>
+      <theorem xml:id="theorem-normal-equivalents">
+        <statement>
+          <p>Sea <m>G</m> un grupo y <m>N</m> un subgrupo de <m>G</m>. Entonces las siguientes proposiciones son equivalentes.
+          <ol>
 
-						<li><p>El subgrupo <m>N</m> es normal en <m>G</m>.</p></li>
+            <li><p>El subgrupo <m>N</m> es normal en <m>G</m>.
+    </p></li>
 
-						<li><p>Para todo <m>g \in G</m>, <m>gNg^{-1} \subset N</m>.</p></li>
+            <li><p>Para todo <m>g \in G</m>, <m>gNg^{-1} \subset N</m>.
+    </p></li>
  
-						<li><p>Para todo <m>g \in G</m>, <m>gNg^{-1} = N</m>.</p></li>
+            <li><p>Para todo <m>g \in G</m>, <m>gNg^{-1} = N</m>.
+    </p></li>
  
-					</ol></p>
-				</statement>
-				<proof>
-					<p>(1) <m>\Rightarrow</m> (2). Como <m>N</m> es normal en <m>G</m>, <m>gN = Ng</m> para todo <m>g \in G</m>. Luego, para un  <m>g \in G</m> dado y para <m>n \in N</m>, existe <m>n'</m> en <m>N</m> tal que <m>g n = n' g</m>. Por lo tanto, <m>gng^{-1} = n' \in N</m> y <m>gNg^{-1} \subset N</m>.</p>
+          </ol></p>
+        </statement>
+        <proof>
+          <p>(1) <m>\Rightarrow</m> (2). Como <m>N</m> es normal en <m>G</m>, <m>gN = Ng</m> para todo <m>g \in G</m>. Luego, para un  <m>g \in G</m> dado y para <m>n \in N</m>, existe <m>n'</m> en <m>N</m> tal que <m>g n = n' g</m>. Por lo tanto, <m>gng^{-1} = n' \in N</m> y <m>gNg^{-1} \subset N</m>.
+    </p>
  
- 					<p>(2)  <m>\Rightarrow</m> (3).  Sea <m>g \in G</m>. Como <m>gNg^{-1} \subset N</m>, solo debemos demostrar que <m>N \subset gNg^{-1}</m>. Para <m>n \in N</m>,  <m>g^{-1}ng=g^{-1}n(g^{-1})^{-1} \in N</m>.  Luego, <m>g^{-1}ng = n'</m> para algún <m>n' \in N</m>. Por lo tanto, <m>n = g n' g^{-1}</m> está en <m>g N g^{-1}</m>.</p>
+           <p>(2)  <m>\Rightarrow</m> (3).  Sea <m>g \in G</m>. Como <m>gNg^{-1} \subset N</m>, solo debemos demostrar que <m>N \subset gNg^{-1}</m>. Para <m>n \in N</m>,  <m>g^{-1}ng=g^{-1}n(g^{-1})^{-1} \in N</m>.  Luego, <m>g^{-1}ng = n'</m> para algún <m>n' \in N</m>. Por lo tanto, <m>n = g n' g^{-1}</m> está en <m>g N g^{-1}</m>.
+    </p>
   
-					<p>(3) <m>\Rightarrow</m> (1). Supongamos que <m>gNg^{-1} = N</m> para todo <m>g \in G</m>. Entonces para cualquier <m>n \in N</m> existe <m>n' \in N</m> tal que <m>gng^{-1} = n'</m>.  Por lo tanto, <m>gn = n' g</m> y <m>gN \subset Ng</m>. Similarmente, <m>Ng \subset gN</m>.</p>
-				</proof>
-			</theorem>
+          <p>(3) <m>\Rightarrow</m> (1). Supongamos que <m>gNg^{-1} = N</m> para todo <m>g \in G</m>. Entonces para cualquier <m>n \in N</m> existe <m>n' \in N</m> tal que <m>gng^{-1} = n'</m>.  Por lo tanto, <m>gn = n' g</m> y <m>gN \subset Ng</m>. Similarmente, <m>Ng \subset gN</m>.
+    </p>
+        </proof>
+      </theorem>
 
-		</subsection>
+    </subsection>
 
-		<subsection xml:id="normal-subsection-factor-groups">
-			<title>Grupos cociente</title>
+    <subsection xml:id="normal-subsection-factor-groups">
+      <title>Grupos cociente</title>
 
-			<p>Si <m>N</m> es un subgrupo normal de un grupo <m>G</m>, entonces las clases laterales de <m>N</m> en <m>G</m> forman un grupo <m>G/N</m> con la operación <m>(aN) (bN) = abN</m>. Este grupo se llama <term>cociente</term><idx><h>Cociente</h><h>grupo</h></idx>  de <m>G</m> por <m>N</m>.  <notation><usage><m>G/N</m></usage><description>grupo cociente de <m>G</m> mód <m>N</m></description></notation> Nuestra primera tarea es demostrar que <m>G/N</m> es realmente un grupo.</p>  
+      <p>Si <m>N</m> es un subgrupo normal de un grupo <m>G</m>, entonces las clases laterales de <m>N</m> en <m>G</m> forman un grupo <m>G/N</m> con la operación <m>(aN) (bN) = abN</m>. Este grupo se llama <term>cociente</term><idx><h>Cociente</h><h>grupo</h></idx>  de <m>G</m> por <m>N</m>.  <notation><usage><m>G/N</m></usage><description>grupo cociente de <m>G</m> mód <m>N</m></description></notation> Nuestra primera tarea es demostrar que <m>G/N</m> es realmente un grupo.
+    </p>  
  
-			<theorem>
-				<statement>
-					<p>Sea <m>N</m> un subgrupo normal de un grupo <m>G</m>. Las clases laterales de <m>N</m> en <m>G</m> forman un grupo <m>G/N</m> de orden <m>[G:N]</m>.</p>
-				</statement>
-				<proof>
-					<p>La operación de grupo en <m>G/N</m> es <m>(a N ) (b N)= a b N</m>.  Debemos verificar que esta operación está bien definida; es decir, el producto en el grupo debe ser independiente de la elección de representantes para las clases laterales. Sean <m>aN = bN</m> y <m>cN = dN</m>. Debemos mostrar que
-						<me>(aN) (cN) = acN = bd N = (b N)(d N).</me>
-					Entonces <m>a = b n_1</m> y <m>c = d n_2</m> para algún <m>n_1</m> y algún <m>n_2</m> en <m>N</m>. Luego, 
-						<md>
-							<mrow>acN &amp; = b n_1 d n_2 N</mrow>
-							<mrow>&amp; = b n_1 d N</mrow>
-							<mrow>&amp; = b n_1 N d</mrow>
-							<mrow>&amp; = b N d</mrow>
-							<mrow>&amp; = b d N.</mrow>
-						</md>
-					El resto del teorema es fácil: <m>eN = N</m> es la identidad y <m>g^{-1} N</m> es el inverso de <m>gN</m>. El orden de <m>G/N</m> es, por supuesto, el número de clases laterales de <m>N</m> en <m>G</m>.</p>
-				</proof>
-			</theorem>
+      <theorem>
+        <statement>
+          <p>Sea <m>N</m> un subgrupo normal de un grupo <m>G</m>. Las clases laterales de <m>N</m> en <m>G</m> forman un grupo <m>G/N</m> de orden <m>[G:N]</m>.
+    </p>
+        </statement>
+        <proof>
+          <p>La operación de grupo en <m>G/N</m> es <m>(a N ) (b N)= a b N</m>.  Debemos verificar que esta operación está bien definida; es decir, el producto en el grupo debe ser independiente de la elección de representantes para las clases laterales. Sean <m>aN = bN</m> y <m>cN = dN</m>. Debemos mostrar que
+            <me>(aN) (cN) = acN = bd N = (b N)(d N)</me>.
+          Entonces <m>a = b n_1</m> y <m>c = d n_2</m> para algún <m>n_1</m> y algún <m>n_2</m> en <m>N</m>. Luego, 
+            <md>
+              <mrow>acN &amp; = b n_1 d n_2 N</mrow>
+              <mrow>&amp; = b n_1 d N</mrow>
+              <mrow>&amp; = b n_1 N d</mrow>
+              <mrow>&amp; = b N d</mrow>
+              <mrow>&amp; = b d N</mrow>
+            </md>.
+          El resto del teorema es fácil: <m>eN = N</m> es la identidad y <m>g^{-1} N</m> es el inverso de <m>gN</m>. El orden de <m>G/N</m> es, por supuesto, el número de clases laterales de <m>N</m> en <m>G</m>.
+    </p>
+        </proof>
+      </theorem>
  
-			<p>Es muy importante recordar que los elementos de un grupo cociente son  <em>conjuntos de elementos</em> en el grupo original.</p>
+      <p>Es muy importante recordar que los elementos de un grupo cociente son  <em>conjuntos de elementos</em> en el grupo original.
+    </p>
 
-			<example xml:id="example-normal-factor-s3">
-				<p>Considere el subgrupo normal de <m>S_3</m>, <m>N = \{ (1), (123), (132)  \}</m>. Las clases laterales de <m>N</m> en <m>S_3</m> son <m>N</m> y <m>(12) N</m>. El grupo cociente <m>S_3 / N</m> tiene la siguiente tabla de multiplicación.</p>
+      <example xml:id="example-normal-factor-s3">
+        <p>Considere el subgrupo normal de <m>S_3</m>, <m>N = \{ (1), (123), (132)  \}</m>. Las clases laterales de <m>N</m> en <m>S_3</m> son <m>N</m> y <m>(12) N</m>. El grupo cociente <m>S_3 / N</m> tiene la siguiente tabla de multiplicación.
+    </p>
 
-				<sidebyside width="100%"> <!-- math table -->
-					<p><me>\begin{array}{c|cc}
-						<![CDATA[& N & (12) N \\ \hline
-						N & N & (12) N \\
-						(12) N & (12) N & N]]>
-					\end{array}</me></p>
-				</sidebyside>
+        <sidebyside width="100%"> <!-- math table -->
+          <p><me>\begin{array}{c|cc}
+            <![CDATA[& N & (12) N \\ \hline
+            N & N & (12) N \\
+            (12) N & (12) N & N]]>
+          \end{array}</me></p>
+        </sidebyside>
 
-				<p>Este grupo es isomorfo a <m>{\mathbb Z}_2</m>. Al inicio, multiplicar clases laterales puede parecer complicado y extraño; sin embargo, note que  <m>S_3 / N</m> es un grupo más pequeño. El grupo cociente entrega cierta información acerca de <m>S_3</m>.  En realidad, <m>N = A_3</m>, es el conjunto de permutaciones pares, y <m>(12) N = \{ (12), (13), (23) \}</m> es el conjunto de permutaciones impares. La información capturada en <m>G/N</m> es la paridad; es decir, multiplicar dos elementos pares o dos elementos impares resulta en una permutación par, mientra que multiplicar un elemento par con un impar resulta en una permutación impar.</p>
-			</example>
+        <p>Este grupo es isomorfo a <m>{\mathbb Z}_2</m>. Al inicio, multiplicar clases laterales puede parecer complicado y extraño; sin embargo, note que  <m>S_3 / N</m> es un grupo más pequeño. El grupo cociente entrega cierta información acerca de <m>S_3</m>.  En realidad, <m>N = A_3</m>, es el conjunto de permutaciones pares, y <m>(12) N = \{ (12), (13), (23) \}</m> es el conjunto de permutaciones impares. La información capturada en <m>G/N</m> es la paridad; es decir, multiplicar dos elementos pares o dos elementos impares resulta en una permutación par, mientra que multiplicar un elemento par con un impar resulta en una permutación impar.
+    </p>
+      </example>
  
-			<example xml:id="example-normal-factor-z3">
-				<p>Considere el subgrupo normal <m>3 {\mathbb Z}</m> de <m>{\mathbb Z}</m>. Las clases laterales de <m>3 {\mathbb Z}</m> en <m>{\mathbb Z}</m> son 
-					<md>
-						<mrow>0 + 3 {\mathbb Z} &amp; = \{ \ldots, -3, 0, 3, 6, \ldots \}</mrow>
-						<mrow>1 + 3 {\mathbb Z} &amp; = \{ \ldots, -2, 1, 4, 7, \ldots \}</mrow>
-						<mrow>2 + 3 {\mathbb Z} &amp; = \{ \ldots, -1, 2, 5, 8, \ldots \}.</mrow>
-					</md>
-				El grupo <m>{\mathbb Z}/ 3 {\mathbb Z}</m> está dado por la tabla de multiplicación de más abajo.</p> 
+      <example xml:id="example-normal-factor-z3">
+        <p>Considere el subgrupo normal <m>3 {\mathbb Z}</m> de <m>{\mathbb Z}</m>. Las clases laterales de <m>3 {\mathbb Z}</m> en <m>{\mathbb Z}</m> son 
+          <md>
+            <mrow>0 + 3 {\mathbb Z} &amp; = \{ \ldots, -3, 0, 3, 6, \ldots \}</mrow>
+            <mrow>1 + 3 {\mathbb Z} &amp; = \{ \ldots, -2, 1, 4, 7, \ldots \}</mrow>
+            <mrow>2 + 3 {\mathbb Z} &amp; = \{ \ldots, -1, 2, 5, 8, \ldots \}</mrow>
+          </md>.
+        El grupo <m>{\mathbb Z}/ 3 {\mathbb Z}</m> está dado por la tabla de multiplicación de más abajo.
+    </p> 
 
-				<sidebyside width="100%"> <!-- math table -->
-					<p><me>\begin{array}{c|ccc}
-					<![CDATA[+ & 0 + 3{\mathbb Z} & 1 + 3{\mathbb Z} & 2 + 3{\mathbb Z} \\\hline
-					0 + 3{\mathbb Z} & 0 + 3{\mathbb Z} & 1 + 3{\mathbb Z} & 2 + 3{\mathbb Z} \\
-					1 + 3{\mathbb Z} & 1 + 3{\mathbb Z} & 2 + 3{\mathbb Z} & 0 + 3{\mathbb Z} \\
-					2 + 3{\mathbb Z} & 2 + 3{\mathbb Z} & 0 + 3{\mathbb Z} & 1 + 3{\mathbb Z}]]>
-					\end{array}</me></p>
-				</sidebyside>
+        <sidebyside width="100%"> <!-- math table -->
+          <p><me>\begin{array}{c|ccc}
+          <![CDATA[+ & 0 + 3{\mathbb Z} & 1 + 3{\mathbb Z} & 2 + 3{\mathbb Z} \\\hline
+          0 + 3{\mathbb Z} & 0 + 3{\mathbb Z} & 1 + 3{\mathbb Z} & 2 + 3{\mathbb Z} \\
+          1 + 3{\mathbb Z} & 1 + 3{\mathbb Z} & 2 + 3{\mathbb Z} & 0 + 3{\mathbb Z} \\
+          2 + 3{\mathbb Z} & 2 + 3{\mathbb Z} & 0 + 3{\mathbb Z} & 1 + 3{\mathbb Z}]]>
+          \end{array}</me></p>
+        </sidebyside>
 
-				<p>En general, el subgrupo <m>n {\mathbb Z}</m> de <m>{\mathbb Z}</m> es normal. Las clases laterales de <m>{\mathbb Z } / n {\mathbb Z}</m> son 
-					<md>
-						<mrow>n {\mathbb Z}</mrow>
-						<mrow>1 + n {\mathbb Z}</mrow>
-						<mrow>2 + n {\mathbb Z}</mrow>
-						<mrow>\vdots</mrow>
-						<mrow>(n-1) + n {\mathbb Z}.</mrow>
-					</md>
-				La suma de clases laterales <m>k + {\mathbb Z}</m> y <m>l + {\mathbb Z}</m> es <m>k+l + {\mathbb Z}</m>. Note que hemos escrito las clases laterales de forma aditiva, pues la operación del grupo es la adición de enteros.</p>
-			</example>
+        <p>En general, el subgrupo <m>n {\mathbb Z}</m> de <m>{\mathbb Z}</m> es normal. Las clases laterales de <m>{\mathbb Z } / n {\mathbb Z}</m> son 
+          <md>
+            <mrow>n {\mathbb Z}</mrow>
+            <mrow>1 + n {\mathbb Z}</mrow>
+            <mrow>2 + n {\mathbb Z}</mrow>
+            <mrow>\vdots</mrow>
+            <mrow>(n-1) + n {\mathbb Z}</mrow>
+          </md>.
+        La suma de clases laterales <m>k + {\mathbb Z}</m> y <m>l + {\mathbb Z}</m> es <m>k+l + {\mathbb Z}</m>. Note que hemos escrito las clases laterales de forma aditiva, pues la operación del grupo es la adición de enteros.
+    </p>
+      </example>
 
-			<example xml:id="example-normal-factor_dn">
-				<p>Considere el grupo dihedral <m>D_n</m>, generado por dos elementos <m>r</m> y <m>s</m>, que satisfacen las relaciones 
-					<md>
-						<mrow>r^n &amp; = \identity</mrow>
-						<mrow>s^2 &amp; = \identity</mrow>
-						<mrow>srs &amp; = r^{-1}.</mrow>
-					</md>
-				El elemento <m>r</m> en realidad genera el subgrupo cíclico de las rotaciones, <m>R_n</m>, en <m>D_n</m>.  Como <m>srs^{-1} = srs = r^{-1} \in R_n</m>, el grupo de rotaciones es un subgrupo normal de <m>D_n</m>; por lo tanto, <m>D_n / R_n</m> es un grupo.  Como hay exactamente dos elementos en este grupo, debe ser isomorfo a <m>{\mathbb Z}_2</m>.</p>
-			</example>
+      <example xml:id="example-normal-factor_dn">
+        <p>Considere el grupo dihedral <m>D_n</m>, generado por dos elementos <m>r</m> y <m>s</m>, que satisfacen las relaciones 
+          <md>
+            <mrow>r^n &amp; = \identity</mrow>
+            <mrow>s^2 &amp; = \identity</mrow>
+            <mrow>srs &amp; = r^{-1}</mrow>
+          </md>.
+        El elemento <m>r</m> en realidad genera el subgrupo cíclico de las rotaciones, <m>R_n</m>, en <m>D_n</m>.  Como <m>srs^{-1} = srs = r^{-1} \in R_n</m>, el grupo de rotaciones es un subgrupo normal de <m>D_n</m>; por lo tanto, <m>D_n / R_n</m> es un grupo.  Como hay exactamente dos elementos en este grupo, debe ser isomorfo a <m>{\mathbb Z}_2</m>.
+    </p>
+      </example>
 
-		</subsection>
-	</section>
+    </subsection>
+  </section>
 
-	<section xml:id="section-simplicity-of-an">
-		<title>La Simplicidad del Grupo Alternante</title>
+  <section xml:id="section-simplicity-of-an">
+    <title>La Simplicidad del Grupo Alternante</title>
 
-		<introduction>
+    <introduction>
  
-			<p>De especial interés resultan ser los grupos que no tienen subgrupos normales propios no triviales. Tales grupos se llaman <term>grupos simples</term><idx><h>Simple</h><h>grupo</h></idx><idx><h>Grupo simple</h></idx>.  Por supuesto, ya tenemos una clase completa de grupos simples, <m>{\mathbb Z}_p</m>, donde <m>p</m> es primo.  Estos grupos son trivialmente simples pues no tienen otro subgrupo propio que no sea solamente la identidad. Otros ejemplos de grupos simples no son tan fáciles de encontrar. Podemos, sin embargo, mostrar que el grupo alternante, <m>A_n</m>, es simple para <m>n \geq 5</m>. La demostración de este resultado requiere de varios lemas.</p>
-	 
-			<lemma xml:id="lemma-1-normal-3cycle">
-				<statement>
-					<p>El grupo alternante <m>A_n</m> es generado por <m>3</m>-ciclos para <m>n \geq 3</m>.</p>
-				</statement>
-				<proof>
-					<p>Para mostrar que los 3-ciclos generan <m>A_n</m>, solo necesitamos mostrar que cualquier par de transposiciones puede ser escrito como el producto de 3-ciclos. Como <m>(a b) = (b a)</m>, todo par de transposiciones debe ser uno de los siguientes: 
-						<md>
-							<mrow>(ab)(ab) &amp; = \identity</mrow>
-							<mrow>(ab)(cd) &amp; = (acb)(acd)</mrow>
-							<mrow>(ab)(ac) &amp; = (acb).</mrow>
-						</md></p>
-				</proof>
-			</lemma>
+      <p>De especial interés resultan ser los grupos que no tienen subgrupos normales propios no triviales. Tales grupos se llaman <term>grupos simples</term><idx><h>Simple</h><h>grupo</h></idx><idx><h>Grupo simple</h></idx>.  Por supuesto, ya tenemos una clase completa de grupos simples, <m>{\mathbb Z}_p</m>, donde <m>p</m> es primo.  Estos grupos son trivialmente simples pues no tienen otro subgrupo propio que no sea solamente la identidad. Otros ejemplos de grupos simples no son tan fáciles de encontrar. Podemos, sin embargo, mostrar que el grupo alternante, <m>A_n</m>, es simple para <m>n \geq 5</m>. La demostración de este resultado requiere de varios lemas.
+    </p>
+   
+      <lemma xml:id="lemma-1-normal-3cycle">
+        <statement>
+          <p>El grupo alternante <m>A_n</m> es generado por <m>3</m>-ciclos para <m>n \geq 3</m>.
+    </p>
+        </statement>
+        <proof>
+          <p>Para mostrar que los 3-ciclos generan <m>A_n</m>, solo necesitamos mostrar que cualquier par de transposiciones puede ser escrito como el producto de 3-ciclos. Como <m>(a b) = (b a)</m>, todo par de transposiciones debe ser uno de los siguientes: 
+            <md>
+              <mrow>(ab)(ab) &amp; = \identity</mrow>
+              <mrow>(ab)(cd) &amp; = (acb)(acd)</mrow>
+              <mrow>(ab)(ac) &amp; = (acb)</mrow>
+            </md>.
+    </p>
+        </proof>
+      </lemma>
 
-			<lemma xml:id="lemma-2-normal-3cycle">
-				<statement>
-					<p>Sea <m>N</m> un subgrupo normal de <m>A_n</m>, donde <m>n \geq 3</m>. Si <m>N</m> contiene un 3-ciclo, entonces <m>N = A_n</m>.</p>
-				</statement>
-				<proof>
-					<p>Demostraremos primero que <m>A_n</m> es generado por 3-ciclos de la forma específica <m>(ijk)</m>, donde <m>i</m> y <m>j</m> están fijos en <m>\{ 1, 2, \ldots, n \}</m> y hacemos variar <m>k</m>. Cada 3-ciclo es el producto de 3-ciclos de este tipo, pues
-						<md>
-							<mrow>(i a j) &amp; = (i j a)^2 </mrow>
-							<mrow>(i a b) &amp; = (i j b) (i j a)^2</mrow>
-							<mrow>(j a b) &amp; = (i j b)^2 (i j a)</mrow>
-							<mrow>(a b c) &amp; = (i j a)^2 (i j c) (i j b)^2 (i j a).</mrow>
-						</md>
-					Ahora supongamos que <m>N</m> es un subgrupo normal no trivial de <m>A_n</m> para <m>n  \geq 3</m>  tal que <m>N</m> contiene un 3-ciclo de la forma <m>(i j a)</m>. Usando la normalidad de <m>N</m>, vemos que 
-						<me>[(i j)(a k)](i j a)^2 [(i j)(a k)]^{-1} = (i j k)</me>
-					está en <m>N</m>. Luego, <m>N</m> debe contener todos los 3-ciclos <m>(i j k)</m>  para <m>1 \leq k \leq n</m>. Por el <xref ref="lemma-1-normal-3cycle" />, estos 3-ciclos generan <m>A_n</m>; luego, <m>N = A_n</m>.</p>
-				</proof>
-			</lemma>
-	 
-			<lemma xml:id="lemma-3-normal-3cycle">
-				<statement>
-					<p>Para <m>n \geq 5</m>, todo subgrupo normal no trivial <m>N</m> de <m>A_n</m> contiene un 3-ciclo.</p>
-				</statement>
-				<proof>
-					<p>Sea <m>\sigma</m> un elemento arbitrario, distinto de la identidad,en un subgrupo normal <m>N</m>. Existen varias posibles estructuras de ciclos para <m>\sigma</m>.
-						<ul>
-	 
-							<li><p><m>\sigma</m> es un 3-ciclo.</p></li>
-	 
-							<li><p><m>\sigma</m> es el producto de ciclos disjuntos, <m>\sigma = \tau(a_1 a_2 \cdots a_r) \in N</m>, con <m>r \gt 3</m>.</p></li>
-	 
-							<li><p><m>\sigma</m> es el producto de ciclos disjuntos, <m>\sigma = \tau(a_1 a_2 a_3)(a_4 a_5 a_6)</m>.</p></li>
+      <lemma xml:id="lemma-2-normal-3cycle">
+        <statement>
+          <p>Sea <m>N</m> un subgrupo normal de <m>A_n</m>, donde <m>n \geq 3</m>. Si <m>N</m> contiene un 3-ciclo, entonces <m>N = A_n</m>.
+    </p>
+        </statement>
+        <proof>
+          <p>Demostraremos primero que <m>A_n</m> es generado por 3-ciclos de la forma específica <m>(ijk)</m>, donde <m>i</m> y <m>j</m> están fijos en <m>\{ 1, 2, \ldots, n \}</m> y hacemos variar <m>k</m>. Cada 3-ciclo es el producto de 3-ciclos de este tipo, pues
+            <md>
+              <mrow>(i a j) &amp; = (i j a)^2 </mrow>
+              <mrow>(i a b) &amp; = (i j b) (i j a)^2</mrow>
+              <mrow>(j a b) &amp; = (i j b)^2 (i j a)</mrow>
+              <mrow>(a b c) &amp; = (i j a)^2 (i j c) (i j b)^2 (i j a)</mrow>
+            </md>.
+          Ahora supongamos que <m>N</m> es un subgrupo normal no trivial de <m>A_n</m> para <m>n  \geq 3</m>  tal que <m>N</m> contiene un 3-ciclo de la forma <m>(i j a)</m>. Usando la normalidad de <m>N</m>, vemos que 
+            <me>[(i j)(a k)](i j a)^2 [(i j)(a k)]^{-1} = (i j k)</me>
+          está en <m>N</m>. Luego, <m>N</m> debe contener todos los 3-ciclos <m>(i j k)</m>  para <m>1 \leq k \leq n</m>. Por el <xref ref="lemma-1-normal-3cycle" />, estos 3-ciclos generan <m>A_n</m>; luego, <m>N = A_n</m>.
+    </p>
+        </proof>
+      </lemma>
+   
+      <lemma xml:id="lemma-3-normal-3cycle">
+        <statement>
+          <p>Para <m>n \geq 5</m>, todo subgrupo normal no trivial <m>N</m> de <m>A_n</m> contiene un 3-ciclo.
+    </p>
+        </statement>
+        <proof>
+          <p>Sea <m>\sigma</m> un elemento arbitrario, distinto de la identidad,en un subgrupo normal <m>N</m>. Existen varias posibles estructuras de ciclos para <m>\sigma</m>.
+            <ul>
+   
+              <li><p><m>\sigma</m> es un 3-ciclo.
+    </p></li>
+   
+              <li><p><m>\sigma</m> es el producto de ciclos disjuntos, <m>\sigma = \tau(a_1 a_2 \cdots a_r) \in N</m>, con <m>r \gt 3</m>.
+    </p></li>
+   
+              <li><p><m>\sigma</m> es el producto de ciclos disjuntos, <m>\sigma = \tau(a_1 a_2 a_3)(a_4 a_5 a_6)</m>.
+    </p></li>
 
-							<li><p><m>\sigma = \tau(a_1 a_2 a_3)</m>, donde <m>\tau</m> es el producto de 2-ciclos disjuntos.</p></li>
+              <li><p><m>\sigma = \tau(a_1 a_2 a_3)</m>, donde <m>\tau</m> es el producto de 2-ciclos disjuntos.
+    </p></li>
 
-							<li><p><m>\sigma = \tau (a_1 a_2) (a_3 a_4)</m>, donde <m>\tau</m> es el producto de un número par de 2-ciclos disjuntos.</p></li>
-	 
-						</ul>
-					Si <m>\sigma</m> es un 3-ciclo, entonces estamos listos. Si <m>N</m> contiene un producto de ciclos disjuntos, <m>\sigma</m>, y al menos uno de esos ciclos tiene largo mayor a 3, digamos <m>\sigma = \tau(a_1 a_2 \cdots a_r)</m>, entonces   
-						<me>(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1}</me>
-					está en <m>N</m> pues <m>N</m> es normal; luego,
-						<me>\sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1}</me>
-					también está en <m>N</m>. Como
-						<md>
-							<mrow>\sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1} &amp; = \sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_3 a_2)</mrow>
-							<mrow>&amp; = (a_1 a_2 \cdots a_r)^{-1}\tau^{-1}(a_1 a_2 a_3) \tau(a_1 a_2 \cdots a_r)(a_1 a_3 a_2)</mrow>
-							<mrow>&amp; = (a_1 a_r a_{r-1} \cdots a_2 )(a_1 a_2 a_3) (a_1 a_2 \cdots a_r)(a_1 a_3 a_2)</mrow>
-							<mrow>&amp; = (a_1 a_3 a_r),</mrow>
-						</md>
-					<m>N</m> debe contener un 3-ciclo; luego, <m>N = A_n</m>.</p>
+              <li><p><m>\sigma = \tau (a_1 a_2) (a_3 a_4)</m>, donde <m>\tau</m> es el producto de un número par de 2-ciclos disjuntos.
+    </p></li>
+   
+            </ul>
+          Si <m>\sigma</m> es un 3-ciclo, entonces estamos listos. Si <m>N</m> contiene un producto de ciclos disjuntos, <m>\sigma</m>, y al menos uno de esos ciclos tiene largo mayor a 3, digamos <m>\sigma = \tau(a_1 a_2 \cdots a_r)</m>, entonces   
+            <me>(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1}</me>
+          está en <m>N</m> pues <m>N</m> es normal; luego,
+            <me>\sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1}</me>
+          también está en <m>N</m>. Como
+            <md>
+              <mrow>\sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1} &amp; = \sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_3 a_2)</mrow>
+              <mrow>&amp; = (a_1 a_2 \cdots a_r)^{-1}\tau^{-1}(a_1 a_2 a_3) \tau(a_1 a_2 \cdots a_r)(a_1 a_3 a_2)</mrow>
+              <mrow>&amp; = (a_1 a_r a_{r-1} \cdots a_2 )(a_1 a_2 a_3) (a_1 a_2 \cdots a_r)(a_1 a_3 a_2)</mrow>
+              <mrow>&amp; = (a_1 a_3 a_r),</mrow>
+            </md>
+          <m>N</m> debe contener un 3-ciclo; luego, <m>N = A_n</m>.
+    </p>
 
-					<p>Ahora supongamos que <m>N</m> contiene un producto disjunto de la forma
-						<me>\sigma = \tau(a_1 a_2 a_3)(a_4 a_5 a_6).</me>
-					Entonces
-						<me>\sigma^{-1}(a_1 a_2 a_4)\sigma(a_1 a_2 a_4)^{-1} \in N</me>
-					pues
-						<me>(a_1 a_2 a_4)\sigma(a_1 a_2 a_4)^{-1} \in N.</me>
-					Así
-						<md>
-							<mrow>\sigma^{-1}(a_1 a_2 a_4) \sigma(a_1 a_2 a_4)^{-1} &amp; = [ \tau (a_1 a_2 a_3) (a_4 a_5 a_6) ]^{-1}  (a_1 a_2 a_4) \tau (a_1 a_2 a_3) (a_4 a_5 a_6) (a_1 a_2 a_4)^{-1}</mrow>
-							<mrow>&amp; = (a_4 a_6 a_5) (a_1 a_3 a_2) \tau^{-1}(a_1 a_2 a_4) \tau (a_1 a_2 a_3) (a_4 a_5 a_6) (a_1 a_4 a_2)</mrow>
-							<mrow>&amp; = (a_4 a_6 a_5)(a_1 a_3 a_2) (a_1 a_2 a_4) (a_1 a_2 a_3) (a_4 a_5 a_6)(a_1 a_4 a_2)</mrow>
-							<mrow>&amp; = (a_1 a_4 a_2 a_6 a_3).</mrow>
-						</md>
-					Así <m>N</m> contiene un ciclo disjunto de largo mayor a 3, y podemos aplicar el caso anterior.</p>
+          <p>Ahora supongamos que <m>N</m> contiene un producto disjunto de la forma
+            <me>\sigma = \tau(a_1 a_2 a_3)(a_4 a_5 a_6)</me>.
+          Entonces
+            <me>\sigma^{-1}(a_1 a_2 a_4)\sigma(a_1 a_2 a_4)^{-1} \in N</me>
+          pues
+            <me>(a_1 a_2 a_4)\sigma(a_1 a_2 a_4)^{-1} \in N</me>.
+          Así
+            <md>
+              <mrow>\sigma^{-1}(a_1 a_2 a_4) \sigma(a_1 a_2 a_4)^{-1} &amp; = [ \tau (a_1 a_2 a_3) (a_4 a_5 a_6) ]^{-1}  (a_1 a_2 a_4) \tau (a_1 a_2 a_3) (a_4 a_5 a_6) (a_1 a_2 a_4)^{-1}</mrow>
+              <mrow>&amp; = (a_4 a_6 a_5) (a_1 a_3 a_2) \tau^{-1}(a_1 a_2 a_4) \tau (a_1 a_2 a_3) (a_4 a_5 a_6) (a_1 a_4 a_2)</mrow>
+              <mrow>&amp; = (a_4 a_6 a_5)(a_1 a_3 a_2) (a_1 a_2 a_4) (a_1 a_2 a_3) (a_4 a_5 a_6)(a_1 a_4 a_2)</mrow>
+              <mrow>&amp; = (a_1 a_4 a_2 a_6 a_3)</mrow>
+            </md>.
+          Así <m>N</m> contiene un ciclo disjunto de largo mayor a 3, y podemos aplicar el caso anterior.
+    </p>
 
-					<p>Supongamos que <m>N</m> es un producto disjunto de la forma <m>\sigma = \tau(a_1 a_2 a_3)</m>, donde <m>\tau</m> es el producto disjunto de 2-ciclos. Como <m>\sigma \in N</m>, <m>\sigma^2 \in N</m>, y
-						<md>
-							<mrow>\sigma^2 &amp; = \tau(a_1 a_2 a_3)\tau(a_1 a_2 a_3)</mrow>
-							<mrow>&amp; =(a_1 a_3 a_2).</mrow>
-						</md>
-					Así <m>N</m> contiene un 3-ciclo.</p>
+          <p>Supongamos que <m>N</m> es un producto disjunto de la forma <m>\sigma = \tau(a_1 a_2 a_3)</m>, donde <m>\tau</m> es el producto disjunto de 2-ciclos. Como <m>\sigma \in N</m>, <m>\sigma^2 \in N</m>, y
+            <md>
+              <mrow>\sigma^2 &amp; = \tau(a_1 a_2 a_3)\tau(a_1 a_2 a_3)</mrow>
+              <mrow>&amp; =(a_1 a_3 a_2)</mrow>
+            </md>.
+          Así <m>N</m> contiene un 3-ciclo.
+    </p>
 
-					<p>El único caso que nos queda es un producto disjunto de la forma
-						<me>\sigma = \tau (a_1 a_2) (a_3 a_4),</me>
-					donde <m>\tau</m> es el producto de un número par de 2-ciclos disjuntos. Pero 
-						<me>\sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1}</me>
-					está en <m>N</m> pues <m>(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1}</m> está en <m>N</m>; de manera que 
-						<md>
-							<mrow>\sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1} &amp; = \tau^{-1} (a_1 a_2) (a_3 a_4) (a_1 a_2 a_3)  \tau (a_1 a_2)(a_3 a_4)(a_1 a_2 a_3)^{-1}</mrow>
-							<mrow>&amp; = (a_1 a_3)(a_2 a_4).</mrow>
-						</md>
-					Como  <m>n \geq 5</m>, podemos encontrar <m>b \in \{1, 2, \ldots, n \}</m> de manera que <m>b \neq a_1, a_2, a_3, a_4</m>. Sea <m>\mu = (a_1 a_3 b)</m>. Entonces
-						<me>\mu^{-1} (a_1 a_3)(a_2 a_4) \mu (a_1 a_3)(a_2 a_4) \in N</me>
-					y
-						<md>
-							<mrow>\mu^{-1} (a_1 a_3)(a_2 a_4) \mu (a_1 a_3)(a_2 a_4) &amp; = (a_1 b a_3)(a_1 a_3)(a_2 a_4) (a_1 a_3 b)(a_1 a_3)(a_2 a_4)</mrow>
-							<mrow>&amp; = (a_1 a_3 b ).</mrow>
-						</md>
-					Por lo tanto, <m>N</m> contiene un 3-ciclo. Esto completa la demostración del lema.</p>
-				</proof>
-			</lemma>
+          <p>El único caso que nos queda es un producto disjunto de la forma
+            <me>\sigma = \tau (a_1 a_2) (a_3 a_4)</me>,
+          donde <m>\tau</m> es el producto de un número par de 2-ciclos disjuntos. Pero 
+            <me>\sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1}</me>
+          está en <m>N</m> pues <m>(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1}</m> está en <m>N</m>; de manera que 
+            <md>
+              <mrow>\sigma^{-1}(a_1 a_2 a_3)\sigma(a_1 a_2 a_3)^{-1} &amp; = \tau^{-1} (a_1 a_2) (a_3 a_4) (a_1 a_2 a_3)  \tau (a_1 a_2)(a_3 a_4)(a_1 a_2 a_3)^{-1}</mrow>
+              <mrow>&amp; = (a_1 a_3)(a_2 a_4)</mrow>
+            </md>.
+          Como  <m>n \geq 5</m>, podemos encontrar <m>b \in \{1, 2, \ldots, n \}</m> de manera que <m>b \neq a_1, a_2, a_3, a_4</m>. Sea <m>\mu = (a_1 a_3 b)</m>. Entonces
+            <me>\mu^{-1} (a_1 a_3)(a_2 a_4) \mu (a_1 a_3)(a_2 a_4) \in N</me>
+          y
+            <md>
+              <mrow>\mu^{-1} (a_1 a_3)(a_2 a_4) \mu (a_1 a_3)(a_2 a_4) &amp; = (a_1 b a_3)(a_1 a_3)(a_2 a_4) (a_1 a_3 b)(a_1 a_3)(a_2 a_4)</mrow>
+              <mrow>&amp; = (a_1 a_3 b )</mrow>
+            </md>.
+          Por lo tanto, <m>N</m> contiene un 3-ciclo. Esto completa la demostración del lema.
+    </p>
+        </proof>
+      </lemma>
 
-	<!-- TWJ - 1/13/2014 -->
-	<!-- nontrivial added to the lemma statement.  Suggested by M. Faucette. -->
-	 
-			<theorem xml:id="theorem-an-simple">
-				<statement>
-					<p>El grupo alternante, <m>A_n</m>, es simple para <m>n \geq 5</m>.</p>
-				</statement>
-				<proof>
-					<p>Sea <m>N</m> un subgrupo normal no trivial de <m>A_n</m>. Por el <xref ref="lemma-3-normal-3cycle" />, <m>N</m> contiene un 3-ciclo. Por el <xref ref="lemma-2-normal-3cycle" />, <m>N = A_n</m>; por lo tanto, <m>A_n</m> no contiene ningún subgrupo normal que sea propio y no trivial para <m>n \geq 5</m>.</p>
-				</proof> 
-			</theorem>
+  <!-- TWJ - 1/13/2014 -->
+  <!-- nontrivial added to the lemma statement.  Suggested by M. Faucette. -->
+   
+      <theorem xml:id="theorem-an-simple">
+        <statement>
+          <p>El grupo alternante, <m>A_n</m>, es simple para <m>n \geq 5</m>.
+    </p>
+        </statement>
+        <proof>
+          <p>Sea <m>N</m> un subgrupo normal no trivial de <m>A_n</m>. Por el <xref ref="lemma-3-normal-3cycle" />, <m>N</m> contiene un 3-ciclo. Por el <xref ref="lemma-2-normal-3cycle" />, <m>N = A_n</m>; por lo tanto, <m>A_n</m> no contiene ningún subgrupo normal que sea propio y no trivial para <m>n \geq 5</m>.
+    </p>
+        </proof> 
+      </theorem>
 
-			<paragraphs>
-				<title>Sage</title>
-				<p>Sage puede determinar fácilmente si un subgrupo es normal o no. Si lo es, puede crear el grupo cociente.  Pero la construcción entrega un nuevo grupo de permutaciones, ismomorfo al grupo cociente, de manera que su utilidad es limitada.</p>
-			</paragraphs>
+      <paragraphs>
+        <title>Sage</title>
+        <p>Sage puede determinar fácilmente si un subgrupo es normal o no. Si lo es, puede crear el grupo cociente.  Pero la construcción entrega un nuevo grupo de permutaciones, ismomorfo al grupo cociente, de manera que su utilidad es limitada.
+    </p>
+      </paragraphs>
 
-		</introduction>
+    </introduction>
 
-		<subsection xml:id="normal-subsection-historical-note">
-			<title>Nota Histórica</title>
-				<p>Uno de los principales problemas de la teoría de grupos finitos ha sido el de clasificar todos los grupos finitos simples<idx><h>Simple</h><h>grupo</h></idx>. Este problema tiene más de un siglo y recién fue resuelto en las últimas décadas del siglo XX.  En cierto sentido, los grupos finitos simples son los bloques para construir todos los grupos finitos. Los primeros grupos simples no abelianos en ser descubiertos fueron los grupos alternantes. Galois fue el primero en demostrar que <m>A_5</m> era simple. Más tarde, matemáticos tales como C. Jordan<idx><h>Jordan, C.</h></idx> y L. E. Dickson<idx><h>Dickson, L. E.</h></idx> encontraron varias familias infinitas de grupos de matrices que eran simples. Otras familias de grupos simples fueron descubiertas en la década de 1950.  Alrededor del 1900, William Burnside<idx><h>Burnside, William</h></idx> conjecturó que todos los grupos simples no abelianos debían tener orden par. En 1963, W. Feit<idx><h>Feit, W.</h></idx> y J. Thompson<idx><h>Thompson, J.</h></idx> demostraron la conjetura de Burnside y publicaron sus resultados en el trabajo <q>Solvability of Groups of Odd Order,</q> que apareció en el <booktitle>Pacific Journal of Mathematics</booktitle>. Su demostración, de unas 250 páginas, dio impulso a un programa en los 1960s y los 1970s para clasificar todos los grupos finitos simples.  Daniel Gorenstein<idx><h>Gorenstein, Daniel</h></idx> fue el organizador de este notable esfuerzo. Uno de los últimos grupos simples fue el <q>Monster,</q> descubierto por R. Greiss<idx><h>Greiss, R.</h></idx>. El Monster, un grupo de matrices de 196,833<m>\times</m>196,833, es uno de  los 26 grupos simples esporádicos, o especiales. Estos grupos simples esporádicos son grupos que no calzan en ninguna familia infinita de grupos simples. Algunos de los grupos esporádicos juegan un rol importante en la física.</p>
+    <subsection xml:id="normal-subsection-historical-note">
+      <title>Nota Histórica</title>
+        <p>Uno de los principales problemas de la teoría de grupos finitos ha sido el de clasificar todos los grupos finitos simples<idx><h>Simple</h><h>grupo</h></idx>. Este problema tiene más de un siglo y recién fue resuelto en las últimas décadas del siglo XX.  En cierto sentido, los grupos finitos simples son los bloques para construir todos los grupos finitos. Los primeros grupos simples no abelianos en ser descubiertos fueron los grupos alternantes. Galois fue el primero en demostrar que <m>A_5</m> era simple. Más tarde, matemáticos tales como C. Jordan<idx><h>Jordan, C.</h></idx> y L. E. Dickson<idx><h>Dickson, L. E.</h></idx> encontraron varias familias infinitas de grupos de matrices que eran simples. Otras familias de grupos simples fueron descubiertas en la década de 1950.  Alrededor del 1900, William Burnside<idx><h>Burnside, William</h></idx> conjecturó que todos los grupos simples no abelianos debían tener orden par. En 1963, W. Feit<idx><h>Feit, W.</h></idx> y J. Thompson<idx><h>Thompson, J.</h></idx> demostraron la conjetura de Burnside y publicaron sus resultados en el trabajo <q>Solvability of Groups of Odd Order,</q> que apareció en el <booktitle>Pacific Journal of Mathematics</booktitle>. Su demostración, de unas 250 páginas, dio impulso a un programa en los 1960s y los 1970s para clasificar todos los grupos finitos simples.  Daniel Gorenstein<idx><h>Gorenstein, Daniel</h></idx> fue el organizador de este notable esfuerzo. Uno de los últimos grupos simples fue el <q>Monster,</q> descubierto por R. Greiss<idx><h>Greiss, R.</h></idx>. El Monster, un grupo de matrices de 196,833<m>\times</m>196,833, es uno de  los 26 grupos simples esporádicos, o especiales. Estos grupos simples esporádicos son grupos que no calzan en ninguna familia infinita de grupos simples. Algunos de los grupos esporádicos juegan un rol importante en la física.
+    </p>
 
-		</subsection> 
+    </subsection> 
 
-	</section>
+  </section>
  
-	<exercises xml:id="exercises-normal">
-		<title>Ejercicios</title>
-	
-		<exercise number="1">
-			<statement>
-				<p>Para cada uno de los siguientes grupos <m>G</m>, determine si es que <m>H</m> es un subgrupo normal de <m>G</m>. Si <m>H</m> es un subgrupo normal, escriba una tabla de Cayley para el grupo cociente <m>G/H</m>.
-					<ol>
-	 
-						<li><p><m>G = S_4</m> y <m>H = A_4</m></p></li>
-	
-						<li><p><m>G = A_5</m> y <m>H = \{ (1), (123), (132) \}</m></p></li>
-						 
-						<li><p><m>G = S_4</m> y <m>H = D_4</m></p></li>
-						 
-						<li><p><m>G = Q_8</m> y <m>H = \{ 1, -1, I, -I \}</m></p></li>
-						 
-						<li><p><m>G = {\mathbb Z}</m> y <m>H = 5 {\mathbb Z}</m></p></li>
-						 
-					</ol></p>
-			</statement>
-			<hint>
-				<p>(a) <me>\begin{array}{c|cc}
-						&amp; A_4 &amp; (12)A_4 \\ \hline
-						A_4 &amp; A_4 &amp; (12) A_4 \\
-						(12) A_4 &amp; (12) A_4 &amp; A_4
-						\end{array}</me></p>
-	
-				<p>(c) <m>D_4</m> no es normal en <m>S_4</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="2">
-			<statement>
-				<p>Encuentre todos los subgrupos de <m>D_4</m>. ¿Cuáles subgrupos son normales? ¿Cuáles son todos los grupos cociente de <m>D_4</m> salvo isomorfismo?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="3">
-			<statement>
-				<p>Encuentre todos los subgrupos del grupo de cuaterniones, <m>Q_8</m>. ¿Cuáles subgrupos son normales? ¿Cuáles son todos los grupos cociente de <m>Q_8</m> salvo isomorfismo?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="4">
-			<statement>
-				<p>Sea <m>T</m> el grupo de matrices triangulares superiores no singulares de <m>2 \times 2</m> con coeficientes en <m>{\mathbb R}</m>; es decir, matrices de la forma
-					<me>\begin{pmatrix}
-					a &amp; b \\
-					0 &amp; c
-					\end{pmatrix},</me>
-				donde <m>a</m>, <m>b</m>, <m>c \in {\mathbb R}</m> y <m>ac \neq 0</m>. Sea <m>U</m> el conjunto de matrices de la forma 
-					<me>\begin{pmatrix}
-					1 &amp; x \\
-					0 &amp; 1
-					\end{pmatrix},</me>
-				donde <m>x \in {\mathbb R}</m>.
-					<ol>
-					 
-						<li><p>Muestre que <m>U</m> es un subgrupo de <m>T</m>.</p></li>
-						 
-						<li><p>Demuestre que <m>U</m> es abeliano.</p></li>
-						 
-						<li><p>Demuestre que <m>U</m> es normal en <m>T</m>.</p></li>
-						 
-						<li><p>Muestre que <m>T/U</m> es abeliano.</p></li>
-						 
-						<li><p>¿Es <m>T</m> normal en <m>GL_2( {\mathbb R})</m>?</p></li>
-					 
-					</ol></p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="5">
-			<statement>
-				<p>Muestre que la intersección de dos subgrupos normales es un subgrupo normal.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="6">
-			<statement>
-				<p>Si <m>G</m> es abeliano, demuestre que <m>G/H</m> también es abeliano.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="7">
-			<statement>
-				<p>Demuestre o refute: Si <m>H</m> es un subgrupo normal de <m>G</m> tal que <m>H</m> y <m>G/H</m> son abelianos, entonces <m>G</m> es abeliano.</p>
-			</statement>
-			
-		</exercise>
-	
-	
-		<todo>Expand the solution to #8.</todo>
-		<exercise number="8">
-			<statement>
-				<p>Si <m>G</m> es cíclico, demuestre que <m>G/H</m> también es cíclico.</p>
-			</statement>
-			<hint>
-				<p>Si <m>a \in G</m> es un generador para <m>G</m>, entonces <m>aH</m> es un generador para <m>G/H</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="9">
-			<statement>
-				<p>Demuestre o refute: Si <m>H</m> y <m>G/H</m> son cíclicos, entonces <m>G</m> es cíclico.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="10">
-			<statement>
-				<p>Sea <m>H</m> un subgrupo de índice 2 de un grupo <m>G</m>. Demuestre que <m>H</m> es normal en <m>G</m>. Concluya que <m>S_n</m> no es simple para <m>n \geq 3</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="11" xml:id="exercise-normal-one-subgroup">
-			<statement>
-				<p>Si un grupo <m>G</m> tiene exactemente un subgrupo <m>H</m> de orden <m>k</m>, demuestre que <m>H</m> es normal en <m>G</m>.</p>
-			</statement>
-			<hint>
-				<p>Para cualquier <m>g \in G</m>, muestre que la función <m>i_g : G \to G</m> definida como <m>i_g : x \mapsto gxg^{-1}</m> es un isomorfismo de <m>G</m> en sí mismo.  Luego considere <m>i_g(H)</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="12">
-			<statement>
-				<p>Defina el <term>centralizador</term> de un elemento <m>g</m> en un grupo <m>G</m> como el conjunto
-					<me>C(g) = \{ x \in G : xg = gx \}.</me>
-				Muestre que <m>C(g)</m> es un subgrupo de <m>G</m>.  Si <m>g</m> genera un subgrupo normal de <m>G</m>, demuestre que <m>C(g)</m> es normal en <m>G</m>.</p>
-			</statement>
-			<hint>
-				<p>Supongamos que <m>\langle g \rangle</m> es normal en <m>G</m> y sea <m>y</m> un elemento arbitrario de <m>G</m>.  Si <m>x \in C(g)</m>, debemos mostrar que <m>y x y^{-1}</m> también está en <m>C(g)</m>.  Muestre que <m>(y x y^{-1}) g = g (y x y^{-1})</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="13" xml:id="exercise-normal-center">
-			<statement>
-				<p>Recuerde que el <term>centro</term> de un grupo <m>G</m> es el conjunto 
-					<me>Z(G) = \{ x \in G : xg = gx \text{ para todo } g \in G \}.</me>
-					<ol>
-				 
-						<li><p>Calcule el centro de <m>S_3</m>.</p></li>
-						 
-						<li><p>Calcule el centro de <m>GL_2 ( {\mathbb R} )</m>.</p></li>
-						 
-						<li><p>Muestre que el centro de cualquier grupo <m>G</m> es un subgrupo normal de <m>G</m>. </p></li>
-						 
-						<li><p>Si <m>G / Z(G)</m> es cíclico, demuestre que <m>G</m> es abeliano.</p></li>
-						 
-					</ol></p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="14" xml:id="exercise-normal-commutator">
-			<statement>
-				<p>Sea <m>G</m> un grupo y sea <m>G' = \langle aba^{- 1} b^{-1} \rangle</m>; es decir, <m>G'</m> es el subgrupo de todos los productos finitos de elementos en 
-				<m>G</m> de la forma <m>aba^{-1}b^{-1}</m>.  El subgrupo <m>G'</m> se llama <term>subgrupo conmutador</term> de <m>G</m>. <notation><usage>G'</usage><description>subgrupo conmutador de <m>G</m></description></notation>
-					<ol>
-				 
-						<li><p>Muestre que <m>G'</m> es un subgrupo normal de <m>G</m>.</p></li>
-	
-						<li><p>Sea <m>N</m> un subgrupo normal de <m>G</m>. Demuestre que <m>G/N</m> es abeliano si y solo si <m>N</m> contiene al subgrupo conmutador de <m>G</m>.</p></li>
-				 
-					</ol></p>
-			</statement>
-			<hint>
-				<p>(a) Sean <m>g \in G</m> y <m>h \in G'</m>. Si <m>h = aba^{-1}b^{-1}</m>, entonces 
-						<md>
-							<mrow>ghg^{-1} &amp; = gaba^{-1}b^{-1}g^{-1}</mrow>
-							<mrow>&amp; = (gag^{-1})(gbg^{-1})(ga^{-1}g^{-1})(gb^{-1}g^{-1})</mrow>
-							<mrow>&amp; = (gag^{-1})(gbg^{-1})(gag^{-1})^{-1}(gbg^{-1})^{-1}.</mrow>
-						</md>
-					También debemos demostrar que si <m>h = h_1 \cdots h_n</m> with <m>h_i = a_i b_i a_i^{-1} b_i^{-1}</m>, entonces <m>ghg^{-1}</m> es un producto de elementos del mismo tipo.  Pero, <m>ghg^{-1} = g h_1 \cdots h_n g^{-1} = (gh_1g^{-1})(gh_2g^{-1}) \cdots (gh_ng^{-1})</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-	</exercises>
-	<section xml:id="normal-sage">
-		<title>Sage</title>
-	
-		<introduction>
-			<p>Sage tiene varias funciones convenientes que nos permitirán investigar rápidamente si un subgrupo es normal, y de ser así, la naturaleza del grupo cociente resultante.  Pero para una comprensión inicial, también podemos trabajr directamente con las clases laterales.  Ensuciémosnos las manos primero, después aprenderemos sobre la forma fácil.</p>
-		</introduction>
-	
-		<subsection>
-			<title>Multiplicando Clases Laterales</title>
-	
-			<p>La definición de grupo cociente requiere de un subgrupo normal, y entonces  <em>definimos</em> una forma de <q>multiplicar</q> dos clases laterales del subgrupo para obtener otra clase lateral.  Es importante darse cuenta que podemos interpretas la definición de subgrupos normal como la condición  <em>exacta</em> que necesitamos para que nuestro nuevo producto nos resulte.  Haremos dos ejemplos <mdash /> primero con un subgrupo normal, luego con un subgrupo que no lo es.</p>
-	
-			<p>Considere el grupo dihedral <m>D_{8}</m> que es el grupo de simetrías de un octógono.  Si tomamos el elemento que corresponde a un cuarto de vuelta, podemos usarlo para generar un subgrupo de orden 4.  Este será un subgrupo normal (confíe por ahora respecto a esto).  Primero, construya las clases laterales derechas (note que no se produce una respuesta):</p>
-	
-			<sage>
-			<input>
-			G = DihedralGroup(8)
-			quarter_turn = G('(1,3,5,7)(2,4,6,8)')
-			S = G.subgroup([quarter_turn])
-			C = G.cosets(S)
-			</input>
-			</sage>
-	
-			<p>Así <c>C</c> es una lista de listas, donde cada elemento del grupo <c>G</c> exactamente una vez en alguna parte.  Podría pedirle a Sage que le muestre <c>C</c> si lo desea, pero acá trataremos de evitarlo.  Queremos multiplicar dos clases (listas).  ¿Cómo hacemos esto?  Tomemos <em>cualquier</em> elemento de la primera lista, y <em>cualquier</em> elemento de la segunda lista y multipliquémoslos (lo que sabemos hacer pues son elementos de <c>G</c>).  Ahora tenemos un elemento de <c>G</c>.  ¿Qué hacemos con este elemento, si lo que realmente queremos obtener como resultado del producto de dos clases es otra clase?  Simple <mdash /> averigüamos a qué clase pertenece el producto.  Veamos que pasa.  Multiplicaremos la clase <m>1</m> con la clase <m>3</m> (hay <m>4</m> clases por el Teorema de Lagrange).  Estudie cuidadosamente las siguientes líneas de código para ver si puede entender qué es lo que está haciendo, y <em>después</em> lea la explicación que sigue.</p>
-	
-			<sage>
-			<input>
-			p = C[1][0]*C[3][0]
-			[i for i in srange(len(C)) if p in C[i]]
-			</input>
-			<output>
-			[2]
-			</output>
-			</sage>
-	
-			<p>¿Qué hemos logrado?  En la primera línea creamos <c>p</c> como el producto de dos elementos del grupo, uno de la clase <m>1</m> y uno de la clase <m>3</m> (<c>C[1]</c>, <c>C[3]</c>).  Como podemos elegir <em>cualquier</em> elemento de cada clase, elegimos el primer elemento de cada una (<c>C[ ][0]</c>).  Después recorremos la lista completa de clases, seleccionando solo aquellas clases que contengan <c>p</c>.  Como <c>p</c> solo estará en una clase, esperamos obtener una lista con un solo elemento.  En este caso, nuestra lista contiene solo el <c>2</c>.  Decimos entonces que el producto de la clase <m>1</m> con la clase <m>3</m> es la clase <m>2</m>.</p>
-	
-			<p>La idea acá es que este resultado (clase <m>1</m> por clase <m>3</m> es clase <m>2</m>) debiera ser siempre el mismo, <em>sin importar qué elementos escojamos de cada clase para formar el producto </em> <c>p</c>.  Hagámoslo nuevamente, pero ahora no elegiremos el primer elemento de cada clase, sino el tercero de la clase <m>1</m> y el segundo de la clase  <m>3</m> (recuerde, contamos desde cero!).</p>
-	
-			<sage>
-			<input>
-			p = C[1][2]*C[3][1]
-			[i for i in srange(len(C)) if p in C[i]]
-			</input>
-			<output>
-			[2]
-			</output>
-			</sage>
-	
-			<p>Bien. Tenemos el mismo resultado.  Si aún nos cree que <c>S</c> es un subgrupo normal de <c>G</c>, entonces este es el resultado que predice la teoría.  Haga una copia de la celda de arriba y pruebe otras elecciones de representantes para cada clase.  Pruebe también el  producto de otras clases, con diversos representantes.</p>
-	
-			<sage type='practice' />
-	
-			<p>Ahora es un buen momento para introducir una forma de extender Sage agregándole nuevas funciones.  Diseñaremos una función de multiplicación de clases laterales.  Lea cuidadosamente lo que sigue y después vea la explicación que sigue.</p>
-	
-			<sage>
-			<input>
-			def coset_product(i, j, C):
-			   p = C[i][0]*C[j][0]
-			   c = [k for k in srange(len(C)) if p in C[k]]
-			   return c[0]
-			</input>
-			</sage>
-	
-			<p>La primera línea crea una nueva función en Sage llamada <c>coset_product</c>.  Esto se logra con la palabra <c>def</c>, y note los dos puntos al final de la linea.  Los parámetros para la función son los números de las clases que queremos multiplicar y la lista completa de clases laterales.  Las dos líneas del medio debiesen vers familiares.  Sabemos que <c>c</c> es una lista con un elemento, de manera que <c>c[0]</c> extraerá ese número de clase, y <c>return</c> es lo que determina que esta es la respuesta producida por la función.  Note que la indentación debe ser exactamente como se muestra.  Podríamos haber escrito todos estos cálculos en un sola línea, sin definir una nueva función, pero eso empieza a ser engorroso.  Es necesario ejecutar el bloque de código de arriba para  <em>definir</em> realmente la función, y no habrá salida si tiene éxito.  Ahora podemos usar nuestra nueva función para repetir el trabajo de arriba:</p>
-	
-			<sage>
-			<input>
-			coset_product(1, 3, C)
-			</input>
-			<output>
-			2
-			</output>
-			</sage>
-	
-			<p>Ahora conoce lo básico sobre cómo agregar funcionalidad a Sage y hacer mucho más de lo que está diseñado para hacer.  Con algo de práctico, incluso podría sugerir y contribuir nuevas funciones a Sage, pues es un proyecto de fuente abierta.  Bien.</p>
-	
-			<p>Ahora examinemos una situación en que el subgrupo no es normal.  Veremos que nuestra definición de producto de clases es insuficiente en este caso.  Además nos daremos cuenta que nuestra nueva función <c>coset_product</c> también es inútil pues presupone que las clases laterales proviene de un subgrupo normal.</p>
-	
-			<p>Considere el grupo alternante <m>A_4</m> que podemos interpretar como el grupo de simetrías de un tetraedro.  Para un subgrupo, escoja un elemento que fija un vértice y rota la cara opuesta <mdash /> esto generará un subgrupo cíclico de orden 3, y por el Teorema de Lagrange obtendremos cuatro clases laterales.  Las calcularemos acá.  (Nuevamente, no se pide ningna salida.)</p>
-	
-			<sage>
-			<input>
-			G = AlternatingGroup(4)
-			face_turn = G("(1,2,3)")
-			S = G.subgroup([face_turn])
-			C = G.cosets(S)
-			</input>
-			</sage>
-	
-			<p>Nuevamente, consideremos el producto de la clase <m>1</m> con la clase <m>3</m>:</p>
-	
-			<sage>
-			<input>
-			p = C[1][0]*C[3][0]
-			[i for i in srange(len(C)) if p in C[i]]
-			</input>
-			<output>
-			[0]
-			</output>
-			</sage>
-	
-			<p>Nuevamente, pero ahora para la clase <m>3</m>, escoja el segundo elemento de la clase para obtener el producto <c>p</c>:</p>
-	
-			<sage>
-			<input>
-			p = C[1][0]*C[3][1]
-			[i for i in srange(len(C)) if p in C[i]]
-			</input>
-			<output>
-			[2]
-			</output>
-			</sage>
-	
-			<p>¿Entonces, el producto de la clase  <m>1</m> y la clase <m>3</m> es igual a la clase  <m>0</m> o a la clase <m>2</m>?  ¡No lo podemos determinar!  Así es que no hay <em>ninguna forma</em> de construir un grupo cociente para este subgrupo.  Usted puede esperimentar más con este subgrupo, pero en algún sentido, no tenemos nada más que hacer con este ejemplo <mdash /> no queda nada que decir.</p>
-		</subsection>
-	
-		<subsection>
-			<title>Métodos de Sage para Subgrupos Normales</title>
-	
-			<p>Puede fácilmente preguntarle a Sage si un subgrupo es normal o no.  Esto se considera una propiedad del subgrupo, pero le debe decir a Sage cuál es el  <q>supergrupo</q>, pues la respuesta puede cambiar según cuál sea.  (Por ejemplo <c>H.is_normal(H)</c> siempre resulta <c>True</c>.)  Acá están nuestros dos ejemplos de arriba.</p>
-	
-			<sage>
-			<input>
-			G = DihedralGroup(8)
-			quarter_turn = G('(1,3,5,7)(2,4,6,8)')
-			S = G.subgroup([quarter_turn])
-			S.is_normal(G)
-			</input>
-			<output>
-			True
-			</output>
-			</sage>
-	
-			<sage>
-			<input>
-			G = AlternatingGroup(4)
-			face_turn = G("(1,2,3)")
-			S = G.subgroup([face_turn])
-			S.is_normal(G)
-			</input>
-			<output>
-			False
-			</output>
-			</sage>
-	
-			<p>El texto demuestra en la Secció<xref ref="section-simplicity-of-an" /> que <m>A_5</m> es simple, <ie /> <m>A_5</m> no tiene subgrupos normales.  Podríamos construir cada subgrupo de <m>A_5</m> y preguntar si es normal en <m>A_5</m> usando el método <c>.is_normal()</c>.  Pero Sage ya tiene esto cubierto para nosotros.</p>
-	
-			<sage>
-			<input>
-			G = AlternatingGroup(5)
-			G.is_simple()
-			</input>
-			<output>
-			True
-			</output>
-			</sage>
-	
-			<p>Cuando tenemos un subgrupo normal, podemos también construir el grupo cociente.</p>
-	
-			<sage>
-			<input>
-			G = DihedralGroup(8)
-			quarter_turn = G('(1,3,5,7)(2,4,6,8)')
-			S = G.subgroup([quarter_turn])
-			Q = G.quotient(S)
-			Q
-			</input>
-			<output>
-			Permutation Group with generators [(1,2)(3,4), (1,3)(2,4)]
-			</output>
-			</sage>
-	
-			<p>Esto es útil, pero un poco desconcertante.  Tenemos el grupo cociente, pero cualquier noción de clases laterales se perdió, pues <c>Q</c> es entregado como un nuevo grupo de permutaciones en un conjunto diferente de símbolos.  No podemos presuponer que los número usados para el nuevo grupo de permutaciones <c>Q</c> tengan similitud alguna con las clases que obtenemos del método <c>.cosets()</c>.  Pero podemos ver que el grupo cociente se describe como un grupo generado por dos elementos de orden dos.  Podríamos pedir el orden del grupo, o usar el Teorema de Lagrange para saber que el orden es 4.  Podemos decir ahora que hay solo dos grupos de orden 4, el grupo cíclico de order 4 y un grupo no cíclico de orden 4 que conocemos como el 4-grupo de Klein o como <m>{\mathbb Z}_2\times{\mathbb Z}_2</m>.  Este grupo cociente se ve como el grupo no cíclico pues el grupo cíclico tiene solo un elemento de orden 2.  Veamos que nos dice Sage.</p>
-	
-			<sage>
-			<input>
-			Q.is_isomorphic(KleinFourGroup())
-			</input>
-			<output>
-			True
-			</output>
-			</sage>
-	
-			<p>Si, eso es.</p>
-	
-			<p>Finalmente, Sage nos puede hacer una lista de todos los subgrupos normales de un grupo.  La lista de los grupos en sí, como hemos visto antes, puede ser una cantidad de información apabullante.  A continuación simplemente listaremos los órdenes de los subgrupos normales producidos.</p>
-	
-			<sage>
-			<input>
-			G = DihedralGroup(8)
-			N = G.normal_subgroups()
-			[H.order() for H in N]
-			</input>
-			<output>
-			[1, 2, 4, 8, 8, 8, 16]
-			</output>
-			</sage>
-	
-			<p>En particular, vemos que nuestro subgrupo de <q>cuarto de vuelta</q> es el <em>único</em> subgrupo normal de orden <m>4</m> en este grupo.</p>
-		</subsection>
-	
-	</section>
-	<exercises xml:id="normal-sage-exercises">
-		<title>Ejercicios en Sage</title>
-	
-		<exercise number="1">
-			<statement>
-				<p>Construya todos los subgrupos del grupo alternante en 5 símbolos, <m>A_5</m>, y verifique que, salvo los casos triviales, ninguno es normal.  Este comando podría demorar un par de segundos en correr.  Compare esto con el tiempo necesario para correr el método <c>.is_simple()</c> y constate que hay una buena dosis de teoría y astucia involucradas en acelerar comandos como este. (Es posible que su instalación de Sage no tenga la librería <q>Table of Marks</q> de <acro>GAP</acro> y sea imposible calcular la lista de subgrupos.)</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="2">
-			<statement>
-				<p>Considere el grupo cociente del grupo de simetrías de un octógono regular, por el subgrupo cíclico de orden 4 generado por una rotación en un cuarto de vuelta.  Use la función <c>coset_product</c> para determinar la tabla de Cayley para este grupo cociente.  Use los números de cada clase lateral, resultantes del método <c>.cosets()</c> como nombres para los elementos del grupo cociente. Necesitará construir la tabla <q>a mano</q> pues no hay una forma fácil de lograr que los comandos de Sage hagan esto.  Puede construir una tabla en el editor del Notebook Sage (shift-click en una línea azul) o puede leer la documentación del método <c>html.table()</c>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="3">
-			<statement>
-				<p>Considere el subgrupo cíclico de orden <m>4</m> en las simetrías de un octógono regular.  Verifique que el subgrupo es normal construyendo primero las clases laterales izquierdas y derechas (sin usar el método <c>.cosets()</c>) y luego verificando su igualdad en Sage, todo con una línea de comando que use el comando <c>sorted()</c>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="4">
-			<statement>
-				<p>Nuevamente, use el mismo subgrupo cíclico de orden <m>4</m> en el grupo de simetrías de un octógono.  Verifique que el subgrupo es normal usando la parte (2) del Teorema<nbsp/><xref ref="theorem-normal-equivalents"/>.  Construya un comando de una línea que haga la verificación completa y entregue <c>True</c>.  Quizás deba ordenar los elementos del subgrupo <c>S</c> primero, luego paso a paso ir construyendo las listas, comandos, y condiciones necesarios.  Note que esta verificación no requiere la construcción de las clases laterales en ningún momento.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="5">
-			<statement>
-				<p>Repita la demostración de la subsección anterior de que para las simetrías de un tetraedro, un subgrupo cíclico de orden <m>3</m> resulta en una multiplicación mal definida de clases laterales.  Arriba, por defecto el método <c>.cosets()</c> entrega las clases laterales derechas <mdash/> pero en este problema, trabaje con las clases izquierdas.  Debe escoger dos clases para multiplicarlas, y comprobar que elecciones diferentes de representantes llevan a resultados diferentes para el producto de las clases.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="6">
-			<statement>
-				<p>Construya algunos grupos dihedrales de orden <m>2n</m> (<ie/> simetrías de un <m>n</m>-ágono, <m>D_{n}</m> en el texto, <c>DihedralGroup(n)</c> en Sage).  Podrían ser todos ellos para <m>3\leq n \leq 100</m>. Para cada grupo dihedral, construya una lista de los órdenes de cada uno de los subgrupos normales (use <c>.normal_subgroups()</c>).  Puede que demore en terminar de calcular - sea paciente.  Observe suficiente ejemplos para conjeturar un patrón, verifique su hipótesis con cada uno de sus ejemplos y luego enúnciela claramente.</p>
-	
-				<p>¿Puede predecir cuántos subgrupos normales que tiene el grupo dihedral <m>D_{470448}</m> sin usar Sage para obtener todos los subgrupos normales?  ¿Puede <em>describir</em> todos los subgrupos normales que tiene el grupo dihedral <m>D_{470448}</m> sin usar Sage?</p>
-			</statement>
-			
-		</exercise>
-	
-	</exercises>
+  <reading-questions permid="pGm">
+
+    <exercise permid="VMV">
+      <statement>
+        <p permid="awO">
+          Sea <m>G</m> el grupo de simetrías de un triángulo equilátero, expresado como permutaciones de los vértices numerados <m>1,2,3</m>.
+Sea <m>H</m> el subgrupo <m>H=\langle (1\,2) \rangle</m>.
+Construya las clases laterales izquierda y derecha de <m>H</m> en <m>G</m>.
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+
+    <exercise permid="BUe">
+      <statement>
+        <p permid="GDX">
+          Según su respuesta a la pregunta anterior, ¿es <m>H</m> normal en <m>G</m>?
+          Explique por qué o por qué no.
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+
+    <exercise permid="ibn">
+      <statement>
+        <p permid="mLg">
+          El subgrupo <m>8\mathbb Z</m> es normal en <m>\mathbb Z</m>.
+          En el grupo cociente <m>\mathbb Z/8\mathbb Z</m> realice el cálculo <m>(3+8\mathbb Z)+(7+8\mathbb Z)</m>.
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+
+    <exercise permid="Oiw">
+      <statement>
+        <p permid="SSp">
+          Enumere dos afirmaciones sobre un grupo <m>G</m> y un subgrupo <m>H</m> que sean equivalentes a <q><m>H</m> es normal en <m>G</m >.</q>
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+
+    <exercise permid="upF">
+      <statement>
+        <p permid="yZy">
+          En sus propias palabras, ¿qué es un grupo cociente?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+
+  </reading-questions>
+    <!-- Exercises with Solutions  -->
+    <!-- File: normal.xml  -->
+    <!-- Title: Normal Subgroups and Factor Groups -->
+  <exercises xml:id="normal-exercises" filenamebase="normal" permid="hZN">
+    <title>Ejercicios</title>
+  
+    <exercise number="1">
+      <statement>
+        <p>Para cada uno de los siguientes grupos <m>G</m>, determine si es que <m>H</m> es un subgrupo normal de <m>G</m>. Si <m>H</m> es un subgrupo normal, escriba una tabla de Cayley para el grupo cociente <m>G/H</m>.
+          <ol>
+   
+            <li><p><m>G = S_4</m> y <m>H = A_4</m></p></li>
+  
+            <li><p><m>G = A_5</m> y <m>H = \{ (1), (123), (132) \}</m></p></li>
+             
+            <li><p><m>G = S_4</m> y <m>H = D_4</m></p></li>
+             
+            <li><p><m>G = Q_8</m> y <m>H = \{ 1, -1, I, -I \}</m></p></li>
+             
+            <li><p><m>G = {\mathbb Z}</m> y <m>H = 5 {\mathbb Z}</m></p></li>
+             
+          </ol></p>
+      </statement>
+      <hint>
+        <p>(a) <me>\begin{array}{c|cc}
+            &amp; A_4 &amp; (12)A_4 \\ \hline
+            A_4 &amp; A_4 &amp; (12) A_4 \\
+            (12) A_4 &amp; (12) A_4 &amp; A_4
+            \end{array}</me></p>
+  
+        <p>(c) <m>D_4</m> no es normal en <m>S_4</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="2">
+      <statement>
+        <p>Encuentre todos los subgrupos de <m>D_4</m>. ¿Cuáles subgrupos son normales? ¿Cuáles son todos los grupos cociente de <m>D_4</m> salvo isomorfismo?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="3">
+      <statement>
+        <p>Encuentre todos los subgrupos del grupo de cuaterniones, <m>Q_8</m>. ¿Cuáles subgrupos son normales? ¿Cuáles son todos los grupos cociente de <m>Q_8</m> salvo isomorfismo?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="4">
+      <statement>
+        <p>Sea <m>T</m> el grupo de matrices triangulares superiores no singulares de <m>2 \times 2</m> con coeficientes en <m>{\mathbb R}</m>; es decir, matrices de la forma
+          <me>\begin{pmatrix}
+          a &amp; b \\
+          0 &amp; c
+          \end{pmatrix}</me>,
+        donde <m>a</m>, <m>b</m>, <m>c \in {\mathbb R}</m> y <m>ac \neq 0</m>. Sea <m>U</m> el conjunto de matrices de la forma 
+          <me>\begin{pmatrix}
+          1 &amp; x \\
+          0 &amp; 1
+          \end{pmatrix}</me>,
+        donde <m>x \in {\mathbb R}</m>.
+          <ol>
+           
+            <li><p>Muestre que <m>U</m> es un subgrupo de <m>T</m>.
+    </p></li>
+             
+            <li><p>Demuestre que <m>U</m> es abeliano.
+    </p></li>
+             
+            <li><p>Demuestre que <m>U</m> es normal en <m>T</m>.
+    </p></li>
+             
+            <li><p>Muestre que <m>T/U</m> es abeliano.
+    </p></li>
+             
+            <li><p>¿Es <m>T</m> normal en <m>GL_2( {\mathbb R})</m>?</p></li>
+           
+          </ol></p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="5">
+      <statement>
+        <p>Muestre que la intersección de dos subgrupos normales es un subgrupo normal.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="6">
+      <statement>
+        <p>Si <m>G</m> es abeliano, demuestre que <m>G/H</m> también es abeliano.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="7">
+      <statement>
+        <p>Demuestre o refute: Si <m>H</m> es un subgrupo normal de <m>G</m> tal que <m>H</m> y <m>G/H</m> son abelianos, entonces <m>G</m> es abeliano.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+  
+    <!--Todo Expand the solution to #8.-->
+    <exercise number="8">
+      <statement>
+        <p>Si <m>G</m> es cíclico, demuestre que <m>G/H</m> también es cíclico.
+    </p>
+      </statement>
+      <hint>
+        <p>Si <m>a \in G</m> es un generador para <m>G</m>, entonces <m>aH</m> es un generador para <m>G/H</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="9">
+      <statement>
+        <p>Demuestre o refute: Si <m>H</m> y <m>G/H</m> son cíclicos, entonces <m>G</m> es cíclico.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="10">
+      <statement>
+        <p>Sea <m>H</m> un subgrupo de índice 2 de un grupo <m>G</m>. Demuestre que <m>H</m> es normal en <m>G</m>. Concluya que <m>S_n</m> no es simple para <m>n \geq 3</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="11" xml:id="exercise-normal-one-subgroup">
+      <statement>
+        <p>Si un grupo <m>G</m> tiene exactemente un subgrupo <m>H</m> de orden <m>k</m>, demuestre que <m>H</m> es normal en <m>G</m>.
+    </p>
+      </statement>
+      <hint>
+        <p>Para cualquier <m>g \in G</m>, muestre que la función <m>i_g : G \to G</m> definida como <m>i_g : x \mapsto gxg^{-1}</m> es un isomorfismo de <m>G</m> en sí mismo.  Luego considere <m>i_g(H)</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="12">
+      <statement>
+        <p>Defina el <term>centralizador</term> de un elemento <m>g</m> en un grupo <m>G</m> como el conjunto
+          <me>C(g) = \{ x \in G : xg = gx \}</me>.
+        Muestre que <m>C(g)</m> es un subgrupo de <m>G</m>.  Si <m>g</m> genera un subgrupo normal de <m>G</m>, demuestre que <m>C(g)</m> es normal en <m>G</m>.
+    </p>
+      </statement>
+      <hint>
+        <p>Supongamos que <m>\langle g \rangle</m> es normal en <m>G</m> y sea <m>y</m> un elemento arbitrario de <m>G</m>.  Si <m>x \in C(g)</m>, debemos mostrar que <m>y x y^{-1}</m> también está en <m>C(g)</m>.  Muestre que <m>(y x y^{-1}) g = g (y x y^{-1})</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="13" xml:id="exercise-normal-center">
+      <statement>
+        <p>Recuerde que el <term>centro</term> de un grupo <m>G</m> es el conjunto 
+          <me>Z(G) = \{ x \in G : xg = gx \text{ para todo } g \in G \}</me>.
+          <ol>
+         
+            <li><p>Calcule el centro de <m>S_3</m>.
+    </p></li>
+             
+            <li><p>Calcule el centro de <m>GL_2 ( {\mathbb R} )</m>.
+    </p></li>
+             
+            <li><p>Muestre que el centro de cualquier grupo <m>G</m> es un subgrupo normal de <m>G</m>. </p></li>
+             
+            <li><p>Si <m>G / Z(G)</m> es cíclico, demuestre que <m>G</m> es abeliano.
+    </p></li>
+             
+          </ol></p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="14" xml:id="exercise-normal-commutator">
+      <statement>
+        <p>Sea <m>G</m> un grupo y sea <m>G' = \langle aba^{- 1} b^{-1} \rangle</m>; es decir, <m>G'</m> es el subgrupo de todos los productos finitos de elementos en 
+        <m>G</m> de la forma <m>aba^{-1}b^{-1}</m>.  El subgrupo <m>G'</m> se llama <term>subgrupo conmutador</term> de <m>G</m>. <notation><usage>G'</usage><description>subgrupo conmutador de <m>G</m></description></notation>
+          <ol>
+         
+            <li><p>Muestre que <m>G'</m> es un subgrupo normal de <m>G</m>.
+    </p></li>
+  
+            <li><p>Sea <m>N</m> un subgrupo normal de <m>G</m>. Demuestre que <m>G/N</m> es abeliano si y solo si <m>N</m> contiene al subgrupo conmutador de <m>G</m>.
+    </p></li>
+         
+          </ol></p>
+      </statement>
+      <hint>
+        <p>(a) Sean <m>g \in G</m> y <m>h \in G'</m>. Si <m>h = aba^{-1}b^{-1}</m>, entonces 
+            <md>
+              <mrow>ghg^{-1} &amp; = gaba^{-1}b^{-1}g^{-1}</mrow>
+              <mrow>&amp; = (gag^{-1})(gbg^{-1})(ga^{-1}g^{-1})(gb^{-1}g^{-1})</mrow>
+              <mrow>&amp; = (gag^{-1})(gbg^{-1})(gag^{-1})^{-1}(gbg^{-1})^{-1}</mrow>
+            </md>.
+          También debemos demostrar que si <m>h = h_1 \cdots h_n</m> with <m>h_i = a_i b_i a_i^{-1} b_i^{-1}</m>, entonces <m>ghg^{-1}</m> es un producto de elementos del mismo tipo.  Pero, <m>ghg^{-1} = g h_1 \cdots h_n g^{-1} = (gh_1g^{-1})(gh_2g^{-1}) \cdots (gh_ng^{-1})</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+  </exercises>
+  <section xml:id="normal-sage">
+    <title>Sage</title>
+  
+    <introduction>
+      <p>Sage tiene varias funciones convenientes que nos permitirán investigar rápidamente si un subgrupo es normal, y de ser así, la naturaleza del grupo cociente resultante.  Pero para una comprensión inicial, también podemos trabajr directamente con las clases laterales.  Ensuciémosnos las manos primero, después aprenderemos sobre la forma fácil.
+    </p>
+    </introduction>
+  
+    <subsection>
+      <title>Multiplicando Clases Laterales</title>
+  
+      <p>La definición de grupo cociente requiere de un subgrupo normal, y entonces  <em>definimos</em> una forma de <q>multiplicar</q> dos clases laterales del subgrupo para obtener otra clase lateral.  Es importante darse cuenta que podemos interpretas la definición de subgrupos normal como la condición  <em>exacta</em> que necesitamos para que nuestro nuevo producto nos resulte.  Haremos dos ejemplos <mdash /> primero con un subgrupo normal, luego con un subgrupo que no lo es.
+    </p>
+  
+      <p>Considere el grupo dihedral <m>D_{8}</m> que es el grupo de simetrías de un octógono.  Si tomamos el elemento que corresponde a un cuarto de vuelta, podemos usarlo para generar un subgrupo de orden 4.  Este será un subgrupo normal (confíe por ahora respecto a esto).  Primero, construya las clases laterales derechas (note que no se produce una respuesta):</p>
+  
+      <sage>
+      <input>
+      G = DihedralGroup(8)
+      quarter_turn = G('(1,3,5,7)(2,4,6,8)')
+      S = G.subgroup([quarter_turn])
+      C = G.cosets(S)
+      </input>
+      </sage>
+  
+      <p>Así <c>C</c> es una lista de listas, donde cada elemento del grupo <c>G</c> exactamente una vez en alguna parte.  Podría pedirle a Sage que le muestre <c>C</c> si lo desea, pero acá trataremos de evitarlo.  Queremos multiplicar dos clases (listas).  ¿Cómo hacemos esto?  Tomemos <em>cualquier</em> elemento de la primera lista, y <em>cualquier</em> elemento de la segunda lista y multipliquémoslos (lo que sabemos hacer pues son elementos de <c>G</c>).  Ahora tenemos un elemento de <c>G</c>.  ¿Qué hacemos con este elemento, si lo que realmente queremos obtener como resultado del producto de dos clases es otra clase?  Simple <mdash /> averigüamos a qué clase pertenece el producto.  Veamos que pasa.  Multiplicaremos la clase <m>1</m> con la clase <m>3</m> (hay <m>4</m> clases por el Teorema de Lagrange).  Estudie cuidadosamente las siguientes líneas de código para ver si puede entender qué es lo que está haciendo, y <em>después</em> lea la explicación que sigue.
+    </p>
+  
+      <sage>
+      <input>
+      p = C[1][0]*C[3][0]
+      [i for i in srange(len(C)) if p in C[i]]
+      </input>
+      <output>
+      [2]
+      </output>
+      </sage>
+  
+      <p>¿Qué hemos logrado?  En la primera línea creamos <c>p</c> como el producto de dos elementos del grupo, uno de la clase <m>1</m> y uno de la clase <m>3</m> (<c>C[1]</c>, <c>C[3]</c>).  Como podemos elegir <em>cualquier</em> elemento de cada clase, elegimos el primer elemento de cada una (<c>C[ ][0]</c>).  Después recorremos la lista completa de clases, seleccionando solo aquellas clases que contengan <c>p</c>.  Como <c>p</c> solo estará en una clase, esperamos obtener una lista con un solo elemento.  En este caso, nuestra lista contiene solo el <c>2</c>.  Decimos entonces que el producto de la clase <m>1</m> con la clase <m>3</m> es la clase <m>2</m>.
+    </p>
+  
+      <p>La idea acá es que este resultado (clase <m>1</m> por clase <m>3</m> es clase <m>2</m>) debiera ser siempre el mismo, <em>sin importar qué elementos escojamos de cada clase para formar el producto </em> <c>p</c>.  Hagámoslo nuevamente, pero ahora no elegiremos el primer elemento de cada clase, sino el tercero de la clase <m>1</m> y el segundo de la clase  <m>3</m> (recuerde, contamos desde cero!).
+    </p>
+  
+      <sage>
+      <input>
+      p = C[1][2]*C[3][1]
+      [i for i in srange(len(C)) if p in C[i]]
+      </input>
+      <output>
+      [2]
+      </output>
+      </sage>
+  
+      <p>Bien. Tenemos el mismo resultado.  Si aún nos cree que <c>S</c> es un subgrupo normal de <c>G</c>, entonces este es el resultado que predice la teoría.  Haga una copia de la celda de arriba y pruebe otras elecciones de representantes para cada clase.  Pruebe también el  producto de otras clases, con diversos representantes.
+    </p>
+  
+      <sage type='practice' />
+  
+      <p>Ahora es un buen momento para introducir una forma de extender Sage agregándole nuevas funciones.  Diseñaremos una función de multiplicación de clases laterales.  Lea cuidadosamente lo que sigue y después vea la explicación que sigue.
+    </p>
+  
+      <sage>
+      <input>
+      def coset_product(i, j, C):
+         p = C[i][0]*C[j][0]
+         c = [k for k in srange(len(C)) if p in C[k]]
+         return c[0]
+      </input>
+      </sage>
+  
+      <p>La primera línea crea una nueva función en Sage llamada <c>coset_product</c>.  Esto se logra con la palabra <c>def</c>, y note los dos puntos al final de la linea.  Los parámetros para la función son los números de las clases que queremos multiplicar y la lista completa de clases laterales.  Las dos líneas del medio debiesen vers familiares.  Sabemos que <c>c</c> es una lista con un elemento, de manera que <c>c[0]</c> extraerá ese número de clase, y <c>return</c> es lo que determina que esta es la respuesta producida por la función.  Note que la indentación debe ser exactamente como se muestra.  Podríamos haber escrito todos estos cálculos en un sola línea, sin definir una nueva función, pero eso empieza a ser engorroso.  Es necesario ejecutar el bloque de código de arriba para  <em>definir</em> realmente la función, y no habrá salida si tiene éxito.  Ahora podemos usar nuestra nueva función para repetir el trabajo de arriba:</p>
+  
+      <sage>
+      <input>
+      coset_product(1, 3, C)
+      </input>
+      <output>
+      2
+      </output>
+      </sage>
+  
+      <p>Ahora conoce lo básico sobre cómo agregar funcionalidad a Sage y hacer mucho más de lo que está diseñado para hacer.  Con algo de práctico, incluso podría sugerir y contribuir nuevas funciones a Sage, pues es un proyecto de fuente abierta.  Bien.
+    </p>
+  
+      <p>Ahora examinemos una situación en que el subgrupo no es normal.  Veremos que nuestra definición de producto de clases es insuficiente en este caso.  Además nos daremos cuenta que nuestra nueva función <c>coset_product</c> también es inútil pues presupone que las clases laterales proviene de un subgrupo normal.
+    </p>
+  
+      <p>Considere el grupo alternante <m>A_4</m> que podemos interpretar como el grupo de simetrías de un tetraedro.  Para un subgrupo, escoja un elemento que fija un vértice y rota la cara opuesta <mdash /> esto generará un subgrupo cíclico de orden 3, y por el Teorema de Lagrange obtendremos cuatro clases laterales.  Las calcularemos acá.  (Nuevamente, no se pide ningna salida.)</p>
+  
+      <sage>
+      <input>
+      G = AlternatingGroup(4)
+      face_turn = G("(1,2,3)")
+      S = G.subgroup([face_turn])
+      C = G.cosets(S)
+      </input>
+      </sage>
+  
+      <p>Nuevamente, consideremos el producto de la clase <m>1</m> con la clase <m>3</m>:</p>
+  
+      <sage>
+      <input>
+      p = C[1][0]*C[3][0]
+      [i for i in srange(len(C)) if p in C[i]]
+      </input>
+      <output>
+      [0]
+      </output>
+      </sage>
+  
+      <p>Nuevamente, pero ahora para la clase <m>3</m>, escoja el segundo elemento de la clase para obtener el producto <c>p</c>:</p>
+  
+      <sage>
+      <input>
+      p = C[1][0]*C[3][1]
+      [i for i in srange(len(C)) if p in C[i]]
+      </input>
+      <output>
+      [2]
+      </output>
+      </sage>
+  
+      <p>¿Entonces, el producto de la clase  <m>1</m> y la clase <m>3</m> es igual a la clase  <m>0</m> o a la clase <m>2</m>?  ¡No lo podemos determinar!  Así es que no hay <em>ninguna forma</em> de construir un grupo cociente para este subgrupo.  Usted puede esperimentar más con este subgrupo, pero en algún sentido, no tenemos nada más que hacer con este ejemplo <mdash /> no queda nada que decir.
+    </p>
+    </subsection>
+  
+    <subsection>
+      <title>Métodos de Sage para Subgrupos Normales</title>
+  
+      <p>Puede fácilmente preguntarle a Sage si un subgrupo es normal o no.  Esto se considera una propiedad del subgrupo, pero le debe decir a Sage cuál es el  <q>supergrupo</q>, pues la respuesta puede cambiar según cuál sea.  (Por ejemplo <c>H.is_normal(H)</c> siempre resulta <c>True</c>.)  Acá están nuestros dos ejemplos de arriba.
+    </p>
+  
+      <sage>
+      <input>
+      G = DihedralGroup(8)
+      quarter_turn = G('(1,3,5,7)(2,4,6,8)')
+      S = G.subgroup([quarter_turn])
+      S.is_normal(G)
+      </input>
+      <output>
+      True
+      </output>
+      </sage>
+  
+      <sage>
+      <input>
+      G = AlternatingGroup(4)
+      face_turn = G("(1,2,3)")
+      S = G.subgroup([face_turn])
+      S.is_normal(G)
+      </input>
+      <output>
+      False
+      </output>
+      </sage>
+  
+      <p>El texto demuestra en la Secció<xref ref="section-simplicity-of-an" /> que <m>A_5</m> es simple, <ie /> <m>A_5</m> no tiene subgrupos normales.  Podríamos construir cada subgrupo de <m>A_5</m> y preguntar si es normal en <m>A_5</m> usando el método <c>.is_normal()</c>.  Pero Sage ya tiene esto cubierto para nosotros.
+    </p>
+  
+      <sage>
+      <input>
+      G = AlternatingGroup(5)
+      G.is_simple()
+      </input>
+      <output>
+      True
+      </output>
+      </sage>
+  
+      <p>Cuando tenemos un subgrupo normal, podemos también construir el grupo cociente.
+    </p>
+  
+      <sage>
+      <input>
+      G = DihedralGroup(8)
+      quarter_turn = G('(1,3,5,7)(2,4,6,8)')
+      S = G.subgroup([quarter_turn])
+      Q = G.quotient(S)
+      Q
+      </input>
+      <output>
+      Permutation Group with generators [(1,2)(3,4), (1,3)(2,4)]
+      </output>
+      </sage>
+  
+      <p>Esto es útil, pero un poco desconcertante.  Tenemos el grupo cociente, pero cualquier noción de clases laterales se perdió, pues <c>Q</c> es entregado como un nuevo grupo de permutaciones en un conjunto diferente de símbolos.  No podemos presuponer que los número usados para el nuevo grupo de permutaciones <c>Q</c> tengan similitud alguna con las clases que obtenemos del método <c>.cosets()</c>.  Pero podemos ver que el grupo cociente se describe como un grupo generado por dos elementos de orden dos.  Podríamos pedir el orden del grupo, o usar el Teorema de Lagrange para saber que el orden es 4.  Podemos decir ahora que hay solo dos grupos de orden 4, el grupo cíclico de order 4 y un grupo no cíclico de orden 4 que conocemos como el 4-grupo de Klein o como <m>{\mathbb Z}_2\times{\mathbb Z}_2</m>.  Este grupo cociente se ve como el grupo no cíclico pues el grupo cíclico tiene solo un elemento de orden 2.  Veamos que nos dice Sage.
+    </p>
+  
+      <sage>
+      <input>
+      Q.is_isomorphic(KleinFourGroup())
+      </input>
+      <output>
+      True
+      </output>
+      </sage>
+  
+      <p>Si, eso es.
+    </p>
+  
+      <p>Finalmente, Sage nos puede hacer una lista de todos los subgrupos normales de un grupo.  La lista de los grupos en sí, como hemos visto antes, puede ser una cantidad de información apabullante.  A continuación simplemente listaremos los órdenes de los subgrupos normales producidos.
+    </p>
+  
+      <sage>
+      <input>
+      G = DihedralGroup(8)
+      N = G.normal_subgroups()
+      [H.order() for H in N]
+      </input>
+      <output>
+      [1, 2, 4, 8, 8, 8, 16]
+      </output>
+      </sage>
+  
+      <p>En particular, vemos que nuestro subgrupo de <q>cuarto de vuelta</q> es el <em>único</em> subgrupo normal de orden <m>4</m> en este grupo.
+    </p>
+    </subsection>
+  
+  </section>
+  <exercises xml:id="normal-sage-exercises">
+    <title>Ejercicios en Sage</title>
+  
+    <exercise number="1">
+      <statement>
+        <p>Construya todos los subgrupos del grupo alternante en 5 símbolos, <m>A_5</m>, y verifique que, salvo los casos triviales, ninguno es normal.  Este comando podría demorar un par de segundos en correr.  Compare esto con el tiempo necesario para correr el método <c>.is_simple()</c> y constate que hay una buena dosis de teoría y astucia involucradas en acelerar comandos como este. (Es posible que su instalación de Sage no tenga la librería <q>Table of Marks</q> de <acro>GAP</acro> y sea imposible calcular la lista de subgrupos.)</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="2">
+      <statement>
+        <p>Considere el grupo cociente del grupo de simetrías de un octógono regular, por el subgrupo cíclico de orden 4 generado por una rotación en un cuarto de vuelta.  Use la función <c>coset_product</c> para determinar la tabla de Cayley para este grupo cociente.  Use los números de cada clase lateral, resultantes del método <c>.cosets()</c> como nombres para los elementos del grupo cociente. Necesitará construir la tabla <q>a mano</q> pues no hay una forma fácil de lograr que los comandos de Sage hagan esto.  Puede construir una tabla en el editor del Notebook Sage (shift-click en una línea azul) o puede leer la documentación del método <c>html.table()</c>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="3">
+      <statement>
+        <p>Considere el subgrupo cíclico de orden <m>4</m> en las simetrías de un octógono regular.  Verifique que el subgrupo es normal construyendo primero las clases laterales izquierdas y derechas (sin usar el método <c>.cosets()</c>) y luego verificando su igualdad en Sage, todo con una línea de comando que use el comando <c>sorted()</c>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="4">
+      <statement>
+        <p>Nuevamente, use el mismo subgrupo cíclico de orden <m>4</m> en el grupo de simetrías de un octógono.  Verifique que el subgrupo es normal usando la parte (2) del Teorema<nbsp/><xref ref="theorem-normal-equivalents"/>.  Construya un comando de una línea que haga la verificación completa y entregue <c>True</c>.  Quizás deba ordenar los elementos del subgrupo <c>S</c> primero, luego paso a paso ir construyendo las listas, comandos, y condiciones necesarios.  Note que esta verificación no requiere la construcción de las clases laterales en ningún momento.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="5">
+      <statement>
+        <p>Repita la demostración de la subsección anterior de que para las simetrías de un tetraedro, un subgrupo cíclico de orden <m>3</m> resulta en una multiplicación mal definida de clases laterales.  Arriba, por defecto el método <c>.cosets()</c> entrega las clases laterales derechas <mdash/> pero en este problema, trabaje con las clases izquierdas.  Debe escoger dos clases para multiplicarlas, y comprobar que elecciones diferentes de representantes llevan a resultados diferentes para el producto de las clases.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="6">
+      <statement>
+        <p>Construya algunos grupos dihedrales de orden <m>2n</m> (<ie/> simetrías de un <m>n</m>-ágono, <m>D_{n}</m> en el texto, <c>DihedralGroup(n)</c> en Sage).  Podrían ser todos ellos para <m>3\leq n \leq 100</m>. Para cada grupo dihedral, construya una lista de los órdenes de cada uno de los subgrupos normales (use <c>.normal_subgroups()</c>).  Puede que demore en terminar de calcular - sea paciente.  Observe suficiente ejemplos para conjeturar un patrón, verifique su hipótesis con cada uno de sus ejemplos y luego enúnciela claramente.
+    </p>
+  
+        <p>¿Puede predecir cuántos subgrupos normales que tiene el grupo dihedral <m>D_{470448}</m> sin usar Sage para obtener todos los subgrupos normales?  ¿Puede <em>describir</em> todos los subgrupos normales que tiene el grupo dihedral <m>D_{470448}</m> sin usar Sage?</p>
+      </statement>
+      
+    </exercise>
+  
+  </exercises>
 
 </chapter>
  

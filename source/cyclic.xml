@@ -9,1781 +9,1901 @@
 
 
 <chapter xml:id="cyclic" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Grupos Cíclicos</title>
+  <title>Grupos Cíclicos</title>
 
-	<introduction>
-		<p>Los grupos <m>\mathbb Z</m> y <m>{\mathbb Z}_n</m>, que están entre los grupos más familiares y fáciles de comprender, son ambos ejemplos de grupos cíclicos.  En este capítulo estudiaremos las propiedades de grupos cíclicos y subgrupos cíclicos, los que juegan un papel clave en la clasificación de los grupos abelianos.</p>
-	</introduction>
+  <introduction>
+    <p>Los grupos <m>\mathbb Z</m> y <m>{\mathbb Z}_n</m>, que están entre los grupos más familiares y fáciles de comprender, son ambos ejemplos de grupos cíclicos.  En este capítulo estudiaremos las propiedades de grupos cíclicos y subgrupos cíclicos, los que juegan un papel clave en la clasificación de los grupos abelianos.
+    </p>
+  </introduction>
  
-	<section xml:id="section-cyclic-subgroups">
-		<title>Subgrupos Cíclicos</title>
+  <section xml:id="section-cyclic-subgroups">
+    <title>Subgrupos Cíclicos</title>
 
-		<introduction>
+    <introduction>
 
-			<p>Con frecuencia un subgrupo dependerá exclusivamente de un elemento de un grupo; es decir, el conocimiento de ese elemento en particular nos permitirá calcular cualquier elemento del subgrupo.</p>
+      <p>Con frecuencia un subgrupo dependerá exclusivamente de un elemento de un grupo; es decir, el conocimiento de ese elemento en particular nos permitirá calcular cualquier elemento del subgrupo.
+    </p>
 
-			<!-- RAB 2014/08/18 Maybe this id should have 3z, not z3? -->
-			<example xml:id="example-cyclic-z3">
-				<p>Supongamos que escogemos <m>3 \in {\mathbb Z}</m> y consideremos todos los múltiplos (tanto positivos como negativos) de <m>3</m>.  Como conjunto, tenemos 
-					<me>3 {\mathbb Z} = \{ \ldots, -3, 0, 3, 6, \ldots \}.</me>
-				Es fácil ver que <m>3 {\mathbb Z}</m> es un subgrupo de los enteros. Este subgrupo está completamente determinado por el elemento <m>3</m> pues podemos obtener todos los otros elementos del grupo tomando los múltiplos de <m>3</m>. Todo elemento en el subgrupo es <q>generado</q> por <m>3</m>.</p>
-			</example>
+      <!-- RAB 2014/08/18 Maybe this id should have 3z, not z3? -->
+      <example xml:id="example-cyclic-z3">
+        <p>Supongamos que escogemos <m>3 \in {\mathbb Z}</m> y consideremos todos los múltiplos (tanto positivos como negativos) de <m>3</m>.  Como conjunto, tenemos 
+          <me>3 {\mathbb Z} = \{ \ldots, -3, 0, 3, 6, \ldots \}</me>.
+        Es fácil ver que <m>3 {\mathbb Z}</m> es un subgrupo de los enteros. Este subgrupo está completamente determinado por el elemento <m>3</m> pues podemos obtener todos los otros elementos del grupo tomando los múltiplos de <m>3</m>. Todo elemento en el subgrupo es <q>generado</q> por <m>3</m>.
+    </p>
+      </example>
 
-			<example xml:id="example-cyclic-2n">
-				<p>Si <m>H = \{ 2^n : n \in {\mathbb Z} \}</m>, entonces <m>H</m> es un subgrupo del grupo multiplicativo de los números racionales no nulos, <m>{\mathbb Q}^*</m>. Si <m>a = 2^m</m> y <m>b = 2^n</m> están en <m>H</m>, entonces <m>ab^{-1} = 2^m 2^{-n} = 2^{m-n}</m> también está en <m>H</m>.  Por la <xref ref="proposition-subgroup" />, <m>H</m> es un subgrupo de <m>{\mathbb Q}^*</m> determinada por el elemento <m>2</m>.</p>
-			</example>
+      <example xml:id="example-cyclic-2n">
+        <p>Si <m>H = \{ 2^n : n \in {\mathbb Z} \}</m>, entonces <m>H</m> es un subgrupo del grupo multiplicativo de los números racionales no nulos, <m>{\mathbb Q}^*</m>. Si <m>a = 2^m</m> y <m>b = 2^n</m> están en <m>H</m>, entonces <m>ab^{-1} = 2^m 2^{-n} = 2^{m-n}</m> también está en <m>H</m>.  Por la <xref ref="proposition-subgroup" />, <m>H</m> es un subgrupo de <m>{\mathbb Q}^*</m> determinada por el elemento <m>2</m>.
+    </p>
+      </example>
 
-			<theorem xml:id="theorem-cyclic-subgroup">
-				<statement>
-					<p>Sea <m>G</m> un grupo y sea <m>a</m> un elemento en <m>G</m>.  Entonces el conjunto <notation><usage><m>\langle a \rangle</m></usage><description>grupo cíclico generado por <m>a</m></description></notation>
-						<me>\langle a \rangle  = \{ a^k : k \in {\mathbb Z} \}</me>
-					es un subgrupo de <m>G</m>.  Más aún, <m>\langle a \rangle</m> es el menor subgrupo de <m>G</m> que contiene a <m>a</m>.</p>
-				</statement>
-				<proof>
-					<p>La identidad está en <m>\langle a \rangle </m> pues <m>a^0 = e</m>. Si <m>g</m> y <m>h</m> son dos elementos cualquiera en <m>\langle a \rangle </m>, entonces por la definición de <m>\langle a \rangle</m> podemos escribir <m>g = a^m</m> y <m>h = a^n</m> con <m>m</m> y <m>n</m> enteros. Así <m>gh = a^m a^n = a^{m+n}</m> está nuevamente en <m>\langle a \rangle </m>. Finalmente, si <m>g = a^n</m> está en <m>\langle a \rangle </m>, entonces el inverso <m>g^{-1} = a^{-n}</m> también está en <m>\langle a \rangle </m>. Claramente, cualquier subgrupo <m>H</m> de <m>G</m> que contenga <m>a</m> debe contener todas las potencias de <m>a</m> por clausura; luego, <m>H</m> contiene a <m>\langle a \rangle </m>. Por lo tanto, <m>\langle a \rangle </m> es el menor subgrupo de <m>G</m> que contiene a <m>a</m>.</p>
-				</proof>
-			</theorem>
-	 
-			<remark>
-				<p>Si usamos la notación <q>+</q>, como en el caso de los enteros con la operación de suma, escribimos <m>\langle a \rangle  = \{ na : n \in {\mathbb Z} \}</m>.</p>
-			</remark>
+      <theorem xml:id="theorem-cyclic-subgroup">
+        <statement>
+          <p>Sea <m>G</m> un grupo y sea <m>a</m> un elemento en <m>G</m>.  Entonces el conjunto <notation><usage><m>\langle a \rangle</m></usage><description>grupo cíclico generado por <m>a</m></description></notation>
+            <me>\langle a \rangle  = \{ a^k : k \in {\mathbb Z} \}</me>
+          es un subgrupo de <m>G</m>.  Más aún, <m>\langle a \rangle</m> es el menor subgrupo de <m>G</m> que contiene a <m>a</m>.
+    </p>
+        </statement>
+        <proof>
+          <p>La identidad está en <m>\langle a \rangle </m> pues <m>a^0 = e</m>. Si <m>g</m> y <m>h</m> son dos elementos cualquiera en <m>\langle a \rangle </m>, entonces por la definición de <m>\langle a \rangle</m> podemos escribir <m>g = a^m</m> y <m>h = a^n</m> con <m>m</m> y <m>n</m> enteros. Así <m>gh = a^m a^n = a^{m+n}</m> está nuevamente en <m>\langle a \rangle </m>. Finalmente, si <m>g = a^n</m> está en <m>\langle a \rangle </m>, entonces el inverso <m>g^{-1} = a^{-n}</m> también está en <m>\langle a \rangle </m>. Claramente, cualquier subgrupo <m>H</m> de <m>G</m> que contenga <m>a</m> debe contener todas las potencias de <m>a</m> por clausura; luego, <m>H</m> contiene a <m>\langle a \rangle </m>. Por lo tanto, <m>\langle a \rangle </m> es el menor subgrupo de <m>G</m> que contiene a <m>a</m>.
+    </p>
+        </proof>
+      </theorem>
+   
+      <remark>
+        <p>Si usamos la notación <q>+</q>, como en el caso de los enteros con la operación de suma, escribimos <m>\langle a \rangle  = \{ na : n \in {\mathbb Z} \}</m>.
+    </p>
+      </remark>
 
-			
+      
 
-			<p>Para <m>a \in G</m>, llamamos a <m>\langle a \rangle </m> el <term>subgrupo cíclico</term><idx><h>Cíclico</h><h>subgrupo</h></idx> generado por <m>a</m>. Si <m>G</m> contiene algún elemento <m>a</m> tal que <m>G = \langle a \rangle </m>, entonces <m>G</m> es un <idx><h>Cíclico</h><h>grupo</h></idx><term>grupo cíclico</term>. En ese caso <m>a</m> es un <term>generador</term><idx><h>Generador del subgrupo cíclico</h></idx> de <m>G</m>.  Si <m>a</m> es un elemento de un grupo <m>G</m>, definimos el <term>orden</term><idx><h>Elemento</h><h>orden del</h></idx> de <m>a</m> como el menor entero positivo <m>n</m> tal que <m>a^n= e</m>, y escribimos <m>|a| = n</m>. <notation><usage><m>|a|</m></usage><description>el orden de un elemento <m>a</m></description></notation> Si no hay tal entero <m>n</m>, decimos que el orden de <m>a</m> es infinito y escribimos <m>|a| = \infty</m> para denotar el orden de <m>a</m>.</p>
-	 
-			<example xml:id="example-cyclic-z6">
-				<p>Note que un grupo cíclico puede tener más que un generador. Tanto <m>1</m> como <m>5</m> generan <m>{\mathbb Z}_6</m>; por lo tanto, <m>{\mathbb Z}_6</m> es un grupo cíclico. No todo elemento en un grupo cíclico es un generador del grupo. El orden de <m>2 \in {\mathbb Z}_6</m> es <m>3</m>. El subgrupo cíclico generado por <m>2</m> es <m>\langle 2 \rangle  = \{ 0, 2, 4 \}</m>.</p>
-			</example>
-	 
-			<p>Los grupos <m>{\mathbb Z}</m> y <m>{\mathbb Z}_n</m> son grupos cíclicos. Los elementos <m>1</m> y <m>-1</m> son generadores para <m>{\mathbb Z}</m>.  Siempre podemos generar <m>{\mathbb Z}_n</m> con 1 pero puede haber otros generadores de <m>{\mathbb Z}_n</m>, como en el caso de <m>{\mathbb Z}_6</m>.</p> 
-	 
-			<example xml:id="example-cyclic-u9">
-				<p>El grupo de unidades, <m>U(9)</m>, en <m>{\mathbb Z}_9</m> es un grupo cíclico.  Como conjunto, <m>U(9)</m> es <m>\{ 1, 2, 4, 5, 7, 8  \}</m>. El elemento 2 es un generador para <m>U(9)</m> pues 
-					<md>
-						<mrow>2^1 &amp; = 2 \qquad 2^2 = 4</mrow>
-						<mrow>2^3 &amp; = 8 \qquad 2^4 = 7</mrow>
-						<mrow>2^5 &amp; =  5 \qquad 2^6 = 1.</mrow>
-					</md></p>
-			</example>
-	 
-			<example xml:id="example-cyclic-s3-not-cyclic">
-				<p>No todo grupo es un grupo cíclico.  Considere el grupo de simetrías de un triángulo equilátero <m>S_3</m>.  La tabla de multiplicación para este grupo es la <xref ref="table-s3" />. Los subgrupos de <m>S_3</m> se muestran en la <xref ref="figure-subgrps-s3" />.  Note que todo subgrupo propio es cíclico; sin embargo, ningún elemento por si solo genera el grupo completo.</p>
-			</example>
+      <p>Para <m>a \in G</m>, llamamos a <m>\langle a \rangle </m> el <term>subgrupo cíclico</term><idx><h>Cíclico</h><h>subgrupo</h></idx> generado por <m>a</m>. Si <m>G</m> contiene algún elemento <m>a</m> tal que <m>G = \langle a \rangle </m>, entonces <m>G</m> es un <idx><h>Cíclico</h><h>grupo</h></idx><term>grupo cíclico</term>. En ese caso <m>a</m> es un <term>generador</term><idx><h>Generador del subgrupo cíclico</h></idx> de <m>G</m>.  Si <m>a</m> es un elemento de un grupo <m>G</m>, definimos el <term>orden</term><idx><h>Elemento</h><h>orden del</h></idx> de <m>a</m> como el menor entero positivo <m>n</m> tal que <m>a^n= e</m>, y escribimos <m>|a| = n</m>. <notation><usage><m>|a|</m></usage><description>el orden de un elemento <m>a</m></description></notation> Si no hay tal entero <m>n</m>, decimos que el orden de <m>a</m> es infinito y escribimos <m>|a| = \infty</m> para denotar el orden de <m>a</m>.
+    </p>
+   
+      <example xml:id="example-cyclic-z6">
+        <p>Note que un grupo cíclico puede tener más que un generador. Tanto <m>1</m> como <m>5</m> generan <m>{\mathbb Z}_6</m>; por lo tanto, <m>{\mathbb Z}_6</m> es un grupo cíclico. No todo elemento en un grupo cíclico es un generador del grupo. El orden de <m>2 \in {\mathbb Z}_6</m> es <m>3</m>. El subgrupo cíclico generado por <m>2</m> es <m>\langle 2 \rangle  = \{ 0, 2, 4 \}</m>.
+    </p>
+      </example>
+   
+      <p>Los grupos <m>{\mathbb Z}</m> y <m>{\mathbb Z}_n</m> son grupos cíclicos. Los elementos <m>1</m> y <m>-1</m> son generadores para <m>{\mathbb Z}</m>.  Siempre podemos generar <m>{\mathbb Z}_n</m> con 1 pero puede haber otros generadores de <m>{\mathbb Z}_n</m>, como en el caso de <m>{\mathbb Z}_6</m>.
+    </p> 
+   
+      <example xml:id="example-cyclic-u9">
+        <p>El grupo de unidades, <m>U(9)</m>, en <m>{\mathbb Z}_9</m> es un grupo cíclico.  Como conjunto, <m>U(9)</m> es <m>\{ 1, 2, 4, 5, 7, 8  \}</m>. El elemento 2 es un generador para <m>U(9)</m> pues 
+          <md>
+            <mrow>2^1 &amp; = 2 \qquad 2^2 = 4</mrow>
+            <mrow>2^3 &amp; = 8 \qquad 2^4 = 7</mrow>
+            <mrow>2^5 &amp; =  5 \qquad 2^6 = 1</mrow>
+          </md>.
+    </p>
+      </example>
+   
+      <example xml:id="example-cyclic-s3-not-cyclic">
+        <p>No todo grupo es un grupo cíclico.  Considere el grupo de simetrías de un triángulo equilátero <m>S_3</m>.  La tabla de multiplicación para este grupo es la <xref ref="table-s3" />. Los subgrupos de <m>S_3</m> se muestran en la <xref ref="figure-subgrps-s3" />.  Note que todo subgrupo propio es cíclico; sin embargo, ningún elemento por si solo genera el grupo completo.
+    </p>
+      </example>
 
-			<figure xml:id="figure-subgrps-s3">
-				<caption>Subgrupos de <m>S_3</m></caption>
+      <figure xml:id="figure-subgrps-s3">
+        <caption>Subgrupos de <m>S_3</m></caption>
 
-				<!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
-				<image xml:id="cyclic-s3-subgroups">
-					<description>La red de subgrupos para S-3: la parte superior es S-3, la segunda línea es la identidad, rho-1, rho-2; la identidad, mu-1; la identidad, mu-2; la identidad, mu-3, y la parte inferior es el subgrupo identidad.</description>
-					<latex-image>
-						<xi:include href="tikz/cyclic-s3-subgroups.tex" parse="text"/>
-					</latex-image>
-				</image>
-			</figure>
+        <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
+        <image xml:id="cyclic-s3-subgroups">
+          <description>La red de subgrupos para S-3: la parte superior es S-3, la segunda línea es la identidad, rho-1, rho-2; la identidad, mu-1; la identidad, mu-2; la identidad, mu-3, y la parte inferior es el subgrupo identidad.</description>
+          <latex-image>
+            <xi:include href="tikz/cyclic-s3-subgroups.tex" parse="text"/>
+          </latex-image>
+        </image>
+      </figure>
 
-			<theorem xml:id="theorem-cyclic-abelian">
-				<statement>
-					<p>Todo grupo cíclico es abeliano.</p>
-				</statement>
-				<proof>
-					<p>Sea <m>G</m> un grupo cíclico y sea <m>a \in G</m> un generador para <m>G</m>. Si <m>g</m> y <m>h</m> están en  <m>G</m>, entonces pueden ser escritos como potencias de <m>a</m>, digamos <m>g = a^r</m> y <m>h = a^s</m>. Como
-						<me>g  h = a^r a^s = a^{r+s} = a^{s+r} = a^s a^r = h g,</me>
-					<m>G</m> es abeliano.</p>
-				</proof>
-			</theorem>
+      <theorem xml:id="theorem-cyclic-abelian">
+        <statement>
+          <p>Todo grupo cíclico es abeliano.
+    </p>
+        </statement>
+        <proof>
+          <p>Sea <m>G</m> un grupo cíclico y sea <m>a \in G</m> un generador para <m>G</m>. Si <m>g</m> y <m>h</m> están en  <m>G</m>, entonces pueden ser escritos como potencias de <m>a</m>, digamos <m>g = a^r</m> y <m>h = a^s</m>. Como
+            <me>g  h = a^r a^s = a^{r+s} = a^{s+r} = a^s a^r = h g</me>,
+          <m>G</m> es abeliano.
+    </p>
+        </proof>
+      </theorem>
 
-		</introduction>
-	 
-		<subsection xml:id="cyclic-subsection-cyclic-subgroups">
-			<title>Subgrupos de Grupos Cíclicos</title>
+    </introduction>
+   
+    <subsection xml:id="cyclic-subsection-cyclic-subgroups">
+      <title>Subgrupos de Grupos Cíclicos</title>
  
-			<p>Podemos hacer algunas preguntas interesantes sobre subgrupos cíclicos de un grupo y sobre subgrupos de un grupo cíclico.  Si <m>G</m> es un grupo, qué subgrupos de <m>G</m> son cíclicos? Si <m>G</m> es un grupo cíclico, que tipo de subgrupos tiene <m>G</m>?</p>
+      <p>Podemos hacer algunas preguntas interesantes sobre subgrupos cíclicos de un grupo y sobre subgrupos de un grupo cíclico.  Si <m>G</m> es un grupo, qué subgrupos de <m>G</m> son cíclicos? Si <m>G</m> es un grupo cíclico, que tipo de subgrupos tiene <m>G</m>?</p>
  
-			<theorem xml:id="theorem-cyclic-subgroups">
-				<statement>
-					<p>Todo subgrupo de un grupo cíclico es cíclico.</p>
-				</statement>
-				<proof>
-					<p>Las principales herramientas usadas en esta demostración son el algoritmo de división y el principio del buen orden. Sea <m>G</m> un grupo cíclico generado por <m>a</m> y supongamos que <m>H</m> es un subgrupo de <m>G</m>. Si <m>H = \{ e \}</m>, entonces  <m>H</m> es cíclico trivialmente. Supongamos que <m>H</m> contiene algún otro elemento  <m>g</m> distinto de la identidad. Entonces <m>g</m> puede ser escrito como <m>a^n</m> para algún entero <m>n</m>. Como  <m>H</m> es un subgrupo, <m>g^{-1} = a^{-n}</m> también debe estar en <m>H</m>.  Como  <m>n</m> o <m>-n</m> es positivo, podemos suponer que <m>H</m> contiene potencias positivas de <m>a</m> y que <m>n \gt 0</m>. Sea <m>m</m> el menor número natural tal que <m>a^m \in H</m>. Tal <m>m</m> existe por por el principio del buen orden.</p>
+      <theorem xml:id="theorem-cyclic-subgroups">
+        <statement>
+          <p>Todo subgrupo de un grupo cíclico es cíclico.
+    </p>
+        </statement>
+        <proof>
+          <p>Las principales herramientas usadas en esta demostración son el algoritmo de división y el principio del buen orden. Sea <m>G</m> un grupo cíclico generado por <m>a</m> y supongamos que <m>H</m> es un subgrupo de <m>G</m>. Si <m>H = \{ e \}</m>, entonces  <m>H</m> es cíclico trivialmente. Supongamos que <m>H</m> contiene algún otro elemento  <m>g</m> distinto de la identidad. Entonces <m>g</m> puede ser escrito como <m>a^n</m> para algún entero <m>n</m>. Como  <m>H</m> es un subgrupo, <m>g^{-1} = a^{-n}</m> también debe estar en <m>H</m>.  Como  <m>n</m> o <m>-n</m> es positivo, podemos suponer que <m>H</m> contiene potencias positivas de <m>a</m> y que <m>n \gt 0</m>. Sea <m>m</m> el menor número natural tal que <m>a^m \in H</m>. Tal <m>m</m> existe por por el principio del buen orden.
+    </p>
  
-					<p>Afirmamos que  <m>h = a^m</m> es un generador para <m>H</m>.  Debemos demostrar que todo <m>h' \in H</m> puede ser escrito como una potencia de <m>h</m>. Como <m>h' \in H</m> y <m>H</m> es un subgrupo de <m>G</m>, <m>h' = a^k</m> para algún entero <m>k</m>. Usando el algoritmo de la división, podemos encontrar <m>q</m> y <m>r</m> tales que <m>k = mq +r</m> con <m>0 \leq r \lt m</m>; luego,
-						<me>a^k = a^{mq +r} = (a^m)^q a^r = h^q a^r.</me>
-					Así <m>a^r = a^k h^{-q}</m>. Como <m>a^k</m> y <m>h^{-q}</m> están en  <m>H</m>, <m>a^r</m> también debe estar en <m>H</m>.  Pero <m>m</m> era el menor número positivo tal que <m>a^m</m> está en <m>H</m>; por lo tanto, <m>r=0</m> y  <m>k=mq</m>. Luego, 
-						<me>h' = a^k = a^{mq} =  h^q</me>
-					y <m>H</m> está generado por <m>h</m>.</p>
-				</proof>
-			</theorem>
+          <p>Afirmamos que  <m>h = a^m</m> es un generador para <m>H</m>.  Debemos demostrar que todo <m>h' \in H</m> puede ser escrito como una potencia de <m>h</m>. Como <m>h' \in H</m> y <m>H</m> es un subgrupo de <m>G</m>, <m>h' = a^k</m> para algún entero <m>k</m>. Usando el algoritmo de la división, podemos encontrar <m>q</m> y <m>r</m> tales que <m>k = mq +r</m> con <m>0 \leq r \lt m</m>; luego,
+            <me>a^k = a^{mq +r} = (a^m)^q a^r = h^q a^r</me>.
+          Así <m>a^r = a^k h^{-q}</m>. Como <m>a^k</m> y <m>h^{-q}</m> están en  <m>H</m>, <m>a^r</m> también debe estar en <m>H</m>.  Pero <m>m</m> era el menor número positivo tal que <m>a^m</m> está en <m>H</m>; por lo tanto, <m>r=0</m> y  <m>k=mq</m>. Luego, 
+            <me>h' = a^k = a^{mq} =  h^q</me>
+          y <m>H</m> está generado por <m>h</m>.
+    </p>
+        </proof>
+      </theorem>
  
-			<corollary>
-				<statement>
-					<p>Los subgrupos de <m>{\mathbb Z}</m> son exactamente <m>n{\mathbb Z}</m> con <m>n = 0, 1, 2,\ldots</m>.</p>
-				</statement>
-			</corollary>
+      <corollary>
+        <statement>
+          <p>Los subgrupos de <m>{\mathbb Z}</m> son exactamente <m>n{\mathbb Z}</m> con <m>n = 0, 1, 2,\ldots</m>.
+    </p>
+        </statement>
+      </corollary>
  
-			<proposition xml:id="proposition-cyclic-subgrp-order">
-				<statement>
-					<p>Sea <m>G</m> un grupo cíclico de orden <m>n</m> y supongamos que <m>a</m> es un generador para  <m>G</m>. Entonces <m>a^k=e</m> si y solo si <m>n</m> divide a <m>k</m>.</p>
-				</statement>
-				<proof>
-					<p>Supongamos primero que <m>a^k=e</m>. Por el algoritmo de la división, <m>k = nq + r</m> con <m>0 \leq r \lt n</m>; luego, 
-						<me>e = a^k = a^{nq + r} = a^{nq} a^r = e a^r = a^r.</me>
-					Como el menor entero <m>m</m> tal que <m>a^m = e</m> es <m>n</m>, <m>r= 0</m>.</p>
+      <proposition xml:id="proposition-cyclic-subgrp-order">
+        <statement>
+          <p>Sea <m>G</m> un grupo cíclico de orden <m>n</m> y supongamos que <m>a</m> es un generador para  <m>G</m>. Entonces <m>a^k=e</m> si y solo si <m>n</m> divide a <m>k</m>.
+    </p>
+        </statement>
+        <proof>
+          <p>Supongamos primero que <m>a^k=e</m>. Por el algoritmo de la división, <m>k = nq + r</m> con <m>0 \leq r \lt n</m>; luego, 
+            <me>e = a^k = a^{nq + r} = a^{nq} a^r = e a^r = a^r</me>.
+          Como el menor entero <m>m</m> tal que <m>a^m = e</m> es <m>n</m>, <m>r= 0</m>.
+    </p>
  
-					<p>Recíprocamente, si <m>n</m> divide a <m>k</m>, entonces <m>k=ns</m> para algún entero <m>s</m>. Por lo tanto, 
-						<me>a^k = a^{ns} = (a^n)^s = e^s = e.</me></p>
-				</proof>
-			</proposition>
+          <p>Recíprocamente, si <m>n</m> divide a <m>k</m>, entonces <m>k=ns</m> para algún entero <m>s</m>. Por lo tanto, 
+            <me>a^k = a^{ns} = (a^n)^s = e^s = e</me>.
+    </p>
+        </proof>
+      </proposition>
  
- 			<theorem xml:id="theorem-cyclic-orders">
-				<statement>
-					<p>Sea <m>G</m> un grupo cíclico de orden <m>n</m> y supongamos que <m>a \in G</m> es un 
-					generador del grupo.  Si <m>b = a^k</m>, entonces el orden de <m>b</m> es <m>n/d</m>, con <m>d = \gcd(k,n)</m>.</p>
-				</statement>
-				<proof>
-					<p>Buscamos el menor entero positivo <m>m</m> tal que <m>e = b^m = a^{km}</m>. Por la <xref ref="proposition-cyclic-subgrp-order" />, este es el menor entero positivo <m>m</m> tal que <m>n</m> divide a <m>km</m> o, equivalentemente, <m>n/d</m> divide a <m>m(k/d)</m>.  Como <m>d</m> es el máximo común divisor de <m>n</m> y <m>k</m>, <m>n/d</m> y <m>k/d</m> son relativamente primos. Luego, para que <m>n/d</m> divida a <m>m(k/d)</m> debe dividir  a <m>m</m>.  El menor tal <m>m</m> es <m>n/d</m>.</p>
-				</proof>
-			</theorem>
+       <theorem xml:id="theorem-cyclic-orders">
+        <statement>
+          <p>Sea <m>G</m> un grupo cíclico de orden <m>n</m> y supongamos que <m>a \in G</m> es un 
+          generador del grupo.  Si <m>b = a^k</m>, entonces el orden de <m>b</m> es <m>n/d</m>, con <m>d = \gcd(k,n)</m>.
+    </p>
+        </statement>
+        <proof>
+          <p>Buscamos el menor entero positivo <m>m</m> tal que <m>e = b^m = a^{km}</m>. Por la <xref ref="proposition-cyclic-subgrp-order" />, este es el menor entero positivo <m>m</m> tal que <m>n</m> divide a <m>km</m> o, equivalentemente, <m>n/d</m> divide a <m>m(k/d)</m>.  Como <m>d</m> es el máximo común divisor de <m>n</m> y <m>k</m>, <m>n/d</m> y <m>k/d</m> son relativamente primos. Luego, para que <m>n/d</m> divida a <m>m(k/d)</m> debe dividir  a <m>m</m>.  El menor tal <m>m</m> es <m>n/d</m>.
+    </p>
+        </proof>
+      </theorem>
  
-			<corollary xml:id="corollary-cyclic-modngenerators">
-				<statement>
-					<p>Los generadores de <m>{\mathbb Z}_n</m> son los enteros <m>r</m> tales que <m>1 \leq r \lt n</m> y <m>\gcd(r,n) =  1</m>.</p>
-					</statement>
-				</corollary>
+      <corollary xml:id="corollary-cyclic-modngenerators">
+        <statement>
+          <p>Los generadores de <m>{\mathbb Z}_n</m> son los enteros <m>r</m> tales que <m>1 \leq r \lt n</m> y <m>\gcd(r,n) =  1</m>.
+    </p>
+          </statement>
+        </corollary>
  
-			<example xml:id="example-cyclic-z16">
-				<p>Consideremos el grupo <m>{\mathbb Z}_{16}</m>.  Los números <m>1</m>, <m>3</m>,
-					<m>5</m>, <m>7</m>, <m>9</m>, <m>11</m>, <m>13</m>,
-					y <m>15</m> son los elementos de <m>{\mathbb Z}_{16}</m> que son relativamente primos con <m>16</m>.  Cada uno de estos  elementos genera <m>{\mathbb Z}_{16}</m>. Por ejemplo, 
-					<md>
-						<mrow>1 \cdot 9  &amp; =  9  &amp;  2 \cdot 9  &amp; = 2  &amp; 3 \cdot 9  &amp; = 11</mrow>
-						<mrow>4 \cdot 9  &amp; =  4  &amp;  5 \cdot 9  &amp; = 13 &amp; 	6 \cdot 9 &amp; = 6 </mrow>
-						<mrow>7 \cdot 9  &amp; =  15 &amp; 8 \cdot 9  &amp; = 8  &amp; 	9 \cdot 9 &amp;  = 1 </mrow>
-						<mrow>10 \cdot 9 &amp; =  10 &amp; 11 \cdot 9 &amp; = 3  &amp; 12 \cdot 9 &amp;  = 12</mrow>
-						<mrow>13 \cdot 9 &amp; =  5 &amp; 14 \cdot 9 &amp; = 14 &amp;  	15 \cdot 9 &amp; = 7.</mrow>
-					</md></p>
-			</example>
+      <example xml:id="example-cyclic-z16">
+        <p>Consideremos el grupo <m>{\mathbb Z}_{16}</m>.  Los números <m>1</m>, <m>3</m>,
+          <m>5</m>, <m>7</m>, <m>9</m>, <m>11</m>, <m>13</m>,
+          y <m>15</m> son los elementos de <m>{\mathbb Z}_{16}</m> que son relativamente primos con <m>16</m>.  Cada uno de estos  elementos genera <m>{\mathbb Z}_{16}</m>. Por ejemplo, 
+          <md>
+            <mrow>1 \cdot 9  &amp; =  9  &amp;  2 \cdot 9  &amp; = 2  &amp; 3 \cdot 9  &amp; = 11</mrow>
+            <mrow>4 \cdot 9  &amp; =  4  &amp;  5 \cdot 9  &amp; = 13 &amp;   6 \cdot 9 &amp; = 6 </mrow>
+            <mrow>7 \cdot 9  &amp; =  15 &amp; 8 \cdot 9  &amp; = 8  &amp;   9 \cdot 9 &amp;  = 1 </mrow>
+            <mrow>10 \cdot 9 &amp; =  10 &amp; 11 \cdot 9 &amp; = 3  &amp; 12 \cdot 9 &amp;  = 12</mrow>
+            <mrow>13 \cdot 9 &amp; =  5 &amp; 14 \cdot 9 &amp; = 14 &amp;    15 \cdot 9 &amp; = 7</mrow>
+          </md>.
+    </p>
+      </example>
 
-		</subsection>
+    </subsection>
  
-	</section>
+  </section>
 
-	<section xml:id="section-mult-group-c">
-		<title>Grupo multiplicativo de los números complejos</title>
+  <section xml:id="section-mult-group-c">
+    <title>Grupo multiplicativo de los números complejos</title>
 
-		<introduction>
+    <introduction>
  
-			<p>Los <term>números complejos</term> están definidos como
-				<me>{\mathbb C} = \{ a + bi : a, b \in {\mathbb R} \},</me>
-			con <m>i^2 = -1</m>.  Si <m>z = a + bi</m>, entonces <m>a</m> es la <term>parte real</term> de <m>z</m> y <m>b</m> es la <term>parte imaginaria</term> de <m>z</m>.</p>
-	 
-			<p>Para sumar dos números complejos <m>z=a+bi</m> y <m>w= c+di</m>, debemos simplemente sumar las partes reales y las imaginarias respectivamente:
-				<me>z + w=(a + bi ) + (c + di)  =  (a + c) + (b + d)i.</me>
-			Recordando que <m>i^2 = -1</m>,  podemos multiplicar los números complejos como si fueran polinomios. El producto de <m>z</m> y <m>w</m> es 
-				<me>(a + bi )(c + di)  =   ac + bdi^2 + adi + bci =  (ac -bd) +(ad + bc)i.</me></p>
-	 
-	 		<p>Todo número complejo no nulo <m>z = a +bi</m> tiene un inverso multiplicativo; es decir, existe un <m>z^{-1} \in {\mathbb C}^\ast</m> tal que <m>z z^{-1} = z^{-1} z = 1</m>. Si <m>z = a + bi</m>, entonces
-				<me>z^{-1} = \frac{a-bi}{ a^2 + b^2  }.</me>
-			El <term>conjugado</term><idx><h>Conjugado, complejo</h></idx> de un número complejo <m>z = a + bi</m> se define como  <m>\overline{z} = a- bi</m>.  El  <term>valor absoluto</term> o <term>módulo</term> de  <m>z = a + bi</m>  es <m>|z| = \sqrt{a^2 + b^2}</m>.</p>  
+      <p>Los <term>números complejos</term> están definidos como
+        <me>{\mathbb C} = \{ a + bi : a, b \in {\mathbb R} \}</me>,
+      con <m>i^2 = -1</m>.  Si <m>z = a + bi</m>, entonces <m>a</m> es la <term>parte real</term> de <m>z</m> y <m>b</m> es la <term>parte imaginaria</term> de <m>z</m>.
+    </p>
+   
+      <p>Para sumar dos números complejos <m>z=a+bi</m> y <m>w= c+di</m>, debemos simplemente sumar las partes reales y las imaginarias respectivamente:
+        <me>z + w=(a + bi ) + (c + di)  =  (a + c) + (b + d)i</me>.
+      Recordando que <m>i^2 = -1</m>,  podemos multiplicar los números complejos como si fueran polinomios. El producto de <m>z</m> y <m>w</m> es 
+        <me>(a + bi )(c + di)  =   ac + bdi^2 + adi + bci =  (ac -bd) +(ad + bc)i</me>.
+    </p>
+   
+       <p>Todo número complejo no nulo <m>z = a +bi</m> tiene un inverso multiplicativo; es decir, existe un <m>z^{-1} \in {\mathbb C}^\ast</m> tal que <m>z z^{-1} = z^{-1} z = 1</m>. Si <m>z = a + bi</m>, entonces
+        <me>z^{-1} = \frac{a-bi}{ a^2 + b^2  }</me>.
+      El <term>conjugado</term><idx><h>Conjugado, complejo</h></idx> de un número complejo <m>z = a + bi</m> se define como  <m>\overline{z} = a- bi</m>.  El  <term>valor absoluto</term> o <term>módulo</term> de  <m>z = a + bi</m>  es <m>|z| = \sqrt{a^2 + b^2}</m>.
+    </p>  
  
-			<example xml:id="example-cyclic-complex-add">
-				<p>Sean <m>z = 2 + 3i</m> y <m>w = 1-2i</m>. Entonces
-					<me>z + w = (2 + 3i) + (1 - 2i) = 3 + i</me>
-				y
-					<me>z  w = (2 + 3i)(1 - 2i ) = 8 - i.</me>
-				Además,
-					<md>
-						<mrow>z^{-1} &amp; = \frac{2}{13} - \frac{3}{13}i</mrow>
-						<mrow>|z| &amp; = \sqrt{13}</mrow>
-						<mrow>\overline{z} &amp; = 2-3i.</mrow>
-					</md></p>
-			</example>
+      <example xml:id="example-cyclic-complex-add">
+        <p>Sean <m>z = 2 + 3i</m> y <m>w = 1-2i</m>. Entonces
+          <me>z + w = (2 + 3i) + (1 - 2i) = 3 + i</me>
+        y
+          <me>z  w = (2 + 3i)(1 - 2i ) = 8 - i</me>.
+        Además,
+          <md>
+            <mrow>z^{-1} &amp; = \frac{2}{13} - \frac{3}{13}i</mrow>
+            <mrow>|z| &amp; = \sqrt{13}</mrow>
+            <mrow>\overline{z} &amp; = 2-3i</mrow>
+          </md>.
+    </p>
+      </example>
 
-			<figure xml:id="figure-rectcoord">
-				<caption>Coordenadas cartesianas de un número complejo</caption>
+      <figure xml:id="figure-rectcoord">
+        <caption>Coordenadas cartesianas de un número complejo</caption>
 
-				<!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
-				<image xml:id="cyclic-complex-rectangular" permid="KwJ">
-					<description>El plano complejo donde el eje horizontal es el eje x o eje real y el eje vertical es el eje y o eje imaginario. El punto z1 = 2 + 3i está en el cuadrante superior derecho, el punto z2 = 1- 2i en el cuadrante inferior derecho y z3 = -3 + 2i en el cuadrante superior derecho.</description>
-		  
-					  <latex-image>
-						  <xi:include href="tikz/cyclic-complex-rectangular.tex" parse="text"/>
-					  </latex-image>
-				  </image>
-			</figure>
+        <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
+        <image xml:id="cyclic-complex-rectangular" permid="KwJ">
+          <description>El plano complejo donde el eje horizontal es el eje x o eje real y el eje vertical es el eje y o eje imaginario. El punto z1 = 2 + 3i está en el cuadrante superior derecho, el punto z2 = 1- 2i en el cuadrante inferior derecho y z3 = -3 + 2i en el cuadrante superior derecho.</description>
+      
+            <latex-image>
+              <xi:include href="tikz/cyclic-complex-rectangular.tex" parse="text"/>
+            </latex-image>
+          </image>
+      </figure>
 
-			<p>Existen varias formas de representar gráficamente a los números complejos. Podemos representar un número complejo <m>z = a +bi</m> como un par ordenado en el plano <m>xy</m> donde <m>a</m> es la coordenada <m>x</m> (o real) y <m>b</m> es la coordenada <m>y</m> (o imaginaria). Esta se llama representación <term>rectangular</term> o <term>cartesiana</term> . Las representaciones cartesianas de <m>z_1 = 2 + 3i</m>, <m>z_2 = 1 - 2i</m>, y <m>z_3 = - 3 + 2i</m> se ilustran en la <xref ref="figure-rectcoord" />.</p>
+      <p>Existen varias formas de representar gráficamente a los números complejos. Podemos representar un número complejo <m>z = a +bi</m> como un par ordenado en el plano <m>xy</m> donde <m>a</m> es la coordenada <m>x</m> (o real) y <m>b</m> es la coordenada <m>y</m> (o imaginaria). Esta se llama representación <term>rectangular</term> o <term>cartesiana</term> . Las representaciones cartesianas de <m>z_1 = 2 + 3i</m>, <m>z_2 = 1 - 2i</m>, y <m>z_3 = - 3 + 2i</m> se ilustran en la <xref ref="figure-rectcoord" />.
+    </p>
 
-			<figure xml:id="figure-polarcoord">
-				<caption>Coordenadas polares de un número complejo</caption>
+      <figure xml:id="figure-polarcoord">
+        <caption>Coordenadas polares de un número complejo</caption>
 
-				<!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
-				<image xml:id="cyclic-complex-polar" permid="qDS">
-					<description>El plano complejo donde el eje horizontal es el eje x o eje real y el eje vertical es el eje y o eje imaginario. El punto a + bi está en el cuadrante superior derecho. El punto también está determinado por un rayo que forma un ángulo de theta en sentido antihorario desde el eje horizontal y tiene una longitud de r.</description>
-		  
-					  <latex-image>
-						  <xi:include href="tikz/cyclic-complex-polar.tex" parse="text"/>
-					  </latex-image>
-				  </image>
-		  
+        <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
+        <image xml:id="cyclic-complex-polar" permid="qDS">
+          <description>El plano complejo donde el eje horizontal es el eje x o eje real y el eje vertical es el eje y o eje imaginario. El punto a + bi está en el cuadrante superior derecho. El punto también está determinado por un rayo que forma un ángulo de theta en sentido antihorario desde el eje horizontal y tiene una longitud de r.</description>
+      
+            <latex-image>
+              <xi:include href="tikz/cyclic-complex-polar.tex" parse="text"/>
+            </latex-image>
+          </image>
+      
 
 
-			</figure>
+      </figure>
 
-			<p>Número complejos no nulos se pueden representar también con sus <term>coordenadas polares</term>.  Para especificar un punto no cero en el plano, basta con dar un ángulo <m>\theta</m> desde el eje <m>x</m> positivo en dirección antihoraria y una distancia <m>r</m> desde el  origen, como en la  <xref ref="figure-polarcoord" />. Podemos ver que
-				<me>z = a + bi = r( \cos \theta + i \sin \theta).</me>
-			Luego,
-				<me>r = |z| = \sqrt{a^2 + b^2}</me>
-			y
-				<md>
-					<mrow>a &amp; = r \cos \theta</mrow>
-					<mrow>b &amp; = r \sin \theta.</mrow>
-				</md>
-			A veces abreviaremos <m>r( \cos \theta + i \sin \theta)</m> como <m>r \cis \theta</m>.  <notation><usage><m>\cis \theta</m></usage><description><m>\cos \theta + i \sin \theta</m></description></notation> Para garantizar que la representación  de <m>z</m> esté bien definida, también pediremos que <m>0^{\circ} \leq \theta \lt 360^{\circ}</m>.  Si la medida está en radianes, entonces <m>0 \leq \theta \lt2 \pi</m>.</p>
+      <p>Número complejos no nulos se pueden representar también con sus <term>coordenadas polares</term>.  Para especificar un punto no cero en el plano, basta con dar un ángulo <m>\theta</m> desde el eje <m>x</m> positivo en dirección antihoraria y una distancia <m>r</m> desde el  origen, como en la  <xref ref="figure-polarcoord" />. Podemos ver que
+        <me>z = a + bi = r( \cos \theta + i \sin \theta)</me>.
+      Luego,
+        <me>r = |z| = \sqrt{a^2 + b^2}</me>
+      y
+        <md>
+          <mrow>a &amp; = r \cos \theta</mrow>
+          <mrow>b &amp; = r \sin \theta</mrow>
+        </md>.
+      A veces abreviaremos <m>r( \cos \theta + i \sin \theta)</m> como <m>r \cis \theta</m>.  <notation><usage><m>\cis \theta</m></usage><description><m>\cos \theta + i \sin \theta</m></description></notation> Para garantizar que la representación  de <m>z</m> esté bien definida, también pediremos que <m>0^{\circ} \leq \theta \lt 360^{\circ}</m>.  Si la medida está en radianes, entonces <m>0 \leq \theta \lt2 \pi</m>.
+    </p>
 
-			<example xml:id="example-cyclic-polar">
-				<p>Supongamos que <m>z = 2 \cis  60^{\circ}</m>. Entonces
-					<me>a  =  2 \cos 60^{\circ}  =   1</me>
-				y
-					<me>b  =  2 \sin 60^{\circ}  =  \sqrt{3}.</me>
-				Luego, la representación cartesiana es <m>z = 1+\sqrt{3}\, i</m>.</p>
+      <example xml:id="example-cyclic-polar">
+        <p>Supongamos que <m>z = 2 \cis  60^{\circ}</m>. Entonces
+          <me>a  =  2 \cos 60^{\circ}  =   1</me>
+        y
+          <me>b  =  2 \sin 60^{\circ}  =  \sqrt{3}</me>.
+        Luego, la representación cartesiana es <m>z = 1+\sqrt{3}\, i</m>.
+    </p>
  
- 				<p>Recíprocamente, si nos entregan la representación cartesiana de un número complejo, puede ser útil conocer su representación polar. Si <m>z = 3 \sqrt{2} - 3 \sqrt{2}\, i</m>, entonces 
-					<me>r = \sqrt{a^2 + b^2} = \sqrt{36 } = 6</me>
-				y
-					<me>\theta = \arctan \left( \frac{b}{a} \right) = \arctan( - 1) = 315^{\circ},</me>
-				así <m>3 \sqrt{2} - 3 \sqrt{2}\, i=6 \cis  315^{\circ}</m>.</p>
-			</example>
+         <p>Recíprocamente, si nos entregan la representación cartesiana de un número complejo, puede ser útil conocer su representación polar. Si <m>z = 3 \sqrt{2} - 3 \sqrt{2}\, i</m>, entonces 
+          <me>r = \sqrt{a^2 + b^2} = \sqrt{36 } = 6</me>
+        y
+          <me>\theta = \arctan \left( \frac{b}{a} \right) = \arctan( - 1) = 315^{\circ}</me>,
+        así <m>3 \sqrt{2} - 3 \sqrt{2}\, i=6 \cis  315^{\circ}</m>.
+    </p>
+      </example>
  
-			<p>La representación polar de un número complejo facilita el cálculo de productos y potencias de números complejos.  La demostración de la siguiente proposición es directa y la dejamos como ejercicio.</p>
+      <p>La representación polar de un número complejo facilita el cálculo de productos y potencias de números complejos.  La demostración de la siguiente proposición es directa y la dejamos como ejercicio.
+    </p>
  
-			<proposition xml:id="proposition-polar-mult">
-				<statement>
-					<p>Sean <m>z = r \cis \theta</m> y <m>w = s \cis \phi</m> dos números complejos. Entonces 
-						<me>zw = r s \cis( \theta + \phi).</me></p>
-				</statement>
-			</proposition>
+      <proposition xml:id="proposition-polar-mult">
+        <statement>
+          <p>Sean <m>z = r \cis \theta</m> y <m>w = s \cis \phi</m> dos números complejos. Entonces 
+            <me>zw = r s \cis( \theta + \phi)</me>.
+    </p>
+        </statement>
+      </proposition>
  
-			<example xml:id="example-cyclic-polar-mult">
-				<p>Si <m>z =  3 \cis( \pi / 3 )</m> y <m>w = 2 \cis(\pi / 6 )</m>, entonces <m>zw = 6 \cis( \pi / 2 ) = 6i</m>.</p>
-			</example>
+      <example xml:id="example-cyclic-polar-mult">
+        <p>Si <m>z =  3 \cis( \pi / 3 )</m> y <m>w = 2 \cis(\pi / 6 )</m>, entonces <m>zw = 6 \cis( \pi / 2 ) = 6i</m>.
+    </p>
+      </example>
 
-			<theorem>
-				<title>DeMoivre</title>
-				<idx><h>Teorema de DeMoivre</h></idx>
-				<statement>
-					<p>Sea <m>z = r \cis  \theta</m> un número complejo distinto de cero. Entonces 
-						<me>[r \cis \theta  ]^n = r^n \cis( n \theta)</me>
-					para <m>n = 1, 2, \ldots</m>.</p>
-				</statement>
-				<proof>
-					<p>Procederemos por inducción en <m>n</m>. Para <m>n = 1</m> el teorema es trivial. Supongamos que el teorema es verdadero para todo <m>k</m> tal que <m>1  \leq k \leq n</m>. Entonces 
-					<md>
-						<mrow>z^{n+1} &amp; = z^n z</mrow>
-						<mrow>&amp; = r^n( \cos  n \theta + i \sin n \theta ) r( \cos \theta + i\sin \theta )</mrow>
-						<mrow>&amp; = r^{n+1} [( \cos n \theta \cos \theta - \sin n \theta \sin \theta ) + i ( \sin n \theta \cos \theta + \cos n \theta \sin \theta)]</mrow>
-						<mrow>&amp; = r^{n+1} [ \cos( n \theta + \theta) + i \sin( n \theta + \theta) ]</mrow>
-						<mrow>&amp; = r^{n+1} [ \cos( n +1) \theta + i \sin( n+1) \theta  ].</mrow>
-					</md></p>
-				</proof>
-			</theorem>
+      <theorem>
+        <title>DeMoivre</title>
+        <idx><h>Teorema de DeMoivre</h></idx>
+        <statement>
+          <p>Sea <m>z = r \cis  \theta</m> un número complejo distinto de cero. Entonces 
+            <me>[r \cis \theta  ]^n = r^n \cis( n \theta)</me>
+          para <m>n = 1, 2, \ldots</m>.
+    </p>
+        </statement>
+        <proof>
+          <p>Procederemos por inducción en <m>n</m>. Para <m>n = 1</m> el teorema es trivial. Supongamos que el teorema es verdadero para todo <m>k</m> tal que <m>1  \leq k \leq n</m>. Entonces 
+          <md>
+            <mrow>z^{n+1} &amp; = z^n z</mrow>
+            <mrow>&amp; = r^n( \cos  n \theta + i \sin n \theta ) r( \cos \theta + i\sin \theta )</mrow>
+            <mrow>&amp; = r^{n+1} [( \cos n \theta \cos \theta - \sin n \theta \sin \theta ) + i ( \sin n \theta \cos \theta + \cos n \theta \sin \theta)]</mrow>
+            <mrow>&amp; = r^{n+1} [ \cos( n \theta + \theta) + i \sin( n \theta + \theta) ]</mrow>
+            <mrow>&amp; = r^{n+1} [ \cos( n +1) \theta + i \sin( n+1) \theta  ]</mrow>
+          </md>.
+    </p>
+        </proof>
+      </theorem>
  
-			<example xml:id="theorem-demoivre">
-				<p>Supongamos que <m>z= 1+i</m> y queremos calcular <m>z^{10}</m>. En lugar de calcular <m>(1 + i)^{10}</m> directamente, es mucho más fácil pasar a coordenadas polares y calcular <m>z^{10}</m> usando el Teorema de  DeMoivre:
-					<md>
-						<mrow>z^{10} &amp; = (1+i)^{10}</mrow>
-						<mrow>&amp; = \left( \sqrt{2} \cis \left( \frac{\pi }{4} \right) \right)^{10}</mrow>
-						<mrow> &amp; = ( \sqrt{2}\, )^{10} \cis \left( \frac{5\pi }{2} \right)</mrow>
-						<mrow>&amp; = 32  \cis \left( \frac{\pi }{2} \right)</mrow>
-						<mrow>&amp; = 32i.</mrow>
-					</md></p>
-			</example>
-		</introduction>
+      <example xml:id="theorem-demoivre">
+        <p>Supongamos que <m>z= 1+i</m> y queremos calcular <m>z^{10}</m>. En lugar de calcular <m>(1 + i)^{10}</m> directamente, es mucho más fácil pasar a coordenadas polares y calcular <m>z^{10}</m> usando el Teorema de  DeMoivre:
+          <md>
+            <mrow>z^{10} &amp; = (1+i)^{10}</mrow>
+            <mrow>&amp; = \left( \sqrt{2} \cis \left( \frac{\pi }{4} \right) \right)^{10}</mrow>
+            <mrow> &amp; = ( \sqrt{2}\, )^{10} \cis \left( \frac{5\pi }{2} \right)</mrow>
+            <mrow>&amp; = 32  \cis \left( \frac{\pi }{2} \right)</mrow>
+            <mrow>&amp; = 32i</mrow>
+          </md>.
+    </p>
+      </example>
+    </introduction>
 
-		<subsection xml:id="cyclic-subsection-circle-group">
-			<title>El grupo de la circunferencia y las raíces de la unidad</title>
+    <subsection xml:id="cyclic-subsection-circle-group">
+      <title>El grupo de la circunferencia y las raíces de la unidad</title>
  
-		 	<p>El grupo multiplicativo de los números complejos, <m>{\mathbb C}^*</m>, posee algunos subgrupos interesantes.  Mientras <m>{\mathbb Q}^*</m> y <m>{\mathbb R}^*</m> no tienen subgrupos interesantes de orden finito, <m>{\mathbb C}^*</m> tiene muchos. Consideremos primero el <term>grupo de la circunferencia</term><idx><h>Circunferencia</h><h>grupo de la</h></idx>, <notation><usage><m>\mathbb T</m></usage><description>el grupo de la circunferencia</description></notation>
-				<me>{\mathbb T} = \{ z \in {\mathbb C} : |z| = 1 \}.</me>
-			La siguiente proposición es consecuencia directa de la <xref ref="proposition-polar-mult" />.</p>
+       <p>El grupo multiplicativo de los números complejos, <m>{\mathbb C}^*</m>, posee algunos subgrupos interesantes.  Mientras <m>{\mathbb Q}^*</m> y <m>{\mathbb R}^*</m> no tienen subgrupos interesantes de orden finito, <m>{\mathbb C}^*</m> tiene muchos. Consideremos primero el <term>grupo de la circunferencia</term><idx><h>Circunferencia</h><h>grupo de la</h></idx>, <notation><usage><m>\mathbb T</m></usage><description>el grupo de la circunferencia</description></notation>
+        <me>{\mathbb T} = \{ z \in {\mathbb C} : |z| = 1 \}</me>.
+      La siguiente proposición es consecuencia directa de la <xref ref="proposition-polar-mult" />.
+    </p>
  
-			<proposition>
-				<statement>
-					<p>El grupo de la circunferencia es un subgrupo de  <m>{\mathbb C}^*</m>.</p>
-				</statement>
-			</proposition>
+      <proposition>
+        <statement>
+          <p>El grupo de la circunferencia es un subgrupo de  <m>{\mathbb C}^*</m>.
+    </p>
+        </statement>
+      </proposition>
  
-			<p>Si bien el grupo de la circunferencia tiene orden infinito, tiene muchos subgrupos finitos interesantes. Supongamos que <m>H = \{ 1, -1, i, -i \}</m>. Entonces <m>H</m> es un subgrupo del grupo de la circunferencia. También, <m>1</m>, <m>-1</m>, <m>i</m>, y <m>-i</m> son precisamente los números complejos que satisfacen la ecuación <m>z^4 = 1</m>. Los números comlejos que satisfacen la ecuación <m>z^n=1</m> se llaman raíces <idx><h>raíz <m>n</m>-ésima de la unidad</h></idx><term><m>n</m>-ésimas de la unidad</term>.</p>
+      <p>Si bien el grupo de la circunferencia tiene orden infinito, tiene muchos subgrupos finitos interesantes. Supongamos que <m>H = \{ 1, -1, i, -i \}</m>. Entonces <m>H</m> es un subgrupo del grupo de la circunferencia. También, <m>1</m>, <m>-1</m>, <m>i</m>, y <m>-i</m> son precisamente los números complejos que satisfacen la ecuación <m>z^4 = 1</m>. Los números comlejos que satisfacen la ecuación <m>z^n=1</m> se llaman raíces <idx><h>raíz <m>n</m>-ésima de la unidad</h></idx><term><m>n</m>-ésimas de la unidad</term>.
+    </p>
 
-			<theorem>
-				<statement>
-					<p>Si <m>z^n = 1</m>, entonces las raíces <m>n</m>-ésima de uno son
-						<me>z = \cis\left( \frac{2 k \pi}{n } \right),</me>
-					con <m>k = 0, 1, \ldots, n-1</m>. Más aún, la raíces <m>n</m>-ésimas de uno forman un subgrupo cíclico de <m>{\mathbb T}</m> de orden <m>n</m></p>
-				</statement>
-				<proof>
-					<p>Por el Teorema de DeMoivre,
-						<me>z^n = \cis \left( n \frac{2 k \pi}{n } \right) = \cis( 2 k \pi ) = 1.</me>
-					Las <m>z</m>'s son distintas entre sí pues los números <m>2 k \pi /n</m> son todos distintos y mayores o iguales a 0 pero menores que <m>2 \pi</m>. El hecho de que estas sean todas las raíces de la ecuación <m>z^n=1</m> es consecuencia del <xref ref="corollary-poly-zeros" />, que dice que un polinomio de grado  <m>n</m> puede tener a lo más <m>n</m> raíces.  Dejaremos al lector la demostración de que las raíces <m>n</m>-ésimas de uno forman un subgrupo cíclico de <m>{\mathbb T}</m>.</p>
-				</proof>
-			</theorem>
+      <theorem>
+        <statement>
+          <p>Si <m>z^n = 1</m>, entonces las raíces <m>n</m>-ésima de uno son
+            <me>z = \cis\left( \frac{2 k \pi}{n } \right)</me>,
+          con <m>k = 0, 1, \ldots, n-1</m>. Más aún, la raíces <m>n</m>-ésimas de uno forman un subgrupo cíclico de <m>{\mathbb T}</m> de orden <m>n</m></p>
+        </statement>
+        <proof>
+          <p>Por el Teorema de DeMoivre,
+            <me>z^n = \cis \left( n \frac{2 k \pi}{n } \right) = \cis( 2 k \pi ) = 1</me>.
+          Las <m>z</m>'s son distintas entre sí pues los números <m>2 k \pi /n</m> son todos distintos y mayores o iguales a 0 pero menores que <m>2 \pi</m>. El hecho de que estas sean todas las raíces de la ecuación <m>z^n=1</m> es consecuencia del <xref ref="corollary-poly-zeros" />, que dice que un polinomio de grado  <m>n</m> puede tener a lo más <m>n</m> raíces.  Dejaremos al lector la demostración de que las raíces <m>n</m>-ésimas de uno forman un subgrupo cíclico de <m>{\mathbb T}</m>.
+    </p>
+        </proof>
+      </theorem>
  
-			<p>Un generador para el grupo de las raíces <m>n</m>-ésimas de uno se llama <idx><h>Raíz <m>n</m>-ésima primitiva de la unidad</h></idx><term>raíz <m>n</m>-ésima primitiva de la unidad</term>.</p> 
+      <p>Un generador para el grupo de las raíces <m>n</m>-ésimas de uno se llama <idx><h>Raíz <m>n</m>-ésima primitiva de la unidad</h></idx><term>raíz <m>n</m>-ésima primitiva de la unidad</term>.
+    </p> 
  
-			<example xml:id="example-roots_unity">
-				<p>Las raíces octavas de la unidad se pueden representar como ocho puntos equidistantes en el círculo unitario (<xref ref="figure-rtsunity" />).  Las raíces octavas primitivas de la unidad son
-					<md>
-						<mrow>\omega &amp; = \frac{\sqrt{2}}{2}  + \frac{\sqrt{2}}{2} i</mrow>
-						<mrow>\omega^3 &amp; = -\frac{\sqrt{2}}{2}  + \frac{\sqrt{2}}{2} i</mrow>
-						<mrow>\omega^5 &amp; = -\frac{\sqrt{2}}{2}  - \frac{\sqrt{2}}{2} i</mrow>
-						<mrow>\omega^7 &amp; = \frac{\sqrt{2}}{2}  - \frac{\sqrt{2}}{2}i. </mrow>
-					</md></p>
+      <example xml:id="example-roots_unity">
+        <p>Las raíces octavas de la unidad se pueden representar como ocho puntos equidistantes en el círculo unitario (<xref ref="figure-rtsunity" />).  Las raíces octavas primitivas de la unidad son
+          <md>
+            <mrow>\omega &amp; = \frac{\sqrt{2}}{2}  + \frac{\sqrt{2}}{2} i</mrow>
+            <mrow>\omega^3 &amp; = -\frac{\sqrt{2}}{2}  + \frac{\sqrt{2}}{2} i</mrow>
+            <mrow>\omega^5 &amp; = -\frac{\sqrt{2}}{2}  - \frac{\sqrt{2}}{2} i</mrow>
+            <mrow>\omega^7 &amp; = \frac{\sqrt{2}}{2}  - \frac{\sqrt{2}}{2}i. </mrow>
+          </md></p>
  
-			<figure xml:id="figure-rtsunity">
-				<caption>Raíces octavas de la unidad</caption>
+      <figure xml:id="figure-rtsunity">
+        <caption>Raíces octavas de la unidad</caption>
 
-				<!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
-				<image width="80%" xml:id="cyclic-roots-unity" permid="WLb">
-					<description>The 8 roots of unity are spaced evenly around the unit circle beginning with 1 on the positive horizontal axis and followed by omega, i, the cube of omega, -1, omega to the fifth power, -i, and omega to the seventh power.</description>
-		
-					<latex-image>
-						<xi:include href="tikz/cyclic-roots-unity.tex" parse="text"/>
-					</latex-image>
-				  </image>
-			</figure>
-		</example>
+        <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
+        <image width="80%" xml:id="cyclic-roots-unity" permid="WLb">
+          <description>The 8 roots of unity are spaced evenly around the unit circle beginning with 1 on the positive horizontal axis and followed by omega, i, the cube of omega, -1, omega to the fifth power, -i, and omega to the seventh power.</description>
+    
+          <latex-image>
+            <xi:include href="tikz/cyclic-roots-unity.tex" parse="text"/>
+          </latex-image>
+          </image>
+      </figure>
+    </example>
 
- 		</subsection>
+     </subsection>
 
- 	</section>
+   </section>
 
-	<section xml:id="section-method-of-repeated-squares">
-		<title>El método de los cuadrados repetidos</title>
+  <section xml:id="section-method-of-repeated-squares">
+    <title>El método de los cuadrados repetidos</title>
  
-		<p>Calcular potencias grandes puede tomar mucho tiempo. Así como cualquiera puede calcular <m>2^2</m> o <m>2^8</m>, cualquiera sabe como calcular 
-			<me>2^{2^{1000000} }.</me>
-		Sin embargo, tales número son tan grandes que no quisiéramos siquiera intentar hacer los cálculos; Más aún, después de cierto punto, el cálculo no sería realizable aunque tuviéramos a nuestra disposición todos los computadores del mundo. Incluso escribir la representación decimal de un número demasiado grande puede no ser práctico. Podría tener miles o incluso millones de dígitos. Sin embargo, si pudiéramos calcular algo como 
-			<me>2^{37398332 } \pmod{ 46389},</me>
-		podríamos fácilmente escribir el resultado pues sería un número entre <m>0</m> y <m>46388</m>. Si queremos calcular potencias módulo <m>n</m> rápida y eficientemente, deberemos ser astutos.<fn>Los resultados de esta sección solo serán necesarios en el <xref ref="crypt" /></fn></p>
+    <p>Calcular potencias grandes puede tomar mucho tiempo. Así como cualquiera puede calcular <m>2^2</m> o <m>2^8</m>, cualquiera sabe como calcular 
+      <me>2^{2^{1000000} }</me>.
+    Sin embargo, tales número son tan grandes que no quisiéramos siquiera intentar hacer los cálculos; Más aún, después de cierto punto, el cálculo no sería realizable aunque tuviéramos a nuestra disposición todos los computadores del mundo. Incluso escribir la representación decimal de un número demasiado grande puede no ser práctico. Podría tener miles o incluso millones de dígitos. Sin embargo, si pudiéramos calcular algo como 
+      <me>2^{37398332 } \pmod{ 46389}</me>,
+    podríamos fácilmente escribir el resultado pues sería un número entre <m>0</m> y <m>46388</m>. Si queremos calcular potencias módulo <m>n</m> rápida y eficientemente, deberemos ser astutos.<fn>Los resultados de esta sección solo serán necesarios en el <xref ref="crypt" /></fn></p>
  
-		<p>Lo primero que debemos notar es que cualquier número <m>a</m> se puede escribir como una suma de potencias de <m>2</m> distintas; es decir, podemos escribir
-			<me>a = 2^{k_1} + 2^{k_2} + \cdots + 2^{k_n},</me>
-		con <m>k_1 \lt k_2 \lt \cdots \lt k_n</m>.  Esto es simplemente la representación binaria de <m>a</m>. Por ejemplo, la representación binaria de 57 es 111001, pues  <m>57 = 2^0 + 2^3 + 2^4 + 2^5</m>.</p>
+    <p>Lo primero que debemos notar es que cualquier número <m>a</m> se puede escribir como una suma de potencias de <m>2</m> distintas; es decir, podemos escribir
+      <me>a = 2^{k_1} + 2^{k_2} + \cdots + 2^{k_n}</me>,
+    con <m>k_1 \lt k_2 \lt \cdots \lt k_n</m>.  Esto es simplemente la representación binaria de <m>a</m>. Por ejemplo, la representación binaria de 57 es 111001, pues  <m>57 = 2^0 + 2^3 + 2^4 + 2^5</m>.
+    </p>
  
-		<p>La reglas de los exponentes se cumplen en <m>{\mathbb Z}_n</m>; es decir, si <m>b \equiv a^x \pmod{ n}</m> y <m>c \equiv a^y \pmod{ n}</m>, entonces <m>bc \equiv a^{x+y} \pmod{ n}</m>. Podemos calcular <m>a^{2^k} \pmod{ n}</m> en <m>k</m> pasos calculando
-			<md>
-				<mrow>a^{2^0} \pmod{ n}</mrow>
-				<mrow>a^{2^1} \pmod{ n }</mrow>
-				<mrow>\vdots</mrow>
-				<mrow>a^{2^k} \pmod{ n}.</mrow>
-			</md>
-		Cada paso corresponde a elevar al cuadrado el resultado obtenido en el paso anterior, dividir por <m>n</m>, y dejar el resto.</p>
+    <p>La reglas de los exponentes se cumplen en <m>{\mathbb Z}_n</m>; es decir, si <m>b \equiv a^x \pmod{ n}</m> y <m>c \equiv a^y \pmod{ n}</m>, entonces <m>bc \equiv a^{x+y} \pmod{ n}</m>. Podemos calcular <m>a^{2^k} \pmod{ n}</m> en <m>k</m> pasos calculando
+      <md>
+        <mrow>a^{2^0} \pmod{ n}</mrow>
+        <mrow>a^{2^1} \pmod{ n }</mrow>
+        <mrow>\vdots</mrow>
+        <mrow>a^{2^k} \pmod{ n}</mrow>
+      </md>.
+    Cada paso corresponde a elevar al cuadrado el resultado obtenido en el paso anterior, dividir por <m>n</m>, y dejar el resto.
+    </p>
   
-		<example xml:id="example-cyclic-repeated-squares">
-			<p>Calcularemos <m>271^{321} \pmod{ 481}</m>. Note que
-				<me>321 = 2^0 +2^6 + 2^8;</me>
-			luego, calcular <m>271^{ 321} \pmod{ 481}</m> es lo mismo que calcular
-				<me>271^{ 2^0 +2^6 + 2^8 } \equiv 271^{ 2^0 } \cdot 271^{2^6 } \cdot 271^{ 2^8 } \pmod{ 481}.</me>
-			Será suficiente con calcular <m>271^{ 2^i } \pmod{ 481}</m> con <m>i = 0, 6, 8</m>. Es muy fácil ver que 
-				<me>271^{ 2^1}  = \text{73,441}  \equiv 329 \pmod{ 481}.</me>
-			Podemos elevar al cuadrado este resultado, obteniéndo un valor para <m>271^{ 2^2} \pmod{481}</m>: 
-			<md>
-				<mrow>271^{ 2^2}  &amp; \equiv (271^{ 2^1})^2 \pmod{ 481}</mrow>
-				<mrow>&amp; \equiv (329)^2 \pmod{ 481}</mrow>
-				<mrow>&amp; \equiv \text{108,241} \pmod{ 481}</mrow>
-				<mrow>&amp; \equiv 16 \pmod{ 481}.</mrow>
-			</md>
-			Estamos usando el hecho que <m>(a^{2^n})^2  \equiv a^{2 \cdot 2^n} \equiv a^{ 2^{n+1} } \pmod{ n}</m>. Continuando, podemos calcular
-				<me>271^{ 2^6 } \equiv 419 \pmod{ 481}</me>
-			y
-				<me>271^{ 2^8 }  \equiv 16 \pmod{ 481}.</me>
-			Por lo tanto,
-				<md>
-					<mrow>271^{ 321} &amp; \equiv 271^{ 2^0 +2^6 + 2^8 } \pmod{ 481}</mrow>
-					<mrow>&amp; \equiv 271^{ 2^0 } \cdot 271^{ 2^6 } \cdot 271^{ 2^8 } \pmod{ 481}</mrow>
-					<mrow>&amp; \equiv 271 \cdot 419 \cdot 16 \pmod{ 481}</mrow>
-					<mrow>&amp; \equiv \text{1,816,784} \pmod{ 481}</mrow>
-					<mrow>&amp; \equiv 47 \pmod{ 481}.</mrow>
-				</md></p>
-		</example>
+    <example xml:id="example-cyclic-repeated-squares">
+      <p>Calcularemos <m>271^{321} \pmod{ 481}</m>. Note que
+        <me>321 = 2^0 +2^6 + 2^8;</me>
+      luego, calcular <m>271^{ 321} \pmod{ 481}</m> es lo mismo que calcular
+        <me>271^{ 2^0 +2^6 + 2^8 } \equiv 271^{ 2^0 } \cdot 271^{2^6 } \cdot 271^{ 2^8 } \pmod{ 481}</me>.
+      Será suficiente con calcular <m>271^{ 2^i } \pmod{ 481}</m> con <m>i = 0, 6, 8</m>. Es muy fácil ver que 
+        <me>271^{ 2^1}  = \text{73,441}  \equiv 329 \pmod{ 481}</me>.
+      Podemos elevar al cuadrado este resultado, obteniéndo un valor para <m>271^{ 2^2} \pmod{481}</m>: 
+      <md>
+        <mrow>271^{ 2^2}  &amp; \equiv (271^{ 2^1})^2 \pmod{ 481}</mrow>
+        <mrow>&amp; \equiv (329)^2 \pmod{ 481}</mrow>
+        <mrow>&amp; \equiv \text{108,241} \pmod{ 481}</mrow>
+        <mrow>&amp; \equiv 16 \pmod{ 481}</mrow>
+      </md>.
+      Estamos usando el hecho que <m>(a^{2^n})^2  \equiv a^{2 \cdot 2^n} \equiv a^{ 2^{n+1} } \pmod{ n}</m>. Continuando, podemos calcular
+        <me>271^{ 2^6 } \equiv 419 \pmod{ 481}</me>
+      y
+        <me>271^{ 2^8 }  \equiv 16 \pmod{ 481}</me>.
+      Por lo tanto,
+        <md>
+          <mrow>271^{ 321} &amp; \equiv 271^{ 2^0 +2^6 + 2^8 } \pmod{ 481}</mrow>
+          <mrow>&amp; \equiv 271^{ 2^0 } \cdot 271^{ 2^6 } \cdot 271^{ 2^8 } \pmod{ 481}</mrow>
+          <mrow>&amp; \equiv 271 \cdot 419 \cdot 16 \pmod{ 481}</mrow>
+          <mrow>&amp; \equiv \text{1,816,784} \pmod{ 481}</mrow>
+          <mrow>&amp; \equiv 47 \pmod{ 481}</mrow>
+        </md>.
+    </p>
+    </example>
 
 <!-- Reformatted example.  TWJ 2/5/2013 -->
  
-		<p> El método de los cuadrado repretido resultará ser una herramienta muy útil cuando exploremos la criptografía  <acro>RSA</acro> en el <xref ref="crypt" />. Para codificar  y decodificar mensaje de forma razonable, será necesario poder calcular grandes potencias de enteros mód <m>n</m> de forma rápida.</p>
+    <p> El método de los cuadrado repretido resultará ser una herramienta muy útil cuando exploremos la criptografía  <acro>RSA</acro> en el <xref ref="crypt" />. Para codificar  y decodificar mensaje de forma razonable, será necesario poder calcular grandes potencias de enteros mód <m>n</m> de forma rápida.
+    </p>
 
-		<paragraphs component="sage-blurb">
-			<title>Sage</title>
-		
-			<p>La implementación de los grupos cíclicos en Sage es algo débil <mdash /> pero igual podemos hacer uso provechoso de Sage y quizás esta situación cambie pronto.</p>
-		</paragraphs>
+    <paragraphs component="sage-blurb">
+      <title>Sage</title>
+    
+      <p>La implementación de los grupos cíclicos en Sage es algo débil <mdash /> pero igual podemos hacer uso provechoso de Sage y quizás esta situación cambie pronto.
+    </p>
+    </paragraphs>
 
-	</section>
+  </section>
 
-	<reading-questions permid="CZX">
+  <reading-questions permid="CZX">
 
-		<exercise permid="HgA">
-		  <statement>
-			<p permid="LQt">
-			  ¿Cuál es el orden del elemento <m>3</m> en <m>U(20)</m>?
-			</p>
-		  </statement>
-		  <response/>
-		</exercise>
-	
-		<exercise permid="nnJ">
-		  <statement>
-			<p permid="rXC">
-			  ¿Cuál es el orden del elemento <m>5</m> en <m>U(23)</m>?
-			</p>
-		  </statement>
-		  <response/>
-		</exercise>
-	
-		<exercise permid="TuS">
-		  <statement>
-			<p permid="YeL">
-			  Encuentra tres generadores de <m>\mathbb Z_8</m>.
-			</p>
-		  </statement>
-		  <response/>
-		</exercise>
-	
-		<exercise permid="zCb">
-		  <statement>
-			<p permid="ElU">
-			  Encuentra tres generadores de las  raíces quintas <m> </m> de la unidad.
-			</p>
-		  </statement>
-		  <response/>
-		</exercise>
-	
-		<exercise permid="fJk">
-		  <statement>
-			<p permid="ktd">
-			  Show how to compute <m>15^{40}\pmod{23}</m> efficiently by hand.
-			  Check your answer with Sage.
-			</p>
-		  </statement>
-		  <response/>
-		</exercise>
-	
-	  </reading-questions>
-		<!-- Exercises with Solutions  -->
-		<!-- File: cyclic.xml  -->
-		<!-- Title: Cyclic Groups -->
-	  <exercises xml:id="cyclic-exercises" filenamebase="cyclic" permid="nXh">
+    <exercise permid="HgA">
+      <statement>
+      <p permid="LQt">
+        ¿Cuál es el orden del elemento <m>3</m> en <m>U(20)</m>?
+      </p>
+      </statement>
+      <response/>
+    </exercise>
+  
+    <exercise permid="nnJ">
+      <statement>
+      <p permid="rXC">
+        ¿Cuál es el orden del elemento <m>5</m> en <m>U(23)</m>?
+      </p>
+      </statement>
+      <response/>
+    </exercise>
+  
+    <exercise permid="TuS">
+      <statement>
+      <p permid="YeL">
+        Encuentra tres generadores de <m>\mathbb Z_8</m>.
+      </p>
+      </statement>
+      <response/>
+    </exercise>
+  
+    <exercise permid="zCb">
+      <statement>
+      <p permid="ElU">
+        Encuentra tres generadores de las  raíces quintas <m> </m> de la unidad.
+      </p>
+      </statement>
+      <response/>
+    </exercise>
+  
+    <exercise permid="fJk">
+      <statement>
+      <p permid="ktd">
+        Show how to compute <m>15^{40}\pmod{23}</m> efficiently by hand.
+        Check your answer with Sage.
+      </p>
+      </statement>
+      <response/>
+    </exercise>
+  
+    </reading-questions>
+    <!-- Exercises with Solutions  -->
+    <!-- File: cyclic.xml  -->
+    <!-- Title: Cyclic Groups -->
+    <exercises xml:id="cyclic-exercises" filenamebase="cyclic" permid="nXh">
 
-		<title>Ejercicios</title>
-	
-		<exercise number="1">
-			<statement>
-				<p>Demuestre o refute cada una de las siguientes proposiciones.
-					<ol>
-	
-						<li><p>Todos los generadores de  <m>{\mathbb Z}_{60}</m> son primos.</p></li>
-	
-						<li><p><m>U(8)</m> es cíclico.</p></li>
-	
-						<li><p><m>{\mathbb Q}</m> es cíclico.</p></li>
-	
-						<li><p>Si todo subgrupo propio de un grupo <m>G</m> es cíclico, entonces <m>G</m> es un grupo cíclico.</p></li>
-	
-						<li><p>Un grupo con un número finito de subgrupos es finito.</p></li>
-	
-					</ol></p>
-			</statement>
-			<hint>
-				<p>(a) Falso; (c) falso; (e) verdadero.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="2">
-			<statement>
-			<p>Encuentre el orden de cada uno de los siguientes elementos.
-				<ol cols="2">
-	
-					<li><p><m>5 \in {\mathbb Z}_{12}</m></p></li>
-	
-					<li><p><m>\sqrt{3} \in {\mathbb R}</m></p></li>
-					 
-					<li><p><m>\sqrt{3} \in {\mathbb R}^\ast</m></p></li>
-					 
-					<li><p><m>-i \in {\mathbb C}^\ast</m></p></li>
-	
-					<li><p><m>72 \in {\mathbb Z}_{240}</m></p></li>
-					 
-					<li><p><m>312 \in {\mathbb Z}_{471}</m></p></li>
-				
-				</ol></p>
-			</statement>
-			<hint>
-				<p>(a) <m>12</m>; (c) infinito; (e) <m>10</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="3">
-			<statement>
-			<p>Liste todos los elementos en cada uno de los siguientes subgrupos.
-				<ol>
-				 
-					<li><p>El subgrupo de <m>{\mathbb Z}</m> generado por <m>7</m></p></li>
-					 
-					<li><p>El subgrupo de <m>{\mathbb Z}_{24}</m> generado por <m>15</m></p></li>
-					 
-					<li><p>Todos los subgrupos de <m>{\mathbb Z}_{12}</m></p></li>
-					 
-					<li><p>Todos los subgrupos de <m>{\mathbb Z}_{60}</m></p></li>
-					 
-					<li><p>Todos los subgrupos de <m>{\mathbb Z}_{13}</m></p></li>
-					 
-					<li><p>Todos los subgrupos de <m>{\mathbb Z}_{48}</m></p></li>
-					 
-					<li><p>El subgrupo generado por 3  en <m>U(20)</m></p></li>
-					 
-					<li><p>El subgrupo generado por 5 en <m>U(18)</m></p></li>
-					 
-					<li><p>El subgrupo de <m>{\mathbb R}^\ast</m> generado por <m>7</m></p></li>
-					 
-					<li><p>El subgrupo de <m>{\mathbb C}^\ast</m> generado por <m>i</m> con <m>i^2 = -1</m></p></li>
-					 
-					<li><p>El subgrupo de <m>{\mathbb C}^\ast</m> generado por <m>2i</m></p></li>
-					 
-					<li><p>El subgrupo de <m>{\mathbb C}^\ast</m> generado por <m>(1 + i) / \sqrt{2}</m></p></li>
-					 
-					<li><p>El subgrupo de <m>{\mathbb C}^\ast</m> generado por <m>(1 + \sqrt{3}\, i) / 2</m></p></li>
-				 
-				</ol></p>
-			</statement>
-			<hint>
-				<p>(a) <m>7 {\mathbb Z} = \{ \ldots, -7, 0, 7, 14, \ldots \}</m>; (b) <m>\{ 0, 3, 6, 9, 12, 15, 18, 21 \}</m>; (c) <m>\{ 0 \}</m>, <m>\{ 0, 6 \}</m>, <m>\{ 0, 4, 8 \}</m>, <m>\{ 0, 3, 6, 9 \}</m>, <m>\{ 0, 2, 4, 6, 8, 10 \}</m>; (g) <m>\{ 1, 3, 7, 9 \}</m>; (j) <m>\{ 1, -1, i, -i \}</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="4">
-			<statement>
-				<p>Encuentre los subgrupos de <m>GL_2( {\mathbb R })</m> generados por cada una de la siguientes matrices.
-					<ol cols="3">
-			 
-						<li><p><m>\displaystyle \begin{pmatrix}
-						0 &amp; 1 \\
-						-1 &amp; 0
-						\end{pmatrix}</m></p></li>
-	
-						<li><p><m>\displaystyle
-						\begin{pmatrix}
-						0 &amp; 1/3 \\
-						3 &amp; 0
-						\end{pmatrix}</m></p></li>
-	
-						<li><p><m>\displaystyle
-						\begin{pmatrix}
-						1 &amp; -1 \\
-						1 &amp; 0
-						\end{pmatrix}</m></p></li>
-	
-						<li><p><m>\displaystyle
-						\begin{pmatrix}
-						1 &amp; -1 \\
-						0 &amp; 1
-						\end{pmatrix}</m></p></li>
-	
-						<li><p><m>\displaystyle
-						\begin{pmatrix}
-						1 &amp; -1 \\
-						-1 &amp; 0
-						\end{pmatrix}</m></p></li>
-						 
-						<li><p><m>\displaystyle
-						\begin{pmatrix}
-						\sqrt{3}/ 2 &amp; 1/2 \\
-						-1/2 &amp; \sqrt{3}/2
-						\end{pmatrix}</m></p></li>
-	
-					</ol></p>
-			</statement>
-			<hint>
-				<p>(a)
-					<me>\begin{pmatrix}
-					1 &amp; 0 \\
-					0 &amp; 1
-					\end{pmatrix},
-					\begin{pmatrix}
-					-1 &amp; 0 \\
-					0 &amp; -1
-					\end{pmatrix},
-					\begin{pmatrix}
-					0 &amp; -1 \\
-					1 &amp; 0
-					\end{pmatrix},
-					\begin{pmatrix}
-					0 &amp; 1 \\
-					-1 &amp; 0
-					\end{pmatrix}.</me></p>
-	
-				<p>(c)
-					<me>\begin{pmatrix}
-					1 &amp; 0 \\
-					0 &amp; 1
-					\end{pmatrix},
-					\begin{pmatrix}
-					1 &amp; -1 \\
-					1 &amp; 0
-					\end{pmatrix},
-					\begin{pmatrix}
-					-1 &amp; 1 \\
-					-1 &amp; 0
-					\end{pmatrix}, \\
-					\begin{pmatrix}
-					0 &amp; 1 \\
-					-1 &amp; 1
-					\end{pmatrix},
-					\begin{pmatrix}
-					0 &amp; -1 \\
-					1 &amp; -1
-					\end{pmatrix},
-					\begin{pmatrix}
-					-1 &amp; 0 \\
-					0 &amp; -1
-					\end{pmatrix}.</me></p>
-				</hint>
-			
-		</exercise>
-	
-		<exercise number="5">
-			<statement>
-				<p>Encuentre el orden de cada elemento en <m>{\mathbb Z}_{18}</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="6">
-			<statement>
-				<p>Encuentre el orden de cada elemento en el grupo de simetrías del cuadrado, <m>D_4</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="7">
-			<statement>
-				<p>¿Cuáles son todos los subgrupos cíclicos del grupo de los cuaterniones, <m>Q_8</m>?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="8">
-			<statement>
-				<p>Liste todos los subgrupos cíclicos de <m>U(30)</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="9">
-			<statement>
-				<p>Liste todos los generadores de cada subgrupo de orden 8 en <m>{\mathbb Z}_{32}</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="10">
-			<statement>
-				<p>Encuentre todos los elementos de orden finito en cada uno de los siguientes grupos. Acá el <q><m>\ast</m></q> indica el conjunto sin el cero.
-					<ol cols="3">
-			 
-						<li><p><m>{\mathbb Z}</m></p></li>
-						 
-						<li><p><m>{\mathbb Q}^\ast</m></p></li>
-						 
-						<li><p><m>{\mathbb R}^\ast</m></p></li>
-			 
-					</ol></p>
-			</statement>
-			<hint>
-				<p>(a) <m>0</m>; (b) <m>1, -1</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="11">
-			<statement>
-				<p>Si <m>a^{24} =e</m> en un grupo <m>G</m>, ¿cuáles son los posibles órdenes de <m>a</m>?</p>
-			</statement>
-			<hint>
-				<p permid="NTS">
-					<m>1, 2, 3, 4, 6, 8, 12, 24</m>.
-				  </p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="12">
-			<statement>
-				<p>Encuentre un grupo cíclico con exactamente un generador. ¿Puede encontrar grupos cíclicos con exactamente dos generadores? ¿Cuatro generadores? ¿Con exactamente <m>n</m> generadores?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="13">
-			<statement>
-				<p>Para <m>n \leq 20</m>, ¿cuáles grupos <m>U(n)</m> son cíclicos?  Conjeture qué se cumple en general.  ¿Puede demostrar su conjetura?  </p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="14">
-			<statement>
-				<p>Sean
-					<me>A =
-					\begin{pmatrix}
-					0 &amp; 1 \\
-					-1 &amp; 0
-					\end{pmatrix}
-					\qquad \text{y} \qquad
-					B =
-					\begin{pmatrix}
-					0 &amp; -1 \\
-					1 &amp; -1
-					\end{pmatrix}</me>
-				elementos en <m>GL_2( {\mathbb R} )</m>. Muestre que <m>A</m> y <m>B</m> tienen orden finito pero que <m>AB</m> tiene orden infinito.</p>
-				</statement>
-			
-		</exercise>
-	
-		<exercise number="15">
-			<statement>
-				<p>Evalúe.
-					<ol cols="2">
-			 
-						<li><p><m>(3-2i)+ (5i-6)</m></p></li>
-	
-						<li><p><m>(4-5i)-\overline{(4i -4)}</m></p></li>
-						 
-						<li><p><m>(5-4i)(7+2i)</m></p></li>
-						 
-						<li><p><m>(9-i) \overline{(9-i)}</m></p></li>
-						 
-						<li><p><m>i^{45}</m></p></li>
-	
-						<li><p><m>(1+i)+\overline{(1+i)}</m></p></li>
-			 
-					</ol></p>
-			</statement>
-			<hint>
-				<p>(a) <m>-3 + 3i</m>; (c) <m>43- 18i</m>; (e) <m>i</m></p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="16">
-			<statement>
-				<p>Convierta los siguientes números complejos a la forma <m>a + bi</m>.
-					<ol cols="2">
-	
-						<li><p><m>2 \cis(\pi / 6 )</m></p></li>
-						 
-						<li><p><m>5 \cis(9\pi/4)</m></p></li>
-	
-						<li><p><m>3 \cis(\pi)</m></p></li>
-						 
-						<li><p><m>\cis(7\pi/4) /2</m></p></li>
-			 
-					</ol></p>
-			</statement>
-			<hint>
-				<p>(a) <m>\sqrt{3} + i</m>; (c) <m>-3</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="17">
-		<statement>
-			<p>Escriba la representación polar de los siguientes números complejos.
-				<ol cols="3">
-					 
-					<li><p><m>1-i</m></p></li>
-	
-					<li><p><m>-5</m></p></li>
-					 
-					<li><p><m>2+2i</m></p></li>
-					 
-					<li><p><m>\sqrt{3} + i</m></p></li>
-	
-					<li><p><m>-3i</m></p></li>
-	
-					<li><p><m>2i + 2 \sqrt{3}</m></p></li>
-					 
-				</ol></p>
-		</statement>
-		<hint>
-			<p>(a) <m>\sqrt{2} \cis( 7 \pi /4)</m>; (c) <m>2 \sqrt{2} \cis( \pi /4)</m>; (e) <m>3 \cis(3 \pi/2)</m>.</p>
-		</hint>
-		
-		</exercise>
-	
-		<exercise number="18">
-			<statement>
-			<p>Calcule cada una de las siguientes expresiones.
-				<ol cols="2">
-				 
-					<li><p><m>(1+i)^{-1}</m></p></li>
-	
-					<li><p><m>(1 - i)^{6}</m></p></li>
-					 
-					<li><p><m>(\sqrt{3} + i)^{5}</m></p></li>
-	
-					<li><p><m>(-i)^{10}</m></p></li>
-					 
-					<li><p><m>((1-i)/2)^{4}</m></p></li>
-	
-					<li><p><m>(-\sqrt{2} - \sqrt{2}\, i)^{12}</m></p></li>
-					 
-					<li><p><m>(-2 + 2i)^{-5}</m></p></li>
-				 
-				</ol></p>
-			</statement>
-			<hint>
-				<p>(a) <m>(1 - i)/2</m>; (c) <m>16(i - \sqrt{3}\, )</m>; (e) <m>-1/4</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="19">
-			<statement>
-				<p>Demuestre cada una de las siguientes proposiciones.
-					<ol cols="2">
-			 
-						<li><p><m>|z| = | \overline{z}|</m></p></li>
-	
-						<li><p><m>z \overline{z} = |z|^2</m></p></li>
-						 
-						<li><p><m>z^{-1} = \overline{z} / |z|^2</m></p></li>
-	
-						<li><p><m>|z +w| \leq |z| + |w|</m></p></li>
-						 
-						<li><p><m>|z - w| \geq | |z| - |w||</m></p></li>
-						 
-						<li><p><m>|z w| = |z|  |w|</m></p></li>
-			 
-					</ol></p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="20">
-			<statement>
-				<p>Liste y grafique las raíces sextas de la unidad. ¿Cuáles son los generadores de este grupo?  ¿Cuáles son las raíces sextas primitivas de la unidad?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="21">
-			<statement>
-				<p>Liste y grafique las raíces quintas de la unidad. ¿Cuáles son los generadores de este grupo?  ¿Cuáles son las raíces quintas primitivas de la unidad?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="22">
-			<statement>
-				<p>Calcule cada uno de los siguientes.
-					<ol cols="2">
-			 
-						<li><p><m>292^{3171} \pmod{ 582}</m></p></li>
-	
-						<li><p><m>2557^{ 341} \pmod{ 5681}</m></p></li>
-	
-						<li><p><m>2071^{ 9521} \pmod{ 4724}</m></p></li>
-						 
-						<li><p><m>971^{ 321} \pmod{ 765}</m></p></li>
-						 
-					</ol></p>
-			</statement>
-			<hint>
-				<p permid="SDL">
-					(a) <m>292</m>; (c) <m>1523</m>.
-				  </p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="23">
-			<statement>
-				<p>Sean <m>a, b \in G</m>.  Demuestre las siguientes proposiciones.
-					<ol>
-			 
-						<li><p>El orden de <m>a</m> es el mismo que el orden de <m>a^{-1}</m>.</p></li>
-						 
-						<li><p>Para todo <m>g \in G</m>, <m>|a| = |g^{-1}ag|</m>.</p></li>
-						 
-						<li><p>El orden de <m>ab</m> es el mismo que el orden de <m>ba</m>.</p></li>
-			 
-					</ol></p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="24">
-			<statement>
-				<p>Sean <m>p</m> y <m>q</m> primos distintos.  ¿Cuántos generadores tiene <m>{\mathbb	Z}_{pq}</m> ? </p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="25">
-			<statement>
-				<p>Sea <m>p</m> primo y <m>r</m> un entero positivo. ¿Cuántos generadores tiene <m>{\mathbb Z}_{p^r}</m> ?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="26">
-			<statement>
-				<p>Demuestre que <m>{\mathbb Z}_{p}</m> no tiene subgrupos propios no triviales si <m>p</m> es primo.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="27">
-			<statement>
-				<p>Si <m>g</m> y <m>h</m> tienen orden <m>15</m> y <m>16</m> respectivamente en un grupo <m>G</m>, ¿Cuál es el orden de <m>\langle g \rangle  \cap \langle h \rangle </m>? </p>
-			</statement>
-			<hint>
-				<p><m>|\langle g \rangle \cap \langle h \rangle| = 1</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="28">
-			<statement>
-				<p>Sea <m>a</m> un elemento en un grupo <m>G</m>. ¿Qué elemento genera el subgrupo <m>\langle a^m \rangle  \cap  \langle a^n \rangle</m>?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="29">
-			<statement>
-				<p>Demuestre que <m>{\mathbb Z}_n</m> tiene un número par de generadores para <m>n \gt 2</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="30">
-			<statement>
-				<p>Supongamos que <m>G</m> es un grupo y sean <m>a</m>, <m>b \in G</m>. Demuestre que si <m>|a| = m</m> y <m>|b| = n</m> con <m>\gcd(m,n) = 1</m>, entonces <m>\langle a \rangle \cap \langle b \rangle  = \{ e \}</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-	<!--Todo Fix references to torsion subgroup-->
-	
-		<exercise number="31">
-			<statement>
-				<p>Sea <m>G</m> un grupo abeliano. Demuestre que los elementos de orden finito en <m>G</m> forman un subgrupo. Este subgrupo se llama <term>subgrupo de torsión</term> de <m>G</m>.</p>
-			</statement>
-			<hint>
-				<p>El elemento identidad en cualquier grupo tiene orden finito. Si <m>g, h \in G</m> tienen orden <m>m</m> y <m>n</m>, respectivamente, como <m>(g^{-1})^m = e</m> y <m>(gh)^{mn} = e</m>, se cumple que los elementos de orden finito en <m>G</m> forman un subgrupo de <m>G</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="32">
-			<statement>
-				<p>Sea <m>G</m> un grupo cíclico finito de orden  <m>n</m> generado por <m>x</m>. Muestre que si <m>y = x^k</m> con <m>\gcd(k,n) = 1</m>, entonces <m>y</m> también es un generador de  <m>G</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="33">
-			<statement>
-				<p>Si <m>G</m> es un grupo abeliano que contiene dos subgrupos cíclicos de orden <m>2</m>, muestre que <m>G</m> debe contener un subgrupo de orden <m>4</m>. ¿Es necesariamente cíclico este subgrupo?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="34">
-			<statement>
-				<p>Sea <m>G</m> un grupo abeliano de orden <m>pq</m> con <m>\gcd(p,q) = 1</m>.  Si <m>G</m> contiene  elementos <m>a</m> y <m>b</m> de orden <m>p</m> y <m>q</m> respectivamente, entonces demuestre que <m>G</m> es cíclico.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="35">
-			<statement>
-				<p>Demuestre que los subgrupos de <m>\mathbb Z</m> son exactamente <m>n{\mathbb Z}</m> para <m>n = 0, 1, 2, \ldots</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="36">
-			<statement>
-				<p>Demuestre que los generadores de <m>{\mathbb Z}_n</m> son los enteros <m>r</m> tales que <m>1 \leq r \lt n</m> y <m>\gcd(r,n) =  1</m>. </p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="37">
-			<statement>
-				<p>Demuestre que si <m>G</m> no tiene subgrupos propios no triviales, entonces <m>G</m> es un grupo cíclico.</p>
-			</statement>
-			<hint>
-				<p>Si <m>g</m> es un elemento distinto de la identidad en <m>G</m>, entonces <m>g</m> debe generar todo <m>G</m>; de lo contrario, <m>\langle g \rangle</m> sería un subgrupo propio no trivial de <m>G</m>.</p>
-			</hint>
-			
-		</exercise>
-	
-		<exercise number="38">
-			<statement>
-				<p>Demuestre que el orden de un elemento en un grupo cíclico finito <m>G</m> debe dividir el orden del grupo.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="39" xml:id="cyclic-exercise-subgroups-exist">
-			<statement>
-				<p>Demuestre que si <m>G</m> es un grupo cíclico de orden <m>m</m> y <m>d \mid m</m>, entonces <m>G</m> tiene un subgrupo de orden <m>d</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="40">
-			<statement>
-				<p>¿Para qué enteros <m>n</m> es <m>-1</m> una raíz <m>n</m>-ésima de la unidad?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="41">
-			<statement>
-				<p>Si <m>z = r( \cos \theta + i \sin \theta)</m> y <m>w = s(\cos \phi + i \sin \phi)</m> son dos números complejos no nulos, muestre que
-					<me>zw = rs[ \cos( \theta + \phi)  + i \sin( \theta + \phi)].</me></p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="42">
-			<statement>
-				<p>Demuestre que el grupo de la circunferencia es un subgrupo de <m>{\mathbb C}^*</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="43">
-			<statement>
-				<p>Demuestre que las raíces <m>n</m>-ésimas de la unidad forman un subgrupo cíclico de <m>{\mathbb T}</m>  de orden <m>n</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="44">
-			<statement>
-				<p>Sea <m>\alpha \in \mathbb T</m>. Demuestre que <m>\alpha^m =1</m> y <m>\alpha^n = 1</m> si y solo si <m>\alpha^d = 1</m> para <m>d = \gcd(m,n)</m>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="45">
-			<statement>
-				<p>Sea <m>z \in {\mathbb C}^\ast</m>. Si <m>|z| \neq 1</m>, demuestre que el orden de <m>z</m> es infinito. </p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="46">
-			<statement>
-				<p>Sea <m>z =\cos \theta + i \sin \theta</m> en <m>{\mathbb T}</m> con <m>\theta \in {\mathbb Q}</m>.  Demuestre que el orden de <m>z</m>  es infinito.</p>
-			</statement>
-			
-		</exercise>
-	
-	</exercises>
+    <title>Ejercicios</title>
+  
+    <exercise number="1">
+      <statement>
+        <p>Demuestre o refute cada una de las siguientes proposiciones.
+          <ol>
+  
+            <li><p>Todos los generadores de  <m>{\mathbb Z}_{60}</m> son primos.
+    </p></li>
+  
+            <li><p><m>U(8)</m> es cíclico.
+    </p></li>
+  
+            <li><p><m>{\mathbb Q}</m> es cíclico.
+    </p></li>
+  
+            <li><p>Si todo subgrupo propio de un grupo <m>G</m> es cíclico, entonces <m>G</m> es un grupo cíclico.
+    </p></li>
+  
+            <li><p>Un grupo con un número finito de subgrupos es finito.
+    </p></li>
+  
+          </ol></p>
+      </statement>
+      <hint>
+        <p>(a) Falso; (c) falso; (e) verdadero.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="2">
+      <statement>
+      <p>Encuentre el orden de cada uno de los siguientes elementos.
+        <ol cols="2">
+  
+          <li><p><m>5 \in {\mathbb Z}_{12}</m></p></li>
+  
+          <li><p><m>\sqrt{3} \in {\mathbb R}</m></p></li>
+           
+          <li><p><m>\sqrt{3} \in {\mathbb R}^\ast</m></p></li>
+           
+          <li><p><m>-i \in {\mathbb C}^\ast</m></p></li>
+  
+          <li><p><m>72 \in {\mathbb Z}_{240}</m></p></li>
+           
+          <li><p><m>312 \in {\mathbb Z}_{471}</m></p></li>
+        
+        </ol></p>
+      </statement>
+      <hint>
+        <p>(a) <m>12</m>; (c) infinito; (e) <m>10</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="3">
+      <statement>
+      <p>Liste todos los elementos en cada uno de los siguientes subgrupos.
+        <ol>
+         
+          <li><p>El subgrupo de <m>{\mathbb Z}</m> generado por <m>7</m></p></li>
+           
+          <li><p>El subgrupo de <m>{\mathbb Z}_{24}</m> generado por <m>15</m></p></li>
+           
+          <li><p>Todos los subgrupos de <m>{\mathbb Z}_{12}</m></p></li>
+           
+          <li><p>Todos los subgrupos de <m>{\mathbb Z}_{60}</m></p></li>
+           
+          <li><p>Todos los subgrupos de <m>{\mathbb Z}_{13}</m></p></li>
+           
+          <li><p>Todos los subgrupos de <m>{\mathbb Z}_{48}</m></p></li>
+           
+          <li><p>El subgrupo generado por 3  en <m>U(20)</m></p></li>
+           
+          <li><p>El subgrupo generado por 5 en <m>U(18)</m></p></li>
+           
+          <li><p>El subgrupo de <m>{\mathbb R}^\ast</m> generado por <m>7</m></p></li>
+           
+          <li><p>El subgrupo de <m>{\mathbb C}^\ast</m> generado por <m>i</m> con <m>i^2 = -1</m></p></li>
+           
+          <li><p>El subgrupo de <m>{\mathbb C}^\ast</m> generado por <m>2i</m></p></li>
+           
+          <li><p>El subgrupo de <m>{\mathbb C}^\ast</m> generado por <m>(1 + i) / \sqrt{2}</m></p></li>
+           
+          <li><p>El subgrupo de <m>{\mathbb C}^\ast</m> generado por <m>(1 + \sqrt{3}\, i) / 2</m></p></li>
+         
+        </ol></p>
+      </statement>
+      <hint>
+        <p>(a) <m>7 {\mathbb Z} = \{ \ldots, -7, 0, 7, 14, \ldots \}</m>; (b) <m>\{ 0, 3, 6, 9, 12, 15, 18, 21 \}</m>; (c) <m>\{ 0 \}</m>, <m>\{ 0, 6 \}</m>, <m>\{ 0, 4, 8 \}</m>, <m>\{ 0, 3, 6, 9 \}</m>, <m>\{ 0, 2, 4, 6, 8, 10 \}</m>; (g) <m>\{ 1, 3, 7, 9 \}</m>; (j) <m>\{ 1, -1, i, -i \}</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="4">
+      <statement>
+        <p>Encuentre los subgrupos de <m>GL_2( {\mathbb R })</m> generados por cada una de la siguientes matrices.
+          <ol cols="3">
+       
+            <li><p><m>\displaystyle \begin{pmatrix}
+            0 &amp; 1 \\
+            -1 &amp; 0
+            \end{pmatrix}</m></p></li>
+  
+            <li><p><m>\displaystyle
+            \begin{pmatrix}
+            0 &amp; 1/3 \\
+            3 &amp; 0
+            \end{pmatrix}</m></p></li>
+  
+            <li><p><m>\displaystyle
+            \begin{pmatrix}
+            1 &amp; -1 \\
+            1 &amp; 0
+            \end{pmatrix}</m></p></li>
+  
+            <li><p><m>\displaystyle
+            \begin{pmatrix}
+            1 &amp; -1 \\
+            0 &amp; 1
+            \end{pmatrix}</m></p></li>
+  
+            <li><p><m>\displaystyle
+            \begin{pmatrix}
+            1 &amp; -1 \\
+            -1 &amp; 0
+            \end{pmatrix}</m></p></li>
+             
+            <li><p><m>\displaystyle
+            \begin{pmatrix}
+            \sqrt{3}/ 2 &amp; 1/2 \\
+            -1/2 &amp; \sqrt{3}/2
+            \end{pmatrix}</m></p></li>
+  
+          </ol></p>
+      </statement>
+      <hint>
+        <p>(a)
+          <me>\begin{pmatrix}
+          1 &amp; 0 \\
+          0 &amp; 1
+          \end{pmatrix},
+          \begin{pmatrix}
+          -1 &amp; 0 \\
+          0 &amp; -1
+          \end{pmatrix},
+          \begin{pmatrix}
+          0 &amp; -1 \\
+          1 &amp; 0
+          \end{pmatrix},
+          \begin{pmatrix}
+          0 &amp; 1 \\
+          -1 &amp; 0
+          \end{pmatrix}</me>.
+    </p>
+  
+        <p>(c)
+          <me>\begin{pmatrix}
+          1 &amp; 0 \\
+          0 &amp; 1
+          \end{pmatrix},
+          \begin{pmatrix}
+          1 &amp; -1 \\
+          1 &amp; 0
+          \end{pmatrix},
+          \begin{pmatrix}
+          -1 &amp; 1 \\
+          -1 &amp; 0
+          \end{pmatrix}, \\
+          \begin{pmatrix}
+          0 &amp; 1 \\
+          -1 &amp; 1
+          \end{pmatrix},
+          \begin{pmatrix}
+          0 &amp; -1 \\
+          1 &amp; -1
+          \end{pmatrix},
+          \begin{pmatrix}
+          -1 &amp; 0 \\
+          0 &amp; -1
+          \end{pmatrix}</me>.
+    </p>
+        </hint>
+      
+    </exercise>
+  
+    <exercise number="5">
+      <statement>
+        <p>Encuentre el orden de cada elemento en <m>{\mathbb Z}_{18}</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="6">
+      <statement>
+        <p>Encuentre el orden de cada elemento en el grupo de simetrías del cuadrado, <m>D_4</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="7">
+      <statement>
+        <p>¿Cuáles son todos los subgrupos cíclicos del grupo de los cuaterniones, <m>Q_8</m>?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="8">
+      <statement>
+        <p>Liste todos los subgrupos cíclicos de <m>U(30)</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="9">
+      <statement>
+        <p>Liste todos los generadores de cada subgrupo de orden 8 en <m>{\mathbb Z}_{32}</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="10">
+      <statement>
+        <p>Encuentre todos los elementos de orden finito en cada uno de los siguientes grupos. Acá el <q><m>\ast</m></q> indica el conjunto sin el cero.
+          <ol cols="3">
+       
+            <li><p><m>{\mathbb Z}</m></p></li>
+             
+            <li><p><m>{\mathbb Q}^\ast</m></p></li>
+             
+            <li><p><m>{\mathbb R}^\ast</m></p></li>
+       
+          </ol></p>
+      </statement>
+      <hint>
+        <p>(a) <m>0</m>; (b) <m>1, -1</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="11">
+      <statement>
+        <p>Si <m>a^{24} =e</m> en un grupo <m>G</m>, ¿cuáles son los posibles órdenes de <m>a</m>?</p>
+      </statement>
+      <hint>
+        <p permid="NTS">
+          <m>1, 2, 3, 4, 6, 8, 12, 24</m>.
+          </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="12">
+      <statement>
+        <p>Encuentre un grupo cíclico con exactamente un generador. ¿Puede encontrar grupos cíclicos con exactamente dos generadores? ¿Cuatro generadores? ¿Con exactamente <m>n</m> generadores?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="13">
+      <statement>
+        <p>Para <m>n \leq 20</m>, ¿cuáles grupos <m>U(n)</m> son cíclicos?  Conjeture qué se cumple en general.  ¿Puede demostrar su conjetura?  </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="14">
+      <statement>
+        <p>Sean
+          <me>A =
+          \begin{pmatrix}
+          0 &amp; 1 \\
+          -1 &amp; 0
+          \end{pmatrix}
+          \qquad \text{y} \qquad
+          B =
+          \begin{pmatrix}
+          0 &amp; -1 \\
+          1 &amp; -1
+          \end{pmatrix}</me>
+        elementos en <m>GL_2( {\mathbb R} )</m>. Muestre que <m>A</m> y <m>B</m> tienen orden finito pero que <m>AB</m> tiene orden infinito.
+    </p>
+        </statement>
+      
+    </exercise>
+  
+    <exercise number="15">
+      <statement>
+        <p>Evalúe.
+          <ol cols="2">
+       
+            <li><p><m>(3-2i)+ (5i-6)</m></p></li>
+  
+            <li><p><m>(4-5i)-\overline{(4i -4)}</m></p></li>
+             
+            <li><p><m>(5-4i)(7+2i)</m></p></li>
+             
+            <li><p><m>(9-i) \overline{(9-i)}</m></p></li>
+             
+            <li><p><m>i^{45}</m></p></li>
+  
+            <li><p><m>(1+i)+\overline{(1+i)}</m></p></li>
+       
+          </ol></p>
+      </statement>
+      <hint>
+        <p>(a) <m>-3 + 3i</m>; (c) <m>43- 18i</m>; (e) <m>i</m></p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="16">
+      <statement>
+        <p>Convierta los siguientes números complejos a la forma <m>a + bi</m>.
+          <ol cols="2">
+  
+            <li><p><m>2 \cis(\pi / 6 )</m></p></li>
+             
+            <li><p><m>5 \cis(9\pi/4)</m></p></li>
+  
+            <li><p><m>3 \cis(\pi)</m></p></li>
+             
+            <li><p><m>\cis(7\pi/4) /2</m></p></li>
+       
+          </ol></p>
+      </statement>
+      <hint>
+        <p>(a) <m>\sqrt{3} + i</m>; (c) <m>-3</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="17">
+    <statement>
+      <p>Escriba la representación polar de los siguientes números complejos.
+        <ol cols="3">
+           
+          <li><p><m>1-i</m></p></li>
+  
+          <li><p><m>-5</m></p></li>
+           
+          <li><p><m>2+2i</m></p></li>
+           
+          <li><p><m>\sqrt{3} + i</m></p></li>
+  
+          <li><p><m>-3i</m></p></li>
+  
+          <li><p><m>2i + 2 \sqrt{3}</m></p></li>
+           
+        </ol></p>
+    </statement>
+    <hint>
+      <p>(a) <m>\sqrt{2} \cis( 7 \pi /4)</m>; (c) <m>2 \sqrt{2} \cis( \pi /4)</m>; (e) <m>3 \cis(3 \pi/2)</m>.
+    </p>
+    </hint>
+    
+    </exercise>
+  
+    <exercise number="18">
+      <statement>
+      <p>Calcule cada una de las siguientes expresiones.
+        <ol cols="2">
+         
+          <li><p><m>(1+i)^{-1}</m></p></li>
+  
+          <li><p><m>(1 - i)^{6}</m></p></li>
+           
+          <li><p><m>(\sqrt{3} + i)^{5}</m></p></li>
+  
+          <li><p><m>(-i)^{10}</m></p></li>
+           
+          <li><p><m>((1-i)/2)^{4}</m></p></li>
+  
+          <li><p><m>(-\sqrt{2} - \sqrt{2}\, i)^{12}</m></p></li>
+           
+          <li><p><m>(-2 + 2i)^{-5}</m></p></li>
+         
+        </ol></p>
+      </statement>
+      <hint>
+        <p>(a) <m>(1 - i)/2</m>; (c) <m>16(i - \sqrt{3}\, )</m>; (e) <m>-1/4</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="19">
+      <statement>
+        <p>Demuestre cada una de las siguientes proposiciones.
+          <ol cols="2">
+       
+            <li><p><m>|z| = | \overline{z}|</m></p></li>
+  
+            <li><p><m>z \overline{z} = |z|^2</m></p></li>
+             
+            <li><p><m>z^{-1} = \overline{z} / |z|^2</m></p></li>
+  
+            <li><p><m>|z +w| \leq |z| + |w|</m></p></li>
+             
+            <li><p><m>|z - w| \geq | |z| - |w||</m></p></li>
+             
+            <li><p><m>|z w| = |z|  |w|</m></p></li>
+       
+          </ol></p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="20">
+      <statement>
+        <p>Liste y grafique las raíces sextas de la unidad. ¿Cuáles son los generadores de este grupo?  ¿Cuáles son las raíces sextas primitivas de la unidad?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="21">
+      <statement>
+        <p>Liste y grafique las raíces quintas de la unidad. ¿Cuáles son los generadores de este grupo?  ¿Cuáles son las raíces quintas primitivas de la unidad?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="22">
+      <statement>
+        <p>Calcule cada uno de los siguientes.
+          <ol cols="2">
+       
+            <li><p><m>292^{3171} \pmod{ 582}</m></p></li>
+  
+            <li><p><m>2557^{ 341} \pmod{ 5681}</m></p></li>
+  
+            <li><p><m>2071^{ 9521} \pmod{ 4724}</m></p></li>
+             
+            <li><p><m>971^{ 321} \pmod{ 765}</m></p></li>
+             
+          </ol></p>
+      </statement>
+      <hint>
+        <p permid="SDL">
+          (a) <m>292</m>; (c) <m>1523</m>.
+          </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="23">
+      <statement>
+        <p>Sean <m>a, b \in G</m>.  Demuestre las siguientes proposiciones.
+          <ol>
+       
+            <li><p>El orden de <m>a</m> es el mismo que el orden de <m>a^{-1}</m>.
+    </p></li>
+             
+            <li><p>Para todo <m>g \in G</m>, <m>|a| = |g^{-1}ag|</m>.
+    </p></li>
+             
+            <li><p>El orden de <m>ab</m> es el mismo que el orden de <m>ba</m>.
+    </p></li>
+       
+          </ol></p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="24">
+      <statement>
+        <p>Sean <m>p</m> y <m>q</m> primos distintos.  ¿Cuántos generadores tiene <m>{\mathbb  Z}_{pq}</m> ? </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="25">
+      <statement>
+        <p>Sea <m>p</m> primo y <m>r</m> un entero positivo. ¿Cuántos generadores tiene <m>{\mathbb Z}_{p^r}</m> ?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="26">
+      <statement>
+        <p>Demuestre que <m>{\mathbb Z}_{p}</m> no tiene subgrupos propios no triviales si <m>p</m> es primo.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="27">
+      <statement>
+        <p>Si <m>g</m> y <m>h</m> tienen orden <m>15</m> y <m>16</m> respectivamente en un grupo <m>G</m>, ¿Cuál es el orden de <m>\langle g \rangle  \cap \langle h \rangle </m>? </p>
+      </statement>
+      <hint>
+        <p><m>|\langle g \rangle \cap \langle h \rangle| = 1</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="28">
+      <statement>
+        <p>Sea <m>a</m> un elemento en un grupo <m>G</m>. ¿Qué elemento genera el subgrupo <m>\langle a^m \rangle  \cap  \langle a^n \rangle</m>?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="29">
+      <statement>
+        <p>Demuestre que <m>{\mathbb Z}_n</m> tiene un número par de generadores para <m>n \gt 2</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="30">
+      <statement>
+        <p>Supongamos que <m>G</m> es un grupo y sean <m>a</m>, <m>b \in G</m>. Demuestre que si <m>|a| = m</m> y <m>|b| = n</m> con <m>\gcd(m,n) = 1</m>, entonces <m>\langle a \rangle \cap \langle b \rangle  = \{ e \}</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+  <!--Todo Fix references to torsion subgroup-->
+  
+    <exercise number="31">
+      <statement>
+        <p>Sea <m>G</m> un grupo abeliano. Demuestre que los elementos de orden finito en <m>G</m> forman un subgrupo. Este subgrupo se llama <term>subgrupo de torsión</term> de <m>G</m>.
+    </p>
+      </statement>
+      <hint>
+        <p>El elemento identidad en cualquier grupo tiene orden finito. Si <m>g, h \in G</m> tienen orden <m>m</m> y <m>n</m>, respectivamente, como <m>(g^{-1})^m = e</m> y <m>(gh)^{mn} = e</m>, se cumple que los elementos de orden finito en <m>G</m> forman un subgrupo de <m>G</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="32">
+      <statement>
+        <p>Sea <m>G</m> un grupo cíclico finito de orden  <m>n</m> generado por <m>x</m>. Muestre que si <m>y = x^k</m> con <m>\gcd(k,n) = 1</m>, entonces <m>y</m> también es un generador de  <m>G</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="33">
+      <statement>
+        <p>Si <m>G</m> es un grupo abeliano que contiene dos subgrupos cíclicos de orden <m>2</m>, muestre que <m>G</m> debe contener un subgrupo de orden <m>4</m>. ¿Es necesariamente cíclico este subgrupo?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="34">
+      <statement>
+        <p>Sea <m>G</m> un grupo abeliano de orden <m>pq</m> con <m>\gcd(p,q) = 1</m>.  Si <m>G</m> contiene  elementos <m>a</m> y <m>b</m> de orden <m>p</m> y <m>q</m> respectivamente, entonces demuestre que <m>G</m> es cíclico.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="35">
+      <statement>
+        <p>Demuestre que los subgrupos de <m>\mathbb Z</m> son exactamente <m>n{\mathbb Z}</m> para <m>n = 0, 1, 2, \ldots</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="36">
+      <statement>
+        <p>Demuestre que los generadores de <m>{\mathbb Z}_n</m> son los enteros <m>r</m> tales que <m>1 \leq r \lt n</m> y <m>\gcd(r,n) =  1</m>. </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="37">
+      <statement>
+        <p>Demuestre que si <m>G</m> no tiene subgrupos propios no triviales, entonces <m>G</m> es un grupo cíclico.
+    </p>
+      </statement>
+      <hint>
+        <p>Si <m>g</m> es un elemento distinto de la identidad en <m>G</m>, entonces <m>g</m> debe generar todo <m>G</m>; de lo contrario, <m>\langle g \rangle</m> sería un subgrupo propio no trivial de <m>G</m>.
+    </p>
+      </hint>
+      
+    </exercise>
+  
+    <exercise number="38">
+      <statement>
+        <p>Demuestre que el orden de un elemento en un grupo cíclico finito <m>G</m> debe dividir el orden del grupo.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="39" xml:id="cyclic-exercise-subgroups-exist">
+      <statement>
+        <p>Demuestre que si <m>G</m> es un grupo cíclico de orden <m>m</m> y <m>d \mid m</m>, entonces <m>G</m> tiene un subgrupo de orden <m>d</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="40">
+      <statement>
+        <p>¿Para qué enteros <m>n</m> es <m>-1</m> una raíz <m>n</m>-ésima de la unidad?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="41">
+      <statement>
+        <p>Si <m>z = r( \cos \theta + i \sin \theta)</m> y <m>w = s(\cos \phi + i \sin \phi)</m> son dos números complejos no nulos, muestre que
+          <me>zw = rs[ \cos( \theta + \phi)  + i \sin( \theta + \phi)]</me>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="42">
+      <statement>
+        <p>Demuestre que el grupo de la circunferencia es un subgrupo de <m>{\mathbb C}^*</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="43">
+      <statement>
+        <p>Demuestre que las raíces <m>n</m>-ésimas de la unidad forman un subgrupo cíclico de <m>{\mathbb T}</m>  de orden <m>n</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="44">
+      <statement>
+        <p>Sea <m>\alpha \in \mathbb T</m>. Demuestre que <m>\alpha^m =1</m> y <m>\alpha^n = 1</m> si y solo si <m>\alpha^d = 1</m> para <m>d = \gcd(m,n)</m>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="45">
+      <statement>
+        <p>Sea <m>z \in {\mathbb C}^\ast</m>. Si <m>|z| \neq 1</m>, demuestre que el orden de <m>z</m> es infinito. </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="46">
+      <statement>
+        <p>Sea <m>z =\cos \theta + i \sin \theta</m> en <m>{\mathbb T}</m> con <m>\theta \in {\mathbb Q}</m>.  Demuestre que el orden de <m>z</m>  es infinito.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+  </exercises>
 
-	<exercises xml:id="cyclic-exercises-programming">
-		<title>Ejercicios de programación</title>
+  <exercises xml:id="cyclic-exercises-programming">
+    <title>Ejercicios de programación</title>
  
-		<exercise>
-			<statement>
-				<p>Escriba un programa que escriba cualquier número entero como suma de potencias distintas de <m>2</m>.  ¿Cuál es el mayor entero para el que funciona su programa?</p>
-			</statement>
-		</exercise>
+    <exercise>
+      <statement>
+        <p>Escriba un programa que escriba cualquier número entero como suma de potencias distintas de <m>2</m>.  ¿Cuál es el mayor entero para el que funciona su programa?</p>
+      </statement>
+    </exercise>
  
-		<exercise>
-			<statement>
-				<p>Escriba un programa para calcular <m>a^x \pmod{ n}</m> con el método de los cuadrados repetidos.  ¿Cuáles son los mayores valores de <m>n</m> y <m>x</m> aceptados por su programa?</p>
-			</statement>
-		</exercise>
+    <exercise>
+      <statement>
+        <p>Escriba un programa para calcular <m>a^x \pmod{ n}</m> con el método de los cuadrados repetidos.  ¿Cuáles son los mayores valores de <m>n</m> y <m>x</m> aceptados por su programa?</p>
+      </statement>
+    </exercise>
  
- 	</exercises>
+   </exercises>
  
-	<references xml:id="cyclic-references">
-		<title>Referencias y Lecturas recomendadas</title>
+  <references xml:id="cyclic-references">
+    <title>Referencias y Lecturas recomendadas</title>
 
-		 <!-- was [1] -->
-		 <!-- reference updated - TWJ 5/6/2010 -->
-		<biblio type="raw">Koblitz, N. <title>A Course in Number Theory y Cryptography</title>. 2nd ed. Springer, New York, 1994.</biblio>
+     <!-- was [1] -->
+     <!-- reference updated - TWJ 5/6/2010 -->
+    <biblio type="raw">Koblitz, N. <title>A Course in Number Theory y Cryptography</title>. 2nd ed. Springer, New York, 1994.
+    </biblio>
  
-		<!-- was [2] -->
-		<biblio type="raw" xml:id="biblio-pomerance-1990">Pomerance, C. <q>Cryptology y Computational Number Theory<mdash />An Introduction,</q> in <title>Cryptology y Computational Number Theory</title>, Pomerance, C., ed. Proceedings of Symposia in Applied Mathematics, vol. 42, American Mathematical Society, Providence, RI, 1990.  This book gives an excellent account of how the method of repeated squares is used in cryptography.</biblio>
+    <!-- was [2] -->
+    <biblio type="raw" xml:id="biblio-pomerance-1990">Pomerance, C. <q>Cryptology y Computational Number Theory<mdash />An Introduction,</q> in <title>Cryptology y Computational Number Theory</title>, Pomerance, C., ed. Proceedings of Symposia in Applied Mathematics, vol. 42, American Mathematical Society, Providence, RI, 1990.  This book gives an excellent account of how the method of repeated squares is used in cryptography.
+    </biblio>
 
-	</references>
+  </references>
  
-	<section xml:id="cyclic-sage">
-		<title>Sage</title>
-	
-		<introduction>
-			<p>Los grupos cíclicos son muy importantes, así es que no es una sorpresa que aparezcan en diferentes formas en Sage.  Cada una de estas es ligeramente diferente, y ninguna de ellas es ideal para una introducción, pero juntas pueden ilustrar la mayor parte de las ideas importantes.  Aquí hay una guía a las diferentes formas de construir, y estudiar, un grupo cíclico en Sage.</p>
-		</introduction>
-	
-		<subsection>
-			<title>Grupos Cíclicos de Orden Infinito</title>
-	
-			<p>En Sage, los enteros <m>\mathbb Z</m> se construyen con <c>ZZ</c>.  Para construir un grupo cíclico infinito tal como <m>3\mathbb Z</m> del <xref ref="example-cyclic-z3" />, simplemente use <c>3*ZZ</c>.  Como conjunto infinito, no es mucho lo que se pueda hacer con esto.  Se puede determinar si un entero está en el conjunto o no.  También es posible recuperar el generador con el comando <c>.gen()</c>.</p>
-	
-			<sage>
-				<input>
-				G = 3*ZZ
-				-12 in G
-				</input>
-				<output>True</output>
-			</sage>
-	
-			<sage>
-				<input>
-				37 in G
-				</input>
-				<output>False</output>
-			</sage>
-	
-			<sage>
-				<input>
-				G.gen()
-				</input>
-				<output>3</output>
-			</sage>
-	
-			</subsection>
-	
-			<subsection>
-			<title>Grupos Cíclicos Aditivos</title>
-	
-			<p>El grupo cíclico aditivo <m>\mathbb Z_n</m> se puede construir como un caso especial de una construcción más general en Sage.  Primer definimos  <m>\mathbb Z_{14}</m> y capturamos su generador.  En lo que sigue, preste especial atención al uso de paréntesis y corchetes para cuando realice sus propios ensayos.</p>
-	
-			<sage>
-				<input>
-				G = AdditiveAbelianGroup([14])
-				G.order()
-				</input>
-				<output>14</output>
-			</sage>
-	
-			<sage>
-				<input>G.list()</input>
-				<output>
-				[(0), (1), (2), (3), (4), (5), (6), (7),
-				 (8), (9), (10), (11), (12), (13)]
-				</output>
-			</sage>
-	
-			<sage>
-				<input>
-				a = G.gen(0)
-				a
-				</input>
-				<output>(1)</output>
-			</sage>
-	
-			<p>Se puede calcular en este grupo, usando el generador, usando elementos nuevos obtenidos de coercionar enteros a pertenecer al grupo, o tomando el resultado de operaciones con otros elementos.  Podemos obtener el orden de los elementos en este grupo.  Note que podemos abreviar la suma repetida de elementos usando la multiplicación de un elemento por un número entero.</p>
-	
-			<sage>
-				<input>
-				a + a
-				</input>
-				<output>(2)</output>
-			</sage>
-	
-			<sage>
-				<input>
-				a + a + a + a
-				</input>
-				<output>(4)</output>
-			</sage>
-	
-			<sage>
-				<input>
-				4*a
-				</input>
-				<output>(4)</output>
-			</sage>
-	
-			<sage>
-				<input>
-				37*a
-				</input>
-				<output>(9)</output>
-			</sage>
-	
-			<p>Podemos crear, y después calcular con, elementos del grupo obtenidos a partir de la coerción de un entero (en una lista de largo <m>1</m>) al grupo.  Es posible que obtenga una advertencia <c>DeprecationWarning</c> la primera vez que use esta sintaxis para crear un nuevo elemento.  Esta misteriosa advertencia puede ser ignorada sin problemas.</p>
-	
-			<!-- Only to doctesting, warning to disappear "a few months" after 2015/05/20      -->
-			<!-- This test evokes the warning, then next one tests fine, as it normally should -->
-			<!-- Adjust sentence above once it goes away -->
-			<!-- Used ... below to mark out a line number that doctesting complained about -->
-	
-			<sage doctest="invisible">
-				<input>
-				G([2])
-				</input>
-				<output>
-				doctest:...: DeprecationWarning: The default behaviour changed! If you
-				*really* want a linear combination of smith generators, use
-				.linear_combination_of_smith_form_gens.
-				See http://trac.sagemath.org/16261 for details.
-				(2)
-				</output>
-			</sage>
-	
-			<sage>
-				<input>
-				b = G([2]); b
-				</input>
-				<output>(2)</output>
-			</sage>
-	
-			<sage>
-				<input>
-				b + b
-				</input>
-				<output>(4)</output>
-			</sage>
-	
-			<sage>
-				<input>
-				2*b == 4*a
-				</input>
-				<output>True</output>
-			</sage>
-	
-			<sage>
-				<input>
-				7*b
-				</input>
-				<output>(0)</output>
-			</sage>
-	
-			<sage>
-				<input>
-				b.order()
-				</input>
-				<output>7</output>
-			</sage>
-	
-			<sage>
-				<input>
-				c = a - 6*b; c
-				</input>
-				<output>(3)</output>
-			</sage>
-	
-			<sage>
-				<input>
-				c + c + c + c
-				</input>
-				<output>(12)</output>
-			</sage>
-	
-			<sage>
-				<input>
-				c.order()
-				</input>
-				<output>14</output>
-			</sage>
-	
-			<p>Es posible crear subgrupos cíclicos, a partir de un elemento designado como nuevo generador.  Desafortunadamente, hacer esto requiere usar el método <c>.submodule()</c> (que debiera ser renombrado en Sage).</p>
-	
-			<sage>
-				<input>H = G.submodule([b]); H</input>
-				<output>Additive abelian group isomorphic to Z/7</output>
-			</sage>
-	
-			<sage>
-				<input>H.list()</input>
-				<output>[(0), (2), (4), (6), (8), (10), (12)]</output>
-			</sage>
-	
-			<sage>
-				<input>H.order()</input>
-				<output>7</output>
-			</sage>
-	
-			<sage>
-				<input>e = H.gen(0); e</input>
-				<output>(2)</output>
-			</sage>
-	
-			<sage>
-				<input>3*e</input>
-				<output>(6)</output>
-			</sage>
-	
-			<sage>
-				<input>e.order()</input>
-				<output>7</output>
-			</sage>
-	
-			<p>El subgrupo cíclico <c>H</c> recién creado tiene más de un generador.  Podemos verificar esto construyendo un nuevo subgrupo y comparando ambos subgrupos.</p>
-	
-			<sage>
-				<input>f = 12*a; f</input>
-				<output>(12)</output>
-			</sage>
-	
-			<sage>
-				<input>f.order()</input>
-				<output>7</output>
-			</sage>
-	
-			<sage>
-				<input>K = G.submodule([f]); K</input>
-				<output>Additive abelian group isomorphic to Z/7</output>
-			</sage>
-	
-			<sage>
-				<input>K.order()</input>
-				<output>7</output>
-			</sage>
-	
-			<sage>
-				<input>K.list()</input>
-				<output>[(0), (2), (4), (6), (8), (10), (12)]</output>
-			</sage>
-	
-			<sage>
-				<input>K.gen(0)</input>
-				<output>(2)</output>
-			</sage>
-	
-			<sage>
-				<input>H == K</input>
-				<output>True</output>
-			</sage>
-	
-			<p>Ciertamente la lista de elementos, y el generador común <c>(2)</c> nos hacen pensar que  <c>H</c> y <c>K</c> son el mismo, pero la comparación en la última línea no deja lugar a dudas.</p>
-	
-			<p>Los resultados en en esta sección, especialmente el <xref ref="theorem-cyclic-orders" /> y el <xref ref="corollary-cyclic-modngenerators" />, pueden ser investigados creando generadores de subgrupos a partir de un generador de un grupo cíclico aditivo, creando los subgrupos, y calculando los órdenes tanto de los elementos como de los grupos.</p>
-		</subsection>
-	
-		<subsection>
-			<title>Grupos Multiplicativos Abstractos</title>
-	
-			<p>Podemos crear un grupo cíclico abstracto al estilo de <xref ref="theorem-cyclic-subgroup" />, <xref ref="theorem-cyclic-abelian" />, <xref ref="theorem-cyclic-subgroups" />.  En la sintaxis que sigue <c>a</c> es un nombre para el generador, y <c>14</c> es el orden del elemento.  Note que la notación es ahora multiplicativa, así es que multiplicamos los elementos, y los productos repetidos pueden ser escritos como potencias.</p>
-	
-			<sage>
-				<input>
-				G.&lt;a&gt; = AbelianGroup([14])
-				G.order()
-				</input>
-				<output>14</output>
-			</sage>
-	
-			<sage>
-				<input>G.list()</input>
-				<output>(1, a, a^2, a^3, a^4, a^5, a^6, a^7, a^8, a^9, a^10, a^11, a^12, a^13)</output>
-			</sage>
-	
-			<sage>
-				<input>a.order()</input>
-				<output>14</output>
-			</sage>
-	
-			<p>Los cálculos en el grupo son similares a como eran antes, solo con una notación diferente.  Ahora son productos, con productos repetidos escritos como potencias.</p>
-	
-			<sage>
-				<input>
-				b = a^2
-				b.order()
-				</input>
-				<output>7</output>
-			</sage>
-	
-			<sage>
-				<input>b*b*b</input>
-				<output>a^6</output>
-			</sage>
-	
-			<sage>
-				<input>
-				c = a^7
-				c.order()
-				</input>
-				<output>2</output>
-			</sage>
-	
-			<sage>
-				<input>c^2</input>
-				<output>1</output>
-			</sage>
-	
-			<sage>
-				<input>b*c</input>
-				<output>a^9</output>
-			</sage>
-	
-			<sage>
-				<input>b^37*c^42</input>
-				<output>a^4</output>
-			</sage>
-	
-			<p>Subgrupos se pueden formar con el comando <c>.subgroup()</c>.  Pero no intente listar los elementos del subgrupo, se verán algo extraños.  Tampoco está implementada la comparación de subgrupos.</p>
-	
-			<sage>
-				<input>
-				H = G.subgroup([a^2])
-				H.order()
-				</input>
-				<output>7</output>
-			</sage>
-	
-			<sage>
-				<input>
-				K = G.subgroup([a^12])
-				K.order()
-				</input>
-				<output>7</output>
-			</sage>
-	
-			<!-- Subgroup equality is buggy, L and H are the subgroup of order 7 -->
-			<sage type="hidden">
-				<input>
-					L = G.subgroup([a^4])
-					H == L
-				</input>
-				<output>False</output>
-			</sage>
-	
-			<p>Una ventaja de esta implementación es la posibilidad de crear todos los posibles subgrupos.  Acá crearemos la lista de subgrupos, extraemos uno en particular  (el tercero) y obtenemos su orden.</p>
-	
-			<sage>
-				<input>
-				allsg = G.subgroups(); allsg
-				</input>
-				<output>
-				[Multiplicative Abelian subgroup isomorphic to C2 x C7 generated by {a},
-				 Multiplicative Abelian subgroup isomorphic to C7 generated by {a^2},
-				 Multiplicative Abelian subgroup isomorphic to C2 generated by {a^7},
-				 Trivial Abelian subgroup]
-				</output>
-			</sage>
-	
-			<sage>
-				<input>
-				sub = allsg[2]
-				sub.order()
-				</input>
-				<output>2</output>
-			</sage>
-		</subsection>
-	
-		<subsection>
-			<title>Grupos Cíclicos de Permutaciones</title>
-	
-			<p>Aprenderemos más sobre los grupos de permutaciones en el siguiente capítulo.  Pero acá mencionaremos que es fácil crear grupos cíclicos como grupos de permutaciones, y diversos métodos para trabajar con ellos están disponibles, aunque los elementos en sí se tornan algo incómodos para trabajar.  Tal como antes, observemos que la notación es multiplicativa.</p>
-	
-			<sage>
-				<input>
-				G=CyclicPermutationGroup(14)
-				a = G.gen(0); a
-				</input>
-				<output>(1,2,3,4,5,6,7,8,9,10,11,12,13,14)</output>
-			</sage>
-	
-			<sage>
-				<input>
-				b = a^2
-				b = a^2; b
-				</input>
-				<output>(1,3,5,7,9,11,13)(2,4,6,8,10,12,14)</output>
-			</sage>
-	
-			<sage>
-				<input>b.order()</input>
-				<output>7</output>
-			</sage>
-	
-			<sage>
-				<input>a*a*b*b*b</input>
-				<output>(1,9,3,11,5,13,7)(2,10,4,12,6,14,8)</output>
-			</sage>
-	
-			<sage>
-				<input>c = a^37*b^26; c</input>
-				<output>(1,6,11,2,7,12,3,8,13,4,9,14,5,10)</output>
-			</sage>
-	
-			<sage>
-				<input>c.order()</input>
-				<output>14</output>
-			</sage>
-	
-			<p>Podemos crear subgrupos, obtener sus órdenes, y listar sus elementos.</p>
-	
-			<sage>
-				<input>
-				H = G.subgroup([a^2])
-				H.order()
-				</input>
-				<output>7</output>
-			</sage>
-	
-			<sage>
-				<input>H.gen(0)</input>
-				<output>(1,3,5,7,9,11,13)(2,4,6,8,10,12,14)</output>
-			</sage>
-	
-			<sage>
-				<input>H.list()</input>
-				<output>
-				[(),
-				 (1,3,5,7,9,11,13)(2,4,6,8,10,12,14),
-				 (1,5,9,13,3,7,11)(2,6,10,14,4,8,12),
-				 (1,7,13,5,11,3,9)(2,8,14,6,12,4,10),
-				 (1,9,3,11,5,13,7)(2,10,4,12,6,14,8),
-				 (1,11,7,3,13,9,5)(2,12,8,4,14,10,6),
-				 (1,13,11,9,7,5,3)(2,14,12,10,8,6,4)]
-				</output>
-			</sage>
-	
-			<p>Puede ser de ayuda visualizar este grupo, y el subgrupo, como rotaciones de un dodecágono <m> </m>regular con vértices etiquetados con los enteros del <m>1</m> al <m>12</m>.  Este no es el grupo completo de simetrías, pues no incluye las reflexiones, solamente las  <m>12</m> rotaciones.</p>
-	
-			</subsection>
-	
-			<subsection>
-			<title>Tablas de Cayley</title>
-	
-			<p>Como grupos, cada uno de los ejemplos anteriores (grupos y subgrupos) tienen implementadas sus tablas de Cayley en Sage.  Como los grupos son cíclicos, y por ende también lo son sus subgrupos, las tablas de Cayley deberían seguir un patrón similarmente <q>cíclico</q>.  Note que las letras usadas en la tabla obtenida por defecto son genéricas, y no están relacionadas a las letras usadas antes para elementos específicos <mdash /> solo corresponden a los elementos del grupo en el orden dado por <c>.list()</c>.</p>
-	
-			<sage>
-				<input>
-				G.&lt;a&gt; = AbelianGroup([14])
-				G.cayley_table()
-				</input>
-				<output>
-				*  a b c d e f g h i j k l m n
-				 +----------------------------
-				a| a b c d e f g h i j k l m n
-				b| b c d e f g h i j k l m n a
-				c| c d e f g h i j k l m n a b
-				d| d e f g h i j k l m n a b c
-				e| e f g h i j k l m n a b c d
-				f| f g h i j k l m n a b c d e
-				g| g h i j k l m n a b c d e f
-				h| h i j k l m n a b c d e f g
-				i| i j k l m n a b c d e f g h
-				j| j k l m n a b c d e f g h i
-				k| k l m n a b c d e f g h i j
-				l| l m n a b c d e f g h i j k
-				m| m n a b c d e f g h i j k l
-				n| n a b c d e f g h i j k l m
-				</output>
-			</sage>
-	
-			<p>Si los nombres reales de los elemetnos del grupo no son muy complicados (o largos), la tabla puede resultar más informativa usando estos nombres.</p>
-	
-			<sage>
-				<input>
-				K.&lt;b&gt; = AbelianGroup([10])
-				K.cayley_table(names='elements')
-				</input>
-				<output>
-				  *    1   b b^2 b^3 b^4 b^5 b^6 b^7 b^8 b^9
-				   +----------------------------------------
-				  1|   1   b b^2 b^3 b^4 b^5 b^6 b^7 b^8 b^9
-				  b|   b b^2 b^3 b^4 b^5 b^6 b^7 b^8 b^9   1
-				b^2| b^2 b^3 b^4 b^5 b^6 b^7 b^8 b^9   1   b
-				b^3| b^3 b^4 b^5 b^6 b^7 b^8 b^9   1   b b^2
-				b^4| b^4 b^5 b^6 b^7 b^8 b^9   1   b b^2 b^3
-				b^5| b^5 b^6 b^7 b^8 b^9   1   b b^2 b^3 b^4
-				b^6| b^6 b^7 b^8 b^9   1   b b^2 b^3 b^4 b^5
-				b^7| b^7 b^8 b^9   1   b b^2 b^3 b^4 b^5 b^6
-				b^8| b^8 b^9   1   b b^2 b^3 b^4 b^5 b^6 b^7
-				b^9| b^9   1   b b^2 b^3 b^4 b^5 b^6 b^7 b^8
-				</output>
-			</sage>
-		</subsection>
-	
-		<subsection>
-			<title>Raíces Complejas de la Unidad</title>
-	
-			<p>Los subgrupos cíclicos finitos de <m>{\mathbb T}</m>, generados por una raíz primitiva  <m>n</m>-ésima de la unidad están implementados como una construcción mayor en Sage, conocida como cuerpo ciclotómico.  Si uno se concentra solamente en la multiplicación de potencias de un generador (ignorando la infinidad de otros elementos) entonces se tiene un grupo cíclico finito.  Como esto no está implementado en Sage como grupo <foreign>per se</foreign>, es un poco más difícil hacer construcciones tales como subgrupos, pero es un excelente ejercicio intentarlo.  Es un bonito ejemplo pues los números complejos constituyen una construcción concreta familiar.  Acá unos pocos ejemplos de cálculos para proveerle de algunas herramientas exploratorias.  Vea las observaciones a continuación de los cálculos.</p>
-	
-			<sage>
-				<input>
-				G = CyclotomicField(14)
-				w = G.gen(0); w
-				</input>
-				<output>zeta14</output>
-			</sage>
-	
-			<sage>
-				<input>
-				wc = CDF(w)
-				wc.abs()
-				</input>
-				<output>1.0</output>
-			</sage>
-	
-			<sage>
-				<input>wc.arg()/N(2*pi/14)</input>
-				<output>1.0</output>
-			</sage>
-	
-			<sage>
-				<input>
-				b = w^2
-				b.multiplicative_order()
-				</input>
-				<output>7</output>
-			</sage>
-	
-			<sage>
-				<input>bc = CDF(b); bc</input>
-				<output>0.62348980185... + 0.781831482468...*I</output>
-			</sage>
-	
-			<sage>
-				<input>bc.abs()</input>
-				<output>1.0</output>
-			</sage>
-	
-			<sage>
-				<input>bc.arg()/N(2*pi/14)</input>
-				<output>2.0</output>
-			</sage>
-	
-			<sage>
-				<input>sg = [b^i for i in range(7)]; sg</input>
-				<output>
-				[1, zeta14^2, zeta14^4,
-				zeta14^5 - zeta14^4 + zeta14^3 - zeta14^2 + zeta14 - 1,
-				-zeta14, -zeta14^3, -zeta14^5]
-				</output>
-			</sage>
-	
-			<sage>
-				<input>
-				c = sg[3]; d = sg[5]
-				c*d
-				</input>
-				<output>zeta14^2</output>
-			</sage>
-	
-			<sage>
-				<input>
-				c = sg[3]; d = sg[6]
-				c*d in sg
-				</input>
-				<output>True</output>
-			</sage>
-	
-			<sage>
-				<input>c*d == sg[2]</input>
-				<output>True</output>
-			</sage>
-	
-			<sage>
-				<input>sg[5]*sg[6] == sg[4]</input>
-				<output>True</output>
-			</sage>
-	
-			<sage>
-				<input>G.multiplication_table(elements=sg)</input>
-				<output>
-				*  a b c d e f g
-				 +--------------
-				a| a b c d e f g
-				b| b c d e f g a
-				c| c d e f g a b
-				d| d e f g a b c
-				e| e f g a b c d
-				f| f g a b c d e
-				g| g a b c d e f
-				</output>
-			</sage>
-	
-			<p>Observaciones:<ol>
-				<li><p><c>zeta14</c> es el nombre del generador usado para el cuerpo ciclotómico, es una raíz primitiva de la unidad (una raíz <m>14</m>-ésima en este caso).  La hemos capturado como <c>w</c>.</p></li>
-	
-				<li><p>La sintaxis <c>CDF(w)</c> convertirá al número complejo <c>w</c> a la notación más familiar con partes real e imaginaria.</p></li>
-	
-				<li><p>El método <c>.abs()</c> entrega el módulo del número complejo, <m>r</m> como está descrito en el texto.  Para estos elementos de <m>{\mathbb C}^\ast</m> debiera ser siempre igual a <m>1</m>.</p></li>
-	
-				<li><p>El método <c>.arg()</c> entrega el argumento de un número complejo, <m>\theta</m> como está descrito en el texto.  Cada elemento del grupo cíclico en este ejemplo debe tener un argumento que es un múltiplo entero de  <m>\frac{2\pi}{14}</m>.  La sintaxis <c>N()</c> convierte el valor simbólico de <c>pi</c> a una aproximación numérica.</p></li>
-	
-				<li><p><c>sg</c> es una lista de elementos que forma un subgrupo cíclico de orden 7, que consiste de las primeras potencias de <c>b = w^2</c>.  Así, por ejemplo, la última comparación multiplica la quinta potencia de <c>b</c> con la sexta potencia de <c>b</c>, lo que sería la undécima potencia de <c>b</c>.  Pero como <c>b</c> tiene orden 7, esto se reduce a la cuarta potencia.</p></li>
-	
-				<li><p>Si se sabe que un subconjunto de un grupo infinito forma un subgrupo, entonces se puede producir su tabla de Cayley especificando la lista de los elementos que se desean usar.  Acá pedimos una tabla de multipicación, pues esa es la operación relevante en este caso.</p></li>
-			</ol></p>
-	
-		</subsection>
-	</section>
-	<exercises xml:id="cyclic-sage-exercises">
-		<title>Ejercicios en Sage</title>
-	
-		<introduction>
-			<p>Este conjunto de ejercicios es sobre el grupo de unidades mód <m>n</m>, <m>U(n)</m>, que a veces es cíclico, otras veces no lo es.  Existen algunos comandos en Sage que responden muy rápidamente algunas de estas preguntas, pero en lugar de usarlos ahora, use solamente las técnicas básicas descritas.  La idea acá es trabajar directamente con los elementos, y listas de elementos, para discernir la estructura de subgrupos de estos grupos.</p>
-	
-			<p>Las hojas de trabajo de Sage le permiten formar cuadros de textos con una extensa capacidad de formato, incluyendo la posibilidad de usar sintaxis de <latex/> para expresar matemáticas.  De manera que si una pregunta requiere de una explicación o un comentario, cree una nueva celda y comuníquese claramente con su audiencia. Continúe esta práctica en las próximas listas de ejercicios.</p>
-		</introduction>
-	
-		<exercise number="1">
-			<statement>
-				<p>Ejecute el comando <c>R = Integers(40)</c> para crear el conjunto <c>[0,1,2,...,39]</c>  Éste es un grupo con la operación de suma mód <m>40</m>, que ignoraremos.  En cambio estamos interesados en el subconjunto de los elementos que tienen inverso respecto a la  <em>multiplicación</em> mód <m>40</m>.  Determine el tamaño de este subgrupo ejecutando el comando <c>R.unit_group_order()</c>, y obtenga una lista de estos elementos con <c>R.list_of_elements_of_multiplicative_group()</c>.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="2">
-			<statement>
-				<p permid="gVL">
-					Puede crear elementos de este grupo coercionando enteros regulares a <c>U</c>, como con la instrucción <c>a = U(7)</c>. (No confunda esto con nuestra notación matemática <m>U(40)</m>). Esto le indicará a Sage que desea ver <m>7</m> como un elemento de <m>U</m>, sujeto a las operaciones correspondientes.
-					Determine los elementos del subgrupo cíclico de <m>U</m> generado por <m>7</m> con una lista por comprensión de la siguiente manera:
-				  </p>
-	
-				<sage type="display">
-					<input>
-					R = Integers(40)
-					a = R(7)
-					[a^i for i in srange(16)]
-					</input>
-				</sage>
-	
-				<p>¿Cuál es el orden de  <m>7</m> en <m>U(40)</m>?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="3">
-			<statement>
-				<p>El grupo <m>U(49)</m> es cíclico.  Usando solamente los comandos de Sage descritos previamente, encuentre un generador de este grupo.  Ahora usando  <em>solamente</em> teoremas sobre la estructura de grupos cíclicos, describa cada uno de los subgrupos de <m>U(49)</m> especificando su orden y dando un generador explícito.  No repita ninguno de los subgrupos <mdash/> en otras palabras, presente cada subgrupo <em>exactamente</em> una vez.  Puede usar Sage para verificar su trabajo con los subgrupos, pero su respuesta respecto a los subgrupos debe depender exclusivamente de teoremas y debe ser un párrafo bien escrito con una tabla, etc.</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="4">
-			<statement>
-				<p>El  grupo <m>U(35)</m> no es cíclico.  Nuevamente, usando solamente comandos Sage descritos previamente, use cálculos para entregar evidencia irrefutable de esto.  ¿Cuántos de los <m>16</m> subgrupos diferentes de <m>U(35)</m> puede listar?</p>
-			</statement>
-			
-		</exercise>
-	
-		<exercise number="5">
-			<statement>
-				<p>Nuevamente, usando solamente los comandos Sage descritos previamente, explore la estructura de <m>U(n)</m> para varios valores de <m>n</m> e intente formular una conjetura interesante sobre algunas de las propiedades básicas de este grupo.  (Sí, esta es una pregunta <em>muy</em> abierta, pero éste es en definitiva el mayor beneficio de explorar matemáticas usando Sage.)</p>
-			</statement>
-			
-		</exercise>
-	
-	</exercises>
+  <section xml:id="cyclic-sage">
+    <title>Sage</title>
+  
+    <introduction>
+      <p>Los grupos cíclicos son muy importantes, así es que no es una sorpresa que aparezcan en diferentes formas en Sage.  Cada una de estas es ligeramente diferente, y ninguna de ellas es ideal para una introducción, pero juntas pueden ilustrar la mayor parte de las ideas importantes.  Aquí hay una guía a las diferentes formas de construir, y estudiar, un grupo cíclico en Sage.
+    </p>
+    </introduction>
+  
+    <subsection>
+      <title>Grupos Cíclicos de Orden Infinito</title>
+  
+      <p>En Sage, los enteros <m>\mathbb Z</m> se construyen con <c>ZZ</c>.  Para construir un grupo cíclico infinito tal como <m>3\mathbb Z</m> del <xref ref="example-cyclic-z3" />, simplemente use <c>3*ZZ</c>.  Como conjunto infinito, no es mucho lo que se pueda hacer con esto.  Se puede determinar si un entero está en el conjunto o no.  También es posible recuperar el generador con el comando <c>.gen()</c>.
+    </p>
+  
+      <sage>
+        <input>
+        G = 3*ZZ
+        -12 in G
+        </input>
+        <output>True</output>
+      </sage>
+  
+      <sage>
+        <input>
+        37 in G
+        </input>
+        <output>False</output>
+      </sage>
+  
+      <sage>
+        <input>
+        G.gen()
+        </input>
+        <output>3</output>
+      </sage>
+  
+      </subsection>
+  
+      <subsection>
+      <title>Grupos Cíclicos Aditivos</title>
+  
+      <p>El grupo cíclico aditivo <m>\mathbb Z_n</m> se puede construir como un caso especial de una construcción más general en Sage.  Primer definimos  <m>\mathbb Z_{14}</m> y capturamos su generador.  En lo que sigue, preste especial atención al uso de paréntesis y corchetes para cuando realice sus propios ensayos.
+    </p>
+  
+      <sage>
+        <input>
+        G = AdditiveAbelianGroup([14])
+        G.order()
+        </input>
+        <output>14</output>
+      </sage>
+  
+      <sage>
+        <input>G.list()</input>
+        <output>
+        [(0), (1), (2), (3), (4), (5), (6), (7),
+         (8), (9), (10), (11), (12), (13)]
+        </output>
+      </sage>
+  
+      <sage>
+        <input>
+        a = G.gen(0)
+        a
+        </input>
+        <output>(1)</output>
+      </sage>
+  
+      <p>Se puede calcular en este grupo, usando el generador, usando elementos nuevos obtenidos de coercionar enteros a pertenecer al grupo, o tomando el resultado de operaciones con otros elementos.  Podemos obtener el orden de los elementos en este grupo.  Note que podemos abreviar la suma repetida de elementos usando la multiplicación de un elemento por un número entero.
+    </p>
+  
+      <sage>
+        <input>
+        a + a
+        </input>
+        <output>(2)</output>
+      </sage>
+  
+      <sage>
+        <input>
+        a + a + a + a
+        </input>
+        <output>(4)</output>
+      </sage>
+  
+      <sage>
+        <input>
+        4*a
+        </input>
+        <output>(4)</output>
+      </sage>
+  
+      <sage>
+        <input>
+        37*a
+        </input>
+        <output>(9)</output>
+      </sage>
+  
+      <p>Podemos crear, y después calcular con, elementos del grupo obtenidos a partir de la coerción de un entero (en una lista de largo <m>1</m>) al grupo.  Es posible que obtenga una advertencia <c>DeprecationWarning</c> la primera vez que use esta sintaxis para crear un nuevo elemento.  Esta misteriosa advertencia puede ser ignorada sin problemas.
+    </p>
+  
+      <!-- Only to doctesting, warning to disappear "a few months" after 2015/05/20      -->
+      <!-- This test evokes the warning, then next one tests fine, as it normally should -->
+      <!-- Adjust sentence above once it goes away -->
+      <!-- Used ... below to mark out a line number that doctesting complained about -->
+  
+      <sage doctest="invisible">
+        <input>
+        G([2])
+        </input>
+        <output>
+        doctest:...: DeprecationWarning: The default behaviour changed! If you
+        *really* want a linear combination of smith generators, use
+        .linear_combination_of_smith_form_gens.
+        See http://trac.sagemath.org/16261 for details.
+        (2)
+        </output>
+      </sage>
+  
+      <sage>
+        <input>
+        b = G([2]); b
+        </input>
+        <output>(2)</output>
+      </sage>
+  
+      <sage>
+        <input>
+        b + b
+        </input>
+        <output>(4)</output>
+      </sage>
+  
+      <sage>
+        <input>
+        2*b == 4*a
+        </input>
+        <output>True</output>
+      </sage>
+  
+      <sage>
+        <input>
+        7*b
+        </input>
+        <output>(0)</output>
+      </sage>
+  
+      <sage>
+        <input>
+        b.order()
+        </input>
+        <output>7</output>
+      </sage>
+  
+      <sage>
+        <input>
+        c = a - 6*b; c
+        </input>
+        <output>(3)</output>
+      </sage>
+  
+      <sage>
+        <input>
+        c + c + c + c
+        </input>
+        <output>(12)</output>
+      </sage>
+  
+      <sage>
+        <input>
+        c.order()
+        </input>
+        <output>14</output>
+      </sage>
+  
+      <p>Es posible crear subgrupos cíclicos, a partir de un elemento designado como nuevo generador.  Desafortunadamente, hacer esto requiere usar el método <c>.submodule()</c> (que debiera ser renombrado en Sage).
+    </p>
+  
+      <sage>
+        <input>H = G.submodule([b]); H</input>
+        <output>Additive abelian group isomorphic to Z/7</output>
+      </sage>
+  
+      <sage>
+        <input>H.list()</input>
+        <output>[(0), (2), (4), (6), (8), (10), (12)]</output>
+      </sage>
+  
+      <sage>
+        <input>H.order()</input>
+        <output>7</output>
+      </sage>
+  
+      <sage>
+        <input>e = H.gen(0); e</input>
+        <output>(2)</output>
+      </sage>
+  
+      <sage>
+        <input>3*e</input>
+        <output>(6)</output>
+      </sage>
+  
+      <sage>
+        <input>e.order()</input>
+        <output>7</output>
+      </sage>
+  
+      <p>El subgrupo cíclico <c>H</c> recién creado tiene más de un generador.  Podemos verificar esto construyendo un nuevo subgrupo y comparando ambos subgrupos.
+    </p>
+  
+      <sage>
+        <input>f = 12*a; f</input>
+        <output>(12)</output>
+      </sage>
+  
+      <sage>
+        <input>f.order()</input>
+        <output>7</output>
+      </sage>
+  
+      <sage>
+        <input>K = G.submodule([f]); K</input>
+        <output>Additive abelian group isomorphic to Z/7</output>
+      </sage>
+  
+      <sage>
+        <input>K.order()</input>
+        <output>7</output>
+      </sage>
+  
+      <sage>
+        <input>K.list()</input>
+        <output>[(0), (2), (4), (6), (8), (10), (12)]</output>
+      </sage>
+  
+      <sage>
+        <input>K.gen(0)</input>
+        <output>(2)</output>
+      </sage>
+  
+      <sage>
+        <input>H == K</input>
+        <output>True</output>
+      </sage>
+  
+      <p>Ciertamente la lista de elementos, y el generador común <c>(2)</c> nos hacen pensar que  <c>H</c> y <c>K</c> son el mismo, pero la comparación en la última línea no deja lugar a dudas.
+    </p>
+  
+      <p>Los resultados en en esta sección, especialmente el <xref ref="theorem-cyclic-orders" /> y el <xref ref="corollary-cyclic-modngenerators" />, pueden ser investigados creando generadores de subgrupos a partir de un generador de un grupo cíclico aditivo, creando los subgrupos, y calculando los órdenes tanto de los elementos como de los grupos.
+    </p>
+    </subsection>
+  
+    <subsection>
+      <title>Grupos Multiplicativos Abstractos</title>
+  
+      <p>Podemos crear un grupo cíclico abstracto al estilo de <xref ref="theorem-cyclic-subgroup" />, <xref ref="theorem-cyclic-abelian" />, <xref ref="theorem-cyclic-subgroups" />.  En la sintaxis que sigue <c>a</c> es un nombre para el generador, y <c>14</c> es el orden del elemento.  Note que la notación es ahora multiplicativa, así es que multiplicamos los elementos, y los productos repetidos pueden ser escritos como potencias.
+    </p>
+  
+      <sage>
+        <input>
+        G.&lt;a&gt; = AbelianGroup([14])
+        G.order()
+        </input>
+        <output>14</output>
+      </sage>
+  
+      <sage>
+        <input>G.list()</input>
+        <output>(1, a, a^2, a^3, a^4, a^5, a^6, a^7, a^8, a^9, a^10, a^11, a^12, a^13)</output>
+      </sage>
+  
+      <sage>
+        <input>a.order()</input>
+        <output>14</output>
+      </sage>
+  
+      <p>Los cálculos en el grupo son similares a como eran antes, solo con una notación diferente.  Ahora son productos, con productos repetidos escritos como potencias.
+    </p>
+  
+      <sage>
+        <input>
+        b = a^2
+        b.order()
+        </input>
+        <output>7</output>
+      </sage>
+  
+      <sage>
+        <input>b*b*b</input>
+        <output>a^6</output>
+      </sage>
+  
+      <sage>
+        <input>
+        c = a^7
+        c.order()
+        </input>
+        <output>2</output>
+      </sage>
+  
+      <sage>
+        <input>c^2</input>
+        <output>1</output>
+      </sage>
+  
+      <sage>
+        <input>b*c</input>
+        <output>a^9</output>
+      </sage>
+  
+      <sage>
+        <input>b^37*c^42</input>
+        <output>a^4</output>
+      </sage>
+  
+      <p>Subgrupos se pueden formar con el comando <c>.subgroup()</c>.  Pero no intente listar los elementos del subgrupo, se verán algo extraños.  Tampoco está implementada la comparación de subgrupos.
+    </p>
+  
+      <sage>
+        <input>
+        H = G.subgroup([a^2])
+        H.order()
+        </input>
+        <output>7</output>
+      </sage>
+  
+      <sage>
+        <input>
+        K = G.subgroup([a^12])
+        K.order()
+        </input>
+        <output>7</output>
+      </sage>
+  
+      <!-- Subgroup equality is buggy, L and H are the subgroup of order 7 -->
+      <sage type="hidden">
+        <input>
+          L = G.subgroup([a^4])
+          H == L
+        </input>
+        <output>False</output>
+      </sage>
+  
+      <p>Una ventaja de esta implementación es la posibilidad de crear todos los posibles subgrupos.  Acá crearemos la lista de subgrupos, extraemos uno en particular  (el tercero) y obtenemos su orden.
+    </p>
+  
+      <sage>
+        <input>
+        allsg = G.subgroups(); allsg
+        </input>
+        <output>
+        [Multiplicative Abelian subgroup isomorphic to C2 x C7 generated by {a},
+         Multiplicative Abelian subgroup isomorphic to C7 generated by {a^2},
+         Multiplicative Abelian subgroup isomorphic to C2 generated by {a^7},
+         Trivial Abelian subgroup]
+        </output>
+      </sage>
+  
+      <sage>
+        <input>
+        sub = allsg[2]
+        sub.order()
+        </input>
+        <output>2</output>
+      </sage>
+    </subsection>
+  
+    <subsection>
+      <title>Grupos Cíclicos de Permutaciones</title>
+  
+      <p>Aprenderemos más sobre los grupos de permutaciones en el siguiente capítulo.  Pero acá mencionaremos que es fácil crear grupos cíclicos como grupos de permutaciones, y diversos métodos para trabajar con ellos están disponibles, aunque los elementos en sí se tornan algo incómodos para trabajar.  Tal como antes, observemos que la notación es multiplicativa.
+    </p>
+  
+      <sage>
+        <input>
+        G=CyclicPermutationGroup(14)
+        a = G.gen(0); a
+        </input>
+        <output>(1,2,3,4,5,6,7,8,9,10,11,12,13,14)</output>
+      </sage>
+  
+      <sage>
+        <input>
+        b = a^2
+        b = a^2; b
+        </input>
+        <output>(1,3,5,7,9,11,13)(2,4,6,8,10,12,14)</output>
+      </sage>
+  
+      <sage>
+        <input>b.order()</input>
+        <output>7</output>
+      </sage>
+  
+      <sage>
+        <input>a*a*b*b*b</input>
+        <output>(1,9,3,11,5,13,7)(2,10,4,12,6,14,8)</output>
+      </sage>
+  
+      <sage>
+        <input>c = a^37*b^26; c</input>
+        <output>(1,6,11,2,7,12,3,8,13,4,9,14,5,10)</output>
+      </sage>
+  
+      <sage>
+        <input>c.order()</input>
+        <output>14</output>
+      </sage>
+  
+      <p>Podemos crear subgrupos, obtener sus órdenes, y listar sus elementos.
+    </p>
+  
+      <sage>
+        <input>
+        H = G.subgroup([a^2])
+        H.order()
+        </input>
+        <output>7</output>
+      </sage>
+  
+      <sage>
+        <input>H.gen(0)</input>
+        <output>(1,3,5,7,9,11,13)(2,4,6,8,10,12,14)</output>
+      </sage>
+  
+      <sage>
+        <input>H.list()</input>
+        <output>
+        [(),
+         (1,3,5,7,9,11,13)(2,4,6,8,10,12,14),
+         (1,5,9,13,3,7,11)(2,6,10,14,4,8,12),
+         (1,7,13,5,11,3,9)(2,8,14,6,12,4,10),
+         (1,9,3,11,5,13,7)(2,10,4,12,6,14,8),
+         (1,11,7,3,13,9,5)(2,12,8,4,14,10,6),
+         (1,13,11,9,7,5,3)(2,14,12,10,8,6,4)]
+        </output>
+      </sage>
+  
+      <p>Puede ser de ayuda visualizar este grupo, y el subgrupo, como rotaciones de un dodecágono <m> </m>regular con vértices etiquetados con los enteros del <m>1</m> al <m>12</m>.  Este no es el grupo completo de simetrías, pues no incluye las reflexiones, solamente las  <m>12</m> rotaciones.
+    </p>
+  
+      </subsection>
+  
+      <subsection>
+      <title>Tablas de Cayley</title>
+  
+      <p>Como grupos, cada uno de los ejemplos anteriores (grupos y subgrupos) tienen implementadas sus tablas de Cayley en Sage.  Como los grupos son cíclicos, y por ende también lo son sus subgrupos, las tablas de Cayley deberían seguir un patrón similarmente <q>cíclico</q>.  Note que las letras usadas en la tabla obtenida por defecto son genéricas, y no están relacionadas a las letras usadas antes para elementos específicos <mdash /> solo corresponden a los elementos del grupo en el orden dado por <c>.list()</c>.
+    </p>
+  
+      <sage>
+        <input>
+        G.&lt;a&gt; = AbelianGroup([14])
+        G.cayley_table()
+        </input>
+        <output>
+        *  a b c d e f g h i j k l m n
+         +----------------------------
+        a| a b c d e f g h i j k l m n
+        b| b c d e f g h i j k l m n a
+        c| c d e f g h i j k l m n a b
+        d| d e f g h i j k l m n a b c
+        e| e f g h i j k l m n a b c d
+        f| f g h i j k l m n a b c d e
+        g| g h i j k l m n a b c d e f
+        h| h i j k l m n a b c d e f g
+        i| i j k l m n a b c d e f g h
+        j| j k l m n a b c d e f g h i
+        k| k l m n a b c d e f g h i j
+        l| l m n a b c d e f g h i j k
+        m| m n a b c d e f g h i j k l
+        n| n a b c d e f g h i j k l m
+        </output>
+      </sage>
+  
+      <p>Si los nombres reales de los elemetnos del grupo no son muy complicados (o largos), la tabla puede resultar más informativa usando estos nombres.
+    </p>
+  
+      <sage>
+        <input>
+        K.&lt;b&gt; = AbelianGroup([10])
+        K.cayley_table(names='elements')
+        </input>
+        <output>
+          *    1   b b^2 b^3 b^4 b^5 b^6 b^7 b^8 b^9
+           +----------------------------------------
+          1|   1   b b^2 b^3 b^4 b^5 b^6 b^7 b^8 b^9
+          b|   b b^2 b^3 b^4 b^5 b^6 b^7 b^8 b^9   1
+        b^2| b^2 b^3 b^4 b^5 b^6 b^7 b^8 b^9   1   b
+        b^3| b^3 b^4 b^5 b^6 b^7 b^8 b^9   1   b b^2
+        b^4| b^4 b^5 b^6 b^7 b^8 b^9   1   b b^2 b^3
+        b^5| b^5 b^6 b^7 b^8 b^9   1   b b^2 b^3 b^4
+        b^6| b^6 b^7 b^8 b^9   1   b b^2 b^3 b^4 b^5
+        b^7| b^7 b^8 b^9   1   b b^2 b^3 b^4 b^5 b^6
+        b^8| b^8 b^9   1   b b^2 b^3 b^4 b^5 b^6 b^7
+        b^9| b^9   1   b b^2 b^3 b^4 b^5 b^6 b^7 b^8
+        </output>
+      </sage>
+    </subsection>
+  
+    <subsection>
+      <title>Raíces Complejas de la Unidad</title>
+  
+      <p>Los subgrupos cíclicos finitos de <m>{\mathbb T}</m>, generados por una raíz primitiva  <m>n</m>-ésima de la unidad están implementados como una construcción mayor en Sage, conocida como cuerpo ciclotómico.  Si uno se concentra solamente en la multiplicación de potencias de un generador (ignorando la infinidad de otros elementos) entonces se tiene un grupo cíclico finito.  Como esto no está implementado en Sage como grupo <foreign>per se</foreign>, es un poco más difícil hacer construcciones tales como subgrupos, pero es un excelente ejercicio intentarlo.  Es un bonito ejemplo pues los números complejos constituyen una construcción concreta familiar.  Acá unos pocos ejemplos de cálculos para proveerle de algunas herramientas exploratorias.  Vea las observaciones a continuación de los cálculos.
+    </p>
+  
+      <sage>
+        <input>
+        G = CyclotomicField(14)
+        w = G.gen(0); w
+        </input>
+        <output>zeta14</output>
+      </sage>
+  
+      <sage>
+        <input>
+        wc = CDF(w)
+        wc.abs()
+        </input>
+        <output>1.0</output>
+      </sage>
+  
+      <sage>
+        <input>wc.arg()/N(2*pi/14)</input>
+        <output>1.0</output>
+      </sage>
+  
+      <sage>
+        <input>
+        b = w^2
+        b.multiplicative_order()
+        </input>
+        <output>7</output>
+      </sage>
+  
+      <sage>
+        <input>bc = CDF(b); bc</input>
+        <output>0.62348980185... + 0.781831482468...*I</output>
+      </sage>
+  
+      <sage>
+        <input>bc.abs()</input>
+        <output>1.0</output>
+      </sage>
+  
+      <sage>
+        <input>bc.arg()/N(2*pi/14)</input>
+        <output>2.0</output>
+      </sage>
+  
+      <sage>
+        <input>sg = [b^i for i in range(7)]; sg</input>
+        <output>
+        [1, zeta14^2, zeta14^4,
+        zeta14^5 - zeta14^4 + zeta14^3 - zeta14^2 + zeta14 - 1,
+        -zeta14, -zeta14^3, -zeta14^5]
+        </output>
+      </sage>
+  
+      <sage>
+        <input>
+        c = sg[3]; d = sg[5]
+        c*d
+        </input>
+        <output>zeta14^2</output>
+      </sage>
+  
+      <sage>
+        <input>
+        c = sg[3]; d = sg[6]
+        c*d in sg
+        </input>
+        <output>True</output>
+      </sage>
+  
+      <sage>
+        <input>c*d == sg[2]</input>
+        <output>True</output>
+      </sage>
+  
+      <sage>
+        <input>sg[5]*sg[6] == sg[4]</input>
+        <output>True</output>
+      </sage>
+  
+      <sage>
+        <input>G.multiplication_table(elements=sg)</input>
+        <output>
+        *  a b c d e f g
+         +--------------
+        a| a b c d e f g
+        b| b c d e f g a
+        c| c d e f g a b
+        d| d e f g a b c
+        e| e f g a b c d
+        f| f g a b c d e
+        g| g a b c d e f
+        </output>
+      </sage>
+  
+      <p>Observaciones:<ol>
+        <li><p><c>zeta14</c> es el nombre del generador usado para el cuerpo ciclotómico, es una raíz primitiva de la unidad (una raíz <m>14</m>-ésima en este caso).  La hemos capturado como <c>w</c>.
+    </p></li>
+  
+        <li><p>La sintaxis <c>CDF(w)</c> convertirá al número complejo <c>w</c> a la notación más familiar con partes real e imaginaria.
+    </p></li>
+  
+        <li><p>El método <c>.abs()</c> entrega el módulo del número complejo, <m>r</m> como está descrito en el texto.  Para estos elementos de <m>{\mathbb C}^\ast</m> debiera ser siempre igual a <m>1</m>.
+    </p></li>
+  
+        <li><p>El método <c>.arg()</c> entrega el argumento de un número complejo, <m>\theta</m> como está descrito en el texto.  Cada elemento del grupo cíclico en este ejemplo debe tener un argumento que es un múltiplo entero de  <m>\frac{2\pi}{14}</m>.  La sintaxis <c>N()</c> convierte el valor simbólico de <c>pi</c> a una aproximación numérica.
+    </p></li>
+  
+        <li><p><c>sg</c> es una lista de elementos que forma un subgrupo cíclico de orden 7, que consiste de las primeras potencias de <c>b = w^2</c>.  Así, por ejemplo, la última comparación multiplica la quinta potencia de <c>b</c> con la sexta potencia de <c>b</c>, lo que sería la undécima potencia de <c>b</c>.  Pero como <c>b</c> tiene orden 7, esto se reduce a la cuarta potencia.
+    </p></li>
+  
+        <li><p>Si se sabe que un subconjunto de un grupo infinito forma un subgrupo, entonces se puede producir su tabla de Cayley especificando la lista de los elementos que se desean usar.  Acá pedimos una tabla de multipicación, pues esa es la operación relevante en este caso.
+    </p></li>
+      </ol></p>
+  
+    </subsection>
+  </section>
+  <exercises xml:id="cyclic-sage-exercises">
+    <title>Ejercicios en Sage</title>
+  
+    <introduction>
+      <p>Este conjunto de ejercicios es sobre el grupo de unidades mód <m>n</m>, <m>U(n)</m>, que a veces es cíclico, otras veces no lo es.  Existen algunos comandos en Sage que responden muy rápidamente algunas de estas preguntas, pero en lugar de usarlos ahora, use solamente las técnicas básicas descritas.  La idea acá es trabajar directamente con los elementos, y listas de elementos, para discernir la estructura de subgrupos de estos grupos.
+    </p>
+  
+      <p>Las hojas de trabajo de Sage le permiten formar cuadros de textos con una extensa capacidad de formato, incluyendo la posibilidad de usar sintaxis de <latex/> para expresar matemáticas.  De manera que si una pregunta requiere de una explicación o un comentario, cree una nueva celda y comuníquese claramente con su audiencia. Continúe esta práctica en las próximas listas de ejercicios.
+    </p>
+    </introduction>
+  
+    <exercise number="1">
+      <statement>
+        <p>Ejecute el comando <c>R = Integers(40)</c> para crear el conjunto <c>[0,1,2,...,39]</c>  Éste es un grupo con la operación de suma mód <m>40</m>, que ignoraremos.  En cambio estamos interesados en el subconjunto de los elementos que tienen inverso respecto a la  <em>multiplicación</em> mód <m>40</m>.  Determine el tamaño de este subgrupo ejecutando el comando <c>R.unit_group_order()</c>, y obtenga una lista de estos elementos con <c>R.list_of_elements_of_multiplicative_group()</c>.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="2">
+      <statement>
+        <p permid="gVL">
+          Puede crear elementos de este grupo coercionando enteros regulares a <c>U</c>, como con la instrucción <c>a = U(7)</c>. (No confunda esto con nuestra notación matemática <m>U(40)</m>). Esto le indicará a Sage que desea ver <m>7</m> como un elemento de <m>U</m>, sujeto a las operaciones correspondientes.
+          Determine los elementos del subgrupo cíclico de <m>U</m> generado por <m>7</m> con una lista por comprensión de la siguiente manera:
+          </p>
+  
+        <sage type="display">
+          <input>
+          R = Integers(40)
+          a = R(7)
+          [a^i for i in srange(16)]
+          </input>
+        </sage>
+  
+        <p>¿Cuál es el orden de  <m>7</m> en <m>U(40)</m>?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="3">
+      <statement>
+        <p>El grupo <m>U(49)</m> es cíclico.  Usando solamente los comandos de Sage descritos previamente, encuentre un generador de este grupo.  Ahora usando  <em>solamente</em> teoremas sobre la estructura de grupos cíclicos, describa cada uno de los subgrupos de <m>U(49)</m> especificando su orden y dando un generador explícito.  No repita ninguno de los subgrupos <mdash/> en otras palabras, presente cada subgrupo <em>exactamente</em> una vez.  Puede usar Sage para verificar su trabajo con los subgrupos, pero su respuesta respecto a los subgrupos debe depender exclusivamente de teoremas y debe ser un párrafo bien escrito con una tabla, etc.
+    </p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="4">
+      <statement>
+        <p>El  grupo <m>U(35)</m> no es cíclico.  Nuevamente, usando solamente comandos Sage descritos previamente, use cálculos para entregar evidencia irrefutable de esto.  ¿Cuántos de los <m>16</m> subgrupos diferentes de <m>U(35)</m> puede listar?</p>
+      </statement>
+      
+    </exercise>
+  
+    <exercise number="5">
+      <statement>
+        <p>Nuevamente, usando solamente los comandos Sage descritos previamente, explore la estructura de <m>U(n)</m> para varios valores de <m>n</m> e intente formular una conjetura interesante sobre algunas de las propiedades básicas de este grupo.  (Sí, esta es una pregunta <em>muy</em> abierta, pero éste es en definitiva el mayor beneficio de explorar matemáticas usando Sage.)</p>
+      </statement>
+      
+    </exercise>
+  
+  </exercises>
 </chapter>
  
