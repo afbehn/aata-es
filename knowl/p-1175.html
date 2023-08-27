@@ -12,7 +12,19 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Ahora podemos crear los exponentes de encriptación y decriptación.  Elegimos el exponente de encriptación como un número (pequeño) relativamente primo con el valor de <span class="process-math">\(m\text{.}\)</span>  Con Sage podemos factorizar <span class="process-math">\(m\)</span> rápidamente para elegir este valor.  En la práctica no querremos hacer este cálculo para valores grandes de <span class="process-math">\(m\text{,}\)</span> así es que podemos más fácilmente elegir valores “aleatorios” y verificar hasta el primer valor relativamente primo con <span class="process-math">\(m\text{.}\)</span>  El exponente de decriptación es el inverso multiplicativo, mód <span class="process-math">\(m\text{,}\)</span> del exponente de encriptación.  Si construye un exponente de encriptación inadecuado (no relativamente primo con <span class="process-math">\(m\)</span>), fallará el cálculo de este inverso multiplicativo (y Sage se lo dirá).  Hacemos esto dos veces — para Alice y para Bob.</div>
-<span class="incontext"><a href="crypt-sage.html#p-1175" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Dada la matriz</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A =
+\begin{pmatrix}
+3 &amp; 4 \\
+2 &amp; 3
+\end{pmatrix}\text{,}
+\end{equation*}
+</div>
+<div class="para">use la función de encriptación <span class="process-math">\(f({\mathbf p}) = A {\mathbf p} + {\mathbf b}\)</span> para encriptar el mensaje <code class="code-inline tex2jax_ignore">CRYPTOLOGY</code>, donde <span class="process-math">\({\mathbf b} = ( 2, 5)^ \transpose\text{.}\)</span>  ¿Cuál es la función de decriptación?</div>
+</div>
+<span class="incontext"><a href="crypt-exercises.html#skx" class="internal">en contexto</a></span>
 </body>
 </html>

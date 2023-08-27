@@ -11,19 +11,65 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
 <div class="para logical">
-<div class="para">Encontremos las simetrías de un triángulo equilátero <span class="process-math">\(\bigtriangleup ABC\text{.}\)</span>  Para encontrar las simetrías de  <span class="process-math">\(\bigtriangleup ABC\text{,}\)</span> debemos primero examinar las permutaciones de los vértices <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> y <span class="process-math">\(C\)</span> para luego preguntarnos si una permutación se extiende a una simetría del triángulo.  Recuerde que una <dfn class="terminology">permutación</dfn> de un conjunto <span class="process-math">\(S\)</span> es una función biyectiva <span class="process-math">\(\pi :S \rightarrow S\text{.}\)</span>  Los tres vértices tienen <span class="process-math">\(3! = 6\)</span> permutaciones, de manera que el triángulo tiene a lo más seis simetrías.  Para ver que hay seis permutaciones, observe que hay tres diferentes elecciones para el primer vértice, y dos para el segundo, y que el vértice restante está determinado por la posición de los primeros dos.  Así tenemos <span class="process-math">\(3 \cdot 2 \cdot 1 = 3! = 6\)</span> arreglos diferentes.  Para describir una permutación de los vértices de un triángulo equilátero que envía  <span class="process-math">\(A\)</span> en <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(B\)</span> en <span class="process-math">\(C\text{,}\)</span> y <span class="process-math">\(C\)</span> en <span class="process-math">\(A\text{,}\)</span> escribiremos el arreglo</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/figure-s3-symmetry.html">
+<div class="para">Sea <span class="process-math">\({\mathbb Z}_n\)</span> el conjunto de clases de equivalencia de los enteros mód <span class="process-math">\(n\)</span> y sean <span class="process-math">\(a, b, c \in {\mathbb Z}_n\text{.}\)</span>
+</div>
+<ol class="decimal">
+<li><div class="para logical">
+<div class="para">Adición y multiplicación son conmutativas:</div>
+<div class="displaymath process-math">
+\begin{align*}
+a + b  &amp; \equiv  b + a \pmod{ n}\\
+a  b   &amp; \equiv  b  a \pmod{ n}\text{.}
+\end{align*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Adición y multiplicación son asociativas:</div>
+<div class="displaymath process-math">
+\begin{align*}
+(a + b) + c  &amp; \equiv  a + (b + c)\pmod{ n}\\
+(a  b)  c    &amp; \equiv  a   (b  c) \pmod{ n}\text{.}
+\end{align*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Hay neutros para ambas operaciones:</div>
+<div class="displaymath process-math">
+\begin{align*}
+a + 0  &amp; \equiv  a \pmod{ n}\\
+a \cdot  1  &amp; \equiv  a \pmod{ n}\text{.}
+\end{align*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">La multiplicación distribuye sobre la adición:</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\begin{pmatrix}
-A &amp; B &amp; C \\
-B &amp; C &amp; A
-\end{pmatrix}.
+a  (b  + c)  \equiv a  b + a  c  \pmod{ n}\text{.}
 \end{equation*}
 </div>
-<div class="para">Note que esta permutación en particular corresponde al movimiento rígido de rotar el triángulo en <span class="process-math">\(120^{\circ}\)</span> en dirección horaria.  De hecho, cada permutación produce una simetría del triángulo.  Todas estas simetría se muestran en la Figura <a href="" class="xref" data-knowl="./knowl/figure-s3-symmetry.html" title="Figura 3.1.6">3.1.6</a>.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Para cada entero <span class="process-math">\(a\)</span> hay un inverso aditivo <span class="process-math">\(-a\text{:}\)</span>
 </div>
-<span class="incontext"><a href="section-mod-n-sym.html#p-376" class="internal">en contexto</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+a + (-a)  \equiv 0 \pmod{ n}\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Sea <span class="process-math">\(a\)</span> un entero no nulo.  Entonces <span class="process-math">\(\gcd(a,n) = 1\)</span> si y solo si hay un inverso multiplicativo <span class="process-math">\(b\)</span> para <span class="process-math">\(a \pmod{n}\text{;}\)</span> es decir, un entero no nulo <span class="process-math">\(b\)</span> tal que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a  b  \equiv 1 \pmod{ n}\text{.}
+\end{equation*}
+</div>
+</div></li>
+</ol>
+</div>
+<span class="incontext"><a href="groups-section-mod-n-sym.html#DtW" class="internal">en contexto</a></span>
 </body>
 </html>

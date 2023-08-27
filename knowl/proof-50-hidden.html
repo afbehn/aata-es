@@ -14,13 +14,13 @@
 <div class="para">Sean <span class="process-math">\(G {\mathbf x}_1 = {\mathbf y}_1\)</span> y <span class="process-math">\(G {\mathbf x}_2 ={\mathbf y}_2\)</span> dos palabras del código. Entonces <span class="process-math">\({\mathbf y}_1 + {\mathbf y}_2\)</span> está en <span class="process-math">\(C\)</span> pues</div>
 <div class="displaymath process-math">
 \begin{equation*}
-G( {\mathbf x}_1 + {\mathbf x}_2) = G {\mathbf x}_1 + G {\mathbf x}_2 = {\mathbf y}_1 + {\mathbf y}_2.
+G( {\mathbf x}_1 + {\mathbf x}_2) = G {\mathbf x}_1 + G {\mathbf x}_2 = {\mathbf y}_1 + {\mathbf y}_2\text{.}
 \end{equation*}
 </div>
 <div class="para">Debemos mostrar además que dos bloques de mensaje diferentes no pueden ser codificados a la misma palabra del código. Es decir, debemos mostrar que si <span class="process-math">\(G {\mathbf x} = G {\mathbf y}\text{,}\)</span> entonces <span class="process-math">\({\mathbf x} = {\mathbf y}\text{.}\)</span>  Supongamos que <span class="process-math">\(G {\mathbf x} = G {\mathbf y}\text{.}\)</span> Entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
-G {\mathbf x} - G {\mathbf y} = G( {\mathbf x} - {\mathbf y}) = {\mathbf 0}.
+G {\mathbf x} - G {\mathbf y} = G( {\mathbf x} - {\mathbf y}) = {\mathbf 0}\text{.}
 \end{equation*}
 </div>
 <div class="para">Pero las primeras <span class="process-math">\(k\)</span> coordenadas en <span class="process-math">\(G( {\mathbf x} - {\mathbf y})\)</span> son exactamente <span class="process-math">\(x_1 -y_1, \ldots, x_k - y_k\text{,}\)</span> pues están determinadas por la matriz identidad, <span class="process-math">\(I_k\text{,}\)</span> que es parte de <span class="process-math">\(G\text{.}\)</span> Luego, <span class="process-math">\(G( {\mathbf x} - {\mathbf y}) = {\mathbf 0}\)</span> si y solo si <span class="process-math">\({\mathbf x} = {\mathbf y}\text{.}\)</span>

@@ -12,7 +12,16 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para"><span class="process-math">\(\displaystyle (1254)^{100}\)</span></div>
-<span class="incontext"><a href="exercises-permute.html#p-853" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Etiquete las reflexiones <span class="process-math">\(n\)</span> <span class="process-math">\(s_1, s_2, \ldots, s_n\text{,}\)</span> donde <span class="process-math">\(s_k\)</span> es la reflexión que sale del vértice <span class="process-math">\(k\)</span> fijado. Hay dos casos de reflexiones, dependiendo de si <span class="process-math">\(n\)</span> es par o impar. Si hay un número par de vértices, entonces dos vértices quedan fijos mediante una reflexión, y <span class="process-math">\(s_1 = s_{n/2 + 1}, s_2 = s_{n/2 + 2}, \ldots, s_{ n/2} = s_n\text{.}\)</span> Si hay un número impar de vértices, entonces solo un vértice queda fijo mediante una reflexión y <span class="process-math">\(s_1, s_2, \ldots, s_n\)</span> son distintos (<a href="" class="xref" data-knowl="./knowl/permute-figure-types.html" title="Figura 5.2.5">Figura 5.2.5</a>). En cualquier caso, el orden de cada <span class="process-math">\(s_k\)</span> es dos. Sea <span class="process-math">\(s = s_1\text{.}\)</span> Entonces <span class="process-math">\(s^2 = 1\)</span> y <span class="process-math">\(r^n = 1\text{.}\)</span> Dado que cualquier movimiento rígido <span class="process-math">\(t\)</span> del <span class="process-math">\(n\)</span>-gon reemplaza el primer vértice por el vértice <span class="process-math">\(k\text{,}\)</span> el segundo vértice debe ser reemplazado por <span class="process-math">\(k+1\)</span> o por <span class="process-math">\(k-1\text{.}\)</span> Si el segundo vértice se reemplaza por <span class="process-math">\(k+1\text{,}\)</span> entonces <span class="process-math">\(t = r^k\text{.}\)</span> Si el segundo vértice se reemplaza por <span class="process-math">\(k-1\text{,}\)</span> entonces <span class="process-math">\(t = r^k s\text{.}\)</span><a href="" class="fn-knowl original" data-knowl="./knowl/fn-5-hidden.html" title="Nota a pie de página 5.2.1"><sup> 1 </sup></a> Por lo tanto, <span class="process-math">\(r\)</span> y <span class="process-math">\(s\)</span> generan <span class="process-math">\(D_n\text{.}\)</span> Es decir, <span class="process-math">\(D_n\)</span> consta de todos los productos finitos de <span class="process-math">\(r\)</span> y <span class="process-math">\(s\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/permute-figure-types.html">
+\begin{equation*}
+D_n = \{1, r, r^2, \ldots, r^{n-1}, s, rs, r^2 s, \ldots, r^{n-1} s\}\text{.}
+\end{equation*}
+</div>
+<div class="para">Dejaremos la demostración de que <span class="process-math">\(srs = r^{-1}\)</span> como ejercicio.</div>
+</div>
+<span class="incontext"><a href="permute-section-dihedral-groups.html#zKW" class="internal">en contexto</a></span>
 </body>
 </html>

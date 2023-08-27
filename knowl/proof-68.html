@@ -12,9 +12,25 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Demostración</span></h4>
-<div class="para">(1) <span class="process-math">\(\Rightarrow\)</span> (2). Como <span class="process-math">\(N\)</span> es normal en <span class="process-math">\(G\text{,}\)</span> <span class="process-math">\(gN = Ng\)</span> para todo <span class="process-math">\(g \in G\text{.}\)</span> Luego, para un  <span class="process-math">\(g \in G\)</span> dado y para <span class="process-math">\(n \in N\text{,}\)</span> existe <span class="process-math">\(n'\)</span> en <span class="process-math">\(N\)</span> tal que <span class="process-math">\(g n = n' g\text{.}\)</span> Por lo tanto, <span class="process-math">\(gng^{-1} = n' \in N\)</span> y <span class="process-math">\(gNg^{-1} \subset N\text{.}\)</span>
-</div> <div class="para">(2)  <span class="process-math">\(\Rightarrow\)</span> (3).  Sea <span class="process-math">\(g \in G\text{.}\)</span> Como <span class="process-math">\(gNg^{-1} \subset N\text{,}\)</span> solo debemos demostrar que <span class="process-math">\(N \subset gNg^{-1}\text{.}\)</span> Para <span class="process-math">\(n \in N\text{,}\)</span>  <span class="process-math">\(g^{-1}ng=g^{-1}n(g^{-1})^{-1} \in N\text{.}\)</span>  Luego, <span class="process-math">\(g^{-1}ng = n'\)</span> para algún <span class="process-math">\(n' \in N\text{.}\)</span> Por lo tanto, <span class="process-math">\(n = g n' g^{-1}\)</span> está en <span class="process-math">\(g N g^{-1}\text{.}\)</span>
-</div> <div class="para">(3) <span class="process-math">\(\Rightarrow\)</span> (1). Supongamos que <span class="process-math">\(gNg^{-1} = N\)</span> para todo <span class="process-math">\(g \in G\text{.}\)</span> Entonces para cualquier <span class="process-math">\(n \in N\)</span> existe <span class="process-math">\(n' \in N\)</span> tal que <span class="process-math">\(gng^{-1} = n'\text{.}\)</span>  Por lo tanto, <span class="process-math">\(gn = n' g\)</span> y <span class="process-math">\(gN \subset Ng\text{.}\)</span> Similarmente, <span class="process-math">\(Ng \subset gN\text{.}\)</span>
-</div></article><span class="incontext"><a href="section-factor-groups.html#proof-68" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">La operación de grupo en <span class="process-math">\(G/N\)</span> es <span class="process-math">\((a N ) (b N)= a b N\text{.}\)</span>  Debemos verificar que esta operación está bien definida; es decir, el producto en el grupo debe ser independiente de la elección de representantes para las clases laterales. Sean <span class="process-math">\(aN = bN\)</span> y <span class="process-math">\(cN = dN\text{.}\)</span> Debemos mostrar que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(aN) (cN) = acN = bd N = (b N)(d N)\text{.}
+\end{equation*}
+</div>
+<div class="para">Entonces <span class="process-math">\(a = b n_1\)</span> y <span class="process-math">\(c = d n_2\)</span> para algún <span class="process-math">\(n_1\)</span> y algún <span class="process-math">\(n_2\)</span> en <span class="process-math">\(N\text{.}\)</span> Luego,</div>
+<div class="displaymath process-math">
+\begin{align*}
+acN &amp; = b n_1 d n_2 N\\
+&amp; = b n_1 d N\\
+&amp; = b n_1 N d\\
+&amp; = b N d\\
+&amp; = b d N\text{.}
+\end{align*}
+</div>
+<div class="para">El resto del teorema es fácil: <span class="process-math">\(eN = N\)</span> es la identidad y <span class="process-math">\(g^{-1} N\)</span> es el inverso de <span class="process-math">\(gN\text{.}\)</span> El orden de <span class="process-math">\(G/N\)</span> es, por supuesto, el número de clases laterales de <span class="process-math">\(N\)</span> en <span class="process-math">\(G\text{.}\)</span>
+</div>
+</div></article><span class="incontext"><a href="normal-section-factor-groups.html#LWk" class="internal">en contexto</a></span>
 </body>
 </html>

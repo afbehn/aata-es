@@ -13,15 +13,19 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
 <div class="para logical">
-<div class="para">Sea <span class="process-math">\(K = \ker \psi\text{.}\)</span> Por el Primer Teorema de Isomorfía para grupos, existe un homomorfismo de grupos bien definido  <span class="process-math">\(\eta: R/K \rightarrow \psi(R)\)</span> definido por <span class="process-math">\(\eta(r + K) = \psi(r)\)</span> para los grupos abelianos aditivos <span class="process-math">\(R\)</span> y <span class="process-math">\(R/K\text{.}\)</span>  Para mostrar que este es un homomorfismo de anillos, solo debemos mostrar que <span class="process-math">\(\eta( (r + K)(s + K) ) = \eta(r + K) \eta( s + K)\text{;}\)</span> pero</div>
-<div class="displaymath process-math">
-\begin{align*}
-\eta( (r + K)( s +K )) &amp; = \eta(r s +K )\\
-&amp; = \psi(r s)\\
-&amp; = \psi(r) \psi(s)\\
-&amp; = \eta( r + K ) \eta( s + K ).
-\end{align*}
+<div class="para">Sea <span class="process-math">\(M\)</span> un ideal maximal en <span class="process-math">\(R\text{.}\)</span> Como <span class="process-math">\(R\)</span> es un anillo conmutativo, <span class="process-math">\(R/M\)</span> también es un anillo conmutativo.  Claramente, <span class="process-math">\(1 + M\)</span> actúa como identidad para <span class="process-math">\(R/M\text{.}\)</span> Debemos mostrar también que cada elemento distinto de cero en <span class="process-math">\(R/M\)</span> tiene un inverso.  Si <span class="process-math">\(a + M\)</span> es un elemento distinto de cero en <span class="process-math">\(R/M\text{,}\)</span> entonces  <span class="process-math">\(a \notin M\text{.}\)</span> Definamos <span class="process-math">\(I\)</span> como el conjunto  <span class="process-math">\(\{ ra + m : r \in R \text{ y } m \in M \}\text{.}\)</span> Mostraremos que <span class="process-math">\(I\)</span> es un ideal en <span class="process-math">\(R\text{.}\)</span> El conjunto <span class="process-math">\(I\)</span> es no vacío pues <span class="process-math">\(0a+0=0\)</span> está en <span class="process-math">\(I\text{.}\)</span> Si <span class="process-math">\(r_1 a + m_1\)</span> y <span class="process-math">\(r_2 a + m_2\)</span> son dos elementos en <span class="process-math">\(I\text{,}\)</span> entonces</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rings-prop-subring.html">
+\begin{equation*}
+(r_1 a + m_1) - ( r_2 a + m_2) = (r_1 - r_2)a + (m_1 - m_2)
+\end{equation*}
 </div>
-</div></article><span class="incontext"><a href="section-ring-homomorphisms.html#proof-112" class="internal">en contexto</a></span>
+<div class="para">está en <span class="process-math">\(I\text{.}\)</span> Además, para cualquier <span class="process-math">\(r \in R\)</span> se cumple que <span class="process-math">\(rI \subset I\text{;}\)</span> luego, <span class="process-math">\(I\)</span> es cerrado bajo multiplicación por elementos del anillo y cumple las condiciones necesarias para ser un ideal. Por lo tanto, por la <a href="" class="xref" data-knowl="./knowl/rings-prop-subring.html" title="Proposición 16.1.10">Proposición 16.1.10</a> y la definición de ideal, <span class="process-math">\(I\)</span> es un ideal que contiene propiamente a  <span class="process-math">\(M\text{.}\)</span> Como <span class="process-math">\(M\)</span> es un ideal maximal, <span class="process-math">\(I=R\text{;}\)</span> concluimos que, por la definición de <span class="process-math">\(I\)</span> deben existir <span class="process-math">\(m\)</span> en <span class="process-math">\(M\)</span> y  <span class="process-math">\(b\)</span> en <span class="process-math">\(R\)</span> tales que <span class="process-math">\(1=ab+m\text{.}\)</span> Por lo tanto,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rings-prop-subring.html">
+\begin{equation*}
+1 + M = ab + M = ba + M = (a+M)(b+M)\text{.}
+\end{equation*}
+</div>
+</div>   <div class="para">Recíprocamente, supongamos que <span class="process-math">\(M\)</span> es un ideal y que <span class="process-math">\(R/M\)</span> es un cuerpo. Como <span class="process-math">\(R/M\)</span> es un cuerpo, debe contener al menos dos elementos: <span class="process-math">\(0 + M = M\)</span> y <span class="process-math">\(1 + M\text{.}\)</span> Luego, <span class="process-math">\(M\)</span> es un ideal propio de <span class="process-math">\(R\text{.}\)</span>  Sea <span class="process-math">\(I\)</span> cualquier ideal que contenga propiamente a <span class="process-math">\(M\text{.}\)</span> Debemos mostrar que <span class="process-math">\(I = R\text{.}\)</span> Sea <span class="process-math">\(a\)</span> en <span class="process-math">\(I\)</span> pero no en <span class="process-math">\(M\text{.}\)</span> Como <span class="process-math">\(a+ M\)</span> es un elemento distinto de cero en un cuerpo, existe <span class="process-math">\(b +M\)</span> en <span class="process-math">\(R/M\)</span> tal que <span class="process-math">\((a+M)(b+M) = ab + M = 1+M\text{.}\)</span>  Concluimos que existe un elemento <span class="process-math">\(m \in M\)</span> tal que <span class="process-math">\(ab + m = 1\)</span> y <span class="process-math">\(1\)</span> está en <span class="process-math">\(I\text{.}\)</span> Por lo tanto, <span class="process-math">\(r1 =r \in I\)</span> para todo <span class="process-math">\(r \in R\text{.}\)</span> Concluimos que <span class="process-math">\(I = R\text{.}\)</span>
+</div></article><span class="incontext"><a href="rings-section-maximal-prime-ideals.html#yTl" class="internal">en contexto</a></span>
 </body>
 </html>

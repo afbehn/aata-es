@@ -12,61 +12,9 @@
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">La Criba de Eratóstenes.</span>
 </h3>
-<div class="para logical">
-<div class="para">¿Cuál(es) de las siguientes tablas de multiplicación definidas en el conjunto <span class="process-math">\(G = \{ a, b, c, d \}\)</span> forma(n) un grupo? Justifique su respuesta en cada caso.</div>
-<ol class="lower-alpha cols2">
-<li><div class="para logical"><div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|cccc}
-\circ &amp; a &amp; b &amp; c &amp; d \\
-\hline
-a &amp; a &amp; c &amp; d &amp; a \\
-b &amp; b &amp; b &amp; c &amp; d \\
-c &amp; c &amp; d &amp; a &amp; b \\
-d &amp; d &amp; a &amp; b &amp; c
-\end{array}
-\end{equation*}
-</div></div></li>
-<li><div class="para logical"><div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|cccc}
-\circ &amp; a &amp; b &amp; c &amp; d \\
-\hline
-a &amp; a &amp; b &amp; c &amp; d \\
-b &amp; b &amp; a &amp; d &amp; c \\
-c &amp; c &amp; d &amp; a &amp; b \\
-d &amp; d &amp; c &amp; b &amp; a
-\end{array}
-\end{equation*}
-</div></div></li>
-<li><div class="para logical"><div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|cccc}
-\circ &amp; a &amp; b &amp; c &amp; d \\
-\hline
-a &amp; a &amp; b &amp; c &amp; d \\
-b &amp; b &amp; c &amp; d &amp; a \\
-c &amp; c &amp; d &amp; a &amp; b \\
-d &amp; d &amp; a &amp; b &amp; c
-\end{array}
-\end{equation*}
-</div></div></li>
-<li><div class="para logical"><div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|cccc}
-\circ &amp; a &amp; b &amp; c &amp; d \\
-\hline
-a &amp; a &amp; b &amp; c &amp; d \\
-b &amp; b &amp; a &amp; c &amp; d \\
-c &amp; c &amp; b &amp; a &amp; d \\
-d &amp; d &amp; d &amp; b &amp; c
-\end{array}
-\end{equation*}
-</div></div></li>
-</ol>
-</div>
-<div class="solutions"><a href="" class="hint-knowl original" data-knowl="./knowl/hint-24-hidden.html" title="Pista 3.4.2.1"><span class="type">Pista</span><span class="period">.</span></a></div></article><span class="incontext"><a href="exercises-groups.html#exercise-72" class="internal">en contexto</a></span>
+<div class="para">Un método para calcular todos los números primos menores a un cierto entero positivo dado <span class="process-math">\(N\)</span> es listar todos los números <span class="process-math">\(n\)</span> tales que <span class="process-math">\(1 \lt n \lt N\text{.}\)</span>  Comience eleminando todos los múltiplos de <span class="process-math">\(2\text{.}\)</span>  Después elimine todos los múltiplos de <span class="process-math">\(3\text{.}\)</span> Ahora elimine todos los múltiplos de <span class="process-math">\(5\text{.}\)</span>  Note que <span class="process-math">\(4\)</span> ya ha sido eliminado.  Continúe de esta manera, notando que no es necesario llegar hasta <span class="process-math">\(N\text{;}\)</span> es suficiente con parar en <span class="process-math">\(\sqrt{N}\text{.}\)</span> Usando este método, calcule todos los números primos menores a <span class="process-math">\(N = 250\text{.}\)</span>  También podemos usar este método para encontrar todos los enteros que son relativamente primos a un entero <span class="process-math">\(N\text{.}\)</span>  Simplemente elimine los factores primos de <span class="process-math">\(N\)</span> y todos sus múltiplos.  Usando este método, encuentre todos los números que son relativamente primos con <span class="process-math">\(N= 120\text{.}\)</span>  Usando la Criba de Eratóstenes, escriba un programa que calcule todos los primos menores que un entero <span class="process-math">\(N\text{.}\)</span>
+</div></article><span class="incontext"><a href="integers-exercises-programming.html#exercise-72" class="internal">en contexto</a></span>
 </body>
 </html>

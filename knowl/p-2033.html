@@ -11,20 +11,31 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Párrafo</span></h3>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Sea <span class="process-math">\(X\)</span> un conjunto y sea <span class="process-math">\(G\)</span> un grupo.  Una  <dfn class="terminology">acción (izquierda)</dfn> de <span class="process-math">\(G\)</span> en <span class="process-math">\(X\)</span> es una función <span class="process-math">\(G \times X \rightarrow X\)</span> dada por <span class="process-math">\((g,x) \mapsto gx\text{,}\)</span> donde</div>
-<ol class="decimal">
-<li><div class="para">
-<span class="process-math">\(ex = x\)</span> para todo <span class="process-math">\(x \in X\text{;}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\((g_1 g_2)x = g_1(g_2 x)\)</span> para todo <span class="process-math">\(x \in X\)</span> y todo <span class="process-math">\(g_1, g_2 \in G\text{.}\)</span>
-</div></li>
-</ol>
-<div class="para">Con estas condiciones <span class="process-math">\(X\)</span> se denomina <dfn class="terminology"><span class="process-math">\(G\)</span>-conjunto</dfn>.  Notemos que no pedimos que <span class="process-math">\(X\)</span> esté relacionado con <span class="process-math">\(G\)</span> de ninguna forma.  Es verdad que cualquier grupo <span class="process-math">\(G\)</span> actúa en cualquier <span class="process-math">\(X\)</span> con la acción trivial <span class="process-math">\((g,x) \mapsto x\text{;}\)</span> pero, las acciones de grupo resultan más interesantes si el conjunto <span class="process-math">\(X\)</span> tiene alguna relación con <span class="process-math">\(G\text{.}\)</span>
+<div class="para">El grupo <span class="process-math">\({\mathbb Z}_{60}\)</span> tiene una serie de composición</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{\mathbb Z}_{60} \supset \langle 3 \rangle \supset  \langle 15 \rangle \supset \langle 30 \rangle  \supset \{ 0 \}
+\end{equation*}
 </div>
+<div class="para">con grupos cociente</div>
+<div class="displaymath process-math">
+\begin{align*}
+{\mathbb Z}_{60} / \langle 3 \rangle &amp; \cong  {\mathbb Z}_{3}\\
+\langle 3 \rangle / \langle 15 \rangle &amp; \cong  {\mathbb Z}_{5}\\
+\langle 15 \rangle / \langle 30 \rangle &amp; \cong  {\mathbb Z}_{2}\\
+\langle 30 \rangle / \{ 0 \} &amp; \cong  {\mathbb Z}_2\text{.}
+\end{align*}
 </div>
-<span class="incontext"><a href="section-groups-acting-on-sets.html#p-2033" class="internal">en contexto</a></span>
+<div class="para">Como <span class="process-math">\({\mathbb Z}_{60}\)</span> es un grupo abeliano, esta serie es automáticamente una serie principal. Notemos que una serie de composición no es necesariamente única.  La serie</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{\mathbb Z}_{60} \supset \langle 2 \rangle \supset \langle 4 \rangle \supset  \langle 20 \rangle \supset \{ 0 \}
+\end{equation*}
+</div>
+<div class="para">también es una serie de composición.</div>
+</div>
+<span class="incontext"><a href="struct-section-solvable-groups.html#rhv" class="internal">en contexto</a></span>
 </body>
 </html>

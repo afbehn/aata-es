@@ -9,24 +9,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span>
 </h3>
-<div class="para logical">
-<div class="para">Para cada uno de los siguientes códigos, ¿cuál es la distancias mínima del código? ¿Cuál es la mejor situación que podemos esperar en relación a detección y corrección de errores?</div>
-<ol class="lower-alpha">
-<li><div class="para"><span class="process-math">\(\displaystyle (011010) \; (011100) \; (110111) \; (110000)\)</span></div></li>
-<li><div class="para">
-<span class="process-math">\((011100) \; (011011) \; (111011) \; (100011)\)</span> \; <span class="process-math">\((000000) \; (010101) \; (110100) \; (110011)\)</span>
-</div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle (000000) \; (011100) \; (110101) \; (110001)\)</span></div></li>
-<li><div class="para">
-<span class="process-math">\((0110110) \; (0111100) \; (1110000) \; (1111111)\)</span> \; <span class="process-math">\((1001001) \; (1000011) \; (0001111) \; (0000000)\)</span>
-</div></li>
-</ol>
-</div>
-<div class="solutions"><a href="" class="hint-knowl original" data-knowl="./knowl/hint-79-hidden.html" title="Pista 8.5.6.1"><span class="type">Pista</span><span class="period">.</span></a></div></article><span class="incontext"><a href="exercises-algcodes.html#exercise-284" class="internal">en contexto</a></span>
+<div class="para">Ejemplifique el Pequeño Teorema de Fermat (en cualquiera de sus variantes) usando el número compuesto <span class="process-math">\(391=17\cdot 23\)</span> como elección de base (ya sea <span class="process-math">\(a\)</span> o <span class="process-math">\(b\)</span>), y para <span class="process-math">\(p\)</span> recorriendo todos los valores primos entre  <span class="process-math">\(100\)</span> y <span class="process-math">\(1000\text{.}\)</span>
+</div> <div class="para">Construya paulatinamente una solución — haga una lista de potencias (empezando por unos pocos primos), luego haga una lista de potencias reducidas en la aritmética modular, luego una lista de comparaciones con el valor predicho, luego verifique todos estos valores lógicos resultantes de la comparación.  Esta es una estrategia útil en muchos problemas similares.  Finalmente podrá escribir una sola línea que realice la verificación completa y devuelva <code class="code-inline tex2jax_ignore">True</code>.  A continuación hay algunas sugerencias de funciones útiles.</div> <pre class="ptx-sagecell sagecell-sage" id="sage-237"><script type="text/x-sage">a = 20
+b = 6
+a.mod(b)
+</script></pre> <pre class="ptx-sagecell sagecell-sage" id="sage-238"><script type="text/x-sage">prime_range(50, 100)
+</script></pre> <pre class="ptx-sagecell sagecell-sage" id="sage-239"><script type="text/x-sage">all([True, True, True, True])
+</script></pre> <pre class="ptx-sagecell sagecell-sage" id="sage-240"><script type="text/x-sage">all([True, True, False, True])
+</script></pre></article><span class="incontext"><a href="cosets-sage-exercises.html#exercise-284" class="internal">en contexto</a></span>
 </body>
 </html>

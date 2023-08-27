@@ -9,29 +9,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({
-  "inputLocation": "pre.sagecell-sage",
-  "linked": true,
-  "languages": [
-    "sage"
-  ],
-  "evalButtonText": "Evaluate (Sage)"
-});
-</script>
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span>
 </h3>
-<div class="para">Use <code class="code-inline tex2jax_ignore">.subgroups()</code> para encontrar un ejemplo de un grupo <span class="process-math">\(G\)</span> y un entero  <span class="process-math">\(m\text{,}\)</span> tal que  (a) <span class="process-math">\(m\)</span> divide el orden de  <span class="process-math">\(G\text{,}\)</span> y (b) <span class="process-math">\(G\)</span> no tiene subgrupo de orden  <span class="process-math">\(m\text{.}\)</span>  (No use el grupo  <span class="process-math">\(A_4\)</span> como <span class="process-math">\(G\text{,}\)</span> pues ese está en el texto.)  Escriba una sola línea de código Sage que contenga toda la lógica necesaria para producir  <span class="process-math">\(m\)</span> como respuesta.  (Puede darle un nombre simple a su grupo en una línea previa y luego referirse a él por ese nombre.)  A continuación un ejemplo muy simple que le puede ayudar a estructurar su respuesta.</div> <pre class="ptx-sagecell sagecell-sage" id="sage-232"><script type="text/x-sage">a = 5
-b = 10
-c = 6
-d = 13
-a.divides(b)
-</script></pre> <pre class="ptx-sagecell sagecell-sage" id="sage-233"><script type="text/x-sage">not (b in [c,d])
-</script></pre> <pre class="ptx-sagecell sagecell-sage" id="sage-234"><script type="text/x-sage">a.divides(b) and not (b in [c,d])
-</script></pre></article><span class="incontext"><a href="cosets-sage-exercises.html#exercise-252" class="internal">en contexto</a></span>
+<div class="para">Construya el grupo de simetrías del tetraedro (también es el grupo alternante en 4 símbolos, <span class="process-math">\(A_4\)</span>) con el comando <code class="code-inline tex2jax_ignore">A=AlternatingGroup(4)</code>.  Usando herramientas tales como órdenes de elementos, y generadores de subgrupos, vea si puede encontrar <em class="emphasis">todos</em> los subgrupos de <span class="process-math">\(A_4\)</span> (cada uno exactamente una vez).  Haga esto sin usar el método <code class="code-inline tex2jax_ignore">.subgroups()</code> para justificar que su respuesta es correcta (aunque puede ser una forma conveniente de verificar su resultado).</div> <div class="para">Escriba un resumen ordenado de su respuesta—no simplemente una lista larga escupida por Sage.  La idea es usar Sage como una herramienta, en la medida en que sea necesario, pero básicamente su respuesta debe ser un párrafo conciso y/o una tabla. Esta es la única parte de esta tarea sin instrucciones precisas y claras, así es que dedique el tiempo suficiente a esta parte para que le quede bien.  Ayuda: ningún subgrupo de  <span class="process-math">\(A_4\)</span> requiere más de dos generadores.</div></article><span class="incontext"><a href="permute-sage-exercises.html#exercise-252" class="internal">en contexto</a></span>
 </body>
 </html>

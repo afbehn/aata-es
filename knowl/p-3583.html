@@ -11,8 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">¿Puede escribir una función en Python que reciba un cuerpo finito cuyo orden sea una potencia de un primo impar y luego liste cada elemento como suma de cuadrados?</div>
-<span class="incontext"><a href="finite-sage-exercises.html#p-3583" class="internal">en contexto</a></span>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
+<div class="para logical">
+<div class="para">Si <span class="process-math">\(g(x)= 1 + x^3\text{,}\)</span> podemos definir un <span class="process-math">\((6,3)\)</span>-código <span class="process-math">\(C\)</span> como sigue.  Para codificar una <span class="process-math">\(3\)</span>-tupla <span class="process-math">\(( a_0, a_1, a_2 )\text{,}\)</span> multiplicamos el correspondiente polinomio <span class="process-math">\(f(x) = a_0 + a_1 x + a_2 x^2\)</span> por <span class="process-math">\(1 + x^3\text{.}\)</span>  Estamos definiendo una función <span class="process-math">\(\phi : {\mathbb Z}_2^3 \rightarrow {\mathbb Z}_2^6\)</span> como <span class="process-math">\(\phi  : f(x) \mapsto g(x) f(x)\text{.}\)</span>  Es fácil verificar que esta función es un homomorfismo de grupos.  De hecho, si consideramos <span class="process-math">\({\mathbb Z}_2^n\)</span> como un espacio vectorial sobre <span class="process-math">\({\mathbb Z}_2\text{,}\)</span> <span class="process-math">\(\phi\)</span> es una transformación lineal de espacios vectoriales (vea el <a href="" class="xref" data-knowl="./knowl/vect-exercise-linear-transformation.html" title="Ejercicio 20.5.15: Transformaciones Lineales">Ejercicio 20.5.15</a>, Capí<a href="vect.html" class="internal" title="Capítulo 20: Espacios Vectoriales">Capítulo 20</a>).  Calculemos el núcleo de <span class="process-math">\(\phi\text{.}\)</span>  Observe que <span class="process-math">\(\phi ( a_0, a_1, a_2 ) = (000000)\)</span> exactamente cuando</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/vect-exercise-linear-transformation.html ./knowl/vect.html">
+\begin{align*}
+0 + 0x + 0x^2 + 0x^3 + 0x^4 + 0 x^5 &amp; = (1 + x^3) ( a_0 + a_1 x + a_2 x^2 )\\
+&amp; = a_0 + a_1 x + a_2 x^2 + a_0 x^3 + a_1 x^4 + a_2 x^5\text{.}
+\end{align*}
+</div>
+<div class="para">Como los polinomios sobre un cuerpo forman un dominio integral, <span class="process-math">\(a_0 + a_1 x + a_2 x^2\)</span> debe ser el polinomio cero. Por lo tanto, <span class="process-math">\(\ker \phi = \{ (000) \}\)</span> y <span class="process-math">\(\phi\)</span> es 1-1.</div>
+</div>
+<span class="incontext"><a href="finite-section-poly-codes.html#sFj" class="internal">en contexto</a></span>
 </body>
 </html>

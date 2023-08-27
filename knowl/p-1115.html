@@ -11,33 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Párrafo</span></h5>
-<div class="para logical">
-<div class="para">Antes de explorar la teoría tras el criptosistema <abbr class="acronym">RSA</abbr> o intentar usar enteros grandes, usaremos algunos enteros pequeños simplemente para ver que el sistema realmente funciona. Supongamos que el mensaje que deseamos enviar, una vez digitalizado es 25. Sean <span class="process-math">\(p = 23\)</span> y <span class="process-math">\(q = 29\text{.}\)</span> Entonces</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/cyclic.html">
-\begin{equation*}
-n = pq = 667
-\end{equation*}
-</div>
-<div class="para">y</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/cyclic.html">
-\begin{equation*}
-\phi(n) = m = (p - 1)(q - 1) = 616.
-\end{equation*}
-</div>
-<div class="para">Podemos elegir <span class="process-math">\(E = 487\text{,}\)</span> pues <span class="process-math">\(\gcd(616, 487) = 1\text{.}\)</span> El mensaje codificado lo calculamos como</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/cyclic.html">
-\begin{equation*}
-25^{487} \bmod 667 = 169.
-\end{equation*}
-</div>
-<div class="para">Este cálculo se puede realizar de forma razonable usando el método de los cuadrados repetidos descrito en el Capítulo <a href="cyclic.html" class="internal" title="Capítulo 4: Grupos Cíclicos">4</a>. Usando el algoritmo de Euclides, determinamos que <span class="process-math">\(191 E = 1 + 151 m\text{;}\)</span> por lo tanto, la clave de decriptación es <span class="process-math">\((n, D) = ( 667, 191)\text{.}\)</span> Podemos recuperar el mensaje original calculando</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/cyclic.html">
-\begin{equation*}
-169^{191} \bmod 667 = 25.
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="section-public-key-crypt.html#p-1115" class="internal">en contexto</a></span>
+<h3 class="heading"><span class="type">Párrafo</span></h3>
+<div class="para">Los siguientes ejercicios más que sobre clases laterales y subgrupos, son sobre el uso de Sage como herramienta experimental.  Están diseñados para ayudarle a ser más eficiente y más expresivo, a la hora de escribir comandos en Sage.  Tendremos muchas oportunidades de trabajar con clases laterales y subgrupos en los capítulos que vienen.  Estos ejercicios no son tan guiados y su dificultad va en aumento.  Están diseñados para explorar, o confirmar, resultados presentados en este o anteriores capítulos.</div>
+<span class="incontext"><a href="cosets-sage-exercises.html#hFb" class="internal">en contexto</a></span>
 </body>
 </html>

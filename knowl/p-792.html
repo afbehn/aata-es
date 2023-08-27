@@ -12,18 +12,20 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para logical"><div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|cccc}
-\circ   &amp; \identity     &amp; \sigma &amp; \tau   &amp; \mu    \\
-\hline
-\identity     &amp; \identity     &amp; \sigma &amp; \tau   &amp; \mu    \\
-\sigma &amp; \sigma &amp; \identity     &amp; \mu    &amp; \tau   \\
-\tau   &amp; \tau   &amp; \mu    &amp; \identity     &amp; \sigma \\
-\mu    &amp; \mu    &amp; \tau   &amp; \sigma &amp; \identity
-\end{array}
-\end{equation*}
-</div></div>
-<span class="incontext"><a href="section-permutation-definitions.html#p-792" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Observaciones:</div>
+<ol class="decimal">
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">zeta14</code> es el nombre del generador usado para el cuerpo ciclotómico, es una raíz primitiva de la unidad (una raíz <span class="process-math">\(14\)</span>-ésima en este caso).  La hemos capturado como <code class="code-inline tex2jax_ignore">w</code>.</div></li>
+<li><div class="para">La sintaxis <code class="code-inline tex2jax_ignore">CDF(w)</code> convertirá al número complejo <code class="code-inline tex2jax_ignore">w</code> a la notación más familiar con partes real e imaginaria.</div></li>
+<li><div class="para">El método <code class="code-inline tex2jax_ignore">.abs()</code> entrega el módulo del número complejo, <span class="process-math">\(r\)</span> como está descrito en el texto.  Para estos elementos de <span class="process-math">\({\mathbb C}^\ast\)</span> debiera ser siempre igual a <span class="process-math">\(1\text{.}\)</span>
+</div></li>
+<li><div class="para">El método <code class="code-inline tex2jax_ignore">.arg()</code> entrega el argumento de un número complejo, <span class="process-math">\(\theta\)</span> como está descrito en el texto.  Cada elemento del grupo cíclico en este ejemplo debe tener un argumento que es un múltiplo entero de  <span class="process-math">\(\frac{2\pi}{14}\text{.}\)</span>  La sintaxis <code class="code-inline tex2jax_ignore">N()</code> convierte el valor simbólico de <code class="code-inline tex2jax_ignore">pi</code> a una aproximación numérica.</div></li>
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">sg</code> es una lista de elementos que forma un subgrupo cíclico de orden 7, que consiste de las primeras potencias de <code class="code-inline tex2jax_ignore">b = w^2</code>.  Así, por ejemplo, la última comparación multiplica la quinta potencia de <code class="code-inline tex2jax_ignore">b</code> con la sexta potencia de <code class="code-inline tex2jax_ignore">b</code>, lo que sería la undécima potencia de <code class="code-inline tex2jax_ignore">b</code>.  Pero como <code class="code-inline tex2jax_ignore">b</code> tiene orden 7, esto se reduce a la cuarta potencia.</div></li>
+<li><div class="para">Si se sabe que un subconjunto de un grupo infinito forma un subgrupo, entonces se puede producir su tabla de Cayley especificando la lista de los elementos que se desean usar.  Acá pedimos una tabla de multipicación, pues esa es la operación relevante en este caso.</div></li>
+</ol>
+</div>
+<span class="incontext"><a href="cyclic-sage.html#QHu" class="internal">en contexto</a></span>
 </body>
 </html>

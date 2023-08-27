@@ -12,8 +12,43 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Párrafo</span></h5>
-<div class="para">Sea <span class="process-math">\(E\)</span> una extensión finita separable de un cuerpo <span class="process-math">\(F\text{.}\)</span> Entonces existe un <span class="process-math">\(\alpha \in E\)</span> tal que <span class="process-math">\(E=F( \alpha )\text{.}\)</span>
+<div class="para logical">
+<div class="para">Es fácil verificar que <span class="process-math">\(x^{15} - 1 \in {\mathbb Z}_2[x]\)</span> se factoriza como</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-example-gf-p24.html">
+\begin{equation*}
+x^{15} - 1 = (x + 1)(x^2 + x + 1)(x^4 + x + 1)(x^4 + x^3 + 1)(x^4 + x^3 + x^2 + x + 1)\text{,}
+\end{equation*}
 </div>
-<span class="incontext"><a href="section-field-automorphisms.html#p-3610" class="internal">en contexto</a></span>
+<div class="para">donde cada uno de estos factores es irreducible. Sea <span class="process-math">\(\omega\)</span> una raíz de <span class="process-math">\(1 + x + x^4\text{.}\)</span> El cuerpo de Galois <span class="process-math">\(\gf(2^4)\)</span> es</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-example-gf-p24.html">
+\begin{equation*}
+\{ a_0 + a_1 \omega + a_2 \omega^2 + a_3 \omega^3 : a_i \in {\mathbb Z}_2 \text{ y } 1 + \omega + \omega^4 = 0 \}\text{.}
+\end{equation*}
+</div>
+<div class="para">Por el <a href="" class="xref" data-knowl="./knowl/finite-example-gf-p24.html" title="Ejemplo 22.1.8">Ejemplo 22.1.8</a>, <span class="process-math">\(\omega\)</span> es una raíz <span class="process-math">\(15\)</span> primitiva de la unidad. El polinomio minimal de  <span class="process-math">\(\omega\)</span> es <span class="process-math">\(m_1(x) = 1 + x + x^4\text{.}\)</span> Es fácil ver que <span class="process-math">\(\omega^2\)</span> y <span class="process-math">\(\omega^4\)</span> también son raíces de <span class="process-math">\(m_1(x)\text{.}\)</span> El polinomio minimal de <span class="process-math">\(\omega^3\)</span> es <span class="process-math">\(m_2(x) = 1 + x + x^2 + x^3 + x^4\text{.}\)</span> Por lo tanto,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-example-gf-p24.html">
+\begin{equation*}
+g(x) = m_1(x) m_2(x) = 1 + x^4 + x^6 + x^7 + x^8
+\end{equation*}
+</div>
+<div class="para">tiene raíces <span class="process-math">\(\omega\text{,}\)</span> <span class="process-math">\(\omega^2\text{,}\)</span> <span class="process-math">\(\omega^3\text{,}\)</span> <span class="process-math">\(\omega^4\text{.}\)</span>  Como tanto <span class="process-math">\(m_1(x)\)</span> como <span class="process-math">\(m_2(x)\)</span> dividen a <span class="process-math">\(x^{15} - 1\text{,}\)</span> el código <abbr class="acronym">BCH</abbr> es un código <span class="process-math">\((15, 7)\text{.}\)</span> Si <span class="process-math">\(x^{15} -1 = g(x)h(x)\text{,}\)</span> entonces <span class="process-math">\(h(x) = 1 + x^4 + x^6 + x^7\text{;}\)</span> por lo tanto, una matriz verificadora para este código es</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-example-gf-p24.html">
+\begin{equation*}
+\left(   
+\begin{array}{ccccccccccccccc}
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}
+\right)\text{.}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="finite-section-poly-codes.html#RhT" class="internal">en contexto</a></span>
 </body>
 </html>

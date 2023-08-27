@@ -18,7 +18,7 @@
 <div class="para">Demostraremos el teorema del binomio por inducción; es decir,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(a + b)^n = \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k},
+(a + b)^n = \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k}\text{,}
 \end{equation*}
 </div>
 <div class="para">donde <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> son números reales, <span class="process-math">\(n \in \mathbb{N}\text{,}\)</span> y</div>
@@ -30,7 +30,7 @@
 <div class="para">es el coeficiente binomial.   Primero mostraremos que</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\binom{n + 1}{k} = \binom{n}{k} + \binom{n}{k - 1}.
+\binom{n + 1}{k} = \binom{n}{k} + \binom{n}{k - 1}\text{.}
 \end{equation*}
 </div>
 <div class="para">Este resultado es consecuencia de</div>
@@ -38,10 +38,10 @@
 \begin{align*}
 \binom{n}{k} + \binom{n}{k - 1} &amp; = \frac{n!}{k!(n - k)!} +\frac{n!}{(k-1)!(n - k + 1)!}\\
 &amp; = \frac{(n + 1)!}{k!(n + 1 - k)!}\\
-&amp; =\binom{n + 1}{k}.
+&amp; =\binom{n + 1}{k}\text{.}
 \end{align*}
 </div>
-<div class="para">Si <span class="process-math">\(n = 1\text{,}\)</span> el teorema del binomio es fácil de verificar. Ahora supongamos que el resultado es verdadero para  <span class="process-math">\(n\)</span> mayor o igual a 1.  Entonces</div>
+<div class="para">Si <span class="process-math">\(n = 1\text{,}\)</span> el teorema del binomio es fácil de verificar. Ahora supongamos que el resultado es verdadero para  <span class="process-math">\(n\)</span> mayor o igual a <span class="process-math">\(1\text{.}\)</span>  Entonces</div>
 <div class="displaymath process-math">
 \begin{align*}
 (a + b)^{n + 1} &amp; = (a + b)(a + b)^n\\
@@ -49,7 +49,7 @@
 &amp; = \sum_{k = 0}^{n} \binom{n}{k} a^{k + 1} b^{n - k} + \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n + 1 - k}\\
 &amp; = a^{n + 1} + \sum_{k = 1}^{n} \binom{n}{k - 1} a^{k} b^{n + 1 - k} + \sum_{k = 1}^{n} \binom{n}{k}  a^k b^{n + 1 - k} + b^{n + 1}\\
 &amp;  = a^{n + 1} + \sum_{k = 1}^{n} \left[ \binom{n}{k - 1} + \binom{n}{k} \right]a^k b^{n + 1 - k} + b^{n + 1}\\
-&amp;  = \sum_{k = 0}^{n + 1}   \binom{n + 1}{k} a^k b^{n + 1- k}.
+&amp;  = \sum_{k = 0}^{n + 1}   \binom{n + 1}{k} a^k b^{n + 1- k}\text{.}
 \end{align*}
 </div>
 </div></article><span class="incontext"><a href="section-math-induction.html#example-integers-binomial-theorem" class="internal">en contexto</a></span>

@@ -18,7 +18,7 @@
 <div class="para">Supongamos que tenemos las siguientes ocho palabras por codificar:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(000), (001), (010), \ldots, (111).
+(000), (001), (010), \ldots, (111)\text{.}
 \end{equation*}
 </div>
 <div class="para">Para</div>
@@ -29,7 +29,7 @@ A =
 0 &amp; 1 &amp; 1 \\
 1 &amp; 1 &amp; 0 \\
 1 &amp; 0 &amp; 1
-\end{pmatrix},
+\end{pmatrix}\text{,}
 \end{equation*}
 </div>
 <div class="para">la matrices generadora estándar y verificadora canónica son</div>
@@ -54,13 +54,13 @@ H =
 0 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1
-\end{pmatrix},
+\end{pmatrix}\text{,}
 \end{equation*}
 </div>
 <div class="para">respectivamente.</div>
 </div> <div class="para logical">
-<div class="para">Observe que las filas en <span class="process-math">\(H\)</span>  representan las verificaciones de paridad en ciertas posiciones de las 6-tuplas. Los unos en la matriz identidad sirven como verificadores de paridad para los unos en la misma fila. Si <span class="process-math">\({\mathbf x} = (x_1, x_2, x_3, x_4, x_5, x_6)\text{,}\)</span> entonces</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/table-matrix-gen-code.html">
+<div class="para">Observe que las filas en <span class="process-math">\(H\)</span>  representan las verificaciones de paridad en ciertas posiciones de las <span class="process-math">\(6\)</span>-tuplas. Los <span class="process-math">\(1\)</span>s en la matriz identidad sirven como verificadores de paridad para los <span class="process-math">\(1\)</span>s en la misma fila. Si <span class="process-math">\({\mathbf x} = (x_1, x_2, x_3, x_4, x_5, x_6)\text{,}\)</span> entonces</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 {\mathbf 0}
 =
@@ -70,19 +70,19 @@ H{\mathbf x}
 x_2 + x_3 + x_4 \\
 x_1 + x_2 + x_5\\
 x_1 + x_3 + x_6
-\end{pmatrix},
+\end{pmatrix}\text{,}
 \end{equation*}
 </div>
 <div class="para">lo que produce un sistema de ecuaciones:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/table-matrix-gen-code.html">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
 x_2 + x_3 + x_4 &amp; = 0\\
 x_1 + x_2 + x_5 &amp; = 0\\
-x_1 + x_3 + x_6 &amp; = 0.
+x_1 + x_3 + x_6 &amp; = 0\text{.}
 \end{align*}
 </div>
 <div class="para">Acá <span class="process-math">\(x_4\)</span> sirve como bit de control para <span class="process-math">\(x_2\)</span> y <span class="process-math">\(x_3\text{;}\)</span> <span class="process-math">\(x_5\)</span> es un bit de control para <span class="process-math">\(x_1\)</span> y <span class="process-math">\(x_2\text{;}\)</span> y <span class="process-math">\(x_6\)</span> es un bit de control para <span class="process-math">\(x_1\)</span> y <span class="process-math">\(x_3\text{.}\)</span> La matriz identidad impide que <span class="process-math">\(x_4\text{,}\)</span> <span class="process-math">\(x_5\text{,}\)</span> y <span class="process-math">\(x_6\)</span> tengan que controlarse entre ellos. Luego, <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> y <span class="process-math">\(x_3\)</span> pueden ser arbitrarios pero <span class="process-math">\(x_4\text{,}\)</span> <span class="process-math">\(x_5\text{,}\)</span> y <span class="process-math">\(x_6\)</span> deben ser escogidos de manera de asegurar las paridades respectivas. Se calcula fácilmente que el espacio nulo de <span class="process-math">\(H\)</span> es</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/table-matrix-gen-code.html">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{array}{cccc}
 (000000) &amp; (001101) &amp; (010110) &amp; (011011) \\
@@ -90,7 +90,7 @@ x_1 + x_3 + x_6 &amp; = 0.
 \end{array}
 \end{equation*}
 </div>
-<div class="para">Una forma aún más fácil de calcular el espacio nulo es con la matriz generadora <span class="process-math">\(G\)</span> (Tabla <a href="" class="xref" data-knowl="./knowl/table-matrix-gen-code.html" title="Cuadro 8.3.2">8.3.2</a>).</div>
+<div class="para">Una forma aún más fácil de calcular el espacio nulo es con la matriz generadora <span class="process-math">\(G\)</span> (<code class="code-inline tex2jax_ignore">[cross-reference to target(s) "table-matrix-gen-code" missing or not unique]</code>).</div>
 </div></article><span class="incontext"><a href="section-parity-check.html#example-algcodes-parity-check" class="internal">en contexto</a></span>
 </body>
 </html>

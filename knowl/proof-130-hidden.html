@@ -11,13 +11,26 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">Como <span class="process-math">\(D\)</span> es conmutativo, <span class="process-math">\(ab = ba\text{;}\)</span> luego, <span class="process-math">\(\sim\)</span> es refleja en <span class="process-math">\(D\text{.}\)</span> Ahora supongamos que  <span class="process-math">\((a,b) \sim (c,d)\text{.}\)</span> Entonces <span class="process-math">\(ad=bc\)</span> y <span class="process-math">\(cb = da\text{.}\)</span> Por lo tanto, <span class="process-math">\((c,d) \sim (a, b)\)</span> y la relación es simétrica. Finalmente, para mostrar que la relación es transitiva, sean <span class="process-math">\((a, b) \sim (c, d)\)</span> y <span class="process-math">\((c, d) \sim (e,f)\text{.}\)</span> En este caso <span class="process-math">\(ad = bc\)</span> y <span class="process-math">\(cf = de\text{.}\)</span> Multiplicando ambos lados de <span class="process-math">\(ad=bc\)</span> por <span class="process-math">\(f\)</span> resulta</div>
+<div class="para">Demostraremos que la operación de adición está bien-definida.  La demostración de que la multiplicación está bien-definida la dejaremos como ejercicio. Sean <span class="process-math">\([a_1, b_1] = [a_2, b_2]\)</span> y <span class="process-math">\([c_1, d_1] =[ c_2, d_2]\text{.}\)</span>  Debemos mostrar que</div>
 <div class="displaymath process-math">
 \begin{equation*}
-a f d = a d f = b c f = b d e = bed.
+[a_1 d_1 + b_1 c_1,b_1 d_1] = [a_2 d_2 + b_2 c_2,b_2 d_2]
 \end{equation*}
 </div>
-<div class="para">Como <span class="process-math">\(D\)</span> es un dominio integral, podemos deducir que <span class="process-math">\(af = be\)</span> y <span class="process-math">\((a,b ) \sim (e, f)\text{.}\)</span>
+<div class="para">o, equivalentemente, que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(a_1 d_1 + b_1 c_1)( b_2 d_2) = (b_1 d_1) (a_2 d_2 + b_2 c_2)\text{.}
+\end{equation*}
+</div>
+<div class="para">Como  <span class="process-math">\([a_1, b_1] = [a_2, b_2]\)</span> and <span class="process-math">\([c_1, d_1] =[ c_2, d_2]\text{,}\)</span> sabemos que <span class="process-math">\(a_1 b_2 = b_1 a_2\)</span> y <span class="process-math">\(c_1 d_2 = d_1 c_2\text{.}\)</span>  Por lo tanto,</div>
+<div class="displaymath process-math">
+\begin{align*}
+(a_1 d_1 + b_1 c_1)( b_2 d_2)  &amp; =  a_1 d_1 b_2 d_2 + b_1 c_1 b_2 d_2\\
+&amp; = a_1 b_2 d_1 d_2 + b_1 b_2 c_1 d_2\\
+&amp; = b_1 a_2 d_1 d_2 + b_1 b_2 d_1 c_2\\
+&amp; =  (b_1 d_1) (a_2 d_2 + b_2 c_2)\text{.}
+\end{align*}
 </div>
 </div></article></body>
 </html>

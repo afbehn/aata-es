@@ -12,35 +12,17 @@
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">11<span class="period">.</span></span>
 </h3>
-<div class="para">Un mejor algoritmo para factorizar enteros positivos impares es el <dfn class="terminology">algoritmo de factorización de Fermat</dfn>.</div> <ol class="lower-alpha">
-<li><div class="para logical">
-<div class="para">Sea <span class="process-math">\(n= ab\)</span> un número impar compuesto. Demuestre que <span class="process-math">\(n\)</span> puede ser escrito como la diferencia de dos cuadrados perfectos:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-n = x^2 - y^2 = (x - y)(x + y).
-\end{equation*}
-</div>
-<div class="para">Por lo tanto, un entero positivo impar se puede factorizar si y solo si podemos encontrar enteros <span class="process-math">\(x\)</span> e <span class="process-math">\(y\)</span> tales que <span class="process-math">\(n = x^2 - y^2\text{.}\)</span>
-</div>
-</div></li>
-<li><div class="para">Escriba un programa para implementar el siguiente algoritmo de factorización basado en la observación en la parte (a).  La expresión <code class="code-inline tex2jax_ignore">ceiling(sqrt(n))</code> se refiere al menor entero que es mayor o igual a la raíz cuadrada de <span class="process-math">\(n\text{.}\)</span> Escriba otro programa que use intentos de división y compare la velocidad de los dos algoritmos. ¿Cuál de ellos es más rápido y por qué?</div></li>
-</ol> <figure class="listing figure-like"><div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">x := ceiling(sqrt(n))
-y := 1
-
-1 : while x^2 - y^2 &gt; n do
-	y := y + 1
-
-if x^2 - y^2 &lt; n then
-	x := x + 1
-	y := 1
-	goto 1
-else if x^2 - y^2 = 0 then
-	a := x - y
-	b := x + y
-	write n = a * b
-</code></pre></div>
-<figcaption><span class="type">Listado</span><span class="space"> </span><span class="codenumber">7.4.1<span class="period">.</span></span><span class="space"> </span>algoritmo en pseudo-código</figcaption></figure></article><span class="incontext"><a href="crypt-exercises-additional.html#exercise-270" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Sea <span class="process-math">\(H\)</span> un subgrupo de un grupo <span class="process-math">\(G\)</span> y supongamos que <span class="process-math">\(g_1, g_2 \in G\text{.}\)</span>  Demuestre que las siguientes condiciones son equivalentes.</div>
+<ol class="lower-alpha">
+<li><div class="para"><span class="process-math">\(\displaystyle g_1 H = g_2 H\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle H g_1^{-1}  = H g_2^{-1}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle g_1 H \subset g_2 H\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle g_2 \in g_1 H\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle g_1^{-1} g_2 \in H\)</span></div></li>
+</ol>
+</div></article><span class="incontext"><a href="cosets-exercises.html#exercise-270" class="internal">en contexto</a></span>
 </body>
 </html>

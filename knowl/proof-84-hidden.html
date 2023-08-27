@@ -10,29 +10,36 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">Como <span class="process-math">\(G\)</span> es un grupo abeliano, tenemos que <span class="process-math">\(G_i\)</span> es un subgrupo de <span class="process-math">\(G\)</span> para <span class="process-math">\(i = 1, \ldots, n\text{.}\)</span>  Como la identidad tiene orden <span class="process-math">\(p_i^0 = 1\text{,}\)</span> sabemos que <span class="process-math">\(1 \in G_i\text{.}\)</span>  Si <span class="process-math">\(g \in G_i\)</span> tiene orden <span class="process-math">\(p_i^r\text{,}\)</span> entonces <span class="process-math">\(g^{-1}\)</span> también debe tener orden <span class="process-math">\(p_i^r\text{.}\)</span>  Finalmente, si <span class="process-math">\(h \in G_i\)</span> tiene orden <span class="process-math">\(p_i^s\text{,}\)</span> entonces</div>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Por el <a href="" class="xref" data-knowl="./knowl/struct-lemma-p-group-order.html" title="Lema 13.1.7">Lema 13.1.7</a>, podemos suponer que el orden de <span class="process-math">\(G\)</span> es <span class="process-math">\(p^n\text{.}\)</span>  Procederemos por inducción en <span class="process-math">\(n\text{.}\)</span> Si <span class="process-math">\(n= 1\text{,}\)</span> entonces <span class="process-math">\(G\)</span> es cíclico de orden <span class="process-math">\(p\)</span> y debe estar generado por <span class="process-math">\(g\text{.}\)</span> Supongamos ahora que el lema se cumple para todos los enteros <span class="process-math">\(k\)</span> con <span class="process-math">\(1 \leq k \lt n\)</span> y sea <span class="process-math">\(g\)</span> de orden maximal en <span class="process-math">\(G\text{,}\)</span> digamos <span class="process-math">\(|g| = p^{m}\text{.}\)</span>  Entonces <span class="process-math">\(a^{p^m} = e\)</span> para todo <span class="process-math">\(a \in G\text{.}\)</span> Ahora elijamos <span class="process-math">\(h\)</span> en <span class="process-math">\(G\)</span> tal que <span class="process-math">\(h \notin \langle g \rangle\text{,}\)</span> donde <span class="process-math">\(h\)</span> tiene el menor orden posible.  Ciertamente podemos suponer que tal <span class="process-math">\(h\)</span> existe; de otra manera, <span class="process-math">\(G = \langle g \rangle\)</span> y estamos listos.  Sea <span class="process-math">\(H = \langle h \rangle\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Afirmamos que <span class="process-math">\(\langle g \rangle \cap H = \{ e \}\text{.}\)</span> Es suficiente con mostrar que <span class="process-math">\(|H|=p\text{.}\)</span>  Como <span class="process-math">\(|h^p| = |h| / p\text{,}\)</span> el orden de <span class="process-math">\(h^p\)</span> es menor que el orden de <span class="process-math">\(h\)</span> y debe estar en <span class="process-math">\(\langle g \rangle\)</span> por la minimalidad del orden de <span class="process-math">\(h\text{;}\)</span> es decir, <span class="process-math">\(h^p = g^r\)</span> para algún <span class="process-math">\(r\text{.}\)</span> Luego,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(gh)^{p_i^t} = g^{p_i^t} h^{p_i^t} = 1 \cdot 1 = 1,
+(g^r)^{p^{m - 1}} = (h^p)^{p^{m - 1}} = h^{p^{m}} = e\text{,}
 \end{equation*}
 </div>
-<div class="para">donde <span class="process-math">\(t\)</span> es el mayor entre <span class="process-math">\(r\)</span> y <span class="process-math">\(s\text{.}\)</span>
+<div class="para">y el orden de <span class="process-math">\(g^r\)</span> es menor o igual a <span class="process-math">\(p^{m-1}\text{.}\)</span> Por lo tanto, <span class="process-math">\(g^r\)</span> no puede generar <span class="process-math">\(\langle g \rangle\text{.}\)</span>  Notemos que <span class="process-math">\(p\)</span> debe ser un divisor de <span class="process-math">\(r\text{,}\)</span> digamos <span class="process-math">\(r = ps\text{,}\)</span> y <span class="process-math">\(h^p = g^r = g^{ps}\text{.}\)</span> Definamos <span class="process-math">\(a\)</span> como <span class="process-math">\(g^{-s}h\text{.}\)</span> Entonces <span class="process-math">\(a\)</span> no puede estar en <span class="process-math">\(\langle g \rangle\text{;}\)</span> de otra manera, <span class="process-math">\(h\)</span> también estaría en <span class="process-math">\(\langle g \rangle\text{.}\)</span> Además,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a^p = g^{-sp} h^p = g^{-r} h^p = h^{-p} h^p = e\text{.}
+\end{equation*}
+</div>
+<div class="para">Hemos formado un elemento <span class="process-math">\(a\)</span> de orden <span class="process-math">\(p\)</span> tal que <span class="process-math">\(a \notin \langle g \rangle\text{.}\)</span> Como <span class="process-math">\(h\)</span> fue elegido de orden minimal entre todos los elementos fuera de <span class="process-math">\(\langle g\rangle\text{,}\)</span> <span class="process-math">\(|H|  = p\text{.}\)</span>
 </div>
 </div> <div class="para logical">
-<div class="para">Debemos mostrar que</div>
+<div class="para">Ahora mostraremos que el orden de <span class="process-math">\(gH\)</span> en el grupo cociente <span class="process-math">\(G/H\)</span> debe ser el mismo que el orden de <span class="process-math">\(g\)</span> en <span class="process-math">\(G\text{.}\)</span>  Si <span class="process-math">\(|gH| \lt |g| =  p^m\text{,}\)</span> entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
-G = G_1 G_2 \cdots  G_n
+H = (gH)^{p^{m-1}} =  g^{p^{m-1}} H;
 \end{equation*}
 </div>
-<div class="para">y <span class="process-math">\(G_i \cap G_j = \{1 \}\)</span> para <span class="process-math">\(i \neq j\text{.}\)</span>  Supongamos que <span class="process-math">\(g_1 \in G_1\)</span> está en el subgrupo generado por <span class="process-math">\(G_2, G_3, \ldots, G_k\text{.}\)</span>  Entonces <span class="process-math">\(g_1 = g_2 g_3 \cdots g_k\)</span> para <span class="process-math">\(g_i \in G_i\text{.}\)</span>  Como <span class="process-math">\(g_i\)</span> tiene orden <span class="process-math">\(p^{\alpha_i}\text{,}\)</span> sabemos que <span class="process-math">\(g_i^{p^{\alpha_i}} = 1\)</span> para <span class="process-math">\(i = 2, 3, \ldots, k\text{,}\)</span> y <span class="process-math">\(g_1^{p_2^{\alpha_2} \cdots p_k^{\alpha_k}} = 1\text{.}\)</span>  Como el orden de <span class="process-math">\(g_1\)</span> es una potencia de <span class="process-math">\(p_1\)</span> y <span class="process-math">\(\gcd(p_1, p_2^{\alpha_2} \cdots p_k^{\alpha_k}) = 1\text{,}\)</span> tenemos que <span class="process-math">\(g_1 = 1\)</span> y la intersección de <span class="process-math">\(G_1\)</span> con cualquiera de los subgrupos <span class="process-math">\(G_2, G_3, \ldots, G_k\)</span> ies la identidad.  Un argumento similar muestra que <span class="process-math">\(G_i \cap G_j = \{1 \}\)</span> para <span class="process-math">\(i \neq j\text{.}\)</span>  Luego, <span class="process-math">\(G_1 G_2 \cdots  G_n\)</span> es un producto directo interno de subgrupos.  Como</div>
+<div class="para">luego, <span class="process-math">\(g^{p^{m-1}}\)</span> está en <span class="process-math">\(\langle g \rangle \cap H = \{ e \}\text{,}\)</span> lo que contradice el hecho de que el orden de <span class="process-math">\(g\)</span> es <span class="process-math">\(p^m\text{.}\)</span>  Por lo tanto, <span class="process-math">\(gH\)</span> tiene orden maximal en <span class="process-math">\(G/H\text{.}\)</span>  Por el Teorema de Correspondencia y la hipótesis de inducción ,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-|G_1 G_2 \cdots G_k| = p_1^{\alpha_1} \cdots p_k^{\alpha_k} = |G|,
+G/H \cong \langle gH \rangle \times K/H
 \end{equation*}
 </div>
-<div class="para">tenemos que <span class="process-math">\(G = G_1 G_2 \cdots G_k\text{.}\)</span>
+<div class="para">para algún subgrupo <span class="process-math">\(K\)</span> de <span class="process-math">\(G\)</span> que contiene a <span class="process-math">\(H\text{.}\)</span>  Afirmamos que <span class="process-math">\(\langle g \rangle \cap K = \{ e \}\text{.}\)</span> Si <span class="process-math">\(b \in \langle g \rangle \cap K\text{,}\)</span> entonces <span class="process-math">\(bH \in \langle gH \rangle \cap K/H =  \{ H \}\)</span> y <span class="process-math">\(b \in \langle g \rangle \cap H = \{ e \}\text{.}\)</span> Concluimos que <span class="process-math">\(G = \langle g \rangle K\)</span> implica que <span class="process-math">\(G \cong \langle g \rangle \times K\text{.}\)</span>
 </div>
 </div></article></body>
 </html>

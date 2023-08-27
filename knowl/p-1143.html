@@ -11,17 +11,30 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
+<h3 class="heading"><span class="type">Párrafo</span></h3>
 <div class="para logical">
-<div class="para">Decripte cada uno de los siguientes mensajes <abbr class="acronym">RSA</abbr>  <span class="process-math">\(y\text{.}\)</span>
+<div class="para">Un criptosistema sería más seguro si una letra del texto-cifrado pudiese representar más de una letra del texto-claro.  Para dar un ejemplo de este tipo de criptosistema, llamado <dfn class="terminology">criptosistema polialfabético</dfn>, generalizaremos los códigos afines usando matrices. La idea funciona básicamente como antes; sin embargo, en lugar de encriptar una letra a la vez, encriptaremos pares de letras.  Podemo almacenar un par de letras <span class="process-math">\(p_1\)</span> y <span class="process-math">\(p_2\)</span> en un vector</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{\mathbf p} = 
+\begin{pmatrix}
+p_1 \\ p_2
+\end{pmatrix}\text{.}
+\end{equation*}
 </div>
-<ol class="lower-alpha">
-<li><div class="para"><span class="process-math">\(\displaystyle n = 3551, D = 1997, y = 2791\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle n = 5893, D = 81, y = 34\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle n = 120979, D = 27331, y = 112135\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle n = 79403, D = 671, y = 129381\)</span></div></li>
-</ol>
+<div class="para">Sea <span class="process-math">\(A\)</span> una matriz invertible de <span class="process-math">\(2 \times 2\)</span> con coeficientes en <span class="process-math">\({\mathbb Z}_{26}\text{.}\)</span> Podemos definir una función encriptadora como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f({\mathbf p}) = A {\mathbf p} + {\mathbf b}\text{,}
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-crypt.html#p-1143" class="internal">en contexto</a></span>
+<div class="para">donde <span class="process-math">\({\mathbf b}\)</span> es un vector columna fijo y las operaciones matriciales se llevan a cabo en <span class="process-math">\({\mathbb Z}_{26}\text{.}\)</span> La función decriptadora debe ser</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^{-1}({\mathbf p}) = A^{-1} {\mathbf p} - A^{-1} {\mathbf b}\text{.}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="crypt-section-private-key.html#Edq" class="internal">en contexto</a></span>
 </body>
 </html>

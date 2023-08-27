@@ -11,17 +11,22 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Párrafo</span></h5>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Sean <span class="process-math">\(n_1, \ldots, n_k\)</span> enteros positivos. Entonces</div>
+<div class="para">Si bien <span class="process-math">\(S_3\)</span> y <span class="process-math">\({\mathbb Z}_6\)</span> poseen el mismo número de elementos, podríamos sospechar que no son isomorfos, pues <span class="process-math">\({\mathbb Z}_6\)</span> es abeliano y  <span class="process-math">\(S_3\)</span> es no abeliano.  Para demostrar que esto es así, supongamos que <span class="process-math">\(\phi : {\mathbb Z}_6 \rightarrow  S_3\)</span> es un isomorfismo.  Sean <span class="process-math">\(a , b \in S_3\)</span> dos elementos tales que <span class="process-math">\(ab \neq ba\text{.}\)</span>  Como <span class="process-math">\(\phi\)</span> es un isomorfismo, existen elementos <span class="process-math">\(m\)</span> y <span class="process-math">\(n\)</span> en <span class="process-math">\({\mathbb Z}_6\)</span> tales que</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\prod_{i=1}^k {\mathbb Z}_{n_i} \cong {\mathbb Z}_{n_1 \cdots n_k}
+\phi( m )  = a \quad \text{y} \quad \phi( n )  = b\text{.}
 \end{equation*}
 </div>
-<div class="para">si y solo si <span class="process-math">\(\gcd( n_i, n_j) =1\)</span> para todo <span class="process-math">\(i \neq j\text{.}\)</span>
+<div class="para">Pero,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+ab = \phi(m ) \phi(n) = \phi(m + n) = \phi(n + m) = \phi(n ) \phi(m) = ba\text{,}
+\end{equation*}
 </div>
+<div class="para">lo que contradice el hecho de que <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> no conmutan.</div>
 </div>
-<span class="incontext"><a href="section-direct-products.html#p-1464" class="internal">en contexto</a></span>
+<span class="incontext"><a href="isomorph-section-definitions.html#oCK" class="internal">en contexto</a></span>
 </body>
 </html>

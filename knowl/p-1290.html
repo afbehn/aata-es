@@ -12,8 +12,29 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Párrafo</span></h5>
-<div class="para">En la Tabla <a href="" class="xref" data-knowl="./knowl/table-cosets-of-c.html" title="Cuadro 8.4.6">8.4.6</a>, note que hemos elegido un representante de peso mínimo para cada clase.  Estos representantes son líderes de clase. Ahora supongamos que recibimos la palabra <span class="process-math">\({\mathbf r} = (01111)\text{.}\)</span> Para decodificar <span class="process-math">\({\mathbf r}\text{,}\)</span> lo encontramos en la clase <span class="process-math">\((00010) + C\text{;}\)</span> luego, la palabra del código originalmente trasmitida debe haber sido <span class="process-math">\((01101) = (01111) + (00010)\text{.}\)</span>
+<div class="para logical">
+<div class="para">Sea <span class="process-math">\(C\)</span> el código dado por la matriz</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H =
+\begin{pmatrix}
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1
+\end{pmatrix}\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="section-efficient-decoding.html#p-1290" class="internal">en contexto</a></span>
+<div class="para">Supongamos que se recibe la <span class="process-math">\(6\)</span>-tupla <span class="process-math">\({\mathbf x} = (010011)^\transpose\text{.}\)</span> Es simplemente cuestión de multiplicar matrices para determinar si <span class="process-math">\({\mathbf x}\)</span> está o no en el código. Como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H{\mathbf x} =
+\begin{pmatrix} 
+0 \\ 1 \\ 1
+\end{pmatrix}\text{,}
+\end{equation*}
+</div>
+<div class="para">la palabra recibida no está en el código.  Debemos intentar corregirla o pedir que sea transmitida nuevamente.</div>
+</div>
+<span class="incontext"><a href="algcodes-section-linear-codes.html#nye" class="internal">en contexto</a></span>
 </body>
 </html>

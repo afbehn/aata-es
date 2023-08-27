@@ -11,9 +11,23 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">72 en <span class="process-math">\({\mathbb Z}_{240}\)</span>
+<h3 class="heading"><span class="type">Párrafo</span></h3>
+<div class="para logical">
+<div class="para">Calcular potencias grandes puede tomar mucho tiempo. Así como cualquiera puede calcular <span class="process-math">\(2^2\)</span> o <span class="process-math">\(2^8\text{,}\)</span> cualquiera sabe como calcular</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/crypt.html">
+\begin{equation*}
+2^{2^{1000000} }\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-cyclic.html#p-630" class="internal">en contexto</a></span>
+<div class="para">Sin embargo, tales número son tan grandes que no quisiéramos siquiera intentar hacer los cálculos; Más aún, después de cierto punto, el cálculo no sería realizable aunque tuviéramos a nuestra disposición todos los computadores del mundo. Incluso escribir la representación decimal de un número demasiado grande puede no ser práctico. Podría tener miles o incluso millones de dígitos. Sin embargo, si pudiéramos calcular algo como</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/crypt.html">
+\begin{equation*}
+2^{37398332 } \pmod{ 46389}\text{,}
+\end{equation*}
+</div>
+<div class="para">podríamos fácilmente escribir el resultado pues sería un número entre <span class="process-math">\(0\)</span> y <span class="process-math">\(46388\text{.}\)</span> Si queremos calcular potencias módulo <span class="process-math">\(n\)</span> rápida y eficientemente, deberemos ser astutos.<a href="" class="fn-knowl original" data-knowl="./knowl/fn-4-hidden.html" title="Nota a pie de página 4.3.1"><sup> 1 </sup></a>
+</div>
+</div>
+<span class="incontext"><a href="cyclic-section-method-of-repeated-squares.html#cVM" class="internal">en contexto</a></span>
 </body>
 </html>

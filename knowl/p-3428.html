@@ -12,7 +12,22 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">El polinomio <span class="process-math">\(r(x)=x^4+2x+2\)</span> es irreducible sobre los racionales (Criterio de Eisenstein con primo <span class="process-math">\(p=2\)</span>).  Construya un cuerpo de números que contenga una raíz de <span class="process-math">\(r(x)\text{.}\)</span>  Por el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-finite-extension.html" title="Teorema 21.1.15">21.1.15</a>, y la observación que le sigue, todo elemento de esta extensión finita es un número algebraico, y por ende satisface algún polinomio sobre el cuerpo base (es el polinomio que Sage produce con el método <code class="code-inline tex2jax_ignore">.minpoly()</code>).  Este ejercicio le mostrará cómo podemos usar álgebra lineal para determinar este polinomio minimal.</div>
-<span class="incontext"><a href="fields-sage-exercises.html#p-3428" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Considerando el caso de la intersección de una recta con un círculo, debemos determinar la naturaleza de las soluciones del sistema de ecuaciones</div>
+<div class="displaymath process-math">
+\begin{align*}
+a x + by + c &amp; = 0\\
+x^2 + y^2 + d x + e y + f &amp; = 0\text{.}
+\end{align*}
+</div>
+<div class="para">Si eliminamos <span class="process-math">\(y\)</span> de estas ecuaciones, obtenemos una ecuación de la forma <span class="process-math">\(Ax^2 + B x + C = 0\text{,}\)</span> con <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> y <span class="process-math">\(C\)</span> en <span class="process-math">\(F\text{.}\)</span> La coordenada <span class="process-math">\(x\)</span> del punto de intersección está dada por</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x = \frac{- B \pm \sqrt{B^2 - 4 A C} }{2 A}
+\end{equation*}
+</div>
+<div class="para">y está en  <span class="process-math">\(F( \sqrt{\alpha}\, )\text{,}\)</span> con <span class="process-math">\(\alpha = B^2 - 4 A C \gt 0\text{.}\)</span> Hemos demostrado el siguiente lema.</div>
+</div>
+<span class="incontext"><a href="fields-section-constructions.html#fCK" class="internal">en contexto</a></span>
 </body>
 </html>

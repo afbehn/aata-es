@@ -87,7 +87,7 @@ window.MathJax = {
   }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=012975021551273728005:y0h32vuqauw"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -103,19 +103,50 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.1.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runtime.6f0528865cd47dcd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.3a5641c4e1fe869e.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.cec40a61180efd41.css">
 </head>
-<body class="pretext book ignore-math">
+<body id="AATA" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/images/cover_aata_2017.png" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="cover/cover_aata_2022.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta:</span> <span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>[search-results-heading]: <span id="searchterms" class="searchterms"></span>
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Resultados de la búsqueda: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty" class="searchempty"><span>[no-search-results].</span></div>
+<div id="searchempty" class="searchempty"><span>Sin resultados.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Índice</span></button><a class="index-button button" href="index-1.html" title="Índice alfabético"><span class="name">Índice alfabético</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -220,8 +251,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-burnsides-counting-theorem.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="actions.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="actions-exercises-programming.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
-<div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-burnsides-counting-theorem.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="actions.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="actions-exercises-programming.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
@@ -244,31 +274,32 @@ window.MathJax = {
 <div class="toc-item"><a href="sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminares</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
+<div class="toc-item"><a href="sets-section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sets-section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
+<div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="sets-exercises.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Listas</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Listas de Enteros</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.5.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Listas</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Listas de Enteros</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.6.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -871,64 +902,64 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="exercises-actions"><h2 class="heading hide-type">
 <span class="type">Ejercicios</span> <span class="codenumber">14.4</span> <span class="title">Ejercicios</span>
 </h2>
-<article class="exercise exercise-like" id="exercise-467"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="para" id="p-2096">Los Ejemplos <a href="" class="xref" data-knowl="./knowl/example-actions-gl2.html" title="Ejemplo 14.1.1">14.1.1</a>–<a href="" class="xref" data-knowl="./knowl/example-actions-left-cosets.html" title="Ejemplo 14.1.5">14.1.5</a> en la primera sección del capítulo describen cada uno, una acción de un grupo <span class="process-math">\(G\)</span> en un conjunto <span class="process-math">\(X\text{,}\)</span> que dará lugar a una relación de equivalencia definida como <span class="process-math">\(G\)</span>-equivalencia. Para cada ejemplo, calcule las clases de equivalencia de la relación de equivalencia, las clases de <span class="process-math">\(G\)</span>-<dfn class="terminology">equivalencia</dfn>.</div>
+<article class="exercise exercise-like" id="exercise-472"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
+<div class="para" id="p-2102">Los Ejemplos <a href="" class="xref" data-knowl="./knowl/example-actions-gl2.html" title="Ejemplo 14.1.1">Ejemplo 14.1.1</a>–<a href="" class="xref" data-knowl="./knowl/example-actions-left-cosets.html" title="Ejemplo 14.1.5">Ejemplo 14.1.5</a> en la primera sección del capítulo describen cada uno, una acción de un grupo <span class="process-math">\(G\)</span> en un conjunto <span class="process-math">\(X\text{,}\)</span> que dará lugar a una relación de equivalencia definida como <span class="process-math">\(G\)</span>-equivalencia. Para cada ejemplo, calcule las clases de equivalencia de la relación de equivalencia, las clases de <span class="process-math">\(G\)</span>-<dfn class="terminology">equivalencia</dfn>.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-123" id="hint-123"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-123"><div class="hint solution-like"><div class="para" id="p-2097">Ejemplo <a href="" class="xref" data-knowl="./knowl/example-actions-gl2.html" title="Ejemplo 14.1.1">14.1.1</a>: <span class="process-math">\(0\text{,}\)</span> <span class="process-math">\({\mathbb R}^2 \setminus \{ 0 \}\text{.}\)</span> Ejemplo <a href="" class="xref" data-knowl="./knowl/example-actions-d4.html" title="Ejemplo 14.1.2">14.1.2</a>: <span class="process-math">\(X = \{ 1, 2, 3, 4 \}\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-123" id="hint-123"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-123"><div class="hint solution-like"><div class="para" id="p-2103">Ejemplo <a href="" class="xref" data-knowl="./knowl/example-actions-gl2.html" title="Ejemplo 14.1.1">Ejemplo 14.1.1</a>: <span class="process-math">\(0\text{,}\)</span> <span class="process-math">\({\mathbb R}^2 \setminus \{ 0 \}\text{.}\)</span> Ejemplo <a href="" class="xref" data-knowl="./knowl/example-actions-d4.html" title="Ejemplo 14.1.2">Ejemplo 14.1.2</a>: <span class="process-math">\(X = \{ 1, 2, 3, 4 \}\text{.}\)</span>
 </div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-actions-permutation"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="para logical" id="p-2098">
+<div class="para logical" id="p-2104">
 <div class="para">Calcule todos los <span class="process-math">\(X_g\)</span> y todos los <span class="process-math">\(G_x\)</span> para cada uno de los siguientes grupos de permutaciones.</div>
 <ol class="lower-alpha">
-<li id="li-475"><div class="para" id="p-2099">
+<li id="li-475"><div class="para" id="p-2105">
 <span class="process-math">\(X= \{1, 2, 3\}\text{,}\)</span> <span class="process-math">\(G=S_3=\{(1), (12), (13), (23), (123), (132)  \}\)</span>
 </div></li>
-<li id="li-476"><div class="para" id="p-2100">
+<li id="li-476"><div class="para" id="p-2106">
 <span class="process-math">\(X = \{1, 2, 3, 4, 5, 6\}\text{,}\)</span> <span class="process-math">\(G = \{(1), (12), (345), (354), (12)(345), (12)(354)  \}\)</span>
 </div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-124" id="hint-124"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-124"><div class="hint solution-like"><div class="para" id="p-2101">(a) <span class="process-math">\(X_{(1)} = \{1, 2, 3  \}\text{,}\)</span> <span class="process-math">\(X_{(12)} = \{3 \}\text{,}\)</span> <span class="process-math">\(X_{(13)} = \{ 2 \}\text{,}\)</span> <span class="process-math">\(X_{(23)} = \{1 \}\text{,}\)</span> <span class="process-math">\(X_{(123)} = X_{(132)} = \emptyset\text{.}\)</span> <span class="process-math">\(G_1 = \{ (1), (23) \}\text{,}\)</span> <span class="process-math">\(G_2 = \{(1), (13) \}\text{,}\)</span> <span class="process-math">\(G_3 = \{ (1), (12)\}\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-124" id="hint-124"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-124"><div class="hint solution-like"><div class="para" id="p-2107">(a) <span class="process-math">\(X_{(1)} = \{1, 2, 3  \}\text{,}\)</span> <span class="process-math">\(X_{(12)} = \{3 \}\text{,}\)</span> <span class="process-math">\(X_{(13)} = \{ 2 \}\text{,}\)</span> <span class="process-math">\(X_{(23)} = \{1 \}\text{,}\)</span> <span class="process-math">\(X_{(123)} = X_{(132)} = \emptyset\text{.}\)</span> <span class="process-math">\(G_1 = \{ (1), (23) \}\text{,}\)</span> <span class="process-math">\(G_2 = \{(1), (13) \}\text{,}\)</span> <span class="process-math">\(G_3 = \{ (1), (12)\}\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-469"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="para" id="p-2102">Calcule la clases de <span class="process-math">\(G\)</span>-equivalençia de <span class="process-math">\(X\)</span> para cada uno de los <span class="process-math">\(G\)</span>-conjuntos en el Ejercicio <a href="" class="xref" data-knowl="./knowl/exercise-actions-permutation.html" title="Ejercicio 14.4.2">14.4.2</a>. Para cada <span class="process-math">\(x \in X\)</span> verifique que <span class="process-math">\(|G|=|{\mathcal O}_x| \cdot |G_x|\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-474"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="para" id="p-2108">Calcule la clases de <span class="process-math">\(G\)</span>-equivalençia de <span class="process-math">\(X\)</span> para cada uno de los <span class="process-math">\(G\)</span>-conjuntos en el Ejercicio <a href="" class="xref" data-knowl="./knowl/exercise-actions-permutation.html" title="Ejercicio 14.4.2">Ejercicio 14.4.2</a>. Para cada <span class="process-math">\(x \in X\)</span> verifique que <span class="process-math">\(|G|=|{\mathcal O}_x| \cdot |G_x|\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-125" id="hint-125"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-125"><div class="hint solution-like"><div class="para" id="p-2103">(a) <span class="process-math">\({\mathcal O}_1 = {\mathcal O}_2 = {\mathcal O}_3 = \{ 1, 2, 3\}\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-125" id="hint-125"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-125"><div class="hint solution-like"><div class="para" id="p-2109">(a) <span class="process-math">\({\mathcal O}_1 = {\mathcal O}_2 = {\mathcal O}_3 = \{ 1, 2, 3\}\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-470"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para logical" id="p-2104">
+</div></article><article class="exercise exercise-like" id="exercise-475"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="para logical" id="p-2110">
 <div class="para">Sea <span class="process-math">\(G\)</span> el grupo aditivo de los números reales. Considere la acción de <span class="process-math">\(\theta \in G\)</span> en el plano real <span class="process-math">\({\mathbb R}^2\)</span> dada por la rotación antihoraria del plano en <span class="process-math">\(\theta\)</span> radianes en torno al origen. Sea <span class="process-math">\(P\)</span> un punto del plano distinto del origen.</div>
 <ol class="lower-alpha">
-<li id="li-477"><div class="para" id="p-2105">Muestre que <span class="process-math">\({\mathbb R}^2\)</span> es un <span class="process-math">\(G\)</span>-conjunto.</div></li>
-<li id="li-478"><div class="para" id="p-2106">Describa geométricamente la órbita que contiene a <span class="process-math">\(P\text{.}\)</span>
+<li id="li-477"><div class="para" id="p-2111">Muestre que <span class="process-math">\({\mathbb R}^2\)</span> es un <span class="process-math">\(G\)</span>-conjunto.</div></li>
+<li id="li-478"><div class="para" id="p-2112">Describa geométricamente la órbita que contiene a <span class="process-math">\(P\text{.}\)</span>
 </div></li>
-<li id="li-479"><div class="para" id="p-2107">Encuentre el grupo <span class="process-math">\(G_P\text{.}\)</span>
+<li id="li-479"><div class="para" id="p-2113">Encuentre el grupo <span class="process-math">\(G_P\text{.}\)</span>
 </div></li>
 </ol>
-</div></article><article class="exercise exercise-like" id="exercise-471"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
-<div class="para logical" id="p-2108">
+</div></article><article class="exercise exercise-like" id="exercise-476"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+<div class="para logical" id="p-2114">
 <div class="para">Sea <span class="process-math">\(G =  A_4\)</span> y supongamos que <span class="process-math">\(G\)</span> actúa en sí mismo por conjugación; es decir, <span class="process-math">\((g,h)~\mapsto~ghg^{-1}\text{.}\)</span>
 </div>
 <ol class="lower-alpha">
-<li id="li-480"><div class="para" id="p-2109">Determine las clases de conjugación (órbitas) de cada elemento de <span class="process-math">\(G\text{.}\)</span>
+<li id="li-480"><div class="para" id="p-2115">Determine las clases de conjugación (órbitas) de cada elemento de <span class="process-math">\(G\text{.}\)</span>
 </div></li>
-<li id="li-481"><div class="para" id="p-2110">Determine los subgrupos de isotropía para todos los elementos de <span class="process-math">\(G\text{.}\)</span>
+<li id="li-481"><div class="para" id="p-2116">Determine los subgrupos de isotropía para todos los elementos de <span class="process-math">\(G\text{.}\)</span>
 </div></li>
 </ol>
-</div></article><article class="exercise exercise-like" id="exercise-472"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="para logical" id="p-2111">
+</div></article><article class="exercise exercise-like" id="exercise-477"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+<div class="para logical" id="p-2117">
 <div class="para">Encuentre las clases de conjugación y las ecuaciones de clase para cada uno de los siguientes grupos.</div>
 <ol class="lower-alpha cols4">
-<li id="li-482"><div class="para" id="p-2112"><span class="process-math">\(\displaystyle S_4\)</span></div></li>
-<li id="li-483"><div class="para" id="p-2113"><span class="process-math">\(\displaystyle D_5\)</span></div></li>
-<li id="li-484"><div class="para" id="p-2114"><span class="process-math">\(\displaystyle {\mathbb Z}_9\)</span></div></li>
-<li id="li-485"><div class="para" id="p-2115"><span class="process-math">\(\displaystyle Q_8\)</span></div></li>
+<li id="li-482"><div class="para" id="p-2118"><span class="process-math">\(\displaystyle S_4\)</span></div></li>
+<li id="li-483"><div class="para" id="p-2119"><span class="process-math">\(\displaystyle D_5\)</span></div></li>
+<li id="li-484"><div class="para" id="p-2120"><span class="process-math">\(\displaystyle {\mathbb Z}_9\)</span></div></li>
+<li id="li-485"><div class="para" id="p-2121"><span class="process-math">\(\displaystyle Q_8\)</span></div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-126" id="hint-126"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-126"><div class="hint solution-like"><div class="para logical" id="p-2116">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-126" id="hint-126"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-126"><div class="hint solution-like"><div class="para logical" id="p-2122">
 <div class="para">Las clases de conjugación para <span class="process-math">\(S_4\)</span> son</div>
 <div class="displaymath process-math" id="md-141">
 \begin{gather*}
@@ -943,31 +974,31 @@ window.MathJax = {
 <div class="para">La ecuación de clase es <span class="process-math">\(1 + 3 + 6 + 6 + 8 = 24\text{.}\)</span>
 </div>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-473"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="para" id="p-2117">Escriba la ecuación de clase para <span class="process-math">\(S_5\)</span> y para <span class="process-math">\(A_5\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-474"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
-<div class="para" id="p-2118">¿De cuántas formas es posible colorear los vértices de un cuadrado usando tres colores?</div>
+</div></article><article class="exercise exercise-like" id="exercise-478"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="para" id="p-2123">Escriba la ecuación de clase para <span class="process-math">\(S_5\)</span> y para <span class="process-math">\(A_5\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-479"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="para" id="p-2124">¿De cuántas formas es posible colorear los vértices de un cuadrado usando tres colores?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-127" id="hint-127"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-127"><div class="hint solution-like"><div class="para" id="p-2119"><span class="process-math">\((3^4 + 3^1 + 3^2 + 3^1 + 3^2 + 3^2 + 3^3 + 3^3)/8 = 21\text{.}\)</span></div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-475"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
-<div class="para" id="p-2120">¿De cuántas formas es posible colorear los vértices de un triángulo equilátero usando tres colores?</div></article><article class="exercise exercise-like" id="exercise-476"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
-<div class="para" id="p-2121">Encuentre el número de formas diferentes de poner los números del 1 al 6 en las seis caras de un cubo (cada número debe aparecer en exactamente una cara).</div></article><article class="exercise exercise-like" id="exercise-477"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
-<div class="para" id="p-2122">¿De cuántas formas es posible colorear las caras de un cubo usando tres colores?</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-127" id="hint-127"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-127"><div class="hint solution-like"><div class="para" id="p-2125"><span class="process-math">\((3^4 + 3^1 + 3^2 + 3^1 + 3^2 + 3^2 + 3^3 + 3^3)/8 = 21\text{.}\)</span></div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-480"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para" id="p-2126">¿De cuántas formas es posible colorear los vértices de un triángulo equilátero usando tres colores?</div></article><article class="exercise exercise-like" id="exercise-481"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
+<div class="para" id="p-2127">Encuentre el número de formas diferentes de poner los números del 1 al 6 en las seis caras de un cubo (cada número debe aparecer en exactamente una cara).</div></article><article class="exercise exercise-like" id="exercise-482"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
+<div class="para" id="p-2128">¿De cuántas formas es posible colorear las caras de un cubo usando tres colores?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-128" id="hint-128"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-128"><div class="hint solution-like"><div class="para" id="p-2123">El grupo de movimientos rígidos del cubo puede ser descrito por las permutaciones permisibles de sus seis caras y es isomorfo a <span class="process-math">\(S_4\text{.}\)</span>  Están la identidad, 6 permutaciones con la estructura <span class="process-math">\((abcd)\)</span> que corresponden a cuartos de vuelta, 3 permutaciones con la estructura <span class="process-math">\((ab)(cd)\)</span> que corresponden a medias vueltas,  6 permutaciones con la estructura <span class="process-math">\((ab)(cd)(ef)\)</span> que corresponden a rotar el cubo en torno a los centros de aristas opuestas, y 8 permutaciones con la estructura <span class="process-math">\((abc)(def)\)</span> que corresponden a rotar el cubo en torno a vértices opuestos.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-478"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
-<div class="para" id="p-2124">Considere 12 varillas metálicas de igual longitud unidas para formar el equeleto de un cubo. Las varillas pueden ser de plata o de cobre. ¿De cuántas formas se puede construir este cubo?</div></article><article class="exercise exercise-like" id="exercise-479"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
-<div class="para" id="p-2125">¿De cuántas formas es posible colorear los ocho vértices de un cubo usando tres colores?</div></article><article class="exercise exercise-like" id="exercise-480"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
-<div class="para" id="p-2126">Cada una de las caras de un tetraedro regular puede ser pintada roja o blanca.  Salvo rotaciones, ¿de cuántas formas diferentes puede ser pintado el tetraedro?</div></article><article class="exercise exercise-like" id="exercise-481"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
-<div class="para" id="p-2127">¿De cuántas formas es posible colorear los vértices de un hexágono regular usando dos colores?</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-128" id="hint-128"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-128"><div class="hint solution-like"><div class="para" id="p-2129">El grupo de movimientos rígidos del cubo puede ser descrito por las permutaciones permisibles de sus seis caras y es isomorfo a <span class="process-math">\(S_4\text{.}\)</span>  Están la identidad, 6 permutaciones con la estructura <span class="process-math">\((abcd)\)</span> que corresponden a cuartos de vuelta, 3 permutaciones con la estructura <span class="process-math">\((ab)(cd)\)</span> que corresponden a medias vueltas,  6 permutaciones con la estructura <span class="process-math">\((ab)(cd)(ef)\)</span> que corresponden a rotar el cubo en torno a los centros de aristas opuestas, y 8 permutaciones con la estructura <span class="process-math">\((abc)(def)\)</span> que corresponden a rotar el cubo en torno a vértices opuestos.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-483"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
+<div class="para" id="p-2130">Considere 12 varillas metálicas de igual longitud unidas para formar el equeleto de un cubo. Las varillas pueden ser de plata o de cobre. ¿De cuántas formas se puede construir este cubo?</div></article><article class="exercise exercise-like" id="exercise-484"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
+<div class="para" id="p-2131">¿De cuántas formas es posible colorear los ocho vértices de un cubo usando tres colores?</div></article><article class="exercise exercise-like" id="exercise-485"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
+<div class="para" id="p-2132">Cada una de las caras de un tetraedro regular puede ser pintada roja o blanca.  Salvo rotaciones, ¿de cuántas formas diferentes puede ser pintado el tetraedro?</div></article><article class="exercise exercise-like" id="exercise-486"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
+<div class="para" id="p-2133">¿De cuántas formas es posible colorear los vértices de un hexágono regular usando dos colores?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-129" id="hint-129"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-129"><div class="hint solution-like"><div class="para" id="p-2128"><span class="process-math">\((1 \cdot 2^6 + 3 \cdot 2^4 + 4 \cdot 2^3 + 2 \cdot 2^2 + 2 \cdot 2^1)/12 = 13\text{.}\)</span></div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-482"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
-<div class="para logical" id="p-2129">
-<div class="para">Una molécula de benceno está compuesta de 6 átomos de carbono y 6 átomos de hidrógeno, unidos en forma hexagonal como se muestra en la Figura <a href="" class="xref" data-knowl="./knowl/figure-exercise-benzene.html" title="Figura 14.4.1">14.4.1</a>.</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-129" id="hint-129"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-129"><div class="hint solution-like"><div class="para" id="p-2134"><span class="process-math">\((1 \cdot 2^6 + 3 \cdot 2^4 + 4 \cdot 2^3 + 2 \cdot 2^2 + 2 \cdot 2^1)/12 = 13\text{.}\)</span></div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-487"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
+<div class="para logical" id="p-2135">
+<div class="para">Una molécula de benceno está compuesta de 6 átomos de carbono y 6 átomos de hidrógeno, unidos en forma hexagonal como se muestra en la Figura <a href="" class="xref" data-knowl="./knowl/figure-exercise-benzene.html" title="Figura 14.4.1">Figura 14.4.1</a>.</div>
 <ol class="lower-alpha">
-<li id="li-486"><div class="para" id="p-2130">¿Cuántos compuestos diferentes se pueden formar reemplazando uno o más de los átomos de hidrógeno por un átomo de cloro?</div></li>
-<li id="li-487"><div class="para" id="p-2131">Encuentre el número de compuestos químicos que se pueden formar reemplazando tres de los seis átomos de hidrógeno en un anillo de benceno ppor un radical <span class="process-math">\(CH_3\text{.}\)</span>
+<li id="li-486"><div class="para" id="p-2136">¿Cuántos compuestos diferentes se pueden formar reemplazando uno o más de los átomos de hidrógeno por un átomo de cloro?</div></li>
+<li id="li-487"><div class="para" id="p-2137">Encuentre el número de compuestos químicos que se pueden formar reemplazando tres de los seis átomos de hidrógeno en un anillo de benceno ppor un radical <span class="process-math">\(CH_3\text{.}\)</span>
 </div></li>
 </ol>
 </div> <figure class="figure figure-like" id="figure-exercise-benzene"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;">
@@ -991,30 +1022,30 @@ window.MathJax = {
 					
 
 				</div>
-<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">14.4.1<span class="period">.</span></span><span class="space"> </span>Un anillo de benceno</figcaption></figure></article><article class="exercise exercise-like" id="exercise-483"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
-<div class="para" id="p-2132">¿Cuántas clases de equivalencia de funciones de conmutación existen si las variables de entrada <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> y <span class="process-math">\(x_3\)</span> se pueden permutar usando cualquier elemento de <span class="process-math">\(S_3\text{?}\)</span> ¿Si la variables de entrada <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> <span class="process-math">\(x_3\text{,}\)</span> y <span class="process-math">\(x_4\)</span> se pueden permutar usando cualquier elemento de <span class="process-math">\(S_4\text{?}\)</span>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">14.4.1<span class="period">.</span></span><span class="space"> </span>Un anillo de benceno</figcaption></figure></article><article class="exercise exercise-like" id="exercise-488"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
+<div class="para" id="p-2138">¿Cuántas clases de equivalencia de funciones de conmutación existen si las variables de entrada <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> y <span class="process-math">\(x_3\)</span> se pueden permutar usando cualquier elemento de <span class="process-math">\(S_3\text{?}\)</span> ¿Si la variables de entrada <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> <span class="process-math">\(x_3\text{,}\)</span> y <span class="process-math">\(x_4\)</span> se pueden permutar usando cualquier elemento de <span class="process-math">\(S_4\text{?}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-130" id="hint-130"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-130"><div class="hint solution-like"><div class="para" id="p-2133"><span class="process-math">\((1 \cdot 2^8 + 3 \cdot 2^6 + 2 \cdot 2^4)/6 = 80\text{.}\)</span></div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-484"><h3 class="heading"><span class="codenumber">18<span class="period">.</span></span></h3>
-<div class="para" id="p-2134">¿Cuántas clases de equivalencia de funciones de conmutación existen si las variables de entrada <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> <span class="process-math">\(x_3\text{,}\)</span> y <span class="process-math">\(x_4\)</span> se pueden permutar usando cualquier elemento del subgrupo de <span class="process-math">\(S_4\)</span> generado por la permutación <span class="process-math">\((x_1 x_2 x_3 x_4)\text{?}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-485"><h3 class="heading"><span class="codenumber">19<span class="period">.</span></span></h3>
-<div class="para" id="p-2135">Una corbata a rayas tiene 12 bandas de color. Cada banda puede ser coloreada con un de cuatro posibles colores.  ¿Cuántas corbatas con coloreados diferentes existen?</div></article><article class="exercise exercise-like" id="exercise-486"><h3 class="heading"><span class="codenumber">20<span class="period">.</span></span></h3>
-<div class="para" id="p-2136">Un grupo actúa <dfn class="terminology">fielmente</dfn> en un <span class="process-math">\(G\)</span>-conjunto <span class="process-math">\(X\)</span> si la identidad es el único elemento de <span class="process-math">\(G\)</span> que deja fijo todos los elementos de <span class="process-math">\(X\text{.}\)</span> Muestre que <span class="process-math">\(G\)</span> actúa fielmente en <span class="process-math">\(X\)</span> si y solo si no existen dos elementos distintos de <span class="process-math">\(G\)</span> que actúen de la misma forma en todos los elementos de <span class="process-math">\(X\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-487"><h3 class="heading"><span class="codenumber">21<span class="period">.</span></span></h3>
-<div class="para" id="p-2137">Sea <span class="process-math">\(p\)</span> un primo. Muestre que el número de grupos abelianos diferentes de orden <span class="process-math">\(p^n\)</span> (salvo isomorfismo) es el mismo que el número de clases de conjugación en <span class="process-math">\(S_n\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-130" id="hint-130"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-130"><div class="hint solution-like"><div class="para" id="p-2139"><span class="process-math">\((1 \cdot 2^8 + 3 \cdot 2^6 + 2 \cdot 2^4)/6 = 80\text{.}\)</span></div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-489"><h3 class="heading"><span class="codenumber">18<span class="period">.</span></span></h3>
+<div class="para" id="p-2140">¿Cuántas clases de equivalencia de funciones de conmutación existen si las variables de entrada <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> <span class="process-math">\(x_3\text{,}\)</span> y <span class="process-math">\(x_4\)</span> se pueden permutar usando cualquier elemento del subgrupo de <span class="process-math">\(S_4\)</span> generado por la permutación <span class="process-math">\((x_1 x_2 x_3 x_4)\text{?}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-490"><h3 class="heading"><span class="codenumber">19<span class="period">.</span></span></h3>
+<div class="para" id="p-2141">Una corbata a rayas tiene 12 bandas de color. Cada banda puede ser coloreada con un de cuatro posibles colores.  ¿Cuántas corbatas con coloreados diferentes existen?</div></article><article class="exercise exercise-like" id="exercise-491"><h3 class="heading"><span class="codenumber">20<span class="period">.</span></span></h3>
+<div class="para" id="p-2142">Un grupo actúa <dfn class="terminology">fielmente</dfn> en un <span class="process-math">\(G\)</span>-conjunto <span class="process-math">\(X\)</span> si la identidad es el único elemento de <span class="process-math">\(G\)</span> que deja fijo todos los elementos de <span class="process-math">\(X\text{.}\)</span> Muestre que <span class="process-math">\(G\)</span> actúa fielmente en <span class="process-math">\(X\)</span> si y solo si no existen dos elementos distintos de <span class="process-math">\(G\)</span> que actúen de la misma forma en todos los elementos de <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-492"><h3 class="heading"><span class="codenumber">21<span class="period">.</span></span></h3>
+<div class="para" id="p-2143">Sea <span class="process-math">\(p\)</span> un primo. Muestre que el número de grupos abelianos diferentes de orden <span class="process-math">\(p^n\)</span> (salvo isomorfismo) es el mismo que el número de clases de conjugación en <span class="process-math">\(S_n\text{.}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-actions-centralizer"><h3 class="heading"><span class="codenumber">22<span class="period">.</span></span></h3>
-<div class="para" id="p-2138">Sea <span class="process-math">\(a \in G\text{.}\)</span> Muestre que para cualquier <span class="process-math">\(g \in G\text{,}\)</span> <span class="process-math">\(gC(a) g^{-1} = C(gag^{-1})\text{.}\)</span>
+<div class="para" id="p-2144">Sea <span class="process-math">\(a \in G\text{.}\)</span> Muestre que para cualquier <span class="process-math">\(g \in G\text{,}\)</span> <span class="process-math">\(gC(a) g^{-1} = C(gag^{-1})\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-131" id="hint-131"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-131"><div class="hint solution-like"><div class="para" id="p-2139">Use el hecho de que <span class="process-math">\(x \in g C(a) g^{-1}\)</span> si y solo si <span class="process-math">\(g^{-1}x g \in C(a)\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-131" id="hint-131"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-131"><div class="hint solution-like"><div class="para" id="p-2145">Use el hecho de que <span class="process-math">\(x \in g C(a) g^{-1}\)</span> si y solo si <span class="process-math">\(g^{-1}x g \in C(a)\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-489"><h3 class="heading"><span class="codenumber">23<span class="period">.</span></span></h3>
-<div class="para" id="p-2140">Sea <span class="process-math">\(G\)</span> un grupo no-abeliano con <span class="process-math">\(|G| = p^n\)</span> donde <span class="process-math">\(p\)</span> es un número primo. Demuestre que <span class="process-math">\(|Z(G)| \lt p^{n - 1}\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-490"><h3 class="heading"><span class="codenumber">24<span class="period">.</span></span></h3>
-<div class="para" id="p-2141">Sea <span class="process-math">\(G\)</span> un grupo de orden <span class="process-math">\(p^n\)</span> donde <span class="process-math">\(p\)</span> es primo y <span class="process-math">\(X\)</span> es un <span class="process-math">\(G\)</span>-conjunto finito. Si <span class="process-math">\(X_G = \{ x \in X : gx = x \text{ para todo }g \in G \}\)</span> es el conjunto de los elementos en <span class="process-math">\(X\)</span> fijos por la acción del grupo, entonces demuestre que <span class="process-math">\(|X| \equiv |X_G| \pmod{ p}\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-491"><h3 class="heading"><span class="codenumber">25<span class="period">.</span></span></h3>
-<div class="para" id="p-2142">Si <span class="process-math">\(G\)</span> es un grupo de orden <span class="process-math">\(p^n\text{,}\)</span> donde <span class="process-math">\(p\)</span> es primo y <span class="process-math">\(n \geq 2\text{,}\)</span> muestre que <span class="process-math">\(G\)</span> tiene un subgrupo propio de orden <span class="process-math">\(p\text{.}\)</span>  Si <span class="process-math">\(n \geq 3\text{,}\)</span> ¿es cierto que <span class="process-math">\(G\)</span> tendrá un subgrupo propio de orden <span class="process-math">\(p^2\text{?}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-494"><h3 class="heading"><span class="codenumber">23<span class="period">.</span></span></h3>
+<div class="para" id="p-2146">Sea <span class="process-math">\(G\)</span> un grupo no-abeliano con <span class="process-math">\(|G| = p^n\)</span> donde <span class="process-math">\(p\)</span> es un número primo. Demuestre que <span class="process-math">\(|Z(G)| \lt p^{n - 1}\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-495"><h3 class="heading"><span class="codenumber">24<span class="period">.</span></span></h3>
+<div class="para" id="p-2147">Sea <span class="process-math">\(G\)</span> un grupo de orden <span class="process-math">\(p^n\)</span> donde <span class="process-math">\(p\)</span> es primo y <span class="process-math">\(X\)</span> es un <span class="process-math">\(G\)</span>-conjunto finito. Si <span class="process-math">\(X_G = \{ x \in X : gx = x \text{ para todo }g \in G \}\)</span> es el conjunto de los elementos en <span class="process-math">\(X\)</span> fijos por la acción del grupo, entonces demuestre que <span class="process-math">\(|X| \equiv |X_G| \pmod{ p}\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-496"><h3 class="heading"><span class="codenumber">25<span class="period">.</span></span></h3>
+<div class="para" id="p-2148">Si <span class="process-math">\(G\)</span> es un grupo de orden <span class="process-math">\(p^n\text{,}\)</span> donde <span class="process-math">\(p\)</span> es primo y <span class="process-math">\(n \geq 2\text{,}\)</span> muestre que <span class="process-math">\(G\)</span> tiene un subgrupo propio de orden <span class="process-math">\(p\text{.}\)</span>  Si <span class="process-math">\(n \geq 3\text{,}\)</span> ¿es cierto que <span class="process-math">\(G\)</span> tendrá un subgrupo propio de orden <span class="process-math">\(p^2\text{?}\)</span>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-burnsides-counting-theorem.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="actions-exercises-programming.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a>
@@ -1023,13 +1054,5 @@ window.MathJax = {
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
-<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
-var sc_project=10568106;
-var sc_invisible=1;
-var sc_security="510ba080";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10568106/0/510ba080/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
 </body>
 </html>

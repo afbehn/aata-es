@@ -13,13 +13,21 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Recuerde el código de bloque <abbr class="acronym">BCH</abbr> <span class="process-math">\((15,7)\)</span> en el Ejemplo <a href="" class="xref" data-knowl="./knowl/example-finite-parity-check-x7-1.html" title="Ejemplo 22.2.6">22.2.6</a>.  Por el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-min-distance.html" title="Teorema 8.1.13">8.1.13</a>, este código es capaz de corregir dos errores. Supongamos que estos errores ocurren en los bits <span class="process-math">\(a_1\)</span> y <span class="process-math">\(a_2\text{.}\)</span> El polinomio localizador de errores es <span class="process-math">\(s(x) = (x + \omega^{a_1})(x + \omega^{a_2})\text{.}\)</span> Muestre que</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/example-finite-parity-check-x7-1.html ./knowl/theorem-min-distance.html">
+<div class="para">Procederemos por inducción en <span class="process-math">\(n\text{.}\)</span>  Podemos usar la fórmula del binomio (vea el Capí<a href="integers.html" class="internal" title="Capítulo 2: Los Enteros">Capítulo 2</a>, <a href="" class="xref" data-knowl="./knowl/integers-example-binomial-theorem.html" title="Ejemplo 2.1.4">Ejemplo 2.1.4</a>) para verificar el caso <span class="process-math">\(n = 1\text{;}\)</span> es decir,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/integers.html ./knowl/integers-example-binomial-theorem.html">
 \begin{equation*}
-s(x) = x^2 + s_1 x + \left( s_1^2 + \frac{s_3}{s_1} \right).
+(a + b)^p = \sum_{k = 0}^{p} \binom{p}{k} a^k b^{p - k}\text{.}
 \end{equation*}
 </div>
+<div class="para">Si <span class="process-math">\(0 \lt k \lt p\text{,}\)</span> entonces</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/integers.html ./knowl/integers-example-binomial-theorem.html">
+\begin{equation*}
+\binom{p}{k} = \frac{p!}{k!(p - k)!}
+\end{equation*}
 </div>
-<span class="incontext"><a href="finite-exercises-bch-codes.html#p-3555" class="internal">en contexto</a></span>
+<div class="para">debe ser divisible por <span class="process-math">\(p\text{,}\)</span> pues <span class="process-math">\(p\)</span> no puede dividir a <span class="process-math">\(k!(p - k)!\text{.}\)</span>  Note que <span class="process-math">\(D\)</span> es un dominio integral de característica <span class="process-math">\(p\text{,}\)</span> así es que todos los términos de la suma, salvo el primero y el último son cero.  Por lo tanto, <span class="process-math">\((a + b)^p = a^p + b^p\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="finite-section-field.html#LOg" class="internal">en contexto</a></span>
 </body>
 </html>

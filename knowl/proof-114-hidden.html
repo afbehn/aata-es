@@ -10,13 +10,49 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para">Primero supongamos que <span class="process-math">\(P\)</span> es un ideal en <span class="process-math">\(R\)</span> y que <span class="process-math">\(R/P\)</span> es un dominio integral.  Supongamos que <span class="process-math">\(ab \in P\text{.}\)</span> Si <span class="process-math">\(a + P\)</span> y <span class="process-math">\(b + P\)</span> son dos elementos de <span class="process-math">\(R/P\)</span> tales que <span class="process-math">\((a + P)(b + P) = 0 + P = P\text{,}\)</span> entonces <span class="process-math">\(a + P = P\)</span> o <span class="process-math">\(b + P = P\text{.}\)</span>  Esto quiere decir que <span class="process-math">\(a\)</span> está en <span class="process-math">\(P\)</span> o <span class="process-math">\(b\)</span> está en <span class="process-math">\(P\text{,}\)</span> lo que muestra que <span class="process-math">\(P\)</span> debe ser primo.</div> <div class="para logical">
-<div class="para">Recíprocamente, supongamos que <span class="process-math">\(P\)</span> es primo y</div>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">La ecuación <span class="process-math">\(x \equiv a \pmod{m}\)</span> tiene solución pues <span class="process-math">\(a + km\)</span> satisface la ecuación para todo <span class="process-math">\(k \in {\mathbb Z}\text{.}\)</span>  Debemos mostrar que existe un entero <span class="process-math">\(k_1\)</span> tal que</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(a + P)(b + P) = ab + P = 0 + P = P.
+a + k_1 m \equiv b \pmod{n}\text{.}
 \end{equation*}
 </div>
-<div class="para">Entonces <span class="process-math">\(ab \in P\text{.}\)</span> Si <span class="process-math">\(a \notin P\text{,}\)</span> entonces <span class="process-math">\(b\)</span> debe estar en <span class="process-math">\(P\)</span> por la definición de ideal primo; luego, <span class="process-math">\(b + P = 0 + P\)</span> y <span class="process-math">\(R/P\)</span> es un dominio integral.</div>
+<div class="para">Esto es equivalente a mostrar que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+k_1 m \equiv (b-a) \pmod{n}
+\end{equation*}
+</div>
+<div class="para">tiene solución para <span class="process-math">\(k_1\text{.}\)</span>  Como <span class="process-math">\(m\)</span> y <span class="process-math">\(n\)</span> son relativamente primos, existen enteros <span class="process-math">\(s\)</span> y <span class="process-math">\(t\)</span> tales que <span class="process-math">\(ms + nt = 1\text{.}\)</span> Concluimos que,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(b-a) ms = (b-a) -(b-a) nt\text{,}
+\end{equation*}
+</div>
+<div class="para">o</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[(b-a)s]m \equiv (b-a) \pmod{n}\text{.}
+\end{equation*}
+</div>
+<div class="para">Ahora sea <span class="process-math">\(k_1 = (b-a)s\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Para mostrar que dos soluciones cualquiera son congruentes módulo <span class="process-math">\(mn\text{,}\)</span> sean <span class="process-math">\(c_1\)</span> y <span class="process-math">\(c_2\)</span> dos soluciones del sistema.  Es decir,</div>
+<div class="displaymath process-math">
+\begin{align*}
+c_i &amp; \equiv  a \pmod{m}\\
+c_i &amp; \equiv  b \pmod{n}
+\end{align*}
+</div>
+<div class="para">para <span class="process-math">\(i = 1, 2\text{.}\)</span> Entonces</div>
+<div class="displaymath process-math">
+\begin{align*}
+c_2 &amp; \equiv  c_1 \pmod{m}\\
+c_2 &amp; \equiv  c_1 \pmod{n}\text{.}
+\end{align*}
+</div>
+<div class="para">por lo tanto, tanto <span class="process-math">\(m\)</span> como <span class="process-math">\(n\)</span> dividen a <span class="process-math">\(c_1 - c_2\text{.}\)</span> Concluimos que <span class="process-math">\(c_2 \equiv c_1 \pmod{mn}\text{.}\)</span>
+</div>
 </div></article></body>
 </html>

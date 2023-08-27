@@ -12,7 +12,14 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Por el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-finite-splitting-field.html" title="Teorema 22.1.6">22.1.6</a> sabemos que todos los cuerpos finitos de un orden dado son isomorfos y que los órdenes posibles se limitan a las potencias de primos.  Podemos usar el comando <code class="code-inline tex2jax_ignore">FiniteField()</code>, como antes, o uno equivalente más corto que es <code class="code-inline tex2jax_ignore">GF()</code>.  Opcionalmente, podemos especificar un polinomio irreducible para la construcción del cuerpo.  Podemos ver este polinomio como el generador del ideal principal de un anillo de polinomios, o lo podemos ver como una regla de “re-escritura” para las potencias del generador del cuerpo que nos permite multiplicar elementos y reformularlos como combinaciones lineales de potencias menores.</div>
-<span class="incontext"><a href="finite-sage.html#p-3558" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">El polinomio <span class="process-math">\(x^2 - 2\)</span> es separable sobre <span class="process-math">\({\mathbb Q}\)</span> pues se factoriza como <span class="process-math">\((x - \sqrt{2}\, )(x + \sqrt{2}\, )\text{.}\)</span> De hecho, <span class="process-math">\({\mathbb Q}(\sqrt{2}\, )\)</span> es una extensión separable de <span class="process-math">\({\mathbb Q}\text{.}\)</span>  Sea <span class="process-math">\(\alpha =  a + b \sqrt{2}\)</span> un elemento cualquiera en <span class="process-math">\({\mathbb Q}(\sqrt{2}\, )\text{.}\)</span> Si <span class="process-math">\(b = 0\text{,}\)</span> entonces <span class="process-math">\(\alpha\)</span> es una raíz de <span class="process-math">\(x - a\text{.}\)</span>  Si <span class="process-math">\(b \neq 0\text{,}\)</span> entonces <span class="process-math">\(\alpha\)</span> es la raíz del polinomio separable</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2 - 2 a x + a^2 - 2 b^2 = (x - (a + b \sqrt{2}\, ))(x - (a - b \sqrt{2}\, ))\text{.}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="finite-section-field.html#Ucz" class="internal">en contexto</a></span>
 </body>
 </html>

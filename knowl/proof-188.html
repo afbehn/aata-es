@@ -13,45 +13,64 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Demostración</span></h4>
 <div class="para logical">
-<div class="para">Procederemos por inducción en <span class="process-math">\(n\text{.}\)</span> Si <span class="process-math">\(n = 2\text{,}\)</span> entonces el determinante es <span class="process-math">\(\alpha_2 - \alpha_1\text{.}\)</span>  Supongamos demostrado el resultado para <span class="process-math">\(n  - 1\)</span> y consideremos el polinomio <span class="process-math">\(p(x)\)</span> definido por</div>
-<div class="displaymath process-math">
+<div class="para">Supongamos que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
 \begin{equation*}
-p(x) = \det
+g( \omega^r) = g(\omega^{r + 1}) = \cdots = g( \omega^{r + s - 1}) = 0\text{.}
+\end{equation*}
+</div>
+<div class="para">Sea <span class="process-math">\(f(x)\)</span> algún polinomio en <span class="process-math">\(C\)</span> con <span class="process-math">\(s\)</span> o menos coeficientes distintos de cero.  Podemos suponer que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{equation*}
+f(x) = a_{i_0} x^{i_0} + a_{i_1} x^{i_1} + \cdots + a_{i_{s - 1}} x^{i_{s - 1}}
+\end{equation*}
+</div>
+<div class="para">es algún polinomio en <span class="process-math">\(C\text{.}\)</span> Es suficiente con demostrar que todos los <span class="process-math">\(a_i\)</span> tienen que ser cero.  Como</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{equation*}
+g( \omega^r) = g(\omega^{r + 1}) = \cdots = g( \omega^{r + s - 1}) = 0
+\end{equation*}
+</div>
+<div class="para">y <span class="process-math">\(g(x)\)</span> divide a <span class="process-math">\(f(x)\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{equation*}
+f( \omega^r) = f(\omega^{r + 1}) = \cdots = f( \omega^{r + s - 1}) = 0\text{.}
+\end{equation*}
+</div>
+<div class="para">Equivalentemente, tenemos el siguiente sistema de ecuaciones:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{align*}
+a_{i_0} (\omega^r)^{i_0} + a_{i_1} (\omega^r)^{i_1} + \cdots + a_{i_{s - 1}} (\omega^r)^{i_{s - 1}} &amp; = 0\\
+a_{i_0} (\omega^{r + 1})^{i_0} + a_{i_1} (\omega^{r + 1})^{i_2} + \cdots + a_{i_{s-1}} (\omega^{r+1})^{i_{s-1}} &amp; = 0\\
+&amp; \vdots \\
+a_{i_0} (\omega^{r + s - 1})^{i_0} + a_{i_1} (\omega^{r + s - 1})^{i_1} + \cdots + a_{i_{s - 1}} (\omega^{r + s - 1})^{i_{s - 1}} &amp; = 0\text{.}
+\end{align*}
+</div>
+<div class="para">Por lo tanto, <span class="process-math">\((a_{i_0}, a_{i_1}, \ldots, a_{i_{s - 1}})\)</span> es una solución del sistema de ecuaciones lineales homogéneo</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{align*}
+(\omega^{i_0})^r x_0 + (\omega^{i_1})^r x_1 + \cdots + (\omega^{i_{s - 1}})^r x_{n - 1} &amp; = 0\\
+(\omega^{i_0})^{r + 1} x_0 + (\omega^{i_1})^{r + 1} x_1 + \cdots + (\omega^{i_{s - 1}})^{r + 1} x_{n - 1} &amp; = 0\\
+&amp; \vdots \\
+(\omega^{i_0})^{r + s - 1} x_0 + (\omega^{i_1})^{r + s - 1} x_1 + \cdots + (\omega^{i_{s - 1}})^{r + s - 1} x_{n - 1} &amp; = 0\text{.}
+\end{align*}
+</div>
+<div class="para">Pero este sistema tiene solución única, pues el determinante de la matriz</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{equation*}
 \begin{pmatrix}
-1              &amp; 1              &amp; \cdots &amp; 1              &amp; 1 \\
-\alpha_1       &amp; \alpha_2       &amp; \cdots &amp; \alpha_{n-1}   &amp; x \\
-\alpha_1^2     &amp; \alpha_2^2     &amp; \cdots &amp; \alpha_{n-1}^2 &amp; x^2 \\
-\vdots         &amp; \vdots         &amp; \ddots &amp; \vdots         &amp; \vdots \\
-\alpha_1^{n-1} &amp; \alpha_2^{n-1} &amp; \cdots &amp; \alpha_{n-1}^{n-1} &amp; x^{n-1}
-\end{pmatrix}.
+(\omega^{i_0})^r &amp; (\omega^{i_1})^r &amp; \cdots &amp; (\omega^{i_{s-1}})^r \\
+(\omega^{i_0})^{r+1} &amp; (\omega^{i_1})^{r+1} &amp; \cdots &amp;
+(\omega^{i_{s-1}})^{r+1} \\
+\vdots &amp; \vdots         &amp; \ddots &amp; \vdots \\
+(\omega^{i_0})^{r+s-1} &amp; (\omega^{i_1})^{r+s-1} &amp; \cdots &amp;
+(\omega^{i_{s-1}})^{r+s-1} 
+\end{pmatrix}
 \end{equation*}
 </div>
-<div class="para">Expandiendo este determinante por cofactores en la última columna, vemos que <span class="process-math">\(p(x)\)</span> es un polinomio de grado a lo más <span class="process-math">\(n-1\text{.}\)</span>  Además, las raíces de <span class="process-math">\(p(x)\)</span> son <span class="process-math">\(\alpha_1, \ldots, \alpha_{n-1}\text{,}\)</span> pues la sustitución de cualquiera de esos elementos en la última columna producirá una columna idéntica a otra columna de la matriz.  Recuerde que el determinante de una matriz es cero si esta tiene dos columnas idénticas. Por lo tanto,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-p(x) = (x - \alpha_1)(x - \alpha_2) \cdots (x - \alpha_{n-1}) \beta,
-\end{equation*}
+<div class="para">no es cero por el <a href="" class="xref" data-knowl="./knowl/finite-lemma-vandermode-det.html" title="Lema 22.2.7">Lema 22.2.7</a> y las propiedades básicas de los determinantes (Ejercicio). Por lo tanto, esta solución es <span class="process-math">\(a_{i_0} = a_{i_1} = \cdots = a_{i_{s - 1}} = 0\text{.}\)</span>
 </div>
-<div class="para">donde</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\beta = (-1)^{n + n} \det
-\begin{pmatrix}
-1              &amp; 1              &amp; \cdots &amp; 1 \\
-\alpha_1       &amp; \alpha_2       &amp; \cdots &amp; \alpha_{n-1} \\
-\alpha_1^2     &amp; \alpha_2^2     &amp; \cdots &amp; \alpha_{n-1}^2 \\
-\vdots         &amp; \vdots         &amp; \ddots &amp; \vdots \\
-\alpha_1^{n-2} &amp; \alpha_2^{n-2} &amp; \cdots &amp; \alpha_{n-1}^{n-2} 
-\end{pmatrix}.
-\end{equation*}
-</div>
-<div class="para">Por nuestra hipótesis de inducción,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\beta = (-1)^{n+n} \prod_{1 \leq j \lt i \leq n-1} (\alpha_i - \alpha_j).
-\end{equation*}
-</div>
-<div class="para">Si evaluamos en <span class="process-math">\(x = \alpha_n\text{,}\)</span> el resultados es una consecuencia inmediata.</div>
-</div></article><span class="incontext"><a href="section-poly-codes.html#proof-188" class="internal">en contexto</a></span>
+</div></article><span class="incontext"><a href="finite-section-poly-codes.html#pDm" class="internal">en contexto</a></span>
 </body>
 </html>

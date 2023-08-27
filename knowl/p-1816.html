@@ -13,55 +13,21 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Antes de estudiar grupos de matrices, debemos recordar algunos resultados básicos de álgebra lineal.  Una de las ideas fundamentales de álgebra lineal es la de una transformación lineal. Una <dfn class="terminology">transformación lineal</dfn> o <dfn class="terminology">función lineal</dfn> <span class="process-math">\(T : {\mathbb R}^n \rightarrow {\mathbb R}^m\)</span> es una función que respeta (o preserva) la suma de vectores y la multiplicación por escalares; es decir, para vectores <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\)</span> en <span class="process-math">\({\mathbb R}^n\)</span> y un escalar <span class="process-math">\(\alpha \in {\mathbb R}\text{,}\)</span>
-</div>
-<div class="displaymath process-math">
-\begin{align*}
-T({\mathbf x}+{\mathbf y}) &amp; = T({\mathbf x}) + T({\mathbf y})\\
-T(\alpha {\mathbf y}) &amp; = \alpha T({\mathbf y}).
-\end{align*}
-</div>
-<div class="para">Una matriz de <span class="process-math">\(m \times n\)</span> con coeficientes en <span class="process-math">\({\mathbb R}\)</span> representa una transformación lineal de <span class="process-math">\({\mathbb R}^n\)</span> a <span class="process-math">\({\mathbb R}^m\text{.}\)</span> Si escribimos vectores <span class="process-math">\({\mathbf x} = (x_1, \ldots, x_n)^{\rm t}\)</span> e <span class="process-math">\({\mathbf y} = (y_1, \ldots, y_n)^{\rm t}\)</span> en <span class="process-math">\({\mathbb R}^n\)</span> como matrices de una columna, entonces una matriz de <span class="process-math">\(m \times n\)</span>
-</div>
+<div class="para">
+<span class="process-math">\(\phi : GL_2 ({\mathbb R})   \rightarrow {\mathbb R}\)</span> definida como</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A
-=
+\phi
+\left(
 \begin{pmatrix}
-a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
-a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}
+a &amp; b \\
+c &amp; d
 \end{pmatrix}
+\right)
+= a + d
 \end{equation*}
 </div>
-<div class="para">envía a los vectores en  <span class="process-math">\({\mathbb R}^m\)</span> linealmente por multiplicación matricial.  Observe que si <span class="process-math">\(\alpha\)</span> es un número real,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A({\mathbf x} + {\mathbf y} ) 
-= 
-A {\mathbf x }+ A {\mathbf y} 
-\qquad \text{y} \qquad
-\alpha A {\mathbf x} 
-= 
-A ( \alpha {\mathbf x}),
-\end{equation*}
 </div>
-<div class="para">donde</div>
-<div class="displaymath process-math">
-\begin{equation*}
-{\mathbf x}
-=
-\begin{pmatrix}
-x_1 \\
-x_2 \\
-\vdots \\
-x_n
-\end{pmatrix}.
-\end{equation*}
-</div>
-<div class="para">Con frecuencia abreviaremos la matriz <span class="process-math">\(A\)</span> escribiendo <span class="process-math">\((a_{ij})\text{.}\)</span> </div>
-</div>
-<span class="incontext"><a href="section-matrix-groups.html#p-1816" class="internal">en contexto</a></span>
+<span class="incontext"><a href="homomorph-exercises.html#bUg" class="internal">en contexto</a></span>
 </body>
 </html>

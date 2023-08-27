@@ -12,14 +12,35 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Demostración</span></h4>
-<div class="para logical">
-<div class="para">Sabemos que  <span class="process-math">\(\deg p(x) = [F( \alpha ) : F ]\)</span> y <span class="process-math">\(\deg q(x) = [F( \beta ) : F ]\text{.}\)</span> Como <span class="process-math">\(F \subset F( \beta ) \subset F( \alpha )\text{,}\)</span>
-</div>
+<div class="para">(1) <span class="process-math">\(\Rightarrow\)</span> (2). Sea <span class="process-math">\(E\)</span> una extensión algebraica finita de <span class="process-math">\(F\text{.}\)</span>  Entonces <span class="process-math">\(E\)</span> es un espacio vectorial de dimensión finita sobre <span class="process-math">\(F\)</span> y hay una base que consiste de elementos <span class="process-math">\(\alpha_1, \ldots, \alpha_n\)</span> en <span class="process-math">\(E\)</span> tales que <span class="process-math">\(E = F(\alpha_1, \ldots, \alpha_n)\text{.}\)</span> Cada <span class="process-math">\(\alpha_i\)</span> es algebraico sobre <span class="process-math">\(F\)</span> por el  <a href="" class="xref" data-knowl="./knowl/fields-theorem-finite-extension.html" title="Teorema 21.1.15">Teorema 21.1.15</a>.</div> <div class="para logical">
+<div class="para">(2) <span class="process-math">\(\Rightarrow\)</span> (3). Supongamos que  <span class="process-math">\(E = F(\alpha_1, \ldots, \alpha_n)\text{,}\)</span> donde cada <span class="process-math">\(\alpha_i\)</span> es algebraico sobre <span class="process-math">\(F\text{.}\)</span> Entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
-[F( \alpha ) : F ]= [ F( \alpha ) : F( \beta ) ] [ F( \beta ) : F ].
+E = F(\alpha_1, \ldots, \alpha_n) \supset F(\alpha_1, \ldots, \alpha_{n - 1} ) \supset \cdots \supset F( \alpha_1 ) \supset F\text{,}
 \end{equation*}
 </div>
-</div></article><span class="incontext"><a href="section-extension-fields.html#proof-168" class="internal">en contexto</a></span>
+<div class="para">donde cada cuerpo <span class="process-math">\(F(\alpha_1, \ldots, \alpha_i)\)</span> es algebraico sobre <span class="process-math">\(F(\alpha_1, \ldots, \alpha_{i - 1})\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">(3) <span class="process-math">\(\Rightarrow\)</span> (1). Sea</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E = F(\alpha_1, \ldots, \alpha_n) \supset F(\alpha_1, \ldots, \alpha_{n - 1} ) \supset \cdots \supset F( \alpha_1 ) \supset F\text{,}
+\end{equation*}
+</div>
+<div class="para">donde cada cuerpo <span class="process-math">\(F(\alpha_1, \ldots, \alpha_i)\)</span> es algebraico sobre  <span class="process-math">\(F(\alpha_1, \ldots, \alpha_{i - 1})\text{.}\)</span> Como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F(\alpha_1, \ldots, \alpha_i) =  F(\alpha_1, \ldots, \alpha_{i - 1} )(\alpha_i)
+\end{equation*}
+</div>
+<div class="para">es una extensión simple y <span class="process-math">\(\alpha_i\)</span> es algebraico sobre <span class="process-math">\(F(\alpha_1, \ldots, \alpha_{i - 1})\text{,}\)</span> se sigue que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[ F(\alpha_1, \ldots, \alpha_i) : F(\alpha_1, \ldots, \alpha_{i - 1} )]
+\end{equation*}
+</div>
+<div class="para">es finita para cada <span class="process-math">\(i\text{.}\)</span> Por lo tanto, <span class="process-math">\([E : F]\)</span> es finita.</div>
+</div></article><span class="incontext"><a href="fields-section-extension-fields.html#Qtz" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -13,25 +13,21 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Sea</div>
+<div class="para">Para determinanr las capacidades de detección y corrección de errores de un código cíclico, necesitamos saber algo sobre determinantes.  Si <span class="process-math">\(\alpha_1, \ldots, \alpha_n\)</span> son elementos en un cuerpo <span class="process-math">\(F\text{,}\)</span> entonces la matriz de <span class="process-math">\(n \times n\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n
+\begin{pmatrix}
+1          &amp; 1          &amp; \cdots &amp; 1 \\
+\alpha_1   &amp; \alpha_2   &amp; \cdots &amp; \alpha_n \\
+\alpha_1^2 &amp; \alpha_2^2 &amp; \cdots &amp; \alpha_n^2 \\
+\vdots     &amp; \vdots     &amp; \ddots &amp; \vdots \\
+\alpha_1^{n-1} &amp; \alpha_2^{n-1} &amp; \cdots &amp; \alpha_n^{n-1} 
+\end{pmatrix}
 \end{equation*}
 </div>
-<div class="para">y supponga que <span class="process-math">\(\alpha \in E\)</span> es un cero de <span class="process-math">\(f(x)\text{.}\)</span> Entonces para <span class="process-math">\(\sigma \in G(E/F)\text{,}\)</span>
+<div class="para">se llama <dfn class="terminology">matriz de Vandermonde</dfn>. El determinante de esta matriz se llama <dfn class="terminology">determinante de Vandermonde</dfn>.  Necesitaremos el siguiente lema en nuestro estudio de los códigos cíclicos.</div>
 </div>
-<div class="displaymath process-math">
-\begin{align*}
-0 &amp; = \sigma( 0 )\\
-&amp; = \sigma( f( \alpha ))\\
-&amp; = \sigma(a_0 + a_1\alpha + a_2 \alpha^2 + \cdots + a_n \alpha^n)\\
-&amp; = a_0 + a_1 \sigma(\alpha) + a_2 [\sigma(\alpha)]^2 + \cdots + a_n [\sigma(\alpha)]^n;
-\end{align*}
-</div>
-<div class="para">por lo tanto, <span class="process-math">\(\sigma( \alpha )\)</span> también es un cero de <span class="process-math">\(f(x)\text{.}\)</span>
-</div>
-</div>
-<span class="incontext"><a href="section-field-automorphisms.html#p-3595" class="internal">en contexto</a></span>
+<span class="incontext"><a href="finite-section-poly-codes.html#QMu" class="internal">en contexto</a></span>
 </body>
 </html>

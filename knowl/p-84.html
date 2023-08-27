@@ -13,29 +13,42 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Párrafo</span></h5>
 <div class="para logical">
-<div class="para">Supongamos que <span class="process-math">\(S = \{ 1,2,3  \}\text{.}\)</span> Definamos una función <span class="process-math">\(\pi :S\rightarrow S\)</span> como</div>
+<div class="para">Dada  una matriz de <span class="process-math">\(2 \times 2\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\pi( 1 )  = 2, \qquad \pi( 2 )  = 1, \qquad \pi( 3 )  = 3.
+A =
+\begin{pmatrix}
+a &amp; b \\
+c &amp; d
+\end{pmatrix}\text{,}
 \end{equation*}
 </div>
-<div class="para">Esta es una función biyectiva.  Una forma alternativa de escribir <span class="process-math">\(\pi\)</span> es</div>
+<div class="para">podemos definir una función <span class="process-math">\(T_A : {\mathbb R}^2 \rightarrow {\mathbb R}^2\)</span> como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T_A (x,y) = (ax + by, cx +dy)
+\end{equation*}
+</div>
+<div class="para">para <span class="process-math">\((x,y)\)</span> en <span class="process-math">\({\mathbb R}^2\text{.}\)</span>  Esto en realidad es multiplicación de matrices; es decir,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{pmatrix}
-1 &amp; 2 &amp; 3 \\
-\pi(1) &amp; \pi(2) &amp; \pi(3)
+a &amp; b \\
+c &amp; d
+\end{pmatrix}
+\begin{pmatrix}
+x \\ y
 \end{pmatrix}
 =
 \begin{pmatrix}
-1 &amp; 2 &amp; 3 \\
-2 &amp; 1 &amp; 3
-\end{pmatrix}.
+ax + by \\
+cx +dy
+\end{pmatrix}\text{.}
 \end{equation*}
 </div>
-<div class="para">Para cualquier conjunto <span class="process-math">\(S\text{,}\)</span> una función biyectiva <span class="process-math">\(\pi : S \rightarrow S\)</span> se llama <dfn class="terminology">permutación</dfn> de <span class="process-math">\(S\text{.}\)</span>
+<div class="para">Funciones de <span class="process-math">\({\mathbb R}^n\)</span> en <span class="process-math">\({\mathbb R}^m\)</span> dadas por matrices se llaman <dfn class="terminology">funciones lineales</dfn> o <dfn class="terminology">transformaciones lineales</dfn>.</div>
 </div>
-</div>
-<span class="incontext"><a href="section-sets-and-equivalence-relations.html#p-84" class="internal">en contexto</a></span>
+<span class="incontext"><a href="sets-section-sets-and-equivalence-relations.html#JqZ" class="internal">en contexto</a></span>
 </body>
 </html>

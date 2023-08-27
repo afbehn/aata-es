@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">8.2.4</span><span class="period">.</span>
+</h4>
+<div class="para logical">
+<div class="para">Supongamos que las palabras a ser codificadas consisten de todas las <span class="process-math">\(3\)</span>-tuples binarias y que nuestro mecanismo de codificación es el de control de paridad. Para codificar una <span class="process-math">\(3\)</span>-tupla arbitraria, agregamos un cuarto bit para obtener un número par de <span class="process-math">\(1\)</span>s. Note que una <span class="process-math">\(n\)</span>-tupla arbitraria <span class="process-math">\({\mathbf x} = (x_1, x_2, \ldots, x_n)^\transpose\)</span> tiene un número par de <span class="process-math">\(1\)</span>s exactamente cuando <span class="process-math">\(x_1 + x_2 + \cdots + x_n = 0\text{;}\)</span> luego, una <span class="process-math">\(4\)</span>-tupla <span class="process-math">\({\mathbf x} = (x_1, x_2, x_3, x_4)^\transpose\)</span> tiene un número par de <span class="process-math">\(1\)</span>s si y solo si <span class="process-math">\(x_1+ x_2+ x_3+ x_4 = 0\text{,}\)</span> o</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{\mathbf x} \cdot {\mathbf 1} =  {\mathbf x}^\transpose {\mathbf 1} =
+\begin{pmatrix}
+x_1 &amp; x_2 &amp; x_3 &amp; x_4
+\end{pmatrix}
+\begin{pmatrix}
+1 \\ 1 \\ 1 \\ 1
+\end{pmatrix} = 0\text{.}
+\end{equation*}
+</div>
+<div class="para">Este ejemplo nos da esperanza de que haya una conexión entre las matrices y la teoría de códigos.</div>
+</div></article><span class="incontext"><a href="algcodes-section-linear-codes.html#nxR" class="internal">en contexto</a></span>
+</body>
+</html>

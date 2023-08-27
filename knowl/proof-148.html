@@ -13,40 +13,22 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
 <div class="para logical">
-<div class="para">Sea <span class="process-math">\(B\)</span> un conjunto que satisface (1)–(5) en el teorema. Una de las leyes idempotentes se satisface pues</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-partial-order.html">
-\begin{align*}
-a &amp; = a \vee O\\
-&amp; = a \vee (a \wedge a')\\
-&amp; = (a \vee a) \wedge (a \vee a')\\
-&amp; = (a \vee a ) \wedge I\\
-&amp; = a \vee a.
-\end{align*}
-</div>
-<div class="para">Observemos que</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-partial-order.html">
-\begin{equation*}
-I \vee b = (I \vee b ) \wedge I = (I \wedge I) \vee (b \wedge I) = I \vee I =  I.
-\end{equation*}
-</div>
-<div class="para">Concluimos que se satisface la primera de las dos leyes de absorción, pues</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-partial-order.html">
-\begin{align*}
-a \vee (a \wedge b) &amp; = (a \wedge I) \vee (a \wedge b)\\
-&amp; = a \wedge (I \vee b)\\
-&amp; = a  \wedge I\\
-&amp; = a.
-\end{align*}
-</div>
-<div class="para">La otra ley idempotente y de absorción se demuestran de forma similar. Como <span class="process-math">\(B\)</span> también satisface (1)–(3), se cumplen las condiciones del Teorema <a href="" class="xref" data-knowl="./knowl/theorem-partial-order.html" title="Teorema 19.1.14">19.1.14</a>; por lo tanto, <span class="process-math">\(B\)</span> es un reticulado.  La condición (4) nos dice que <span class="process-math">\(B\)</span> es un reticulado distributivo.</div>
-</div> <div class="para logical">
-<div class="para">Para <span class="process-math">\(a \in B\text{,}\)</span> <span class="process-math">\(O \vee a = a\text{;}\)</span> luego, <span class="process-math">\(O \preceq a\)</span> y <span class="process-math">\(O\)</span> es el menor elemento en <span class="process-math">\(B\text{.}\)</span> Para mostrar que <span class="process-math">\(I\)</span> es el mayor elemento en <span class="process-math">\(B\text{,}\)</span> mostraremos primero que <span class="process-math">\(a \vee b = b\)</span> es equivalente a <span class="process-math">\(a \wedge b = a\text{.}\)</span>  Como <span class="process-math">\(a \vee I = a\)</span> para todo <span class="process-math">\(a \in B\text{,}\)</span> usando las leyes de absorción podemos determinar que</div>
+<div class="para">Solo demostraremos (2). El resto de las identidades las dejamos como ejercicios. Para <span class="process-math">\(a \vee b = a \vee c\)</span> y <span class="process-math">\(a \wedge b = a \wedge c\text{,}\)</span> tenemos</div>
 <div class="displaymath process-math">
-\begin{equation*}
-a \vee I =(a \wedge I) \vee I = I \vee ( I \wedge a) = I
-\end{equation*}
+\begin{align*}
+b &amp; = b \vee (b \wedge a) \\
+&amp; =  b \vee (a \wedge b) \\
+&amp; =  b \vee (a \wedge c) \\
+&amp; =  ( b \vee a) \wedge ( b \vee c) \\
+&amp; =  ( a \vee b) \wedge ( b \vee c) \\
+&amp; =  ( a \vee c) \wedge ( b \vee c) \\
+&amp; =  ( c \vee a ) \wedge ( c\vee b ) \\
+&amp; = c \vee (a \wedge b)\\
+&amp; = c \vee ( a \wedge c )\\
+&amp; = c \vee ( c \wedge a )\\
+&amp; = c\text{.}
+\end{align*}
 </div>
-<div class="para">y <span class="process-math">\(a \preceq I\)</span> para todo <span class="process-math">\(a\)</span> in <span class="process-math">\(B\text{.}\)</span> Finalmente, como sabemos que <span class="process-math">\(B\)</span> es complementado por (5), <span class="process-math">\(B\)</span> es un álgebra Booleana.</div>
-</div> <div class="para">Recíprocamente, supongamos que <span class="process-math">\(B\)</span> es un álgebra Booleana. Sean <span class="process-math">\(I\)</span> y <span class="process-math">\(O\)</span> el elemento mayor y el elemento menor en <span class="process-math">\(B\text{,}\)</span> respectivamente.  Si definimos <span class="process-math">\(a \vee b\)</span> y <span class="process-math">\(a \wedge b\)</span> como el supremo y el ínfimo de <span class="process-math">\(\{ a, b\}\)</span> respectivamente, entonces <span class="process-math">\(B\)</span> satisface las condiciones (1)–(5).</div></article><span class="incontext"><a href="section-boolean-algebras.html#proof-148" class="internal">en contexto</a></span>
+</div></article><span class="incontext"><a href="boolean-section-boolean-algebras.html#Fma" class="internal">en contexto</a></span>
 </body>
 </html>

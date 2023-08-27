@@ -11,40 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Párrafo</span></h3>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Supongamos que <span class="process-math">\(H\)</span> es una matriz de <span class="process-math">\(m \times n\)</span> con coeficiente en <span class="process-math">\({\mathbb Z}_2\)</span> y <span class="process-math">\(n \gt m\text{.}\)</span> las últimas <span class="process-math">\(m\)</span> columnas de la matriz forman la matriz identidad de <span class="process-math">\(m \times m\text{,}\)</span> <span class="process-math">\(I_m\text{,}\)</span> entonces la matriz es una <dfn class="terminology">matriz verificadora canónica</dfn>. Más específicamente, <span class="process-math">\(H= (A \mid I_m)\text{,}\)</span> donde <span class="process-math">\(A\)</span> es la matriz de <span class="process-math">\(m \times (n-m)\)</span>
-</div>
-<div class="displaymath process-math">
+<div class="para">Un <dfn class="terminology">canal simétrico binario</dfn> es un modelo que consiste de un transmisor capaz de enviar una señal binaria, ya sea un <span class="process-math">\(0\)</span> o un <span class="process-math">\(1\text{,}\)</span> junto a un receptor. Sea <span class="process-math">\(p\)</span> la probabilidad de que la señal se recibe correctamente. Entonces <span class="process-math">\(q = 1 - p\)</span> es la probabilidad de recepción incorrecta. Si se envía un <span class="process-math">\(1\text{,}\)</span> entonces la probabilidad de recibir un <span class="process-math">\(1\)</span> es <span class="process-math">\(p\)</span> y la probabilidad de recibir un <span class="process-math">\(0\)</span> es <span class="process-math">\(q\)</span> (<a href="" class="xref" data-knowl="./knowl/algcodes-figure-channel.html" title="Figura 8.1.6">Figura 8.1.6</a>). La probabilidad de que no ocurra ningún error durante la transmisión de una palabra binaria del código de largo <span class="process-math">\(n\)</span> es <span class="process-math">\(p^{n}\text{.}\)</span> Por ejemplo, si <span class="process-math">\(p=0.999\)</span> y se envía un mensaje consistente de 10,000 bits, entonces la probabilidad de una transmisión perfecta es</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/algcodes-figure-channel.html">
 \begin{equation*}
-\begin{pmatrix}
-a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1,n-m} \\
-a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2,n-m} \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots    \\
-a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{m,n-m}
-\end{pmatrix}
+(0.999)^{10,000} \approx 0.00005\text{,}
 \end{equation*}
 </div>
-<div class="para">y <span class="process-math">\(I_m\)</span> es la matriz identidad de <span class="process-math">\(m \times m\)</span>
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{pmatrix}
-1 &amp; 0 &amp; \cdots &amp; 0 \\
-0 &amp; 1 &amp; \cdots &amp; 0 \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-0 &amp; 0 &amp; \cdots &amp; 1
-\end{pmatrix}.
-\end{equation*}
-</div>
-<div class="para">Con cada matriz verificadora canónica podemos asociar una <dfn class="terminology">matriz generadora estándar</dfn> de <span class="process-math">\(n \times (n-m)\)</span> </div>
-<div class="displaymath process-math">
-\begin{equation*}
-G = \left( \frac{I_{n-m}}{A} \right).
-\end{equation*}
-</div>
-<div class="para">Nuestro objetivo será mostrar que existe un <span class="process-math">\(\mathbf x\)</span> que satisfaga <span class="process-math">\(G {\mathbf x} = {\mathbf y}\)</span> si y solo si <span class="process-math">\(H{\mathbf y} = {\mathbf 0}\text{.}\)</span>  dado un bloque <span class="process-math">\({\mathbf x}\)</span> a ser codificado, la matriz <span class="process-math">\(G\)</span> nos permitirá codificarlo rápidamente a una palabra <span class="process-math">\({\mathbf y}\)</span> del código lineal.</div>
-</div>
-<span class="incontext"><a href="section-parity-check.html#p-1252" class="internal">en contexto</a></span>
+<span class="incontext"><a href="algcodes-section-error-detecting-correcting-codes.html#LFp" class="internal">en contexto</a></span>
 </body>
 </html>

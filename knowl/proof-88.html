@@ -12,7 +12,22 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
-<div class="para">Claramente,  <span class="process-math">\(e \in G_x\)</span> pues la identidad deja fijo cada elemento en el conjunto <span class="process-math">\(X\text{.}\)</span> Sean <span class="process-math">\(g, h \in G_x\text{.}\)</span> Entonces <span class="process-math">\(gx = x\)</span> y <span class="process-math">\(hx = x\text{.}\)</span> Entonces <span class="process-math">\((gh)x = g(hx) = gx = x\text{;}\)</span> luego, el producto de dos elementos en <span class="process-math">\(G_x\)</span> también está en <span class="process-math">\(G_x\text{.}\)</span> Finalmente, si <span class="process-math">\(g \in G_x\text{,}\)</span> entonces <span class="process-math">\(x = ex = (g^{-1}g)x = (g^{-1})gx = g^{-1} x\text{.}\)</span> Así <span class="process-math">\(g^{-1}\)</span> está en <span class="process-math">\(G_x\text{.}\)</span>
-</div></article><span class="incontext"><a href="section-groups-acting-on-sets.html#proof-88" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Sabemos que <span class="process-math">\(|G|/|G_x|\)</span> es el número de clases laterales izquierdas de <span class="process-math">\(G_x\)</span> en <span class="process-math">\(G\)</span> por el Teorema de Lagrange (<a href="" class="xref" data-knowl="./knowl/cosets-theorem-lagrange.html" title="Teorema 6.2.2: Lagrange">Teorema 6.2.2</a>). Definiremos una función biyetiva <span class="process-math">\(\phi\)</span> de la órbita <span class="process-math">\({\mathcal O}_x\)</span> de <span class="process-math">\(x\)</span> al conjunto de clases laterales izquierdas <span class="process-math">\({\mathcal L}_{G_x}\)</span> de <span class="process-math">\(G_x\)</span> en <span class="process-math">\(G\text{.}\)</span> Sea <span class="process-math">\(y \in {\mathcal O}_x\text{.}\)</span> Entonces existe <span class="process-math">\(g\)</span> en <span class="process-math">\(G\)</span> tal que <span class="process-math">\(g x = y\text{.}\)</span> Definamos <span class="process-math">\(\phi\)</span> de forma que <span class="process-math">\(\phi( y ) = g G_x\text{.}\)</span>  Para mostrar que <span class="process-math">\(\phi\)</span> es 1-1, supongamos que <span class="process-math">\(\phi(y_1) = \phi(y_2)\text{.}\)</span> Entonces</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cosets-theorem-lagrange.html">
+\begin{equation*}
+\phi(y_1) = g_1 G_x = g_2 G_x = \phi(y_2)
+\end{equation*}
+</div>
+<div class="para">donde <span class="process-math">\(g_1 x = y_1\)</span> y <span class="process-math">\(g_2 x = y_2\text{.}\)</span>  Como <span class="process-math">\(g_1 G_x = g_2 G_x\text{,}\)</span> existe <span class="process-math">\(g \in G_x\)</span> tal que <span class="process-math">\(g_2 = g_1 g\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cosets-theorem-lagrange.html">
+\begin{equation*}
+y_2 = g_2 x = g_1 g x = g_1 x = y_1;
+\end{equation*}
+</div>
+<div class="para">por lo tanto, la función <span class="process-math">\(\phi\)</span> es 1-1. Finalmente, debemos mostrar que <span class="process-math">\(\phi\)</span> es epiyectiva. Sea <span class="process-math">\(g G_x\)</span> una clase lateral izquierda. Si <span class="process-math">\(g x = y\text{,}\)</span> entonces <span class="process-math">\(\phi(y) = g G_x\text{.}\)</span>
+</div>
+</div></article><span class="incontext"><a href="actions-section-groups-acting-on-sets.html#YaY" class="internal">en contexto</a></span>
 </body>
 </html>

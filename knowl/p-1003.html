@@ -13,21 +13,23 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Como <span class="process-math">\([A_4 : H] = 2\text{,}\)</span> hay solo dos clases laterales de <span class="process-math">\(H\)</span> en <span class="process-math">\(A_4\text{.}\)</span>  En tanto una de las clases laterales es el mismo <span class="process-math">\(H\text{,}\)</span> clases laterales derechas e izquierdas deben coincidir; por lo tanto, <span class="process-math">\(gH = Hg\)</span> o <span class="process-math">\(g H g^{-1} = H\)</span> para todo <span class="process-math">\(g \in A_4\text{.}\)</span> Como existen ocho 3-ciclos en <span class="process-math">\(A_4\text{,}\)</span> al menos uno de los 3-ciclos debe estar en <span class="process-math">\(H\text{.}\)</span>  Sin perder generalidad, supongamos que <span class="process-math">\((123)\)</span> está en <span class="process-math">\(H\text{.}\)</span>  Entonces <span class="process-math">\((123)^{-1} = (132)\)</span> también debe estar en <span class="process-math">\(H\text{.}\)</span>  Como <span class="process-math">\(g h g^{-1} \in H\)</span> para todo <span class="process-math">\(g \in A_4\)</span> y todo <span class="process-math">\(h \in H\)</span> y</div>
+<div class="para">No siempre es el caso que una clase lateral derecha sea igual a una clase lateral izquierda.  Sea <span class="process-math">\(K\)</span> el subgrupo de  <span class="process-math">\(S_3\)</span> definido por las permutaciones <span class="process-math">\(\{(1), (1 \, 2)\}\text{.}\)</span>  Entonces las clases laterales izquierdas de <span class="process-math">\(K\)</span> son</div>
 <div class="displaymath process-math">
-\begin{align*}
-(124)(123)(124)^{-1} &amp; = (124)(123)(142)  = (243)\\
-(243)(123)(243)^{-1} &amp; = (243)(123)(234)  = (142)
-\end{align*}
+\begin{gather*}
+(1)K = (1 \, 2)K = \{(1), (1 \, 2)\}\\
+(1 \, 3)K = (1 \, 2 \, 3)K = \{(1 \, 3), (1 \, 2 \, 3)\}\\
+(2 \, 3)K = (1 \, 3 \, 2)K = \{(2 \, 3), (1 \, 3 \, 2)\};
+\end{gather*}
 </div>
-<div class="para">concluimos que <span class="process-math">\(H\)</span> debe tener al menos los siete elementos</div>
+<div class="para">pero, las clases laterales derechas de <span class="process-math">\(K\)</span> son</div>
 <div class="displaymath process-math">
-\begin{equation*}
-(1), (123), (132), (243), (243)^{-1} = (234), (142), (142)^{-1} = (124).
-\end{equation*}
+\begin{gather*}
+K(1) = K(1 \, 2) = \{(1), (1 \, 2)\}\\
+K(1 \, 3) = K(1 \, 3 \, 2) = \{(1 \, 3), (1 \, 3 \, 2)\}\\
+K(2 \, 3) = K(1 \, 2 \, 3) = \{(2 \, 3), (1 \, 2 \, 3)\}\text{.}
+\end{gather*}
 </div>
-<div class="para">Por lo tanto, <span class="process-math">\(A_4\)</span> no tiene subgrupo de orden 6.</div>
 </div>
-<span class="incontext"><a href="section-lagranges-theorem.html#p-1003" class="internal">en contexto</a></span>
+<span class="incontext"><a href="cosets-section-cosets.html#LWX" class="internal">en contexto</a></span>
 </body>
 </html>

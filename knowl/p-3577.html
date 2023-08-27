@@ -12,7 +12,25 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Para cualquier cuerpo, el subcuerpo conocido como cuerpo fijo es una construcción importantes, y será lo será más aún en el siguiente capítulo.  Dado un automorfismo <span class="process-math">\(\tau\)</span> de un cuerpo <span class="process-math">\(E\text{,}\)</span> se puede demostrar que el subconjunto, <span class="process-math">\(K=\{b\in E\mid\tau(b)=b\}\text{,}\)</span> es un subcuerpo de <span class="process-math">\(E\text{.}\)</span>  Se conoce como el <dfn class="terminology">cuerpo fijo</dfn> de <span class="process-math">\(\tau\)</span> en <span class="process-math">\(E\text{.}\)</span>  Para cada automorfismo de <span class="process-math">\(E=GF(3^6)\)</span> identifique su cuerpo fijo.  Como entendemos la estructura de subcuerpos de un cuerpo finito, es suficiente con determinar el orden de un cuerpo fijo para identificarlo completamente.</div>
-<span class="incontext"><a href="finite-sage-exercises.html#p-3577" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">El cuerpo finito <span class="process-math">\(\gf(2^4)\)</span> es isomorfo al cuerpo <span class="process-math">\({\mathbb Z}_2[x]/ \langle 1 + x + x^4 \rangle\text{.}\)</span> Por lo tanto, los elementos de <span class="process-math">\(\gf(2^4)\)</span> se puede tomar como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{ a_0 + a_1 \alpha + a_2 \alpha^2 + a_3 \alpha^3 : a_i \in {\mathbb Z}_2 \text{ y } 1 + \alpha + \alpha^4 = 0 \}\text{.}
+\end{equation*}
+</div>
+<div class="para">Recordando que <span class="process-math">\(1 + \alpha +\alpha^4 = 0\text{,}\)</span> sumamos y multiplicamos elementos de  <span class="process-math">\(\gf(2^4)\)</span> exactamente como sumamos y multiplicamos polinomios.  El grupo multiplicativo de <span class="process-math">\(\gf(2^4)\)</span> es isomorfo a <span class="process-math">\({\mathbb  Z}_{15}\)</span> con generador <span class="process-math">\(\alpha\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+&amp; \alpha^1 = \alpha &amp; &amp; \alpha^6 = \alpha^2 + \alpha^3 &amp; &amp; \alpha^{11} = \alpha + \alpha^2 + \alpha^3 &amp;\\
+&amp; \alpha^2 = \alpha^2 &amp; &amp; \alpha^7 = 1 + \alpha + \alpha^3 &amp; &amp; \alpha^{12} = 1 + \alpha + \alpha^2 + \alpha^3 &amp;\\
+&amp; \alpha^3 = \alpha^3 &amp; &amp; \alpha^8 = 1 + \alpha^2 &amp; &amp; \alpha^{13} = 1 + \alpha^2 + \alpha^3 &amp;\\
+&amp; \alpha^4 = 1 + \alpha &amp; &amp; \alpha^9 = \alpha + \alpha^3 &amp; &amp; \alpha^{14} = 1 + \alpha^3 &amp;\\
+&amp;\alpha^5 = \alpha + \alpha^2 &amp; &amp; \alpha^{10} = 1 + \alpha + \alpha^2 &amp; &amp; \alpha^{15} = 1. &amp;
+\end{align*}
+</div>
+</div>
+<span class="incontext"><a href="finite-section-field.html#gqR" class="internal">en contexto</a></span>
 </body>
 </html>

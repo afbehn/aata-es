@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">8.1.8</span><span class="period">.</span>
+</h4>
+<div class="para logical">
+<div class="para">Supongamos que <span class="process-math">\(p = 0.995\)</span> y que se envía un mensaje de <span class="process-math">\(500\)</span>-bits. La probabilidad de que el mensaje haya sido enviado sin errores es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p^{n} = (0.995)^{500} \approx 0.082\text{.}
+\end{equation*}
+</div>
+<div class="para">La probabilidad de que ocurra exactamente un error es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\binom{n}{1}  qp^{n - 1}= 500(0.005)(0.995)^{499} \approx 0.204\text{.}
+\end{equation*}
+</div>
+<div class="para">La probabilidad de exactamente dos errores es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\binom{n}{2} q^{2}p^{n - 2}= \frac{500 \cdot 499}{2}(0.005)^{2}(0.995)^{498} \approx 0.257\text{.}
+\end{equation*}
+</div>
+<div class="para">La probabilidad de más de dos errores es aproximadamente</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 - 0.082 - 0.204 - 0.257 = 0.457\text{.}
+\end{equation*}
+</div>
+</div></article><span class="incontext"><a href="algcodes-section-error-detecting-correcting-codes.html#WzG" class="internal">en contexto</a></span>
+</body>
+</html>

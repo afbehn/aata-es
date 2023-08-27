@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<figure class="table table-like"><figcaption><span class="type">Cuadro</span><span class="space"> </span><span class="codenumber">13.7.1<span class="period">.</span></span><span class="space"> </span>Los grupos de orden <span class="process-math">\(\mathbf{15}\)</span> o menos en Sage</figcaption><div class="tabular-box natural-width"><table class="tabular" id="vaq">
+<tr>
+<td class="l m b2 r0 l0 t2 lines">Orden</td>
+<td class="l m b2 r0 l0 t2 lines">Construcción</td>
+<td class="l m b2 r0 l0 t2 lines">Notas, alternativas</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(1)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Trivial</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(2)</code></td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">SymmetricGroup(2)</code></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(3)</code></td>
+<td class="l m b0 r0 l0 t0 lines">orden principal</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(4)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">KleinFourGroup()</code></td>
+<td class="l m b0 r0 l0 t0 lines">Abeliano, no cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(5)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Oreden primo</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(6)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">SymmetricGroup(3)</code></td>
+<td class="l m b0 r0 l0 t0 lines">No abeliano</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">DihedralGroup(3)</code></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(7)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Oreden primo</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(8)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">C2=CyclicPermutationGroup(2)</code></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">C4=CyclicPermutationGroup(4)</code></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">G=direct_product_permgroups([C2,C4])</code></td>
+<td class="l m b0 r0 l0 t0 lines">Abeliano, no cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">C2=CyclicPermutationGroup(2)</code></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">G=direct_product_permgroups([C2,C2,C2])</code></td>
+<td class="l m b0 r0 l0 t0 lines">Abelian, non-cyclic</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">DihedralGroup(4)</code></td>
+<td class="l m b0 r0 l0 t0 lines">No abeliano</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">QuaternionGroup()</code></td>
+<td class="l m b0 r0 l0 t0 lines">Cuaterniones</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">DiCyclicGroup(2)</code></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(9)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">C3=CyclicPermutationGroup(3)</code></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">G=direct_product_permgroups([C3,C3])</code></td>
+<td class="l m b0 r0 l0 t0 lines">Abeliano, no cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(10)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">DihedralGroup(5)</code></td>
+<td class="l m b0 r0 l0 t0 lines">No abeliano</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">11</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(11)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Orden primo</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(12)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">C2=CyclicPermutationGroup(2)</code></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">C6=CyclicPermutationGroup(6)</code></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">G=direct_product_permgroups([C2,C6])</code></td>
+<td class="l m b0 r0 l0 t0 lines">Abeliano, no cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">DihedralGroup(6)</code></td>
+<td class="l m b0 r0 l0 t0 lines">No abeliano</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">AlternatingGroup(4)</code></td>
+<td class="l m b0 r0 l0 t0 lines">No abeliano</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Simetrías del tetraedro</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">DiCyclicGroup(3)</code></td>
+<td class="l m b0 r0 l0 t0 lines">No abeliano</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Producto semidirecto <span class="process-math">\(Z_3\rtimes Z_4\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">13</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(13)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Orden primo</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(14)</code></td>
+<td class="l m b0 r0 l0 t0 lines">Cíclico</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">DihedralGroup(7)</code></td>
+<td class="l m b0 r0 l0 t0 lines">No abeliano</td>
+</tr>
+<tr>
+<td class="l m b2 r0 l0 t0 lines">15</td>
+<td class="l m b2 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">CyclicPermutationGroup(15)</code></td>
+<td class="l m b2 r0 l0 t0 lines">Cíclico</td>
+</tr>
+</table></div></figure><span class="incontext"><a href="struct-sage.html#OTh" class="internal">en contexto</a></span>
+</body>
+</html>

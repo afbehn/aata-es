@@ -11,27 +11,19 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Párrafo</span></h3>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Supongamos ahora que tenemos una matriz verificadora canónica <span class="process-math">\(H\)</span> con tres filas. Nos podemos preguntar cuántas columnas le podemos agregar a la matriz y seguir teniendo un espacio nulo que sea un código que detecte y corrija un error. Como cada columna tiene tres entradas, hay <span class="process-math">\(2^3 = 8\)</span> columnas diferentes posibles. No podemos agregar las columnas</div>
+<div class="para">Supongamos que tenemos un código que consiste de las siguientes 7-tuplas:</div>
 <div class="displaymath process-math">
-\begin{equation*}
-\begin{pmatrix}
-0 \\ 0 \\ 0 
-\end{pmatrix},
-\begin{pmatrix}
-1 \\ 0 \\ 0 
-\end{pmatrix},
-\begin{pmatrix}
-0 \\ 1 \\ 0 
-\end{pmatrix},
-\begin{pmatrix}
-0 \\ 0 \\ 1 
-\end{pmatrix}.
-\end{equation*}
+\begin{align*}
+&amp;(0000000) &amp; &amp; (0001111) &amp;  &amp; (0010101) &amp; &amp; (0011010)\\
+&amp;(0100110) &amp; &amp; (0101001) &amp; &amp; (0110011) &amp; &amp; (0111100)\\
+&amp;(1000011) &amp; &amp; (1001100) &amp; &amp; (1010110) &amp; &amp; (1011001)\\
+&amp;(1100101) &amp; &amp; (1101010) &amp; &amp; (1110000) &amp; &amp; (1111111)\text{.}
+\end{align*}
 </div>
-<div class="para">Podemos entonces agregar hasta cuatro columnas manteniendo una distancia mínima de 3.</div>
+<div class="para">Es una tarea sencilla, aunque tediosa la de verificar que este código es un subgrupo de <span class="process-math">\({\mathbb Z}_2^7\)</span> y que por lo tanto, es un código de grupo. Este código detecta un error y corrige un error, pero calcular todas las distancias entre pares de palabras del código para determinar que <span class="process-math">\(d_{\min} = 3\)</span> es un proceso largo y tedioso. Es mucho más sencillo ver que el peso mínimo de todas las palabras no nulas es <span class="process-math">\(3\text{.}\)</span> Como veremos pronto, esto no es una coincidencia. Pero la relación entre pesos y distancias en un código particular es fuertemente dependiente del hecho que el código sea un grupo.</div>
 </div>
-<span class="incontext"><a href="section-parity-check.html#p-1277" class="internal">en contexto</a></span>
+<span class="incontext"><a href="algcodes-section-linear-codes.html#vcD" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -12,7 +12,41 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Para contestar la pregunta de cómo los grupos puntuales y los grupos de trslación pueden ser combinados, debemos mirar los distintos tipos de reticulados. Los reticulados pueden ser clasificados por la estructura de una celda del reticulado. Las posibles formas de celda son paralelógramo, rectangular, cuadrada, rómbica y hexagonal (Figura <a href="" class="xref" data-knowl="./knowl/figure-lattice-types.html" title="Figura 12.2.10">12.2.10</a>). Los grupos cristalográficos planos pueden ahora ser clasificados de acuerdo a los tipos de reflexiones que ocurren en cada grupo: estas son reflexiones ordinarias, reflexiones deslizantes, ambas o ninguna.</div>
-<span class="incontext"><a href="section-symmetry.html#p-1875" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Recíprocamente, si <span class="process-math">\(T : {\mathbb R}^n \rightarrow {\mathbb R}^m\)</span> es una función lineal, podemos asociar una matriz <span class="process-math">\(A\)</span> con <span class="process-math">\(T\)</span> considerando lo que <span class="process-math">\(T\)</span> le hace a los vectores</div>
+<div class="displaymath process-math">
+\begin{align*}
+{\mathbf e}_1 &amp; = (1, 0, \ldots, 0)^\transpose\\
+{\mathbf e}_2 &amp; = (0, 1, \ldots, 0)^\transpose\\
+&amp;  \vdots &amp; \\
+{\mathbf e}_n &amp; = (0, 0, \ldots, 1)^\transpose\text{.}
+\end{align*}
+</div>
+<div class="para">Podemos escribir cualquier vector <span class="process-math">\({\mathbf x} = (x_1, \ldots, x_n)^\transpose\)</span> como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_1 {\mathbf e}_1 + x_2 {\mathbf e}_2 + \cdots + x_n {\mathbf e}_n\text{.}
+\end{equation*}
+</div>
+<div class="para">Así, si</div>
+<div class="displaymath process-math">
+\begin{align*}
+T({\mathbf e}_1) &amp; = (a_{11}, a_{21}, \ldots, a_{m1})^\transpose,\\
+T({\mathbf e}_2) &amp; = (a_{12}, a_{22}, \ldots, a_{m2})^\transpose,\\
+&amp;  \vdots &amp; \\
+T({\mathbf e}_n) &amp; = (a_{1n}, a_{2n}, \ldots, a_{mn})^\transpose\text{,}
+\end{align*}
+</div>
+<div class="para">entonces</div>
+<div class="displaymath process-math">
+\begin{align*}
+T({\mathbf x} ) &amp; = T(x_1 {\mathbf e}_1 + x_2 {\mathbf e}_2 + \cdots + x_n {\mathbf e}_n)\\
+&amp; = x_1 T({\mathbf e}_1) + x_2 T({\mathbf e}_2) + \cdots + x_n T({\mathbf e}_n)\\
+&amp; = \left( \sum_{k=1}^{n} a_{1k} x_k, \ldots,  \sum_{k=1}^{n} a_{mk} x_k \right)^\transpose\\
+&amp; = A {\mathbf x}\text{.}
+\end{align*}
+</div>
+</div>
+<span class="incontext"><a href="matrix-section-groups.html#sAw" class="internal">en contexto</a></span>
 </body>
 </html>

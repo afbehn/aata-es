@@ -12,7 +12,16 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Mediante conjugaciones de un solo <span class="process-math">\(p\)</span>-subgrupo de Sylow <span class="process-math">\(p\text{,}\)</span> siempre obtendremos subgrupos repetidos.  Necesitamos una construcción un poco más complicada para formar una lista que contenga cada <span class="process-math">\(p\)</span>-subgrupo de Sylow exactamente una vez.  La siguiente rutina que calcula todos los <span class="process-math">\(p\)</span>-subgrupos de Sylow será útil para lo que queda de esta sección.  Se podría hacer más eficiente conjugando solo por un elemento de cada clase lateral del normalizador, pero es suficiente para nuestros propósitos acá.  Asegúrese de ejecutar la próxima celda, para poder usar la función más adelante.</div>
-<span class="incontext"><a href="sylow-sage.html#p-2273" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Sea <span class="process-math">\(P\)</span> un <span class="process-math">\(p\)</span>-subgrupo de Sylow actuando en el conjunto de los <span class="process-math">\(p\)</span>-subgrupos de Sylow,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{\mathcal S} = \{ P = P_1, P_2, \ldots, P_k \}\text{,}
+\end{equation*}
+</div>
+<div class="para">por conjugación. De la demostración del Segundo Teorema de Sylow, el único <span class="process-math">\(P\)</span>-conjugado de <span class="process-math">\(P\)</span> es él mismo y el orden de las otras <span class="process-math">\(P\)</span>-clases de conjugación es una potencia de <span class="process-math">\(p\text{.}\)</span> Cada <span class="process-math">\(P\)</span>-clase de conjuugación contribuye con una potencia positiva de <span class="process-math">\(p\)</span> al valor de <span class="process-math">\(|{\mathcal S}|\)</span> excepto la clase de <span class="process-math">\(\{ P \}\text{.}\)</span> Como <span class="process-math">\(|{\mathcal S}|\)</span> es la suma de potencias positivas de <span class="process-math">\(p\)</span> y <span class="process-math">\(1\text{,}\)</span> tenemos <span class="process-math">\(|{\mathcal S}| \equiv 1 \pmod{p}\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sylow-section-sylow-theorems.html#oqp" class="internal">en contexto</a></span>
 </body>
 </html>

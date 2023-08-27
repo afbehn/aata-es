@@ -11,10 +11,35 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">
-<span class="process-math">\({\mathbb Q}( \sqrt{2} + \sqrt{5}\, )\)</span> sobre <span class="process-math">\({\mathbb Q} ( \sqrt{5}\, )\)</span>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
+<div class="para logical">
+<div class="para">Dado que <span class="process-math">\(\phi_{\alpha} ( F[x] ) \cong F( \alpha )\text{,}\)</span>  todo elemento en <span class="process-math">\(E = F( \alpha )\)</span> debe ser de la forma <span class="process-math">\(\phi_{\alpha} ( f(x) ) = f( \alpha )\text{,}\)</span> donde <span class="process-math">\(f(\alpha)\)</span> es un polinomio en <span class="process-math">\(\alpha\)</span> con coeficientes en <span class="process-math">\(F\text{.}\)</span> Sea</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p(x) = x^n + a_{n - 1} x^{n - 1} + \cdots + a_0
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-fields.html#p-3351" class="internal">en contexto</a></span>
+<div class="para">el polinomio minimal de <span class="process-math">\(\alpha\text{.}\)</span> Entonces <span class="process-math">\(p( \alpha ) = 0\text{;}\)</span> luego,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{\alpha}^n = - a_{n - 1} {\alpha}^{n - 1} - \cdots - a_0\text{.}
+\end{equation*}
+</div>
+<div class="para">Similarmente,</div>
+<div class="displaymath process-math">
+\begin{align*}
+{\alpha}^{n + 1} &amp; = {\alpha} {\alpha}^n\\
+&amp; = - a_{n - 1} {\alpha}^n - a_{n - 2} {\alpha}^{n - 1} - \cdots - a_0 {\alpha}\\
+&amp; = - a_{n - 1}( - a_{n - 1} {\alpha}^{n - 1} - \cdots - a_0) - a_{n - 2} {\alpha}^{n - 1} - \cdots - a_0 {\alpha}\text{.}
+\end{align*}
+</div>
+<div class="para">Continuando de esta manera, podemos expresar cualquier monomio <span class="process-math">\({\alpha}^m\text{,}\)</span> <span class="process-math">\(m \geq n\text{,}\)</span> como combinación lineal de potencias de <span class="process-math">\({\alpha}\)</span> menores a <span class="process-math">\(n\text{.}\)</span> Por lo tanto, cualquier <span class="process-math">\(\beta \in F( \alpha )\)</span> puede ser escrito como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\beta = b_0 + b_1 \alpha + \cdots + b_{n - 1} \alpha^{n - 1}\text{.}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="fields-section-extension-fields.html#NGk" class="internal">en contexto</a></span>
 </body>
 </html>

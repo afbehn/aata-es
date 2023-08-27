@@ -12,14 +12,30 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
-<div class="para">Sea <span class="process-math">\(K\)</span> el conjunto de todos los productos de la forma <span class="process-math">\(g_{i_1}^{\alpha_1} \cdots g_{i_n}^{\alpha_n}\text{,}\)</span> donde los <span class="process-math">\(g_{i_k}\)</span> no son necesariamente diferentes. Ciertamente <span class="process-math">\(K\)</span> es un subconjunto de <span class="process-math">\(H\text{.}\)</span>  Solo debemos mostrar que <span class="process-math">\(K\)</span> es un subgrupo de <span class="process-math">\(G\text{.}\)</span> Si es así, entonces <span class="process-math">\(K=H\text{,}\)</span> pues <span class="process-math">\(H\)</span> es el menor subgrupo que contiene todos los <span class="process-math">\(g_i\text{.}\)</span>
+<div class="para">Demostraremos este lema por inducción. Si <span class="process-math">\(n = 1\text{,}\)</span> entonces no hay nada que demostrar. Ahora supongamos que el lema es verdadero para todos los grupos de orden <span class="process-math">\(k\text{,}\)</span> donde <span class="process-math">\(k \lt n\text{.}\)</span> Más aún, sea <span class="process-math">\(p\)</span> un primo que divide a <span class="process-math">\(n\text{.}\)</span>
+</div> <div class="para">Si <span class="process-math">\(G\)</span> no tiene subgrupos propios no triviales, entonces <span class="process-math">\(G = \langle a \rangle\text{,}\)</span> donde <span class="process-math">\(a\)</span> es cualquier elemento distinto de la identidad. Por el <a href="" class="xref" data-knowl="./knowl/cyclic-exercise-subgroups-exist.html" title="Ejercicio 4.5.39">Ejercicio 4.5.39</a>, el orden de <span class="process-math">\(G\)</span> es primo. Como <span class="process-math">\(p\)</span> divide a <span class="process-math">\(n\text{,}\)</span> sabemos que <span class="process-math">\(p = n\text{,}\)</span> y <span class="process-math">\(G\)</span> contiene <span class="process-math">\(p - 1\)</span> elementos de orden <span class="process-math">\(p\text{.}\)</span>
 </div> <div class="para logical">
-<div class="para">Claramente, <span class="process-math">\(K\)</span> es cerrado bajo la operación del grupo. Como <span class="process-math">\(g_i^0 = 1\text{,}\)</span> la identidad está en <span class="process-math">\(K\text{.}\)</span> Falta mostrar que el inverso de un elemento <span class="process-math">\(g =g_{i_1}^{k_1} \cdots g_{i_n}^{k_n}\)</span> en <span class="process-math">\(K\)</span> también está en <span class="process-math">\(K\text{.}\)</span> Pero,</div>
+<div class="para">Ahora supongamos que <span class="process-math">\(G\)</span> contiene un subgrupo no trivial propio <span class="process-math">\(H\text{.}\)</span> Entonces <span class="process-math">\(1 \lt |H| \lt n\text{.}\)</span> Si <span class="process-math">\(p \mid |H|\text{,}\)</span> entonces <span class="process-math">\(H\)</span> contiene un elemento de orden <span class="process-math">\(p\)</span> por la hipótesis de inducción y el lema se cumple. Supongamos que <span class="process-math">\(p\)</span> no divide el orden de <span class="process-math">\(H\text{.}\)</span> Como <span class="process-math">\(G\)</span> es abeliano, <span class="process-math">\(H\)</span> es un subgrupo normal de <span class="process-math">\(G\text{,}\)</span> y <span class="process-math">\(|G| = |H| \cdot |G/H|\text{.}\)</span> De manera que <span class="process-math">\(p\)</span> divide a <span class="process-math">\(|G/H|\text{.}\)</span>  Como <span class="process-math">\(|G/H| \lt |G| = n\text{,}\)</span> sabemos que <span class="process-math">\(G/H\)</span> contiene un elemento <span class="process-math">\(aH\)</span> de orden <span class="process-math">\(p\)</span> por la hipótesis de inducción.  Luego,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-g^{-1} = (g_{i_1}^{k_{1}} \cdots g_{i_n}^{k_n})^{-1} = (g_{i_n}^{-k_n} \cdots g_{i_{1}}^{-k_{1}}).
+H = (aH)^p = a^pH\text{,}
 \end{equation*}
 </div>
-</div></article><span class="incontext"><a href="section-finite-abelian-groups.html#proof-81" class="internal">en contexto</a></span>
+<div class="para">y <span class="process-math">\(a^p \in H\)</span> pero <span class="process-math">\(a \notin H\text{.}\)</span>  Si <span class="process-math">\(|H| = r\text{,}\)</span> entonces <span class="process-math">\(p\)</span> y <span class="process-math">\(r\)</span> son relativamente primos, y existen enteros <span class="process-math">\(s\)</span> y <span class="process-math">\(t\)</span> tales que <span class="process-math">\(sp + tr = 1\text{.}\)</span> Además, el orden de <span class="process-math">\(a^p\)</span> divide a <span class="process-math">\(r\text{,}\)</span> y <span class="process-math">\((a^p)^r = (a^r)^p = 1\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Afirmamos que <span class="process-math">\(a^r\)</span> tiene orden <span class="process-math">\(p\text{.}\)</span> Debemos mostrar que <span class="process-math">\(a^r \neq 1\text{.}\)</span> Supongamos que <span class="process-math">\(a^r = 1\text{.}\)</span> Entonces</div>
+<div class="displaymath process-math">
+\begin{align*}
+a &amp; = a^{sp + tr}\\
+&amp; = a^{sp} a^{tr}\\
+&amp; = (a^p)^s (a^r)^t\\
+&amp; = (a^p)^s 1\\
+&amp; = (a^p)^s\text{.}
+\end{align*}
+</div>
+<div class="para">Como <span class="process-math">\(a^p \in H\text{,}\)</span> tenemos <span class="process-math">\(a= (a^p)^s \in H\text{,}\)</span> lo que es una contradicción. Por lo tanto, <span class="process-math">\(a^r \neq 1\)</span> es un elemento de orden <span class="process-math">\(p\)</span> en <span class="process-math">\(G\text{.}\)</span>
+</div>
+</div></article><span class="incontext"><a href="struct-section-finite-abelian-groups.html#xdL" class="internal">en contexto</a></span>
 </body>
 </html>

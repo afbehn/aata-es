@@ -11,30 +11,9 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Párrafo</span></h3>
-<div class="para logical">
-<div class="para">Un criptosistema sería más seguro si una letra del texto-cifrado pudiese representar más de una letra del texto-claro.  Para dar un ejemplo de este tipo de criptosistema, llamado <dfn class="terminology">criptosistema polialfabético</dfn>, generalizaremos los códigos afines usando matrices. La idea funciona básicamente como antes; sin embargo, en lugar de encriptar una letra a la vez, encriptaremos pares de letras.  Podemo almacenar un par de letras <span class="process-math">\(p_1\)</span> y <span class="process-math">\(p_2\)</span> en un vector</div>
-<div class="displaymath process-math">
-\begin{equation*}
-{\mathbf p} = 
-\begin{pmatrix}
-p_1 \\ p_2
-\end{pmatrix}.
-\end{equation*}
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para">Así que no vemos un subgrupo de orden 6 en la lista de subgrupos de <span class="process-math">\(A_4\text{.}\)</span>  Note como el Teorema de Lagrange (<a href="" class="xref" data-knowl="./knowl/cosets-theorem-lagrange.html" title="Teorema 6.2.2: Lagrange">Teorema 6.2.2</a>) está en evidencia — todos los subgrupos tienen órdenes que dividen a <span class="process-math">\(12\text{,}\)</span> el orden de <span class="process-math">\(A_4\text{.}\)</span>
 </div>
-<div class="para">Sea <span class="process-math">\(A\)</span> una matriz invertible de <span class="process-math">\(2 \times 2\)</span> con coeficientes en <span class="process-math">\({\mathbb Z}_{26}\text{.}\)</span> Podemos definir una función encriptadora como</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f({\mathbf p}) = A {\mathbf p} + {\mathbf b},
-\end{equation*}
-</div>
-<div class="para">donde <span class="process-math">\({\mathbf b}\)</span> es un vector columna fijo y las operaciones matriciales se llevan a cabo en <span class="process-math">\({\mathbb Z}_{26}\text{.}\)</span> La función decriptadora debe ser</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f^{-1}({\mathbf p}) = A^{-1} {\mathbf p} - A^{-1} {\mathbf b}.
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="section-private-key-crypt.html#p-1108" class="internal">en contexto</a></span>
+<span class="incontext"><a href="cosets-sage.html#XPQ" class="internal">en contexto</a></span>
 </body>
 </html>

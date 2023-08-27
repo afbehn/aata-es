@@ -10,6 +10,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para">Definimos una biyección entre las clases de conjugación de <span class="process-math">\(N(K) \cap H\)</span> por <span class="process-math">\(h^{-1}Kh \mapsto (N(K) \cap H)h\text{.}\)</span> Para mostrar que esta función es una biyección, sean <span class="process-math">\(h_1, h_2 \in H\)</span> y supongamos que <span class="process-math">\((N(K) \cap H)h_1 = (N(K) \cap H)h_2\text{.}\)</span> Entonces <span class="process-math">\(h_2 h_1^{-1} \in N(K)\text{.}\)</span> Por lo tanto, <span class="process-math">\(K = h_2 h_1^{-1} K h_1 h_2^{-1}\)</span> o <span class="process-math">\(h_1^{-1} K h_1 = h_2^{-1} K h_2\text{,}\)</span> y la función es inyectiva.  Es fácil ver que es sobreyectiva; por lo tanto tenemos una biyección entre los <span class="process-math">\(H\)</span>-conjugados de <span class="process-math">\(K\)</span> y las clases laterales derechas de <span class="process-math">\(N(K) \cap H\)</span> en <span class="process-math">\(H\text{.}\)</span>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">Sea <span class="process-math">\(P\)</span> un <span class="process-math">\(p\)</span>-subgrupo de Sylow de <span class="process-math">\(G\)</span> y supongamos que <span class="process-math">\(|G|=p^r m\)</span> con <span class="process-math">\(|P|=p^r\text{.}\)</span> Sea</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sylow-lemma-distinct-conjugates.html">
+\begin{equation*}
+{\mathcal S} = \{ P = P_1, P_2, \ldots, P_k \}
+\end{equation*}
+</div>
+<div class="para">el conjunto de los distintos conjugados de <span class="process-math">\(P\)</span> en <span class="process-math">\(G\text{.}\)</span> Por el <a href="" class="xref" data-knowl="./knowl/sylow-lemma-distinct-conjugates.html" title="Lema 15.1.6">Lema 15.1.6</a>, <span class="process-math">\(k = [G: N(P)]\text{.}\)</span> Notemos que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sylow-lemma-distinct-conjugates.html">
+\begin{equation*}
+|G|= p^r m = |N(P)| \cdot [G: N(P)]= |N(P)| \cdot k\text{.}
+\end{equation*}
+</div>
+<div class="para">Como <span class="process-math">\(p^r\)</span> divide a <span class="process-math">\(|N(P)|\text{,}\)</span> <span class="process-math">\(p\)</span> no divide a <span class="process-math">\(k\text{.}\)</span>
+</div>
+</div> <div class="para">Dado cualquier otro <span class="process-math">\(p\)</span>-subgrupo de Sylow <span class="process-math">\(Q\text{,}\)</span> debemos mostrar que <span class="process-math">\(Q \in {\mathcal S}\text{.}\)</span> Consideremos las <span class="process-math">\(Q\)</span>-clases de conjugación de cada <span class="process-math">\(P_i\text{.}\)</span> Claramente, estas clases de conjugación forman una partición de <span class="process-math">\({\mathcal S}\text{.}\)</span> El tamaño de la parte que contiene a <span class="process-math">\(P_i\)</span> es <span class="process-math">\([Q :N(P_i) \cap Q]\)</span> por el <a href="" class="xref" data-knowl="./knowl/sylow-lemma-distinct-conjugates.html" title="Lema 15.1.6">Lema 15.1.6</a>, y el Teorema de Lagrange nos dice que <span class="process-math">\(|Q| = [Q :N(P_i) \cap Q] |N(P_i) \cap Q|\text{.}\)</span> Así, <span class="process-math">\([Q :N(P_i) \cap Q]\)</span> divide a  <span class="process-math">\(|Q|= p^r\text{.}\)</span> Luego, el número de conjugados en cada clase de equivalencia de la partición es una potencia de <span class="process-math">\(p\text{.}\)</span> Pero, como <span class="process-math">\(p\)</span> no divide a <span class="process-math">\(k\text{,}\)</span> una de estas clases de equivalencia solo contiene un único <span class="process-math">\(p\)</span>-subgrupo de Sylow, digamos <span class="process-math">\(P_j\text{.}\)</span> En este caso,  <span class="process-math">\(x^{-1} P_j x = P_j\)</span> para todo <span class="process-math">\(x \in Q\text{.}\)</span> Por el <a href="" class="xref" data-knowl="./knowl/sylow-lemma-p-order.html" title="Lema 15.1.5">Lema 15.1.5</a>, <span class="process-math">\(P_j = Q\text{.}\)</span>
 </div></article></body>
 </html>

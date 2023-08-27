@@ -12,8 +12,28 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Dé dos factorizaciones diferentes de <span class="process-math">\(x^2 + x + 8\)</span> en <span class="process-math">\({\mathbb Z}_{10}[x]\text{.}\)</span>
+<div class="para logical">
+<div class="para">Para mostrar que <span class="process-math">\(q(x)\)</span> y <span class="process-math">\(r(x)\)</span> son únicos, supongamos que además existen <span class="process-math">\(q_1(x)\)</span> y <span class="process-math">\(r_1(x)\)</span> tales que <span class="process-math">\(f(x) = g(x) q_1(x) + r_1(x)\)</span> con <span class="process-math">\(\deg r_1(x) \lt \deg g(x)\)</span> o <span class="process-math">\(r_1(x) = 0\text{,}\)</span> de manera que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = g(x) q(x) + r(x) = g(x) q_1(x) + r_1(x)\text{,}
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-poly.html#p-2667" class="internal">en contexto</a></span>
+<div class="para">y</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g(x) [q(x) - q_1(x) ] = r_1(x) - r(x)\text{.}
+\end{equation*}
+</div>
+<div class="para">Si <span class="process-math">\(q(x) - q_1(x)\)</span> no es el polinomio cero, entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\deg( g(x) [q(x) - q_1(x) ] )= \deg( r_1(x) - r(x) ) \geq \deg g(x)\text{.}
+\end{equation*}
+</div>
+<div class="para">Pero, los grados tanto de <span class="process-math">\(r(x)\)</span> como de <span class="process-math">\(r_1(x)\)</span> son estrictamente menores que el grado de <span class="process-math">\(g(x)\text{;}\)</span> por lo tanto, <span class="process-math">\(r(x) = r_1(x)\)</span> y <span class="process-math">\(q(x) = q_1(x)\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="poly-section-division-algorithm.html#ZmV" class="internal">en contexto</a></span>
 </body>
 </html>

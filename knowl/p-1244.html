@@ -11,22 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Párrafo</span></h5>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Supongamos que las palabras a ser codificadas consisten de todas las 3-tuples binarias y que nuestro mecanismo de codificación es el de control de paridad. Para codificar una 3-tupla arbitraria, agregamos un cuarto bit para obtener un número par de unos. Note que una <span class="process-math">\(n\)</span>-tupla arbitraria <span class="process-math">\({\mathbf x} = (x_1, x_2, \ldots, x_n)^{\rm t}\)</span> tiene un número par de unos exactamente cuando <span class="process-math">\(x_1 + x_2 + \cdots + x_n = 0\text{;}\)</span> luego, una 4-tupla <span class="process-math">\({\mathbf x} = (x_1, x_2, x_3, x_4)^{\rm t}\)</span> tiene un número par de unos si y solo si <span class="process-math">\(x_1+ x_2+ x_3+ x_4 = 0\text{,}\)</span> o</div>
+<div class="para">Un posible mecanismo de codificación sería enviar el mensaje múltiples veces y comparar las copias recibidas entre ellas. Supongamos que el mensaje a codificar es una <span class="process-math">\(n\)</span>-tupla binaria <span class="process-math">\((x_{1}, x_{2}, \ldots, x_{n})\text{.}\)</span> El mensaje se codifica en una <span class="process-math">\(3n\)</span>-tupla binaria simplemente repitiendo el mensaje tres veces:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-{\mathbf x} \cdot {\mathbf 1} =  {\mathbf x}^{\rm t} {\mathbf 1} =
-\begin{pmatrix}
-x_1 &amp; x_2 &amp; x_3 &amp; x_4
-\end{pmatrix}
-\begin{pmatrix}
-1 \\ 1 \\ 1 \\ 1
-\end{pmatrix} = 0.
+(x_{1}, x_{2}, \ldots, x_{n}) \mapsto (x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n})\text{.}
 \end{equation*}
 </div>
-<div class="para">Este ejemplo nos da esperanza de que haya una conexión entre las matrices y la teoría de códigos.</div>
+<div class="para">Para decodificar el mensaje, escogemos como el <span class="process-math">\(i\)</span>-ésimo dígito el que aparezca en la <span class="process-math">\(i\)</span>-ésima posición de al menos dos de las tres transmisiones. Por ejemplo, si el mensaje original es <span class="process-math">\((0110)\text{,}\)</span> entonces el mensaje transmitido será <span class="process-math">\((0110\;  0110\;  0110)\text{.}\)</span> Si hay un error de transmisión en el quinto dígito, entonces la palabra recibida será <span class="process-math">\((0110\;  1110\;  0110)\text{,}\)</span> la que será correctamente decodificada como <span class="process-math">\((0110)\text{.}\)</span><a href="" class="fn-knowl original" data-knowl="./knowl/fn-10-hidden.html" title="Nota a pie de página 8.1.1"><sup> 1 </sup></a>  Este método de repetición-triple automáticamente detecta y corrige todos los errores individuales, pero es lento e ineficiente: para enviar un mensaje que consista de <span class="process-math">\(n\)</span> bits, se requieren <span class="process-math">\(2n\)</span> bits adicionales, y solo podemos detectar y corregir errores individuales. Veremos que es posible encontrar mecanismos de codificación que codifiquen un mensaje de <span class="process-math">\(n\)</span> bits en uno de <span class="process-math">\(m\)</span> bits con <span class="process-math">\(m\)</span> mucho menor a <span class="process-math">\(3n\text{.}\)</span>
 </div>
-<span class="incontext"><a href="section-linear-codes.html#p-1244" class="internal">en contexto</a></span>
+</div>
+<span class="incontext"><a href="algcodes-section-error-detecting-correcting-codes.html#lIR" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -16,7 +16,7 @@
 <div class="para">Sea <span class="process-math">\(G\)</span> un grupo.  Debemos encontrar un grupo de permutaciones <span class="process-math">\(\overline{G}\)</span> que sea isomorfo a <span class="process-math">\(G\text{.}\)</span> Para cualquier <span class="process-math">\(g \in G\text{,}\)</span> definamos una función <span class="process-math">\(\lambda_g : G \rightarrow G\)</span> como <span class="process-math">\(\lambda_g(a) = ga\text{.}\)</span>  Afirmamos que <span class="process-math">\(\lambda_g\)</span> es una permutación de <span class="process-math">\(G\text{.}\)</span>  Para demostrar que <span class="process-math">\(\lambda_g\)</span> es 1-1, supongamos que <span class="process-math">\(\lambda_g(a) = \lambda_g(b)\text{.}\)</span>  Entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
-ga =\lambda_g(a) = \lambda_g(b) = gb.
+ga =\lambda_g(a) = \lambda_g(b) = gb\text{.}
 \end{equation*}
 </div>
 <div class="para">Luego, <span class="process-math">\(a = b\text{.}\)</span>  Para demostrar que <span class="process-math">\(\lambda_g\)</span> es sobre, debemos demostrar que para cada <span class="process-math">\(a \in G\text{,}\)</span> existe <span class="process-math">\(b\)</span> tal que <span class="process-math">\(\lambda_g (b) = a\text{.}\)</span>  Sea <span class="process-math">\(b = g^{-1} a\text{.}\)</span>
@@ -25,13 +25,13 @@ ga =\lambda_g(a) = \lambda_g(b) = gb.
 <div class="para">Estamos preparados para definir nuestro grupo <span class="process-math">\(\overline{G}\text{.}\)</span> Sea</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\overline{G} = \{ \lambda_g : g \in G \}.
+\overline{G} = \{ \lambda_g : g \in G \}\text{.}
 \end{equation*}
 </div>
 <div class="para">Debemos mostrar que <span class="process-math">\(\overline{G}\)</span> es un grupo con la operación de composición de funciones y encontrar un isomorfismo entre <span class="process-math">\(G\)</span> y <span class="process-math">\(\overline{G}\text{.}\)</span>  Tenemos la clausura bajo composición de funciones pues</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(\lambda_g \circ \lambda_h )(a) = \lambda_g(ha) = gha = \lambda_{gh} (a).
+(\lambda_g \circ \lambda_h )(a) = \lambda_g(ha) = gha = \lambda_{gh} (a)\text{.}
 \end{equation*}
 </div>
 <div class="para">Además,</div>
@@ -43,24 +43,24 @@ ga =\lambda_g(a) = \lambda_g(b) = gb.
 <div class="para">y</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(\lambda_{g^{-1}} \circ \lambda_g) (a) = \lambda_{g^{-1}} (ga) = g^{-1} g a = a = \lambda_e (a).
+(\lambda_{g^{-1}} \circ \lambda_g) (a) = \lambda_{g^{-1}} (ga) = g^{-1} g a = a = \lambda_e (a)\text{.}
 \end{equation*}
 </div>
 </div> <div class="para logical">
 <div class="para">Podemos definir un isomorfismo de <span class="process-math">\(G\)</span> en <span class="process-math">\(\overline{G}\)</span> como <span class="process-math">\(\phi : g \mapsto \lambda_g\text{.}\)</span> La operación de grupo se preserva pues</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\phi(gh) = \lambda_{gh} = \lambda_g \lambda_h = \phi(g) \phi(h).
+\phi(gh) = \lambda_{gh} = \lambda_g \lambda_h = \phi(g) \phi(h)\text{.}
 \end{equation*}
 </div>
 <div class="para">Es 1-1, pues si <span class="process-math">\(\phi(g)(a) = \phi(h)(a)\text{,}\)</span> entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
-ga = \lambda_g a = \lambda_h a=  ha.
+ga = \lambda_g a = \lambda_h a=  ha\text{.}
 \end{equation*}
 </div>
 <div class="para">Luego, <span class="process-math">\(g = h\text{.}\)</span>  Que  <span class="process-math">\(\phi\)</span> sea sobre sigue del hecho de que <span class="process-math">\(\phi( g ) = \lambda_g\)</span> para cualquier <span class="process-math">\(\lambda_g \in \overline{G}\text{.}\)</span>
 </div>
-</div></article><span class="incontext"><a href="section-isomorph-definitions.html#proof-61" class="internal">en contexto</a></span>
+</div></article><span class="incontext"><a href="isomorph-section-definitions.html#BPe" class="internal">en contexto</a></span>
 </body>
 </html>

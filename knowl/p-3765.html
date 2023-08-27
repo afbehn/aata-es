@@ -12,7 +12,17 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">La última línea expresa el hecho de que  <code class="code-inline tex2jax_ignore">tau_matrix</code> es una representación matricial del automorfismo de cuerpos, visto como transformación lineal en la estructura de espacio vectorial.  En la representación de un homomorfismo de cuerpos invertible, la matriz es invertible. Para una permutación de orden <span class="process-math">\(2\)</span> de las raíces, la inversa de la matriz es ella misma.  Pero estos hechos son solo verificaciones de que tenemos lo que queremos, estamos interesados en otras propiedades.</div>
-<span class="incontext"><a href="galois-sage.html#p-3765" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Recíprocamente, sea <span class="process-math">\(G(E/K)\)</span> un subgrupo normal de <span class="process-math">\(G(E/F)\text{.}\)</span> Debemos demostrar que <span class="process-math">\(F = K_{G(K/F)}\text{.}\)</span> Sea <span class="process-math">\(\tau \in G(E/K)\text{.}\)</span> Para todo <span class="process-math">\(\sigma \in G(E/F)\)</span> existe <span class="process-math">\(\overline{\tau} \in G(E/K)\)</span> tal que <span class="process-math">\(\tau \sigma = \sigma \overline{\tau}\text{.}\)</span>  De esta manera, para todo <span class="process-math">\(\alpha \in K\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tau( \sigma( \alpha ) ) = \sigma( \overline{\tau}( \alpha ) ) = \sigma( \alpha );
+\end{equation*}
+</div>
+<div class="para">luego, <span class="process-math">\(\sigma( \alpha )\)</span> es el cuerpo fijo de <span class="process-math">\(G(E/K)\text{.}\)</span> Sea <span class="process-math">\(\overline{\sigma}\)</span> la restricción de <span class="process-math">\(\sigma\)</span> a <span class="process-math">\(K\text{.}\)</span> Entonces <span class="process-math">\(\overline{\sigma}\)</span> es un automorfismo de <span class="process-math">\(K\)</span> que fija <span class="process-math">\(F\text{,}\)</span> pues <span class="process-math">\(\sigma( \alpha ) \in K\)</span> para todo <span class="process-math">\(\alpha \in K\text{;}\)</span> luego, <span class="process-math">\(\overline{\sigma} \in G(K/F)\text{.}\)</span> A continuación, mostraremos que el cuerpo fijo de <span class="process-math">\(G(K/F)\)</span> es <span class="process-math">\(F\text{.}\)</span> Sea <span class="process-math">\(\beta\)</span> un elemento en <span class="process-math">\(K\)</span> que queda fijo por todos los automorfismos en <span class="process-math">\(G(K/F)\text{.}\)</span>  En particular, <span class="process-math">\(\overline{\sigma}(\beta) = \beta\)</span> para todo <span class="process-math">\(\sigma \in G(E/F)\text{.}\)</span>  Por lo tanto, <span class="process-math">\(\beta\)</span> pertenece al cuerpo fijo <span class="process-math">\(F\)</span> de <span class="process-math">\(G(E/F)\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="galois-section-fund-theorem-galois-theory.html#OtE" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -13,18 +13,25 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Nos falta demostrar  que <span class="process-math">\(p(x)\)</span> tiene un cero <span class="process-math">\(\alpha \in E\text{.}\)</span> Sea <span class="process-math">\(\alpha = x + \langle p(x) \rangle\text{.}\)</span> Entonces <span class="process-math">\(\alpha\)</span> está en <span class="process-math">\(E\text{.}\)</span> Si <span class="process-math">\(p(x) = a_0 + a_1 x + \cdots + a_n x^n\text{,}\)</span> entonces</div>
+<div class="para">Sea <span class="process-math">\(V\)</span> un espacio vectorial de dimensión <span class="process-math">\(n\text{.}\)</span>
+</div>
+<ol class="decimal">
+<li><div class="para">Si <span class="process-math">\(S = \{v_1, \ldots, v_n \}\)</span> es un conjunto de vectores linealmente independiente en <span class="process-math">\(V\text{,}\)</span> entonces <span class="process-math">\(S\)</span> es una base para <span class="process-math">\(V\text{.}\)</span>
+</div></li>
+<li><div class="para">Si <span class="process-math">\(S = \{v_1, \ldots, v_n \}\)</span> genera <span class="process-math">\(V\text{,}\)</span> entonces <span class="process-math">\(S\)</span> es una base para <span class="process-math">\(V\text{.}\)</span>
+</div></li>
+<li><div class="para logical">
+<div class="para">Si <span class="process-math">\(S = \{v_1, \ldots, v_k \}\)</span> es un conjunto de vectores linealmente independiente en <span class="process-math">\(V\)</span> con <span class="process-math">\(k \lt n\text{,}\)</span> entonces existen vectores <span class="process-math">\(v_{k + 1}, \ldots, v_n\)</span> tales que</div>
 <div class="displaymath process-math">
-\begin{align*}
-p( \alpha ) &amp; =  a_0 + a_1( x + \langle p(x) \rangle) + \cdots + a_n ( x + \langle p(x) \rangle)^n\\
-&amp; = a_0 + ( a_1 x + \langle p(x) \rangle) + \cdots + (a_n  x^n + \langle p(x) \rangle)\\
-&amp; = a_0 + a_1 x + \cdots + a_n x^n + \langle p(x) \rangle\\
-&amp; = 0 + \langle p(x) \rangle.
-\end{align*}
+\begin{equation*}
+\{v_1, \ldots, v_k, v_{k + 1}, \ldots, v_n \}
+\end{equation*}
 </div>
-<div class="para">Por lo tanto, hemos encontrado un elemento <span class="process-math">\(\alpha \in E = F[x]/\langle p(x) \rangle\)</span> tal que <span class="process-math">\(\alpha\)</span> es un cero de <span class="process-math">\(p(x)\text{.}\)</span>
+<div class="para">es una base para <span class="process-math">\(V\text{.}\)</span>
 </div>
+</div></li>
+</ol>
 </div>
-<span class="incontext"><a href="section-extension-fields.html#p-3228" class="internal">en contexto</a></span>
+<span class="incontext"><a href="vect-section-linear-independence.html#blM" class="internal">en contexto</a></span>
 </body>
 </html>

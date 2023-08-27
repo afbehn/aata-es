@@ -12,7 +12,23 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Verifique que <code class="code-inline tex2jax_ignore">C</code> y <code class="code-inline tex2jax_ignore">D</code> tienen el mismo tamaño usando el método <code class="code-inline tex2jax_ignore">.order()</code>.  Determine cuál de ellos es abeliano, y cuál no lo es, usando el método <code class="code-inline tex2jax_ignore">.is_abelian()</code>.</div>
-<span class="incontext"><a href="groups-sage-exercises.html#p-559" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Sage usa enteros para etiquetar los vértices, empezando a contar desde <code class="code-inline tex2jax_ignore">1</code>, en lugar de letras.  Los elementos normalmente se muestran en “notación cíclica (cycle notation)” que veremos descrita en detalle en el <a href="permute.html" class="internal" title="Capítulo 5: Grupos de Permutaciones">Capítulo 5</a>.    Acá hay un ejemplo, que incluye tanto matemáticas como Sage.  Para la parte de Sage, construimos el grupo de simetrías y luego creamos la simetría <span class="process-math">\(\rho_2\)</span> por coerción, desplegando a continuación el elemento en notación cíclica.  Después creamos la <em class="emphasis">fila inferior</em> de la notación que hemos usado para las permutaciones.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/permute.html">
+\begin{equation*}
+\rho_2=
+\begin{pmatrix}
+A &amp; B &amp; C\\
+C &amp; A &amp; B
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 &amp; 2 &amp; 3\\
+3 &amp; 1 &amp; 2
+\end{pmatrix}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="groups-sage.html#Vqw" class="internal">en contexto</a></span>
 </body>
 </html>

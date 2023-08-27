@@ -13,14 +13,38 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
 <div class="para logical">
-<div class="para">Procederemos por inducción sobre el grado de <span class="process-math">\(p(x)\text{.}\)</span>  Si <span class="process-math">\(\deg p(x) = 1\text{,}\)</span> entonces <span class="process-math">\(p(x)\)</span> es un polinomio lineal y <span class="process-math">\(E = F\text{.}\)</span>  Supongamos que el teorema es cierto para todos los polinomios de grado <span class="process-math">\(k\)</span> con <span class="process-math">\(1 \leq k \lt n\)</span> y sea <span class="process-math">\(\deg p(x) = n\text{.}\)</span> Podemos suponer que <span class="process-math">\(p(x)\)</span> es irreducible; de lo contrario, por la hipótesis de inducción, estamos listos. Por el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-fundamental-of-field-theory.html" title="Teorema 21.1.5">21.1.5</a>, hay un cuerpo <span class="process-math">\(K\)</span> tal que <span class="process-math">\(p(x)\)</span> tiene una raíz <span class="process-math">\(\alpha_1\)</span> en <span class="process-math">\(K\text{.}\)</span> Luego, <span class="process-math">\(p(x) = (x - \alpha_1)q(x)\text{,}\)</span> con <span class="process-math">\(q(x) \in K[x]\text{.}\)</span> Como <span class="process-math">\(\deg q(x) = n -1\text{,}\)</span> hay un cuerpo de descomposición <span class="process-math">\(E \supset K\)</span> para <span class="process-math">\(q(x)\)</span> que contiene los ceros <span class="process-math">\(\alpha_2, \ldots, \alpha_n\)</span> de <span class="process-math">\(p(x)\)</span> por la hipótesis de inducción. Por lo tanto,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-fundamental-of-field-theory.html">
+<div class="para">Si <span class="process-math">\(p(x)\)</span> tiene grado <span class="process-math">\(n\text{,}\)</span> entonces por el <a href="" class="xref" data-knowl="./knowl/fields-theorem-simple_extension.html" title="Teorema 21.1.13">Teorema 21.1.13</a> podemos escribir cualquier elemento en <span class="process-math">\(E( \alpha )\)</span> como combinación lineal de <span class="process-math">\(1, \alpha, \ldots, \alpha^{n - 1}\text{.}\)</span> Por lo tanto, el isomorfismo que buscamos debe ser</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fields-theorem-simple_extension.html">
 \begin{equation*}
-E = K(\alpha_2, \ldots, \alpha_n) = F(\alpha_1, \ldots, \alpha_n)
+\overline{\phi}( a_0 + a_1 \alpha + \cdots + a_{n - 1} \alpha^{n - 1}) = \phi(a_0) + \phi(a_1) \beta + \cdots + \phi(a_{n - 1}) \beta^{n - 1}\text{,}
 \end{equation*}
 </div>
-<div class="para">es un cuerpo de descomposición para <span class="process-math">\(p(x)\text{.}\)</span>
+<div class="para">donde</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fields-theorem-simple_extension.html">
+\begin{equation*}
+a_0 + a_1 \alpha + \cdots + a_{n - 1} \alpha^{n - 1}
+\end{equation*}
 </div>
-</div></article><span class="incontext"><a href="section-splitting-fields.html#proof-173" class="internal">en contexto</a></span>
+<div class="para">es un elemento en <span class="process-math">\(E(\alpha)\text{.}\)</span> El hecho de que <span class="process-math">\(\overline{\phi}\)</span> sea un isomorfismo se podría verificar de forma directa; sin embargo, es más fácil notar que <span class="process-math">\(\overline{\phi}\)</span> es una composición de funciones que ya sabemos que son homomorfismos.</div>
+</div> <div class="para logical">
+<div class="para">Podemos extender <span class="process-math">\(\phi\)</span> a un isomorfismo de <span class="process-math">\(E[x]\)</span> a <span class="process-math">\(F[x]\text{,}\)</span> que también denotaremos por <span class="process-math">\(\phi\text{,}\)</span> haciendo</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fields-proposition-minimal-poly.html ./knowl/fields-figure-splitting-fields-1.html">
+\begin{equation*}
+\phi( a_0 + a_1 x + \cdots + a_n x^n ) =  \phi( a_0 ) + \phi(a_1) x + \cdots + \phi(a_n) x^n\text{.}
+\end{equation*}
+</div>
+<div class="para">Esta extensión coincide con el isomorfismo original <span class="process-math">\(\phi : E \rightarrow F\text{,}\)</span> pues los polinomios constantes son enviados a polinomios constantes.  Por hipótesis, <span class="process-math">\(\phi(p(x)) = q(x)\text{;}\)</span> luego, <span class="process-math">\(\phi\)</span> envía <span class="process-math">\(\langle p(x) \rangle\)</span> en <span class="process-math">\(\langle q(x) \rangle\text{.}\)</span> Por lo tanto, tenemos un isomorfismo <span class="process-math">\(\psi : E[x] / \langle p(x) \rangle \rightarrow F[x]/\langle q(x) \rangle\text{.}\)</span> Por la <a href="" class="xref" data-knowl="./knowl/fields-proposition-minimal-poly.html" title="Proposición 21.1.12">Proposición 21.1.12</a>, tenemos isomorfismos <span class="process-math">\(\sigma: E[x]/\langle p(x) \rangle \rightarrow E(\alpha)\)</span> y <span class="process-math">\(\tau : F[x]/\langle q(x) \rangle \rightarrow F( \beta )\text{,}\)</span> definidos por evaluación en <span class="process-math">\(\alpha\)</span> y <span class="process-math">\(\beta\text{,}\)</span> respectivamente. Por lo tanto, <span class="process-math">\(\overline{\phi} = \tau \psi \sigma^{-1}\)</span> es el isomorfismo requerido (ver <a href="" class="xref" data-knowl="./knowl/fields-figure-splitting-fields-1.html" title="Figura 21.2.5">Figura 21.2.5</a>).</div>
+</div> <figure class="figure figure-like"><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+E[x]/\langle p(x) \rangle    @&gt;\psi&gt;&gt;  F[x]/\langle q(x) \rangle  \\
+@VV{\sigma}V        @VV{\tau}V\\
+E(\alpha)     @&gt;\overline{\phi}&gt;&gt;  F(\beta) \\
+@VVV        @VVV\\
+E     @&gt;\phi&gt;&gt;  F
+\end{CD}
+\end{equation*}
+</div></div>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">21.2.5<span class="period">.</span></span><span class="space"> </span>Diagrama conmutativo para <a href="" class="xref" data-knowl="./knowl/fields-lemma-field-isomorphism.html" title="Lema 21.2.4">Lema 21.2.4</a></figcaption></figure> <div class="para">Dejamos la demostración de la unicidad como ejercicio.</div></article><span class="incontext"><a href="fields-section-splitting-fields.html#NyT" class="internal">en contexto</a></span>
 </body>
 </html>

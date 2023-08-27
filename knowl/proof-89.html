@@ -13,21 +13,14 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
 <div class="para logical">
-<div class="para">Sabemos que <span class="process-math">\(|G|/|G_x|\)</span> es el número de clases laterales izquierdas de <span class="process-math">\(G_x\)</span> en <span class="process-math">\(G\)</span> por el Teorema de Lagrange (Teorema <a href="" class="xref" data-knowl="./knowl/theorem-lagrange.html" title="Teorema 6.2.2: Lagrange">6.2.2</a>). Definiremos una función biyetiva <span class="process-math">\(\phi\)</span> de la órbita <span class="process-math">\({\mathcal O}_x\)</span> de <span class="process-math">\(x\)</span> al conjunto de clases laterales izquierdas <span class="process-math">\({\mathcal L}_{G_x}\)</span> de <span class="process-math">\(G_x\)</span> en <span class="process-math">\(G\text{.}\)</span> Sea <span class="process-math">\(y \in {\mathcal O}_x\text{.}\)</span> Entonces existe <span class="process-math">\(g\)</span> en <span class="process-math">\(G\)</span> tal que <span class="process-math">\(g x = y\text{.}\)</span> Definamos <span class="process-math">\(\phi\)</span> de forma que <span class="process-math">\(\phi( y ) = g G_x\text{.}\)</span>  Para mostrar que <span class="process-math">\(\phi\)</span> es 1-1, supongamos que <span class="process-math">\(\phi(y_1) = \phi(y_2)\text{.}\)</span> Entonces</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-lagrange.html">
+<div class="para">Aplicamos la ecuación de clase</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\phi(y_1) = g_1 G_x = g_2 G_x = \phi(y_2),
+|G| = |Z(G)|  + n_1 + \cdots + n_k
 \end{equation*}
 </div>
-<div class="para">donde <span class="process-math">\(g_1 x = y_1\)</span> y <span class="process-math">\(g_2 x = y_2\text{.}\)</span>  Como <span class="process-math">\(g_1 G_x = g_2 G_x\text{,}\)</span> existe <span class="process-math">\(g \in G_x\)</span> tal que <span class="process-math">\(g_2 = g_1 g\text{,}\)</span>
+<div class="para">Como cada <span class="process-math">\(n_i \gt 1\)</span> y <span class="process-math">\(n_i \mid |G|\text{,}\)</span> concluimos que <span class="process-math">\(p\)</span> divide a cada <span class="process-math">\(n_i\text{.}\)</span> Además, <span class="process-math">\(p \mid |G|\text{;}\)</span> luego, <span class="process-math">\(p\)</span> divide a <span class="process-math">\(|Z(G)|\text{.}\)</span> Como la identidad siempre está en el centro de <span class="process-math">\(G\text{,}\)</span> <span class="process-math">\(|Z(G)| \geq 1\text{.}\)</span> Por lo tanto, <span class="process-math">\(|Z(G)|  \geq p\text{,}\)</span> y existe algún <span class="process-math">\(g \in Z(G)\)</span> tal que <span class="process-math">\(g \neq 1\text{.}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-lagrange.html">
-\begin{equation*}
-y_2 = g_2 x = g_1 g x = g_1 x = y_1;
-\end{equation*}
-</div>
-<div class="para">por lo tanto, la función <span class="process-math">\(\phi\)</span> es 1-1. Finalmente, debemos mostrar que <span class="process-math">\(\phi\)</span> es epiyectiva. Sea <span class="process-math">\(g G_x\)</span> una clase lateral izquierda. Si <span class="process-math">\(g x = y\text{,}\)</span> entonces <span class="process-math">\(\phi(y) = g G_x\text{.}\)</span>
-</div>
-</div></article><span class="incontext"><a href="section-groups-acting-on-sets.html#proof-89" class="internal">en contexto</a></span>
+</div></article><span class="incontext"><a href="actions-section-class-equation.html#Eih" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -11,8 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Sage puede determinar si algunos anillos son dominios integrales y podemos comprobar productos en ellos.  Pero, nociones de unidades, elementos irreducibles o primos no están implementadas en general (fuera de lo que vimos para polinomios en el capítulo anterior).  Peor aún, la construcción que sigue crea un anillo dentro de un cuerpo mayor y por ello algunas de las funciones (como <code class="code-inline tex2jax_ignore">.is_unit()</code>) se heredan y dan resultados engañosos.  Esto debido a que la construcción de abajo crea un anillo conocido como un “orden en un cuerpo de números.”</div>
-<span class="incontext"><a href="domains-sage.html#p-2898" class="internal">en contexto</a></span>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
+<div class="para logical">
+<div class="para">Los enteros Gaussianos en el <a href="" class="xref" data-knowl="./knowl/rings-example-gaussian-integers.html" title="Ejemplo 16.2.1">Ejemplo 16.2.1</a> del Capí<a href="rings.html" class="internal" title="Capítulo 16: Anillos">Capítulo 16</a> están definidos como</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rings-example-gaussian-integers.html ./knowl/rings.html">
+\begin{equation*}
+{\mathbb Z}[i] = \{  a + b i : a, b \in {\mathbb Z} \}\text{.}
+\end{equation*}
+</div>
+<div class="para">Usualmente medimos el tamaño de un número complejo <span class="process-math">\(a + bi\)</span> por su valor absoluto, <span class="process-math">\(|a + bi| = \sqrt{ a^2 + b^2}\text{;}\)</span> pero, <span class="process-math">\(\sqrt{a^2 + b^2}\)</span> podría no ser un entero. Como valuación elegiremos <span class="process-math">\(\nu(a + bi) = a^2 + b^2\)</span> para asegurarnos de tener un entero.</div>
+</div>
+<span class="incontext"><a href="domains-section-factorization-domains.html#Pmc" class="internal">en contexto</a></span>
 </body>
 </html>

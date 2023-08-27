@@ -11,19 +11,41 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Párrafo</span></h5>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">La Tabla <a href="" class="xref" data-knowl="./knowl/table-syndrome.html" title="Cuadro 8.4.8">8.4.8</a> es una tabla de decodificación para el código <span class="process-math">\(C\)</span> dado en el Ejemplo <a href="" class="xref" data-knowl="./knowl/example-algcodes-coset-decoding.html" title="Ejemplo 8.4.5">8.4.5</a>. Si se recibe <span class="process-math">\({\mathbf x} = (01111)\text{,}\)</span> entonces su síndrome se calcula como</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/table-syndrome.html ./knowl/example-algcodes-coset-decoding.html">
+<div class="para">Observe que las filas en <span class="process-math">\(H\)</span>  representan las verificaciones de paridad en ciertas posiciones de las <span class="process-math">\(6\)</span>-tuplas. Los <span class="process-math">\(1\)</span>s en la matriz identidad sirven como verificadores de paridad para los <span class="process-math">\(1\)</span>s en la misma fila. Si <span class="process-math">\({\mathbf x} = (x_1, x_2, x_3, x_4, x_5, x_6)\text{,}\)</span> entonces</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/algcodes-table-matrix-gen-code.html">
 \begin{equation*}
-H {\mathbf x} =
+{\mathbf 0}
+=
+H{\mathbf x}
+=
 \begin{pmatrix}
-0 \\ 1 \\ 1
-\end{pmatrix}.
+x_2 + x_3 + x_4 \\
+x_1 + x_2 + x_5\\
+x_1 + x_3 + x_6
+\end{pmatrix}\text{,}
 \end{equation*}
 </div>
-<div class="para">Examinando la tabla de decodificación, determinamos que el líder de clase es <span class="process-math">\((00010)\text{.}\)</span> Es fácil ahora decodificar la palabra recibida.</div>
+<div class="para">lo que produce un sistema de ecuaciones:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/algcodes-table-matrix-gen-code.html">
+\begin{align*}
+x_2 + x_3 + x_4 &amp; = 0\\
+x_1 + x_2 + x_5 &amp; = 0\\
+x_1 + x_3 + x_6 &amp; = 0\text{.}
+\end{align*}
 </div>
-<span class="incontext"><a href="section-efficient-decoding.html#p-1294" class="internal">en contexto</a></span>
+<div class="para">Acá <span class="process-math">\(x_4\)</span> sirve como bit de control para <span class="process-math">\(x_2\)</span> y <span class="process-math">\(x_3\text{;}\)</span> <span class="process-math">\(x_5\)</span> es un bit de control para <span class="process-math">\(x_1\)</span> y <span class="process-math">\(x_2\text{;}\)</span> y <span class="process-math">\(x_6\)</span> es un bit de control para <span class="process-math">\(x_1\)</span> y <span class="process-math">\(x_3\text{.}\)</span> La matriz identidad impide que <span class="process-math">\(x_4\text{,}\)</span> <span class="process-math">\(x_5\text{,}\)</span> y <span class="process-math">\(x_6\)</span> tengan que controlarse entre ellos. Luego, <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> y <span class="process-math">\(x_3\)</span> pueden ser arbitrarios pero <span class="process-math">\(x_4\text{,}\)</span> <span class="process-math">\(x_5\text{,}\)</span> y <span class="process-math">\(x_6\)</span> deben ser escogidos de manera de asegurar las paridades respectivas. Se calcula fácilmente que el espacio nulo de <span class="process-math">\(H\)</span> es</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/algcodes-table-matrix-gen-code.html">
+\begin{equation*}
+\begin{array}{cccc}
+(000000) &amp; (001101) &amp; (010110) &amp; (011011) \\
+(100011) &amp; (101110) &amp; (110101) &amp; (111000).
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Una forma aún más fácil de calcular el espacio nulo es con la matriz generadora <span class="process-math">\(G\)</span> (<a href="" class="xref" data-knowl="./knowl/algcodes-table-matrix-gen-code.html" title="Cuadro 8.3.2: A matrix-generated code">Cuadro 8.3.2</a>).</div>
+</div>
+<span class="incontext"><a href="algcodes-section-parity-check.html#zMw" class="internal">en contexto</a></span>
 </body>
 </html>

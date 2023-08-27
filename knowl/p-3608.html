@@ -12,8 +12,30 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Párrafo</span></h5>
-<div class="para">Supongamos primero que <span class="process-math">\(\chr F = 0\text{.}\)</span> Como <span class="process-math">\(\deg f'(x) \lt \deg f(x)\)</span> y <span class="process-math">\(f(x)\)</span> es irreducible, la única forma de que <span class="process-math">\(\gcd( f(x), f'(x)) \neq 1\)</span> es si <span class="process-math">\(f'(x)\)</span> es el polinomio cero; sin embargo, esto es imposible en un cuerpo de característica cero. Si <span class="process-math">\(\chr F = p\text{,}\)</span> entonces <span class="process-math">\(f'(x)\)</span> puede ser el polinomio cero si cada coeficiente de <span class="process-math">\(f'(x)\)</span> es un múltiplo de <span class="process-math">\(p\text{.}\)</span>  Esto solo puede pasar si tenemos un polinomio de la forma <span class="process-math">\(f(x) = a_0 + a_1 x^p + a_2 x^{2p} + \cdots + a_n x^{np}\text{.}\)</span>
+<div class="para logical">
+<div class="para">(2) <span class="process-math">\(\Rightarrow\)</span> (3). Sea <span class="process-math">\(f(t) = a_0 + a_1 t + \cdots + a_{n - 1}v t^{n - 1}\)</span> en <span class="process-math">\(R_n\text{.}\)</span> La correspondiente <span class="process-math">\(n\)</span>-tupla en <span class="process-math">\({\mathbb Z}_2^n\)</span> es <span class="process-math">\({\mathbf x} = (a_0 a_1 \cdots a_{n - 1})^\transpose\text{.}\)</span> Por (2),</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H {\mathbf x} =
+\begin{pmatrix}
+a_0 + a_1 \omega + \cdots + a_{n-1} \omega^{n-1} \\
+a_0 + a_1 \omega^2 + \cdots + a_{n-1} (\omega^2)^{n-1} \\
+\vdots \\
+a_0 + a_1 \omega^{2r} + \cdots + a_{n-1} (\omega^{2r})^{n-1}
+\end{pmatrix}
+=
+\begin{pmatrix}
+f(\omega) \\
+f(\omega^2) \\
+\vdots \\
+f(\omega^{2r})
+\end{pmatrix}
+= 0
+\end{equation*}
 </div>
-<span class="incontext"><a href="section-field-automorphisms.html#p-3608" class="internal">en contexto</a></span>
+<div class="para">precisamente cuando <span class="process-math">\(f(t)\)</span> está en <span class="process-math">\(C\text{.}\)</span> Luego, <span class="process-math">\(H\)</span> es una matriz verificadora para <span class="process-math">\(C\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="finite-section-poly-codes.html#ZRL" class="internal">en contexto</a></span>
 </body>
 </html>

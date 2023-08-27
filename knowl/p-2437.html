@@ -13,19 +13,25 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Encuentre todos los ideales de cada uno de los anillos siguientes. ¿Cuáles de estos ideales son maximales? ¿Cuáles son primos?</div>
-<ol class="lower-alpha">
-<li><div class="para"><span class="process-math">\(\displaystyle {\mathbb Z}_{18}\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle {\mathbb Z}_{25}\)</span></div></li>
-<li><div class="para">
-<span class="process-math">\({\mathbb M}_2( {\mathbb R} )\text{,}\)</span> las matrices de <span class="process-math">\(2 \times 2\)</span> con coeficientes en <span class="process-math">\({\mathbb R}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\({\mathbb M}_2( {\mathbb Z} )\text{,}\)</span> las matrices de <span class="process-math">\(2 \times 2\)</span> con coeficientes en <span class="process-math">\({\mathbb Z}\)</span>
-</div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle {\mathbb Q}\)</span></div></li>
-</ol>
+<div class="para">Para cualquier entero <span class="process-math">\(n\)</span> podemos definir un homomorfismo de anillos <span class="process-math">\(\phi : {\mathbb Z} \rightarrow {\mathbb Z}_n\)</span> como <span class="process-math">\(a \mapsto a \pmod{n}\text{.}\)</span> En efecto es un homomorfismo de anillos, pues</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi( a + b )  &amp; = (a + b) \pmod{n}\\
+&amp; =  a \pmod{n} + b \pmod{n}\\
+&amp; = \phi( a ) + \phi(b)
+\end{align*}
 </div>
-<span class="incontext"><a href="exercises-rings.html#p-2437" class="internal">en contexto</a></span>
+<div class="para">y</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi( a b )  &amp; =  ab \pmod{n}\\
+&amp; = a \pmod{n}\cdot  b \pmod{n}\\
+&amp; = \phi( a ) \phi(b)\text{.}
+\end{align*}
+</div>
+<div class="para">El núcleo del homomorfismo <span class="process-math">\(\phi\)</span> es <span class="process-math">\(n {\mathbb Z}\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="rings-section-homomorphisms.html#zDs" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -12,8 +12,18 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Párrafo</span></h5>
-<div class="para">De la Proposición <a href="" class="xref" data-knowl="./knowl/proposition-motions-cube.html" title="Proposición 5.2.9">5.2.9</a>, ya sabemos que el grupo de movimientos del cubo tiene 24 elementos, el mismo número de  elementos que hay en <span class="process-math">\(S_4\text{.}\)</span>  Hay exactamente cuatro diagonales en el cubo.  Si etiquetamos estas diagonales con 1, 2, 3, y 4, debemos mostrar que el grupo de movimientos del cubo nos dará cualquier permutación de las diagonales (Figura <a href="" class="xref" data-knowl="./knowl/figure-motions.html" title="Figura 5.2.8">5.2.8</a>). Si podemos obtener todas estas permutaciones, entonces <span class="process-math">\(S_4\)</span> y el grupo de movimientos rígidos del cubo tendrán que ser el mismo. Para obtener una transposición, podemos  rotar el cubo en <span class="process-math">\(180^{\circ}\)</span> en torno al eje que une los puntos medios de aristas opuestas (Figura <a href="" class="xref" data-knowl="./knowl/figure-transpose.html" title="Figura 5.2.11">5.2.11</a>). Hay seis de tales ejes, dando todas las transposiciones en <span class="process-math">\(S_4\text{.}\)</span> Como todo elemento en <span class="process-math">\(S_4\)</span> es el producto de un número finito de transposiciones, el grupo de movimientos de un cubo tiene que ser <span class="process-math">\(S_4\text{.}\)</span>
+<div class="para logical">
+<div class="para">Procederemos por inducción en <span class="process-math">\(r\text{.}\)</span>  Una transposición no puede ser la identidad; luego,   <span class="process-math">\(r \gt 1\text{.}\)</span> Si <span class="process-math">\(r=2\text{,}\)</span> estamos listos. Supongamos que <span class="process-math">\(r \gt 2\text{.}\)</span> En este caso el producto de al menos dos de estas transposiciones, <span class="process-math">\(\tau_{r-1} \tau_r\text{,}\)</span> debe estar en uno de los casos siguientes:</div>
+<div class="displaymath process-math">
+\begin{align*}
+(a, b)(a, b) &amp; = \identity\\
+(b, c)(a, b) &amp; = (a, c)(b, c)\\
+(c, d)(a, b) &amp; = (a, b)(c, d)\\
+(a, c)(a, b) &amp; = (a, b)(b, c)\text{,}
+\end{align*}
 </div>
-<span class="incontext"><a href="section-dihedral-groups.html#p-835" class="internal">en contexto</a></span>
+<div class="para">donde <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> y <span class="process-math">\(d\)</span> son distintos.</div>
+</div>
+<span class="incontext"><a href="permute-section-permutation-definitions.html#CFC" class="internal">en contexto</a></span>
 </body>
 </html>

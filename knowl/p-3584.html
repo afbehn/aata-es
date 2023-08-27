@@ -11,16 +11,31 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Párrafo</span></h2>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
 <div class="para logical">
-<div class="para">Un problema cásico de álgebra es encontrar las soluciones de una ecuación polinomial.  La solución de la ecuación cuadrática se conoce desde la antigüedad.  Matemáticos italianos encontraron soluciones geenrales para las ecuaciones cúbica y cuártica en el siglo XVI; sin embargo, todos los intentos por resolver la ecuación general de grado cinco, o quíntica, fueron infructuosos durante los siguientes trecientos años. Por supuesto, ecuaciones particulares como <span class="process-math">\(x^5 - 1 = 0\)</span> o <span class="process-math">\(x^6 - x^3 - 6 = 0\)</span> podían ser resueltas, pero ninguna solución similar a la fórmula cuadrática fue encontrada para la ecuación general de grado cinco,</div>
-<div class="displaymath process-math">
+<div class="para">Para calcular una matriz generadora para <span class="process-math">\(C\text{,}\)</span> solo debemos examinar cómo se codifican los polinomios <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(x\text{,}\)</span> y <span class="process-math">\(x^2\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-example-6-3-linear-code.html">
+\begin{align*}
+(1 + x^3) \cdot 1 &amp; = 1 + x^3\\
+(1 + x^3)x &amp; = x + x^4\\
+(1 + x^3)x^2 &amp; = x^2 + x^5\text{.}
+\end{align*}
+</div>
+<div class="para">Obtenemos el código correspondiente a la matriz generadora <span class="process-math">\(G_1\)</span> en el <a href="" class="xref" data-knowl="./knowl/finite-example-6-3-linear-code.html" title="Ejemplo 22.2.1">Ejemplo 22.2.1</a>.  la matriz de verificación de paridad para este código es</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-example-6-3-linear-code.html">
 \begin{equation*}
-a x^5 + b x^4 +c x^3 + d x^2 + e x + f = 0.
+H
+= 
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 
+\end{pmatrix}\text{.}
 \end{equation*}
 </div>
-<div class="para">Finalmente, al comienzo del siglo XIX, Ruffini y Abel ambos encontraron quínticas que no podían resolverse con ninguna fórmula.  Fue  Galois, sin embargo, quien produjo la explicación completa mostrando que polinomios podían o no podían ser resueltos mediante fórmulas.  Él descubrió la conección entre los grupos y las extensiones de cuerpos.  La teoría de Galois demuestra la fuerte interdependencia que existe entre la teoría de grupos y la teoría de cuerpos y ha tenido importantes consecuencias mucho más allá de su objetivo inicial.</div>
+<div class="para">Como el menor peso de cualquier palabra no nula del código es <span class="process-math">\(2\text{,}\)</span> este código es capaz de detectar cualquier error único.</div>
 </div>
-<span class="incontext"><a href="galois.html#p-3584" class="internal">en contexto</a></span>
+<span class="incontext"><a href="finite-section-poly-codes.html#YMs" class="internal">en contexto</a></span>
 </body>
 </html>

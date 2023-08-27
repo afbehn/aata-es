@@ -11,8 +11,42 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Párrafo</span></h2>
-<div class="para">Un objetivo de la teoría de grupos es el de clasificar todos los grupos módulo isomorfismo; es decir, dado un grupo particular, queremos ser capaces de identificarlo con un grupo conocido por medio de un isomorfismo. Por ejemplo, ya demostramos que cualquier grupo cíclico finito de orden <span class="process-math">\(n\)</span> es isomorfo a <span class="process-math">\({\mathbb Z}_n\text{;}\)</span> luego, “conocemos” todos los grupos cíclicos finitos. Probablemente no es razonable suponer que jamás vayamos a conocer todos los grupos; sin embargo, podemos clasificar ciertos tipos de grupos o distinguir entre grupos en casos especiales.</div>
-<span class="incontext"><a href="struct.html#p-1922" class="internal">en contexto</a></span>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para logical">
+<div class="para">Simplemente necesitamos encontrar todos los subgrupos finitos <span class="process-math">\(G\)</span> de <span class="process-math">\(E(2)\text{.}\)</span> Cualquier grupo de simetría finito <span class="process-math">\(G\)</span> en <span class="process-math">\({\mathbb R}^2\)</span> debe fijar el origen y debe ser un subgrupo finito de <span class="process-math">\(O(2)\text{,}\)</span> ya que las traslaciones y las reflexiones con deslizamiento tienen un orden infinito. Por <a href="" class="xref" data-knowl="./knowl/matrix-example-o2.html" title="Ejemplo 12.1.10">Ejemplo 12.1.10</a>, los elementos en <span class="process-math">\(O(2)\)</span> son rotaciones de la forma</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/matrix-example-o2.html">
+\begin{equation*}
+R_{\theta}
+=
+\begin{pmatrix}
+\cos \theta &amp; - \sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para">o reflexiones de la forma</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/matrix-example-o2.html">
+\begin{equation*}
+T_{\phi}
+=
+\begin{pmatrix}
+\cos \phi &amp;  - \sin \phi \\
+\sin \phi &amp; \cos \phi
+\end{pmatrix}
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cos \phi &amp;  \sin \phi \\
+\sin \phi &amp; - \cos \phi
+\end{pmatrix}\text{.}
+\end{equation*}
+</div>
+<div class="para">Notemos que <span class="process-math">\(\det(R_{\theta})=1\text{,}\)</span> <span class="process-math">\(\det(T_{\phi})=-1\text{,}\)</span> y <span class="process-math">\(T_{\phi}^2=I\text{.}\)</span> Podemos dividir la demostración en dos casos. En el primer caso, todos los elementos de <span class="process-math">\(G\)</span> tienen determinante uno. En el segundo caso, existe al menos un elemento en <span class="process-math">\(G\)</span> con determinante <span class="process-math">\(-1\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="matrix-section-symmetry.html#CpH" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -12,7 +12,36 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">La idea acá es que este resultado (clase <span class="process-math">\(1\)</span> por clase <span class="process-math">\(3\)</span> es clase <span class="process-math">\(2\)</span>) debiera ser siempre el mismo, <em class="emphasis">sin importar qué elementos escojamos de cada clase para formar el producto</em> <code class="code-inline tex2jax_ignore">p</code>.  Hagámoslo nuevamente, pero ahora no elegiremos el primer elemento de cada clase, sino el tercero de la clase <span class="process-math">\(1\)</span> y el segundo de la clase  <span class="process-math">\(3\)</span> (recuerde, contamos desde cero!).</div>
-<span class="incontext"><a href="normal-sage.html#p-1686" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Ahora supongamos que <span class="process-math">\(N\)</span> contiene un producto disjunto de la forma</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sigma = \tau(a_1, a_2, a_3)(a_4, a_5, a_6)\text{.}
+\end{equation*}
+</div>
+<div class="para">Entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sigma^{-1}(a_1, a_2, a_4)\sigma(a_1, a_2, a_4)^{-1} \in N
+\end{equation*}
+</div>
+<div class="para">pues</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(a_1, a_2, a_4)\sigma(a_1, a_2, a_4)^{-1} \in N\text{.}
+\end{equation*}
+</div>
+<div class="para">Así</div>
+<div class="displaymath process-math">
+\begin{align*}
+\sigma^{-1}(a_1, a_2, a_4) \sigma(a_1, a_2, a_4)^{-1} &amp; = [ \tau (a_1, a_2, a_3) (a_4, a_5, a_6) ]^{-1}  (a_1, a_2, a_4) \tau (a_1, a_2, a_3) (a_4, a_5, a_6) (a_1, a_2, a_4)^{-1}\\
+&amp; = (a_4, a_6, a_5) (a_1, a_3, a_2) \tau^{-1}(a_1, a_2, a_4) \tau (a_1, a_2, a_3) (a_4, a_5, a_6) (a_1, a_4, a_2)\\
+&amp; = (a_4, a_6, a_5)(a_1, a_3, a_2) (a_1, a_2, a_4) (a_1, a_2, a_3) (a_4, a_5, a_6)(a_1, a_4, a_2)\\
+&amp; = (a_1, a_4, a_2, a_6, a_3)\text{.}
+\end{align*}
+</div>
+<div class="para">Así <span class="process-math">\(N\)</span> contiene un ciclo disjunto de largo mayor a <span class="process-math">\(3\text{,}\)</span> y podemos aplicar el caso anterior.</div>
+</div>
+<span class="incontext"><a href="normal-section-simplicity-of-an.html#ViS" class="internal">en contexto</a></span>
 </body>
 </html>

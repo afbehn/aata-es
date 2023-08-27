@@ -11,21 +11,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">Solo demostraremos (2). El resto de las identidades las dejamos como ejercicios. Para <span class="process-math">\(a \vee b = a \vee c\)</span> y <span class="process-math">\(a \wedge b = a \wedge c\text{,}\)</span> tenemos</div>
+<div class="para">Si <span class="process-math">\(b\)</span> es un átomo, sea <span class="process-math">\(a =b\text{.}\)</span> De lo contrario, elija un elemento <span class="process-math">\(b_1\text{,}\)</span> distinto de <span class="process-math">\(O\)</span> y de <span class="process-math">\(b\text{,}\)</span> tal que <span class="process-math">\(b_1 \preceq b\text{.}\)</span> Estamos seguros que esto es posible ya que <span class="process-math">\(b\)</span> no es un átomo. Si <span class="process-math">\(b_1\)</span> es un átomo, entonces estamos listos.  Si no, elegimos <span class="process-math">\(b_2\text{,}\)</span> distinto de <span class="process-math">\(O\)</span> y de <span class="process-math">\(b_1\text{,}\)</span> tal que  <span class="process-math">\(b_2 \preceq b_1\text{.}\)</span> Nuevamente, si <span class="process-math">\(b_2\)</span> es un átomo, sea <span class="process-math">\(a = b_2\text{.}\)</span> Continuando este proceso, obtenemos una cadena</div>
 <div class="displaymath process-math">
-\begin{align*}
-b &amp; = b \vee (b \wedge a) \\
-&amp; =  b \vee (a \wedge b) \\
-&amp; =  b \vee (a \wedge c) \\
-&amp; =  ( b \vee a) \wedge ( b \vee c) \\
-&amp; =  ( a \vee b) \wedge ( b \vee c) \\
-&amp; =  ( a \vee c) \wedge ( b \vee c) \\
-&amp; =  ( c \vee a ) \wedge ( c\vee b ) \\
-&amp; = c \vee (a \wedge b)\\
-&amp; = c \vee ( a \wedge c )\\
-&amp; = c \vee ( c \wedge a )\\
-&amp; = c.
-\end{align*}
+\begin{equation*}
+O \preceq \cdots \preceq b_3 \preceq b_2 \preceq b_1 \preceq b\text{.}
+\end{equation*}
+</div>
+<div class="para">Como <span class="process-math">\(B\)</span> es un álgenra Booleana finita, esta cadena debe ser finita.  Es decir, para algún <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(b_k\)</span> es un átomo. Sea <span class="process-math">\(a = b_k\text{.}\)</span>
 </div>
 </div></article></body>
 </html>

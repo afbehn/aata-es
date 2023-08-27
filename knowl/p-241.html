@@ -11,9 +11,25 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Sea <span class="process-math">\(S(n)\)</span> una afirmación sobre enteros para <span class="process-math">\(n \in {\mathbb N}\)</span> y supongamos que <span class="process-math">\(S(n_0)\)</span> es verdadera para algún entero  <span class="process-math">\(n_0\text{.}\)</span>  Si <span class="process-math">\(S(n_0), S(n_0 + 1), \ldots, S(k)\)</span> implican <span class="process-math">\(S(k + 1)\)</span> para <span class="process-math">\(k \geq n_0\text{,}\)</span> entonces <span class="process-math">\(S(n)\)</span> es verdadera para todos los enteros <span class="process-math">\(n \geq n_0\text{.}\)</span>
+<h3 class="heading"><span class="type">Párrafo</span></h3>
+<div class="para logical">
+<div class="para">Supongamos que hemos verificado la ecuación para los primeros <span class="process-math">\(n\)</span> casos.  Intentaremos demostrar que podemos generar una fórmula para el caso <span class="process-math">\((n + 1)\)</span> a partir de este conocimiento.  La fórmula es verdadera para <span class="process-math">\(n = 1\)</span> pues</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 = \frac{1(1 + 1)}{2}\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="section-math-induction.html#p-241" class="internal">en contexto</a></span>
+<div class="para">Si hemos verificado los primeros <span class="process-math">\(n\)</span> casos, entonces</div>
+<div class="displaymath process-math">
+\begin{align*}
+1 + 2 + \cdots + n + (n + 1) &amp; = \frac{n(n + 1)}{2} + n + 1\\
+&amp; = \frac{n^2 + 3n + 2}{2}\\
+&amp; = \frac{(n + 1)[(n + 1) + 1]}{2}\text{.}
+\end{align*}
+</div>
+<div class="para">Esto corresponde exactamente a la fórmula para el caso <span class="process-math">\((n + 1)\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="integers-section-math-induction.html#dvY" class="internal">en contexto</a></span>
 </body>
 </html>

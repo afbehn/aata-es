@@ -12,8 +12,23 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Calcule el núcleo de <span class="process-math">\(D\)</span> si <span class="process-math">\(\chr F = 0\text{.}\)</span>
+<div class="para logical">
+<div class="para">Por el <a href="" class="xref" data-knowl="./knowl/poly-lemma-integer-coef.html" title="Lema 17.3.3">Lema 17.3.3</a>, podemos suponer que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/poly-lemma-integer-coef.html">
+\begin{align*}
+\alpha(x)  &amp; =  \frac{c_1}{d_1} (a_0 + a_1 x + \cdots + a_m x^m ) = \frac{c_1}{d_1} \alpha_1(x)\\
+\beta(x)  &amp; =  \frac{c_2}{d_2} (b_0 + b_1 x + \cdots + b_n x^n)  = \frac{c_2}{d_2} \beta_1(x)\text{,}
+\end{align*}
 </div>
-<span class="incontext"><a href="exercises-poly.html#p-2689" class="internal">en contexto</a></span>
+<div class="para">donde los <span class="process-math">\(a_i\)</span> son relativamente primos y los <span class="process-math">\(b_i\)</span> son relativamente primos. En consecuencia,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/poly-lemma-integer-coef.html">
+\begin{equation*}
+p(x) = \alpha(x) \beta(x) = \frac{c_1 c_2}{d_1 d_2} \alpha_1(x) \beta_1(x) = \frac{c}{d} \alpha_1(x) \beta_1(x)\text{,}
+\end{equation*}
+</div>
+<div class="para">donde  <span class="process-math">\(c/d\)</span> es el producto de <span class="process-math">\(c_1/d_1\)</span> y <span class="process-math">\(c_2/d_2\)</span> expresado de forma reducida. Luego, <span class="process-math">\(d p(x) = c \alpha_1(x) \beta_1(x)\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="poly-section-irreducible-poly.html#Czy" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -11,20 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Párrafo</span></h5>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Calculemos el máximo común divisor de <span class="process-math">\(945\)</span> y <span class="process-math">\(2415\text{.}\)</span>  Primero observemos que</div>
+<div class="para">Supongamos que existen enteros <span class="process-math">\(r\text{,}\)</span> <span class="process-math">\(r'\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> y <span class="process-math">\(q'\)</span> tales que</div>
 <div class="displaymath process-math">
-\begin{align*}
-2415 &amp; = 945 \cdot 2 + 525\\
-945 &amp; = 525 \cdot 1 + 420\\
-525 &amp; = 420 \cdot 1 + 105\\
-420 &amp; = 105 \cdot 4 + 0.
-\end{align*}
+\begin{equation*}
+a = bq + r, 0 \leq r \lt b \quad \text{y}\quad a = bq' + r', 0 \leq r' \lt b\text{.}
+\end{equation*}
 </div>
-<div class="para">Usando los pasos de atrás para adelante, 105 divide a 420, 105 divide a 525, 105 divide a 945, y 105 divide a 2415.  Luego, 105 divide tanto a 945 como a 2415.  Si <span class="process-math">\(d\)</span> fuese otro divisor común de 945 y 2415, entonces <span class="process-math">\(d\)</span> también dividiría a 105.  Por lo tanto, <span class="process-math">\(\gcd( 945, 2415 ) = 105\text{.}\)</span>
+<div class="para">Entonces <span class="process-math">\(bq + r =  bq' + r'\text{.}\)</span>  Supongamos que <span class="process-math">\(r' \geq r\text{.}\)</span>  De la última ecuación tenemos <span class="process-math">\(b(q - q') = r' - r\text{;}\)</span> por lo tanto, <span class="process-math">\(b\)</span> debe dividir a <span class="process-math">\(r' - r\)</span> y <span class="process-math">\(0 \leq r'- r \leq r' \lt b\text{.}\)</span>  Estos es posible solo si <span class="process-math">\(r' - r = 0\text{.}\)</span>  Luego, <span class="process-math">\(r = r'\)</span> y  <span class="process-math">\(q = q'\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="section-division-algorithm.html#p-263" class="internal">en contexto</a></span>
+<span class="incontext"><a href="integers-section-division-algorithm.html#kMc" class="internal">en contexto</a></span>
 </body>
 </html>

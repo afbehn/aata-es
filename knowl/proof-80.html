@@ -12,65 +12,14 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
-<div class="para logical">
-<div class="para">Sea <span class="process-math">\(G = \{ f_1, f_2, \ldots, f_n \}\)</span> un grupo de simetría finito que fija un conjunto de puntos <span class="process-math">\(X \subset \mathbb R^2\text{.}\)</span>  Escoja un punto <span class="process-math">\(\mathbf x \in X\text{.}\)</span>  Este punto puede no ser un punto fijo—puede ser llevado por <span class="process-math">\(G\)</span> a otro punto en <span class="process-math">\(X\text{.}\)</span> Definamos un conjunto <span class="process-math">\(S =\{ \mathbf y_1, \mathbf y_2, \ldots \mathbf y_n\}\text{,}\)</span> donde <span class="process-math">\(\mathbf y_i = f_i(\mathbf x)\text{.}\)</span>  Ahora, sea</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mathbf z = \frac{1}{n} \sum_{i=1}^n \mathbf x_i.
-\end{equation*}
-</div>
-<div class="para">Si bien el punto <span class="process-math">\(\mathbf z\)</span> no necesariamente está en el conjunto <span class="process-math">\(X\text{,}\)</span> queda fijo por todos los elementos del grupo de simetría. Sin pérdida de generalidad, podemos suponer que <span class="process-math">\(\mathbf z\)</span> es el origen.</div>
+<div class="para">Sea <span class="process-math">\(K\)</span> el conjunto de todos los productos de la forma <span class="process-math">\(g_{i_1}^{\alpha_1} \cdots g_{i_n}^{\alpha_n}\text{,}\)</span> donde los <span class="process-math">\(g_{i_k}\)</span> no son necesariamente diferentes. Ciertamente <span class="process-math">\(K\)</span> es un subconjunto de <span class="process-math">\(H\text{.}\)</span> Solo debemos mostrar que <span class="process-math">\(K\)</span> es un subgrupo de <span class="process-math">\(G\text{.}\)</span> Si es así, entonces <span class="process-math">\(K=H\text{,}\)</span> pues <span class="process-math">\(H\)</span> es el menor subgrupo que contiene todos los <span class="process-math">\(g_i\text{.}\)</span>
 </div> <div class="para logical">
-<div class="para">Un grupo de simetría finito <span class="process-math">\(G\)</span> en <span class="process-math">\({\mathbb R}^2\)</span> que fija el origen debe ser un subgrupo finito de <span class="process-math">\(O(2)\text{,}\)</span> pues las traslaciones y traslaciones deslizantes tienen orden infinito.  Por el Ejemplo <a href="" class="xref" data-knowl="./knowl/example-o2.html" title="Ejemplo 12.1.10">12.1.10</a>, los elementos en <span class="process-math">\(O(2)\)</span> son ya sea rotaciones de la forma</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/example-o2.html">
-\begin{equation*}
-R_{\theta}
-=
-\begin{pmatrix}
-\cos \theta &amp; - \sin \theta \\
-\sin \theta &amp; \cos \theta
-\end{pmatrix}
-\end{equation*}
-</div>
-<div class="para">o reflexiones de la forma</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/example-o2.html">
-\begin{equation*}
-T_{\phi}
-=
-\begin{pmatrix}
-\cos \phi &amp;  - \sin \phi \\
-\sin \phi &amp; \cos \phi
-\end{pmatrix}
-\begin{pmatrix}
-1 &amp; 0 \\
-0 &amp; -1
-\end{pmatrix}
-=
-\begin{pmatrix}
-\cos \phi &amp;  \sin \phi \\
-\sin \phi &amp; - \cos \phi
-\end{pmatrix}.
-\end{equation*}
-</div>
-<div class="para">Notemos que <span class="process-math">\(\det(R_{\theta})=1\text{,}\)</span>  <span class="process-math">\(\det(T_{\phi})=-1\text{,}\)</span> y <span class="process-math">\(T_{\phi}^2=I\text{.}\)</span> Podemos dividir la demostración en dos casos. En el primer caso, todos los elementos en <span class="process-math">\(G\)</span> tienen determinante uno. En el segundo caso, existe al menos un elemento en <span class="process-math">\(G\)</span> con determinante <span class="process-math">\(-1\text{.}\)</span>
-</div>
-</div> <div class="para">
-<em class="emphasis">Caso 1.</em>   El determinante de cada elemento en <span class="process-math">\(G\)</span> es uno. En este caso todo elemento en <span class="process-math">\(G\)</span> debe ser una rotación. Como <span class="process-math">\(G\)</span> es finito, existe un ángulo positivo mínimo, digamos <span class="process-math">\(\theta_0\text{,}\)</span> tal que el correspondiente elemento <span class="process-math">\(R_{\theta_0}\)</span> es la menor rotación en la dirección positiva.  Afirmamos que <span class="process-math">\(R_{\theta_0}\)</span> genera a <span class="process-math">\(G\text{.}\)</span>  Si no, para algún entero positivo <span class="process-math">\(n\)</span> hay un ángulo <span class="process-math">\(\theta_1\)</span> entre <span class="process-math">\(n \theta_0\)</span> y <span class="process-math">\((n+1) \theta_0\text{.}\)</span> Si es así, entonces <span class="process-math">\((n+1) \theta_0 - \theta_1\)</span> corresponde a una rotación menor a <span class="process-math">\(\theta_0\text{,}\)</span> lo que contradice la minimalidad de <span class="process-math">\(\theta_0\text{.}\)</span>
-</div> <div class="para logical">
-<div class="para">
-<em class="emphasis">Caso 2.</em> El grupo <span class="process-math">\(G\)</span> contiene una reflexión <span class="process-math">\(T\text{.}\)</span>  El núcleo del homomorfismo <span class="process-math">\(\phi : G \rightarrow \{-1, 1\}\)</span> dado por <span class="process-math">\(A \mapsto \det(A)\)</span> consiste de los elmentos cuyo determinante es 1.  Por lo tanto, <span class="process-math">\(|G/ \ker \phi|=2\text{.}\)</span>  Sabemos que el núcleo es cíclico por el caso 1 y es un subgrupo de <span class="process-math">\(G\)</span> de, digamos, orden <span class="process-math">\(n\text{.}\)</span> Luego, <span class="process-math">\(|G| = 2n\text{.}\)</span> Los elementos de <span class="process-math">\(G\)</span> son</div>
+<div class="para">Claramente, <span class="process-math">\(K\)</span> es cerrado bajo la operación del grupo. Como <span class="process-math">\(g_i^0 = 1\text{,}\)</span> la identidad está en <span class="process-math">\(K\text{.}\)</span> Falta mostrar que el inverso de un elemento <span class="process-math">\(g =g_{i_1}^{k_1} \cdots g_{i_n}^{k_n}\)</span> en <span class="process-math">\(K\)</span> también está en <span class="process-math">\(K\text{.}\)</span> Pero,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-R_{\theta}, \ldots, R_{\theta}^{n-1},  TR_{\theta}, \ldots, TR_{\theta}^{n-1}.
+g^{-1} = (g_{i_1}^{k_{1}} \cdots g_{i_n}^{k_n})^{-1} = (g_{i_n}^{-k_n} \cdots g_{i_{1}}^{-k_{1}})\text{.}
 \end{equation*}
 </div>
-<div class="para">Estos elementos satisfacen la relación</div>
-<div class="displaymath process-math">
-\begin{equation*}
-TR_{\theta}T = R_{\theta}^{-1}.
-\end{equation*}
-</div>
-<div class="para">De manera que, <span class="process-math">\(G\)</span> es isomorfo a  <span class="process-math">\(D_n\)</span> en este caso.</div>
-</div></article><span class="incontext"><a href="section-symmetry.html#proof-80" class="internal">en contexto</a></span>
+</div></article><span class="incontext"><a href="struct-section-finite-abelian-groups.html#QWC" class="internal">en contexto</a></span>
 </body>
 </html>

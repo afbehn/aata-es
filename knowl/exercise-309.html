@@ -14,23 +14,6 @@
 <article class="exercise exercise-like"><h3 class="heading">
 <span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span>
 </h3>
-<div class="para logical">
-<div class="para">Un código con distancia mínima <span class="process-math">\(d\)</span> se llama <dfn class="terminology">perfecto</dfn> si todo vector posible está a distancia menor o igual a <span class="process-math">\((d-1)/2\)</span> de alguna palabra del código.  Si expandimos nuestra idea de geometría para incluir la noción de distancia de Hamming como la métrica, entonces podemos hablar de una esfera de radio <span class="process-math">\(r\)</span> en torno a un vector o palabra.  Para un código de longitud <span class="process-math">\(n\text{,}\)</span> una esfera de este tipo contiene</div>
-<div class="displaymath process-math">
-\begin{equation*}
-1 + {n\choose 1} + {n\choose 2} + \cdots + {n\choose r}
-\end{equation*}
-</div>
-<div class="para">vectores en su interior.  Para un código perfecto, las esferas de radio <span class="process-math">\((d-1)/2\)</span> centradas en las palabras del código particionan exactamente el espacio de todos los vectores posibles.  (Esto es lo que establece una relación entre la teoría de códigos y los problemas de empaquetamiento de esferas.)</div>
-</div> <div class="para logical">
-<div class="para">Una consecuencia de que un código de dimensión <span class="process-math">\(k\)</span> sea perfecto es que</div>
-<div class="displaymath process-math">
-\begin{equation*}
-2^k\left({n\choose 0} + {n\choose 1} + {n\choose 2} + \cdots + {n\choose \frac{d-1}{2}}\right) = 2^n
-\end{equation*}
-</div>
-<div class="para">Recíprocamente, si un código tiene distancia mínima <span class="process-math">\(d\)</span> y cumple la condición anterior, entonces el código es perfecto.</div>
-</div> <div class="para">Escriba una función en Sage, llamada <code class="code-inline tex2jax_ignore">is_perfect()</code> que tome un código lineal como entrada y retorne <code class="code-inline tex2jax_ignore">True</code> o <code class="code-inline tex2jax_ignore">False</code> según si el código es o no perfecto.  Demuestre su función verificando que el código de Golay binario es perfecto, y use un bucle para verificar que los códigos de Hamming binarios son perfectos para longitudes menores a <span class="process-math">\(32\text{.}\)</span>
-</div></article><span class="incontext"><a href="algcodes-sage-exercises.html#exercise-309" class="internal">en contexto</a></span>
+<div class="para">Escriba un programa para determinar todos los primos menores a 2000 usando intentos de división. Escriba un segundo programa que determine todos los números menores a 2000 que sean primos o pseudoprimos. Compare la velocidad de ambos programas.  ¿Cuántos pseudoprimos hay menores a 2000?</div> <div class="para">Existen números compuestos que son pseudoprimos para todas la bases con que son relativamente primos.  Estos números se llaman <dfn class="terminology">números de Carmichael</dfn>. El primer número de Carmichael es el <span class="process-math">\(561 = 3 \cdot 11 \cdot 17\text{.}\)</span>  En 1992, Alford, Granville, y Pomerance demostraron que hay infinitos números de Carmichael [4].  Pero, los números de Carmichael son muy escasos.  Existen solo <span class="process-math">\(2163\)</span> números de Carmichael menores a <span class="process-math">\(25 \times 10^9\text{.}\)</span> Para tests de primalidad más sofisticados, vea [1], [6], o [7].</div></article><span class="incontext"><a href="crypt-exercises-additional.html#exercise-309" class="internal">en contexto</a></span>
 </body>
 </html>

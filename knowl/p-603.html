@@ -11,19 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
 <div class="para logical">
-<div class="para">Procederemos por inducción en <span class="process-math">\(n\text{.}\)</span> Para <span class="process-math">\(n = 1\)</span> el teorema es trivial. Supongamos que el teorema es verdadero para todo <span class="process-math">\(k\)</span> tal que <span class="process-math">\(1  \leq k \leq n\text{.}\)</span> Entonces</div>
+<div class="para">Supongamos primero que <span class="process-math">\(a^k=e\text{.}\)</span> Por el algoritmo de la división, <span class="process-math">\(k = nq + r\)</span> con <span class="process-math">\(0 \leq r \lt n\text{;}\)</span> luego,</div>
 <div class="displaymath process-math">
-\begin{align*}
-z^{n+1} &amp; = z^n z\\
-&amp; = r^n( \cos  n \theta + i \sin n \theta ) r( \cos \theta + i\sin \theta )\\
-&amp; = r^{n+1} [( \cos n \theta \cos \theta - \sin n \theta \sin \theta ) + i ( \sin n \theta \cos \theta + \cos n \theta \sin \theta)]\\
-&amp; = r^{n+1} [ \cos( n \theta + \theta) + i \sin( n \theta + \theta) ]\\
-&amp; = r^{n+1} [ \cos( n +1) \theta + i \sin( n+1) \theta  ].
-\end{align*}
+\begin{equation*}
+e = a^k = a^{nq + r} = a^{nq} a^r = e a^r = a^r\text{.}
+\end{equation*}
+</div>
+<div class="para">Como el menor entero <span class="process-math">\(m\)</span> tal que <span class="process-math">\(a^m = e\)</span> es <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(r= 0\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="section-mult-group-c.html#p-603" class="internal">en contexto</a></span>
+<span class="incontext"><a href="cyclic-section-cyclic-subgroups.html#PJf" class="internal">en contexto</a></span>
 </body>
 </html>

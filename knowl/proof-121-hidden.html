@@ -10,27 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">Supongamos que <span class="process-math">\(\alpha \in F\)</span> y <span class="process-math">\(p( \alpha ) = 0\text{.}\)</span> Por el algoritmo de la división, existen polinomios <span class="process-math">\(q(x)\)</span> y <span class="process-math">\(r(x)\)</span> tales que</div>
-<div class="displaymath process-math">
-\begin{equation*}
-p(x) = (x -\alpha) q(x) + r(x)
-\end{equation*}
-</div>
-<div class="para">y el grado de  <span class="process-math">\(r(x)\)</span> es menor que el grado de <span class="process-math">\(x -\alpha\text{.}\)</span> Como el grado de  <span class="process-math">\(r(x)\)</span> es menor a 1, <span class="process-math">\(r(x) = a\)</span> para algún <span class="process-math">\(a \in F\text{;}\)</span> por lo tanto,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-p(x) = (x -\alpha) q(x) + a.
-\end{equation*}
-</div>
-<div class="para">Pero</div>
-<div class="displaymath process-math">
-\begin{equation*}
-0 = p(\alpha) = 0 \cdot q(\alpha) + a = a;
-\end{equation*}
-</div>
-<div class="para">Por ende, <span class="process-math">\(p(x) = (x - \alpha) q(x)\text{,}\)</span> y <span class="process-math">\(x - \alpha\)</span> es un factor de <span class="process-math">\(p(x)\text{.}\)</span>
-</div>
-</div> <div class="para">Recíprocamente, supongamos que <span class="process-math">\(x - \alpha\)</span> es un factor de <span class="process-math">\(p(x)\text{;}\)</span> digamos <span class="process-math">\(p(x) = (x - \alpha) q(x)\text{.}\)</span> Entonces <span class="process-math">\(p( \alpha ) = 0 \cdot q(\alpha) = 0\text{.}\)</span>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Procederemos por inducción sobre el grado de <span class="process-math">\(p(x)\text{.}\)</span> Si <span class="process-math">\(\deg p(x) = 0\text{,}\)</span> entonces <span class="process-math">\(p(x)\)</span> es un polinomio constante y no tiene ceros.  Si <span class="process-math">\(\deg p(x) = 1\text{,}\)</span> entonces <span class="process-math">\(p(x) = ax +b\)</span> para ciertos <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> en <span class="process-math">\(F\text{.}\)</span> Si <span class="process-math">\(\alpha_1\)</span> y <span class="process-math">\(\alpha_2\)</span> son ceros de <span class="process-math">\(p(x)\text{,}\)</span> entonces <span class="process-math">\(a\alpha_1 + b = a\alpha_2 +b\)</span> y <span class="process-math">\(\alpha_1 = \alpha_2\text{.}\)</span>
+</div> <div class="para">Ahora supongamos que <span class="process-math">\(\deg p(x) \gt 1\text{.}\)</span> Si <span class="process-math">\(p(x)\)</span> no tiene ceros en <span class="process-math">\(F\text{,}\)</span> estamos listos.  Por otra parte, si <span class="process-math">\(\alpha\)</span> es un cero de <span class="process-math">\(p(x)\text{,}\)</span> entonces <span class="process-math">\(p(x) = (x - \alpha ) q(x)\)</span> para cierto <span class="process-math">\(q(x) \in F[x]\)</span> por el <a href="" class="xref" data-knowl="./knowl/poly-corollary-factor.html" title="Corolario 17.2.3">Corolario 17.2.3</a>. El grado de <span class="process-math">\(q(x)\)</span> es <span class="process-math">\(n-1\)</span> por la <a href="" class="xref" data-knowl="./knowl/poly-proposition-integral-domain.html" title="Proposición 17.1.4">Proposición 17.1.4</a>. Sea <span class="process-math">\(\beta\)</span> algún otro cero de <span class="process-math">\(p(x)\)</span> distinto de <span class="process-math">\(\alpha\text{.}\)</span> Entonces <span class="process-math">\(p(\beta) = (\beta - \alpha) q(\beta) = 0\text{.}\)</span> Como <span class="process-math">\(\alpha \neq \beta\)</span> y <span class="process-math">\(F\)</span> es un cuerpo, <span class="process-math">\(q(\beta ) = 0\text{.}\)</span> Por la hipótesis de inducción, <span class="process-math">\(q(x)\)</span> puede tener como máximo <span class="process-math">\(n - 1\)</span> ceros en <span class="process-math">\(F\)</span> que sean distintos de <span class="process-math">\(\alpha\text{.}\)</span> Por lo tanto, <span class="process-math">\(p(x)\)</span> tiene a lo sumo <span class="process-math">\(n\)</span> ceros distintos en <span class="process-math">\(F\text{.}\)</span>
 </div></article></body>
 </html>

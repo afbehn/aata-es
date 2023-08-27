@@ -9,12 +9,36 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script><script>// Make *any* pre with class 'sage-display' a visible, uneditable Sage cell
+sagecell.makeSagecell({
+  "inputLocation": "pre.sage-display",
+  "editor": "codemirror-readonly",
+  "hide": [
+    "evalButton",
+    "editorToggle",
+    "language"
+  ]
+});
+</script>
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">18<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span>
 </h3>
-<div class="para">Muestre que  <span class="process-math">\(A_n\)</span> es no abeliano para <span class="process-math">\(n \geq 4\text{.}\)</span>
-</div></article><span class="incontext"><a href="exercises-permute.html#exercise-205" class="internal">en contexto</a></span>
+<div class="para">Puede crear elementos de este grupo coercionando enteros regulares a <code class="code-inline tex2jax_ignore">U</code>, como con la instrucción <code class="code-inline tex2jax_ignore">a = U(7)</code>. (No confunda esto con nuestra notación matemática <span class="process-math">\(U(40)\)</span>). Esto le indicará a Sage que desea ver <span class="process-math">\(7\)</span> como un elemento de <span class="process-math">\(U\text{,}\)</span> sujeto a las operaciones correspondientes. Determine los elementos del subgrupo cíclico de <span class="process-math">\(U\)</span> generado por <span class="process-math">\(7\)</span> con una lista por comprensión de la siguiente manera:</div> <pre class="ptx-sagecell sage-display"><script type="text/x-sage">R = Integers(40)
+a = R(7)
+[a^i for i in srange(16)]
+</script></pre> <div class="para">¿Cuál es el orden de  <span class="process-math">\(7\)</span> en <span class="process-math">\(U(40)\text{?}\)</span>
+</div></article><span class="incontext"><a href="cyclic-sage-exercises.html#exercise-205" class="internal">en contexto</a></span>
 </body>
 </html>

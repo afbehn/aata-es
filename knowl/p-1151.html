@@ -12,7 +12,22 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para"><span class="process-math">\(\displaystyle (n, E) = (3053, 1921)\)</span></div>
-<span class="incontext"><a href="exercises-crypt.html#p-1151" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Examinemos ahora por qué funciona el criptosistema <abbr class="acronym">RSA</abbr>.  Sabemos que <span class="process-math">\(DE \equiv 1 \pmod{ m}\text{;}\)</span> luego, existe <span class="process-math">\(k\)</span> tal que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cosets-theorem-eulers_theorem.html">
+\begin{equation*}
+DE = km + 1 = k \phi(n) + 1\text{.}
+\end{equation*}
+</div>
+<div class="para">Debemos considerar dos casos.  En el primer caso supongamos que <span class="process-math">\(\gcd(x, n) = 1\text{.}\)</span>  Entonces, por el <a href="" class="xref" data-knowl="./knowl/cosets-theorem-eulers_theorem.html" title="Teorema 6.3.2: Teorema de Euler">Teorema 6.3.2</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cosets-theorem-eulers_theorem.html">
+\begin{equation*}
+y^D = (x^E)^D = x^{DE} = x^{km + 1} = (x^{\phi(n)})^k x = (1)^k x = x \bmod n\text{.}
+\end{equation*}
+</div>
+<div class="para">De esta manera vemos que Alice recupera el mensaje original <span class="process-math">\(x\)</span> cuando calcula <span class="process-math">\(y^D \bmod n\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="crypt-section-public-key.html#jAF" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -87,7 +87,7 @@ window.MathJax = {
   }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=012975021551273728005:y0h32vuqauw"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -103,19 +103,50 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.1.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runtime.6f0528865cd47dcd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.3a5641c4e1fe869e.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.cec40a61180efd41.css">
 </head>
-<body class="pretext book ignore-math">
+<body id="AATA" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/images/cover_aata_2017.png" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="cover/cover_aata_2022.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta:</span> <span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>[search-results-heading]: <span id="searchterms" class="searchterms"></span>
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Resultados de la búsqueda: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty" class="searchempty"><span>[no-search-results].</span></div>
+<div id="searchempty" class="searchempty"><span>Sin resultados.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Índice</span></button><a class="index-button button" href="index-1.html" title="Índice alfabético"><span class="name">Índice alfabético</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -220,8 +251,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-constructions.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="fields.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="fields-references.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
-<div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-constructions.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="fields.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="fields-references.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
@@ -244,31 +274,32 @@ window.MathJax = {
 <div class="toc-item"><a href="sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminares</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
+<div class="toc-item"><a href="sets-section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sets-section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
+<div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="sets-exercises.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Listas</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Listas de Enteros</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.5.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Listas</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Listas de Enteros</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.6.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -283,18 +314,19 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-historical-note" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-integers.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-2.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Algoritmo de División</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Primos y Factorización</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Algoritmo de División</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Primos y Factorización</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -321,19 +353,20 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-subgroups.html#groups-subsection-subgroup-theorems" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Algunos Teoremas para Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-groups.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
-<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-3.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
+<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Enteros mód n</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Cuaterniones</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Subgrupos</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Enteros mód n</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.8.3</span> <span class="title">Cuaterniones</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -348,21 +381,22 @@ window.MathJax = {
 <ul class="structural"><li><div class="toc-item"><a href="section-mult-group-c.html#cyclic-subsection-circle-group" class="internal"><span class="codenumber">4.2.1</span> <span class="title">El grupo de la circunferencia y las raíces de la unidad</span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="section-method-of-repeated-squares.html" class="internal"><span class="codenumber">4.3</span> <span class="title">El método de los cuadrados repetidos</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-cyclic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios de programación</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Ejercicios de programación</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.7.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.8.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.8.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -461,18 +495,19 @@ window.MathJax = {
 <div class="toc-item"><a href="section-efficient-decoding.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Decodificación Eficiente</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="section-efficient-decoding.html#algcodes-subsection-coset-decoding" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Decodificación por Clases Laterales</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.8.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.9.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.10</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -598,17 +633,18 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-historical-note" class="internal"><span class="codenumber">14.3.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-actions.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicio de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-6.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Ejercicio de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.7.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
-<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.7.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.8.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.8.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -871,145 +907,145 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="exercises-fields"><h2 class="heading hide-type">
 <span class="type">Ejercicios</span> <span class="codenumber">21.4</span> <span class="title">Ejercicios</span>
 </h2>
-<article class="exercise exercise-like" id="exercise-697"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="para logical" id="p-3336">
+<article class="exercise exercise-like" id="exercise-728"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
+<div class="para logical" id="p-3371">
 <div class="para">Muestre que cada uno de los siguientes números es algebraico sobre <span class="process-math">\({\mathbb Q}\)</span> encontrando su polinomio minimal sobre <span class="process-math">\({\mathbb Q}\text{.}\)</span>
 </div>
 <ol class="lower-alpha">
-<li id="li-737"><div class="para" id="p-3337"><span class="process-math">\(\displaystyle \sqrt{ 1/3 + \sqrt{7} }\)</span></div></li>
-<li id="li-738"><div class="para" id="p-3338"><span class="process-math">\(\displaystyle \sqrt{ 3} + \sqrt[3]{5}\)</span></div></li>
-<li id="li-739"><div class="para" id="p-3339"><span class="process-math">\(\displaystyle \sqrt{3} + \sqrt{2}\, i\)</span></div></li>
-<li id="li-740"><div class="para" id="p-3340">
+<li id="li-737"><div class="para" id="p-3372"><span class="process-math">\(\displaystyle \sqrt{ 1/3 + \sqrt{7} }\)</span></div></li>
+<li id="li-738"><div class="para" id="p-3373"><span class="process-math">\(\displaystyle \sqrt{ 3} + \sqrt[3]{5}\)</span></div></li>
+<li id="li-739"><div class="para" id="p-3374"><span class="process-math">\(\displaystyle \sqrt{3} + \sqrt{2}\, i\)</span></div></li>
+<li id="li-740"><div class="para" id="p-3375">
 <span class="process-math">\(\cos \theta + i \sin \theta\)</span> para <span class="process-math">\(\theta = 2 \pi /n\)</span> con <span class="process-math">\(n \in {\mathbb N}\)</span>
 </div></li>
-<li id="li-741"><div class="para" id="p-3341"><span class="process-math">\(\displaystyle \sqrt{ \sqrt[3]{2} - i }\)</span></div></li>
+<li id="li-741"><div class="para" id="p-3376"><span class="process-math">\(\displaystyle \sqrt{ \sqrt[3]{2} - i }\)</span></div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-184" id="hint-184"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-184"><div class="hint solution-like"><div class="para" id="p-3342">(a) <span class="process-math">\(x^4 - (2/3) x^2 - 62/9\text{;}\)</span> (c) <span class="process-math">\(x^4 - 2 x^2 + 25\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-184" id="hint-184"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-184"><div class="hint solution-like"><div class="para" id="p-3377">(a) <span class="process-math">\(x^4 - (2/3) x^2 - 62/9\text{;}\)</span> (c) <span class="process-math">\(x^4 - 2 x^2 + 25\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-698"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="para logical" id="p-3343">
+</div></article><article class="exercise exercise-like" id="exercise-729"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<div class="para logical" id="p-3378">
 <div class="para">Encuentre una base para cada una de las siguientes extensiones de cuerpos. ¿Cuál es el grado de esta extensión?</div>
 <ol class="lower-alpha">
-<li id="li-742"><div class="para" id="p-3344">
+<li id="li-742"><div class="para" id="p-3379">
 <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{6}\, )\)</span> sobre <span class="process-math">\({\mathbb Q}\)</span>
 </div></li>
-<li id="li-743"><div class="para" id="p-3345">
+<li id="li-743"><div class="para" id="p-3380">
 <span class="process-math">\({\mathbb Q}( \sqrt[3]{2}, \sqrt[3]{3}\, )\)</span> sobre <span class="process-math">\({\mathbb Q}\)</span>
 </div></li>
-<li id="li-744"><div class="para" id="p-3346">
+<li id="li-744"><div class="para" id="p-3381">
 <span class="process-math">\({\mathbb Q}( \sqrt{2}, i)\)</span> sobre <span class="process-math">\({\mathbb Q}\)</span>
 </div></li>
-<li id="li-745"><div class="para" id="p-3347">
+<li id="li-745"><div class="para" id="p-3382">
 <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{5}, \sqrt{7}\, )\)</span> sobre <span class="process-math">\({\mathbb Q}\)</span>
 </div></li>
-<li id="li-746"><div class="para" id="p-3348">
+<li id="li-746"><div class="para" id="p-3383">
 <span class="process-math">\({\mathbb Q}( \sqrt{2}, \root 3 \of{2}\, )\)</span> sobre <span class="process-math">\({\mathbb Q}\)</span>
 </div></li>
-<li id="li-747"><div class="para" id="p-3349">
+<li id="li-747"><div class="para" id="p-3384">
 <span class="process-math">\({\mathbb Q}( \sqrt{8}\, )\)</span> sobre <span class="process-math">\({\mathbb Q}(\sqrt{2}\, )\)</span>
 </div></li>
-<li id="li-748"><div class="para" id="p-3350">
+<li id="li-748"><div class="para" id="p-3385">
 <span class="process-math">\({\mathbb Q}(i, \sqrt{2} +i, \sqrt{3} + i )\)</span> sobre <span class="process-math">\({\mathbb Q}\)</span>
 </div></li>
-<li id="li-749"><div class="para" id="p-3351">
+<li id="li-749"><div class="para" id="p-3386">
 <span class="process-math">\({\mathbb Q}( \sqrt{2} + \sqrt{5}\, )\)</span> sobre <span class="process-math">\({\mathbb Q} ( \sqrt{5}\, )\)</span>
 </div></li>
-<li id="li-750"><div class="para" id="p-3352">
+<li id="li-750"><div class="para" id="p-3387">
 <span class="process-math">\({\mathbb Q}( \sqrt{2}, \sqrt{6} + \sqrt{10}\, )\)</span> sobre <span class="process-math">\({\mathbb Q} ( \sqrt{3} + \sqrt{5}\, )\)</span>
 </div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-185" id="hint-185"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-185"><div class="hint solution-like"><div class="para" id="p-3353">(a) <span class="process-math">\(\{ 1, \sqrt{2}, \sqrt{3}, \sqrt{6}\, \}\text{;}\)</span> (c) <span class="process-math">\(\{ 1, i, \sqrt{2}, \sqrt{2}\, i \}\text{;}\)</span> (e) <span class="process-math">\(\{1, 2^{1/6}, 2^{1/3}, 2^{1/2}, 2^{2/3}, 2^{5/6}  \}\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-185" id="hint-185"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-185"><div class="hint solution-like"><div class="para" id="p-3388">(a) <span class="process-math">\(\{ 1, \sqrt{2}, \sqrt{3}, \sqrt{6}\, \}\text{;}\)</span> (c) <span class="process-math">\(\{ 1, i, \sqrt{2}, \sqrt{2}\, i \}\text{;}\)</span> (e) <span class="process-math">\(\{1, 2^{1/6}, 2^{1/3}, 2^{1/2}, 2^{2/3}, 2^{5/6}  \}\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-699"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="para logical" id="p-3354">
+</div></article><article class="exercise exercise-like" id="exercise-730"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="para logical" id="p-3389">
 <div class="para">Encuentre el cuerpo de descomposición de cada uno de los siguientes polinomios.</div>
 <ol class="lower-alpha cols2">
-<li id="li-751"><div class="para" id="p-3355">
+<li id="li-751"><div class="para" id="p-3390">
 <span class="process-math">\(x^4 - 10 x^2 + 21\)</span> sobre <span class="process-math">\({\mathbb Q}\)</span>
 </div></li>
-<li id="li-752"><div class="para" id="p-3356">
+<li id="li-752"><div class="para" id="p-3391">
 <span class="process-math">\(x^4 + 1\)</span> sobre <span class="process-math">\({\mathbb Q}\)</span>
 </div></li>
-<li id="li-753"><div class="para" id="p-3357">
+<li id="li-753"><div class="para" id="p-3392">
 <span class="process-math">\(x^3 + 2x + 2\)</span> sobre <span class="process-math">\({\mathbb Z}_3\)</span>
 </div></li>
-<li id="li-754"><div class="para" id="p-3358">
+<li id="li-754"><div class="para" id="p-3393">
 <span class="process-math">\(x^3 - 3\)</span> sobre <span class="process-math">\({\mathbb Q}\)</span>
 </div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-186" id="hint-186"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-186"><div class="hint solution-like"><div class="para" id="p-3359">(a) <span class="process-math">\({\mathbb Q}(\sqrt{3}, \sqrt{7}\, )\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-186" id="hint-186"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-186"><div class="hint solution-like"><div class="para" id="p-3394">(a) <span class="process-math">\({\mathbb Q}(\sqrt{3}, \sqrt{7}\, )\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-700"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para logical" id="p-3360">
+</div></article><article class="exercise exercise-like" id="exercise-731"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="para logical" id="p-3395">
 <div class="para">Considere el cuerpo de extensión <span class="process-math">\({\mathbb Q}( \sqrt[4]{3}, i )\)</span> sobre <span class="process-math">\(\mathbb Q\text{.}\)</span>
 </div>
 <ol class="lower-alpha">
-<li id="li-755"><div class="para" id="p-3361">Encuentre una base para el cuerpo de extensión <span class="process-math">\({\mathbb Q}( \sqrt[4]{3}, i )\)</span> sobre <span class="process-math">\(\mathbb Q\text{.}\)</span> Concluya que <span class="process-math">\([{\mathbb Q}( \sqrt[4]{3}, i ): \mathbb Q] = 8\text{.}\)</span>
+<li id="li-755"><div class="para" id="p-3396">Encuentre una base para el cuerpo de extensión <span class="process-math">\({\mathbb Q}( \sqrt[4]{3}, i )\)</span> sobre <span class="process-math">\(\mathbb Q\text{.}\)</span> Concluya que <span class="process-math">\([{\mathbb Q}( \sqrt[4]{3}, i ): \mathbb Q] = 8\text{.}\)</span>
 </div></li>
-<li id="li-756"><div class="para" id="p-3362">Encuentre todos los subcuerpos  <span class="process-math">\(F\)</span> de <span class="process-math">\({\mathbb Q}( \sqrt[4]{3}, i )\)</span> tal que <span class="process-math">\([F:\mathbb Q] = 2\text{.}\)</span>
+<li id="li-756"><div class="para" id="p-3397">Encuentre todos los subcuerpos  <span class="process-math">\(F\)</span> de <span class="process-math">\({\mathbb Q}( \sqrt[4]{3}, i )\)</span> tal que <span class="process-math">\([F:\mathbb Q] = 2\text{.}\)</span>
 </div></li>
-<li id="li-757"><div class="para" id="p-3363">Encuentre todos los subcuerpos <span class="process-math">\(F\)</span> de <span class="process-math">\({\mathbb Q}( \sqrt[4]{3}, i )\)</span> tal que <span class="process-math">\([F:\mathbb Q] = 4\text{.}\)</span>
+<li id="li-757"><div class="para" id="p-3398">Encuentre todos los subcuerpos <span class="process-math">\(F\)</span> de <span class="process-math">\({\mathbb Q}( \sqrt[4]{3}, i )\)</span> tal que <span class="process-math">\([F:\mathbb Q] = 4\text{.}\)</span>
 </div></li>
 </ol>
-</div></article><article class="exercise exercise-like" id="exercise-701"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
-<div class="para" id="p-3364">Demuestre que <span class="process-math">\({\mathbb Z}_2[x] / \langle x^3 + x + 1 \rangle\)</span> es un cuerpo con 8 elementos. Construya una tabla de multiplicación para el grupo multiplicativo del cuerpo.</div>
+</div></article><article class="exercise exercise-like" id="exercise-732"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+<div class="para" id="p-3399">Demuestre que <span class="process-math">\({\mathbb Z}_2[x] / \langle x^3 + x + 1 \rangle\)</span> es un cuerpo con 8 elementos. Construya una tabla de multiplicación para el grupo multiplicativo del cuerpo.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-187" id="hint-187"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-187"><div class="hint solution-like"><div class="para" id="p-3365">Use el hecho de que los elementos de <span class="process-math">\({\mathbb Z}_2[x]/ \langle x^3 + x + 1 \rangle\)</span> son 0, 1, <span class="process-math">\(\alpha\text{,}\)</span> <span class="process-math">\(1 + \alpha\text{,}\)</span> <span class="process-math">\(\alpha^2\text{,}\)</span> <span class="process-math">\(1 + \alpha^2\text{,}\)</span> <span class="process-math">\(\alpha + \alpha^2\text{,}\)</span> <span class="process-math">\(1 + \alpha + \alpha^2\)</span> y el hecho de que <span class="process-math">\(\alpha^3 + \alpha + 1 = 0\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-187" id="hint-187"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-187"><div class="hint solution-like"><div class="para" id="p-3400">Use el hecho de que los elementos de <span class="process-math">\({\mathbb Z}_2[x]/ \langle x^3 + x + 1 \rangle\)</span> son 0, 1, <span class="process-math">\(\alpha\text{,}\)</span> <span class="process-math">\(1 + \alpha\text{,}\)</span> <span class="process-math">\(\alpha^2\text{,}\)</span> <span class="process-math">\(1 + \alpha^2\text{,}\)</span> <span class="process-math">\(\alpha + \alpha^2\text{,}\)</span> <span class="process-math">\(1 + \alpha + \alpha^2\)</span> y el hecho de que <span class="process-math">\(\alpha^3 + \alpha + 1 = 0\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-702"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="para" id="p-3366">Demuestre que el polígono regular de 9 lados no es constructible con regla y compas, pero el de 20 lados sí es constructible.</div></article><article class="exercise exercise-like" id="exercise-703"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="para" id="p-3367">Demuestre que el coseno de un grado (<span class="process-math">\(\cos 1^\circ\)</span>) es algebraico sobre <span class="process-math">\({\mathbb Q}\)</span> pero no es constructible.</div></article><article class="exercise exercise-like" id="exercise-704"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
-<div class="para" id="p-3368">¿Se puede construir un cubo con tres veces el volumen de un cubo dado?</div>
+</div></article><article class="exercise exercise-like" id="exercise-733"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+<div class="para" id="p-3401">Demuestre que el polígono regular de 9 lados no es constructible con regla y compas, pero el de 20 lados sí es constructible.</div></article><article class="exercise exercise-like" id="exercise-734"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="para" id="p-3402">Demuestre que el coseno de un grado (<span class="process-math">\(\cos 1^\circ\)</span>) es algebraico sobre <span class="process-math">\({\mathbb Q}\)</span> pero no es constructible.</div></article><article class="exercise exercise-like" id="exercise-735"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="para" id="p-3403">¿Se puede construir un cubo con tres veces el volumen de un cubo dado?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-188" id="hint-188"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-188"><div class="hint solution-like"><div class="para" id="p-3369">False.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-705"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
-<div class="para" id="p-3370">Demuestre que <span class="process-math">\({\mathbb Q}(\sqrt{3}, \sqrt[4]{3}, \sqrt[8]{3}, \ldots )\)</span> es una extensión algebraica de <span class="process-math">\({\mathbb Q}\)</span> pero no es una extensión finita.</div></article><article class="exercise exercise-like" id="exercise-706"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
-<div class="para" id="p-3371">Demuestre o refute: <span class="process-math">\(\pi\)</span> es algebraico sobre <span class="process-math">\({\mathbb Q}(\pi^3)\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-707"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
-<div class="para" id="p-3372">Sea <span class="process-math">\(p(x)\)</span> un polinomio no constante de grado  <span class="process-math">\(n\)</span> en <span class="process-math">\(F[x]\text{.}\)</span> Demuestre que existe un cuerpo de descomposición  <span class="process-math">\(E\)</span> para <span class="process-math">\(p(x)\)</span> tal que <span class="process-math">\([E : F] \leq n!\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-708"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
-<div class="para" id="p-3373">Demuestre o refute: <span class="process-math">\({\mathbb Q}( \sqrt{2}\, ) \cong {\mathbb Q}( \sqrt{3}\, )\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-709"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
-<div class="para" id="p-3374">Demuestre que los cuerpos <span class="process-math">\({\mathbb Q}(\sqrt[4]{3}\, )\)</span> y <span class="process-math">\({\mathbb Q}(\sqrt[4]{3}\, i)\)</span> son isomorfos pero no iguales.</div></article><article class="exercise exercise-like" id="exercise-710"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
-<div class="para" id="p-3375">Sea <span class="process-math">\(K\)</span> una extensión algebraica de <span class="process-math">\(E\text{,}\)</span> y <span class="process-math">\(E\)</span> una extensión algebraica de <span class="process-math">\(F\text{.}\)</span> Demuestre que <span class="process-math">\(K\)</span> es algebraico sobre <span class="process-math">\(F\text{.}\)</span> [<em class="emphasis">Cuidado</em>: No suponga que las extensiones son finitas.]</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-188" id="hint-188"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-188"><div class="hint solution-like"><div class="para" id="p-3404">False.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-736"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para" id="p-3405">Demuestre que <span class="process-math">\({\mathbb Q}(\sqrt{3}, \sqrt[4]{3}, \sqrt[8]{3}, \ldots )\)</span> es una extensión algebraica de <span class="process-math">\({\mathbb Q}\)</span> pero no es una extensión finita.</div></article><article class="exercise exercise-like" id="exercise-737"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
+<div class="para" id="p-3406">Demuestre o refute: <span class="process-math">\(\pi\)</span> es algebraico sobre <span class="process-math">\({\mathbb Q}(\pi^3)\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-738"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
+<div class="para" id="p-3407">Sea <span class="process-math">\(p(x)\)</span> un polinomio no constante de grado  <span class="process-math">\(n\)</span> en <span class="process-math">\(F[x]\text{.}\)</span> Demuestre que existe un cuerpo de descomposición  <span class="process-math">\(E\)</span> para <span class="process-math">\(p(x)\)</span> tal que <span class="process-math">\([E : F] \leq n!\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-739"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
+<div class="para" id="p-3408">Demuestre o refute: <span class="process-math">\({\mathbb Q}( \sqrt{2}\, ) \cong {\mathbb Q}( \sqrt{3}\, )\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-740"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
+<div class="para" id="p-3409">Demuestre que los cuerpos <span class="process-math">\({\mathbb Q}(\sqrt[4]{3}\, )\)</span> y <span class="process-math">\({\mathbb Q}(\sqrt[4]{3}\, i)\)</span> son isomorfos pero no iguales.</div></article><article class="exercise exercise-like" id="exercise-741"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
+<div class="para" id="p-3410">Sea <span class="process-math">\(K\)</span> una extensión algebraica de <span class="process-math">\(E\text{,}\)</span> y <span class="process-math">\(E\)</span> una extensión algebraica de <span class="process-math">\(F\text{.}\)</span> Demuestre que <span class="process-math">\(K\)</span> es algebraico sobre <span class="process-math">\(F\text{.}\)</span> [<em class="emphasis">Cuidado</em>: No suponga que las extensiones son finitas.]</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-189" id="hint-189"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-189"><div class="hint solution-like"><div class="para" id="p-3376">Supongamos que <span class="process-math">\(E\)</span> es algebraico sobre <span class="process-math">\(F\)</span> y <span class="process-math">\(K\)</span> es algebraico sobre <span class="process-math">\(E\text{.}\)</span> Sea <span class="process-math">\(\alpha \in K\text{.}\)</span> Basta con demostrar que <span class="process-math">\(\alpha\)</span> es algebraico sobre alguna extensión finita de <span class="process-math">\(F\text{.}\)</span> Como <span class="process-math">\(\alpha\)</span> es algebraico sobre <span class="process-math">\(E\text{,}\)</span> debe ser cero de algún polinomio <span class="process-math">\(p(x) = \beta_0 + \beta_1 x + \cdots + \beta_n x^n\)</span> en <span class="process-math">\(E[x]\text{.}\)</span> Por lo tanto <span class="process-math">\(\alpha\)</span> es algebraico sobre <span class="process-math">\(F(\beta_0, \ldots, \beta_n)\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-189" id="hint-189"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-189"><div class="hint solution-like"><div class="para" id="p-3411">Supongamos que <span class="process-math">\(E\)</span> es algebraico sobre <span class="process-math">\(F\)</span> y <span class="process-math">\(K\)</span> es algebraico sobre <span class="process-math">\(E\text{.}\)</span> Sea <span class="process-math">\(\alpha \in K\text{.}\)</span> Basta con demostrar que <span class="process-math">\(\alpha\)</span> es algebraico sobre alguna extensión finita de <span class="process-math">\(F\text{.}\)</span> Como <span class="process-math">\(\alpha\)</span> es algebraico sobre <span class="process-math">\(E\text{,}\)</span> debe ser cero de algún polinomio <span class="process-math">\(p(x) = \beta_0 + \beta_1 x + \cdots + \beta_n x^n\)</span> en <span class="process-math">\(E[x]\text{.}\)</span> Por lo tanto <span class="process-math">\(\alpha\)</span> es algebraico sobre <span class="process-math">\(F(\beta_0, \ldots, \beta_n)\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-711"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
-<div class="para" id="p-3377">Demuestre o refute: <span class="process-math">\({\mathbb Z}[x] / \langle x^3 -2 \rangle\)</span> es un cuerpo.</div></article><article class="exercise exercise-like" id="exercise-712"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
-<div class="para" id="p-3378">Sea <span class="process-math">\(F\)</span> un cuerpo de característica <span class="process-math">\(p\text{.}\)</span> Demuestre que <span class="process-math">\(p(x) = x^p - a\)</span> es irreducible o se descompone completamente en <span class="process-math">\(F\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-713"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
-<div class="para" id="p-3379">Sea <span class="process-math">\(E\)</span> la clausura algebraica de un cuerpo <span class="process-math">\(F\text{.}\)</span> Demuestre que todo polinomio <span class="process-math">\(p(x)\)</span> en <span class="process-math">\(F[x]\)</span> se descompone completamente en <span class="process-math">\(E\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-714"><h3 class="heading"><span class="codenumber">18<span class="period">.</span></span></h3>
-<div class="para" id="p-3380">Si todo polinomio irreducible <span class="process-math">\(p(x)\)</span> en <span class="process-math">\(F[x]\)</span> es lineal, demuestre que <span class="process-math">\(F\)</span> es un cuerpo algebraicamente cerrado.</div></article><article class="exercise exercise-like" id="exercise-715"><h3 class="heading"><span class="codenumber">19<span class="period">.</span></span></h3>
-<div class="para" id="p-3381">Demuestre que si <span class="process-math">\(\alpha\)</span> y <span class="process-math">\(\beta\)</span> son números constructibles tales que <span class="process-math">\(\beta \neq 0\text{,}\)</span> entonces también lo es <span class="process-math">\(\alpha / \beta\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-716"><h3 class="heading"><span class="codenumber">20<span class="period">.</span></span></h3>
-<div class="para" id="p-3382">Demuestre que el conjunto de todos los elementos en <span class="process-math">\({\mathbb R}\)</span> que son algebraicos sobre <span class="process-math">\({\mathbb Q}\)</span> forma una extensión de cuerpos de <span class="process-math">\({\mathbb Q}\)</span> que no es finita.</div></article><article class="exercise exercise-like" id="exercise-717"><h3 class="heading"><span class="codenumber">21<span class="period">.</span></span></h3>
-<div class="para" id="p-3383">Sea <span class="process-math">\(E\)</span> una extensión algebraica de un cuerpo <span class="process-math">\(F\text{,}\)</span> y sea <span class="process-math">\(\sigma\)</span> un automorfismo de <span class="process-math">\(E\)</span> que fija <span class="process-math">\(F\text{.}\)</span> Sea <span class="process-math">\(\alpha \in E\text{.}\)</span> Demuestre que <span class="process-math">\(\sigma\)</span> induce una permutación del conjunto de ceros del polinomio minimal de <span class="process-math">\(\alpha\)</span> que están en <span class="process-math">\(E\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-718"><h3 class="heading"><span class="codenumber">22<span class="period">.</span></span></h3>
-<div class="para" id="p-3384">Muestre que <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) = {\mathbb Q}( \sqrt{3} + \sqrt{7}\, )\text{.}\)</span>  Extienda su demostración para demostrar que <span class="process-math">\({\mathbb Q}( \sqrt{a}, \sqrt{b}\, ) = {\mathbb Q}( \sqrt{a} + \sqrt{b}\, )\text{,}\)</span> donde <span class="process-math">\(\gcd(a, b) = 1\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-742"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
+<div class="para" id="p-3412">Demuestre o refute: <span class="process-math">\({\mathbb Z}[x] / \langle x^3 -2 \rangle\)</span> es un cuerpo.</div></article><article class="exercise exercise-like" id="exercise-743"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
+<div class="para" id="p-3413">Sea <span class="process-math">\(F\)</span> un cuerpo de característica <span class="process-math">\(p\text{.}\)</span> Demuestre que <span class="process-math">\(p(x) = x^p - a\)</span> es irreducible o se descompone completamente en <span class="process-math">\(F\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-744"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
+<div class="para" id="p-3414">Sea <span class="process-math">\(E\)</span> la clausura algebraica de un cuerpo <span class="process-math">\(F\text{.}\)</span> Demuestre que todo polinomio <span class="process-math">\(p(x)\)</span> en <span class="process-math">\(F[x]\)</span> se descompone completamente en <span class="process-math">\(E\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-745"><h3 class="heading"><span class="codenumber">18<span class="period">.</span></span></h3>
+<div class="para" id="p-3415">Si todo polinomio irreducible <span class="process-math">\(p(x)\)</span> en <span class="process-math">\(F[x]\)</span> es lineal, demuestre que <span class="process-math">\(F\)</span> es un cuerpo algebraicamente cerrado.</div></article><article class="exercise exercise-like" id="exercise-746"><h3 class="heading"><span class="codenumber">19<span class="period">.</span></span></h3>
+<div class="para" id="p-3416">Demuestre que si <span class="process-math">\(\alpha\)</span> y <span class="process-math">\(\beta\)</span> son números constructibles tales que <span class="process-math">\(\beta \neq 0\text{,}\)</span> entonces también lo es <span class="process-math">\(\alpha / \beta\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-747"><h3 class="heading"><span class="codenumber">20<span class="period">.</span></span></h3>
+<div class="para" id="p-3417">Demuestre que el conjunto de todos los elementos en <span class="process-math">\({\mathbb R}\)</span> que son algebraicos sobre <span class="process-math">\({\mathbb Q}\)</span> forma una extensión de cuerpos de <span class="process-math">\({\mathbb Q}\)</span> que no es finita.</div></article><article class="exercise exercise-like" id="exercise-748"><h3 class="heading"><span class="codenumber">21<span class="period">.</span></span></h3>
+<div class="para" id="p-3418">Sea <span class="process-math">\(E\)</span> una extensión algebraica de un cuerpo <span class="process-math">\(F\text{,}\)</span> y sea <span class="process-math">\(\sigma\)</span> un automorfismo de <span class="process-math">\(E\)</span> que fija <span class="process-math">\(F\text{.}\)</span> Sea <span class="process-math">\(\alpha \in E\text{.}\)</span> Demuestre que <span class="process-math">\(\sigma\)</span> induce una permutación del conjunto de ceros del polinomio minimal de <span class="process-math">\(\alpha\)</span> que están en <span class="process-math">\(E\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-749"><h3 class="heading"><span class="codenumber">22<span class="period">.</span></span></h3>
+<div class="para" id="p-3419">Muestre que <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) = {\mathbb Q}( \sqrt{3} + \sqrt{7}\, )\text{.}\)</span>  Extienda su demostración para demostrar que <span class="process-math">\({\mathbb Q}( \sqrt{a}, \sqrt{b}\, ) = {\mathbb Q}( \sqrt{a} + \sqrt{b}\, )\text{,}\)</span> donde <span class="process-math">\(\gcd(a, b) = 1\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-190" id="hint-190"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-190"><div class="hint solution-like"><div class="para" id="p-3385">Como <span class="process-math">\(\{ 1, \sqrt{3}, \sqrt{7}, \sqrt{21}\, \}\)</span> es una base para <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{7}\, )\)</span> sobre <span class="process-math">\({\mathbb Q}\text{,}\)</span> <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) \supset {\mathbb Q}( \sqrt{3} +\sqrt{7}\, )\text{.}\)</span> Como <span class="process-math">\([{\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) : {\mathbb Q}] = 4\text{,}\)</span> <span class="process-math">\([{\mathbb Q}( \sqrt{3} + \sqrt{7}\, ) : {\mathbb Q}] = 2\)</span> o 4. Como el grado del polinomio minimal de <span class="process-math">\(\sqrt{3} +\sqrt{7}\)</span> es 4, <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) = {\mathbb Q}( \sqrt{3} +\sqrt{7}\, )\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-190" id="hint-190"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-190"><div class="hint solution-like"><div class="para" id="p-3420">Como <span class="process-math">\(\{ 1, \sqrt{3}, \sqrt{7}, \sqrt{21}\, \}\)</span> es una base para <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{7}\, )\)</span> sobre <span class="process-math">\({\mathbb Q}\text{,}\)</span> <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) \supset {\mathbb Q}( \sqrt{3} +\sqrt{7}\, )\text{.}\)</span> Como <span class="process-math">\([{\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) : {\mathbb Q}] = 4\text{,}\)</span> <span class="process-math">\([{\mathbb Q}( \sqrt{3} + \sqrt{7}\, ) : {\mathbb Q}] = 2\)</span> o 4. Como el grado del polinomio minimal de <span class="process-math">\(\sqrt{3} +\sqrt{7}\)</span> es 4, <span class="process-math">\({\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) = {\mathbb Q}( \sqrt{3} +\sqrt{7}\, )\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-719"><h3 class="heading"><span class="codenumber">23<span class="period">.</span></span></h3>
-<div class="para" id="p-3386">Sea <span class="process-math">\(E\)</span> una extensión finita de un cuerpo <span class="process-math">\(F\text{.}\)</span> Si <span class="process-math">\([E:F] = 2\text{,}\)</span> demuestre que  <span class="process-math">\(E\)</span> es un cuerpo de descomposición sobre  <span class="process-math">\(F\)</span> para algún polinomio <span class="process-math">\(f(x) \in F[x]\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-720"><h3 class="heading"><span class="codenumber">24<span class="period">.</span></span></h3>
-<div class="para" id="p-3387">Demuestre o refute: Dado un polinomio <span class="process-math">\(p(x)\)</span> en <span class="process-math">\({\mathbb Z}_6[x]\text{,}\)</span> es posible construir un anillo <span class="process-math">\(R\)</span> tal que <span class="process-math">\(p(x)\)</span> tiene una raíz en <span class="process-math">\(R\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-721"><h3 class="heading"><span class="codenumber">25<span class="period">.</span></span></h3>
-<div class="para" id="p-3388">Sea <span class="process-math">\(E\)</span> una extensión de <span class="process-math">\(F\)</span> y <span class="process-math">\(\alpha \in E\text{.}\)</span>  Determine <span class="process-math">\([F(\alpha): F(\alpha^3)]\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-722"><h3 class="heading"><span class="codenumber">26<span class="period">.</span></span></h3>
-<div class="para" id="p-3389">Sean <span class="process-math">\(\alpha, \beta\)</span> trascendente sobre <span class="process-math">\({\mathbb Q}\text{.}\)</span> Pruebe que al menos uno de <span class="process-math">\(\alpha \beta\)</span> y <span class="process-math">\(\alpha + \beta\)</span> también es trascendente.</div></article><article class="exercise exercise-like" id="exercise-723"><h3 class="heading"><span class="codenumber">27<span class="period">.</span></span></h3>
-<div class="para" id="p-3390">Sea <span class="process-math">\(E\)</span> una extensión de cuerpos de <span class="process-math">\(F\)</span> y sea <span class="process-math">\(\alpha \in E\)</span> trascendente sobre <span class="process-math">\(F\text{.}\)</span> Demuestre que cada elemento en <span class="process-math">\(F(\alpha)\)</span> que no está en  <span class="process-math">\(F\)</span> también es trascendente sobre <span class="process-math">\(F\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-750"><h3 class="heading"><span class="codenumber">23<span class="period">.</span></span></h3>
+<div class="para" id="p-3421">Sea <span class="process-math">\(E\)</span> una extensión finita de un cuerpo <span class="process-math">\(F\text{.}\)</span> Si <span class="process-math">\([E:F] = 2\text{,}\)</span> demuestre que  <span class="process-math">\(E\)</span> es un cuerpo de descomposición sobre  <span class="process-math">\(F\)</span> para algún polinomio <span class="process-math">\(f(x) \in F[x]\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-751"><h3 class="heading"><span class="codenumber">24<span class="period">.</span></span></h3>
+<div class="para" id="p-3422">Demuestre o refute: Dado un polinomio <span class="process-math">\(p(x)\)</span> en <span class="process-math">\({\mathbb Z}_6[x]\text{,}\)</span> es posible construir un anillo <span class="process-math">\(R\)</span> tal que <span class="process-math">\(p(x)\)</span> tiene una raíz en <span class="process-math">\(R\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-752"><h3 class="heading"><span class="codenumber">25<span class="period">.</span></span></h3>
+<div class="para" id="p-3423">Sea <span class="process-math">\(E\)</span> una extensión de <span class="process-math">\(F\)</span> y <span class="process-math">\(\alpha \in E\text{.}\)</span>  Determine <span class="process-math">\([F(\alpha): F(\alpha^3)]\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-753"><h3 class="heading"><span class="codenumber">26<span class="period">.</span></span></h3>
+<div class="para" id="p-3424">Sean <span class="process-math">\(\alpha, \beta\)</span> trascendente sobre <span class="process-math">\({\mathbb Q}\text{.}\)</span> Pruebe que al menos uno de <span class="process-math">\(\alpha \beta\)</span> y <span class="process-math">\(\alpha + \beta\)</span> también es trascendente.</div></article><article class="exercise exercise-like" id="exercise-754"><h3 class="heading"><span class="codenumber">27<span class="period">.</span></span></h3>
+<div class="para" id="p-3425">Sea <span class="process-math">\(E\)</span> una extensión de cuerpos de <span class="process-math">\(F\)</span> y sea <span class="process-math">\(\alpha \in E\)</span> trascendente sobre <span class="process-math">\(F\text{.}\)</span> Demuestre que cada elemento en <span class="process-math">\(F(\alpha)\)</span> que no está en  <span class="process-math">\(F\)</span> también es trascendente sobre <span class="process-math">\(F\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-191" id="hint-191"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-191"><div class="hint solution-like"><div class="para logical" id="p-3391">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-191" id="hint-191"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-191"><div class="hint solution-like"><div class="para logical" id="p-3426">
 <div class="para">Sea <span class="process-math">\(\beta \in F(\alpha)\)</span> no en <span class="process-math">\(F\text{.}\)</span> Entonces <span class="process-math">\(\beta = p(\alpha)/q(\alpha)\text{,}\)</span> donde <span class="process-math">\(p\)</span> y <span class="process-math">\(q\)</span> son polinomios en <span class="process-math">\(\alpha\)</span> con <span class="process-math">\(q(\alpha) \neq 0\)</span> y coeficientes en <span class="process-math">\(F\text{.}\)</span> Si <span class="process-math">\(\beta\)</span> es algebraico sobre <span class="process-math">\(F\text{,}\)</span> entonces hay un polinomio <span class="process-math">\(f(x) \in F[x]\)</span> tal que <span class="process-math">\(f(\beta) = 0\text{.}\)</span> Sea <span class="process-math">\(f(x) = a_0 + a_1 x + \cdots + a_n x^n\text{.}\)</span> Entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1020,10 +1056,10 @@ window.MathJax = {
 </div>
 </div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-fields-degree-irred-poly"><h3 class="heading"><span class="codenumber">28<span class="period">.</span></span></h3>
-<div class="para" id="p-3392">Sea <span class="process-math">\(\alpha\)</span> una raíz de un polinomio irreducible <span class="process-math">\(p(x) \in F[x]\text{,}\)</span> con <span class="process-math">\(\deg p = n\text{.}\)</span> Demuestre que <span class="process-math">\([F(\alpha) : F] = n\text{.}\)</span>
+<div class="para" id="p-3427">Sea <span class="process-math">\(\alpha\)</span> una raíz de un polinomio irreducible <span class="process-math">\(p(x) \in F[x]\text{,}\)</span> con <span class="process-math">\(\deg p = n\text{.}\)</span> Demuestre que <span class="process-math">\([F(\alpha) : F] = n\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-192" id="hint-192"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-192"><div class="hint solution-like"><div class="para" id="p-3393">Vea el comentario que sigue al Teorema <a href="" class="xref" data-knowl="./knowl/theorem-simple_extension.html" title="Teorema 21.1.13">21.1.13</a>.</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-192" id="hint-192"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-192"><div class="hint solution-like"><div class="para" id="p-3428">Vea el comentario que sigue al Teorema <a href="" class="xref" data-knowl="./knowl/theorem-simple_extension.html" title="Teorema 21.1.13">Teorema 21.1.13</a>.</div></div></div>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-constructions.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="fields-references.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a>
@@ -1032,13 +1068,5 @@ window.MathJax = {
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
-<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
-var sc_project=10568106;
-var sc_invisible=1;
-var sc_security="510ba080";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10568106/0/510ba080/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
 </body>
 </html>

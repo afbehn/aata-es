@@ -12,38 +12,36 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Demostración</span></h4>
-<div class="para logical">
-<div class="para">
-<em class="emphasis">Unicidad.</em>  Para demostrar la unicidad procederemos por inducción en <span class="process-math">\(n\text{.}\)</span> El teorema es claramente verdadero para <span class="process-math">\(n = 2\)</span> pues en este caso <span class="process-math">\(n\)</span> es primo.  Ahora supongamos que el resultado se cumple para todos los enteros <span class="process-math">\(m\)</span> tales que <span class="process-math">\(1 \leq m \lt n\text{,}\)</span> y</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-integers-prime-divisor.html">
+<article class="case"><h5 class="heading">Unicidad..</h5> <div class="para logical">
+<div class="para">Para demostrar la unicidad procederemos por inducción en <span class="process-math">\(n\text{.}\)</span> El teorema es claramente verdadero para <span class="process-math">\(n = 2\)</span> pues en este caso <span class="process-math">\(n\)</span> es primo.  Ahora supongamos que el resultado se cumple para todos los enteros <span class="process-math">\(m\)</span> tales que <span class="process-math">\(1 \leq m \lt n\text{,}\)</span> y</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/integers-theorem-prime-divisor.html">
 \begin{equation*}
-n = p_1 p_2 \cdots p_k = q_1 q_2 \cdots q_l,
+n = p_1 p_2 \cdots p_k = q_1 q_2 \cdots q_l\text{,}
 \end{equation*}
 </div>
-<div class="para">con <span class="process-math">\(p_1 \leq p_2 \leq \cdots \leq p_k\)</span> y <span class="process-math">\(q_1 \leq q_2 \leq \cdots \leq q_l\text{.}\)</span> Por el Lema <a href="" class="xref" data-knowl="./knowl/theorem-integers-prime-divisor.html" title="Lema 2.2.5: Euclides">2.2.5</a>, <span class="process-math">\(p_1  \mid  q_i\)</span> para ciertos <span class="process-math">\(i = 1, \ldots, l\)</span> y <span class="process-math">\(q_1  \mid  p_j\)</span> para ciertos <span class="process-math">\(j = 1, \ldots, k\text{.}\)</span>  Como todos los <span class="process-math">\(p_i\)</span> y los <span class="process-math">\(q_i\)</span> son primos, <span class="process-math">\(p_1 = q_i\)</span> y  <span class="process-math">\(q_1 = p_j\text{.}\)</span> Luego, <span class="process-math">\(p_1 = q_1\)</span> pues <span class="process-math">\(p_1 \leq p_j = q_1 \leq q_i = p_1\text{.}\)</span>  Por la hipótesis de inducción,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-integers-prime-divisor.html">
+<div class="para">con <span class="process-math">\(p_1 \leq p_2 \leq \cdots \leq p_k\)</span> y <span class="process-math">\(q_1 \leq q_2 \leq \cdots \leq q_l\text{.}\)</span> Por el <a href="" class="xref" data-knowl="./knowl/integers-theorem-prime-divisor.html" title="Lema 2.2.5: Euclides">Lema 2.2.5</a>, <span class="process-math">\(p_1  \mid  q_i\)</span> para ciertos <span class="process-math">\(i = 1, \ldots, l\)</span> y <span class="process-math">\(q_1  \mid  p_j\)</span> para ciertos <span class="process-math">\(j = 1, \ldots, k\text{.}\)</span>  Como todos los <span class="process-math">\(p_i\)</span> y los <span class="process-math">\(q_i\)</span> son primos, <span class="process-math">\(p_1 = q_i\)</span> y  <span class="process-math">\(q_1 = p_j\text{.}\)</span> Luego, <span class="process-math">\(p_1 = q_1\)</span> pues <span class="process-math">\(p_1 \leq p_j = q_1 \leq q_i = p_1\text{.}\)</span>  Por la hipótesis de inducción,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/integers-theorem-prime-divisor.html">
 \begin{equation*}
 n' = p_2 \cdots p_k = q_2 \cdots q_l
 \end{equation*}
 </div>
 <div class="para">tiene una factorización única.  Luego, <span class="process-math">\(k = l\)</span> y <span class="process-math">\(q_i = p_i\)</span> para <span class="process-math">\(i = 1, \ldots, k\text{.}\)</span>
 </div>
-</div> <div class="para logical">
-<div class="para">
-<em class="emphasis">Existencia.</em> Para demostrar la existencia, supongamos que existe algún entero que no puede ser escrito como producto de primos.  Sea <span class="process-math">\(S\)</span> el conjunto de tales números.  Por el Principio del Buen-Orden, <span class="process-math">\(S\)</span> contiene un elemento mínimo, digamos <span class="process-math">\(a\text{.}\)</span>  Si los únicos factores positivos de <span class="process-math">\(a\)</span> son <span class="process-math">\(a\)</span> y 1, entonces <span class="process-math">\(a\)</span> es primo, lo que es una contradicción.  Luego, <span class="process-math">\(a = a_1 a_2\)</span> con <span class="process-math">\(1 \lt a_1 \lt a\)</span> y <span class="process-math">\(1 \lt a_2 \lt a\text{.}\)</span>  Ni <span class="process-math">\(a_1\in S\)</span> ni <span class="process-math">\(a_2 \in S\text{,}\)</span> pues <span class="process-math">\(a\)</span> es el menor elemento de <span class="process-math">\(S\text{.}\)</span>  Así</div>
+</div></article> <article class="case"><h5 class="heading">Existencia..</h5> <div class="para logical">
+<div class="para">Para demostrar la existencia, supongamos que existe algún entero que no puede ser escrito como producto de primos.  Sea <span class="process-math">\(S\)</span> el conjunto de tales números.  Por el Principio del Buen-Orden, <span class="process-math">\(S\)</span> contiene un elemento mínimo, digamos <span class="process-math">\(a\text{.}\)</span>  Si los únicos factores positivos de <span class="process-math">\(a\)</span> son <span class="process-math">\(a\)</span> y <span class="process-math">\(1\text{,}\)</span> entonces <span class="process-math">\(a\)</span> es primo, lo que es una contradicción.  Luego, <span class="process-math">\(a = a_1 a_2\)</span> con <span class="process-math">\(1 \lt a_1 \lt a\)</span> y <span class="process-math">\(1 \lt a_2 \lt a\text{.}\)</span>  Ni <span class="process-math">\(a_1\in S\)</span> ni <span class="process-math">\(a_2 \in S\text{,}\)</span> pues <span class="process-math">\(a\)</span> es el menor elemento de <span class="process-math">\(S\text{.}\)</span>  Así</div>
 <div class="displaymath process-math">
 \begin{align*}
 a_1 &amp; = p_1 \cdots p_r\\
-a_2 &amp; = q_1 \cdots q_s.
+a_2 &amp; = q_1 \cdots q_s\text{.}
 \end{align*}
 </div>
 <div class="para">Por lo tanto,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-a = a_1 a_2 = p_1 \cdots p_r q_1 \cdots q_s.
+a = a_1 a_2 = p_1 \cdots p_r q_1 \cdots q_s\text{.}
 \end{equation*}
 </div>
 <div class="para">Así <span class="process-math">\(a \notin S\text{,}\)</span> lo que es una contradicción.</div>
-</div></article><span class="incontext"><a href="section-division-algorithm.html#proof-12" class="internal">en contexto</a></span>
+</div></article></article><span class="incontext"><a href="integers-section-division-algorithm.html#Rap" class="internal">en contexto</a></span>
 </body>
 </html>

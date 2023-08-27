@@ -10,5 +10,44 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para">Si <span class="process-math">\(|G| = p^n\)</span> entonces, por el teorema de Lagrange, el orden de cualquier <span class="process-math">\(g \in G\)</span> divide a <span class="process-math">\(p^n\text{,}\)</span> y por lo tanto es una potencia de <span class="process-math">\(p\text{.}\)</span> Recíprocamente, si <span class="process-math">\(|G|\)</span> no es una potencia de <span class="process-math">\(p\text{,}\)</span> entonces tiene algún otro divisor primo <span class="process-math">\(q\text{,}\)</span> y por el Lema <a href="" class="xref" data-knowl="./knowl/lemma-cauchy-finite-abelian.html" title="Lema 13.1.6">13.1.6</a>, <span class="process-math">\(G\)</span> tiene un elemento de orden <span class="process-math">\(q\)</span> por lo que no es un <span class="process-math">\(p\)</span>-grupo.</div></article></body>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">Como <span class="process-math">\(G\)</span> es un grupo abeliano, tenemos que <span class="process-math">\(G_i\)</span> es un subgrupo de <span class="process-math">\(G\)</span> para <span class="process-math">\(i = 1, \ldots, k\text{.}\)</span> Como la identidad tiene orden <span class="process-math">\(p_i^0 = 1\text{,}\)</span> sabemos que <span class="process-math">\(1 \in G_i\text{.}\)</span> Si <span class="process-math">\(g \in G_i\)</span> tiene orden <span class="process-math">\(p_i^r\text{,}\)</span> entonces <span class="process-math">\(g^{-1}\)</span> también debe tener orden <span class="process-math">\(p_i^r\text{.}\)</span> Finalmente, si <span class="process-math">\(h \in G_i\)</span> tiene orden <span class="process-math">\(p_i^s\text{,}\)</span> entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(gh)^{p_i^t} = g^{p_i^t} h^{p_i^t} = 1 \cdot 1 = 1\text{,}
+\end{equation*}
+</div>
+<div class="para">donde <span class="process-math">\(t\)</span> es el mayor entre <span class="process-math">\(r\)</span> y <span class="process-math">\(s\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Debemos mostrar que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+G = G_1 G_2 \cdots  G_k
+\end{equation*}
+</div>
+<div class="para">y <span class="process-math">\(G_i \cap G_j = \{1 \}\)</span> para <span class="process-math">\(i \neq j\text{.}\)</span> Supongamos que <span class="process-math">\(g_1 \in G_1\)</span> está en el subgrupo generado por <span class="process-math">\(G_2, G_3, \ldots, G_k\text{.}\)</span> Entonces <span class="process-math">\(g_1 = g_2 g_3 \cdots g_k\)</span> para <span class="process-math">\(g_i \in G_i\text{.}\)</span> Como <span class="process-math">\(g_i\)</span> tiene orden <span class="process-math">\(p_i^{\alpha_i}\text{,}\)</span> sabemos que <span class="process-math">\(g_i^{p_i^{\alpha_i}} = 1\)</span> para <span class="process-math">\(i = 2, 3, \ldots, k\text{,}\)</span> y <span class="process-math">\(g_1^{p_2^{\alpha_2} \cdots p_k^{\alpha_k}} = 1\text{.}\)</span> Como el orden de <span class="process-math">\(g_1\)</span> es una potencia de <span class="process-math">\(p_1\)</span> y <span class="process-math">\(\gcd(p_1, p_2^{\alpha_2} \cdots p_k^{\alpha_k}) = 1\text{,}\)</span> tenemos que <span class="process-math">\(g_1 = 1\)</span> y la intersección de <span class="process-math">\(G_1\)</span> con cualquiera de los subgrupos <span class="process-math">\(G_2, G_3, \ldots, G_k\)</span> es la identidad. Un argumento similar muestra que <span class="process-math">\(G_i \cap G_j = \{1 \}\)</span> para <span class="process-math">\(i \neq j\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">A continuación, debemos demostrar que es posible escribir cada <span class="process-math">\(g \in G\)</span> como un producto <span class="process-math">\(g_1 \cdots g_k\text{,}\)</span> donde <span class="process-math">\(g_i \in G_i\text{.}\)</span> Dado que el orden de <span class="process-math">\(g\)</span> divide el orden de <span class="process-math">\(G\text{,}\)</span> lo sabemos</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|g| = p_1^{\beta_1}  p_2^{\beta_2} \cdots p_k^{\beta_k}
+\end{equation*}
+</div>
+<div class="para">para ciertos números enteros <span class="process-math">\(\beta_1, \ldots, \beta_k\text{.}\)</span> Dejando <span class="process-math">\(a_i = |g| /p_i^{\beta_i}\text{,}\)</span> los <span class="process-math">\(a_i\)</span> son relativamente primos; por tanto, existen números enteros <span class="process-math">\(b_1, \ldots,
+b_k\)</span> such that <span class="process-math">\(a_1 b_1 + \cdots + a_k b_k = 1\text{.}\)</span> Como consecuencia,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g = g^{a_1 b_1 + \cdots + a_k b_k} = g^{a_1 b_1} \cdots  g^{a_k b_k}\text{.}
+\end{equation*}
+</div>
+<div class="para">Como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g^{(a_i b_i ) p_i^{\beta_i}} = g^{b_i |g|} = e\text{,}
+\end{equation*}
+</div>
+<div class="para">deducimos que <span class="process-math">\(g^{a_i b_i}\)</span> debe estar en <span class="process-math">\(G_{i}\text{.}\)</span> Sea <span class="process-math">\(g_i = g^{a_i b_i}\text{.}\)</span> Entonces <span class="process-math">\(g = g_1 \cdots g_k \in G_1 G_2 \cdots G_k\text{.}\)</span> Por lo tanto, <span class="process-math">\(G = G_1 G_2 \cdots G_k\)</span> es un producto directo interno de subgrupos.</div>
+</div></article></body>
 </html>

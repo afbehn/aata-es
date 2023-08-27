@@ -12,9 +12,29 @@
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">36<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">26<span class="period">.</span></span>
 </h3>
-<div class="para">Demuestre que <span class="process-math">\(A \mapsto B^{-1}AB\)</span> es un automorfismo de <span class="process-math">\(SL_2({\mathbb R})\)</span> para todo <span class="process-math">\(B\)</span> en <span class="process-math">\(GL_2({\mathbb R})\text{.}\)</span>
-</div></article><span class="incontext"><a href="exercises-isomorph.html#exercise-345" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Sea <span class="process-math">\(H\)</span> una matriz de <span class="process-math">\(m \times n\)</span> sobre <span class="process-math">\({\mathbb Z}_2\text{,}\)</span> donde la <span class="process-math">\(i\)</span>-ésima columna es el número <span class="process-math">\(i\)</span> escrito en binario con <span class="process-math">\(m\)</span> bits. El espacio nulo de una tal matriz se llama <dfn class="terminology">código de Hamming</dfn>.</div>
+<ol class="lower-alpha">
+<li><div class="para logical">
+<div class="para">Muestre que la matriz</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H =
+\begin{pmatrix}
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para">genera un código de Hamming. ¿Cuáles son las propiedades de corrección de errores de un código de Hamming?</div>
+</div></li>
+<li><div class="para">La columna correspondiente al síndrome también marca el bit donde ocurrió el error; es decir, la <span class="process-math">\(i\)</span>-ésima columna de la matriz es <span class="process-math">\(i\)</span> escrito como número binario, y el síndrome inmediatamente nos dice cuál es el bit erróneo. Si la palabra recibida es <span class="process-math">\((101011)\text{,}\)</span> Calcule el síndrome. ¿En qué bit ocurrió el error en este caso, y cuál era la palabra originalmente transmitida?</div></li>
+<li><div class="para">Entregue un matriz binaria <span class="process-math">\(H\)</span> para el código de Hamming con seis posiciones de informacióny cuatro de verificación. ¿Cuáles son la posiciones de verificación y cuáles son las de información? Codifique los mensajes <span class="process-math">\((101101)\)</span> y <span class="process-math">\((001001)\text{.}\)</span> Decodifique las palabras recibidas <span class="process-math">\((0010000101)\)</span> y <span class="process-math">\((0000101100)\text{.}\)</span>  ¿Cuáles son los posibles síndromes para este código?</div></li>
+<li><div class="para">¿Cuál es el número de bits de verificación y el número de bits de información en un código de Hamming de bloque <span class="process-math">\((m,n)\text{?}\)</span> Encuentre tanto una cota superior como una cota inferior para el número de bits de información en términos del número de bits de verificación. Códigos de Hamming que tengan el máximo posible número de bits de información con <span class="process-math">\(k\)</span> bits de verificación se llaman <dfn class="terminology">perfectos</dfn>. Cada posible síndrome a excepción de <span class="process-math">\({\mathbf 0}\)</span> ocurre como una columna. Si el número de bits de información es menor al máximo, entonces el código se llama <dfn class="terminology">recortado</dfn>. En este caso, dé un ejemplo donde algunos síndromes puedan representar errores múltiples.</div></li>
+</ol>
+</div></article><span class="incontext"><a href="exercises-algcodes.html#exercise-345" class="internal">en contexto</a></span>
 </body>
 </html>

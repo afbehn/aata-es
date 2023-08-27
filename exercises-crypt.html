@@ -87,7 +87,7 @@ window.MathJax = {
   }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=012975021551273728005:y0h32vuqauw"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -103,19 +103,50 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.1.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runtime.6f0528865cd47dcd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.3a5641c4e1fe869e.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.cec40a61180efd41.css">
 </head>
-<body class="pretext book ignore-math">
+<body id="AATA" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/images/cover_aata_2017.png" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="cover/cover_aata_2022.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta:</span> <span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>[search-results-heading]: <span id="searchterms" class="searchterms"></span>
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Resultados de la búsqueda: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty" class="searchempty"><span>[no-search-results].</span></div>
+<div id="searchempty" class="searchempty"><span>Sin resultados.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Índice</span></button><a class="index-button button" href="index-1.html" title="Índice alfabético"><span class="name">Índice alfabético</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -220,8 +251,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-public-key-crypt.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="crypt.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="crypt-exercises-additional.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
-<div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-public-key-crypt.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="crypt.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="crypt-exercises-additional.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
@@ -244,31 +274,32 @@ window.MathJax = {
 <div class="toc-item"><a href="sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminares</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
+<div class="toc-item"><a href="sets-section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sets-section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
+<div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="sets-exercises.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Listas</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Listas de Enteros</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.5.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Listas</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Listas de Enteros</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.6.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -283,18 +314,19 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-historical-note" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-integers.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-2.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Algoritmo de División</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Primos y Factorización</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Algoritmo de División</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Primos y Factorización</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -321,19 +353,20 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-subgroups.html#groups-subsection-subgroup-theorems" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Algunos Teoremas para Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-groups.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
-<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-3.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
+<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Enteros mód n</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Cuaterniones</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Subgrupos</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Enteros mód n</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.8.3</span> <span class="title">Cuaterniones</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -348,21 +381,22 @@ window.MathJax = {
 <ul class="structural"><li><div class="toc-item"><a href="section-mult-group-c.html#cyclic-subsection-circle-group" class="internal"><span class="codenumber">4.2.1</span> <span class="title">El grupo de la circunferencia y las raíces de la unidad</span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="section-method-of-repeated-squares.html" class="internal"><span class="codenumber">4.3</span> <span class="title">El método de los cuadrados repetidos</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-cyclic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios de programación</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Ejercicios de programación</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.7.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.8.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.8.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -461,18 +495,19 @@ window.MathJax = {
 <div class="toc-item"><a href="section-efficient-decoding.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Decodificación Eficiente</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="section-efficient-decoding.html#algcodes-subsection-coset-decoding" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Decodificación por Clases Laterales</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.8.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.9.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.10</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -598,17 +633,18 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-historical-note" class="internal"><span class="codenumber">14.3.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-actions.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicio de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-6.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Ejercicio de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.7.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
-<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.7.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.8.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.8.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -871,29 +907,29 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="exercises-crypt"><h2 class="heading hide-type">
 <span class="type">Ejercicios</span> <span class="codenumber">7.3</span> <span class="title">Ejercicios</span>
 </h2>
-<article class="exercise exercise-like" id="exercise-257"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="para" id="p-1126">Encripte <code class="code-inline tex2jax_ignore">IXLOVEXMATH</code> usando el criptosistema del Ejemplo <a href="" class="xref" data-knowl="./knowl/example-crypt-caesar.html" title="Ejemplo 7.1.1">7.1.1</a>.</div>
+<article class="exercise exercise-like" id="exercise-278"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
+<div class="para" id="p-1149">Encripte <code class="code-inline tex2jax_ignore">IXLOVEXMATH</code> usando el criptosistema del <a href="" class="xref" data-knowl="./knowl/example-crypt-caesar.html" title="Ejemplo 7.1.1">Ejemplo 7.1.1</a>.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-70" id="hint-70"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-70"><div class="hint solution-like"><div class="para" id="p-1127"><code class="code-inline tex2jax_ignore">LAORYHAPDWK</code></div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-258"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="para" id="p-1128">Decodifique <code class="code-inline tex2jax_ignore">ZLOOA WKLVA EHARQ WKHA ILQDO</code>, que fue codificado usando el criptosistema del Ejemplo <a href="" class="xref" data-knowl="./knowl/example-crypt-caesar.html" title="Ejemplo 7.1.1">7.1.1</a>.</div></article><article class="exercise exercise-like" id="exercise-259"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="para" id="p-1129">Suponiendo que un código monoalfabético fue usado para codificar el siguiente mensaje secreto, ¿cuál era el mensaje original?</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-70" id="hint-70"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-70"><div class="hint solution-like"><div class="para" id="p-1150"><code class="code-inline tex2jax_ignore">LAORYHAPDWK</code></div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-279"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<div class="para" id="p-1151">Decodifique <code class="code-inline tex2jax_ignore">ZLOOA WKLVA EHARQ WKHA ILQDO</code>, que fue codificado usando el criptosistema del <a href="" class="xref" data-knowl="./knowl/example-crypt-caesar.html" title="Ejemplo 7.1.1">Ejemplo 7.1.1</a>.</div></article><article class="exercise exercise-like" id="exercise-280"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="para" id="p-1152">Suponiendo que un código monoalfabético fue usado para codificar el siguiente mensaje secreto, ¿cuál era el mensaje original?</div>
 <pre class="code-block tex2jax_ignore">APHUO EGEHP PEXOV FKEUH CKVUE CHKVE APHUO
 EGEHU EXOVL EXDKT VGEFT EHFKE UHCKF TZEXO
 VEZDT TVKUE XOVKV ENOHK ZFTEH TEHKQ LEROF
 PVEHP PEXOV ERYKP GERYT GVKEG XDRTE RGAGA
 </pre>
-<div class="para" id="p-1130">¿Cuál es la importancia de este mensaje en la historia de la criptografía?</div>
+<div class="para" id="p-1153">¿Cuál es la importancia de este mensaje en la historia de la criptografía?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-71" id="hint-71"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-71"><div class="hint solution-like"><div class="para" id="p-1131">Ayuda: <code class="code-inline tex2jax_ignore">V = E</code>, <code class="code-inline tex2jax_ignore">E = X</code> (también usado para espacios y puntuación), <code class="code-inline tex2jax_ignore">K = R</code>.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-260"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para" id="p-1132">¿Cuál es el número total de criptosistemas monoalfabéticos posibles? ¿Qué tan seguros son tales criptosistemas?</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-71" id="hint-71"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-71"><div class="hint solution-like"><div class="para" id="p-1154">Ayuda: <code class="code-inline tex2jax_ignore">V = E</code>, <code class="code-inline tex2jax_ignore">E = X</code> (también usado para espacios y puntuación), <code class="code-inline tex2jax_ignore">K = R</code>.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-281"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="para" id="p-1155">¿Cuál es el número total de criptosistemas monoalfabéticos posibles? ¿Qué tan seguros son tales criptosistemas?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-72" id="hint-72"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-72"><div class="hint solution-like"><div class="para" id="p-1133"><span class="process-math">\(26! - 1\)</span></div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-261"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
-<div class="para" id="p-1134">Demuestre que una matriz <span class="process-math">\(A\)</span> de <span class="process-math">\(2 \times 2\)</span> con coeficientes en <span class="process-math">\({\mathbb Z}_{26}\)</span> es invertible si y solo si <span class="process-math">\(\gcd( \det(A), 26 ) = 1\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-262"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1135">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-72" id="hint-72"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-72"><div class="hint solution-like"><div class="para" id="p-1156"><span class="process-math">\(26! - 1\)</span></div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-282"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+<div class="para" id="p-1157">Demuestre que una matriz <span class="process-math">\(A\)</span> de <span class="process-math">\(2 \times 2\)</span> con coeficientes en <span class="process-math">\({\mathbb Z}_{26}\)</span> es invertible si y solo si <span class="process-math">\(\gcd( \det(A), 26 ) = 1\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-283"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1158">
 <div class="para">Dada la matriz</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -905,49 +941,49 @@ A =
 \end{equation*}
 </div>
 <div class="para">use la función de encriptación <span class="process-math">\(f({\mathbf p}) = A {\mathbf p} + {\mathbf b}\)</span> para encriptar el mensaje <code class="code-inline tex2jax_ignore">CRYPTOLOGY</code>, donde <span class="process-math">\({\mathbf b} = ( 2, 5)^{\rm t}\text{.}\)</span>  ¿Cuál es la función de decriptación?</div>
-</div></article><article class="exercise exercise-like" id="exercise-263"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1136">
+</div></article><article class="exercise exercise-like" id="exercise-284"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1159">
 <div class="para">Encripte cada uno de los siguientes mensajes <abbr class="acronym">RSA</abbr>  <span class="process-math">\(x\)</span> de manera que <span class="process-math">\(x\)</span> se divida en bloques de enteros de longitud  2;  es decir, si <span class="process-math">\(x = 142528\text{,}\)</span> entonces encripte 14, 25, y 28 por separado.</div>
 <ol class="lower-alpha">
-<li id="li-276"><div class="para" id="p-1137"><span class="process-math">\(\displaystyle n = 3551, E = 629, x = 31\)</span></div></li>
-<li id="li-277"><div class="para" id="p-1138"><span class="process-math">\(\displaystyle n = 2257, E = 47, x = 23\)</span></div></li>
-<li id="li-278"><div class="para" id="p-1139"><span class="process-math">\(\displaystyle n = 120979, E = 13251, x = 142371\)</span></div></li>
-<li id="li-279"><div class="para" id="p-1140"><span class="process-math">\(\displaystyle n = 45629, E = 781, x = 231561\)</span></div></li>
+<li id="li-276"><div class="para" id="p-1160"><span class="process-math">\(\displaystyle n = 3551, E = 629, x = 31\)</span></div></li>
+<li id="li-277"><div class="para" id="p-1161"><span class="process-math">\(\displaystyle n = 2257, E = 47, x = 23\)</span></div></li>
+<li id="li-278"><div class="para" id="p-1162"><span class="process-math">\(\displaystyle n = 120979, E = 13251, x = 142371\)</span></div></li>
+<li id="li-279"><div class="para" id="p-1163"><span class="process-math">\(\displaystyle n = 45629, E = 781, x = 231561\)</span></div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-73" id="hint-73"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-73"><div class="hint solution-like"><div class="para" id="p-1141">(a) 2791; (c) 112135 25032 442.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-264"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
-<div class="para" id="p-1142">Calcule la clave de decriptación <span class="process-math">\(D\)</span> para cada una de las claves de encriptación en el Ejercicio 7.</div></article><article class="exercise exercise-like" id="exercise-265"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1143">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-73" id="hint-73"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-73"><div class="hint solution-like"><div class="para" id="p-1164">(a) 2791; (c) 112135 25032 442.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-285"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="para" id="p-1165">Calcule la clave de decriptación <span class="process-math">\(D\)</span> para cada una de las claves de encriptación en el Ejercicio 7.</div></article><article class="exercise exercise-like" id="exercise-286"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1166">
 <div class="para">Decripte cada uno de los siguientes mensajes <abbr class="acronym">RSA</abbr>  <span class="process-math">\(y\text{.}\)</span>
 </div>
 <ol class="lower-alpha">
-<li id="li-280"><div class="para" id="p-1144"><span class="process-math">\(\displaystyle n = 3551, D = 1997, y = 2791\)</span></div></li>
-<li id="li-281"><div class="para" id="p-1145"><span class="process-math">\(\displaystyle n = 5893, D = 81, y = 34\)</span></div></li>
-<li id="li-282"><div class="para" id="p-1146"><span class="process-math">\(\displaystyle n = 120979, D = 27331, y = 112135\)</span></div></li>
-<li id="li-283"><div class="para" id="p-1147"><span class="process-math">\(\displaystyle n = 79403, D = 671, y = 129381\)</span></div></li>
+<li id="li-280"><div class="para" id="p-1167"><span class="process-math">\(\displaystyle n = 3551, D = 1997, y = 2791\)</span></div></li>
+<li id="li-281"><div class="para" id="p-1168"><span class="process-math">\(\displaystyle n = 5893, D = 81, y = 34\)</span></div></li>
+<li id="li-282"><div class="para" id="p-1169"><span class="process-math">\(\displaystyle n = 120979, D = 27331, y = 112135\)</span></div></li>
+<li id="li-283"><div class="para" id="p-1170"><span class="process-math">\(\displaystyle n = 79403, D = 671, y = 129381\)</span></div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-74" id="hint-74"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-74"><div class="hint solution-like"><div class="para" id="p-1148">(a) 31; (c) 14.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-266"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1149">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-74" id="hint-74"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-74"><div class="hint solution-like"><div class="para" id="p-1171">(a) 31; (c) 14.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-287"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1172">
 <div class="para">Para cada una de las siguientes claves de encriptación <span class="process-math">\((n, E)\)</span> en el criptosistema <abbr class="acronym">RSA</abbr>, calcule <span class="process-math">\(D\text{.}\)</span>
 </div>
 <ol class="lower-alpha">
-<li id="li-284"><div class="para" id="p-1150"><span class="process-math">\(\displaystyle (n, E) = (451, 231)\)</span></div></li>
-<li id="li-285"><div class="para" id="p-1151"><span class="process-math">\(\displaystyle (n, E) = (3053, 1921)\)</span></div></li>
-<li id="li-286"><div class="para" id="p-1152"><span class="process-math">\(\displaystyle (n, E) = (37986733, 12371)\)</span></div></li>
-<li id="li-287"><div class="para" id="p-1153"><span class="process-math">\(\displaystyle (n, E) = (16394854313, 34578451)\)</span></div></li>
+<li id="li-284"><div class="para" id="p-1173"><span class="process-math">\(\displaystyle (n, E) = (451, 231)\)</span></div></li>
+<li id="li-285"><div class="para" id="p-1174"><span class="process-math">\(\displaystyle (n, E) = (3053, 1921)\)</span></div></li>
+<li id="li-286"><div class="para" id="p-1175"><span class="process-math">\(\displaystyle (n, E) = (37986733, 12371)\)</span></div></li>
+<li id="li-287"><div class="para" id="p-1176"><span class="process-math">\(\displaystyle (n, E) = (16394854313, 34578451)\)</span></div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-75" id="hint-75"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-75"><div class="hint solution-like"><div class="para" id="p-1154">(a) <span class="process-math">\(n = 11 \cdot 41\text{;}\)</span> (c) <span class="process-math">\(n = 8779 \cdot 4327\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-75" id="hint-75"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-75"><div class="hint solution-like"><div class="para" id="p-1177">(a) <span class="process-math">\(n = 11 \cdot 41\text{;}\)</span> (c) <span class="process-math">\(n = 8779 \cdot 4327\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-267"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
-<div class="para" id="p-1155">Los mensajes encriptados frecuentemente se dividen en bloques de <span class="process-math">\(n\)</span> letras. Un mensaje como <code class="code-inline tex2jax_ignore">THE WORLD WONDERS WHY</code> puede ser encriptado como <code class="code-inline tex2jax_ignore">JIW OCFRJ LPOEVYQ IOC</code> pero enviado como <code class="code-inline tex2jax_ignore">JIW OCF RJL POE VYQ IOC</code>.  ¿Cuáles son las ventajas de usar bloques de <span class="process-math">\(n\)</span> letras?</div></article><article class="exercise exercise-like" id="exercise-268"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1156">
+</div></article><article class="exercise exercise-like" id="exercise-288"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
+<div class="para" id="p-1178">Los mensajes encriptados frecuentemente se dividen en bloques de <span class="process-math">\(n\)</span> letras. Un mensaje como <code class="code-inline tex2jax_ignore">THE WORLD WONDERS WHY</code> puede ser encriptado como <code class="code-inline tex2jax_ignore">JIW OCFRJ LPOEVYQ IOC</code> pero enviado como <code class="code-inline tex2jax_ignore">JIW OCF RJL POE VYQ IOC</code>.  ¿Cuáles son las ventajas de usar bloques de <span class="process-math">\(n\)</span> letras?</div></article><article class="exercise exercise-like" id="exercise-289"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1179">
 <div class="para">Encuentre enteros <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(E\text{,}\)</span> y <span class="process-math">\(X\)</span> tales que</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -955,8 +991,8 @@ X^E \equiv X \pmod{n}.
 \end{equation*}
 </div>
 <div class="para">¿Es este un potencial problema en el criptosistema <abbr class="acronym">RSA</abbr>?</div>
-</div></article><article class="exercise exercise-like" id="exercise-269"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
-<div class="para" id="p-1157">Toda persona en el curso debiera construir un criptosistema <abbr class="acronym">RSA</abbr> usando primos que tengan entre 10 y 15 dígitos.  Entregue  <span class="process-math">\((n, E)\)</span> y un mensaje encriptado. Mantenga el secreto de <span class="process-math">\(D\text{.}\)</span> Vean si pueden romper los cifrados de los demás.</div></article></section></div>
+</div></article><article class="exercise exercise-like" id="exercise-290"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
+<div class="para" id="p-1180">Toda persona en el curso debiera construir un criptosistema <abbr class="acronym">RSA</abbr> usando primos que tengan entre 10 y 15 dígitos.  Entregue  <span class="process-math">\((n, E)\)</span> y un mensaje encriptado. Mantenga el secreto de <span class="process-math">\(D\text{.}\)</span> Vean si pueden romper los cifrados de los demás.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-public-key-crypt.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="crypt-exercises-additional.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a>
 </div></main>
@@ -964,13 +1000,5 @@ X^E \equiv X \pmod{n}.
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
-<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
-var sc_project=10568106;
-var sc_invisible=1;
-var sc_security="510ba080";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10568106/0/510ba080/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
 </body>
 </html>

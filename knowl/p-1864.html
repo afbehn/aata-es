@@ -12,41 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para logical">
-<div class="para">Un grupo de simetría finito <span class="process-math">\(G\)</span> en <span class="process-math">\({\mathbb R}^2\)</span> que fija el origen debe ser un subgrupo finito de <span class="process-math">\(O(2)\text{,}\)</span> pues las traslaciones y traslaciones deslizantes tienen orden infinito.  Por el Ejemplo <a href="" class="xref" data-knowl="./knowl/example-o2.html" title="Ejemplo 12.1.10">12.1.10</a>, los elementos en <span class="process-math">\(O(2)\)</span> son ya sea rotaciones de la forma</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/example-o2.html">
-\begin{equation*}
-R_{\theta}
-=
-\begin{pmatrix}
-\cos \theta &amp; - \sin \theta \\
-\sin \theta &amp; \cos \theta
-\end{pmatrix}
-\end{equation*}
-</div>
-<div class="para">o reflexiones de la forma</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/example-o2.html">
-\begin{equation*}
-T_{\phi}
-=
-\begin{pmatrix}
-\cos \phi &amp;  - \sin \phi \\
-\sin \phi &amp; \cos \phi
-\end{pmatrix}
-\begin{pmatrix}
-1 &amp; 0 \\
-0 &amp; -1
-\end{pmatrix}
-=
-\begin{pmatrix}
-\cos \phi &amp;  \sin \phi \\
-\sin \phi &amp; - \cos \phi
-\end{pmatrix}.
-\end{equation*}
-</div>
-<div class="para">Notemos que <span class="process-math">\(\det(R_{\theta})=1\text{,}\)</span>  <span class="process-math">\(\det(T_{\phi})=-1\text{,}\)</span> y <span class="process-math">\(T_{\phi}^2=I\text{.}\)</span> Podemos dividir la demostración en dos casos. En el primer caso, todos los elementos en <span class="process-math">\(G\)</span> tienen determinante uno. En el segundo caso, existe al menos un elemento en <span class="process-math">\(G\)</span> con determinante <span class="process-math">\(-1\text{.}\)</span>
-</div>
-</div>
-<span class="incontext"><a href="section-symmetry.html#p-1864" class="internal">en contexto</a></span>
+<div class="para">Simplemente dando una lista de imágenes para los generadores del dominio no es una garantía de que la función pueda extenderse a un homomorfismo.  Para empezar, el orden de cada imagen debe dividir al orden de la preimagen correspondiente.  (¿Puede demostrar esto?)  Similarmente, si el dominio es abeliano, entonces la imagen debe también ser abeliana, así en este caso las imágenes no debiesen generar un subgrupo no abeliano.  Por ejemplo,  no hay homomorfismos de un grupo cíclico de orden  <span class="process-math">\(7\)</span> a un grupo cíclico de orden <span class="process-math">\(4\)</span> (salvo la función trivial que lleva a todos los elementos a la identidad).  Para ver esto, considere los posibles órdenes del núcleo, y de las dos posibilidades, vea que una es imposible y que la otra se realiza con el homomorfismo trivial.  Desafortunadamente, Sage actúa como si no hubiera nada malo en crear un homomorfismo entre estos dos grupos, pero lo que Sage crea es inútil y produce errores si trata de usarlo.</div>
+<span class="incontext"><a href="homomorph-sage.html#wLm" class="internal">en contexto</a></span>
 </body>
 </html>

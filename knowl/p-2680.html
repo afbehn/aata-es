@@ -12,8 +12,18 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Sea <span class="process-math">\({\mathbb Q}^*\)</span> el grupo multiplicativo de los números racionales positivos. Demuestre que <span class="process-math">\({\mathbb Q}^*\)</span> es isomorfo a <span class="process-math">\(( {\mathbb Z}[x], +)\text{.}\)</span>
+<div class="para logical">
+<div class="para">Para mostrar que <span class="process-math">\(d(x)\)</span> es un máximo común divisor de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{,}\)</span> supongamos que <span class="process-math">\(d'(x)\)</span> es otro divisor común de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{.}\)</span> Mostraremos que <span class="process-math">\(d'(x) \mid d(x)\text{.}\)</span>  Como <span class="process-math">\(d'(x)\)</span> es un divisor común de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{,}\)</span> existen polinomios <span class="process-math">\(u(x)\)</span> y <span class="process-math">\(v(x)\)</span> tales que <span class="process-math">\(p(x) = u(x) d'(x)\)</span> y <span class="process-math">\(q(x) = v(x) d'(x)\text{.}\)</span> Por lo tanto,</div>
+<div class="displaymath process-math">
+\begin{align*}
+d(x) &amp; = r(x) p(x) + s(x) q(x)\\
+&amp; =  r(x) u(x) d'(x) + s(x) v(x) d'(x)\\
+&amp; = d'(x) [r(x) u(x) + s(x) v(x)]\text{.}
+\end{align*}
 </div>
-<span class="incontext"><a href="exercises-poly.html#p-2680" class="internal">en contexto</a></span>
+<div class="para">Como <span class="process-math">\(d'(x) \mid d(x)\text{,}\)</span> <span class="process-math">\(d(x)\)</span> es un máximo común divisor de <span class="process-math">\(p(x)\)</span>  y <span class="process-math">\(q(x)\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="poly-section-division-algorithm.html#KdX" class="internal">en contexto</a></span>
 </body>
 </html>

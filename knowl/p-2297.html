@@ -11,8 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Este ejercicio ejemplifica el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-commutator-subgroup-theorem.html" title="Teorema 15.2.5">15.2.5</a>.  El subgrupo conmutador se puede obtener con el método <code class="code-inline tex2jax_ignore">.commutator()</code>.  Para el grupo dihedral de orden <span class="process-math">\(40\text{,}\)</span> <span class="process-math">\(D_{20}\)</span> (<code class="code-inline tex2jax_ignore">DihedralGroup(20)</code> en Sage), calcule el subgrupo conmutador y forme el cociente del grupo dihedral por este subgrupo.  Compruebe que este cociente es abeliano.  ¿Puede identificar a qué grupo conocido es isomorfo este cociente?</div>
-<span class="incontext"><a href="sylow-sage-exercises.html#p-2297" class="internal">en contexto</a></span>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
+<div class="para logical">
+<div class="para">Supongamos que tiene tres y que dos de los <span class="process-math">\(2\)</span>-subgrupos de Sylow son <span class="process-math">\(H\)</span> y <span class="process-math">\(K\text{.}\)</span> Afirmamos que <span class="process-math">\(|H \cap K| = 8\text{.}\)</span>  Si <span class="process-math">\(|H \cap K| \leq 4\text{,}\)</span> entonces por el <a href="" class="xref" data-knowl="./knowl/sylow-lemma-hk-subgroup.html" title="Lema 15.2.10">Lema 15.2.10</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sylow-lemma-hk-subgroup.html">
+\begin{equation*}
+|HK| \geq \frac{16 \cdot 16}{4} =64\text{,}
+\end{equation*}
+</div>
+<div class="para">lo que es imposible. Notemos que <span class="process-math">\(H \cap K\)</span> tiene índice dos tanto en <span class="process-math">\(H\)</span> como en <span class="process-math">\(K\text{,}\)</span> de manera que es normal en ambos, y tanto <span class="process-math">\(H\)</span> como <span class="process-math">\(K\)</span> están en el normalizador de <span class="process-math">\(H \cap K\text{.}\)</span> Como <span class="process-math">\(H\)</span> es un subgrupo de <span class="process-math">\(N(H \cap K)\)</span> y como <span class="process-math">\(N(H \cap K)\)</span> tiene estrictamente más de <span class="process-math">\(16\)</span> elementos, <span class="process-math">\(|N(H \cap K)|\)</span> debe ser un múltiplo de <span class="process-math">\(16\)</span> mayor a <span class="process-math">\(1\)</span> y debe dividir a <span class="process-math">\(48\text{.}\)</span>   La única posibilidad es que <span class="process-math">\(|N(H \cap K)|= 48\text{.}\)</span> Luego, <span class="process-math">\(N(H \cap K) = G\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sylow-section-applications.html#YbY" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -12,7 +12,15 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Sea <span class="process-math">\(H\)</span> una matriz binaria de <span class="process-math">\(m \times n\text{.}\)</span> Entonces el espacio nulo de <span class="process-math">\(H\)</span> es un código que puede detectar un error si y solo si ninguna columna de <span class="process-math">\(H\)</span> consiste solamente de ceros.</div>
-<span class="incontext"><a href="section-parity-check.html#p-1269" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Para determinar exactamente cuáles son las capacidades de detección y corrección de errores de un código, debemos analizar la distancia mínima para el código. Sean <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\)</span> palabras del código. Si <span class="process-math">\(d({\mathbf x}, {\mathbf y}) = 1\)</span> y ocurre un error donde difieren <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\text{,}\)</span> entonces <span class="process-math">\({\mathbf x}\)</span> se transforma en <span class="process-math">\({\mathbf y}\text{.}\)</span> La palabra recibida es <span class="process-math">\({\mathbf y}\)</span> y no se produce ningún mensaje de error. Ahora supongamos que <span class="process-math">\(d({\mathbf x}, {\mathbf y}) = 2\text{.}\)</span> Entonces un único error no puede transformar <span class="process-math">\({\mathbf x}\)</span> en <span class="process-math">\({\mathbf y}\text{.}\)</span> Por lo tanto, si <span class="process-math">\(d_{\min} = 2\text{,}\)</span> tenemos la habilidad de detectar errores únicos. Pero, supongamos que <span class="process-math">\(d({\mathbf x}, {\mathbf y}) = 2\text{,}\)</span> <span class="process-math">\({\mathbf y}\)</span> es enviado, y se recibe una palabra <span class="process-math">\({\mathbf z}\)</span> que no está en el código tal que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d({\mathbf x}, {\mathbf z}) = d({\mathbf y}, {\mathbf z}) = 1\text{.}
+\end{equation*}
+</div>
+<div class="para">Entonces el decodificador no puede decidir entre <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\text{.}\)</span> Si bien estamos concientes de que se cometió un error, no sabemos cuál fue ese error.</div>
+</div>
+<span class="incontext"><a href="algcodes-section-error-detecting-correcting-codes.html#cDA" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -87,7 +87,7 @@ window.MathJax = {
   }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=012975021551273728005:y0h32vuqauw"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -103,19 +103,50 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.1.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runtime.6f0528865cd47dcd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.3a5641c4e1fe869e.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.cec40a61180efd41.css">
 </head>
-<body class="pretext book ignore-math">
+<body id="AATA" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/images/cover_aata_2017.png" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="cover/cover_aata_2022.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta:</span> <span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>[search-results-heading]: <span id="searchterms" class="searchterms"></span>
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Resultados de la búsqueda: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty" class="searchempty"><span>[no-search-results].</span></div>
+<div id="searchempty" class="searchempty"><span>Sin resultados.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Índice</span></button><a class="index-button button" href="index-1.html" title="Índice alfabético"><span class="name">Índice alfabético</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -220,8 +251,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-fermat-euler.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="cosets.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="cosets-sage.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
-<div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-fermat-euler.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="cosets.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="cosets-sage.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
@@ -244,31 +274,32 @@ window.MathJax = {
 <div class="toc-item"><a href="sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminares</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
+<div class="toc-item"><a href="sets-section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sets-section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
+<div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="sets-exercises.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Listas</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Listas de Enteros</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.5.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Listas</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Listas de Enteros</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.6.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -283,18 +314,19 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-historical-note" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-integers.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-2.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Algoritmo de División</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Primos y Factorización</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Algoritmo de División</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Primos y Factorización</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -321,19 +353,20 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-subgroups.html#groups-subsection-subgroup-theorems" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Algunos Teoremas para Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-groups.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
-<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-3.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
+<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Enteros mód n</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Cuaterniones</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Subgrupos</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Enteros mód n</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.8.3</span> <span class="title">Cuaterniones</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -348,21 +381,22 @@ window.MathJax = {
 <ul class="structural"><li><div class="toc-item"><a href="section-mult-group-c.html#cyclic-subsection-circle-group" class="internal"><span class="codenumber">4.2.1</span> <span class="title">El grupo de la circunferencia y las raíces de la unidad</span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="section-method-of-repeated-squares.html" class="internal"><span class="codenumber">4.3</span> <span class="title">El método de los cuadrados repetidos</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-cyclic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios de programación</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Ejercicios de programación</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.7.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.8.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.8.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -461,18 +495,19 @@ window.MathJax = {
 <div class="toc-item"><a href="section-efficient-decoding.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Decodificación Eficiente</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="section-efficient-decoding.html#algcodes-subsection-coset-decoding" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Decodificación por Clases Laterales</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.8.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.9.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.10</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -598,17 +633,18 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-historical-note" class="internal"><span class="codenumber">14.3.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-actions.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicio de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-6.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Ejercicio de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.7.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
-<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.7.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.8.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.8.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -871,107 +907,107 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="exercises-cosets"><h2 class="heading hide-type">
 <span class="type">Ejercicios</span> <span class="codenumber">6.4</span> <span class="title">Ejercicios</span>
 </h2>
-<article class="exercise exercise-like" id="exercise-229"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="para" id="p-1018">Supongamos que <span class="process-math">\(G\)</span> es un grupo finito con un elemento <span class="process-math">\(g\)</span> de orden 5 y un elemento <span class="process-math">\(h\)</span> de orden 7. ¿Por qué debe ocurrir que <span class="process-math">\(|G| \geq 35\text{?}\)</span>
+<article class="exercise exercise-like" id="exercise-250"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
+<div class="para" id="p-1041">Supongamos que <span class="process-math">\(G\)</span> es un grupo finito con un elemento <span class="process-math">\(g\)</span> de orden 5 y un elemento <span class="process-math">\(h\)</span> de orden 7. ¿Por qué debe ocurrir que <span class="process-math">\(|G| \geq 35\text{?}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-61" id="hint-61"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-61"><div class="hint solution-like"><div class="para" id="p-1019">El orden de <span class="process-math">\(g\)</span> y el orden de <span class="process-math">\(h\)</span> deben ambos dividir el orden de <span class="process-math">\(G\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-61" id="hint-61"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-61"><div class="hint solution-like"><div class="para" id="p-1042">El orden de <span class="process-math">\(g\)</span> y el orden de <span class="process-math">\(h\)</span> deben ambos dividir el orden de <span class="process-math">\(G\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-230"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="para" id="p-1020">Supongamos que <span class="process-math">\(G\)</span> es un grupo finito con 60 elementos.  ¿Cuáles son los órdenes de posibles subgrupos de <span class="process-math">\(G\text{?}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-251"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<div class="para" id="p-1043">Supongamos que <span class="process-math">\(G\)</span> es un grupo finito con 60 elementos.  ¿Cuáles son los órdenes de posibles subgrupos de <span class="process-math">\(G\text{?}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-62" id="hint-62"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-62"><div class="hint solution-like"><div class="para" id="p-1021">Los órdenes posibles deben ser divisores de 60.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-231"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="para" id="p-1022">Demuestre o refute: Todo subgrupo de los enteros tiene índice finito.</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-62" id="hint-62"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-62"><div class="hint solution-like"><div class="para" id="p-1044">Los órdenes posibles deben ser divisores de 60.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-252"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="para" id="p-1045">Demuestre o refute: Todo subgrupo de los enteros tiene índice finito.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-63" id="hint-63"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-63"><div class="hint solution-like"><div class="para" id="p-1023">Esto es verdadero para todo subgrupo propio no trivial.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-232"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para" id="p-1024">Demuestre o refute: Todo subgrupo de los enteros tiene orden finito.</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-63" id="hint-63"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-63"><div class="hint solution-like"><div class="para" id="p-1046">Esto es verdadero para todo subgrupo propio no trivial.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-253"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="para" id="p-1047">Demuestre o refute: Todo subgrupo de los enteros tiene orden finito.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-64" id="hint-64"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-64"><div class="hint solution-like"><div class="para" id="p-1025">Falso.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-233"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1026">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-64" id="hint-64"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-64"><div class="hint solution-like"><div class="para" id="p-1048">Falso.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-254"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1049">
 <div class="para">Liste las clases laterales izquierdas y derechas de los subgrupos en cada uno de los siguientes.</div>
 <ol class="lower-alpha cols2">
-<li id="li-258"><div class="para" id="p-1027">
+<li id="li-258"><div class="para" id="p-1050">
 <span class="process-math">\(\langle 8 \rangle\)</span> en <span class="process-math">\({\mathbb Z}_{24}\)</span>
 </div></li>
-<li id="li-259"><div class="para" id="p-1028">
+<li id="li-259"><div class="para" id="p-1051">
 <span class="process-math">\(\langle 3 \rangle\)</span> en <span class="process-math">\(U(8)\)</span>
 </div></li>
-<li id="li-260"><div class="para" id="p-1029">
+<li id="li-260"><div class="para" id="p-1052">
 <span class="process-math">\(3 {\mathbb Z}\)</span> en <span class="process-math">\({\mathbb Z}\)</span>
 </div></li>
-<li id="li-261"><div class="para" id="p-1030">
+<li id="li-261"><div class="para" id="p-1053">
 <span class="process-math">\(A_4\)</span> en <span class="process-math">\(S_4\)</span>
 </div></li>
-<li id="li-262"><div class="para" id="p-1031">
+<li id="li-262"><div class="para" id="p-1054">
 <span class="process-math">\(A_n\)</span> en <span class="process-math">\(S_n\)</span>
 </div></li>
-<li id="li-263"><div class="para" id="p-1032">
+<li id="li-263"><div class="para" id="p-1055">
 <span class="process-math">\(D_4\)</span> en <span class="process-math">\(S_4\)</span>
 </div></li>
-<li id="li-264"><div class="para" id="p-1033">
+<li id="li-264"><div class="para" id="p-1056">
 <span class="process-math">\({\mathbb T}\)</span> en <span class="process-math">\({\mathbb C}^\ast\)</span>
 </div></li>
-<li id="li-265"><div class="para" id="p-1034">
+<li id="li-265"><div class="para" id="p-1057">
 <span class="process-math">\(H = \{ (1), (123), (132) \}\)</span> en <span class="process-math">\(S_4\)</span>
 </div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-65" id="hint-65"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-65"><div class="hint solution-like"><div class="para" id="p-1035">(a) <span class="process-math">\(\langle 8 \rangle\text{,}\)</span> <span class="process-math">\(1 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(2 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(3 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(4 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(5 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(6 + \langle 8 \rangle\text{,}\)</span> y  <span class="process-math">\(7 + \langle 8 \rangle\text{;}\)</span> (c) <span class="process-math">\(3 {\mathbb Z}\text{,}\)</span> <span class="process-math">\(1 + 3 {\mathbb Z}\text{,}\)</span> y <span class="process-math">\(2 + 3 {\mathbb Z}\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-65" id="hint-65"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-65"><div class="hint solution-like"><div class="para" id="p-1058">(a) <span class="process-math">\(\langle 8 \rangle\text{,}\)</span> <span class="process-math">\(1 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(2 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(3 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(4 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(5 + \langle 8 \rangle\text{,}\)</span>  <span class="process-math">\(6 + \langle 8 \rangle\text{,}\)</span> y  <span class="process-math">\(7 + \langle 8 \rangle\text{;}\)</span> (c) <span class="process-math">\(3 {\mathbb Z}\text{,}\)</span> <span class="process-math">\(1 + 3 {\mathbb Z}\text{,}\)</span> y <span class="process-math">\(2 + 3 {\mathbb Z}\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-234"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="para" id="p-1036">Describa las clases laterales izquierdas de <span class="process-math">\(SL_2( {\mathbb R} )\)</span> en <span class="process-math">\(GL_2( {\mathbb R})\text{.}\)</span>   ¿Cuál es el índice de <span class="process-math">\(SL_2( {\mathbb R} )\)</span> en <span class="process-math">\(GL_2( {\mathbb R})\text{?}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-235"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="para" id="p-1037">Verifique el Teorema de Euler para <span class="process-math">\(n = 15\)</span> y <span class="process-math">\(a = 4\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-255"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+<div class="para" id="p-1059">Describa las clases laterales izquierdas de <span class="process-math">\(SL_2( {\mathbb R} )\)</span> en <span class="process-math">\(GL_2( {\mathbb R})\text{.}\)</span>   ¿Cuál es el índice de <span class="process-math">\(SL_2( {\mathbb R} )\)</span> en <span class="process-math">\(GL_2( {\mathbb R})\text{?}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-256"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="para" id="p-1060">Verifique el Teorema de Euler para <span class="process-math">\(n = 15\)</span> y <span class="process-math">\(a = 4\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-66" id="hint-66"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-66"><div class="hint solution-like"><div class="para" id="p-1038"><span class="process-math">\(4^{\phi(15)} \equiv 4^8 \equiv 1 \pmod{15}\text{.}\)</span></div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-236"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
-<div class="para" id="p-1039">Use el Pequeño Teorema de Fermat para mostrar que si <span class="process-math">\(p= 4n+3\)</span> es primo, entonces no hay solución de la ecuación <span class="process-math">\(x^2 \equiv -1 \pmod{p}\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-237"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
-<div class="para" id="p-1040">Muestre que los enteros tienen índice infinito en el grupo aditivo de los números racionales.</div></article><article class="exercise exercise-like" id="exercise-238"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
-<div class="para" id="p-1041">Muestre que el grupo aditivo de los números reales tiene índice infinito en el grupo aditivo de los números complejos.</div></article><article class="exercise exercise-like" id="exercise-239"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1042">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-66" id="hint-66"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-66"><div class="hint solution-like"><div class="para" id="p-1061"><span class="process-math">\(4^{\phi(15)} \equiv 4^8 \equiv 1 \pmod{15}\text{.}\)</span></div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-257"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="para" id="p-1062">Use el Pequeño Teorema de Fermat para mostrar que si <span class="process-math">\(p= 4n+3\)</span> es primo, entonces no hay solución de la ecuación <span class="process-math">\(x^2 \equiv -1 \pmod{p}\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-258"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para" id="p-1063">Muestre que los enteros tienen índice infinito en el grupo aditivo de los números racionales.</div></article><article class="exercise exercise-like" id="exercise-259"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
+<div class="para" id="p-1064">Muestre que el grupo aditivo de los números reales tiene índice infinito en el grupo aditivo de los números complejos.</div></article><article class="exercise exercise-like" id="exercise-260"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1065">
 <div class="para">Sea <span class="process-math">\(H\)</span> un subgrupo de un grupo <span class="process-math">\(G\)</span> y supongamos que <span class="process-math">\(g_1, g_2 \in G\text{.}\)</span>  Demuestre que las siguientes condiciones son equivalentes.</div>
 <ol class="lower-alpha">
-<li id="li-266"><div class="para" id="p-1043"><span class="process-math">\(\displaystyle g_1 H = g_2 H\)</span></div></li>
-<li id="li-267"><div class="para" id="p-1044"><span class="process-math">\(\displaystyle H g_1^{-1}  = H g_2^{-1}\)</span></div></li>
-<li id="li-268"><div class="para" id="p-1045"><span class="process-math">\(\displaystyle g_1 H \subset g_2 H\)</span></div></li>
-<li id="li-269"><div class="para" id="p-1046"><span class="process-math">\(\displaystyle g_2 \in g_1 H\)</span></div></li>
-<li id="li-270"><div class="para" id="p-1047"><span class="process-math">\(\displaystyle g_1^{-1} g_2 \in H\)</span></div></li>
+<li id="li-266"><div class="para" id="p-1066"><span class="process-math">\(\displaystyle g_1 H = g_2 H\)</span></div></li>
+<li id="li-267"><div class="para" id="p-1067"><span class="process-math">\(\displaystyle H g_1^{-1}  = H g_2^{-1}\)</span></div></li>
+<li id="li-268"><div class="para" id="p-1068"><span class="process-math">\(\displaystyle g_1 H \subset g_2 H\)</span></div></li>
+<li id="li-269"><div class="para" id="p-1069"><span class="process-math">\(\displaystyle g_2 \in g_1 H\)</span></div></li>
+<li id="li-270"><div class="para" id="p-1070"><span class="process-math">\(\displaystyle g_1^{-1} g_2 \in H\)</span></div></li>
 </ol>
-</div></article><article class="exercise exercise-like" id="exercise-240"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
-<div class="para" id="p-1048">Si <span class="process-math">\(ghg^{-1} \in H\)</span> para todo <span class="process-math">\(g \in G\)</span> y <span class="process-math">\(h \in H\text{,}\)</span> muestre que las clases laterales izquierdas son idénticas a las clases laterales derechas.  Es decir, muestre que <span class="process-math">\(gH = Hg\)</span> para todo <span class="process-math">\(g \in G\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-261"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
+<div class="para" id="p-1071">Si <span class="process-math">\(ghg^{-1} \in H\)</span> para todo <span class="process-math">\(g \in G\)</span> y <span class="process-math">\(h \in H\text{,}\)</span> muestre que las clases laterales izquierdas son idénticas a las clases laterales derechas.  Es decir, muestre que <span class="process-math">\(gH = Hg\)</span> para todo <span class="process-math">\(g \in G\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-67" id="hint-67"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-67"><div class="hint solution-like"><div class="para" id="p-1049">Sea <span class="process-math">\(g_1 \in gH\text{.}\)</span> Muestre que <span class="process-math">\(g_1 \in Hg\)</span> y por lo tanto <span class="process-math">\(gH \subset Hg\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-67" id="hint-67"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-67"><div class="hint solution-like"><div class="para" id="p-1072">Sea <span class="process-math">\(g_1 \in gH\text{.}\)</span> Muestre que <span class="process-math">\(g_1 \in Hg\)</span> y por lo tanto <span class="process-math">\(gH \subset Hg\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-241"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
-<div class="para" id="p-1050">Que falla en la demostración del Teorema <a href="" class="xref" data-knowl="./knowl/theorem-cosets-theorem-3.html" title="Teorema 6.1.8">6.1.8</a> si <span class="process-math">\(\phi :  {\mathcal L}_H \rightarrow {\mathcal R}_H\)</span> está definida como <span class="process-math">\(\phi( gH ) = Hg\text{?}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-242"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
-<div class="para" id="p-1051">Supongamos que <span class="process-math">\(g^n = e\text{.}\)</span> Muestre que el orden de <span class="process-math">\(g\)</span> divide a <span class="process-math">\(n\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-243"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
-<div class="para" id="p-1052">Muestre que cualquiera dos permutaciones <span class="process-math">\(\alpha, \beta \in S_n\)</span> tienen la misma estructura de ciclos  si y solo si  existe una permutación <span class="process-math">\(\gamma\)</span> tal que <span class="process-math">\(\beta = \gamma \alpha \gamma^{-1}\text{.}\)</span>  Si <span class="process-math">\(\beta = \gamma \alpha \gamma^{-1}\)</span> para algún <span class="process-math">\(\gamma \in S_n\text{,}\)</span> entonces <span class="process-math">\(\alpha\)</span> y <span class="process-math">\(\beta\)</span> son <dfn class="terminology">conjugadas</dfn>.</div></article><article class="exercise exercise-like" id="exercise-244"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
-<div class="para" id="p-1053">Si <span class="process-math">\(|G| = 2n\text{,}\)</span> demuestre que el número de elementos de orden 2 es impar. Use este resultado para demostrar que <span class="process-math">\(G\)</span> debe contener un subgrupo de orden 2.</div></article><article class="exercise exercise-like" id="exercise-245"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
-<div class="para" id="p-1054">Supongamos que <span class="process-math">\([G : H] = 2\text{.}\)</span> Si <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> no están en <span class="process-math">\(H\text{,}\)</span> muestre que <span class="process-math">\(ab \in H\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-246"><h3 class="heading"><span class="codenumber">18<span class="period">.</span></span></h3>
-<div class="para" id="p-1055">Si <span class="process-math">\([G : H] = 2\text{,}\)</span> demuestre que <span class="process-math">\(gH = Hg\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-247"><h3 class="heading"><span class="codenumber">19<span class="period">.</span></span></h3>
-<div class="para" id="p-1056">Sean <span class="process-math">\(H\)</span> y <span class="process-math">\(K\)</span> subgrupos de un grupo <span class="process-math">\(G\text{.}\)</span>  Demuestre que <span class="process-math">\(gH \cap gK\)</span> es una clase lateral de <span class="process-math">\(H \cap K\)</span> en <span class="process-math">\(G\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-262"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
+<div class="para" id="p-1073">Que falla en la demostración del Teorema <a href="" class="xref" data-knowl="./knowl/theorem-cosets-theorem-3.html" title="Teorema 6.1.8">Teorema 6.1.8</a> si <span class="process-math">\(\phi :  {\mathcal L}_H \rightarrow {\mathcal R}_H\)</span> está definida como <span class="process-math">\(\phi( gH ) = Hg\text{?}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-263"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
+<div class="para" id="p-1074">Supongamos que <span class="process-math">\(g^n = e\text{.}\)</span> Muestre que el orden de <span class="process-math">\(g\)</span> divide a <span class="process-math">\(n\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-264"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
+<div class="para" id="p-1075">Muestre que cualquiera dos permutaciones <span class="process-math">\(\alpha, \beta \in S_n\)</span> tienen la misma estructura de ciclos  si y solo si  existe una permutación <span class="process-math">\(\gamma\)</span> tal que <span class="process-math">\(\beta = \gamma \alpha \gamma^{-1}\text{.}\)</span>  Si <span class="process-math">\(\beta = \gamma \alpha \gamma^{-1}\)</span> para algún <span class="process-math">\(\gamma \in S_n\text{,}\)</span> entonces <span class="process-math">\(\alpha\)</span> y <span class="process-math">\(\beta\)</span> son <dfn class="terminology">conjugadas</dfn>.</div></article><article class="exercise exercise-like" id="exercise-265"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
+<div class="para" id="p-1076">Si <span class="process-math">\(|G| = 2n\text{,}\)</span> demuestre que el número de elementos de orden 2 es impar. Use este resultado para demostrar que <span class="process-math">\(G\)</span> debe contener un subgrupo de orden 2.</div></article><article class="exercise exercise-like" id="exercise-266"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
+<div class="para" id="p-1077">Supongamos que <span class="process-math">\([G : H] = 2\text{.}\)</span> Si <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> no están en <span class="process-math">\(H\text{,}\)</span> muestre que <span class="process-math">\(ab \in H\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-267"><h3 class="heading"><span class="codenumber">18<span class="period">.</span></span></h3>
+<div class="para" id="p-1078">Si <span class="process-math">\([G : H] = 2\text{,}\)</span> demuestre que <span class="process-math">\(gH = Hg\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-268"><h3 class="heading"><span class="codenumber">19<span class="period">.</span></span></h3>
+<div class="para" id="p-1079">Sean <span class="process-math">\(H\)</span> y <span class="process-math">\(K\)</span> subgrupos de un grupo <span class="process-math">\(G\text{.}\)</span>  Demuestre que <span class="process-math">\(gH \cap gK\)</span> es una clase lateral de <span class="process-math">\(H \cap K\)</span> en <span class="process-math">\(G\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-68" id="hint-68"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-68"><div class="hint solution-like"><div class="para" id="p-1057">Muestre que <span class="process-math">\(g(H \cap K) = gH \cap gK\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-68" id="hint-68"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-68"><div class="hint solution-like"><div class="para" id="p-1080">Muestre que <span class="process-math">\(g(H \cap K) = gH \cap gK\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-248"><h3 class="heading"><span class="codenumber">20<span class="period">.</span></span></h3>
-<div class="para" id="p-1058">Sean <span class="process-math">\(H\)</span> y <span class="process-math">\(K\)</span> subgrupos de un grupo <span class="process-math">\(G\text{.}\)</span>  Defina una relación <span class="process-math">\(\sim\)</span> en <span class="process-math">\(G\)</span> como <span class="process-math">\(a \sim b\)</span> si existe un <span class="process-math">\(h \in H\)</span> y un <span class="process-math">\(k \in K\)</span> tales que <span class="process-math">\(hak = b\text{.}\)</span>  Muestre que esta relación es de equivalencia.  Las clases de equivalencia correspondientes se llaman <dfn class="terminology">clases laterales dobles</dfn>. Calcule las clases laterales dobles de <span class="process-math">\(H = \{ (1),(123), (132) \}\)</span> en <span class="process-math">\(A_4\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-249"><h3 class="heading"><span class="codenumber">21<span class="period">.</span></span></h3>
-<div class="para" id="p-1059">Sea <span class="process-math">\(G\)</span> un grupo cíclico de orden <span class="process-math">\(n\text{.}\)</span>  Muestre que hay exactamente <span class="process-math">\(\phi(n)\)</span> generadores para <span class="process-math">\(G\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-250"><h3 class="heading"><span class="codenumber">22<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1060">
+</div></article><article class="exercise exercise-like" id="exercise-269"><h3 class="heading"><span class="codenumber">20<span class="period">.</span></span></h3>
+<div class="para" id="p-1081">Sean <span class="process-math">\(H\)</span> y <span class="process-math">\(K\)</span> subgrupos de un grupo <span class="process-math">\(G\text{.}\)</span>  Defina una relación <span class="process-math">\(\sim\)</span> en <span class="process-math">\(G\)</span> como <span class="process-math">\(a \sim b\)</span> si existe un <span class="process-math">\(h \in H\)</span> y un <span class="process-math">\(k \in K\)</span> tales que <span class="process-math">\(hak = b\text{.}\)</span>  Muestre que esta relación es de equivalencia.  Las clases de equivalencia correspondientes se llaman <dfn class="terminology">clases laterales dobles</dfn>. Calcule las clases laterales dobles de <span class="process-math">\(H = \{ (1),(123), (132) \}\)</span> en <span class="process-math">\(A_4\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-270"><h3 class="heading"><span class="codenumber">21<span class="period">.</span></span></h3>
+<div class="para" id="p-1082">Sea <span class="process-math">\(G\)</span> un grupo cíclico de orden <span class="process-math">\(n\text{.}\)</span>  Muestre que hay exactamente <span class="process-math">\(\phi(n)\)</span> generadores para <span class="process-math">\(G\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-271"><h3 class="heading"><span class="codenumber">22<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1083">
 <div class="para">Sea <span class="process-math">\(n = p_1^{e_1} p_2^{e_2} \cdots p_k^{e_k}\text{,}\)</span> donde <span class="process-math">\(p_1, p_2, \ldots, p_k\)</span> son primos distintos.  Demuestre que</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -980,9 +1016,9 @@ window.MathJax = {
 </div>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-69" id="hint-69"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-69"><div class="hint solution-like"><div class="para" id="p-1061">Si <span class="process-math">\(\gcd(m,n) = 1\text{,}\)</span> entonces <span class="process-math">\(\phi(mn) = \phi(m)\phi(n)\)</span> (Ejercicio <a href="" class="xref" data-knowl="./knowl/exercise-integers-gcd-products.html" title="Ejercicio 2.3.26">2.3.26</a> en el Capítulo <a href="integers.html" class="internal" title="Capítulo 2: Los Enteros">2</a>).</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-251"><h3 class="heading"><span class="codenumber">23<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1062">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-69" id="hint-69"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-69"><div class="hint solution-like"><div class="para" id="p-1084">Si <span class="process-math">\(\gcd(m,n) = 1\text{,}\)</span> entonces <span class="process-math">\(\phi(mn) = \phi(m)\phi(n)\)</span> (Ejercicio <a href="" class="xref" data-knowl="./knowl/exercise-integers-gcd-products.html" title="Ejercicio 2.4.26">Ejercicio 2.4.26</a> en el Capítulo <a href="integers.html" class="internal" title="Capítulo 2: Los Enteros">Capítulo 2</a>).</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-272"><h3 class="heading"><span class="codenumber">23<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1085">
 <div class="para">Muestre que</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -999,13 +1035,5 @@ n = \sum_{d \mid n} \phi(d)
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
-<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
-var sc_project=10568106;
-var sc_invisible=1;
-var sc_security="510ba080";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10568106/0/510ba080/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
 </body>
 </html>

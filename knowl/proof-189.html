@@ -12,65 +12,30 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Demostración</span></h4>
-<div class="para logical">
-<div class="para">Supongamos que</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/lemma-vandermode-det.html">
+<div class="para">(1) <span class="process-math">\(\Rightarrow\)</span> (2). Si <span class="process-math">\(f(t)\)</span> está en <span class="process-math">\(C\text{,}\)</span> entonces <span class="process-math">\(g(x) \mid f(x)\)</span> en <span class="process-math">\({\mathbb Z}_2[x]\text{.}\)</span> Luego, para <span class="process-math">\(i = 1, \ldots, 2r\text{,}\)</span> <span class="process-math">\(f( \omega^i) = 0\)</span> pues <span class="process-math">\(g( \omega^i ) = 0\text{.}\)</span> Recíprocamente, supongamos que <span class="process-math">\(f( \omega^i) = 0\)</span> for <span class="process-math">\(1 \leq i \leq d\text{.}\)</span> Entonces <span class="process-math">\(f(x)\)</span> es divisible por cada <span class="process-math">\(m_i(x)\text{,}\)</span> pues <span class="process-math">\(m_i(x)\)</span> es el polinomio minimal de <span class="process-math">\(\omega^i\text{.}\)</span> Por lo tanto, <span class="process-math">\(g(x) \mid f(x)\)</span> por la definición de <span class="process-math">\(g(x)\text{.}\)</span> Así, <span class="process-math">\(f(x)\)</span> es una palabra del código.</div> <div class="para logical">
+<div class="para">(2) <span class="process-math">\(\Rightarrow\)</span> (3). Sea <span class="process-math">\(f(t) = a_0 + a_1 t + \cdots + a_{n - 1}v t^{n - 1}\)</span> en <span class="process-math">\(R_n\text{.}\)</span> La correspondiente <span class="process-math">\(n\)</span>-tupla en <span class="process-math">\({\mathbb Z}_2^n\)</span> es <span class="process-math">\({\mathbf x} = (a_0 a_1 \cdots a_{n - 1})^\transpose\text{.}\)</span> Por (2),</div>
+<div class="displaymath process-math">
 \begin{equation*}
-g( \omega^r) = g(\omega^{r + 1}) = \cdots = g( \omega^{r + s - 1}) = 0.
-\end{equation*}
-</div>
-<div class="para">Sea <span class="process-math">\(f(x)\)</span> algún polinomio en <span class="process-math">\(C\)</span> con <span class="process-math">\(s\)</span> o menos coeficientes distintos de cero.  Podemos suponer que</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/lemma-vandermode-det.html">
-\begin{equation*}
-f(x) = a_{i_0} x^{i_0} + a_{i_1} x^{i_1} + \cdots + a_{i_{s - 1}} x^{i_{s - 1}}
-\end{equation*}
-</div>
-<div class="para">es algún polinomio en <span class="process-math">\(C\text{.}\)</span> Es suficiente con demostrar que todos los <span class="process-math">\(a_i\)</span> tienen que ser cero.  Como</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/lemma-vandermode-det.html">
-\begin{equation*}
-g( \omega^r) = g(\omega^{r + 1}) = \cdots = g( \omega^{r + s - 1}) = 0
-\end{equation*}
-</div>
-<div class="para">y <span class="process-math">\(g(x)\)</span> divide a <span class="process-math">\(f(x)\text{,}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/lemma-vandermode-det.html">
-\begin{equation*}
-f( \omega^r) = f(\omega^{r + 1}) = \cdots = f( \omega^{r + s - 1}) = 0.
-\end{equation*}
-</div>
-<div class="para">Equivalentemente, tenemos el siguiente sistema de ecuaciones:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/lemma-vandermode-det.html">
-\begin{align*}
-a_{i_0} (\omega^r)^{i_0} + a_{i_1} (\omega^r)^{i_1} + \cdots + a_{i_{s - 1}} (\omega^r)^{i_{s - 1}} &amp; = 0\\
-a_{i_0} (\omega^{r + 1})^{i_0} + a_{i_1} (\omega^{r + 1})^{i_2} + \cdots + a_{i_{s-1}} (\omega^{r+1})^{i_{s-1}} &amp; = 0\\
-&amp; \vdots \\
-a_{i_0} (\omega^{r + s - 1})^{i_0} + a_{i_1} (\omega^{r + s - 1})^{i_1} + \cdots + a_{i_{s - 1}} (\omega^{r + s - 1})^{i_{s - 1}} &amp; = 0.
-\end{align*}
-</div>
-<div class="para">Por lo tanto, <span class="process-math">\((a_{i_0}, a_{i_1}, \ldots, a_{i_{s - 1}})\)</span> es una solución del sistema de ecuaciones lineales homogéneo</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/lemma-vandermode-det.html">
-\begin{align*}
-(\omega^{i_0})^r x_0 + (\omega^{i_1})^r x_1 + \cdots + (\omega^{i_{s - 1}})^r x_{n - 1} &amp; = 0\\
-(\omega^{i_0})^{r + 1} x_0 + (\omega^{i_1})^{r + 1} x_1 + \cdots + (\omega^{i_{s - 1}})^{r + 1} x_{n - 1} &amp; = 0\\
-&amp; \vdots \\
-(\omega^{i_0})^{r + s - 1} x_0 + (\omega^{i_1})^{r + s - 1} x_1 + \cdots + (\omega^{i_{s - 1}})^{r + s - 1} x_{n - 1} &amp; = 0.
-\end{align*}
-</div>
-<div class="para">Pero este sistema tiene solución única, pues el determinante de la matriz</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/lemma-vandermode-det.html">
-\begin{equation*}
+H {\mathbf x} =
 \begin{pmatrix}
-(\omega^{i_0})^r &amp; (\omega^{i_1})^r &amp; \cdots &amp; (\omega^{i_{s-1}})^r \\
-(\omega^{i_0})^{r+1} &amp; (\omega^{i_1})^{r+1} &amp; \cdots &amp;
-(\omega^{i_{s-1}})^{r+1} \\
-\vdots &amp; \vdots         &amp; \ddots &amp; \vdots \\
-(\omega^{i_0})^{r+s-1} &amp; (\omega^{i_1})^{r+s-1} &amp; \cdots &amp;
-(\omega^{i_{s-1}})^{r+s-1} 
+a_0 + a_1 \omega + \cdots + a_{n-1} \omega^{n-1} \\
+a_0 + a_1 \omega^2 + \cdots + a_{n-1} (\omega^2)^{n-1} \\
+\vdots \\
+a_0 + a_1 \omega^{2r} + \cdots + a_{n-1} (\omega^{2r})^{n-1}
 \end{pmatrix}
+=
+\begin{pmatrix}
+f(\omega) \\
+f(\omega^2) \\
+\vdots \\
+f(\omega^{2r})
+\end{pmatrix}
+= 0
 \end{equation*}
 </div>
-<div class="para">no es cero por el Lema <a href="" class="xref" data-knowl="./knowl/lemma-vandermode-det.html" title="Lema 22.2.7">22.2.7</a> y las propiedades básicas de los determinantes (Ejercicio). Por lo tanto, esta solución es <span class="process-math">\(a_{i_0} = a_{i_1} = \cdots = a_{i_{s - 1}} = 0\text{.}\)</span>
+<div class="para">precisamente cuando <span class="process-math">\(f(t)\)</span> está en <span class="process-math">\(C\text{.}\)</span> Luego, <span class="process-math">\(H\)</span> es una matriz verificadora para <span class="process-math">\(C\text{.}\)</span>
 </div>
-</div></article><span class="incontext"><a href="section-poly-codes.html#proof-189" class="internal">en contexto</a></span>
+</div> <div class="para">(3) <span class="process-math">\(\Rightarrow\)</span> (1). Por (3), un polinomio <span class="process-math">\(f(t) = a_0 + a_1 t + \cdots + a_{n - 1} t^{n - 1}\)</span> está en <span class="process-math">\(C\)</span> exactamente cuando <span class="process-math">\(f(\omega^i) = 0\)</span> for <span class="process-math">\(i = 1, \ldots, 2r\text{.}\)</span> El menor tal polinomio es <span class="process-math">\(g(t) = \lcm[ m_1(t),\ldots, m_{2r}(t)]\text{.}\)</span>  Por lo tanto, <span class="process-math">\(C = \langle g(t) \rangle\text{.}\)</span>
+</div></article><span class="incontext"><a href="finite-section-poly-codes.html#VKv" class="internal">en contexto</a></span>
 </body>
 </html>

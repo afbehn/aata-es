@@ -13,12 +13,13 @@
 <body class="ignore-math">
 <div class="displaymath process-math">
 \begin{align*}
-a &amp; =  a \wedge (a' \vee b) \\
-&amp; =  (a \wedge a') \vee (a  \wedge  b)\\
-&amp; = O \vee (a  \wedge  b)\\
-&amp; = a \wedge b.
+\phi(a \vee b) &amp; = \phi( a_1 \vee \cdots \vee a_n \vee b_1 \vee \cdots \vee b_m )\\
+&amp; = \{ a_1, \ldots, a_n, b_1, \ldots, b_m \}\\
+&amp; = \{ a_1, \ldots, a_n \} \cup \{ b_1, \ldots, b_m \}\\
+&amp; = \phi( a_1 \vee \cdots \vee a_n ) \cup \phi( b_1 \wedge \cdots \vee b_m )\\
+&amp; = \phi(a) \cup \phi(b)
 \end{align*}
 </div>
-<span class="incontext"><a href="section-boolean-algebras.html#md-203" class="internal">en contexto</a></span>
+<span class="incontext"><a href="boolean-section-boolean-algebras.html#VAE" class="internal">en contexto</a></span>
 </body>
 </html>

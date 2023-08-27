@@ -26,7 +26,7 @@ H =
 \end{pmatrix}
 \end{equation*}
 </div>
-<div class="para">y supongamos que las 6-tuples <span class="process-math">\({\mathbf x} = (111110)^{\rm t}\text{,}\)</span> <span class="process-math">\({\mathbf y} = (111111)^{\rm t}\text{,}\)</span> y <span class="process-math">\({\mathbf z} = (010111)^{\rm t}\)</span> fueron recibidas. Entonces</div>
+<div class="para">y supongamos que las <span class="process-math">\(6\)</span>-tuplas <span class="process-math">\({\mathbf x} = (111110)^\transpose\text{,}\)</span> <span class="process-math">\({\mathbf y} = (111111)^\transpose\text{,}\)</span> y <span class="process-math">\({\mathbf z} = (010111)^\transpose\)</span> fueron recibidas. Entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
 H{\mathbf x} =
@@ -40,7 +40,7 @@ H{\mathbf y} =
 H{\mathbf z} =
 \begin{pmatrix}
 1 \\ 0 \\ 0
-\end{pmatrix}.
+\end{pmatrix}\text{.}
 \end{equation*}
 </div>
 <div class="para">Luego, <span class="process-math">\({\mathbf x}\)</span> tiene un error en el tercer bit y <span class="process-math">\({\mathbf z}\)</span> tiene un error en el cuarto bit. Las palabras trasmitidas para <span class="process-math">\({\mathbf x}\)</span> y <span class="process-math">\({\mathbf z}\)</span> deben haber sido <span class="process-math">\((110110)\)</span> y <span class="process-math">\((010011)\text{,}\)</span> respectivamente. El síndrome de <span class="process-math">\({\mathbf y}\)</span> no aparece en ninguna de las columnas de <span class="process-math">\(H\text{,}\)</span> de manera que más de un error debe haber ocurrido para producir <span class="process-math">\({\mathbf y}\text{.}\)</span>

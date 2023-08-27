@@ -12,7 +12,31 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Párrafo</span></h3>
-<div class="para">Si podemos demostrar la veracidad del enunciado, entonces el enunciado se llama <dfn class="terminology">proposición</dfn>.  Una proposición de mayor importancia se llama <dfn class="terminology">Teorema</dfn>.  A veces, en lugar de demostrar un teorema o proposición de una sola vez, descomponemos la demostración en módulos; es decir, demostramos varias proposiciones auxiliares, que se llaman <dfn class="terminology">Lemas</dfn>, y usamos los resultados de estas proposiciones para demostrar el resultado principal. Si podemos demostrar una proposición o teorema, frecuentemente podremos obtener resultados relacionados con muy poco esfuerzo adicional, estos se llaman <dfn class="terminology">Corolarios</dfn>.</div>
-<span class="incontext"><a href="section-note-on-proofs.html#p-35" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Examinemos distintos tipos de enunciados.  Un enunciado puede ser tan simple como “<span class="process-math">\(10/5 = 2\text{;}\)</span>” pero, los matemáticos usualmente están interesados en enunciados más complejas tales como “Si <span class="process-math">\(p\text{,}\)</span> entonces <span class="process-math">\(q\text{,}\)</span>” donde <span class="process-math">\(p\)</span> y <span class="process-math">\(q\)</span> son a su vez enunciados.  Si cierto enunciado es conocido o suponemos que es cierto, queremos saber lo que podemos decir sobre otros enunciados.  Acá <span class="process-math">\(p\)</span> se llama <dfn class="terminology">hipótesis</dfn> y <span class="process-math">\(q\)</span> se conoce como <dfn class="terminology">conclusión</dfn>.  Considere el siguiente enunciado: Si <span class="process-math">\(ax^2 + bx + c = 0\)</span> y <span class="process-math">\(a \neq 0\text{,}\)</span> entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\text{.}
+\end{equation*}
+</div>
+<div class="para">La hipótesis es que <span class="process-math">\(ax^2 + bx + c = 0\)</span> y <span class="process-math">\(a \neq 0\text{;}\)</span> la conclusión es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\text{.}
+\end{equation*}
+</div>
+<div class="para">Note que el enunciado no dice nada sobre si la hipótesis es verdadera o no. Pero, si el enunciado completo es verdadero y podemos mostrar que  <span class="process-math">\(ax^2 + bx + c = 0\)</span> con <span class="process-math">\(a \neq 0\)</span> es verdadero, entonces la conclusión <em class="emphasis">debe</em> ser verdadera.  Una demostración de este enunciado puede ser simplemente una serie de ecuaciones:</div>
+<div class="displaymath process-math">
+\begin{align*}
+ax^2 + bx + c &amp; =  0\\
+x^2 + \frac{b}{a}x &amp; =  - \frac{c}{a}\\
+x^2 + \frac{b}{a}x + \left( \frac{b}{2a} \right)^2 &amp; =  \left( \frac{b}{2a} \right)^2 - \frac{c}{a}\\
+\left(x + \frac{b}{2a} \right)^2 &amp; =  \frac{b^2 - 4ac}{4a^2}\\
+x + \frac{b}{2a}  &amp; =  \frac{ \pm \sqrt{ b^2 -4ac}}{2a}\\
+x &amp; =  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\text{.}
+\end{align*}
+</div>
+</div>
+<span class="incontext"><a href="sets-section-note-on-proofs.html#cex" class="internal">en contexto</a></span>
 </body>
 </html>

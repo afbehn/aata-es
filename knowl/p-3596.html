@@ -11,9 +11,24 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Párrafo</span></h3>
-<div class="para">Sea <span class="process-math">\(E\)</span> una extensión algebraica de un cuerpo <span class="process-math">\(F\text{.}\)</span>  Dos elementos <span class="process-math">\(\alpha, \beta \in E\)</span> son <dfn class="terminology">conjugados</dfn> sobre <span class="process-math">\(F\)</span> si tienen el mismo polinomio minimal. Por ejemplo, en el cuerpo <span class="process-math">\({\mathbb Q}( \sqrt{2}\, )\)</span> los elementos <span class="process-math">\(\sqrt{2}\)</span> y <span class="process-math">\(-\sqrt{2}\)</span> son conjugados sobre <span class="process-math">\({\mathbb Q}\)</span> pues ambos son raíces del polinomio irreducible <span class="process-math">\(x^2 - 2\text{.}\)</span>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
+<div class="para logical">
+<div class="para">Sean <span class="process-math">\(\alpha_1, \ldots, \alpha_n\)</span> elementos en un cuerpo <span class="process-math">\(F\)</span> con <span class="process-math">\(n \geq 2\text{.}\)</span>  Entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\det
+\begin{pmatrix}
+1              &amp; 1              &amp; \cdots &amp; 1 \\
+\alpha_1       &amp; \alpha_2       &amp; \cdots &amp; \alpha_n \\
+\alpha_1^2     &amp; \alpha_2^2     &amp; \cdots &amp; \alpha_n^2 \\
+\vdots         &amp; \vdots         &amp; \ddots &amp; \vdots \\
+\alpha_1^{n-1} &amp; \alpha_2^{n-1} &amp; \cdots &amp; \alpha_n^{n-1} 
+\end{pmatrix}
+= \prod_{1 \leq j \lt i \leq n} (\alpha_i - \alpha_j)\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="section-field-automorphisms.html#p-3596" class="internal">en contexto</a></span>
+<div class="para">En particular, si los <span class="process-math">\(\alpha_i\)</span> son distintos, entonces el determinante es distinto de cero.</div>
+</div>
+<span class="incontext"><a href="finite-section-poly-codes.html#bGY" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -87,7 +87,7 @@ window.MathJax = {
   }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=012975021551273728005:y0h32vuqauw"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -103,19 +103,50 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.1.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runtime.6f0528865cd47dcd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.3a5641c4e1fe869e.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.cec40a61180efd41.css">
 </head>
-<body class="pretext book ignore-math">
+<body id="AATA" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/images/cover_aata_2017.png" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="cover/cover_aata_2022.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta:</span> <span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>[search-results-heading]: <span id="searchterms" class="searchterms"></span>
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Resultados de la búsqueda: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty" class="searchempty"><span>[no-search-results].</span></div>
+<div id="searchempty" class="searchempty"><span>Sin resultados.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Índice</span></button><a class="index-button button" href="index-1.html" title="Índice alfabético"><span class="name">Índice alfabético</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -220,8 +251,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-algebra-of-circuits.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="boolean.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="boolean-exercises-programming.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
-<div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-algebra-of-circuits.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="boolean.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="boolean-exercises-programming.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
@@ -244,31 +274,32 @@ window.MathJax = {
 <div class="toc-item"><a href="sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminares</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
+<div class="toc-item"><a href="sets-section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sets-section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
+<div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="sets-exercises.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Listas</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Listas de Enteros</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.5.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Listas</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Listas de Enteros</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.6.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -283,18 +314,19 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-historical-note" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-integers.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-2.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Algoritmo de División</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Primos y Factorización</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Algoritmo de División</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Primos y Factorización</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -321,19 +353,20 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-subgroups.html#groups-subsection-subgroup-theorems" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Algunos Teoremas para Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-groups.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
-<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-3.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
+<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Enteros mód n</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Cuaterniones</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Subgrupos</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Enteros mód n</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.8.3</span> <span class="title">Cuaterniones</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -348,21 +381,22 @@ window.MathJax = {
 <ul class="structural"><li><div class="toc-item"><a href="section-mult-group-c.html#cyclic-subsection-circle-group" class="internal"><span class="codenumber">4.2.1</span> <span class="title">El grupo de la circunferencia y las raíces de la unidad</span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="section-method-of-repeated-squares.html" class="internal"><span class="codenumber">4.3</span> <span class="title">El método de los cuadrados repetidos</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-cyclic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios de programación</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Ejercicios de programación</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.7.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.8.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.8.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -461,18 +495,19 @@ window.MathJax = {
 <div class="toc-item"><a href="section-efficient-decoding.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Decodificación Eficiente</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="section-efficient-decoding.html#algcodes-subsection-coset-decoding" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Decodificación por Clases Laterales</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.8.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.9.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.10</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -598,17 +633,18 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-historical-note" class="internal"><span class="codenumber">14.3.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-actions.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicio de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-6.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Ejercicio de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.7.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
-<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.7.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.8.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.8.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -871,10 +907,10 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="exercises-boolean"><h2 class="heading hide-type">
 <span class="type">Ejercicios</span> <span class="codenumber">19.4</span> <span class="title">Ejercicios</span>
 </h2>
-<article class="exercise exercise-like" id="exercise-646"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="para" id="p-2999">Dibuje el diagrama del reticulado para el conjunto potencia de <span class="process-math">\(X = \{ a, b, c, d \}\)</span> con la relación de inclusión conjuntista, <span class="process-math">\(\subset\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-647"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="para" id="p-3000">Dibuje el diagrama para el conjunto de enteros positivos que son divisores de 30. ¿Es este conjunto parcialmente ordenado un álgebra Booleana?</div>
+<article class="exercise exercise-like" id="exercise-677"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
+<div class="para" id="p-3034">Dibuje el diagrama del reticulado para el conjunto potencia de <span class="process-math">\(X = \{ a, b, c, d \}\)</span> con la relación de inclusión conjuntista, <span class="process-math">\(\subset\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-678"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<div class="para" id="p-3035">Dibuje el diagrama para el conjunto de enteros positivos que son divisores de 30. ¿Es este conjunto parcialmente ordenado un álgebra Booleana?</div>
 <div class="solutions">
 <a href="" data-knowl="" class="id-ref hint-knowl original has-image" data-refid="hk-hint-169" id="hint-169"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-169"><div class="hint solution-like"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;">
 					
@@ -906,28 +942,28 @@ window.MathJax = {
 					
 
 				</div></div></div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-648"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="para" id="p-3001">Dibuje un diagrama del reticulado de subgrupos de <span class="process-math">\({\mathbb Z}_{12}\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-649"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para" id="p-3002">Sea <span class="process-math">\(B\)</span> el conjunto de enteros positivos que son divisores de  36. Defina un orden en <span class="process-math">\(B\)</span> como <span class="process-math">\(a \preceq b\)</span> si <span class="process-math">\(a \mid b\text{.}\)</span> Demuestre que <span class="process-math">\(B\)</span> es un álgebra Booleana. Encuentre un conjunto <span class="process-math">\(X\)</span> tal que <span class="process-math">\(B\)</span> es isomorfo a <span class="process-math">\({\mathcal P}(X)\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-650"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
-<div class="para" id="p-3003">Demuestre o refute: <span class="process-math">\({\mathbb Z}\)</span> es un conjunto parcialmente ordenado por la relación <span class="process-math">\(a \preceq b\)</span> si <span class="process-math">\(a \mid b\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-679"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="para" id="p-3036">Dibuje un diagrama del reticulado de subgrupos de <span class="process-math">\({\mathbb Z}_{12}\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-680"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="para" id="p-3037">Sea <span class="process-math">\(B\)</span> el conjunto de enteros positivos que son divisores de  36. Defina un orden en <span class="process-math">\(B\)</span> como <span class="process-math">\(a \preceq b\)</span> si <span class="process-math">\(a \mid b\text{.}\)</span> Demuestre que <span class="process-math">\(B\)</span> es un álgebra Booleana. Encuentre un conjunto <span class="process-math">\(X\)</span> tal que <span class="process-math">\(B\)</span> es isomorfo a <span class="process-math">\({\mathcal P}(X)\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-681"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+<div class="para" id="p-3038">Demuestre o refute: <span class="process-math">\({\mathbb Z}\)</span> es un conjunto parcialmente ordenado por la relación <span class="process-math">\(a \preceq b\)</span> si <span class="process-math">\(a \mid b\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-170" id="hint-170"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-170"><div class="hint solution-like"><div class="para" id="p-3004">Falso.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-651"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="para logical" id="p-3005">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-170" id="hint-170"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-170"><div class="hint solution-like"><div class="para" id="p-3039">Falso.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-682"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+<div class="para logical" id="p-3040">
 <div class="para">Dibuje el circuito de conmutación para cada una de las siguientes expresiones Booleanas.</div>
 <ol class="lower-alpha cols2">
-<li id="li-669"><div class="para" id="p-3006"><span class="process-math">\(\displaystyle (a \vee b \vee a') \wedge a\)</span></div></li>
-<li id="li-670"><div class="para" id="p-3007"><span class="process-math">\(\displaystyle (a \vee b)' \wedge (a \vee b)\)</span></div></li>
-<li id="li-671"><div class="para" id="p-3008"><span class="process-math">\(\displaystyle a \vee (a \wedge b)\)</span></div></li>
-<li id="li-672"><div class="para" id="p-3009"><span class="process-math">\(\displaystyle (c \vee a \vee b) \wedge c' \wedge (a \vee b)'\)</span></div></li>
+<li id="li-669"><div class="para" id="p-3041"><span class="process-math">\(\displaystyle (a \vee b \vee a') \wedge a\)</span></div></li>
+<li id="li-670"><div class="para" id="p-3042"><span class="process-math">\(\displaystyle (a \vee b)' \wedge (a \vee b)\)</span></div></li>
+<li id="li-671"><div class="para" id="p-3043"><span class="process-math">\(\displaystyle a \vee (a \wedge b)\)</span></div></li>
+<li id="li-672"><div class="para" id="p-3044"><span class="process-math">\(\displaystyle (c \vee a \vee b) \wedge c' \wedge (a \vee b)'\)</span></div></li>
 </ol>
 </div>
 <div class="solutions">
 <a href="" data-knowl="" class="id-ref hint-knowl original has-image" data-refid="hk-hint-171" id="hint-171"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-171"><div class="hint solution-like">
-<div class="para" id="p-3010">(a) <span class="process-math">\((a \vee b \vee a') \wedge a\)</span>
+<div class="para" id="p-3045">(a) <span class="process-math">\((a \vee b \vee a') \wedge a\)</span>
 </div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;">
 					
 
@@ -951,7 +987,7 @@ window.MathJax = {
 						\end{tikzpicture}
 					
 
-				</div></div></div> <div class="para" id="p-3011">(c) <span class="process-math">\(a \vee (a \wedge b)\)</span>
+				</div></div></div> <div class="para" id="p-3046">(c) <span class="process-math">\(a \vee (a \wedge b)\)</span>
 </div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;">
 					
 
@@ -977,9 +1013,9 @@ window.MathJax = {
 
 				</div></div></div>
 </div></div>
-</div></article><article class="exercise exercise-like" id="exercise-652"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="para" id="p-3012">Dibuje un circuito que se cierre exactamente cuando solo uno de los tres interruptores <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> o <span class="process-math">\(c\)</span> esté cerrado.</div></article><article class="exercise exercise-like" id="exercise-653"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
-<div class="para" id="p-3013">Demuestre o refute que los dos circuitos mostrados son equivalentes.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;">
+</div></article><article class="exercise exercise-like" id="exercise-683"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="para" id="p-3047">Dibuje un circuito que se cierre exactamente cuando solo uno de los tres interruptores <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> o <span class="process-math">\(c\)</span> esté cerrado.</div></article><article class="exercise exercise-like" id="exercise-684"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="para" id="p-3048">Demuestre o refute que los dos circuitos mostrados son equivalentes.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;">
 					
 
 						\begin{tikzpicture}[scale=0.7,node distance=5mm, text height=1.5ex,text depth=.25ex]
@@ -1010,11 +1046,11 @@ window.MathJax = {
 
 				</div></div></div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-172" id="hint-172"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-172"><div class="hint solution-like"><div class="para" id="p-3014">No son equivalentes.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-654"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
-<div class="para" id="p-3015">Sea <span class="process-math">\(X\)</span> un conjunto finito con <span class="process-math">\(n\)</span> elementos.  Demuestre que <span class="process-math">\({\cal P}(X) = 2^n\text{.}\)</span> Concluya que el orden de cualquier álgebra Booleana finita es <span class="process-math">\(2^n\)</span> para algún <span class="process-math">\(n \in {\mathbb N}\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-655"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
-<div class="para" id="p-3016">Para cada uno de los siguientes circuitos, escriba una expresión Booleana. Si el circuito puede ser reemplazado por uno con menos interruptores, dé la expresión Booleana y dibuje un diagrama para el nuevo circuito.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-172" id="hint-172"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-172"><div class="hint solution-like"><div class="para" id="p-3049">No son equivalentes.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-685"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para" id="p-3050">Sea <span class="process-math">\(X\)</span> un conjunto finito con <span class="process-math">\(n\)</span> elementos.  Demuestre que <span class="process-math">\({\cal P}(X) = 2^n\text{.}\)</span> Concluya que el orden de cualquier álgebra Booleana finita es <span class="process-math">\(2^n\)</span> para algún <span class="process-math">\(n \in {\mathbb N}\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-686"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
+<div class="para" id="p-3051">Para cada uno de los siguientes circuitos, escriba una expresión Booleana. Si el circuito puede ser reemplazado por uno con menos interruptores, dé la expresión Booleana y dibuje un diagrama para el nuevo circuito.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;">
 					
 
 						\begin{tikzpicture}[scale=0.7,node distance=5mm, text height=1.5ex,text depth=.25ex]
@@ -1061,40 +1097,40 @@ window.MathJax = {
 
 				</div></div></div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-173" id="hint-173"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-173"><div class="hint solution-like"><div class="para" id="p-3017">(a) <span class="process-math">\(a' \wedge [(a \wedge b') \vee b] = a \wedge (a \vee b) \text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-173" id="hint-173"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-173"><div class="hint solution-like"><div class="para" id="p-3052">(a) <span class="process-math">\(a' \wedge [(a \wedge b') \vee b] = a \wedge (a \vee b) \text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-656"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
-<div class="para" id="p-3018">Demuestre o refute: El conjunto de todos los enteros distintos de cero es un reticulado, donde <span class="process-math">\(a \preceq b\)</span> se define como <span class="process-math">\(a \mid b\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-657"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
-<div class="para" id="p-3019">Sea <span class="process-math">\(L\)</span> un conjunto no vacío con dos operaciones binarias <span class="process-math">\(\vee\)</span> y <span class="process-math">\(\wedge\)</span> que satisfagan la leyes conmutativa, associativa, idempotente, y de absorción.  Podemos definir un orden parcial en <span class="process-math">\(L\text{,}\)</span> como en el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-partial-order.html" title="Teorema 19.1.14">19.1.14</a>, por <span class="process-math">\(a \preceq b\)</span> si <span class="process-math">\(a \vee b = b\text{.}\)</span> Demuestre que el ínfimo de <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> es <span class="process-math">\(a \wedge b\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-658"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
-<div class="para" id="p-3020">Sea <span class="process-math">\(G\)</span> un grupo y <span class="process-math">\(X\)</span> el conjunto de subgrupos de <span class="process-math">\(G\)</span> ordenados por inclusión conjuntista. Si <span class="process-math">\(H\)</span> y <span class="process-math">\(K\)</span> son subgrupos de <span class="process-math">\(G\text{,}\)</span> muestre que el supremo de <span class="process-math">\(H\)</span> y <span class="process-math">\(K\)</span> es el subgrupo generado por <span class="process-math">\(H \cup K\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-659"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
-<div class="para" id="p-3021">Sea <span class="process-math">\(R\)</span> un anillo y suponga que <span class="process-math">\(X\)</span> es el conjunto de ideales de <span class="process-math">\(R\text{.}\)</span>  Muestre que <span class="process-math">\(X\)</span> es un conjunto parcialmente ordenado por inclusión, <span class="process-math">\(\subset\text{.}\)</span> Defina el ínfimo de dos ideales <span class="process-math">\(I\)</span> y <span class="process-math">\(J\)</span> en <span class="process-math">\(X\)</span> como <span class="process-math">\(I \cap J\)</span> y el supremo de  <span class="process-math">\(I\)</span> y <span class="process-math">\(J\)</span> como <span class="process-math">\(I + J\text{.}\)</span> Demuestre que el conjunto de los ideales de <span class="process-math">\(R\)</span> forma un reticulado bajo estas operaciones.</div>
+</div></article><article class="exercise exercise-like" id="exercise-687"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
+<div class="para" id="p-3053">Demuestre o refute: El conjunto de todos los enteros distintos de cero es un reticulado, donde <span class="process-math">\(a \preceq b\)</span> se define como <span class="process-math">\(a \mid b\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-688"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
+<div class="para" id="p-3054">Sea <span class="process-math">\(L\)</span> un conjunto no vacío con dos operaciones binarias <span class="process-math">\(\vee\)</span> y <span class="process-math">\(\wedge\)</span> que satisfagan la leyes conmutativa, associativa, idempotente, y de absorción.  Podemos definir un orden parcial en <span class="process-math">\(L\text{,}\)</span> como en el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-partial-order.html" title="Teorema 19.1.14">Teorema 19.1.14</a>, por <span class="process-math">\(a \preceq b\)</span> si <span class="process-math">\(a \vee b = b\text{.}\)</span> Demuestre que el ínfimo de <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> es <span class="process-math">\(a \wedge b\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-689"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
+<div class="para" id="p-3055">Sea <span class="process-math">\(G\)</span> un grupo y <span class="process-math">\(X\)</span> el conjunto de subgrupos de <span class="process-math">\(G\)</span> ordenados por inclusión conjuntista. Si <span class="process-math">\(H\)</span> y <span class="process-math">\(K\)</span> son subgrupos de <span class="process-math">\(G\text{,}\)</span> muestre que el supremo de <span class="process-math">\(H\)</span> y <span class="process-math">\(K\)</span> es el subgrupo generado por <span class="process-math">\(H \cup K\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-690"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
+<div class="para" id="p-3056">Sea <span class="process-math">\(R\)</span> un anillo y suponga que <span class="process-math">\(X\)</span> es el conjunto de ideales de <span class="process-math">\(R\text{.}\)</span>  Muestre que <span class="process-math">\(X\)</span> es un conjunto parcialmente ordenado por inclusión, <span class="process-math">\(\subset\text{.}\)</span> Defina el ínfimo de dos ideales <span class="process-math">\(I\)</span> y <span class="process-math">\(J\)</span> en <span class="process-math">\(X\)</span> como <span class="process-math">\(I \cap J\)</span> y el supremo de  <span class="process-math">\(I\)</span> y <span class="process-math">\(J\)</span> como <span class="process-math">\(I + J\text{.}\)</span> Demuestre que el conjunto de los ideales de <span class="process-math">\(R\)</span> forma un reticulado bajo estas operaciones.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-174" id="hint-174"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-174"><div class="hint solution-like"><div class="para" id="p-3022">Sean <span class="process-math">\(I, J\)</span> ideales en <span class="process-math">\(R\text{.}\)</span> Debemos mostrar que <span class="process-math">\(I + J = \{ r + s : r \in I \text{ y } s \in J  \}\)</span> es el menor ideal en <span class="process-math">\(R\)</span> que contiene tanto a <span class="process-math">\(I\)</span> como <span class="process-math">\(J\text{.}\)</span> Si <span class="process-math">\(r_1, r_2 \in I\)</span> y <span class="process-math">\(s_1, s_2 \in J\text{,}\)</span> entonces <span class="process-math">\((r_1 + s_1) + (r_2 + s_2) = (r_1 + r_2) +(s_1 + s_2)\)</span> está en <span class="process-math">\(I + J\text{.}\)</span> Para <span class="process-math">\(a \in R\text{,}\)</span> <span class="process-math">\(a(r_1 + s_1) = ar_1 + as_1 \in I + J\text{;}\)</span> luego, <span class="process-math">\(I + J\)</span> es un ideal en <span class="process-math">\(R\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-174" id="hint-174"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-174"><div class="hint solution-like"><div class="para" id="p-3057">Sean <span class="process-math">\(I, J\)</span> ideales en <span class="process-math">\(R\text{.}\)</span> Debemos mostrar que <span class="process-math">\(I + J = \{ r + s : r \in I \text{ y } s \in J  \}\)</span> es el menor ideal en <span class="process-math">\(R\)</span> que contiene tanto a <span class="process-math">\(I\)</span> como <span class="process-math">\(J\text{.}\)</span> Si <span class="process-math">\(r_1, r_2 \in I\)</span> y <span class="process-math">\(s_1, s_2 \in J\text{,}\)</span> entonces <span class="process-math">\((r_1 + s_1) + (r_2 + s_2) = (r_1 + r_2) +(s_1 + s_2)\)</span> está en <span class="process-math">\(I + J\text{.}\)</span> Para <span class="process-math">\(a \in R\text{,}\)</span> <span class="process-math">\(a(r_1 + s_1) = ar_1 + as_1 \in I + J\text{;}\)</span> luego, <span class="process-math">\(I + J\)</span> es un ideal en <span class="process-math">\(R\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-660"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
-<div class="para logical" id="p-3023">
+</div></article><article class="exercise exercise-like" id="exercise-691"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
+<div class="para logical" id="p-3058">
 <div class="para">Sea <span class="process-math">\(B\)</span> un álgebra Booleana. Demuestre cada una de las siguientes identidades.</div>
 <ol class="lower-alpha">
-<li id="li-673"><div class="para" id="p-3024">
+<li id="li-673"><div class="para" id="p-3059">
 <span class="process-math">\(a \vee I = I\)</span> y <span class="process-math">\(a \wedge O = O\)</span> para todo <span class="process-math">\(a \in B\text{.}\)</span>
 </div></li>
-<li id="li-674"><div class="para" id="p-3025">Si <span class="process-math">\(a \vee b = I\)</span> y <span class="process-math">\(a \wedge b = O\text{,}\)</span> entonces <span class="process-math">\(b = a'\text{.}\)</span>
+<li id="li-674"><div class="para" id="p-3060">Si <span class="process-math">\(a \vee b = I\)</span> y <span class="process-math">\(a \wedge b = O\text{,}\)</span> entonces <span class="process-math">\(b = a'\text{.}\)</span>
 </div></li>
-<li id="li-675"><div class="para" id="p-3026">
+<li id="li-675"><div class="para" id="p-3061">
 <span class="process-math">\((a')'=a\)</span> para todo <span class="process-math">\(a \in B\text{.}\)</span>
 </div></li>
-<li id="li-676"><div class="para" id="p-3027">
+<li id="li-676"><div class="para" id="p-3062">
 <span class="process-math">\(I' = O\)</span> y <span class="process-math">\(O' = I\text{.}\)</span>
 </div></li>
-<li id="li-677"><div class="para" id="p-3028">
+<li id="li-677"><div class="para" id="p-3063">
 <span class="process-math">\((a \vee b)' = a' \wedge b'\)</span> y <span class="process-math">\((a \wedge b)' = a' \vee b'\)</span> (Leyes de De Morgan).</div></li>
 </ol>
-</div></article><article class="exercise exercise-like" id="exercise-661"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
-<div class="para" id="p-3029">Dibujando los diagramas apropiados, complete la demostración del Teorema <a href="" class="xref" data-knowl="./knowl/theorem-circuit.html" title="Teorema 19.3.6">19.3.6</a> para mostrar que las funciones de conmutación forman un álgebra Booleana.</div></article><article class="exercise exercise-like" id="exercise-662"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
-<div class="para logical" id="p-3030">
+</div></article><article class="exercise exercise-like" id="exercise-692"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
+<div class="para" id="p-3064">Dibujando los diagramas apropiados, complete la demostración del Teorema <a href="" class="xref" data-knowl="./knowl/theorem-circuit.html" title="Teorema 19.3.6">Teorema 19.3.6</a> para mostrar que las funciones de conmutación forman un álgebra Booleana.</div></article><article class="exercise exercise-like" id="exercise-693"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
+<div class="para logical" id="p-3065">
 <div class="para">Sea <span class="process-math">\(B\)</span> un álgebra Booleana. Defina operaciones binarias <span class="process-math">\(+\)</span> y <span class="process-math">\(\cdot\)</span> en <span class="process-math">\(B\)</span> como</div>
 <div class="displaymath process-math" id="md-206">
 \begin{align*}
@@ -1104,30 +1140,30 @@ a \cdot b &amp; = a \wedge b.
 </div>
 <div class="para">Demuestre que <span class="process-math">\(B\)</span> es un anillo conmutativo bajo estas operaciones y que satisface <span class="process-math">\(a^2 = a\)</span> para todo <span class="process-math">\(a \in B\text{.}\)</span>
 </div>
-</div></article><article class="exercise exercise-like" id="exercise-663"><h3 class="heading"><span class="codenumber">18<span class="period">.</span></span></h3>
-<div class="para logical" id="p-3031">
+</div></article><article class="exercise exercise-like" id="exercise-694"><h3 class="heading"><span class="codenumber">18<span class="period">.</span></span></h3>
+<div class="para logical" id="p-3066">
 <div class="para">Sea <span class="process-math">\(X\)</span>  un conjunto parcialmente ordenado tal que para todo <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> en <span class="process-math">\(X\text{,}\)</span> ya sea <span class="process-math">\(a \preceq  b\)</span> o <span class="process-math">\(b \preceq a\text{.}\)</span> Entonces <span class="process-math">\(X\)</span> es un <dfn class="terminology">conjunto totalmente ordenado</dfn>.</div>
 <ol class="lower-alpha">
-<li id="li-678"><div class="para" id="p-3032">Es <span class="process-math">\(a \mid b\)</span> un orden total en <span class="process-math">\({\mathbb N}\text{?}\)</span>
+<li id="li-678"><div class="para" id="p-3067">Es <span class="process-math">\(a \mid b\)</span> un orden total en <span class="process-math">\({\mathbb N}\text{?}\)</span>
 </div></li>
-<li id="li-679"><div class="para" id="p-3033">Demuestre que <span class="process-math">\({\mathbb N}\text{,}\)</span> <span class="process-math">\({\mathbb Z}\text{,}\)</span> <span class="process-math">\({\mathbb Q}\text{,}\)</span> y <span class="process-math">\({\mathbb R}\)</span> son conjuntos totalmente ordenados con el orden usual <span class="process-math">\(\leq\text{.}\)</span>
+<li id="li-679"><div class="para" id="p-3068">Demuestre que <span class="process-math">\({\mathbb N}\text{,}\)</span> <span class="process-math">\({\mathbb Z}\text{,}\)</span> <span class="process-math">\({\mathbb Q}\text{,}\)</span> y <span class="process-math">\({\mathbb R}\)</span> son conjuntos totalmente ordenados con el orden usual <span class="process-math">\(\leq\text{.}\)</span>
 </div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-175" id="hint-175"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-175"><div class="hint solution-like"><div class="para" id="p-3034">(a) No.</div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-664"><h3 class="heading"><span class="codenumber">19<span class="period">.</span></span></h3>
-<div class="para" id="p-3035">Sean <span class="process-math">\(X\)</span> e <span class="process-math">\(Y\)</span> conjuntos parcialmente ordenados.  Se dice que una función <span class="process-math">\(\phi : X \rightarrow Y\)</span>  <dfn class="terminology">preserva el orden</dfn> si <span class="process-math">\(a \preceq b\)</span> implica que <span class="process-math">\(\phi(a) \preceq \phi(b)\text{.}\)</span>  Sean <span class="process-math">\(L\)</span> y <span class="process-math">\(M\)</span> reticulados. Una función <span class="process-math">\(\psi: L \rightarrow M\)</span> es un <dfn class="terminology">homomorfismo de reticulados</dfn> si <span class="process-math">\(\psi( a \vee b ) = \psi(a) \vee \psi(b)\)</span> y <span class="process-math">\(\psi( a \wedge b ) = \psi(a) \wedge \psi(b)\text{.}\)</span> Muestre que todo homormorfismo de reticulados preserva el orden, pero que no toda función que preserva el orden es un homomorfismo de reticulados.</div></article><article class="exercise exercise-like" id="exercise-665"><h3 class="heading"><span class="codenumber">20<span class="period">.</span></span></h3>
-<div class="para" id="p-3036">Sea <span class="process-math">\(B\)</span> un álgebra Booleana. Demeustre que <span class="process-math">\(a = b\)</span> si y solo si <span class="process-math">\((a \wedge b') \vee ( a' \wedge b) = O\)</span> para todo <span class="process-math">\(a, b \in B\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-175" id="hint-175"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-175"><div class="hint solution-like"><div class="para" id="p-3069">(a) No.</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-695"><h3 class="heading"><span class="codenumber">19<span class="period">.</span></span></h3>
+<div class="para" id="p-3070">Sean <span class="process-math">\(X\)</span> e <span class="process-math">\(Y\)</span> conjuntos parcialmente ordenados.  Se dice que una función <span class="process-math">\(\phi : X \rightarrow Y\)</span>  <dfn class="terminology">preserva el orden</dfn> si <span class="process-math">\(a \preceq b\)</span> implica que <span class="process-math">\(\phi(a) \preceq \phi(b)\text{.}\)</span>  Sean <span class="process-math">\(L\)</span> y <span class="process-math">\(M\)</span> reticulados. Una función <span class="process-math">\(\psi: L \rightarrow M\)</span> es un <dfn class="terminology">homomorfismo de reticulados</dfn> si <span class="process-math">\(\psi( a \vee b ) = \psi(a) \vee \psi(b)\)</span> y <span class="process-math">\(\psi( a \wedge b ) = \psi(a) \wedge \psi(b)\text{.}\)</span> Muestre que todo homormorfismo de reticulados preserva el orden, pero que no toda función que preserva el orden es un homomorfismo de reticulados.</div></article><article class="exercise exercise-like" id="exercise-696"><h3 class="heading"><span class="codenumber">20<span class="period">.</span></span></h3>
+<div class="para" id="p-3071">Sea <span class="process-math">\(B\)</span> un álgebra Booleana. Demeustre que <span class="process-math">\(a = b\)</span> si y solo si <span class="process-math">\((a \wedge b') \vee ( a' \wedge b) = O\)</span> para todo <span class="process-math">\(a, b \in B\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-176" id="hint-176"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-176"><div class="hint solution-like"><div class="para" id="p-3037">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-176" id="hint-176"><span class="type">Pista</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-176"><div class="hint solution-like"><div class="para" id="p-3072">
 <span class="process-math">\(( \Rightarrow)\text{.}\)</span> <span class="process-math">\(a = b \Rightarrow (a \wedge b') \vee (a' \wedge b) = (a \wedge a') \vee (a' \wedge a) = O \vee O = O\text{.}\)</span> <span class="process-math">\(( \Leftarrow)\text{.}\)</span> <span class="process-math">\(( a \wedge b') \vee (a' \wedge b) = O \Rightarrow a \vee b = (a \vee a) \vee b = a \vee (a \vee b) = a \vee [I \wedge (a \vee b)] = a \vee [(a \vee a') \wedge (a \vee b)] = [a \vee (a \wedge b')] \vee [a \vee (a' \wedge b)] = a \vee [(a \wedge b') \vee (a' \wedge b)] = a \vee 0 = a\text{.}\)</span>  Un argumento simétrico muestra que <span class="process-math">\(a \vee b = b\text{.}\)</span>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-666"><h3 class="heading"><span class="codenumber">21<span class="period">.</span></span></h3>
-<div class="para" id="p-3038">Sea <span class="process-math">\(B\)</span> un álgebra Booleana. Demuestre que <span class="process-math">\(a = O\)</span> si y solo si <span class="process-math">\((a \wedge b') \vee ( a' \wedge b) = b\)</span> para todo <span class="process-math">\(b \in B\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-667"><h3 class="heading"><span class="codenumber">22<span class="period">.</span></span></h3>
-<div class="para" id="p-3039">Sean <span class="process-math">\(L\)</span> y <span class="process-math">\(M\)</span> reticulados. Defina un orden en <span class="process-math">\(L \times M\)</span> por <span class="process-math">\(( a, b) \preceq (c, d)\)</span> si <span class="process-math">\(a \preceq c\)</span> y <span class="process-math">\(b \preceq d\text{.}\)</span> Muestre que <span class="process-math">\(L \times M\)</span> es un reticulado bajo este orden parcial.</div></article></section></div>
+</div></article><article class="exercise exercise-like" id="exercise-697"><h3 class="heading"><span class="codenumber">21<span class="period">.</span></span></h3>
+<div class="para" id="p-3073">Sea <span class="process-math">\(B\)</span> un álgebra Booleana. Demuestre que <span class="process-math">\(a = O\)</span> si y solo si <span class="process-math">\((a \wedge b') \vee ( a' \wedge b) = b\)</span> para todo <span class="process-math">\(b \in B\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-698"><h3 class="heading"><span class="codenumber">22<span class="period">.</span></span></h3>
+<div class="para" id="p-3074">Sean <span class="process-math">\(L\)</span> y <span class="process-math">\(M\)</span> reticulados. Defina un orden en <span class="process-math">\(L \times M\)</span> por <span class="process-math">\(( a, b) \preceq (c, d)\)</span> si <span class="process-math">\(a \preceq c\)</span> y <span class="process-math">\(b \preceq d\text{.}\)</span> Muestre que <span class="process-math">\(L \times M\)</span> es un reticulado bajo este orden parcial.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-algebra-of-circuits.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="boolean-exercises-programming.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a>
 </div></main>
@@ -1135,13 +1171,5 @@ a \cdot b &amp; = a \wedge b.
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
-<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
-var sc_project=10568106;
-var sc_invisible=1;
-var sc_security="510ba080";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10568106/0/510ba080/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
 </body>
 </html>

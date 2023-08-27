@@ -24,19 +24,19 @@ f(p) = p + 3 \bmod 26;
 <div class="para">es decir, <span class="process-math">\(A \mapsto D, B \mapsto E, \ldots, Z \mapsto C\text{.}\)</span> La función decodificadora es entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f^{-1}(p) = p - 3 \bmod 26 = p + 23 \bmod 26.
+f^{-1}(p) = p - 3 \bmod 26 = p + 23 \bmod 26\text{.}
 \end{equation*}
 </div>
 <div class="para">Supongamos que recibimos el mensaje encriptado DOJHEUD. Para decriptar este mensaje, lo convertimos a números:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-3, 14, 9, 7, 4, 20, 3.
+3, 14, 9, 7, 4, 20, 3\text{.}
 \end{equation*}
 </div>
 <div class="para">Luego le aplicamos la transformación inversa para obtener</div>
 <div class="displaymath process-math">
 \begin{equation*}
-0, 11, 6, 4, 1, 17, 0,
+0, 11, 6, 4, 1, 17, 0\text{,}
 \end{equation*}
 </div>
 <div class="para">es decir ALGEBRA. Note que no hay nada especial en los números 3 y 26, podríamos usar un alfabeto mayor o un desplazamiento diferente.</div>

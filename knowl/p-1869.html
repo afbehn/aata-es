@@ -12,56 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para logical">
-<div class="para">Note que un reticulado puede tener diferentes bases. Por ejemplo, los vectores <span class="process-math">\((1,1)^{\rm t}\)</span> y <span class="process-math">\((2,0)^{\rm t}\)</span> forman el mismo reticulado que los vectores <span class="process-math">\((-1, 1)^{\rm t}\)</span> y <span class="process-math">\((-1, -1)^{\rm t}\)</span> (Figura <a href="" class="xref" data-knowl="./knowl/figure-lattice.html" title="Figura 12.2.7">12.2.7</a>). Pero, cualquier reticulado está completamente determinado por una base. Dadas dos bases para el mismo reticulado, digamos <span class="process-math">\(\{ {\mathbf x}_1, {\mathbf x}_2 \}\)</span> y <span class="process-math">\(\{ {\mathbf y}_1, {\mathbf y}_2 \}\text{,}\)</span> podemos escribir</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/figure-lattice.html">
-\begin{align*}
-{\mathbf y}_1 &amp; = \alpha_1  {\mathbf x}_1 + \alpha_2 {\mathbf x}_2\\
-{\mathbf y}_2 &amp; = \beta_1  {\mathbf x}_1 + \beta_2 {\mathbf x}_2,
-\end{align*}
-</div>
-<div class="para">donde <span class="process-math">\(\alpha_1\text{,}\)</span> <span class="process-math">\(\alpha_2\text{,}\)</span> <span class="process-math">\(\beta_1\text{,}\)</span> y <span class="process-math">\(\beta_2\)</span> son enteros. La matriz correspondiente a esta transformación es</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/figure-lattice.html">
-\begin{equation*}
-U
-=
-\begin{pmatrix}
-\alpha_1 &amp; \alpha_2 \\
-\beta_1 &amp; \beta_2
-\end{pmatrix}.
-\end{equation*}
-</div>
-<div class="para">Si queremos expresar <span class="process-math">\({\mathbf x}_1\)</span> y <span class="process-math">\({\mathbf x}_2\)</span> en términos de <span class="process-math">\({\mathbf y}_1\)</span> e <span class="process-math">\({\mathbf y}_2\text{,}\)</span> solo debemos calcular <span class="process-math">\(U^{-1}\text{;}\)</span> es decir,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/figure-lattice.html">
-\begin{equation*}
-U^{-1}
-\begin{pmatrix}
-{\mathbf y}_1 \\ {\mathbf y}_2
-\end{pmatrix}
-=
-\begin{pmatrix}
-{\mathbf x}_1 \\ {\mathbf x}_2
-\end{pmatrix}.
-\end{equation*}
-</div>
-<div class="para">Como <span class="process-math">\(U\)</span> tiene coeficientes enteros, <span class="process-math">\(U^{-1}\)</span> también debe tener coeficientes enteros; luego los determinantes de <span class="process-math">\(U\)</span> y <span class="process-math">\(U^{-1}\)</span> deben ser enteros. Como <span class="process-math">\(U U^{-1} = I\text{,}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/figure-lattice.html">
-\begin{equation*}
-\det(U U^{-1}) =\det(U) \det( U^{-1}) = 1;
-\end{equation*}
-</div>
-<div class="para">de manera que, <span class="process-math">\(\det(U) = \pm 1\text{.}\)</span> Una matriz con determinante <span class="process-math">\(\pm 1\)</span> y coeficientes enteros se llama <dfn class="terminology">unimodular</dfn>. Por ejemplo, la matriz</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/figure-lattice.html">
-\begin{equation*}
-\begin{pmatrix}
-3 &amp; 1 \\
-5 &amp; 2
-\end{pmatrix}
-\end{equation*}
-</div>
-<div class="para">es unimodular. Debería ser claro que hay una longitud mínima para los vectores en un reticulado.</div>
-</div>
-<span class="incontext"><a href="section-symmetry.html#p-1869" class="internal">en contexto</a></span>
+<div class="para">Considere dos grupos de permutaciones.  El primero es el subgrupo de <span class="process-math">\(S_7\)</span> generado por <span class="process-math">\((1, 2, 3)\)</span> y <span class="process-math">\((4, 5, 6, 7)\text{.}\)</span>  El segundo es el subgrupo de  <span class="process-math">\(S_{12}\)</span> generado por <span class="process-math">\((1, 2, 3)(4, 5, 6)(7, 8, 9)(10, 11, 12)\)</span> y <span class="process-math">\((1, 10, 7, 4)(2, 11, 8, 5)(3, 12, 9, 6)\text{.}\)</span>  Construya estos dos grupos y use el comando Sage apropiado para ver que son isomorfos.  Después construya un homomorfismo entre estos dos grupos que sea un isomorfismo e incluya suficientes detalles para verificar que la función es realmente un isomorfismo.</div>
+<span class="incontext"><a href="homomorph-sage-exercises.html#nrA" class="internal">en contexto</a></span>
 </body>
 </html>

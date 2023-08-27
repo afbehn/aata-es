@@ -11,27 +11,29 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Párrafo</span></h5>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Sea <span class="process-math">\(E\)</span>  una extensión de cuerpos de <span class="process-math">\(F\text{.}\)</span> Entonces las siguientes afirmaciones son equivalentes.</div>
-<ol class="decimal">
-<li><div class="para">
-<span class="process-math">\(E\)</span> es una extensión finita de <span class="process-math">\(F\text{.}\)</span>
-</div></li>
-<li><div class="para">Existe un número finito de elementos algebraicos <span class="process-math">\(\alpha_1,  \ldots, \alpha_n \in E\)</span> tales que  <span class="process-math">\(E = F(\alpha_1, \ldots, \alpha_n)\text{.}\)</span>
-</div></li>
-<li><div class="para logical">
-<div class="para">Existe una sucesión de cuerpos</div>
+<div class="para">Sean <span class="process-math">\(V\)</span> y <span class="process-math">\(W\)</span> espacio s vectoriales sobre un cuerpo <span class="process-math">\(F\text{,}\)</span> de dimensiones <span class="process-math">\(m\)</span> y <span class="process-math">\(n\text{,}\)</span> respectivamente. Si <span class="process-math">\(T: V \rightarrow W\)</span> es una función que satisface</div>
 <div class="displaymath process-math">
-\begin{equation*}
-E = F(\alpha_1, \ldots, \alpha_n) \supset F(\alpha_1, \ldots, \alpha_{n-1} ) \supset \cdots \supset F( \alpha_1 ) \supset F,
-\end{equation*}
+\begin{align*}
+T( u+ v ) &amp; =  T(u ) + T(v)\\
+T( \alpha v ) &amp; =  \alpha T(v)
+\end{align*}
 </div>
-<div class="para">donde cada cuerpo <span class="process-math">\(F(\alpha_1, \ldots, \alpha_i)\)</span> es algebraico sobre <span class="process-math">\(F(\alpha_1, \ldots, \alpha_{i-1})\text{.}\)</span>
+<div class="para">para todo <span class="process-math">\(\alpha \in F\)</span> y para todo <span class="process-math">\(u, v \in V\text{,}\)</span> entonces <span class="process-math">\(T\)</span> es una <dfn class="terminology">transformación lineal</dfn> de <span class="process-math">\(V\)</span> en <span class="process-math">\(W\text{.}\)</span>
 </div>
+<ol class="lower-alpha">
+<li><div class="para">Demuestre que el <dfn class="terminology">núcleo</dfn> de <span class="process-math">\(T\text{,}\)</span> <span class="process-math">\(\ker(T) = \{ v \in V : T(v) = {\mathbf 0} \}\text{,}\)</span> es un subespacio de <span class="process-math">\(V\text{.}\)</span> El núcleo de <span class="process-math">\(T\)</span> también se llama <dfn class="terminology">espacio nulo</dfn> de <span class="process-math">\(T\text{.}\)</span>
 </div></li>
+<li><div class="para">Demuestre que el <dfn class="terminology">rango</dfn> o <dfn class="terminology">imagen</dfn> de <span class="process-math">\(T\text{,}\)</span> <span class="process-math">\(R(V) = \{ w \in W : T(v) = w \text{ for some } v \in V \}\text{,}\)</span> es un subespacio de <span class="process-math">\(W\text{.}\)</span>
+</div></li>
+<li><div class="para">Muestre que <span class="process-math">\(T : V \rightarrow W\)</span> es inyectiva si y solo si <span class="process-math">\(\ker(T) = \{ \mathbf 0 \}\text{.}\)</span>
+</div></li>
+<li><div class="para">Sea <span class="process-math">\(\{ v_1, \ldots, v_k \}\)</span> una base para el espacio nulo de <span class="process-math">\(T\text{.}\)</span> Podemos extender esta base a una base <span class="process-math">\(\{ v_1, \ldots, v_k, v_{k + 1}, \ldots, v_m\}\)</span> de <span class="process-math">\(V\text{.}\)</span> ¿Por qué?  Demuestre que <span class="process-math">\(\{ T(v_{k + 1}), \ldots, T(v_m) \}\)</span> es una base para el rango de <span class="process-math">\(T\text{.}\)</span> Concluya que el rango de <span class="process-math">\(T\)</span> tiene dimensión <span class="process-math">\(m-k\text{.}\)</span>
+</div></li>
+<li><div class="para">Supongamos que <span class="process-math">\(\dim V = \dim W\text{.}\)</span>  Muestre que una transformación lineal <span class="process-math">\(T : V \rightarrow W\)</span> es inyectiva si y solo si es epiyectiva.</div></li>
 </ol>
 </div>
-<span class="incontext"><a href="section-extension-fields.html#p-3264" class="internal">en contexto</a></span>
+<span class="incontext"><a href="vect-exercises.html#PHo" class="internal">en contexto</a></span>
 </body>
 </html>

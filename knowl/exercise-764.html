@@ -12,8 +12,44 @@
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span>
 </h3>
-<div class="para">El Corolario <a href="" class="xref" data-knowl="./knowl/corollary-cyclic-group-finite-field.html" title="Corolario 22.1.11">22.1.11</a> dice que los elementos distintos de cero de un cuerpo finito forman un grupo cíclico con la multiplicación.  El generador usado en Sage es también un generador de este grupo multiplicativo.  Para ver esto, cree un cuerpo finito de orden <span class="process-math">\(2^7\text{.}\)</span>  Cree dos listas de los elementos del cuerpo: primero, use el método <code class="code-inline tex2jax_ignore">.list()</code>, luego use una lista por comprensión para generar las potencias del generador especificado en la creación del cuerpo.</div> <div class="para">A la segunda lista le faltará el cero para ser el cuerpo completo. Cree el elemento 0 del cuerpo (quizás coercionando <span class="process-math">\(0\)</span> para que pertenezca al cuerpo) y agréguelo a la lista de potencias usando <code class="code-inline tex2jax_ignore">.append()</code>.  Use el comando <code class="code-inline tex2jax_ignore">sorted()</code> con cada una de las listas y verifique la igualdad.</div></article><span class="incontext"><a href="finite-sage-exercises.html#exercise-764" class="internal">en contexto</a></span>
+<div class="para">Una <dfn class="terminology">Función Booleana</dfn> o <dfn class="terminology">función de conmutación en <span class="process-math">\(n\)</span> variables</dfn> es una función <span class="process-math">\(f : \{O, I\}^n \rightarrow \{ 0, I\}\text{.}\)</span> Un polinomio Booleano es un tipo especial de función Booleana: es cualquier tipo de expresión Booleana formada por una combinación finita de variables <span class="process-math">\(x_1, \ldots, x_n\)</span> junto a <span class="process-math">\(O\)</span> y <span class="process-math">\(I\text{,}\)</span> usando las operaciones <span class="process-math">\(\vee\text{,}\)</span> <span class="process-math">\(\wedge\text{,}\)</span> y <span class="process-math">\('\text{.}\)</span> Los valores de las funciones están definidos en la <a href="" class="xref" data-knowl="./knowl/table-boolean-polynomials.html" title="Cuadro 19.6.1: Boolean polynomials">Cuadro 19.6.1</a>. Escriba un programa para evaluar polinomios Booleanos.</div> <figure class="table table-like"><figcaption><span class="type">Cuadro</span><span class="space"> </span><span class="codenumber">19.6.1<span class="period">.</span></span><span class="space"> </span>Boolean polynomials</figcaption><div class="tabular-box natural-width"><table class="tabular" id="Uvl">
+<tr>
+<td class="c m b2 r0 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(y\)</span></td>
+<td class="c m b2 r0 l0 t2 lines"><span class="process-math">\(x'\)</span></td>
+<td class="c m b2 r0 l0 t2 lines"><span class="process-math">\(x \vee y\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(x \wedge y\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l2 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r2 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r2 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l2 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r2 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r2 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l2 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r2 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r2 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l2 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+</tr>
+</table></div></figure></article><span class="incontext"><a href="boolean-exercises-programming.html#exercise-764" class="internal">en contexto</a></span>
 </body>
 </html>

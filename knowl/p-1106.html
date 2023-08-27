@@ -11,28 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Párrafo</span></h3>
-<div class="para logical">
-<div class="para">Investigemos un criptosistema ligeramente más sofisticado. Supongamos que la función encriptadora está dada por</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/proposition-zn-equiv-classes.html">
-\begin{equation*}
-f(p) = ap + b \bmod 26.
-\end{equation*}
-</div>
-<div class="para">Primero debemos determinar cuándo existe una función decriptadora <span class="process-math">\(f^{-1}\text{.}\)</span> Tal función existe cuando podemos resolver la ecuación</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/proposition-zn-equiv-classes.html">
-\begin{equation*}
-c = ap + b \bmod 26
-\end{equation*}
-</div>
-<div class="para">en <span class="process-math">\(p\text{.}\)</span> Por la Proposición <a href="" class="xref" data-knowl="./knowl/proposition-zn-equiv-classes.html" title="Proposición 3.1.4">3.1.4</a>, esto es posible precisamente cuando <span class="process-math">\(a\)</span> tiene inverso, es decir cuando <span class="process-math">\(\gcd( a, 26) =1\text{.}\)</span> En este caso</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/proposition-zn-equiv-classes.html">
-\begin{equation*}
-f^{-1}(p) = a^{-1} p - a^{-1} b \bmod 26.
-\end{equation*}
-</div>
-<div class="para">Un criptosistema de este tipo se denomina <dfn class="terminology">criptosistema afín</dfn>.</div>
-</div>
-<span class="incontext"><a href="section-private-key-crypt.html#p-1106" class="internal">en contexto</a></span>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para">Sage puede calcular todos los subgrupos de un grupo.  Esto puede producir una respuesta aún más larga que el método de clases laterales y puede ser mucho más lento, dependiendo de la estructura del grupo.  La lista está ordenada según el tamaño de los subgrupos, con los más pequeños primero.  Como una demostración, calcularemos primero una lista de todos los subgrupos de un grupo pequeño, y luego extraeremos uno de estos subgrupos de la lista para estudio posterior.</div>
+<span class="incontext"><a href="cosets-sage.html#LBy" class="internal">en contexto</a></span>
 </body>
 </html>

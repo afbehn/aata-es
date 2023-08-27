@@ -11,8 +11,38 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Párrafo</span></h3>
-<div class="para">Otro tipo especial de grupo de permutaciones es el de los grupos dihedrales. Recordemos el grupo de las simetrías del triángulo equilátero en el Capítulo <a href="groups.html" class="internal" title="Capítulo 3: Grupos">3</a>. Tales grupos consisten de los movimientos rígidos de un polígono regular de <span class="process-math">\(n\)</span> lados o <span class="process-math">\(n\)</span>-ágono regular. Para <span class="process-math">\(n = 3, 4, \ldots\text{,}\)</span> definimos el <dfn class="terminology">n-ésimo grupo dihedral</dfn> como el grupo de los movimientos rígidos de n <span class="process-math">\(n\)</span>-ágono regular.  Denotaremos este grupo por  <span class="process-math">\(D_n\text{.}\)</span>   Podemos numerar los vértices de un <span class="process-math">\(n\)</span>-ágono regular con <span class="process-math">\(1, 2, \ldots, n\)</span> (Figura <a href="" class="xref" data-knowl="./knowl/figure-regular.html" title="Figura 5.2.1">5.2.1</a>).  Note que hay exactamente <span class="process-math">\(n\)</span> posibilidades para reemplazar al primer vértice.  Si reemplazamos al primer vértice por <span class="process-math">\(k\text{,}\)</span> entonces el segundo vértice debe ser reemplazado por el vértice <span class="process-math">\(k+1\)</span> o por el vértice <span class="process-math">\(k-1\text{;}\)</span> luego, hay <span class="process-math">\(2n\)</span> movimientos rígidos posibles del <span class="process-math">\(n\)</span>-ágono.  Resumimos estos resultados en el siguiente teorema.</div>
-<span class="incontext"><a href="section-dihedral-groups.html#p-826" class="internal">en contexto</a></span>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
+<div class="para logical">
+<div class="para">Sea <span class="process-math">\(\sigma = (a_1, a_2, \ldots, a_k )\)</span> y <span class="process-math">\(\tau = (b_1, b_2, \ldots, b_l )\text{.}\)</span> Debemos mostrar que <span class="process-math">\(\sigma \tau(x) = \tau \sigma(x)\)</span> para todo <span class="process-math">\(x \in X\text{.}\)</span> Si <span class="process-math">\(x\)</span> no está en <span class="process-math">\(\{ a_1, a_2, \ldots, a_k \}\)</span> ni en <span class="process-math">\(\{b_1, b_2, \ldots, b_l  \}\text{,}\)</span> entonces tanto <span class="process-math">\(\sigma\)</span> como <span class="process-math">\(\tau\)</span> fijan <span class="process-math">\(x\text{.}\)</span> Es decir, <span class="process-math">\(\sigma(x)=x\)</span> y <span class="process-math">\(\tau(x)=x\text{.}\)</span> Luego,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sigma \tau(x) = \sigma( \tau(x)) = \sigma(x) = x = \tau(x) = \tau( \sigma(x)) =  \tau \sigma(x)\text{.}
+\end{equation*}
+</div>
+<div class="para">
+<em class="emphasis">No debemos olvidar que estamos multiplicando las permutaciones de derecha a izquierda,.</em>  Ahora supongamos que <span class="process-math">\(x \in \{ a_1, a_2, \ldots, a_k \}\text{.}\)</span> Entonces <span class="process-math">\(\sigma( a_i ) = a_{(i \bmod k) + 1}\text{;}\)</span> es decir,</div>
+<div class="displaymath process-math">
+\begin{align*}
+a_1 &amp; \mapsto  a_2\\
+a_2 &amp; \mapsto  a_3\\
+&amp; \vdots\\
+a_{k-1} &amp; \mapsto  a_k\\
+a_k &amp; \mapsto  a_1\text{.}
+\end{align*}
+</div>
+<div class="para">Pero, <span class="process-math">\(\tau(a_i) = a_i\)</span> pues <span class="process-math">\(\sigma\)</span> y <span class="process-math">\(\tau\)</span> son disjuntos. Por lo tanto,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\sigma \tau(a_i) &amp; = \sigma( \tau(a_i))\\
+&amp; = \sigma(a_i)\\
+&amp; = a_{(i \bmod k)+1}\\
+&amp; = \tau( a_{(i \bmod k)+1} )\\
+&amp; = \tau( \sigma(a_i) )\\
+&amp; = \tau \sigma(a_i)\text{.}
+\end{align*}
+</div>
+<div class="para">Similarmente, si <span class="process-math">\(x \in \{b_1, b_2, \ldots, b_l  \}\text{,}\)</span> entonces <span class="process-math">\(\sigma\)</span> y <span class="process-math">\(\tau\)</span> también conmutan.</div>
+</div>
+<span class="incontext"><a href="permute-section-permutation-definitions.html#qrk" class="internal">en contexto</a></span>
 </body>
 </html>

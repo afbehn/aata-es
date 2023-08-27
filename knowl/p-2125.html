@@ -11,8 +11,30 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">¿De cuántas formas es posible colorear los ocho vértices de un cubo usando tres colores?</div>
-<span class="incontext"><a href="exercises-actions.html#p-2125" class="internal">en contexto</a></span>
+<h3 class="heading"><span class="type">Párrafo</span></h3>
+<div class="para logical">
+<div class="para">Ahora consideremos el caso especial en el que <span class="process-math">\(G\)</span> actúa en sí mismo por conjugación, <span class="process-math">\((g,x) \mapsto gxg^{-1}\text{.}\)</span> El <dfn class="terminology">centro</dfn> de <span class="process-math">\(G\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/actions-theorem-orbit.html">
+\begin{equation*}
+Z(G) = \{x : xg = gx \text{ para todo } g \in G \}
+\end{equation*}
+</div>
+<div class="para">es el conjunto de puntos que quedan fijos por conjugación. La órbitas de la acción se llaman <dfn class="terminology">clases de conjugación</dfn> de <span class="process-math">\(G\text{.}\)</span> Si <span class="process-math">\(x_1, \ldots, x_k\)</span> son representantes de cada una de las clases de conjugación no-triviales de <span class="process-math">\(G\)</span> y <span class="process-math">\(|{\mathcal O}_{x_1}| = n_1, \ldots, |{\mathcal O}_{x_k}| = n_k\text{,}\)</span> entonces</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/actions-theorem-orbit.html">
+\begin{equation*}
+|G| = |Z(G)| + n_1 + \cdots + n_k
+\end{equation*}
+</div>
+<div class="para">Cada uno de los subgrupos estabilizadores de uno de los <span class="process-math">\(x_i\text{,}\)</span> <span class="process-math">\(C(x_i) = \{ g \in G: g x_i = x_i g \}\text{,}\)</span> se llama <dfn class="terminology">subgrupos centralizadores</dfn>de <span class="process-math">\(x_i\text{.}\)</span> Por el <a href="" class="xref" data-knowl="./knowl/actions-theorem-orbit.html" title="Teorema 14.1.11">Teorema 14.1.11</a>, obtenemos la <dfn class="terminology">ecuación de clase</dfn>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/actions-theorem-orbit.html">
+\begin{equation*}
+|G| = |Z(G)| + [G: C(x_1) ] + \cdots + [ G: C(x_k)]
+\end{equation*}
+</div>
+<div class="para">Una de las consecuencias de la ecuación de clase es que el orden de cada clase de conjugación divide al orden de <span class="process-math">\(G\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="actions-section-class-equation.html#cwJ" class="internal">en contexto</a></span>
 </body>
 </html>

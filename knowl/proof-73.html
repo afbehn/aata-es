@@ -12,7 +12,40 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
-<div class="para">Sea <span class="process-math">\(N\)</span> un subgrupo normal no trivial de <span class="process-math">\(A_n\text{.}\)</span> Por el Lema <a href="" class="xref" data-knowl="./knowl/lemma-3-normal-3cycle.html" title="Lema 10.2.3">10.2.3</a>, <span class="process-math">\(N\)</span> contiene un 3-ciclo. Por el Lema <a href="" class="xref" data-knowl="./knowl/lemma-2-normal-3cycle.html" title="Lema 10.2.2">10.2.2</a>, <span class="process-math">\(N = A_n\text{;}\)</span> por lo tanto, <span class="process-math">\(A_n\)</span> no contiene ningún subgrupo normal que sea propio y no trivial para <span class="process-math">\(n \geq 5\text{.}\)</span>
-</div></article><span class="incontext"><a href="section-simplicity-of-an.html#proof-73" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">(1) Supongamos que <span class="process-math">\(e\)</span> y <span class="process-math">\(e'\)</span> son las identidades de <span class="process-math">\(G_1\)</span> y <span class="process-math">\(G_2\text{,}\)</span> respectivamente; entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e' \phi(e) = \phi(e) = \phi(e e) = \phi(e) \phi(e)\text{.}
+\end{equation*}
+</div>
+<div class="para">Por cancelación, <span class="process-math">\(\phi(e) = e'\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">(2) Es consecuencia del hecho que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi( g^{-1}) \phi(g) = \phi(g^{-1} g) = \phi(e) = e'\text{.}
+\end{equation*}
+</div>
+</div>  <div class="para logical">
+<div class="para">(3) El conjunto <span class="process-math">\(\phi(H_1)\)</span> es no vacío pues la identidad de <span class="process-math">\(G_2\)</span> está en <span class="process-math">\(\phi(H_1)\text{.}\)</span> Supongamos que <span class="process-math">\(H_1\)</span> es un subgrupo de <span class="process-math">\(G_1\)</span> y sean <span class="process-math">\(x\)</span> e <span class="process-math">\(y\)</span> en <span class="process-math">\(\phi(H_1)\text{.}\)</span> Existen elementos <span class="process-math">\(a, b \in H_1\)</span> tales que <span class="process-math">\(\phi(a) = x\)</span> y <span class="process-math">\(\phi(b)=y\text{.}\)</span> Como</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/groups-proposition-subgroup.html">
+\begin{equation*}
+xy^{-1} = \phi(a)[ \phi(b)]^{-1} = \phi(a b^{-1} ) \in \phi(H_1)\text{,}
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\(\phi(H_1)\)</span> es un subgrupo de <span class="process-math">\(G_2\)</span> por la <a href="" class="xref" data-knowl="./knowl/groups-proposition-subgroup.html" title="Proposición 3.3.8">Proposición 3.3.8</a>.</div>
+</div>   <div class="para logical">
+<div class="para">(4) Sea <span class="process-math">\(H_2\)</span> un subgrupo de <span class="process-math">\(G_2\)</span> y defina <span class="process-math">\(H_1\)</span> como <span class="process-math">\(\phi^{-1}(H_2)\text{;}\)</span> es decir, <span class="process-math">\(H_1\)</span> es el conjunto de todos los <span class="process-math">\(g \in G_1\)</span> tales que <span class="process-math">\(\phi(g) \in H_2\text{.}\)</span>  La identidad está en <span class="process-math">\(H_1\)</span> pues <span class="process-math">\(\phi(e) = e'\text{.}\)</span> Si <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> están en <span class="process-math">\(H_1\text{,}\)</span> entonces <span class="process-math">\(\phi(ab^{-1}) = \phi(a)[ \phi(b) ]^{-1}\)</span> está en <span class="process-math">\(H_2\)</span> pues <span class="process-math">\(H_2\)</span> es un subgrupo de <span class="process-math">\(G_2\text{.}\)</span>  Por lo tanto, <span class="process-math">\(ab^{-1} \in H_1\)</span> y <span class="process-math">\(H_1\)</span> es un subgrupo de <span class="process-math">\(G_1\text{.}\)</span> Si <span class="process-math">\(H_2\)</span> es normal en <span class="process-math">\(G_2\text{,}\)</span> debemos probar que <span class="process-math">\(g^{-1} h g \in H_1\)</span> para <span class="process-math">\(h \in H_1\)</span> y <span class="process-math">\(g \in G_1\text{.}\)</span> Pero</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi( g^{-1} h g) = [ \phi(g) ]^{-1} \phi( h ) \phi( g ) \in H_2\text{,}
+\end{equation*}
+</div>
+<div class="para">pues <span class="process-math">\(H_2\)</span> es un subgrupo normal de <span class="process-math">\(G_2\text{.}\)</span>  Por lo tanto, <span class="process-math">\(g^{-1}hg \in H_1\text{.}\)</span>
+</div>
+</div></article><span class="incontext"><a href="homomorph-section-group-homomorphisms.html#fkl" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -14,6 +14,37 @@
 <article class="exercise exercise-like"><h3 class="heading">
 <span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span>
 </h3>
-<div class="para">El segundo párrafo de este capítulo describe informalmente un homomorfismo de  <span class="process-math">\(S_n\)</span> a <span class="process-math">\({\mathbb Z}_2\text{,}\)</span> donde las permutaciones pares se envían todas en uno de los elementos y las impares en el otro elemento.  Reemplace <span class="process-math">\(S_n\)</span> por <span class="process-math">\(S_6\)</span> y reemplace <span class="process-math">\({\mathbb Z}_2\)</span> por la versión permutacional del grupo cíclico de orden  <span class="process-math">\(2\text{,}\)</span> y construya un homomorfismo no trivial entre estos dos grupos.  Evalúe su homomorfismo en suficientes permutaciones pares e impares para convencerse de que está correcto.  Después construya el núcleo y verifique que es el grupo que espera que sea.</div> <div class="para">Hints:  Primero, decida que elementos del grupo de orden  <span class="process-math">\(2\)</span> estará asociado con las permutaciones pares y cuál con las impares.  Examine los generadores de  <span class="process-math">\(S_6\)</span> para ayudarle a decidir como definir el homomorfismo.</div></article><span class="incontext"><a href="homomorph-sage-exercises.html#exercise-421" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Sea <span class="process-math">\(T\)</span> el grupo de matrices triangulares superiores no singulares de <span class="process-math">\(2 \times 2\)</span> con coeficientes en <span class="process-math">\({\mathbb R}\text{;}\)</span> es decir, matrices de la forma</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{pmatrix}
+a &amp; b \\
+0 &amp; c
+\end{pmatrix}\text{,}
+\end{equation*}
+</div>
+<div class="para">donde <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c \in {\mathbb R}\)</span> y <span class="process-math">\(ac \neq 0\text{.}\)</span> Sea <span class="process-math">\(U\)</span> el conjunto de matrices de la forma</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{pmatrix}
+1 &amp; x \\
+0 &amp; 1
+\end{pmatrix}\text{,}
+\end{equation*}
+</div>
+<div class="para">donde <span class="process-math">\(x \in {\mathbb R}\text{.}\)</span>
+</div>
+<ol class="lower-alpha">
+<li><div class="para">Muestre que <span class="process-math">\(U\)</span> es un subgrupo de <span class="process-math">\(T\text{.}\)</span>
+</div></li>
+<li><div class="para">Demuestre que <span class="process-math">\(U\)</span> es abeliano.</div></li>
+<li><div class="para">Demuestre que <span class="process-math">\(U\)</span> es normal en <span class="process-math">\(T\text{.}\)</span>
+</div></li>
+<li><div class="para">Muestre que <span class="process-math">\(T/U\)</span> es abeliano.</div></li>
+<li><div class="para">¿Es <span class="process-math">\(T\)</span> normal en <span class="process-math">\(GL_2( {\mathbb R})\text{?}\)</span>
+</div></li>
+</ol>
+</div></article><span class="incontext"><a href="normal-exercises.html#exercise-421" class="internal">en contexto</a></span>
 </body>
 </html>

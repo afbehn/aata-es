@@ -11,9 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Párrafo</span></h5>
-<div class="para">No todo grupo puede ser escrito como el producto directo interno de dos subgrupos propios.  Si el grupo  <span class="process-math">\(S_3\)</span> fuese un producto directo interno de subgrupos propios <span class="process-math">\(H\)</span> y <span class="process-math">\(K\text{,}\)</span> entonces uno de ellos, digamos <span class="process-math">\(H\text{,}\)</span> tendría que tener orden 3. En ese caso <span class="process-math">\(H\)</span> es el subgrupo <span class="process-math">\(\{ (1), (123), (132) \}\text{.}\)</span> El subgrupo <span class="process-math">\(K\)</span> tiene que tener orden 2 pero sin importar cuál subgrupo escojamos como <span class="process-math">\(K\text{,}\)</span> la condición de que <span class="process-math">\(hk = kh\)</span> nunca se cumplirá para <span class="process-math">\(h \in H\)</span> y <span class="process-math">\(k \in K\text{.}\)</span>
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para logical">
+<div class="para">Sea <span class="process-math">\(G\)</span> un grupo cíclico de orden infinito y supongamos que <span class="process-math">\(a\)</span> es un generador de <span class="process-math">\(G\text{.}\)</span>  Definamos la función <span class="process-math">\(\phi : {\mathbb Z} \rightarrow  G\)</span> como <span class="process-math">\(\phi : n \mapsto a^n\text{.}\)</span> Entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi( m+n ) = a^{m+n} = a^m a^n = \phi( m ) \phi( n )\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="section-direct-products.html#p-1475" class="internal">en contexto</a></span>
+<div class="para">Para mostrar que <span class="process-math">\(\phi\)</span> es inyectiva, supongamos que <span class="process-math">\(m\)</span> y <span class="process-math">\(n\)</span> son dos elementos en <span class="process-math">\({\mathbb Z}\text{,}\)</span> con <span class="process-math">\(m \neq n\text{.}\)</span>  Podemos suponer que <span class="process-math">\(m \gt n\text{.}\)</span>  Debemos mostrar que <span class="process-math">\(a^m \neq a^n\text{.}\)</span> Supongamos lo contrario; es decir, <span class="process-math">\(a^m = a^n\text{.}\)</span> En ese caso <span class="process-math">\(a^{m - n} = e\text{,}\)</span> con <span class="process-math">\(m - n \gt 0\text{,}\)</span> lo que contradice el hecho de que <span class="process-math">\(a\)</span> tiene orden infinito.  Nuestra función es sobreyectiva pues todo elemento en <span class="process-math">\(G\)</span> puede ser escrito como <span class="process-math">\(a^n\)</span> para algún entero <span class="process-math">\(n\)</span> y <span class="process-math">\(\phi(n) = a^n\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="isomorph-section-definitions.html#Ahi" class="internal">en contexto</a></span>
 </body>
 </html>

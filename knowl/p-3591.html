@@ -11,16 +11,30 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Párrafo</span></h3>
+<h5 class="heading"><span class="type">Párrafo</span></h5>
 <div class="para logical">
-<div class="para">Sea <span class="process-math">\(E\)</span> una extensión de cuerpos de <span class="process-math">\(F\text{.}\)</span>  Denotaremos el grupo de todos los automorfismos de <span class="process-math">\(E\)</span> como <span class="process-math">\(\aut(E)\text{.}\)</span>  Definimos el <dfn class="terminology">grupo de Galois</dfn> de <span class="process-math">\(E\)</span> sobre <span class="process-math">\(F\)</span> como el grupo de los automorfismos de <span class="process-math">\(E\)</span> que fijan todos los elementos de <span class="process-math">\(F\text{;}\)</span> es decir,</div>
-<div class="displaymath process-math">
+<div class="para">Si factorizamos <span class="process-math">\(x^7 - 1\)</span> en sus componentes irreducibles, tenemos</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-example-generator-63-code.html">
 \begin{equation*}
-G(E/F) = \{ \sigma \in \aut(E) : \sigma(\alpha) = \alpha \text{ para todo } \alpha \in F  \}.
+x^7 - 1 = (1 + x)(1 + x + x^3)(1+ x^2 + x^3)\text{.}
 \end{equation*}
 </div>
-<div class="para">Si <span class="process-math">\(f(x)\)</span> es un polinomio en <span class="process-math">\(F[x]\)</span> y <span class="process-math">\(E\)</span> es el cuerpo de descomposición de <span class="process-math">\(f(x)\)</span> sobre <span class="process-math">\(F\text{,}\)</span> entonces definimos el grupo de Galois de <span class="process-math">\(f(x)\)</span> como <span class="process-math">\(G(E/F)\text{.}\)</span> </div>
+<div class="para">Vemos que <span class="process-math">\(g(t) = (1 + t + t^3)\)</span> genera un ideal <span class="process-math">\(C\)</span> en <span class="process-math">\(R_7\text{.}\)</span>  Este es un código de bloque <span class="process-math">\((7, 4)\text{.}\)</span>  Como en el <a href="" class="xref" data-knowl="./knowl/finite-example-generator-63-code.html" title="Ejemplo 22.2.2">Ejemplo 22.2.2</a>, es fácil calcular una matriz generadora examinando qué le hace <span class="process-math">\(g(t)\)</span> a los polinomios 1, <span class="process-math">\(t\text{,}\)</span> <span class="process-math">\(t^2\text{,}\)</span> y <span class="process-math">\(t^3\text{.}\)</span>  Una matriz generadora para <span class="process-math">\(C\)</span> es</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-example-generator-63-code.html">
+\begin{equation*}
+G =
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{pmatrix}\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="section-field-automorphisms.html#p-3591" class="internal">en contexto</a></span>
+</div>
+<span class="incontext"><a href="finite-section-poly-codes.html#ETB" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -12,63 +12,18 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
-<div class="para logical">
-<div class="para">Si <span class="process-math">\(p(x)\)</span> tiene grado <span class="process-math">\(n\text{,}\)</span> entonces por el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-simple_extension.html" title="Teorema 21.1.13">21.1.13</a> podemos escribir cualquier elemento en <span class="process-math">\(E( \alpha )\)</span> como combinación lineal de <span class="process-math">\(1, \alpha, \ldots, \alpha^{n - 1}\text{.}\)</span> Por lo tanto, el isomorfismo que buscamos debe ser</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-simple_extension.html">
+<div class="para">Procederemos por inducción en el grado de <span class="process-math">\(p(x)\text{.}\)</span> Podemos suponer que  <span class="process-math">\(p(x)\)</span> es irreducible sobre <span class="process-math">\(E\text{.}\)</span> Por lo tanto, <span class="process-math">\(q(x)\)</span> también es irreducible sobre <span class="process-math">\(F\text{.}\)</span> Si <span class="process-math">\(\deg p(x) = 1\text{,}\)</span> entonces por la definición de cuerpo de descomposición, <span class="process-math">\(K = E\)</span> y <span class="process-math">\(L = F\)</span> y no hay nada que demostrar.</div> <div class="para">Supongamos que el teorema vale para todos los polinomios de grado menor a <span class="process-math">\(n\text{.}\)</span> Como <span class="process-math">\(K\)</span> es un cuerpo de descomposición para <span class="process-math">\(p(x)\text{,}\)</span> todas la raíces de <span class="process-math">\(p(x)\)</span> están en <span class="process-math">\(K\text{.}\)</span> Digamos que <span class="process-math">\(\alpha\)</span> es una de esas raíces, tal que <span class="process-math">\(E \subset E( \alpha ) \subset K\text{.}\)</span> De forma similar, podemos encontrar una raíz <span class="process-math">\(\beta\)</span> de <span class="process-math">\(q(x)\)</span> en <span class="process-math">\(L\)</span> tal que <span class="process-math">\(F \subset F( \beta) \subset L\text{.}\)</span> Por el <a href="" class="xref" data-knowl="./knowl/fields-lemma-field-isomorphism.html" title="Lema 21.2.4">Lema 21.2.4</a>, hay un isomorfismo <span class="process-math">\(\overline{\phi} : E(\alpha ) \rightarrow F( \beta)\)</span> tal que <span class="process-math">\(\overline{\phi}( \alpha ) = \beta\)</span> y <span class="process-math">\(\overline{\phi}\)</span> coincide con <span class="process-math">\(\phi\)</span> en <span class="process-math">\(E\)</span> (ver <a href="" class="xref" data-knowl="./knowl/fields-figure-splitting-fields-2.html" title="Figura 21.2.7">Figura 21.2.7</a>).</div>  <figure class="figure figure-like"><div class="para logical"><div class="displaymath process-math">
 \begin{equation*}
-\overline{\phi}( a_0 + a_1 \alpha + \cdots + a_{n - 1} \alpha^{n - 1}) = \phi(a_0) + \phi(a_1) \beta + \cdots + \phi(a_{n - 1}) \beta^{n - 1},
+\begin{CD}
+K  @&gt;\psi&gt;&gt;  L  \\
+@VV{\sigma}V        @VV{\tau}V\\
+E(\alpha)     @&gt;\overline{\phi}&gt;&gt;  F(\beta) \\
+@VVV        @VVV\\
+E     @&gt;\phi&gt;&gt;  F
+\end{CD}
 \end{equation*}
-</div>
-<div class="para">donde</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-simple_extension.html">
-\begin{equation*}
-a_0 + a_1 \alpha + \cdots + a_{n - 1} \alpha^{n - 1}
-\end{equation*}
-</div>
-<div class="para">es un elemento en <span class="process-math">\(E(\alpha)\text{.}\)</span> El hecho de que <span class="process-math">\(\overline{\phi}\)</span> sea un isomorfismo se podría verificar de forma directa; sin embargo, es más fácil notar que <span class="process-math">\(\overline{\phi}\)</span> es una composición de funciones que ya sabemos que son homomorfismos.</div>
-</div> <div class="para logical">
-<div class="para">Podemos extender <span class="process-math">\(\phi\)</span> a un isomorfismo de <span class="process-math">\(E[x]\)</span> a <span class="process-math">\(F[x]\text{,}\)</span> que también denotaremos por <span class="process-math">\(\phi\text{,}\)</span> haciendo</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/proposition-minimal-poly.html">
-\begin{equation*}
-\phi( a_0 + a_1 x + \cdots + a_n x^n ) =  \phi( a_0 ) + \phi(a_1) x + \cdots + \phi(a_n) x^n.
-\end{equation*}
-</div>
-<div class="para">Esta extensión coincide con el isomorfismo original <span class="process-math">\(\phi : E \rightarrow F\text{,}\)</span> pues los polinomios constantes son enviados a polinomios constantes.  Por hipótesis, <span class="process-math">\(\phi(p(x)) = q(x)\text{;}\)</span> luego, <span class="process-math">\(\phi\)</span> envía <span class="process-math">\(\langle p(x) \rangle\)</span> en <span class="process-math">\(\langle q(x) \rangle\text{.}\)</span> Por lo tanto, tenemos un isomorfismo <span class="process-math">\(\psi : E[x] / \langle p(x) \rangle \rightarrow F[x]/\langle q(x) \rangle\text{.}\)</span> Por la Proposición <a href="" class="xref" data-knowl="./knowl/proposition-minimal-poly.html" title="Proposición 21.1.12">21.1.12</a>, tenemos isomorfismos <span class="process-math">\(\sigma: E[x]/\langle p(x) \rangle \rightarrow E(\alpha)\)</span> y <span class="process-math">\(\tau : F[x]/\langle q(x) \rangle \rightarrow F( \beta )\text{,}\)</span> definidos por evaluación en <span class="process-math">\(\alpha\)</span> y <span class="process-math">\(\beta\text{,}\)</span> respectivamente. Por lo tanto, <span class="process-math">\(\overline{\phi} = \tau \psi \sigma^{-1}\)</span> es el isomorfismo requerido.</div>
-</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;">
-						
-							\begin{tikzpicture}[scale=0.8]
-
-							\draw [&lt;-] (0,0.5) -- (0,1.5);
-							\draw [&lt;-] (0,2.5) -- (0,3.5);
-
-
-							\draw [&lt;-] (4,0.5) -- (4,1.5);
-							\draw  [&lt;-] (4,2.5) -- (4,3.5);
-
-
-							\draw [-&gt;] (1.5,0) -- (2.5,0);
-							\draw [-&gt;] (1.5,2) -- (2.5,2);
-							\draw [-&gt;] (1.5,4) -- (2.5,4);
-
-
-							\node at (0,0)  {$E$};
-							\node at (4,0)  {$F$};
-
-							\node at (0,2)  {$E(\alpha)$};
-							\node at (4,2)  {$F(\beta)$};
-
-							\node at (0,4)  {$E[x] / \langle p(x) \rangle$};
-							\node at (4,4)  {$F[x]/\langle q(x) \rangle$};
-
-							\node [above] at (2,0) {$\phi$};
-							\node [above] at (2,2) {$\overline{\phi}$};
-							\node [above] at (2,4) {$\psi$};
-
-							\node [right] at (0,3) {$\sigma$};
-							\node [right] at (4,3) {$\tau$};
-
-							\end{tikzpicture}
-						
-					</div></div></div> <div class="para">Dejamos la demostración de la unicidad como ejercicio.</div></article><span class="incontext"><a href="section-splitting-fields.html#proof-174" class="internal">en contexto</a></span>
+</div></div>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">21.2.7<span class="period">.</span></span><span class="space"> </span>Diagrama conmutativo para <a href="" class="xref" data-knowl="./knowl/fields-theorem-isomorphism-extension.html" title="Teorema 21.2.6">Teorema 21.2.6</a></figcaption></figure> <div class="para">Escribamos ahora <span class="process-math">\(p(x) = (x - \alpha ) f(x)\)</span> y <span class="process-math">\(q(x) = ( x - \beta) g(x)\text{,}\)</span> donde los grados de  <span class="process-math">\(f(x)\)</span> y <span class="process-math">\(g(x)\)</span> son menores a los grados de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{,}\)</span> respectivamente. La extensión <span class="process-math">\(K\)</span> es un cuerpo de descomposición para <span class="process-math">\(f(x)\)</span> sobre <span class="process-math">\(E( \alpha)\text{,}\)</span> y <span class="process-math">\(L\)</span> es un cuerpo de descomposición para <span class="process-math">\(g(x)\)</span> sobre <span class="process-math">\(F( \beta )\text{.}\)</span> Por la hipótesis de inducción hay un isomorfismo  <span class="process-math">\(\psi : K \rightarrow L\)</span> tal que <span class="process-math">\(\psi\)</span> coincide con <span class="process-math">\(\overline{\phi}\)</span> en <span class="process-math">\(E( \alpha)\text{.}\)</span> Luego, hay un isomorfismo <span class="process-math">\(\psi : K \rightarrow L\)</span> tal que <span class="process-math">\(\psi\)</span> coincide con <span class="process-math">\(\phi\)</span> en <span class="process-math">\(E\text{.}\)</span>
+</div></article><span class="incontext"><a href="fields-section-splitting-fields.html#oWj" class="internal">en contexto</a></span>
 </body>
 </html>

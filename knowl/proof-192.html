@@ -12,7 +12,25 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
-<div class="para">Solo nos falta mostrar que el conjunto de automorfismos de <span class="process-math">\(E\)</span> que fijan cada elemento de <span class="process-math">\(F\)</span> es un subgrupo de todos los automorfismos de <span class="process-math">\(E\text{.}\)</span>  Sean <span class="process-math">\(\sigma\)</span> y <span class="process-math">\(\tau\)</span> dos automorfismos de <span class="process-math">\(E\)</span> tales que <span class="process-math">\(\sigma( \alpha ) = \alpha\)</span> y <span class="process-math">\(\tau( \alpha ) = \alpha\)</span> para todo <span class="process-math">\(\alpha \in F\text{.}\)</span>  Entonces <span class="process-math">\(\sigma \tau( \alpha ) = \sigma( \alpha) = \alpha\)</span> y  <span class="process-math">\(\sigma^{-1}( \alpha ) = \alpha\text{.}\)</span>  Como la identidad fija todo elemento de <span class="process-math">\(E\text{,}\)</span> el conjunto de los automorfismos de <span class="process-math">\(E\)</span> que deja fijos los elementos de  <span class="process-math">\(F\)</span> es un subgrupo del grupo de todos los automorfismos de <span class="process-math">\(E\text{.}\)</span>
-</div></article><span class="incontext"><a href="section-field-automorphisms.html#proof-192" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Sea</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n
+\end{equation*}
+</div>
+<div class="para">y supponga que <span class="process-math">\(\alpha \in E\)</span> es un cero de <span class="process-math">\(f(x)\text{.}\)</span> Entonces para <span class="process-math">\(\sigma \in G(E/F)\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+0 &amp; = \sigma( 0 )\\
+&amp; = \sigma( f( \alpha ))\\
+&amp; = \sigma(a_0 + a_1\alpha + a_2 \alpha^2 + \cdots + a_n \alpha^n)\\
+&amp; = a_0 + a_1 \sigma(\alpha) + a_2 [\sigma(\alpha)]^2 + \cdots + a_n [\sigma(\alpha)]^n;
+\end{align*}
+</div>
+<div class="para">por lo tanto, <span class="process-math">\(\sigma( \alpha )\)</span> también es un cero de <span class="process-math">\(f(x)\text{.}\)</span>
+</div>
+</div></article><span class="incontext"><a href="galois-section-field-automorphisms.html#VgS" class="internal">en contexto</a></span>
 </body>
 </html>

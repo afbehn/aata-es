@@ -14,11 +14,33 @@
 <article class="exercise exercise-like"><h3 class="heading">
 <span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span>
 </h3>
-<div class="para">Construya el código (binario) Golay con el constructor <code class="code-inline tex2jax_ignore">codes.GolayCode()</code>.  Lea la documentación para asegurarse de construir la versión binaria (y no la ternaria), y no construya la versión extendida (que es el default).</div> <ol class="lower-alpha">
-<li><div class="para">Use métodos Sage para calcular el largo, la dimensión y la distancia mínima del código.</div></li>
-<li><div class="para">¿Cuántos errores puede detectar este código?  ¿Cuántos puede corregir?</div></li>
-<li><div class="para">Encuentre una palabra distinta de cero en el código e introduzca tres errores sumando un vector con tres 1’s (de su elección) para crear un mensaje recibido.  Muestre que el mensaje se decodifica correctamente.</div></li>
-<li><div class="para">Recicle sus elecciones de la parte anterior, pero ahora agregue un error adicional.  ¿Se decodifica correctamente el mensaje recibido?</div></li>
-</ol></article><span class="incontext"><a href="algcodes-sage-exercises.html#exercise-306" class="internal">en contexto</a></span>
+<div class="para">Un mejor algoritmo para factorizar enteros positivos impares es el <dfn class="terminology">algoritmo de factorización de Fermat</dfn>.</div> <ol class="lower-alpha">
+<li><div class="para logical">
+<div class="para">Sea <span class="process-math">\(n= ab\)</span> un número impar compuesto. Demuestre que <span class="process-math">\(n\)</span> puede ser escrito como la diferencia de dos cuadrados perfectos:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n = x^2 - y^2 = (x - y)(x + y)\text{.}
+\end{equation*}
+</div>
+<div class="para">Por lo tanto, un entero positivo impar se puede factorizar si y solo si podemos encontrar enteros <span class="process-math">\(x\)</span> e <span class="process-math">\(y\)</span> tales que <span class="process-math">\(n = x^2 - y^2\text{.}\)</span>
+</div>
+</div></li>
+<li><div class="para">Escriba un programa para implementar el siguiente algoritmo de factorización basado en la observación en la parte (a).  La expresión <code class="code-inline tex2jax_ignore">ceiling(sqrt(n))</code> se refiere al menor entero que es mayor o igual a la raíz cuadrada de <span class="process-math">\(n\text{.}\)</span> Escriba otro programa que use intentos de división y compare la velocidad de los dos algoritmos. ¿Cuál de ellos es más rápido y por qué?</div></li>
+</ol> <figure class="listing figure-like"><div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">x := ceiling(sqrt(n))
+y := 1
+
+1 : while x^2 - y^2 &gt; n do
+  y := y + 1
+
+if x^2 - y^2 &lt; n then
+  x := x + 1
+  y := 1
+  goto 1
+else if x^2 - y^2 = 0 then
+  a := x - y
+  b := x + y
+  write n = a * b
+</code></pre></div>
+<figcaption><span class="type">Listado</span><span class="space"> </span><span class="codenumber">7.5.1<span class="period">.</span></span><span class="space"> </span>algoritmo en pseudo-código</figcaption></figure></article><span class="incontext"><a href="crypt-exercises-additional.html#exercise-306" class="internal">en contexto</a></span>
 </body>
 </html>

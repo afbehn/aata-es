@@ -10,6 +10,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para">Sea <span class="process-math">\(D\)</span> un dominio integral. Entonces <span class="process-math">\(D\)</span> no tiene divisores de cero.  Sea <span class="process-math">\(ab = ac\)</span> con <span class="process-math">\(a \neq 0\text{.}\)</span> Entonces <span class="process-math">\(a(b - c) =0\text{.}\)</span>  Luego, <span class="process-math">\(b - c = 0\)</span> y <span class="process-math">\(b = c\text{.}\)</span>
-</div> <div class="para">Recíprocamente, supongamos que la cancelación es posible en <span class="process-math">\(D\text{.}\)</span> Es decir, supongamos que <span class="process-math">\(ab = ac\)</span> implica <span class="process-math">\(b=c\text{.}\)</span> Sea <span class="process-math">\(ab = 0\text{.}\)</span>  Si <span class="process-math">\(a \neq 0\text{,}\)</span> entonces <span class="process-math">\(ab = a 0\)</span> o <span class="process-math">\(b=0\text{.}\)</span>  Por lo tanto, <span class="process-math">\(a\)</span> no puede ser un divisor de cero.</div></article></body>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">Sea <span class="process-math">\(D\)</span> un dominio integral finito y sea <span class="process-math">\(D^\ast\)</span> el conjunto de los elementos distintos de cero en <span class="process-math">\(D\text{.}\)</span>  Debemos mostrar que todo elemento en <span class="process-math">\(D^*\)</span> tiene un inverso. Para cada <span class="process-math">\(a \in D^\ast\)</span> podemos definir una función <span class="process-math">\(\lambda_a : D^\ast \rightarrow D^\ast\)</span> como <span class="process-math">\(\lambda_a(d) = ad\text{.}\)</span>  Esta función tiene sentido, pues si  <span class="process-math">\(a \neq 0\)</span> y <span class="process-math">\(d \neq 0\text{,}\)</span> entonces <span class="process-math">\(ad \neq 0\text{.}\)</span>  La función <span class="process-math">\(\lambda_a\)</span> es 1-1, pues para  <span class="process-math">\(d_1, d_2 \in D^*\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+ad_1 = \lambda_a(d_1) = \lambda_a(d_2) = ad_2
+\end{equation*}
+</div>
+<div class="para">implica <span class="process-math">\(d_1 = d_2\)</span> por cancelación a la izquierda. Como <span class="process-math">\(D^\ast\)</span> es un conjunto finito, la función <span class="process-math">\(\lambda_a\)</span> también debe ser sobre; luego, para algún <span class="process-math">\(d \in D^\ast\text{,}\)</span> <span class="process-math">\(\lambda_a(d) = ad = 1\text{.}\)</span> Por lo tanto, <span class="process-math">\(a\)</span> tiene inverso a la izquierda. Como <span class="process-math">\(D\)</span> es conmutativo, <span class="process-math">\(d\)</span> también es inverso a la derecha para <span class="process-math">\(a\text{.}\)</span> Concluimos que <span class="process-math">\(D\)</span> es un cuerpo.</div>
+</div></article></body>
 </html>

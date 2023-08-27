@@ -12,13 +12,9 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Demostración</span></h4>
-<div class="para logical">
-<div class="para">Definamos una función <span class="process-math">\(\psi:  H \times K \rightarrow G\)</span> como <span class="process-math">\(\psi(h,k)=hk\text{.}\)</span>  La operación de grupo se preserva pues</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\psi(h_1h_2,k_1k_2)=h_1h_2k_1k_2=h_1k_1h_2k_2=\psi(h_1,k_1)\psi(h_2,k_2)
-\end{equation*}
-</div>
-</div> <div class="para">Para verificar que <span class="process-math">\(\psi\)</span> es 1-1, supongamos que <span class="process-math">\(hk=h'k'\text{.}\)</span> Entonces <span class="process-math">\(h^{-1} h'= k (k')^{-1}\)</span> está tanto en <span class="process-math">\(H\)</span> como en <span class="process-math">\(K\text{,}\)</span> así es que debe ser la identidad. Por lo tanto, <span class="process-math">\(h = h'\)</span> y <span class="process-math">\(k = k'\text{,}\)</span> lo que demuestra que <span class="process-math">\(\psi\)</span> es 1-1.</div> <div class="para">La sobreyectividad es consecuencia inmediata de la definición del producto directo interno.</div></article><span class="incontext"><a href="section-direct-products.html#proof-67" class="internal">en contexto</a></span>
+<div class="para">(1) <span class="process-math">\(\Rightarrow\)</span> (2). Como <span class="process-math">\(N\)</span> es normal en <span class="process-math">\(G\text{,}\)</span> <span class="process-math">\(gN = Ng\)</span> para todo <span class="process-math">\(g \in G\text{.}\)</span> Luego, para un  <span class="process-math">\(g \in G\)</span> dado y para <span class="process-math">\(n \in N\text{,}\)</span> existe <span class="process-math">\(n'\)</span> en <span class="process-math">\(N\)</span> tal que <span class="process-math">\(g n = n' g\text{.}\)</span> Por lo tanto, <span class="process-math">\(gng^{-1} = n' \in N\)</span> y <span class="process-math">\(gNg^{-1} \subset N\text{.}\)</span>
+</div> <div class="para">(2)  <span class="process-math">\(\Rightarrow\)</span> (3).  Sea <span class="process-math">\(g \in G\text{.}\)</span> Como <span class="process-math">\(gNg^{-1} \subset N\text{,}\)</span> solo debemos demostrar que <span class="process-math">\(N \subset gNg^{-1}\text{.}\)</span> Para <span class="process-math">\(n \in N\text{,}\)</span>  <span class="process-math">\(g^{-1}ng=g^{-1}n(g^{-1})^{-1} \in N\text{.}\)</span>  Luego, <span class="process-math">\(g^{-1}ng = n'\)</span> para algún <span class="process-math">\(n' \in N\text{.}\)</span> Por lo tanto, <span class="process-math">\(n = g n' g^{-1}\)</span> está en <span class="process-math">\(g N g^{-1}\text{.}\)</span>
+</div> <div class="para">(3) <span class="process-math">\(\Rightarrow\)</span> (1). Supongamos que <span class="process-math">\(gNg^{-1} = N\)</span> para todo <span class="process-math">\(g \in G\text{.}\)</span> Entonces para cualquier <span class="process-math">\(n \in N\)</span> existe <span class="process-math">\(n' \in N\)</span> tal que <span class="process-math">\(gng^{-1} = n'\text{.}\)</span>  Por lo tanto, <span class="process-math">\(gn = n' g\)</span> y <span class="process-math">\(gN \subset Ng\text{.}\)</span> Similarmente, <span class="process-math">\(Ng \subset gN\text{.}\)</span>
+</div></article><span class="incontext"><a href="normal-section-factor-groups.html#fPb" class="internal">en contexto</a></span>
 </body>
 </html>

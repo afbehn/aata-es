@@ -11,17 +11,29 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Párrafo</span></h5>
+<h2 class="heading"><span class="type">Párrafo</span></h2>
 <div class="para logical">
-<div class="para">Un número real <span class="process-math">\(\alpha\)</span> es un número constructible si y solo si hay una  sucesión de  cuerpos</div>
+<div class="para">Más específicamente, si nos dan un cuerpo <span class="process-math">\(F\)</span> y un polinomio <span class="process-math">\(p(x) \in F[x]\text{,}\)</span> podemos preguntar si es posible, o no, encontrar un cuerpo <span class="process-math">\(E\)</span> que contenga <span class="process-math">\(F\)</span> tal que <span class="process-math">\(p(x)\)</span> se factorice en factores lineales sobre  <span class="process-math">\(E[x]\text{.}\)</span>  Por ejemplo, si consideramos el polinomio</div>
 <div class="displaymath process-math">
 \begin{equation*}
-{\mathbb Q} = F_0 \subset F_1 \subset \cdots \subset F_k
+p(x) = x^4 -5 x^2 + 6
 \end{equation*}
 </div>
-<div class="para">tales que <span class="process-math">\(F_i = F_{i-1}( \sqrt{ \alpha_i}\, )\)</span> con <span class="process-math">\(\alpha_i \in F_i\)</span> y <span class="process-math">\(\alpha \in F_k\text{.}\)</span> En particular, hay un entero <span class="process-math">\(k \gt 0\)</span> tal que <span class="process-math">\([{\mathbb Q}(\alpha) : {\mathbb Q} ] = 2^k\text{.}\)</span>
+<div class="para">en <span class="process-math">\({\mathbb Q}[x]\text{,}\)</span>  entonces <span class="process-math">\(p(x)\)</span> se factoriza como <span class="process-math">\((x^2 - 2)(x^2 - 3)\text{.}\)</span> Sin embargo, ambos factores son irreducibles en <span class="process-math">\({\mathbb Q}[x]\text{.}\)</span> Si queremos encontrar un cero de <span class="process-math">\(p(x)\text{,}\)</span> debemos ir a un cuerpo más grande. Ciertamente sirve el cuerpo de los números reales, pues</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p(x) = (x - \sqrt{2} ) (x + \sqrt{2} )( x - \sqrt{3})(x + \sqrt{3})\text{.}
+\end{equation*}
+</div>
+<div class="para">Es posible encontrar un cuerpo menor en el que <span class="process-math">\(p(x)\)</span> tiene un cero, por ejemplo</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{\mathbb Q }( \sqrt{2} ) = \{ a + b \sqrt{2} : a, b \in {\mathbb Q} \}\text{.}
+\end{equation*}
+</div>
+<div class="para">Queremos ser capaces de calcular y estudiar tales cuerpos para polinomios arbitrarios sobre un cuerpo <span class="process-math">\(F\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="section-constructions.html#p-3323" class="internal">en contexto</a></span>
+<span class="incontext"><a href="fields.html#qxo" class="internal">en contexto</a></span>
 </body>
 </html>

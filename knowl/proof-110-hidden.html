@@ -11,12 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">Ya sabemos que <span class="process-math">\(R/I\)</span> es un grupo abeliano con la adición. Sean <span class="process-math">\(r+I\)</span> y <span class="process-math">\(s +I\)</span> en <span class="process-math">\(R/I\text{.}\)</span> Debemos mostrar que el producto <span class="process-math">\((r + I)(s + I) = rs + I\)</span> es independiente de la elección de representantes de las clases laterales; es decir, si <span class="process-math">\(r' \in r+I\)</span> y <span class="process-math">\(s' \in s+I\text{,}\)</span> entonces <span class="process-math">\(r's'\)</span> debe estar en <span class="process-math">\(rs+I\text{.}\)</span> Como <span class="process-math">\(r' \in r+I\text{,}\)</span> debe existir un elemento <span class="process-math">\(a\)</span>  en <span class="process-math">\(I\)</span> tal que <span class="process-math">\(r' = r + a\text{.}\)</span> Similarmente, existe <span class="process-math">\(b \in I\)</span> tal que <span class="process-math">\(s' = s + b\text{.}\)</span> Note que</div>
+<div class="para">En efecto, <span class="process-math">\(\phi : R \rightarrow R/I\)</span> es un homomorfismo epiyectivo de grupo abelianos. Falta demostrar que <span class="process-math">\(\phi\)</span> funciona correctamente con la multiplicación en el anillo.  Sean <span class="process-math">\(r\)</span> y <span class="process-math">\(s\)</span> en <span class="process-math">\(R\text{.}\)</span> Entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
-r' s' = (r+a)(s+b) = rs + as + rb + ab
+\phi(r) \phi(s) = (r + I)(s+I) = rs + I = \phi(rs)\text{,}
 \end{equation*}
 </div>
-<div class="para">y <span class="process-math">\(as + rb + ab \in I\)</span> pues <span class="process-math">\(I\)</span> es un ideal; por lo tanto, <span class="process-math">\(r' s' \in rs + I\text{.}\)</span> Dejaremos como ejercicio la verificación de la asociatividad del producto y de las reglas de distributividad.</div>
+<div class="para">lo que completa la demostración del teorema.</div>
 </div></article></body>
 </html>

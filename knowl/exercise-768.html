@@ -12,23 +12,8 @@
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span>
 </h3>
-<div class="para">El Ejercicio <a href="" class="xref" data-knowl="./knowl/exercise-finite-sum-of-squares.html" title="Ejercicio 22.3.15">22.3.15</a> sugiere que todo elemento de un cuerpo finito puede ser escrito (expresado) como suma de cuadrados.  Acá se sugieren experimentos computacionales que pueden ayudarle a formular una demostración del ejercicio.</div> <ol class="lower-alpha">
-<li><div class="para">Construya dos cuerpos pequeños pero no demasiado pequeños, uno con <span class="process-math">\(p=2\)</span> y el otro con un primo impar.  Repita lo siguiente con cada cuerpo <span class="process-math">\(F\text{.}\)</span>
-</div></li>
-<li><div class="para logical">
-<div class="para">Escoja un elemento “aleatorio” del cuerpo, digamos <span class="process-math">\(a\in F\text{.}\)</span>  Construya los conjuntos</div>
-<div class="displaymath process-math">
-\begin{align*}
-&amp;\{x^2|x\in F\}&amp;&amp;\{a-x^2|x\in F\}
-\end{align*}
-</div>
-<div class="para">usando conjuntos Sage con el constructor <span class="process-math">\(Set()\text{.}\)</span>  (Cuidado: <code class="code-inline tex2jax_ignore">set()</code> es un comando Python que se comporta de forma fundamentalmente diferente.)</div>
-</div></li>
-<li><div class="para">Examine el tamaño de los dos conjunto y el tamaño de su intersección (<code class="code-inline tex2jax_ignore">.intersection()</code>).  Pruebe con diferentes elementos <span class="process-math">\(a\text{,}\)</span> quizás usando un bucle para probar <em class="emphasis">todos</em> los valores posibles. Note que <span class="process-math">\(p=2\)</span> se comportará de forma bastante diferente.</div></li>
-<li><div class="para">Supongamos que tiene un elemento de la intersección.  (Puede obtener uno con el método <code class="code-inline tex2jax_ignore">.an_element()</code>.)  ¿Cómo lleva esto a la suma de cuadrados propuesta en el ejercicio?</div></li>
-<li><div class="para">¿Puede escribir una función en Python que reciba un cuerpo finito cuyo orden sea una potencia de un primo impar y luego liste cada elemento como suma de cuadrados?</div></li>
-</ol></article><span class="incontext"><a href="finite-sage-exercises.html#exercise-768" class="internal">en contexto</a></span>
+<div class="para">Use <code class="code-inline tex2jax_ignore">Posets.BooleanLattice(4)</code> para construir una instancia del álgebra Booleana prototípica en <span class="process-math">\(16\)</span> elementos (i.e., todos los subconjuntos de un conjunto de <span class="process-math">\(4\)</span> elementos).</div> <div class="para">Luego use <code class="code-inline tex2jax_ignore">Posets.IntegerCompositions(5)</code> para construir el conjunto parcialmente ordenado cuyos <span class="process-math">\(16\)</span> elementos son las composiciones del entero <span class="process-math">\(5\text{.}\)</span>  Vimos arriba que el reticulado de composición de entero es distributivo y complementado, por lo que forma un álgbera Booleana.  Por el <a href="" class="xref" data-knowl="./knowl/theorem-classification-boolean-algebra.html" title="Teorema 19.2.9">Teorema 19.2.9</a> podemos concluir que esta dos álgebras Booleanas son isomorfas.</div> <div class="para">Use el método <code class="code-inline tex2jax_ignore">.plot()</code> para visualizar la similaridad.  Luego use el método <code class="code-inline tex2jax_ignore">.hasse_diagram()</code> en cada reticulado para obtener un grafo dirigido (que también puede dibujar, aunque la incrustación en el plano puede que no sea tan informativa).  Emplee el método <code class="code-inline tex2jax_ignore">.is_isomorphic()</code> del grafo para verificar que estos dos diagramas de Hasse son realmente “iguales.”</div></article><span class="incontext"><a href="boolean-sage-exercises.html#exercise-768" class="internal">en contexto</a></span>
 </body>
 </html>

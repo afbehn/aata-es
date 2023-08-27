@@ -12,8 +12,18 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Los enteros mód <span class="process-math">\(n\)</span> forman un grupo bajo adición módulo <span class="process-math">\(n\text{.}\)</span>  Considere <span class="process-math">\({\mathbb Z}_5\text{,}\)</span> que consiste de las clases de equivalencia de los enteros 0, 1, 2, 3, y 4.  Definimos la operación de grupo en <span class="process-math">\({\mathbb Z}_5\)</span> por adición módulo 5.  Escribimos esta operación binaria en el grupo de forma aditiva, es decir, escribimos <span class="process-math">\(m + n\text{.}\)</span>  El elemento 0 es la identidad del grupo y cada elemento en <span class="process-math">\({\mathbb Z}_5\)</span> tiene un inverso. Por ejemplo, <span class="process-math">\(2 + 3 = 3 + 2 = 0\text{.}\)</span>  El Cuadro <a href="" class="xref" data-knowl="./knowl/table-z5-cayley.html" title="Cuadro 3.2.3">3.2.3</a> es una tabla de Cayley para <span class="process-math">\({\mathbb Z}_5\text{.}\)</span>  Por la Proposición <a href="" class="xref" data-knowl="./knowl/proposition-zn-equiv-classes.html" title="Proposición 3.1.4">3.1.4</a>, <span class="process-math">\({\mathbb Z}_n = \{0, 1, \ldots, n-1 \}\)</span> es un grupo bajo la operación binaria de adición mód <span class="process-math">\(n\text{.}\)</span>
+<div class="para logical">
+<div class="para">Encontremos las simetrías de un triángulo equilátero <span class="process-math">\(\bigtriangleup ABC\text{.}\)</span>  Para encontrar las simetrías de  <span class="process-math">\(\bigtriangleup ABC\text{,}\)</span> debemos primero examinar las permutaciones de los vértices <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> y <span class="process-math">\(C\)</span> para luego preguntarnos si una permutación se extiende a una simetría del triángulo.  Recuerde que una <dfn class="terminology">permutación</dfn> de un conjunto <span class="process-math">\(S\)</span> es una función biyectiva <span class="process-math">\(\pi :S \rightarrow S\text{.}\)</span>  Los tres vértices tienen <span class="process-math">\(3! = 6\)</span> permutaciones, de manera que el triángulo tiene a lo más seis simetrías.  Para ver que hay seis permutaciones, observe que hay tres diferentes elecciones para el primer vértice, y dos para el segundo, y que el vértice restante está determinado por la posición de los primeros dos.  Así tenemos <span class="process-math">\(3 \cdot 2 \cdot 1 = 3! = 6\)</span> arreglos diferentes.  Para describir una permutación de los vértices de un triángulo equilátero que envía  <span class="process-math">\(A\)</span> en <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(B\)</span> en <span class="process-math">\(C\text{,}\)</span> y <span class="process-math">\(C\)</span> en <span class="process-math">\(A\text{,}\)</span> escribiremos el arreglo</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/groups-figure-s3-symmetry.html">
+\begin{equation*}
+\begin{pmatrix}
+A &amp; B &amp; C \\
+B &amp; C &amp; A
+\end{pmatrix}\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="section-groups-define.html#p-388" class="internal">en contexto</a></span>
+<div class="para">Note que esta permutación en particular corresponde al movimiento rígido de rotar el triángulo en <span class="process-math">\(120^{\circ}\)</span> en dirección horaria.  De hecho, cada permutación produce una simetría del triángulo.  Todas estas simetría se muestran en la <a href="" class="xref" data-knowl="./knowl/groups-figure-s3-symmetry.html" title="Figura 3.1.6">Figura 3.1.6</a>.</div>
+</div>
+<span class="incontext"><a href="groups-section-mod-n-sym.html#Khx" class="internal">en contexto</a></span>
 </body>
 </html>

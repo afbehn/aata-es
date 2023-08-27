@@ -13,57 +13,21 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Calcularemos <span class="process-math">\(271^{321} \pmod{ 481}\text{.}\)</span> Note que</div>
+<div class="para">Supongamos que <span class="process-math">\(z = 2 \cis  60^{\circ}\text{.}\)</span> Entonces</div>
 <div class="displaymath process-math">
 \begin{equation*}
-321 = 2^0 +2^6 + 2^8;
-\end{equation*}
-</div>
-<div class="para">luego, calcular <span class="process-math">\(271^{ 321} \pmod{ 481}\)</span> es lo mismo que calcular</div>
-<div class="displaymath process-math">
-\begin{equation*}
-271^{ 2^0 +2^6 + 2^8 } \equiv 271^{ 2^0 } \cdot 271^{2^6 } \cdot 271^{ 2^8 } \pmod{ 481}.
-\end{equation*}
-</div>
-<div class="para">Será suficiente con calcular <span class="process-math">\(271^{ 2^i } \pmod{ 481}\)</span> con <span class="process-math">\(i = 0, 6, 8\text{.}\)</span> Es muy fácil ver que</div>
-<div class="displaymath process-math">
-\begin{equation*}
-271^{ 2^1}  = \text{73,441}  \equiv 329 \pmod{ 481}.
-\end{equation*}
-</div>
-<div class="para">Podemos elevar al cuadrado este resultado, obteniéndo un valor para <span class="process-math">\(271^{ 2^2} \pmod{481}\text{:}\)</span>
-</div>
-<div class="displaymath process-math">
-\begin{align*}
-271^{ 2^2}  &amp; \equiv (271^{ 2^1})^2 \pmod{ 481}\\
-&amp; \equiv (329)^2 \pmod{ 481}\\
-&amp; \equiv \text{108,241} \pmod{ 481}\\
-&amp; \equiv 16 \pmod{ 481}.
-\end{align*}
-</div>
-<div class="para">Estamos usando el hecho que <span class="process-math">\((a^{2^n})^2  \equiv a^{2 \cdot 2^n} \equiv a^{ 2^{n+1} } \pmod{ n}\text{.}\)</span> Continuando, podemos calcular</div>
-<div class="displaymath process-math">
-\begin{equation*}
-271^{ 2^6 } \equiv 419 \pmod{ 481}
+a  =  2 \cos 60^{\circ}  =   1
 \end{equation*}
 </div>
 <div class="para">y</div>
 <div class="displaymath process-math">
 \begin{equation*}
-271^{ 2^8 }  \equiv 16 \pmod{ 481}.
+b  =  2 \sin 60^{\circ}  =  \sqrt{3}\text{.}
 \end{equation*}
 </div>
-<div class="para">Por lo tanto,</div>
-<div class="displaymath process-math">
-\begin{align*}
-271^{ 321} &amp; \equiv 271^{ 2^0 +2^6 + 2^8 } \pmod{ 481}\\
-&amp; \equiv 271^{ 2^0 } \cdot 271^{ 2^6 } \cdot 271^{ 2^8 } \pmod{ 481}\\
-&amp; \equiv 271 \cdot 419 \cdot 16 \pmod{ 481}\\
-&amp; \equiv \text{1,816,784} \pmod{ 481}\\
-&amp; \equiv 47 \pmod{ 481}.
-\end{align*}
+<div class="para">Luego, la representación cartesiana es <span class="process-math">\(z = 1+\sqrt{3}\, i\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="section-method-of-repeated-squares.html#p-615" class="internal">en contexto</a></span>
+<span class="incontext"><a href="cyclic-section-mult-group-c.html#GZn" class="internal">en contexto</a></span>
 </body>
 </html>

@@ -12,46 +12,18 @@
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">29<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">17<span class="period">.</span></span>
 </h3>
 <div class="para logical">
-<div class="para">Sea <span class="process-math">\(C = \langle g(t) \rangle\)</span> un código cíclico en <span class="process-math">\(R_n\)</span> y supongamos que <span class="process-math">\(x^n - 1 = g(x) h(x)\text{,}\)</span> donde <span class="process-math">\(g(x) = g_0 + g_1 x + \cdots + g_{n - k} x^{n - k}\)</span> y <span class="process-math">\(h(x) = h_0 + h_1 x +  \cdots + h_k x^k\text{.}\)</span> Definamos <span class="process-math">\(G\)</span> como la matriz de  <span class="process-math">\(n \times k\)</span>
-</div>
+<div class="para">Sea <span class="process-math">\(B\)</span> un álgebra Booleana. Defina operaciones binarias <span class="process-math">\(+\)</span> y <span class="process-math">\(\cdot\)</span> en <span class="process-math">\(B\)</span> como</div>
 <div class="displaymath process-math">
-\begin{equation*}
-G = 
-\begin{pmatrix}
-g_0 &amp; 0   &amp; \cdots &amp; 0 \\
-g_1 &amp; g_0 &amp; \cdots &amp; 0 \\
-\vdots &amp; \vdots &amp;\ddots &amp; \vdots \\
-g_{n-k}   &amp; g_{n-k-1} &amp; \cdots &amp; g_0 \\
-0   &amp; g_{n-k} &amp; \cdots &amp; g_{1} \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-0   &amp; 0 &amp; \cdots &amp; g_{n-k}
-\end{pmatrix}
-\end{equation*}
+\begin{align*}
+a + b &amp; = (a \wedge b') \vee (a' \wedge b)\\
+a \cdot b &amp; = a \wedge b\text{.}
+\end{align*}
 </div>
-<div class="para">y <span class="process-math">\(H\)</span> como la matriz de <span class="process-math">\((n-k) \times n\)</span>
+<div class="para">Demuestre que <span class="process-math">\(B\)</span> es un anillo conmutativo bajo estas operaciones y que satisface <span class="process-math">\(a^2 = a\)</span> para todo <span class="process-math">\(a \in B\text{.}\)</span>
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-H =
-\begin{pmatrix}
-0   &amp; \cdots &amp; 0   &amp; 0      &amp; h_k    &amp; \cdots &amp; h_0 \\
-0   &amp; \cdots &amp; 0   &amp; h_k    &amp; \cdots &amp; h_0    &amp; 0 \\
-\cdots &amp; \cdots &amp; \cdots  &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots  \\
-h_k &amp; \cdots &amp; h_0 &amp; 0      &amp; 0      &amp; \cdots &amp; 0 
-\end{pmatrix}.
-\end{equation*}
-</div>
-<ol class="lower-alpha">
-<li><div class="para">Demuestre que <span class="process-math">\(G\)</span> es una matriz generadora para <span class="process-math">\(C\text{.}\)</span>
-</div></li>
-<li><div class="para">Demuestre que <span class="process-math">\(H\)</span> es una matriz verificadora para <span class="process-math">\(C\text{.}\)</span>
-</div></li>
-<li><div class="para">Muestre que <span class="process-math">\(HG = 0\text{.}\)</span>
-</div></li>
-</ol>
-</div></article><span class="incontext"><a href="exercises-finite.html#exercise-758" class="internal">en contexto</a></span>
+</div></article><span class="incontext"><a href="boolean-exercises.html#exercise-758" class="internal">en contexto</a></span>
 </body>
 </html>

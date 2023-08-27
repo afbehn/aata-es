@@ -14,13 +14,13 @@
 <div class="para">Supongamos que recibimos un mensaje que sabemos fue encriptado usando un desplazamiento en las 26 letras del alfabeto. Para determinar el desplazamiento ocupado, debemos encontrar <span class="process-math">\(b\)</span> en la ecuación <span class="process-math">\(f(p) = p + b \bmod 26\text{.}\)</span> Podemos hacer esto usando análisis de frecuencia.  La letra <span class="process-math">\(\text{E} = 04\)</span> es la más frecuente en el idioma inglés. Supongamos que <span class="process-math">\(\text{S} = 18\)</span> es la letra que ocurre con más frecuencia en el texto-cifrado.  Entonces tenemos una buena razón para sospechar que <span class="process-math">\(18 = 4 + b \bmod 26\text{,}\)</span> y <span class="process-math">\(b= 14\text{.}\)</span> Por lo tanto, la función encriptadora más probable es</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(p) = p + 14 \bmod 26.
+f(p) = p + 14 \bmod 26\text{.}
 \end{equation*}
 </div>
 <div class="para">La correspondiente función decriptadora es</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f^{-1}(p) = p + 12 \bmod 26.
+f^{-1}(p) = p + 12 \bmod 26\text{.}
 \end{equation*}
 </div>
 <div class="para">En este punto es fácil determinar si la sospecha es o no correcta.</div>

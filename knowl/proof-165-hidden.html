@@ -11,51 +11,25 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">Dado que <span class="process-math">\(\phi_{\alpha} ( F[x] ) \cong F( \alpha )\text{,}\)</span>  todo elemento en <span class="process-math">\(E = F( \alpha )\)</span> debe ser de la forma <span class="process-math">\(\phi_{\alpha} ( f(x) ) = f( \alpha )\text{,}\)</span> donde <span class="process-math">\(f(\alpha)\)</span> es un polinomio en <span class="process-math">\(\alpha\)</span> con coeficientes en <span class="process-math">\(F\text{.}\)</span> Sea</div>
+<div class="para">Sea <span class="process-math">\(\alpha \in E\text{.}\)</span> Como <span class="process-math">\([E:F] = n\text{,}\)</span> los elementos</div>
 <div class="displaymath process-math">
 \begin{equation*}
-p(x) = x^n + a_{n - 1} x^{n - 1} + \cdots + a_0
+1, \alpha, \ldots, {\alpha}^n
 \end{equation*}
 </div>
-<div class="para">el polinomio minimal de <span class="process-math">\(\alpha\text{.}\)</span> Entonces <span class="process-math">\(p( \alpha ) = 0\text{;}\)</span> luego,</div>
+<div class="para">no pueden ser linealmente independientes.  Luego existen <span class="process-math">\(a_i \in F\text{,}\)</span> no todos cero, tales que</div>
 <div class="displaymath process-math">
 \begin{equation*}
-{\alpha}^n = - a_{n - 1} {\alpha}^{n - 1} - \cdots - a_0.
+a_n {\alpha}^n + a_{n - 1} {\alpha}^{n - 1} + \cdots + a_1 \alpha + a_0 = 0\text{.}
 \end{equation*}
 </div>
-<div class="para">Similarmente,</div>
-<div class="displaymath process-math">
-\begin{align*}
-{\alpha}^{n + 1} &amp; = {\alpha} {\alpha}^n\\
-&amp; = - a_{n - 1} {\alpha}^n - a_{n - 2} {\alpha}^{n - 1} - \cdots - a_0 {\alpha}\\
-&amp; = - a_{n - 1}( - a_{n - 1} {\alpha}^{n - 1} - \cdots - a_0) - a_{n - 2} {\alpha}^{n - 1} - \cdots - a_0 {\alpha}.
-\end{align*}
-</div>
-<div class="para">Continuando de esta manera, podemos expresar cualquier monomio <span class="process-math">\({\alpha}^m\text{,}\)</span> <span class="process-math">\(m \geq n\text{,}\)</span> como combinación lineal de potencias de <span class="process-math">\({\alpha}\)</span> menores a <span class="process-math">\(n\text{.}\)</span> Por lo tanto, cualquier <span class="process-math">\(\beta \in F( \alpha )\)</span> puede ser escrito como</div>
+<div class="para">Por lo tanto,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\beta = b_0 + b_1 \alpha + \cdots + b_{n - 1} \alpha^{n - 1}.
+p(x) = a_n x^n + \cdots + a_0 \in F[x]
 \end{equation*}
 </div>
-</div> <div class="para logical">
-<div class="para">Para mostrar la unicidad, supongamos que</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\beta =  b_0 + b_1 \alpha + \cdots + b_{n-1} \alpha^{n-1} = c_0 + c_1 \alpha + \cdots + c_{n - 1} \alpha^{n - 1}
-\end{equation*}
+<div class="para">es un polinomio no nulo con <span class="process-math">\(p( \alpha ) = 0\text{.}\)</span>
 </div>
-<div class="para">para <span class="process-math">\(b_i\)</span> y <span class="process-math">\(c_i\)</span> en <span class="process-math">\(F\text{.}\)</span> Entonces</div>
-<div class="displaymath process-math">
-\begin{equation*}
-g(x) = (b_0 - c_0) + (b_1 - c_1) x + \cdots + (b_{n - 1} - c_{n - 1})x^{n - 1}
-\end{equation*}
-</div>
-<div class="para">está en <span class="process-math">\(F[x]\)</span> y <span class="process-math">\(g( \alpha ) = 0\text{.}\)</span> Como el grado de <span class="process-math">\(g(x)\)</span> es menor que el grado de <span class="process-math">\(p( x )\text{,}\)</span>  el polinomio irreducible de <span class="process-math">\(\alpha\text{,}\)</span> <span class="process-math">\(g(x)\)</span> debe ser el polinomio nulo. Concluimos,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-b_0 - c_0 = b_1 - c_1 = \cdots = b_{n - 1} - c_{n - 1} = 0,
-\end{equation*}
-</div>
-<div class="para">es decir, <span class="process-math">\(b_i = c_i\)</span> para <span class="process-math">\(i = 0, 1, \ldots, n-1\text{.}\)</span>  Hemos demostrado la unicidad.</div>
 </div></article></body>
 </html>

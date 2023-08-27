@@ -12,9 +12,15 @@
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">39<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span>
 </h3>
-<div class="para">Encuentre <span class="process-math">\(\aut( {\mathbb Z})\text{.}\)</span>
-</div></article><span class="incontext"><a href="exercises-isomorph.html#exercise-348" class="internal">en contexto</a></span>
+<div class="para">Una técnica que permita mejorar las características de un código es agregar un bit de paridad general, tal como el bit de paridad del código <abbr class="acronym">ASCII</abbr> descrito en el <a href="" class="xref" data-knowl="./knowl/example-algcodes-even-parity.html" title="Ejemplo 8.1.3">Ejemplo 8.1.3</a>.  Tales códigos se conocen como versiones <dfn class="terminology">extendidas</dfn> del código original.</div> <ol class="lower-alpha">
+<li>
+<div class="para">Construya el código de Golay binario y obtenga la matriz evrificadora.  Use comandos Sage para extender esta matriz creando una nueva matriz de paridad que considere un bit de paridad global adicional.  los métodos <code class="code-inline tex2jax_ignore">.augment()</code> y <code class="code-inline tex2jax_ignore">.stack()</code> para matrices le pueden resultar útiles, así como los constructores <code class="code-inline tex2jax_ignore">zero_vector()</code> y <code class="code-inline tex2jax_ignore">ones_matrix()</code> (recordando que especificamos las entradas binarias como pertenecientes al cuerpo <code class="code-inline tex2jax_ignore">GF(2)</code>.)</div>
+<div class="para">Cree el código extendido entregando la matriz de paridad aumentada al constructor <code class="code-inline tex2jax_ignore">codes.from_parity_check_matrix()</code> y calcule la longitud, dimension y distancia mínima del código extendido.</div>
+</li>
+<li><div class="para">¿En qué sentido son mejores las características de este nuevo código? ¿A qué costo?</div></li>
+<li><div class="para">Ahora cree el código de Golay binario extendido con <code class="code-inline tex2jax_ignore">codes.GolayCode()</code> y la opción apropiada para obtener la versión extendida.  Con algo de suerte, las listas ordenadas de sus palabras y las del código implementado en Sage, serán las mismas.  Si no, el método <code class="code-inline tex2jax_ignore">.is_permutation_equivalent()</code> debiera retornar <code class="code-inline tex2jax_ignore">True</code> indicando que su código y el de Sage son simplemente reordenamientos, el uno del otro.</div></li>
+</ol></article><span class="incontext"><a href="algcodes-sage-exercises.html#exercise-348" class="internal">en contexto</a></span>
 </body>
 </html>

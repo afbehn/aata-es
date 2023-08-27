@@ -13,15 +13,30 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Finalmente, debemos mostrar que el máximo común divisor de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\)</span> es único. Supongamos que <span class="process-math">\(d'(x)\)</span> también es un máximo común divisor de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{.}\)</span> Acabamos de mostrar que existen polinomios <span class="process-math">\(u(x)\)</span> y <span class="process-math">\(v(x)\)</span> en <span class="process-math">\(F[x]\)</span> tales que <span class="process-math">\(d(x) = d'(x)[r(x) u(x) + s(x) v(x)]\text{.}\)</span> Como</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\deg d(x) =  \deg d'(x) + \deg[r(x) u(x) + s(x) v(x)]
-\end{equation*}
+<div class="para">Acá hay una lista de varios anillos, dominio y cuerpos que se pueden construir de forma sencilla.</div>
+<ol class="decimal">
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">Integers()</code>, <code class="code-inline tex2jax_ignore">ZZ</code>: el dominio integral de los números enteros positivos y negativos, <span class="process-math">\({\mathbb Z}\text{.}\)</span>
+</div></li>
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">Integers(n)</code>: los enteros mód <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\({\mathbb Z_n}\text{.}\)</span>  Un cuerpo cuando <span class="process-math">\(n\)</span> es primo, pero solo un anillo cuando <span class="process-math">\(n\)</span> es compuesto.</div></li>
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">QQ</code>: el cuerpo de los números racionales, <span class="process-math">\({\mathbb Q}\text{.}\)</span>
+</div></li>
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">RR</code>, <code class="code-inline tex2jax_ignore">CC</code>: el cuerpos de los números reales y el cuerpo de los números complejos, <span class="process-math">\({\mathbb R}\text{,}\)</span> <span class="process-math">\({\mathbb C}\text{.}\)</span>  Es imposible crear <em class="emphasis">todo</em> número real en un computador, así es que técnicamente estos conjuntos no se comportan como cuerpos, sino solo ofrecen una buena imitación del objeto real.  Decimos que son anillos <dfn class="terminology">inexactos</dfn> para enfatizar este punto.</div></li>
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">QuadraticField(n)</code>:  el cuerpo obtenido de adjuntar una solución de la ecuación <span class="process-math">\(x^2-n=0\)</span> a los números racionales.  La notación en el texto es <span class="process-math">\({\mathbb Q}[\sqrt{n}]\text{.}\)</span>  Una forma equivalente funcionalmente de construirlos es con la sintaxis <code class="code-inline tex2jax_ignore">QQ[sqrt(n)]</code>.  Notemos que <code class="code-inline tex2jax_ignore">n</code> puede ser negativo.</div></li>
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">CyclotomicField(n)</code>: el cuerpo formado de adjuntar las soluciones de la ecuación polinomial <span class="process-math">\(x^n-1=0\)</span> a los números racionales.</div></li>
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">QQbar</code>: el cuerpo formado de adjuntar soluciones de <em class="emphasis">toda</em> ecuación polinomial con coeficientes enteros al cuerpo de los números racionales.  Este se conoce como el cuerpo de los números algebraicos, y se denota como <span class="process-math">\(\overline{{\mathbb Q}}\text{.}\)</span>
+</div></li>
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">FiniteField(p)</code>: para un primo <span class="process-math">\(p\text{,}\)</span> es el cuerpo <span class="process-math">\({\mathbb Z_p}\text{.}\)</span>
+</div></li>
+</ol>
 </div>
-<div class="para">y <span class="process-math">\(d(x)\)</span> y <span class="process-math">\(d'(x)\)</span> son ambos máximo común divisor, <span class="process-math">\(\deg d(x) = \deg d'(x)\text{.}\)</span> Como <span class="process-math">\(d(x)\)</span> y <span class="process-math">\(d'(x)\)</span> son ambos polinomios mónicos del mismo grado, se debe tener que <span class="process-math">\(d(x) =~d'(x)\text{.}\)</span>
-</div>
-</div>
-<span class="incontext"><a href="section-poly-division-algorithm.html#p-2597" class="internal">en contexto</a></span>
+<span class="incontext"><a href="rings-sage.html#AXg" class="internal">en contexto</a></span>
 </body>
 </html>

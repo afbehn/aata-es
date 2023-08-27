@@ -12,8 +12,19 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Párrafo</span></h5>
-<div class="para">Demostraremos este teorema por contradicción.  Supongamos que existe solo una cantidad finita de primos, digamos <span class="process-math">\(p_1, p_2, \ldots, p_n\text{.}\)</span>  Sea <span class="process-math">\(P = p_1  p_2  \cdots  p_n + 1\text{.}\)</span>    Entonces <span class="process-math">\(P\)</span> debe ser divisible por algún <span class="process-math">\(p_i\)</span> con <span class="process-math">\(1 \leq i \leq n\text{.}\)</span> En este caso, <span class="process-math">\(p_i\)</span> debe dividir a <span class="process-math">\(P - p_1 p_2 \cdots p_n = 1\text{,}\)</span> lo que es una contradicción.  Luego, ya sea  <span class="process-math">\(P\)</span> es primo o existe un primo adicional <span class="process-math">\(p \neq p_i\)</span> que divide a <span class="process-math">\(P\text{.}\)</span>
+<div class="para logical">
+<div class="para">Calculemos el máximo común divisor de <span class="process-math">\(945\)</span> y <span class="process-math">\(2415\text{.}\)</span>  Primero observemos que</div>
+<div class="displaymath process-math">
+\begin{align*}
+2415 &amp; = 945 \cdot 2 + 525\\
+945 &amp; = 525 \cdot 1 + 420\\
+525 &amp; = 420 \cdot 1 + 105\\
+420 &amp; = 105 \cdot 4 + 0\text{.}
+\end{align*}
 </div>
-<span class="incontext"><a href="section-division-algorithm.html#p-270" class="internal">en contexto</a></span>
+<div class="para">Invirtiendo nuestros pasos, <span class="process-math">\(105\)</span> divide a <span class="process-math">\(420\text{,}\)</span> <span class="process-math">\(105\)</span> divide a <span class="process-math">\(525\text{,}\)</span> <span class="process-math">\(105\)</span> divide a <span class="process-math">\(945\text{,}\)</span> y <span class="process-math">\(105\)</span> divide a <span class="process-math">\(2415\text{.}\)</span> Por lo tanto, <span class="process-math">\(105\)</span> divide tanto a <span class="process-math">\(945\)</span> como a <span class="process-math">\(2415\text{.}\)</span> Si <span class="process-math">\(d\)</span> fuera otro divisor común de <span class="process-math">\(945\)</span> y <span class="process-math">\(2415\text{,}\)</span> entonces <span class="process-math">\(d\)</span> también tendría que dividir a <span class="process-math">\(105\text{.}\)</span> Por lo tanto, <span class="process-math">\(\gcd( 945, 2415 ) = 105\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="integers-section-division-algorithm.html#jGJ" class="internal">en contexto</a></span>
 </body>
 </html>

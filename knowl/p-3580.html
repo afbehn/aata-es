@@ -13,14 +13,57 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Escoja un elemento “aleatorio” del cuerpo, digamos <span class="process-math">\(a\in F\text{.}\)</span>  Construya los conjuntos</div>
+<div class="para">Considere los código lineales <span class="process-math">\((6,3)\)</span>generados por las dos matrices</div>
 <div class="displaymath process-math">
-\begin{align*}
-&amp;\{x^2|x\in F\}&amp;&amp;\{a-x^2|x\in F\}
-\end{align*}
+\begin{equation*}
+G_1 
+= 
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 
+\end{pmatrix}
+\quad
+\text{and}
+\quad
+G_2 = 
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+1 &amp; 1 &amp; 0 \\
+1 &amp; 1 &amp; 1 \\
+1 &amp; 1 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 1
+\end{pmatrix}\text{.}
+\end{equation*}
 </div>
-<div class="para">usando conjuntos Sage con el constructor <span class="process-math">\(Set()\text{.}\)</span>  (Cuidado: <code class="code-inline tex2jax_ignore">set()</code> es un comando Python que se comporta de forma fundamentalmente diferente.)</div>
+<div class="para">Los mensajes del primero se codifican como sigue:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{rclccrcl}
+(000) &amp; \mapsto &amp; (000000) &amp; &amp; &amp; (100) &amp; \mapsto &amp; (100100) \\
+(001) &amp; \mapsto &amp; (001001) &amp; &amp; &amp; (101) &amp; \mapsto &amp; (101101) \\
+(010) &amp; \mapsto &amp; (010010) &amp; &amp; &amp; (110) &amp; \mapsto &amp; (110110) \\
+(011) &amp; \mapsto &amp; (011011) &amp; &amp; &amp; (111) &amp; \mapsto &amp; (111111).
+\end{array}
+\end{equation*}
 </div>
-<span class="incontext"><a href="finite-sage-exercises.html#p-3580" class="internal">en contexto</a></span>
+<div class="para">Es fácil ver que las palabras del código forman un código cíclico.  En el segundo, las 3-tuplas se codifican de la siguiente manera:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{rclccrcl}
+(000) &amp; \mapsto &amp; (000000) &amp; &amp; &amp; (100) &amp; \mapsto &amp; (111100) \\
+(001) &amp; \mapsto &amp; (001111) &amp; &amp; &amp; (101) &amp; \mapsto &amp; (110011) \\
+(010) &amp; \mapsto &amp; (011110) &amp; &amp; &amp; (110) &amp; \mapsto &amp; (100010) \\
+(011) &amp; \mapsto &amp; (010001) &amp; &amp; &amp; (111) &amp; \mapsto &amp; (101101).
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Este código no es cíclico, pues <span class="process-math">\((101101)\)</span> es una palabra del código pero  <span class="process-math">\((011011)\)</span> no lo es.</div>
+</div>
+<span class="incontext"><a href="finite-section-poly-codes.html#Mya" class="internal">en contexto</a></span>
 </body>
 </html>

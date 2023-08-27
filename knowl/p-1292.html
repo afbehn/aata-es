@@ -11,8 +11,40 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Párrafo</span></h5>
-<div class="para">Sea <span class="process-math">\(C\)</span> un código lineal <span class="process-math">\((n,k)\)</span> dado por la matriz <span class="process-math">\(H\)</span> y supongamos que <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\)</span> están en <span class="process-math">\({\mathbb Z}_2^n\text{.}\)</span> Entonces <span class="process-math">\({\mathbf x}\)</span> e <span class="process-math">\({\mathbf y}\)</span> están en la misma clase lateral de <span class="process-math">\(C\)</span> si y solo si <span class="process-math">\(H{\mathbf x} = H{\mathbf y}\text{.}\)</span> Es decir, dos <span class="process-math">\(n\)</span>-tuplas están en la misma clase lateral si y solo si tienen el mismo síndrome.</div>
-<span class="incontext"><a href="section-efficient-decoding.html#p-1292" class="internal">en contexto</a></span>
+<h3 class="heading"><span class="type">Párrafo</span></h3>
+<div class="para logical">
+<div class="para">Supongamos que <span class="process-math">\(H\)</span> es una matriz de <span class="process-math">\(m \times n\)</span> con coeficiente en <span class="process-math">\({\mathbb Z}_2\)</span> y <span class="process-math">\(n \gt m\text{.}\)</span> las últimas <span class="process-math">\(m\)</span> columnas de la matriz forman la matriz identidad de <span class="process-math">\(m \times m\text{,}\)</span> <span class="process-math">\(I_m\text{,}\)</span> entonces la matriz es una <dfn class="terminology">matriz verificadora canónica</dfn>. Más específicamente, <span class="process-math">\(H= (A \mid I_m)\text{,}\)</span> donde <span class="process-math">\(A\)</span> es la matriz de <span class="process-math">\(m \times (n-m)\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{pmatrix}
+a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1,n-m} \\
+a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2,n-m} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots    \\
+a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{m,n-m}
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para">y <span class="process-math">\(I_m\)</span> es la matriz identidad de <span class="process-math">\(m \times m\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{pmatrix}
+1 &amp; 0 &amp; \cdots &amp; 0 \\
+0 &amp; 1 &amp; \cdots &amp; 0 \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+0 &amp; 0 &amp; \cdots &amp; 1
+\end{pmatrix}\text{.}
+\end{equation*}
+</div>
+<div class="para">Con cada matriz verificadora canónica podemos asociar una <dfn class="terminology">matriz generadora estándar</dfn> de <span class="process-math">\(n \times (n-m)\)</span> </div>
+<div class="displaymath process-math">
+\begin{equation*}
+G = \left( \frac{I_{n-m}}{A} \right)\text{.}
+\end{equation*}
+</div>
+<div class="para">Nuestro objetivo será mostrar que existe un <span class="process-math">\(\mathbf x\)</span> que satisfaga <span class="process-math">\(G {\mathbf x} = {\mathbf y}\)</span> si y solo si <span class="process-math">\(H{\mathbf y} = {\mathbf 0}\text{.}\)</span>  dado un bloque <span class="process-math">\({\mathbf x}\)</span> a ser codificado, la matriz <span class="process-math">\(G\)</span> nos permitirá codificarlo rápidamente a una palabra <span class="process-math">\({\mathbf y}\)</span> del código lineal.</div>
+</div>
+<span class="incontext"><a href="algcodes-section-parity-check.html#sws" class="internal">en contexto</a></span>
 </body>
 </html>

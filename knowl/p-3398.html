@@ -12,7 +12,21 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">Podemos recuperar el polinomio usado para definir un cuerpo de números, incluso si fue construido con la especificación de un elemento irracional.  En este caso, el polinomio corresponde al polinomio minimal del elemento.</div>
-<span class="incontext"><a href="fields-sage.html#p-3398" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Si <span class="process-math">\(p(x)\)</span> tiene grado <span class="process-math">\(n\text{,}\)</span> entonces por el <a href="" class="xref" data-knowl="./knowl/fields-theorem-simple_extension.html" title="Teorema 21.1.13">Teorema 21.1.13</a> podemos escribir cualquier elemento en <span class="process-math">\(E( \alpha )\)</span> como combinación lineal de <span class="process-math">\(1, \alpha, \ldots, \alpha^{n - 1}\text{.}\)</span> Por lo tanto, el isomorfismo que buscamos debe ser</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fields-theorem-simple_extension.html">
+\begin{equation*}
+\overline{\phi}( a_0 + a_1 \alpha + \cdots + a_{n - 1} \alpha^{n - 1}) = \phi(a_0) + \phi(a_1) \beta + \cdots + \phi(a_{n - 1}) \beta^{n - 1}\text{,}
+\end{equation*}
+</div>
+<div class="para">donde</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fields-theorem-simple_extension.html">
+\begin{equation*}
+a_0 + a_1 \alpha + \cdots + a_{n - 1} \alpha^{n - 1}
+\end{equation*}
+</div>
+<div class="para">es un elemento en <span class="process-math">\(E(\alpha)\text{.}\)</span> El hecho de que <span class="process-math">\(\overline{\phi}\)</span> sea un isomorfismo se podría verificar de forma directa; sin embargo, es más fácil notar que <span class="process-math">\(\overline{\phi}\)</span> es una composición de funciones que ya sabemos que son homomorfismos.</div>
+</div>
+<span class="incontext"><a href="fields-section-splitting-fields.html#vCG" class="internal">en contexto</a></span>
 </body>
 </html>

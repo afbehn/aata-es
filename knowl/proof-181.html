@@ -13,28 +13,23 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
 <div class="para logical">
-<div class="para">Procederemos por inducción en <span class="process-math">\(n\text{.}\)</span>  Podemos usar la fórmula del binomio (vea el Capítulo <a href="integers.html" class="internal" title="Capítulo 2: Los Enteros">2</a>, Ejemplo <a href="" class="xref" data-knowl="./knowl/example-integers-binomial-theorem.html" title="Ejemplo 2.1.4">2.1.4</a>) para verificar el caso <span class="process-math">\(n = 1\text{;}\)</span> es decir,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/integers.html ./knowl/example-integers-binomial-theorem.html">
-\begin{equation*}
-(a + b)^p = \sum_{k = 0}^{p} \binom{p}{k} a^k b^{p - k}.
-\end{equation*}
+<div class="para">Sea <span class="process-math">\(f(x)\)</span> separable.  Entonces <span class="process-math">\(f(x)\)</span> se factoriza sobre algún cuerpo de extensión de <span class="process-math">\(F\)</span> como <span class="process-math">\(f(x) = (x - \alpha_1) (x - \alpha_2) \cdots (x - \alpha_n)\text{,}\)</span> con <span class="process-math">\(\alpha_i \neq \alpha_j\)</span> para <span class="process-math">\(i \neq j\text{.}\)</span> Tomando la derivada de <span class="process-math">\(f(x)\text{,}\)</span> vemos que</div>
+<div class="displaymath process-math">
+\begin{align*}
+f'(x) &amp; =  (x - \alpha_2) \cdots (x - \alpha_n)\\
+&amp;  +  (x - \alpha_1) (x - \alpha_3) \cdots (x - \alpha_n)\\
+&amp;  + \cdots + (x - \alpha_1) \cdots (x - \alpha_{n - 1})\text{.}
+\end{align*}
 </div>
-<div class="para">Si <span class="process-math">\(0 \lt k \lt p\text{,}\)</span> entonces</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/integers.html ./knowl/example-integers-binomial-theorem.html">
-\begin{equation*}
-\binom{p}{k} = \frac{p!}{k!(p - k)!}
-\end{equation*}
-</div>
-<div class="para">debe ser divisible por <span class="process-math">\(p\text{,}\)</span> pues <span class="process-math">\(p\)</span> no puede dividir a <span class="process-math">\(k!(p - k)!\text{.}\)</span>  Note que <span class="process-math">\(D\)</span> es un dominio integral de característica <span class="process-math">\(p\text{,}\)</span> así es que todos los términos de la suma, salvo el primero y el último son cero.  Por lo tanto, <span class="process-math">\((a + b)^p = a^p + b^p\text{.}\)</span>
-</div>
+<div class="para">Luego, <span class="process-math">\(f(x)\)</span> y <span class="process-math">\(f'(x)\)</span> no pueden tener ningún factor común.</div>
 </div> <div class="para logical">
-<div class="para">Ahora supongamos que el resultado se cumple para todo <span class="process-math">\(k\text{,}\)</span> con <span class="process-math">\(1 \leq k \leq n\text{.}\)</span>  Por la hipótesis de inducción,</div>
+<div class="para">Para demostrar el recíproco, mostraremos que se cumple la afirmación contrapositiva.  Supongamos que <span class="process-math">\(f(x) = (x - \alpha)^k g(x)\text{,}\)</span> con <span class="process-math">\(k \gt 1\text{.}\)</span>  Derivando, tenemos</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(a + b)^{p^{n + 1}} = ((a + b)^p)^{p^{n}} = (a^p + b^p)^{p^{n}} = (a^p)^{p^{n}} + (b^p)^{p^{n}} = a^{p^{n + 1}} + b^{p^{n + 1}}.
+f'(x) = k ( x - \alpha)^{k-1} g(x) + (x- \alpha)^k g'(x)\text{.}
 \end{equation*}
 </div>
-<div class="para">Por lo tanto, el lema es verdadero para <span class="process-math">\(n + 1\)</span> y la demostración está completa.</div>
-</div></article><span class="incontext"><a href="section-finite-field.html#proof-181" class="internal">en contexto</a></span>
+<div class="para">Por lo tanto, <span class="process-math">\(f(x)\)</span> y <span class="process-math">\(f'(x)\)</span> tienen un factor común.</div>
+</div></article><span class="incontext"><a href="finite-section-field.html#OfW" class="internal">en contexto</a></span>
 </body>
 </html>

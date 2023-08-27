@@ -97,7 +97,7 @@ sagecell.makeSagecell({
   "evalButtonText": "Evaluate (Sage)"
 });
 </script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=012975021551273728005:y0h32vuqauw"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -113,19 +113,50 @@ sagecell.makeSagecell({
 <link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.1.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runtime.6f0528865cd47dcd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.3a5641c4e1fe869e.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.cec40a61180efd41.css">
 </head>
-<body class="pretext book ignore-math">
+<body id="AATA" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/images/cover_aata_2017.png" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="cover/cover_aata_2022.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta:</span> <span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>[search-results-heading]: <span id="searchterms" class="searchterms"></span>
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Resultados de la búsqueda: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty" class="searchempty"><span>[no-search-results].</span></div>
+<div id="searchempty" class="searchempty"><span>Sin resultados.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Índice</span></button><a class="index-button button" href="index-1.html" title="Índice alfabético"><span class="name">Índice alfabético</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -230,8 +261,7 @@ sagecell.makeSagecell({
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="exercises-isomorph.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="isomorph.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="isomorph-sage-exercises.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
-<div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="isomorph-exercises.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="isomorph.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="isomorph-sage-exercises.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
@@ -243,7 +273,7 @@ sagecell.makeSagecell({
 <div class="ptx-page">
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
 <li>
-<div class="toc-item"><a href="index.html" class="internal"><span class="title">Páginas preliminares</span></a></div>
+<div class="toc-item"><a href="indice.html" class="internal"><span class="title">Páginas preliminares</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colofón</span></a></div></li>
 <li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Agradecimentos</span></a></div></li>
@@ -254,663 +284,686 @@ sagecell.makeSagecell({
 <div class="toc-item"><a href="sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminares</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-note-on-proofs.html#sets-subsection-cautions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
+<div class="toc-item"><a href="sets-section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Una Breve Nota sobre Demostraciones</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sets-section-note-on-proofs.html#djD" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Algunas Advertencias y Sugerencias</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
+<div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conjuntos y Relaciones de Equivalencia</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#JqM" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Teoría de Conjuntos</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#pxV" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Producto Cartesiano y Funciones</span></a></div></li>
+<li><div class="toc-item"><a href="sets-section-sets-and-equivalence-relations.html#VFe" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Relaciones de Equivalencia y Particiones</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="sets-exercises.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="sets-references.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Listas</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Listas de Enteros</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.5.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#BMn" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Ejecutando Comandos Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#hTw" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Ayuda Inmediata</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#OaF" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Comentando su Trabajo</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#uhO" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Listas</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#aoX" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Listas de Enteros</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage.html#Gwg" class="internal"><span class="codenumber">1.6.6</span> <span class="title">Guardando y Compartiendo su Trabajo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="integers.html" class="internal"><span class="codenumber">2</span> <span class="title">Los Enteros</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Principio de Inducción</span></a></div></li>
+<li><div class="toc-item"><a href="integers-section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Principio de Inducción</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-division-algorithm.html" class="internal"><span class="codenumber">2.2</span> <span class="title">El Algoritmo de División</span></a></div>
+<div class="toc-item"><a href="integers-section-division-algorithm.html" class="internal"><span class="codenumber">2.2</span> <span class="title">El Algoritmo de División</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-euclidean-algorithm" class="internal"><span class="codenumber">2.2.1</span> <span class="title">El Algoritmo de Euclides</span></a></div></li>
-<li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-prime-numbers" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Números Primos</span></a></div></li>
-<li><div class="toc-item"><a href="section-division-algorithm.html#integers-subsection-historical-note" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="integers-section-division-algorithm.html#SBh" class="internal"><span class="codenumber">2.2.1</span> <span class="title">El Algoritmo de Euclides</span></a></div></li>
+<li><div class="toc-item"><a href="integers-section-division-algorithm.html#yIq" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Números Primos</span></a></div></li>
+<li><div class="toc-item"><a href="integers-section-division-algorithm.html#ePz" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-integers.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-2.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="integers-exercises-programming.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="integers-references.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Algoritmo de División</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Primos y Factorización</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#KWI" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Algoritmo de División</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#rdR" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Máximo Común Divisor</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage.html#Xla" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Primos y Factorización</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="groups.html" class="internal"><span class="codenumber">3</span> <span class="title">Grupos</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-mod-n-sym.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Clases de Equivalencia de Enteros y Simetrías</span></a></div>
+<div class="toc-item"><a href="groups-section-mod-n-sym.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Clases de Equivalencia de Enteros y Simetrías</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-mod-n-sym.html#groups-subsection-integers-mod-n" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Los Enteros módulo <span class="process-math">\(n\)</span></span></a></div></li>
-<li><div class="toc-item"><a href="section-mod-n-sym.html#groups-subsection-symmetries" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Simetrías</span></a></div></li>
+<li><div class="toc-item"><a href="groups-section-mod-n-sym.html#FiW" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Los Enteros módulo <span class="process-math">\(n\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="groups-section-mod-n-sym.html#lqf" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Simetrías</span></a></div></li>
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-groups-define.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Definiciones y Ejemplos</span></a></div>
+<div class="toc-item"><a href="groups-section-defnitions.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Definiciones y Ejemplos</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-groups-define.html#groups-subsection-basic-properties" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Propiedades básicas de los Grupos</span></a></div></li>
-<li><div class="toc-item"><a href="section-groups-define.html#groups-subsection-historical-note" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Nota Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="groups-section-defnitions.html#Rxo" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Propiedades básicas de los Grupos</span></a></div></li>
+<li><div class="toc-item"><a href="groups-section-defnitions.html#xEx" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-subgroups.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Subgrupos</span></a></div>
+<div class="toc-item"><a href="groups-section-subgroups.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Subgrupos</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-subgroups.html#groups-subsection-subgroup-examples" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Definiciones y Ejemplos</span></a></div></li>
-<li><div class="toc-item"><a href="section-subgroups.html#groups-subsection-subgroup-theorems" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Algunos Teoremas para Subgrupos</span></a></div></li>
+<li><div class="toc-item"><a href="groups-section-subgroups.html#dLG" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Definiciones y Ejemplos</span></a></div></li>
+<li><div class="toc-item"><a href="groups-section-subgroups.html#JSP" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Algunos Teoremas para Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-groups.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
-<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-3.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="groups-exercises-detecting-errors.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Ejercicios Adicionales: Detectando Errores</span></a></div></li>
+<li><div class="toc-item"><a href="groups-references.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="groups-sage.html#subsection-23" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Enteros mód n</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-groups-of-symmetries" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Cuaterniones</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Subgrupos</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#pZY" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Enteros mód n</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#Whh" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Grupos de simetrías</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#Coq" class="internal"><span class="codenumber">3.8.3</span> <span class="title">Cuaterniones</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage.html#ivz" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Subgrupos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="cyclic.html" class="internal"><span class="codenumber">4</span> <span class="title">Grupos Cíclicos</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-cyclic-subgroups.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Subgrupos Cíclicos</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-cyclic-subgroups.html#cyclic-subsection-cyclic-subgroups" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Subgrupos de Grupos Cíclicos</span></a></div></li></ul>
+<div class="toc-item"><a href="cyclic-section-cyclic-subgroups.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Subgrupos Cíclicos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="cyclic-section-cyclic-subgroups.html#qRN" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Subgrupos de Grupos Cíclicos</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-mult-group-c.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Grupo multiplicativo de los números complejos</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-mult-group-c.html#cyclic-subsection-circle-group" class="internal"><span class="codenumber">4.2.1</span> <span class="title">El grupo de la circunferencia y las raíces de la unidad</span></a></div></li></ul>
+<div class="toc-item"><a href="cyclic-section-mult-group-c.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Grupo multiplicativo de los números complejos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="cyclic-section-mult-group-c.html#WYW" class="internal"><span class="codenumber">4.2.1</span> <span class="title">El grupo de la circunferencia y las raíces de la unidad</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="section-method-of-repeated-squares.html" class="internal"><span class="codenumber">4.3</span> <span class="title">El método de los cuadrados repetidos</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-cyclic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios de programación</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-section-method-of-repeated-squares.html" class="internal"><span class="codenumber">4.3</span> <span class="title">El método de los cuadrados repetidos</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-exercises-programming.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Ejercicios de programación</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-references.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Referencias y Lecturas recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="cyclic-sage.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-29" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-30" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-31" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-32" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-33" class="internal"><span class="codenumber">4.7.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage.html#subsection-34" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#Dgf" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Grupos Cíclicos de Orden Infinito</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#jno" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Grupos Cíclicos Aditivos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#Pux" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Grupos Multiplicativos Abstractos</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#vBG" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Grupos Cíclicos de Permutaciones</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#bIP" class="internal"><span class="codenumber">4.8.5</span> <span class="title">Tablas de Cayley</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage.html#HPY" class="internal"><span class="codenumber">4.8.6</span> <span class="title">Raíces Complejas de la Unidad</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="permute.html" class="internal"><span class="codenumber">5</span> <span class="title">Grupos de Permutaciones</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-permutation-definitions.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definiciones y Notación</span></a></div>
+<div class="toc-item"><a href="permute-section-permutation-definitions.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definiciones y Notación</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-permutation-definitions.html#permute-subsection-cycle-notation" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Notación cíclica</span></a></div></li>
-<li><div class="toc-item"><a href="section-permutation-definitions.html#permute-subsection-transpositions" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Transposiciones</span></a></div></li>
-<li><div class="toc-item"><a href="section-permutation-definitions.html#permute-subsection-alternating-groups" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Los Grupos Alternantes</span></a></div></li>
-<li><div class="toc-item"><a href="section-permutation-definitions.html#permute-historical-note" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Note Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="permute-section-permutation-definitions.html#gXl" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Notación cíclica</span></a></div></li>
+<li><div class="toc-item"><a href="permute-section-permutation-definitions.html#Neu" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Transposiciones</span></a></div></li>
+<li><div class="toc-item"><a href="permute-section-permutation-definitions.html#tlD" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Los Grupos Alternantes</span></a></div></li>
+<li><div class="toc-item"><a href="permute-section-permutation-definitions.html#ZsM" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Note Histórica</span></a></div></li>
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-dihedral-groups.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Grupos Dihedrales</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-dihedral-groups.html#permute-subsection-motion-group-cube" class="internal"><span class="codenumber">5.2.1</span> <span class="title">El grupo de movimientos de un Cubo</span></a></div></li></ul>
+<div class="toc-item"><a href="permute-section-dihedral-groups.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Grupos Dihedrales</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="permute-section-dihedral-groups.html#FzV" class="internal"><span class="codenumber">5.2.1</span> <span class="title">El grupo de movimientos de un Cubo</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-permute.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-5.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="permute-exercises.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Ejercicios</span></a></div></li>
 <li>
-<div class="toc-item"><a href="permute-sage.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="permute-sage.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="permute-sage.html#subsection-40" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Grupos de Permutaciones y sus Elementos</span></a></div></li>
-<li><div class="toc-item"><a href="permute-sage.html#subsection-41" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Propiedades de Permutaciones (Elementos)</span></a></div></li>
-<li><div class="toc-item"><a href="permute-sage.html#subsection-motion-group-cube" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Grupo de Movimientos de un Cubo</span></a></div></li>
+<li><div class="toc-item"><a href="permute-sage.html#lHe" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Grupos de Permutaciones y sus Elementos</span></a></div></li>
+<li><div class="toc-item"><a href="permute-sage.html#ROn" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Propiedades de Permutaciones (Elementos)</span></a></div></li>
+<li><div class="toc-item"><a href="permute-sage.html#xVw" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Grupo de Movimientos de un Cubo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="permute-sage-exercises.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="permute-sage-exercises.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="cosets.html" class="internal"><span class="codenumber">6</span> <span class="title">Clases Laterales y Teorema de Lagrange</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-cosets.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Clases Laterales</span></a></div></li>
-<li><div class="toc-item"><a href="section-lagranges-theorem.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Teorema de Lagrange</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-section-cosets.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Clases Laterales</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-section-lagranges-theorem.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Teorema de Lagrange</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-fermat-euler.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Teoremas de Fermat y Euler</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-fermat-euler.html#cosets-subsection-historical-note" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+<div class="toc-item"><a href="cosets-section-fermat-euler.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Teoremas de Fermat y Euler</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="cosets-section-fermat-euler.html#AGH" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-cosets.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-6.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-exercises.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Ejercicios</span></a></div></li>
 <li>
-<div class="toc-item"><a href="cosets-sage.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="cosets-sage.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="cosets-sage.html#subsection-44" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Clases Laterales</span></a></div></li>
-<li><div class="toc-item"><a href="cosets-sage.html#subsection-45" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Subgrupos</span></a></div></li>
-<li><div class="toc-item"><a href="cosets-sage.html#subsection-46" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Subgrupos de Grupos Cíclicos</span></a></div></li>
-<li><div class="toc-item"><a href="cosets-sage.html#subsection-47" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Función Phi de Euler</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-sage.html#gNQ" class="internal"><span class="codenumber">6.6.1</span> <span class="title">Clases Laterales</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-sage.html#MUZ" class="internal"><span class="codenumber">6.6.2</span> <span class="title">Subgrupos</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-sage.html#tci" class="internal"><span class="codenumber">6.6.3</span> <span class="title">Subgrupos de Grupos Cíclicos</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-sage.html#Zjr" class="internal"><span class="codenumber">6.6.4</span> <span class="title">Función Phi de Euler</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="cosets-sage-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="cosets-sage-exercises.html" class="internal"><span class="codenumber">6.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="crypt.html" class="internal"><span class="codenumber">7</span> <span class="title">Introducción a la Criptografía</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-private-key-crypt.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Criptografía de Clave Privada</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-section-private-key.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Criptografía de Clave Privada</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-public-key-crypt.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Criptografía de Clave Pública</span></a></div>
+<div class="toc-item"><a href="crypt-section-public-key.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Criptografía de Clave Pública</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-public-key-crypt.html#crypt-subsection-rsa" class="internal"><span class="codenumber">7.2.1</span> <span class="title">El Criptosistema <abbr class="acronym">RSA</abbr></span></a></div></li>
-<li><div class="toc-item"><a href="section-public-key-crypt.html#crypt-subsection-message-verification" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Verificación del Mensaje</span></a></div></li>
-<li><div class="toc-item"><a href="section-public-key-crypt.html#crypt-subsection-historical-note" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-section-public-key.html#aJw" class="internal"><span class="codenumber">7.2.1</span> <span class="title">El Criptosistema <abbr class="acronym">RSA</abbr></span></a></div></li>
+<li><div class="toc-item"><a href="crypt-section-public-key.html#GQF" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Verificación del Mensaje</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-section-public-key.html#mXO" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-crypt.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="crypt-exercises-additional.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Ejercicios Adicionales: Primalidad y Factorización</span></a></div></li>
-<li><div class="toc-item"><a href="crypt-references.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-7.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-exercises.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-exercises-additional.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Ejercicios Adicionales: Primalidad y Factorización</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-references.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="crypt-sage.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="crypt-sage.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="crypt-sage.html#subsection-51" class="internal"><span class="codenumber">7.6.1</span> <span class="title">Construyendo claves</span></a></div></li>
-<li><div class="toc-item"><a href="crypt-sage.html#subsection-52" class="internal"><span class="codenumber">7.6.2</span> <span class="title">Firmando y Encriptando un Mensaje</span></a></div></li>
-<li><div class="toc-item"><a href="crypt-sage.html#subsection-53" class="internal"><span class="codenumber">7.6.3</span> <span class="title">Decriptación y Verificación del Mensaje</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-sage.html#TeX" class="internal"><span class="codenumber">7.7.1</span> <span class="title">Construyendo claves</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-sage.html#zmg" class="internal"><span class="codenumber">7.7.2</span> <span class="title">Firmando y Encriptando un Mensaje</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-sage.html#ftp" class="internal"><span class="codenumber">7.7.3</span> <span class="title">Decriptación y Verificación del Mensaje</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="crypt-sage-exercises.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="crypt-sage-exercises.html" class="internal"><span class="codenumber">7.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="algcodes.html" class="internal"><span class="codenumber">8</span> <span class="title">Teoría Algebraica de Códigos</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-error-detecting-correcting-codes.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Códigos para Detectar y para Corregir Errores</span></a></div>
+<div class="toc-item"><a href="algcodes-section-error-detecting-correcting-codes.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Códigos para Detectar y para Corregir Errores</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-error-detecting-correcting-codes.html#algcodes-subsection-max-likelihood" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Decodificación de Probabilidad Máxima</span></a></div></li>
-<li><div class="toc-item"><a href="section-error-detecting-correcting-codes.html#algcodes-subsection-block-codes" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Códigos de Bloque</span></a></div></li>
-<li><div class="toc-item"><a href="section-error-detecting-correcting-codes.html#algcodes-subsection-historical-note" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Nota Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-section-error-detecting-correcting-codes.html#QaA" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Decodificación de Probabilidad Máxima</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-section-error-detecting-correcting-codes.html#whJ" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Códigos de Bloque</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-section-error-detecting-correcting-codes.html#coS" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-linear-codes.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Códigos Lineales</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-linear-codes.html#algcodes-subsection-linear-codes" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Códigos Lineales</span></a></div></li></ul>
+<div class="toc-item"><a href="algcodes-section-linear-codes.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Códigos Lineales</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="algcodes-section-linear-codes.html#Iwb" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Códigos Lineales</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="section-parity-check.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Matrices Verificadora y Generadora</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-section-parity-check.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Matrices Verificadora y Generadora</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-efficient-decoding.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Decodificación Eficiente</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-efficient-decoding.html#algcodes-subsection-coset-decoding" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Decodificación por Clases Laterales</span></a></div></li></ul>
+<div class="toc-item"><a href="algcodes-section-efficient-decoding.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Decodificación Eficiente</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="algcodes-section-efficient-decoding.html#oDk" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Decodificación por Clases Laterales</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-algcodes.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-8.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-exercises.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-exercises-programming.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-references.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="algcodes-sage.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-59" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-60" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
-<li><div class="toc-item"><a href="algcodes-sage.html#subsection-61" class="internal"><span class="codenumber">8.8.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#UKt" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Construyendo Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#ARC" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Propiedades de los Códigos Lineales</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage.html#gYL" class="internal"><span class="codenumber">8.9.3</span> <span class="title">Decodificando un Código Lineal</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="algcodes-sage-exercises.html" class="internal"><span class="codenumber">8.10</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="isomorph.html" class="internal"><span class="codenumber">9</span> <span class="title">Isomorfismos</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-isomorph-definitions.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Definición y Ejemplos</span></a></div>
+<div class="toc-item"><a href="isomorph-section-definitions.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Definición y Ejemplos</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-isomorph-definitions.html#isomorph-subsection-cayleys-theorem" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Teorema de Cayley</span></a></div></li>
-<li><div class="toc-item"><a href="section-isomorph-definitions.html#isomorph-subsection-historical-note" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Nota histórica</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-section-definitions.html#vbD" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Teorema de Cayley</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-section-definitions.html#biM" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Nota histórica</span></a></div></li>
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-direct-products.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Productos Directos</span></a></div>
+<div class="toc-item"><a href="isomorph-section-direct-products.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Productos Directos</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-direct-products.html#isomorph-subsection-external-products" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Producto Directo Externo</span></a></div></li>
-<li><div class="toc-item"><a href="section-direct-products.html#isomorph-subsection-internal-products" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Producto Directo Interno</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-section-direct-products.html#HpV" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Producto Directo Externo</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-section-direct-products.html#nxe" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Producto Directo Interno</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-isomorph.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-9.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-exercises.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Ejercicios</span></a></div></li>
 <li class="active">
-<div class="toc-item"><a href="isomorph-sage.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="isomorph-sage.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="isomorph-sage.html#subsection-66" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Verificación de Isomorfía</span></a></div></li>
-<li><div class="toc-item"><a href="isomorph-sage.html#subsection-67" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Clasificando Grupos Finitos</span></a></div></li>
-<li><div class="toc-item"><a href="isomorph-sage.html#subsection-68" class="internal"><span class="codenumber">9.4.3</span> <span class="title">Productos Directos Internos</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-sage.html#TEn" class="internal"><span class="codenumber">9.5.1</span> <span class="title">Verificación de Isomorfía</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-sage.html#zLw" class="internal"><span class="codenumber">9.5.2</span> <span class="title">Clasificando Grupos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-sage.html#fSF" class="internal"><span class="codenumber">9.5.3</span> <span class="title">Productos Directos Internos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="isomorph-sage-exercises.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="isomorph-sage-exercises.html" class="internal"><span class="codenumber">9.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="normal.html" class="internal"><span class="codenumber">10</span> <span class="title">Subgrupos Normales y Grupos Cociente</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-factor-groups.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Grupos Cociente y Subgrupos Normales</span></a></div>
+<div class="toc-item"><a href="normal-section-factor-groups.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Grupos Cociente y Subgrupos Normales</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-factor-groups.html#normal-subsection-normal-subgroups" class="internal"><span class="codenumber">10.1.1</span> <span class="title">Subgrupos Normales</span></a></div></li>
-<li><div class="toc-item"><a href="section-factor-groups.html#normal-subsection-factor-groups" class="internal"><span class="codenumber">10.1.2</span> <span class="title">Grupos cociente</span></a></div></li>
+<li><div class="toc-item"><a href="normal-section-factor-groups.html#dpU" class="internal"><span class="codenumber">10.1.1</span> <span class="title">Subgrupos Normales</span></a></div></li>
+<li><div class="toc-item"><a href="normal-section-factor-groups.html#Jxd" class="internal"><span class="codenumber">10.1.2</span> <span class="title">Grupos cociente</span></a></div></li>
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-simplicity-of-an.html" class="internal"><span class="codenumber">10.2</span> <span class="title">La Simplicidad del Grupo Alternante</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-simplicity-of-an.html#normal-subsection-historical-note" class="internal"><span class="codenumber">10.2.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+<div class="toc-item"><a href="normal-section-simplicity-of-an.html" class="internal"><span class="codenumber">10.2</span> <span class="title">La Simplicidad del Grupo Alternante</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="normal-section-simplicity-of-an.html#pEm" class="internal"><span class="codenumber">10.2.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-normal.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-10.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="normal-exercises.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Ejercicios</span></a></div></li>
 <li>
-<div class="toc-item"><a href="normal-sage.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="normal-sage.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="normal-sage.html#subsection-72" class="internal"><span class="codenumber">10.4.1</span> <span class="title">Multiplicando Clases Laterales</span></a></div></li>
-<li><div class="toc-item"><a href="normal-sage.html#subsection-73" class="internal"><span class="codenumber">10.4.2</span> <span class="title">Métodos de Sage para Subgrupos Normales</span></a></div></li>
+<li><div class="toc-item"><a href="normal-sage.html#VLv" class="internal"><span class="codenumber">10.5.1</span> <span class="title">Multiplicando Clases Laterales</span></a></div></li>
+<li><div class="toc-item"><a href="normal-sage.html#BSE" class="internal"><span class="codenumber">10.5.2</span> <span class="title">Métodos de Sage para Subgrupos Normales</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="normal-sage-exercises.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="normal-sage-exercises.html" class="internal"><span class="codenumber">10.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="homomorph.html" class="internal"><span class="codenumber">11</span> <span class="title">Homomorfismos</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-group-homomorphisms.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Homomofismos de Grupos</span></a></div></li>
-<li><div class="toc-item"><a href="section-group-isomorphism-theorems.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Los Teoremas de Isomorfía</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-homomorph.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="homomorph-exercises-automorphisms.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Ejercicios adicionales: Automorfismos</span></a></div></li>
+<li><div class="toc-item"><a href="homomorph-section-group-homomorphisms.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Homomofismos de Grupos</span></a></div></li>
+<li><div class="toc-item"><a href="homomorph-section-group-isomorphism-theorems.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Los Teoremas de Isomorfía</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-11.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="homomorph-exercises.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="homomorph-exercises-automorphisms.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Ejercicios adicionales: Automorfismos</span></a></div></li>
 <li>
-<div class="toc-item"><a href="homomorph-sage.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Sage</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="homomorph-sage.html#subsection-74" class="internal"><span class="codenumber">11.5.1</span> <span class="title">Homomorfismos</span></a></div></li></ul>
+<div class="toc-item"><a href="homomorph-sage.html" class="internal"><span class="codenumber">11.6</span> <span class="title">Sage</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="homomorph-sage.html#qeP" class="internal"><span class="codenumber">11.6.1</span> <span class="title">Homomorfismos</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="homomorph-sage-exercises.html" class="internal"><span class="codenumber">11.6</span> <span class="title">Ejercicios Sage</span></a></div></li>
+<li><div class="toc-item"><a href="homomorph-sage-exercises.html" class="internal"><span class="codenumber">11.7</span> <span class="title">Ejercicios Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="matrix.html" class="internal"><span class="codenumber">12</span> <span class="title">Grupos de Matrices y Simetría</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-matrix-groups.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Grupos de Matrices</span></a></div>
+<div class="toc-item"><a href="matrix-section-groups.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Grupos de Matrices</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-matrix-groups.html#matrix-subsection-linear-algebra" class="internal"><span class="codenumber">12.1.1</span> <span class="title">Algunos Resultados de Álgebra Lineal</span></a></div></li>
-<li><div class="toc-item"><a href="section-matrix-groups.html#matrix-subsection-general-linear-group" class="internal"><span class="codenumber">12.1.2</span> <span class="title">El Grupo Lineal General y el Grupo Lineal Especial</span></a></div></li>
-<li><div class="toc-item"><a href="section-matrix-groups.html#matrix-subsection-orthogonal-group" class="internal"><span class="codenumber">12.1.3</span> <span class="title">El Grupo Ortogonal <span class="process-math">\(O(n)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="matrix-section-groups.html#iZt" class="internal"><span class="codenumber">12.1.1</span> <span class="title">Algunos Resultados de Álgebra Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-section-groups.html#PgC" class="internal"><span class="codenumber">12.1.2</span> <span class="title">El Grupo Lineal General y el Grupo Lineal Especial</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-section-groups.html#vnL" class="internal"><span class="codenumber">12.1.3</span> <span class="title">El Grupo Ortogonal <span class="process-math">\(O(n)\)</span></span></a></div></li>
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-symmetry.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Simetría</span></a></div>
+<div class="toc-item"><a href="matrix-section-symmetry.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Simetría</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-symmetry.html#matrix-subsection-wallpaper" class="internal"><span class="codenumber">12.2.1</span> <span class="title">Los Grupos Cristalográficos del Plano</span></a></div></li>
-<li><div class="toc-item"><a href="section-symmetry.html#matrix-subsection-historical-note" class="internal"><span class="codenumber">12.2.2</span> <span class="title">Nota Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-section-symmetry.html#buU" class="internal"><span class="codenumber">12.2.1</span> <span class="title">Los Grupos Cristalográficos del Plano</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-section-symmetry.html#HCd" class="internal"><span class="codenumber">12.2.2</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-matrix.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="matrix-references.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
-<li><div class="toc-item"><a href="matrix-sage.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Sage</span></a></div></li>
-<li><div class="toc-item"><a href="matrix-sage-exercises.html" class="internal"><span class="codenumber">12.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-12.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-exercises.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-references.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-sage.html" class="internal"><span class="codenumber">12.6</span> <span class="title">Sage</span></a></div></li>
+<li><div class="toc-item"><a href="matrix-sage-exercises.html" class="internal"><span class="codenumber">12.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="struct.html" class="internal"><span class="codenumber">13</span> <span class="title">La Estructura de Grupos</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-finite-abelian-groups.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Grupos Abelianos Finitos</span></a></div></li>
-<li><div class="toc-item"><a href="section-solvable-groups.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Grupos Solubles</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-struct.html" class="internal"><span class="codenumber">13.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="struct-exercises-programming.html" class="internal"><span class="codenumber">13.4</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="struct-references.html" class="internal"><span class="codenumber">13.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="struct-section-finite-abelian-groups.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Grupos Abelianos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="struct-section-solvable-groups.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Grupos Solubles</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-13.html" class="internal"><span class="codenumber">13.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="struct-exercises.html" class="internal"><span class="codenumber">13.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="struct-exercises-programming.html" class="internal"><span class="codenumber">13.5</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="struct-references.html" class="internal"><span class="codenumber">13.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="struct-sage.html" class="internal"><span class="codenumber">13.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="struct-sage.html" class="internal"><span class="codenumber">13.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="struct-sage.html#subsection-80" class="internal"><span class="codenumber">13.6.1</span> <span class="title">Clasificación de Grupos Finitos</span></a></div></li>
-<li><div class="toc-item"><a href="struct-sage.html#subsection-81" class="internal"><span class="codenumber">13.6.2</span> <span class="title">Grupos de Orden Pequeño como grupos de Permutaciones</span></a></div></li>
+<li><div class="toc-item"><a href="struct-sage.html#FdJ" class="internal"><span class="codenumber">13.7.1</span> <span class="title">Clasificación de Grupos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="struct-sage.html#lkS" class="internal"><span class="codenumber">13.7.2</span> <span class="title">Grupos de Orden Pequeño como grupos de Permutaciones</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="struct-sage-exercises.html" class="internal"><span class="codenumber">13.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="struct-sage-exercises.html" class="internal"><span class="codenumber">13.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="actions.html" class="internal"><span class="codenumber">14</span> <span class="title">Acciones de Grupo</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-groups-acting-on-sets.html" class="internal"><span class="codenumber">14.1</span> <span class="title">Grupos Actuando en Conjuntos</span></a></div></li>
-<li><div class="toc-item"><a href="section-class-equation.html" class="internal"><span class="codenumber">14.2</span> <span class="title">La Ecuación de Clase</span></a></div></li>
+<li><div class="toc-item"><a href="actions-section-groups-acting-on-sets.html" class="internal"><span class="codenumber">14.1</span> <span class="title">Grupos Actuando en Conjuntos</span></a></div></li>
+<li><div class="toc-item"><a href="actions-section-class-equation.html" class="internal"><span class="codenumber">14.2</span> <span class="title">La Ecuación de Clase</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-burnsides-counting-theorem.html" class="internal"><span class="codenumber">14.3</span> <span class="title">Teorema de Conteo de Burnside</span></a></div>
+<div class="toc-item"><a href="actions-section-burnsides-counting-theorem.html" class="internal"><span class="codenumber">14.3</span> <span class="title">Teorema de Conteo de Burnside</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-geometric-example" class="internal"><span class="codenumber">14.3.1</span> <span class="title">Un Ejemplo Geométrico</span></a></div></li>
-<li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-switching-functions" class="internal"><span class="codenumber">14.3.2</span> <span class="title">Funciones de Conmutación</span></a></div></li>
-<li><div class="toc-item"><a href="section-burnsides-counting-theorem.html#actions-subsection-historical-note" class="internal"><span class="codenumber">14.3.3</span> <span class="title">Nota Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="actions-section-burnsides-counting-theorem.html#KsS" class="internal"><span class="codenumber">14.3.1</span> <span class="title">Un Ejemplo Geométrico</span></a></div></li>
+<li><div class="toc-item"><a href="actions-section-burnsides-counting-theorem.html#qAb" class="internal"><span class="codenumber">14.3.2</span> <span class="title">Funciones de Conmutación</span></a></div></li>
+<li><div class="toc-item"><a href="actions-section-burnsides-counting-theorem.html#WHk" class="internal"><span class="codenumber">14.3.3</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-actions.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicio de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-14.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises.html" class="internal"><span class="codenumber">14.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="actions-exercises-programming.html" class="internal"><span class="codenumber">14.6</span> <span class="title">Ejercicio de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="actions-references.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="actions-sage.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="actions-sage.html#subsection-85" class="internal"><span class="codenumber">14.7.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
-<li><div class="toc-item"><a href="actions-sage.html#subsection-86" class="internal"><span class="codenumber">14.7.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#COt" class="internal"><span class="codenumber">14.8.1</span> <span class="title">Conjugación como Acción de Grupo</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage.html#iVC" class="internal"><span class="codenumber">14.8.2</span> <span class="title">Automorfismos de un Grafo</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="actions-sage-exercises.html" class="internal"><span class="codenumber">14.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="sylow.html" class="internal"><span class="codenumber">15</span> <span class="title">Los Teoremas de Sylow</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-sylow-theorems.html" class="internal"><span class="codenumber">15.1</span> <span class="title">Los Teoremas de Sylow</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-sylow-theorems.html#sylow-subsection-historical-note" class="internal"><span class="codenumber">15.1.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+<div class="toc-item"><a href="sylow-section-sylow-theorems.html" class="internal"><span class="codenumber">15.1</span> <span class="title">Los Teoremas de Sylow</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sylow-section-sylow-theorems.html#zrX" class="internal"><span class="codenumber">15.1.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-sylow-applications.html" class="internal"><span class="codenumber">15.2</span> <span class="title">Ejemplos y Aplicaciones</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-sylow-applications.html#sylow-subsection-finite-simple-groups" class="internal"><span class="codenumber">15.2.1</span> <span class="title">Grupos Finitos Simples</span></a></div></li></ul>
+<div class="toc-item"><a href="sylow-section-applications.html" class="internal"><span class="codenumber">15.2</span> <span class="title">Ejemplos y Aplicaciones</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sylow-section-applications.html#fzg" class="internal"><span class="codenumber">15.2.1</span> <span class="title">Grupos Finitos Simples</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-sylow.html" class="internal"><span class="codenumber">15.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="sylow-exercises-project.html" class="internal"><span class="codenumber">15.4</span> <span class="title">Un Proyecto</span></a></div></li>
-<li><div class="toc-item"><a href="sylow-references.html" class="internal"><span class="codenumber">15.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-15.html" class="internal"><span class="codenumber">15.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-exercises.html" class="internal"><span class="codenumber">15.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-exercises-project.html" class="internal"><span class="codenumber">15.5</span> <span class="title">Un Proyecto</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-references.html" class="internal"><span class="codenumber">15.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="sylow-sage.html" class="internal"><span class="codenumber">15.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="sylow-sage.html" class="internal"><span class="codenumber">15.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sylow-sage.html#subsection-89" class="internal"><span class="codenumber">15.6.1</span> <span class="title">Subgrupos de Sylow</span></a></div></li>
-<li><div class="toc-item"><a href="sylow-sage.html#subsection-90" class="internal"><span class="codenumber">15.6.2</span> <span class="title">Normalizadores</span></a></div></li>
-<li><div class="toc-item"><a href="sylow-sage.html#subsection-91" class="internal"><span class="codenumber">15.6.3</span> <span class="title">Grupos Finitos Simples</span></a></div></li>
-<li><div class="toc-item"><a href="sylow-sage.html#subsection-92" class="internal"><span class="codenumber">15.6.4</span> <span class="title">Consola e Interfaz <abbr class="acronym">GAP</abbr></span></a></div></li>
+<li><div class="toc-item"><a href="sylow-sage.html#LGp" class="internal"><span class="codenumber">15.7.1</span> <span class="title">Subgrupos de Sylow</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-sage.html#rNy" class="internal"><span class="codenumber">15.7.2</span> <span class="title">Normalizadores</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-sage.html#XUH" class="internal"><span class="codenumber">15.7.3</span> <span class="title">Grupos Finitos Simples</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-sage.html#EbQ" class="internal"><span class="codenumber">15.7.4</span> <span class="title"><abbr class="acronym">GAP</abbr> Consola e Interfaz</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sylow-sage-exercises.html" class="internal"><span class="codenumber">15.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="sylow-sage-exercises.html" class="internal"><span class="codenumber">15.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="rings.html" class="internal"><span class="codenumber">16</span> <span class="title">Anillos</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-rings-definitions.html" class="internal"><span class="codenumber">16.1</span> <span class="title">Anillos</span></a></div></li>
-<li><div class="toc-item"><a href="section-domains-and-fields.html" class="internal"><span class="codenumber">16.2</span> <span class="title">Dominios Integrales y Cuerpos</span></a></div></li>
-<li><div class="toc-item"><a href="section-ring-homomorphisms.html" class="internal"><span class="codenumber">16.3</span> <span class="title">Homomorfismos de Anillos e Ideales</span></a></div></li>
+<li><div class="toc-item"><a href="rings-section-definitions.html" class="internal"><span class="codenumber">16.1</span> <span class="title">Anillos</span></a></div></li>
+<li><div class="toc-item"><a href="rings-section-domains-and-fields.html" class="internal"><span class="codenumber">16.2</span> <span class="title">Dominios Integrales y Cuerpos</span></a></div></li>
+<li><div class="toc-item"><a href="rings-section-homomorphisms.html" class="internal"><span class="codenumber">16.3</span> <span class="title">Homomorfismos de Anillos e Ideales</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-maximal-prime-ideals.html" class="internal"><span class="codenumber">16.4</span> <span class="title">Ideales Maximales e Ideales Primos</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-maximal-prime-ideals.html#rings-subsection-historical-note" class="internal"><span class="codenumber">16.4.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+<div class="toc-item"><a href="rings-section-maximal-prime-ideals.html" class="internal"><span class="codenumber">16.4</span> <span class="title">Ideales Maximales e Ideales Primos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="rings-section-maximal-prime-ideals.html#HoI" class="internal"><span class="codenumber">16.4.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="section-software-application.html" class="internal"><span class="codenumber">16.5</span> <span class="title">Una Aplicación al Diseño de Software</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-rings.html" class="internal"><span class="codenumber">16.6</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="rings-exercises-programming.html" class="internal"><span class="codenumber">16.7</span> <span class="title">Ejercicio de programación</span></a></div></li>
-<li><div class="toc-item"><a href="rings-references.html" class="internal"><span class="codenumber">16.8</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="rings-section-software-application.html" class="internal"><span class="codenumber">16.5</span> <span class="title">Una Aplicación al Diseño de Software</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-16.html" class="internal"><span class="codenumber">16.6</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="rings-exercises.html" class="internal"><span class="codenumber">16.7</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="rings-exercises-programming.html" class="internal"><span class="codenumber">16.8</span> <span class="title">Ejercicio de programación</span></a></div></li>
+<li><div class="toc-item"><a href="rings-references.html" class="internal"><span class="codenumber">16.9</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="rings-sage.html" class="internal"><span class="codenumber">16.9</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="rings-sage.html" class="internal"><span class="codenumber">16.10</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="rings-sage.html#subsection-94" class="internal"><span class="codenumber">16.9.1</span> <span class="title">Creando Anillos</span></a></div></li>
-<li><div class="toc-item"><a href="rings-sage.html#subsection-95" class="internal"><span class="codenumber">16.9.2</span> <span class="title">Propiedades de los Anillos</span></a></div></li>
-<li><div class="toc-item"><a href="rings-sage.html#subsection-96" class="internal"><span class="codenumber">16.9.3</span> <span class="title">Estructuras Cociente</span></a></div></li>
-<li><div class="toc-item"><a href="rings-sage.html#subsection-97" class="internal"><span class="codenumber">16.9.4</span> <span class="title">Homomorfismo de Anillos</span></a></div></li>
+<li><div class="toc-item"><a href="rings-sage.html#nvR" class="internal"><span class="codenumber">16.10.1</span> <span class="title">Creando Anillos</span></a></div></li>
+<li><div class="toc-item"><a href="rings-sage.html#TDa" class="internal"><span class="codenumber">16.10.2</span> <span class="title">Propiedades de los Anillos</span></a></div></li>
+<li><div class="toc-item"><a href="rings-sage.html#zKj" class="internal"><span class="codenumber">16.10.3</span> <span class="title">Estructuras Cociente</span></a></div></li>
+<li><div class="toc-item"><a href="rings-sage.html#fRs" class="internal"><span class="codenumber">16.10.4</span> <span class="title">Homomorfismo de Anillos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="rings-sage-exercises.html" class="internal"><span class="codenumber">16.10</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="rings-sage-exercises.html" class="internal"><span class="codenumber">16.11</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="poly.html" class="internal"><span class="codenumber">17</span> <span class="title">Polinomios</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-poly-rings.html" class="internal"><span class="codenumber">17.1</span> <span class="title">Anillos de Polinomios</span></a></div></li>
-<li><div class="toc-item"><a href="section-poly-division-algorithm.html" class="internal"><span class="codenumber">17.2</span> <span class="title">El Algoritmo de División</span></a></div></li>
+<li><div class="toc-item"><a href="poly-section-rings.html" class="internal"><span class="codenumber">17.1</span> <span class="title">Anillos de Polinomios</span></a></div></li>
+<li><div class="toc-item"><a href="poly-section-division-algorithm.html" class="internal"><span class="codenumber">17.2</span> <span class="title">El Algoritmo de División</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-irreducible-poly.html" class="internal"><span class="codenumber">17.3</span> <span class="title">Polinomios Irreducibles</span></a></div>
+<div class="toc-item"><a href="poly-section-irreducible-poly.html" class="internal"><span class="codenumber">17.3</span> <span class="title">Polinomios Irreducibles</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-irreducible-poly.html#poly-subsection-ideals" class="internal"><span class="codenumber">17.3.1</span> <span class="title">Ideales en <span class="process-math">\(F\lbrack x \rbrack\)</span></span></a></div></li>
-<li><div class="toc-item"><a href="section-irreducible-poly.html#poly-subsection-historical-note" class="internal"><span class="codenumber">17.3.2</span> <span class="title">Nota Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="poly-section-irreducible-poly.html#ZWC" class="internal"><span class="codenumber">17.3.1</span> <span class="title">Ideales en <span class="process-math">\(F\lbrack x \rbrack\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="poly-section-irreducible-poly.html#GdL" class="internal"><span class="codenumber">17.3.2</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-poly.html" class="internal"><span class="codenumber">17.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="poly-exercises-cubics-quartics.html" class="internal"><span class="codenumber">17.5</span> <span class="title">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-17.html" class="internal"><span class="codenumber">17.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="poly-exercises.html" class="internal"><span class="codenumber">17.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="poly-exercises-cubics-quartics.html" class="internal"><span class="codenumber">17.6</span> <span class="title">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</span></a></div></li>
 <li>
-<div class="toc-item"><a href="poly-sage.html" class="internal"><span class="codenumber">17.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="poly-sage.html" class="internal"><span class="codenumber">17.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="poly-sage.html#subsection-100" class="internal"><span class="codenumber">17.6.1</span> <span class="title">Anillos de Polinomios y sus Elementos</span></a></div></li>
-<li><div class="toc-item"><a href="poly-sage.html#subsection-101" class="internal"><span class="codenumber">17.6.2</span> <span class="title">Polinomios Irreducibles</span></a></div></li>
-<li><div class="toc-item"><a href="poly-sage.html#subsection-102" class="internal"><span class="codenumber">17.6.3</span> <span class="title">Polinomios sobre Cuerpos</span></a></div></li>
+<li><div class="toc-item"><a href="poly-sage.html#mkU" class="internal"><span class="codenumber">17.7.1</span> <span class="title">Anillos de Polinomios y sus Elementos</span></a></div></li>
+<li><div class="toc-item"><a href="poly-sage.html#Ssd" class="internal"><span class="codenumber">17.7.2</span> <span class="title">Polinomios Irreducibles</span></a></div></li>
+<li><div class="toc-item"><a href="poly-sage.html#yzm" class="internal"><span class="codenumber">17.7.3</span> <span class="title">Polinomios sobre Cuerpos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="poly-sage-exercises.html" class="internal"><span class="codenumber">17.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="poly-sage-exercises.html" class="internal"><span class="codenumber">17.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="domains.html" class="internal"><span class="codenumber">18</span> <span class="title">Dominios Integrales</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-field-of-fractions.html" class="internal"><span class="codenumber">18.1</span> <span class="title">Cuerpos de Fracciones</span></a></div></li>
+<li><div class="toc-item"><a href="domains-section-field-of-fractions.html" class="internal"><span class="codenumber">18.1</span> <span class="title">Cuerpos de Fracciones</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-factorization-domains.html" class="internal"><span class="codenumber">18.2</span> <span class="title">Factorización en un Dominio Integral</span></a></div>
+<div class="toc-item"><a href="domains-section-factorization-domains.html" class="internal"><span class="codenumber">18.2</span> <span class="title">Factorización en un Dominio Integral</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-factorization-domains.html#domains-subsection-pids" class="internal"><span class="codenumber">18.2.1</span> <span class="title">Dominios de Ideales Principales</span></a></div></li>
-<li><div class="toc-item"><a href="section-factorization-domains.html#domains-subsection-euclidean-domains" class="internal"><span class="codenumber">18.2.2</span> <span class="title">Dominios Euclideanos</span></a></div></li>
-<li><div class="toc-item"><a href="section-factorization-domains.html#domains-subsection-factorization" class="internal"><span class="codenumber">18.2.3</span> <span class="title">Factorización en <span class="process-math">\(D\lbrack x \rbrack\)</span></span></a></div></li>
-<li><div class="toc-item"><a href="section-factorization-domains.html#domains-subsection-historical-note" class="internal"><span class="codenumber">18.2.4</span> <span class="title">Nota Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="domains-section-factorization-domains.html#nta" class="internal"><span class="codenumber">18.2.1</span> <span class="title">Dominios de Ideales Principales</span></a></div></li>
+<li><div class="toc-item"><a href="domains-section-factorization-domains.html#TAj" class="internal"><span class="codenumber">18.2.2</span> <span class="title">Dominios Euclideanos</span></a></div></li>
+<li><div class="toc-item"><a href="domains-section-factorization-domains.html#zHs" class="internal"><span class="codenumber">18.2.3</span> <span class="title">Factorización en <span class="process-math">\(D\lbrack x \rbrack\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="domains-section-factorization-domains.html#fOB" class="internal"><span class="codenumber">18.2.4</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-domains.html" class="internal"><span class="codenumber">18.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="domains-references.html" class="internal"><span class="codenumber">18.4</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-18.html" class="internal"><span class="codenumber">18.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="domains-exercises.html" class="internal"><span class="codenumber">18.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="domains-references.html" class="internal"><span class="codenumber">18.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="domains-sage.html" class="internal"><span class="codenumber">18.5</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="domains-sage.html" class="internal"><span class="codenumber">18.6</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="domains-sage.html#subsection-107" class="internal"><span class="codenumber">18.5.1</span> <span class="title">Cuerpo de Fracciones</span></a></div></li>
-<li><div class="toc-item"><a href="domains-sage.html#subsection-108" class="internal"><span class="codenumber">18.5.2</span> <span class="title">Subcuerpos Primos</span></a></div></li>
-<li><div class="toc-item"><a href="domains-sage.html#subsection-109" class="internal"><span class="codenumber">18.5.3</span> <span class="title">Dominios Integrales</span></a></div></li>
-<li><div class="toc-item"><a href="domains-sage.html#subsection-110" class="internal"><span class="codenumber">18.5.4</span> <span class="title">Ideales Principales</span></a></div></li>
+<li><div class="toc-item"><a href="domains-sage.html#LVK" class="internal"><span class="codenumber">18.6.1</span> <span class="title">Cuerpo de Fracciones</span></a></div></li>
+<li><div class="toc-item"><a href="domains-sage.html#scT" class="internal"><span class="codenumber">18.6.2</span> <span class="title">Subcuerpos Primos</span></a></div></li>
+<li><div class="toc-item"><a href="domains-sage.html#Ykc" class="internal"><span class="codenumber">18.6.3</span> <span class="title">Dominios Integrales</span></a></div></li>
+<li><div class="toc-item"><a href="domains-sage.html#Erl" class="internal"><span class="codenumber">18.6.4</span> <span class="title">Ideales Principales</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="domains-sage-exercises.html" class="internal"><span class="codenumber">18.6</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="domains-sage-exercises.html" class="internal"><span class="codenumber">18.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="boolean.html" class="internal"><span class="codenumber">19</span> <span class="title">Reticulados y Álgebras Booleanas</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-boolean-lattices.html" class="internal"><span class="codenumber">19.1</span> <span class="title">Reticulados</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-boolean-lattices.html#boolean-subsection-poset" class="internal"><span class="codenumber">19.1.1</span> <span class="title">Conjuntos Parcialmente Ordenados</span></a></div></li></ul>
+<div class="toc-item"><a href="boolean-section-lattices.html" class="internal"><span class="codenumber">19.1</span> <span class="title">Reticulados</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="boolean-section-lattices.html#JHy" class="internal"><span class="codenumber">19.1.1</span> <span class="title">Conjuntos Parcialmente Ordenados</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-boolean-algebras.html" class="internal"><span class="codenumber">19.2</span> <span class="title">Álgebras Booleanas</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-boolean-algebras.html#boolean-subsection-finite-algebras" class="internal"><span class="codenumber">19.2.1</span> <span class="title">Álgebras Booleanas Finitas</span></a></div></li></ul>
+<div class="toc-item"><a href="boolean-section-boolean-algebras.html" class="internal"><span class="codenumber">19.2</span> <span class="title">Álgebras Booleanas</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="boolean-section-boolean-algebras.html#pOH" class="internal"><span class="codenumber">19.2.1</span> <span class="title">Álgebras Booleanas Finitas</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-algebra-of-circuits.html" class="internal"><span class="codenumber">19.3</span> <span class="title">El Álgebra de los Circuitos Eléctricos</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-algebra-of-circuits.html#boolean-subsection-historical-note" class="internal"><span class="codenumber">19.3.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+<div class="toc-item"><a href="boolean-section-algebra-of-circuits.html" class="internal"><span class="codenumber">19.3</span> <span class="title">El Álgebra de los Circuitos Eléctricos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="boolean-section-algebra-of-circuits.html#VVQ" class="internal"><span class="codenumber">19.3.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
 </li>
-<li><div class="toc-item"><a href="exercises-boolean.html" class="internal"><span class="codenumber">19.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="boolean-exercises-programming.html" class="internal"><span class="codenumber">19.5</span> <span class="title">Ejercicios de Programación</span></a></div></li>
-<li><div class="toc-item"><a href="boolean-references.html" class="internal"><span class="codenumber">19.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-19.html" class="internal"><span class="codenumber">19.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-exercises.html" class="internal"><span class="codenumber">19.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-exercises-programming.html" class="internal"><span class="codenumber">19.6</span> <span class="title">Ejercicios de Programación</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-references.html" class="internal"><span class="codenumber">19.7</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="boolean-sage.html" class="internal"><span class="codenumber">19.7</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="boolean-sage.html" class="internal"><span class="codenumber">19.8</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="boolean-sage.html#subsection-114" class="internal"><span class="codenumber">19.7.1</span> <span class="title">Creando Conjuntos Parcialmente Ordenados</span></a></div></li>
-<li><div class="toc-item"><a href="boolean-sage.html#subsection-115" class="internal"><span class="codenumber">19.7.2</span> <span class="title">Propiedades de un conjunto parcialmente ordenado</span></a></div></li>
-<li><div class="toc-item"><a href="boolean-sage.html#subsection-116" class="internal"><span class="codenumber">19.7.3</span> <span class="title">Reticulados</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-sage.html#CcZ" class="internal"><span class="codenumber">19.8.1</span> <span class="title">Creando Conjuntos Parcialmente Ordenados</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-sage.html#iki" class="internal"><span class="codenumber">19.8.2</span> <span class="title">Propiedades de un conjunto parcialmente ordenado</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-sage.html#Orr" class="internal"><span class="codenumber">19.8.3</span> <span class="title">Reticulados</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="boolean-sage-exercises.html" class="internal"><span class="codenumber">19.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="boolean-sage-exercises.html" class="internal"><span class="codenumber">19.9</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="vect.html" class="internal"><span class="codenumber">20</span> <span class="title">Espacios Vectoriales</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="section-vect-definitions-and-examples.html" class="internal"><span class="codenumber">20.1</span> <span class="title">Definiciones y Ejemplos</span></a></div></li>
-<li><div class="toc-item"><a href="section-subspaces.html" class="internal"><span class="codenumber">20.2</span> <span class="title">Subespacios</span></a></div></li>
-<li><div class="toc-item"><a href="section-linear-independence.html" class="internal"><span class="codenumber">20.3</span> <span class="title">Independencia Lineal</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-vect.html" class="internal"><span class="codenumber">20.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="vect-references.html" class="internal"><span class="codenumber">20.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="vect-section-subspaces.html" class="internal"><span class="codenumber">20.2</span> <span class="title">Subespacios</span></a></div></li>
+<li><div class="toc-item"><a href="vect-section-linear-independence.html" class="internal"><span class="codenumber">20.3</span> <span class="title">Independencia Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-20.html" class="internal"><span class="codenumber">20.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="vect-exercises.html" class="internal"><span class="codenumber">20.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="vect-references.html" class="internal"><span class="codenumber">20.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="vect-sage.html" class="internal"><span class="codenumber">20.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="vect-sage.html" class="internal"><span class="codenumber">20.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="vect-sage.html#subsection-117" class="internal"><span class="codenumber">20.6.1</span> <span class="title">Espacios Vectoriales</span></a></div></li>
-<li><div class="toc-item"><a href="vect-sage.html#subsection-118" class="internal"><span class="codenumber">20.6.2</span> <span class="title">Subespacios</span></a></div></li>
-<li><div class="toc-item"><a href="vect-sage.html#subsection-119" class="internal"><span class="codenumber">20.6.3</span> <span class="title">Independencia Lineal</span></a></div></li>
-<li><div class="toc-item"><a href="vect-sage.html#subsection-120" class="internal"><span class="codenumber">20.6.4</span> <span class="title">Espacios Vectoriales Abstractos</span></a></div></li>
-<li><div class="toc-item"><a href="vect-sage.html#subsection-121" class="internal"><span class="codenumber">20.6.5</span> <span class="title">Álgebra Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage.html#RaP" class="internal"><span class="codenumber">20.7.1</span> <span class="title">Espacios Vectoriales</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage.html#xhY" class="internal"><span class="codenumber">20.7.2</span> <span class="title">Subespacios</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage.html#dph" class="internal"><span class="codenumber">20.7.3</span> <span class="title">Independencia Lineal</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage.html#Jwq" class="internal"><span class="codenumber">20.7.4</span> <span class="title">Espacios Vectoriales Abstractos</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage.html#pDz" class="internal"><span class="codenumber">20.7.5</span> <span class="title">Álgebra Lineal</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="vect-sage-exercises.html" class="internal"><span class="codenumber">20.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="vect-sage-exercises.html" class="internal"><span class="codenumber">20.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="fields.html" class="internal"><span class="codenumber">21</span> <span class="title">Cuerpos</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-extension-fields.html" class="internal"><span class="codenumber">21.1</span> <span class="title">Extensiones de cuerpos</span></a></div>
+<div class="toc-item"><a href="fields-section-extension-fields.html" class="internal"><span class="codenumber">21.1</span> <span class="title">Extensiones de cuerpos</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-extension-fields.html#fields-subsection-algebraic-elements" class="internal"><span class="codenumber">21.1.1</span> <span class="title">Elementos Algebraicos</span></a></div></li>
-<li><div class="toc-item"><a href="section-extension-fields.html#fields-subsection-algebraic-closure" class="internal"><span class="codenumber">21.1.2</span> <span class="title">Clausura Algebraica</span></a></div></li>
+<li><div class="toc-item"><a href="fields-section-extension-fields.html#VUq" class="internal"><span class="codenumber">21.1.1</span> <span class="title">Elementos Algebraicos</span></a></div></li>
+<li><div class="toc-item"><a href="fields-section-extension-fields.html#Cbz" class="internal"><span class="codenumber">21.1.2</span> <span class="title">Clausura Algebraica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="section-splitting-fields.html" class="internal"><span class="codenumber">21.2</span> <span class="title">Cuerpos de descomposición</span></a></div></li>
+<li><div class="toc-item"><a href="fields-section-splitting-fields.html" class="internal"><span class="codenumber">21.2</span> <span class="title">Cuerpos de descomposición</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-constructions.html" class="internal"><span class="codenumber">21.3</span> <span class="title">Construcciones Geométricas</span></a></div>
+<div class="toc-item"><a href="fields-section-constructions.html" class="internal"><span class="codenumber">21.3</span> <span class="title">Construcciones Geométricas</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-constructions.html#fields-subsection-constructible-numbers" class="internal"><span class="codenumber">21.3.1</span> <span class="title">Números Constructibles</span></a></div></li>
-<li><div class="toc-item"><a href="section-constructions.html#fields-subsection-doubling-the-cube" class="internal"><span class="codenumber">21.3.2</span> <span class="title">Duplicando el cubo y cuadrando el círculo</span></a></div></li>
-<li><div class="toc-item"><a href="section-constructions.html#fields-subsection-trisect-angle" class="internal"><span class="codenumber">21.3.3</span> <span class="title">Trisecando un Ángulo</span></a></div></li>
-<li><div class="toc-item"><a href="section-constructions.html#fields-subsection-historical-note" class="internal"><span class="codenumber">21.3.4</span> <span class="title">Nota Histórica</span></a></div></li>
+<li><div class="toc-item"><a href="fields-section-constructions.html#iiI" class="internal"><span class="codenumber">21.3.1</span> <span class="title">Números Constructibles</span></a></div></li>
+<li><div class="toc-item"><a href="fields-section-constructions.html#OpR" class="internal"><span class="codenumber">21.3.2</span> <span class="title">Duplicando el cubo y cuadrando el círculo</span></a></div></li>
+<li><div class="toc-item"><a href="fields-section-constructions.html#uxa" class="internal"><span class="codenumber">21.3.3</span> <span class="title">Trisecando un Ángulo</span></a></div></li>
+<li><div class="toc-item"><a href="fields-section-constructions.html#aEj" class="internal"><span class="codenumber">21.3.4</span> <span class="title">Nota Histórica</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-fields.html" class="internal"><span class="codenumber">21.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="fields-references.html" class="internal"><span class="codenumber">21.5</span> <span class="title">Referencias y Lecturas sugeridas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-21.html" class="internal"><span class="codenumber">21.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="fields-exercises.html" class="internal"><span class="codenumber">21.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="fields-references.html" class="internal"><span class="codenumber">21.6</span> <span class="title">Referencias y Lecturas sugeridas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="fields-sage.html" class="internal"><span class="codenumber">21.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="fields-sage.html" class="internal"><span class="codenumber">21.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="fields-sage.html#subsection-128" class="internal"><span class="codenumber">21.6.1</span> <span class="title">Cuerpos de números</span></a></div></li>
-<li><div class="toc-item"><a href="fields-sage.html#subsection-129" class="internal"><span class="codenumber">21.6.2</span> <span class="title">Cuerpos de Números Absolutos y Relativos</span></a></div></li>
-<li><div class="toc-item"><a href="fields-sage.html#subsection-130" class="internal"><span class="codenumber">21.6.3</span> <span class="title">Cuerpos de descomposición</span></a></div></li>
-<li><div class="toc-item"><a href="fields-sage.html#subsection-131" class="internal"><span class="codenumber">21.6.4</span> <span class="title">Números Algebraicos</span></a></div></li>
-<li><div class="toc-item"><a href="fields-sage.html#subsection-132" class="internal"><span class="codenumber">21.6.5</span> <span class="title">Construcciones geométricas</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage.html#GLs" class="internal"><span class="codenumber">21.7.1</span> <span class="title">Cuerpos de números</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage.html#mSB" class="internal"><span class="codenumber">21.7.2</span> <span class="title">Cuerpos de Números Absolutos y Relativos</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage.html#SZK" class="internal"><span class="codenumber">21.7.3</span> <span class="title">Cuerpos de descomposición</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage.html#zgT" class="internal"><span class="codenumber">21.7.4</span> <span class="title">Números Algebraicos</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage.html#foc" class="internal"><span class="codenumber">21.7.5</span> <span class="title">Construcciones geométricas</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="fields-sage-exercises.html" class="internal"><span class="codenumber">21.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="fields-sage-exercises.html" class="internal"><span class="codenumber">21.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="finite.html" class="internal"><span class="codenumber">22</span> <span class="title">Cuerpos Finitos</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-finite-field.html" class="internal"><span class="codenumber">22.1</span> <span class="title">Estructura de Cuerpos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="finite-section-field.html" class="internal"><span class="codenumber">22.1</span> <span class="title">Estructura de Cuerpos Finitos</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-poly-codes.html" class="internal"><span class="codenumber">22.2</span> <span class="title">Códigos Polinomiales</span></a></div>
+<div class="toc-item"><a href="finite-section-poly-codes.html" class="internal"><span class="codenumber">22.2</span> <span class="title">Códigos Polinomiales</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-poly-codes.html#finite-subsection-poly-codes" class="internal"><span class="codenumber">22.2.1</span> <span class="title">Códigos Polinomiales</span></a></div></li>
-<li><div class="toc-item"><a href="section-poly-codes.html#finite-subsection-bch-codes" class="internal"><span class="codenumber">22.2.2</span> <span class="title">Códigos <abbr class="acronym">BCH</abbr></span></a></div></li>
+<li><div class="toc-item"><a href="finite-section-poly-codes.html#mul" class="internal"><span class="codenumber">22.2.1</span> <span class="title">Códigos Polinomiales</span></a></div></li>
+<li><div class="toc-item"><a href="finite-section-poly-codes.html#SBu" class="internal"><span class="codenumber">22.2.2</span> <span class="title">Códigos <abbr class="acronym">BCH</abbr></span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-finite.html" class="internal"><span class="codenumber">22.3</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="finite-exercises-bch-codes.html" class="internal"><span class="codenumber">22.4</span> <span class="title">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></span></a></div></li>
-<li><div class="toc-item"><a href="finite-references.html" class="internal"><span class="codenumber">22.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-22.html" class="internal"><span class="codenumber">22.3</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="finite-exercises.html" class="internal"><span class="codenumber">22.4</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="finite-exercises-bch-codes.html" class="internal"><span class="codenumber">22.5</span> <span class="title">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></span></a></div></li>
+<li><div class="toc-item"><a href="finite-references.html" class="internal"><span class="codenumber">22.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="finite-sage.html" class="internal"><span class="codenumber">22.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="finite-sage.html" class="internal"><span class="codenumber">22.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="finite-sage.html#subsection-135" class="internal"><span class="codenumber">22.6.1</span> <span class="title">Creando Cuerpos Finitos</span></a></div></li>
-<li><div class="toc-item"><a href="finite-sage.html#subsection-136" class="internal"><span class="codenumber">22.6.2</span> <span class="title">Logaritmos en Cuerpos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="finite-sage.html#yID" class="internal"><span class="codenumber">22.7.1</span> <span class="title">Creando Cuerpos Finitos</span></a></div></li>
+<li><div class="toc-item"><a href="finite-sage.html#ePM" class="internal"><span class="codenumber">22.7.2</span> <span class="title">Logaritmos en Cuerpos Finitos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="finite-sage-exercises.html" class="internal"><span class="codenumber">22.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="finite-sage-exercises.html" class="internal"><span class="codenumber">22.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="galois.html" class="internal"><span class="codenumber">23</span> <span class="title">Teoría de Galois</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-field-automorphisms.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Automorfismos de Cuerpos</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-field-automorphisms.html#galois-subsection-separable-extensions" class="internal"><span class="codenumber">23.1.1</span> <span class="title">Extensiones Separables</span></a></div></li></ul>
+<div class="toc-item"><a href="galois-section-field-automorphisms.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Automorfismos de Cuerpos</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="galois-section-field-automorphisms.html#NnY" class="internal"><span class="codenumber">23.1.1</span> <span class="title">Extensiones Separables</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-fund-theorem-galois-theory.html" class="internal"><span class="codenumber">23.2</span> <span class="title">El Teorema Fundamental</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-fund-theorem-galois-theory.html#galois-subsection-historical-note" class="internal"><span class="codenumber">23.2.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
+<div class="toc-item"><a href="galois-section-fund-theorem-galois-theory.html" class="internal"><span class="codenumber">23.2</span> <span class="title">El Teorema Fundamental</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="galois-section-fund-theorem-galois-theory.html#tvh" class="internal"><span class="codenumber">23.2.1</span> <span class="title">Nota Histórica</span></a></div></li></ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-galois-applications.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Aplicaciones</span></a></div>
+<div class="toc-item"><a href="galois-section-applications.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Aplicaciones</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-galois-applications.html#galois-subsection-solvable-by-radicals" class="internal"><span class="codenumber">23.3.1</span> <span class="title">Solubilidad por Radicales</span></a></div></li>
-<li><div class="toc-item"><a href="section-galois-applications.html#galois-subsection-quintic" class="internal"><span class="codenumber">23.3.2</span> <span class="title">Insolubilidad de la Quíntica</span></a></div></li>
-<li><div class="toc-item"><a href="section-galois-applications.html#galois-subsection-fun-theorem-of-algebra" class="internal"><span class="codenumber">23.3.3</span> <span class="title">El Teorema Fundamental del Álgebra</span></a></div></li>
+<li><div class="toc-item"><a href="galois-section-applications.html#ZCq" class="internal"><span class="codenumber">23.3.1</span> <span class="title">Solubilidad por Radicales</span></a></div></li>
+<li><div class="toc-item"><a href="galois-section-applications.html#FJz" class="internal"><span class="codenumber">23.3.2</span> <span class="title">Insolubilidad de la Quíntica</span></a></div></li>
+<li><div class="toc-item"><a href="galois-section-applications.html#lQI" class="internal"><span class="codenumber">23.3.3</span> <span class="title">El Teorema Fundamental del Álgebra</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-galois.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Ejercicios</span></a></div></li>
-<li><div class="toc-item"><a href="galois-references.html" class="internal"><span class="codenumber">23.5</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-23.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Preguntas de comprensión</span></a></div></li>
+<li><div class="toc-item"><a href="galois-exercises.html" class="internal"><span class="codenumber">23.5</span> <span class="title">Ejercicios</span></a></div></li>
+<li><div class="toc-item"><a href="galois-references.html" class="internal"><span class="codenumber">23.6</span> <span class="title">Referencias y Lecturas Recomendadas</span></a></div></li>
 <li>
-<div class="toc-item"><a href="galois-sage.html" class="internal"><span class="codenumber">23.6</span> <span class="title">Sage</span></a></div>
+<div class="toc-item"><a href="galois-sage.html" class="internal"><span class="codenumber">23.7</span> <span class="title">Sage</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="galois-sage.html#subsection-142" class="internal"><span class="codenumber">23.6.1</span> <span class="title">Grupos de Galois</span></a></div></li>
-<li><div class="toc-item"><a href="galois-sage.html#subsection-143" class="internal"><span class="codenumber">23.6.2</span> <span class="title">Cuerpo Fijos</span></a></div></li>
-<li><div class="toc-item"><a href="galois-sage.html#subsection-144" class="internal"><span class="codenumber">23.6.3</span> <span class="title">Correspondencia de Galois</span></a></div></li>
-<li><div class="toc-item"><a href="galois-sage.html#subsection-145" class="internal"><span class="codenumber">23.6.4</span> <span class="title">Exensiones Normales</span></a></div></li>
+<li><div class="toc-item"><a href="galois-sage.html#RXR" class="internal"><span class="codenumber">23.7.1</span> <span class="title">Grupos de Galois</span></a></div></li>
+<li><div class="toc-item"><a href="galois-sage.html#yfa" class="internal"><span class="codenumber">23.7.2</span> <span class="title">Cuerpo Fijos</span></a></div></li>
+<li><div class="toc-item"><a href="galois-sage.html#emj" class="internal"><span class="codenumber">23.7.3</span> <span class="title">Correspondencia de Galois</span></a></div></li>
+<li><div class="toc-item"><a href="galois-sage.html#Kts" class="internal"><span class="codenumber">23.7.4</span> <span class="title">Exensiones Normales</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="galois-sage-exercises.html" class="internal"><span class="codenumber">23.7</span> <span class="title">Ejercicios en Sage</span></a></div></li>
+<li><div class="toc-item"><a href="galois-sage-exercises.html" class="internal"><span class="codenumber">23.8</span> <span class="title">Ejercicios en Sage</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Referencia</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="appendix-gfdl.html" class="internal"><span class="codenumber">A</span> <span class="title">GNU Free Documentation License</span></a></div></li>
-<li><div class="toc-item"><a href="appendix-2.html" class="internal"><span class="codenumber">B</span> <span class="title">Pistas y Soluciones a Ejercicios Seleccionados</span></a></div></li>
-<li><div class="toc-item"><a href="appendix-3.html" class="internal"><span class="codenumber">C</span> <span class="title">Notación</span></a></div></li>
+<li><div class="toc-item"><a href="solutions-1.html" class="internal"><span class="codenumber">B</span> <span class="title">Pistas y respuestas a ejercicios seleccionados</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-2.html" class="internal"><span class="codenumber">C</span> <span class="title">Notation</span></a></div></li>
 <li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Índice alfabético</span></a></div></li>
 <li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colofón</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="isomorph-sage"><h2 class="heading hide-type">
-<span class="type">Sección</span> <span class="codenumber">9.4</span> <span class="title">Sage</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="QJH"><h2 class="heading hide-type">
+<span class="type">Sección</span> <span class="codenumber">9.5</span> <span class="title">Sage</span>
 </h2>
-<section class="introduction" id="introduction-38"><div class="para" id="p-1571">Sage tiene una capacidad limitada de creación efectiva de isomorfismos.  Sin embargo, tiene es muy efectivo para determinar si dos grupos de permutaciones son isomorfos.  Esto nos permitirá iniciar un pequeño proyecto para localizar  <em class="emphasis">todos</em> los grupos de orden menor a  <span class="process-math">\(16\)</span> en los grupos de permutaciones de Sage.</div></section><section class="subsection" id="subsection-66"><h3 class="heading hide-type">
-<span class="type">Subsección</span> <span class="codenumber">9.4.1</span> <span class="title">Verificación de Isomorfía</span>
+<section class="introduction" id="dmu"><div class="para" id="biZ">Sage tiene una capacidad limitada de creación efectiva de isomorfismos.  Sin embargo, tiene es muy efectivo para determinar si dos grupos de permutaciones son isomorfos.  Esto nos permitirá iniciar un pequeño proyecto para localizar  <em class="emphasis">todos</em> los grupos de orden menor a  <span class="process-math">\(16\)</span> en los grupos de permutaciones de Sage.</div></section><section class="subsection" id="TEn"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">9.5.1</span> <span class="title">Verificación de Isomorfía</span>
 </h3>
-<div class="para" id="p-1572">Si <code class="code-inline tex2jax_ignore">G</code> y <code class="code-inline tex2jax_ignore">H</code> son dos grupos de permutaciones, entonces el comando <code class="code-inline tex2jax_ignore">G.is_isomorphic(H)</code> entregará <code class="code-inline tex2jax_ignore">True</code> o <code class="code-inline tex2jax_ignore">False</code> según si los grupos sean o no isomorfos.  Como ser “isomorfo a” es una relación de equivalencia por el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-isomorph-5.html" title="Teorema 9.1.10">9.1.10</a>, no importa cuál grupo ocupa el lugar de <code class="code-inline tex2jax_ignore">G</code> y cuál ocupa el lugar de <code class="code-inline tex2jax_ignore">H</code>.</div>
-<div class="para" id="p-1573">Tenemos así algunos ejemplos más con los que trabajar, veamos el comando Sage que crea el producto directo externo.  Si <code class="code-inline tex2jax_ignore">G</code> y <code class="code-inline tex2jax_ignore">H</code> son dos grupos de permutaciones, entonces el comando <code class="code-inline tex2jax_ignore">direct_product_permgroups([G,H])</code> entregará el producto directo externo como un nuevo grupo de permutaciones.  Note que esta es una función (no un método) y el input es una lista.  En lugar de tener solo dos grupos en la lista, cualquier cantidad de grupos puede ser suministrada.  Ilustramos la verificación de isomorfismos en el contexto del Teorema <a href="" class="xref" data-knowl="./knowl/theorem-z-pq.html" title="Teorema 9.2.9">9.2.9</a>, que es una equivalencia, de manera que nos dice <em class="emphasis">exactamente</em> cuándo tenemos grupos isomorfos.  Usamos grupos cíclicos de permutaciones en reemplazo de <span class="process-math">\({\mathbb Z}_n\)</span> por el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-isomorph-3.html" title="Teorema 9.1.8">9.1.8</a>.</div>
-<div class="para" id="p-1574">Primero, dos grupos isomorfos.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-276"><script type="text/x-sage">m = 12
+<div class="para" id="hmG">Si <code class="code-inline tex2jax_ignore">G</code> y <code class="code-inline tex2jax_ignore">H</code> son dos grupos de permutaciones, entonces el comando <code class="code-inline tex2jax_ignore">G.is_isomorphic(H)</code> entregará <code class="code-inline tex2jax_ignore">True</code> o <code class="code-inline tex2jax_ignore">False</code> según si los grupos sean o no isomorfos.  Como ser “isomorfo a” es una relación de equivalencia por el <a href="" class="xref" data-knowl="./knowl/isomorph-theorem-5.html" title="Teorema 9.1.10">Teorema 9.1.10</a>, no importa cuál grupo ocupa el lugar de <code class="code-inline tex2jax_ignore">G</code> y cuál ocupa el lugar de <code class="code-inline tex2jax_ignore">H</code>.</div>
+<div class="para" id="NtP">Tenemos así algunos ejemplos más con los que trabajar, veamos el comando Sage que crea el producto directo externo.  Si <code class="code-inline tex2jax_ignore">G</code> y <code class="code-inline tex2jax_ignore">H</code> son dos grupos de permutaciones, entonces el comando <code class="code-inline tex2jax_ignore">direct_product_permgroups([G,H])</code> entregará el producto directo externo como un nuevo grupo de permutaciones.  Note que esta es una función (no un método) y el input es una lista.  En lugar de tener solo dos grupos en la lista, cualquier cantidad de grupos puede ser suministrada.  Ilustramos la verificación de isomorfismos en el contexto del <a href="" class="xref" data-knowl="./knowl/isomorph-theorem-z-pq.html" title="Teorema 9.2.9">Teorema 9.2.9</a>, que es una equivalencia, de manera que nos dice <em class="emphasis">exactamente</em> cuándo tenemos grupos isomorfos.  Usamos grupos cíclicos de permutaciones en reemplazo de <span class="process-math">\({\mathbb Z}_n\)</span> por el <a href="" class="xref" data-knowl="./knowl/isomorph-theorem-3.html" title="Teorema 9.1.8">Teorema 9.1.8</a>.</div>
+<div class="para" id="tAY">Primero, dos grupos isomorfos.</div>
+<pre class="ptx-sagecell sagecell-sage" id="AAD"><script type="text/x-sage">m = 12
 n = 7
 gcd(m, n)
 </script></pre>
-<pre class="ptx-sagecell sagecell-sage" id="sage-277"><script type="text/x-sage">G = CyclicPermutationGroup(m)
+<pre class="ptx-sagecell sagecell-sage" id="gHM"><script type="text/x-sage">G = CyclicPermutationGroup(m)
 H = CyclicPermutationGroup(n)
 dp = direct_product_permgroups([G, H])
 K = CyclicPermutationGroup(m*n)
 K.is_isomorphic(dp)
 </script></pre>
-<div class="para" id="p-1575">Ahora, dos grupos no isomorfos.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-278"><script type="text/x-sage">m = 15
+<div class="para" id="ZIh">Ahora, dos grupos no isomorfos.</div>
+<pre class="ptx-sagecell sagecell-sage" id="MOV"><script type="text/x-sage">m = 15
 n = 21
 gcd(m, n)
 </script></pre>
-<pre class="ptx-sagecell sagecell-sage" id="sage-279"><script type="text/x-sage">G = CyclicPermutationGroup(m)
+<pre class="ptx-sagecell sagecell-sage" id="sWe"><script type="text/x-sage">G = CyclicPermutationGroup(m)
 H = CyclicPermutationGroup(n)
 dp = direct_product_permgroups([G, H])
 K = CyclicPermutationGroup(m*n)
 K.is_isomorphic(dp)
 </script></pre>
-<div class="para" id="p-1576">Note como el simple cálculo de un máximo común divisor predice el cálculo extremadamente complicado de determinar si dos grupos son isomorfos.  Esta es una buena ilustración del poder de las matemáticas, que reemplaza un problema difícil (isomorfía de grupos) por un problema simple (factorización y divisibilidad de enteros).  Construyamos un producto directo de grupos cíclicos más, pero con tres grupos, con órdenes que sean relativamente primos de a dos.</div>
-<div class="para" id="p-1577">Si intenta lo siguiente con parámetros mayores puede que obtenga un error (<code class="code-inline tex2jax_ignore">database_gap</code>).</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-280"><script type="text/x-sage">m = 6
+<div class="para" id="FPq">Note como el simple cálculo de un máximo común divisor predice el cálculo extremadamente complicado de determinar si dos grupos son isomorfos.  Esta es una buena ilustración del poder de las matemáticas, que reemplaza un problema difícil (isomorfía de grupos) por un problema simple (factorización y divisibilidad de enteros).  Construyamos un producto directo de grupos cíclicos más, pero con tres grupos, con órdenes que sean relativamente primos de a dos.</div>
+<div class="para" id="lWz">Si intenta lo siguiente con parámetros mayores puede que obtenga un error (<code class="code-inline tex2jax_ignore">database_gap</code>).</div>
+<pre class="ptx-sagecell sagecell-sage" id="Zdn"><script type="text/x-sage">m = 6
 n = 5
 r = 7
 G = CyclicPermutationGroup(m)
@@ -919,86 +972,78 @@ L = CyclicPermutationGroup(r)
 dp = direct_product_permgroups([G, H, L])
 K = CyclicPermutationGroup(m*n*r)
 K.is_isomorphic(dp)
-</script></pre></section><section class="subsection" id="subsection-67"><h3 class="heading hide-type">
-<span class="type">Subsección</span> <span class="codenumber">9.4.2</span> <span class="title">Clasificando Grupos Finitos</span>
+</script></pre></section><section class="subsection" id="zLw"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">9.5.2</span> <span class="title">Clasificando Grupos Finitos</span>
 </h3>
-<div class="para" id="p-1578">Una vez que concebimos grupos isomorfos como el “mismo”, o “fundamentalmente iguales,” o “estructuralmente idénticos,” es natural preguntarnos cuántos grupos finitos “realmente diferentes” existen.  El Corolario <a href="" class="xref" data-knowl="./knowl/theorem-isomorph-4.html" title="Corolario 9.1.9">9.1.9</a> nos entrega una respuesta parcial: para cada número primo hay exactamente un grupo finito, con <span class="process-math">\({\mathbb Z}_p\)</span> como una manifestación concreta.</div>
-<div class="para" id="p-1579">Embarquémosnos en la búsqueda de todos los grupos de orden menor a <span class="process-math">\(16\)</span> en los grupos de permutación de Sage.  Para órdenes primos <span class="process-math">\(1,2,3,5,7,11\)</span> y <span class="process-math">\(13\)</span> sabemos que existe solo un grupo para cada uno, y podemos obtenerlos todos:</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-281"><script type="text/x-sage">[CyclicPermutationGroup(p) for p in [1, 2, 3, 5, 7, 11, 13]]
+<div class="para" id="SdI">Una vez que concebimos grupos isomorfos como el “mismo”, o “fundamentalmente iguales,” o “estructuralmente idénticos,” es natural preguntarnos cuántos grupos finitos “realmente diferentes” existen.  El <a href="" class="xref" data-knowl="./knowl/isomorph-theorem-4.html" title="Corolario 9.1.9">Corolario 9.1.9</a> nos entrega una respuesta parcial: para cada número primo hay exactamente un grupo finito, con <span class="process-math">\({\mathbb Z}_p\)</span> como una manifestación concreta.</div>
+<div class="para" id="ykR">Embarquémosnos en la búsqueda de todos los grupos de orden menor a <span class="process-math">\(16\)</span> en los grupos de permutación de Sage.  Para órdenes primos <span class="process-math">\(1,2,3,5,7,11\)</span> y <span class="process-math">\(13\)</span> sabemos que existe solo un grupo para cada uno, y podemos obtenerlos todos:</div>
+<pre class="ptx-sagecell sagecell-sage" id="Fkw"><script type="text/x-sage">[CyclicPermutationGroup(p) for p in [1, 2, 3, 5, 7, 11, 13]]
 </script></pre>
-<div class="para" id="p-1580">Así nuestro primer caso desconocido es el orden <span class="process-math">\(4\text{.}\)</span>  Sage conoce al menos tres grupos así, y podemos usar Sage para verificar si cualquier par de ellos es isomorfo.  Note que como “ser isomorfo a” es una relación de equivalencia y por lo tanto una relación transitiva, las dos verificaciones que siguen son suficientes.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-282"><script type="text/x-sage">G = CyclicPermutationGroup(4)
+<div class="para" id="esa">Así nuestro primer caso desconocido es el orden <span class="process-math">\(4\text{.}\)</span>  Sage conoce al menos tres grupos así, y podemos usar Sage para verificar si cualquier par de ellos es isomorfo.  Note que como “ser isomorfo a” es una relación de equivalencia y por lo tanto una relación transitiva, las dos verificaciones que siguen son suficientes.</div>
+<pre class="ptx-sagecell sagecell-sage" id="lrF"><script type="text/x-sage">G = CyclicPermutationGroup(4)
 H = KleinFourGroup()
 T1 = CyclicPermutationGroup(2)
 T2 = CyclicPermutationGroup(2)
 K = direct_product_permgroups([T1, T2])
 G.is_isomorphic(H)
 </script></pre>
-<pre class="ptx-sagecell sagecell-sage" id="sage-283"><script type="text/x-sage">H.is_isomorphic(K)
+<pre class="ptx-sagecell sagecell-sage" id="RyO"><script type="text/x-sage">H.is_isomorphic(K)
 </script></pre>
-<div class="para" id="p-1581">Tenemos así al menos dos grupos diferentes: <span class="process-math">\({\mathbb Z}_4\)</span> y <span class="process-math">\({\mathbb Z}_2\times{\mathbb Z}_2\text{,}\)</span> el último también conocido como 4-grupo de Klein.  Sage no será capaz de decirnos si tenemos una lista <em class="emphasis">completa</em> — eso siempre requerirá resultados teóricos como el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-isomorph-5.html" title="Teorema 9.1.10">9.1.10</a>.  Pronto tendremos un resultado más general que resuelva el caso de orden <span class="process-math">\(4\text{,}\)</span> pero por ahora, un análisis cuidadoso (a mano) de las posibilidades para la tabla de Cayley de un grupo de orden <span class="process-math">\(4\)</span> debiera llevarle a las dos posibilidades de arriba como las únicas posibilidades.  Intente deducir como se debiera ver la tabla de Cayley de un grupo de orden <span class="process-math">\(4\text{,}\)</span> dado que ya sabre sobre el elemento identidad, los inversos y la ley de cancelación.</div>
-<div class="para" id="p-1582">Hemos visto al menos dos grupos de orden <span class="process-math">\(6\)</span> (el siguiente en la lista de nuestros órdenes no primos).  Uno es abeliano y el otro no los es, de manera que no necesitamos que Sage lo diga para saber que son estructuralmente diferentes.  Pero hagámoslo de todas formas.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-284"><script type="text/x-sage">G = CyclicPermutationGroup(6)
+<div class="para" id="Kzj">Tenemos así al menos dos grupos diferentes: <span class="process-math">\({\mathbb Z}_4\)</span> y <span class="process-math">\({\mathbb Z}_2\times{\mathbb Z}_2\text{,}\)</span> el último también conocido como 4-grupo de Klein.  Sage no será capaz de decirnos si tenemos una lista <em class="emphasis">completa</em> — eso siempre requerirá resultados teóricos como el <a href="" class="xref" data-knowl="./knowl/isomorph-theorem-5.html" title="Teorema 9.1.10">Teorema 9.1.10</a>.  Pronto tendremos un resultado más general que resuelva el caso de orden <span class="process-math">\(4\text{,}\)</span> pero por ahora, un análisis cuidadoso (a mano) de las posibilidades para la tabla de Cayley de un grupo de orden <span class="process-math">\(4\)</span> debiera llevarle a las dos posibilidades de arriba como las únicas posibilidades.  Intente deducir como se debiera ver la tabla de Cayley de un grupo de orden <span class="process-math">\(4\text{,}\)</span> dado que ya sabre sobre el elemento identidad, los inversos y la ley de cancelación.</div>
+<div class="para" id="qGs">Hemos visto al menos dos grupos de orden <span class="process-math">\(6\)</span> (el siguiente en la lista de nuestros órdenes no primos).  Uno es abeliano y el otro no los es, de manera que no necesitamos que Sage lo diga para saber que son estructuralmente diferentes.  Pero hagámoslo de todas formas.</div>
+<pre class="ptx-sagecell sagecell-sage" id="xFX"><script type="text/x-sage">G = CyclicPermutationGroup(6)
 H = SymmetricGroup(3)
 G.is_isomorphic(H)
 </script></pre>
-<div class="para" id="p-1583">¿Es todo?  Existe <span class="process-math">\({\mathbb Z}_3\times{\mathbb Z}_2\text{,}\)</span> pero ese es simplemente <span class="process-math">\({\mathbb Z}_6\)</span> pues <span class="process-math">\(2\)</span> y <span class="process-math">\(3\)</span> son relativamente primos.  El grupo dihedral, <span class="process-math">\(D_3\text{,}\)</span> es simplemente <span class="process-math">\(S_3\text{,}\)</span> el grupo simétrico en <span class="process-math">\(3\)</span> símbolos.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-285"><script type="text/x-sage">G = DihedralGroup(3)
+<div class="para" id="WNB">¿Es todo?  Existe <span class="process-math">\({\mathbb Z}_3\times{\mathbb Z}_2\text{,}\)</span> pero ese es simplemente <span class="process-math">\({\mathbb Z}_6\)</span> pues <span class="process-math">\(2\)</span> y <span class="process-math">\(3\)</span> son relativamente primos.  El grupo dihedral, <span class="process-math">\(D_3\text{,}\)</span> es simplemente <span class="process-math">\(S_3\text{,}\)</span> el grupo simétrico en <span class="process-math">\(3\)</span> símbolos.</div>
+<pre class="ptx-sagecell sagecell-sage" id="dNg"><script type="text/x-sage">G = DihedralGroup(3)
 H = SymmetricGroup(3)
 G.is_isomorphic(H)
 </script></pre>
-<div class="para" id="p-1584">El Ejercicio <a href="" class="xref" data-knowl="./knowl/exercise-classify-2p.html" title="Ejercicio 9.3.55: Grupos de orden 2p">9.3.55</a> de esta sección clasifica todos los grupos de orden <span class="process-math">\(2p\text{,}\)</span> donde <span class="process-math">\(p\)</span> es un primo impar.  Un tal grupo puede ser un grupo cíclico o un grupo dihedral.  Así los dos grupos de arriba, <span class="process-math">\({\mathbb Z}_6\)</span> y <span class="process-math">\(D_3\text{,}\)</span> son realmente todos los grupos de orden<span class="process-math">\(6\text{.}\)</span>
+<div class="para" id="CUK">El <a href="" class="xref" data-knowl="./knowl/isomorph-exercise-classify-2p.html" title="Ejercicio 9.4.55: Grupos de orden 2p">Ejercicio 9.4.55</a> de esta sección clasifica todos los grupos de orden <span class="process-math">\(2p\text{,}\)</span> donde <span class="process-math">\(p\)</span> es un primo impar.  Un tal grupo puede ser un grupo cíclico o un grupo dihedral.  Así los dos grupos de arriba, <span class="process-math">\({\mathbb Z}_6\)</span> y <span class="process-math">\(D_3\text{,}\)</span> son realmente todos los grupos de orden<span class="process-math">\(6\text{.}\)</span>
 </div>
-<div class="para" id="p-1585">Por este resultado general, además del orden <span class="process-math">\(6\text{,}\)</span> también conocemos las listas completas de grupos de órdenes <span class="process-math">\(10\)</span> y <span class="process-math">\(14\text{.}\)</span>  Continuará.</div></section><section class="subsection" id="subsection-68"><h3 class="heading hide-type">
-<span class="type">Subsección</span> <span class="codenumber">9.4.3</span> <span class="title">Productos Directos Internos</span>
+<div class="para" id="jbT">Por este resultado general, además del orden <span class="process-math">\(6\text{,}\)</span> también conocemos las listas completas de grupos de órdenes <span class="process-math">\(10\)</span> y <span class="process-math">\(14\text{.}\)</span>  Continuará.</div></section><section class="subsection" id="fSF"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">9.5.3</span> <span class="title">Productos Directos Internos</span>
 </h3>
-<div class="para" id="p-1586">Un producto directo interno es una proposición sobre subgrupos de un solo grupo, junto con un teorema que los relaciona con un producto directo externo.  Trabajaremos con un ejemplo acá que ilustrará la naturaleza de un producto directo interno.</div>
-<div class="para" id="p-1587">Dado un entero <span class="process-math">\(n\text{,}\)</span> el conjunto de los enteros positivos menores a <span class="process-math">\(n\text{,}\)</span> y relativamente primos con <span class="process-math">\(n\)</span> forma un grupo con la operación de multiplicación mód <span class="process-math">\(n\text{.}\)</span>  Trabajaremos en el conjunto <code class="code-inline tex2jax_ignore">Integers(n)</code> donde podemos sumar <em class="emphasis">y</em> multiplicar, pero nos restringiremos a usar solamente la multiplicación.</div>
-<div class="para" id="p-1588">Primero construiremos el grupo en sí.  Notemos cómo debemos convertir <code class="code-inline tex2jax_ignore">x</code> en un entero (un elemento de <code class="code-inline tex2jax_ignore">ZZ</code>) de manera que el cálculo del máximo común divisor se realice correctamente.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-286"><script type="text/x-sage">Z36 = Integers(36)
+<div class="para" id="Pjc">Un producto directo interno es una proposición sobre subgrupos de un solo grupo, junto con un teorema que los relaciona con un producto directo externo.  Trabajaremos con un ejemplo acá que ilustrará la naturaleza de un producto directo interno.</div>
+<div class="para" id="vql">Dado un entero <span class="process-math">\(n\text{,}\)</span> el conjunto de los enteros positivos menores a <span class="process-math">\(n\text{,}\)</span> y relativamente primos con <span class="process-math">\(n\)</span> forma un grupo con la operación de multiplicación mód <span class="process-math">\(n\text{.}\)</span>  Trabajaremos en el conjunto <code class="code-inline tex2jax_ignore">Integers(n)</code> donde podemos sumar <em class="emphasis">y</em> multiplicar, pero nos restringiremos a usar solamente la multiplicación.</div>
+<div class="para" id="bxu">Primero construiremos el grupo en sí.  Notemos cómo debemos convertir <code class="code-inline tex2jax_ignore">x</code> en un entero (un elemento de <code class="code-inline tex2jax_ignore">ZZ</code>) de manera que el cálculo del máximo común divisor se realice correctamente.</div>
+<pre class="ptx-sagecell sagecell-sage" id="JUp"><script type="text/x-sage">Z36 = Integers(36)
 U = [x for x in Z36 if gcd(ZZ(x), 36) == 1]
 U
 </script></pre>
-<div class="para" id="p-1589">Tenemos así un grupo de orden <span class="process-math">\(12\text{.}\)</span>  Intentaremos encontrar un subgrupo de orden  <span class="process-math">\(6\)</span> y un subgrupo de orden <span class="process-math">\(2\)</span> para formar el producto directo interno, y restringiremos nuestra búsqueda a los subgrupos cíclicos de orden <span class="process-math">\(6\text{.}\)</span>  Sage tiene un método que nos entrega el orden de cada uno de estos elementos, en relación a la multiplicación, así es que examinemos eso a continuación.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-287"><script type="text/x-sage">[x.multiplicative_order() for x in U]
+<div class="para" id="HED">Tenemos así un grupo de orden <span class="process-math">\(12\text{.}\)</span>  Intentaremos encontrar un subgrupo de orden  <span class="process-math">\(6\)</span> y un subgrupo de orden <span class="process-math">\(2\)</span> para formar el producto directo interno, y restringiremos nuestra búsqueda a los subgrupos cíclicos de orden <span class="process-math">\(6\text{.}\)</span>  Sage tiene un método que nos entrega el orden de cada uno de estos elementos, en relación a la multiplicación, así es que examinemos eso a continuación.</div>
+<pre class="ptx-sagecell sagecell-sage" id="qby"><script type="text/x-sage">[x.multiplicative_order() for x in U]
 </script></pre>
-<div class="para" id="p-1590">Tenemos muchas opciones para generadores de un subgrupo cíclico de orden <span class="process-math">\(6\)</span> y para un subgrupo cíclico de orden <span class="process-math">\(2\text{.}\)</span>  Por supuesto, algunas de los posibles generadores de un subgrupo de orden <span class="process-math">\(6\)</span> generarán el mismo subgrupo.  ¿Puede descubrir, simplemente contando, cuántos subgrupos de orden <span class="process-math">\(6\)</span> hay?  Escogeremos el primer elemento de orden <span class="process-math">\(6\text{,}\)</span> y el último elemento de orden <span class="process-math">\(2\text{,}\)</span> sin razón particular.  Después de hacer esto una vez, le invitamos a intentar otras opciones para entender por qué algunas nos llevan a un producto directo interno y otras no.  Note que elegimos los elementos de la lista <code class="code-inline tex2jax_ignore">U</code> de manera de estar seguros que son elementos de <code class="code-inline tex2jax_ignore">Z36</code> y se comportarán correctamente al ser multiplicados.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-288"><script type="text/x-sage">a = U[1]
+<div class="para" id="nLM">Tenemos muchas opciones para generadores de un subgrupo cíclico de orden <span class="process-math">\(6\)</span> y para un subgrupo cíclico de orden <span class="process-math">\(2\text{.}\)</span>  Por supuesto, algunas de los posibles generadores de un subgrupo de orden <span class="process-math">\(6\)</span> generarán el mismo subgrupo.  ¿Puede descubrir, simplemente contando, cuántos subgrupos de orden <span class="process-math">\(6\)</span> hay?  Escogeremos el primer elemento de orden <span class="process-math">\(6\text{,}\)</span> y el último elemento de orden <span class="process-math">\(2\text{,}\)</span> sin razón particular.  Después de hacer esto una vez, le invitamos a intentar otras opciones para entender por qué algunas nos llevan a un producto directo interno y otras no.  Note que elegimos los elementos de la lista <code class="code-inline tex2jax_ignore">U</code> de manera de estar seguros que son elementos de <code class="code-inline tex2jax_ignore">Z36</code> y se comportarán correctamente al ser multiplicados.</div>
+<pre class="ptx-sagecell sagecell-sage" id="WiH"><script type="text/x-sage">a = U[1]
 A = [a^i for i in srange(6)]
 A
 </script></pre>
-<pre class="ptx-sagecell sagecell-sage" id="sage-289"><script type="text/x-sage">b = U[11]
+<pre class="ptx-sagecell sagecell-sage" id="CpQ"><script type="text/x-sage">b = U[11]
 B = [b^i for i in srange(2)]
 B
 </script></pre>
-<div class="para" id="p-1591">Así <code class="code-inline tex2jax_ignore">A</code> y <code class="code-inline tex2jax_ignore">B</code> son dos subgrupos cíclicos.  Note que su intersección es el elemento identidad, uno de nuestros requisitos para un producto directo interno.  Tenemos así un buen comienzo.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-290"><script type="text/x-sage">[x for x in A if x in B]
+<div class="para" id="TSV">Así <code class="code-inline tex2jax_ignore">A</code> y <code class="code-inline tex2jax_ignore">B</code> son dos subgrupos cíclicos.  Note que su intersección es el elemento identidad, uno de nuestros requisitos para un producto directo interno.  Tenemos así un buen comienzo.</div>
+<pre class="ptx-sagecell sagecell-sage" id="iwZ"><script type="text/x-sage">[x for x in A if x in B]
 </script></pre>
-<div class="para" id="p-1592">
+<div class="para" id="Aae">
 <code class="code-inline tex2jax_ignore">Z36</code> es un grupo abeliano, así la condición de que todos los productos conmuten, se cumplirá, pero ilustraremos los comandos Sage que verificarán esto en una situación no abeliana.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-291"><script type="text/x-sage">all([x*y == y*x for x in A for y in B])
+<pre class="ptx-sagecell sagecell-sage" id="OEi"><script type="text/x-sage">all([x*y == y*x for x in A for y in B])
 </script></pre>
-<div class="para" id="p-1593">Finalmente, necesitamos verificar que formando los productos de elementos de <code class="code-inline tex2jax_ignore">A</code> y <code class="code-inline tex2jax_ignore">B</code> obtenemos todo el grupo.  Ordenar la lista resultante nos facilitará la verificación visual, y es necesario si queremos que Sage haga la verificación.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-292"><script type="text/x-sage">T = sorted([x*y for x in A for y in B])
+<div class="para" id="ghn">Finalmente, necesitamos verificar que formando los productos de elementos de <code class="code-inline tex2jax_ignore">A</code> y <code class="code-inline tex2jax_ignore">B</code> obtenemos todo el grupo.  Ordenar la lista resultante nos facilitará la verificación visual, y es necesario si queremos que Sage haga la verificación.</div>
+<pre class="ptx-sagecell sagecell-sage" id="uLr"><script type="text/x-sage">T = sorted([x*y for x in A for y in B])
 T
 </script></pre>
-<pre class="ptx-sagecell sagecell-sage" id="sage-293"><script type="text/x-sage">T == U
+<pre class="ptx-sagecell sagecell-sage" id="aSA"><script type="text/x-sage">T == U
 </script></pre>
-<div class="para" id="p-1594">Eso es.  Resumimos ahora toda esta información en la proposición que “<code class="code-inline tex2jax_ignore">U</code> es el producto interno directo de  <code class="code-inline tex2jax_ignore">A</code> y <code class="code-inline tex2jax_ignore">B</code>.”  Por el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-isomorph-directproducts.html" title="Teorema 9.2.15">9.2.15</a>, vemos que <code class="code-inline tex2jax_ignore">U</code> es isomorfo al producto de un grupo cíclico de orden <span class="process-math">\(6\)</span> y un grupo cíclico de orden <span class="process-math">\(2\text{.}\)</span>  Así es que en un sentido muy real, <code class="code-inline tex2jax_ignore">U</code> no es más ni menos complicado que <span class="process-math">\({\mathbb Z}_6\times{\mathbb Z}_2\text{,}\)</span> que a su vez es isomorfo a  <span class="process-math">\({\mathbb Z}_3\times{\mathbb Z}_2\times{\mathbb Z}_2\text{.}\)</span>  Entendemos así completamente la “estructura” de <code class="code-inline tex2jax_ignore">U</code>.  Por ejemplo, podemos ver que <code class="code-inline tex2jax_ignore">U</code> no es cíclico, pues cuando se escribe como producto de grupos cíclicos, los órdenes no son relativamente primos.  La expresión final de <code class="code-inline tex2jax_ignore">U</code> sugiere que se pueden encontrar tres subgrupos cíclicos de <code class="code-inline tex2jax_ignore">U</code>, con órdenes <span class="process-math">\(3\text{,}\)</span> <span class="process-math">\(2\)</span> y <span class="process-math">\(2\text{,}\)</span> de manera que <code class="code-inline tex2jax_ignore">U</code> es un producto directo interno de tres subgrupos.</div></section></section></div>
+<div class="para" id="Mow">Eso es.  Resumimos ahora toda esta información en la proposición que “<code class="code-inline tex2jax_ignore">U</code> es el producto interno directo de  <code class="code-inline tex2jax_ignore">A</code> y <code class="code-inline tex2jax_ignore">B</code>.”  Por el <a href="" class="xref" data-knowl="./knowl/isomorph-theorem-directproducts.html" title="Teorema 9.2.15">Teorema 9.2.15</a>, vemos que <code class="code-inline tex2jax_ignore">U</code> es isomorfo al producto de un grupo cíclico de orden <span class="process-math">\(6\)</span> y un grupo cíclico de orden <span class="process-math">\(2\text{.}\)</span>  Así es que en un sentido muy real, <code class="code-inline tex2jax_ignore">U</code> no es más ni menos complicado que <span class="process-math">\({\mathbb Z}_6\times{\mathbb Z}_2\text{,}\)</span> que a su vez es isomorfo a  <span class="process-math">\({\mathbb Z}_3\times{\mathbb Z}_2\times{\mathbb Z}_2\text{.}\)</span>  Entendemos así completamente la “estructura” de <code class="code-inline tex2jax_ignore">U</code>.  Por ejemplo, podemos ver que <code class="code-inline tex2jax_ignore">U</code> no es cíclico, pues cuando se escribe como producto de grupos cíclicos, los órdenes no son relativamente primos.  La expresión final de <code class="code-inline tex2jax_ignore">U</code> sugiere que se pueden encontrar tres subgrupos cíclicos de <code class="code-inline tex2jax_ignore">U</code>, con órdenes <span class="process-math">\(3\text{,}\)</span> <span class="process-math">\(2\)</span> y <span class="process-math">\(2\text{,}\)</span> de manera que <code class="code-inline tex2jax_ignore">U</code> es un producto directo interno de tres subgrupos.</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="exercises-isomorph.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="isomorph-sage-exercises.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="isomorph-exercises.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="isomorph-sage-exercises.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
-<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
-var sc_project=10568106;
-var sc_invisible=1;
-var sc_security="510ba080";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10568106/0/510ba080/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
 </body>
 </html>

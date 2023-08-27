@@ -12,26 +12,38 @@
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h3 class="heading">
-<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">11<span class="period">.</span></span>
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">8<span class="period">.</span></span>
 </h3>
-<div class="para logical">
-<div class="para">Sea <span class="process-math">\(V\)</span> un espacio vectorial de dimensión <span class="process-math">\(n\text{.}\)</span> Demuestre cada uno de los siguientes enunciados.</div>
-<ol class="lower-alpha">
-<li><div class="para">Si <span class="process-math">\(S = \{v_1, \ldots, v_n \}\)</span> es un conjunto linealmente independiente de vectores en <span class="process-math">\(V\text{,}\)</span> entonces <span class="process-math">\(S\)</span> es una base para <span class="process-math">\(V\text{.}\)</span>
-</div></li>
-<li><div class="para">Si <span class="process-math">\(S = \{v_1, \ldots, v_n \}\)</span> genera <span class="process-math">\(V\text{,}\)</span> entonces <span class="process-math">\(S\)</span> es una base para <span class="process-math">\(V\text{.}\)</span>
-</div></li>
-<li><div class="para logical">
-<div class="para">Si <span class="process-math">\(S = \{v_1, \ldots, v_k \}\)</span> es un conjunto linealmente independiente de vectores en <span class="process-math">\(V\)</span> con <span class="process-math">\(k \lt n\text{,}\)</span> entonces existen vectores <span class="process-math">\(v_{k + 1}, \ldots, v_n\)</span> tales que</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\{v_1, \ldots, v_k, v_{k + 1}, \ldots, v_n \}
-\end{equation*}
-</div>
-<div class="para">es una base para <span class="process-math">\(V\text{.}\)</span>
-</div>
-</div></li>
-</ol>
-</div></article><span class="incontext"><a href="exercises-vect.html#exercise-684" class="internal">en contexto</a></span>
+<div class="para">Demuestre o refute que los dos circuitos mostrados son equivalentes.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;">
+					
+
+						\begin{tikzpicture}[scale=0.7,node distance=5mm, text height=1.5ex,text depth=.25ex]
+						\node at (2,1) {$a$};
+						\node at (3,1) {$b$};
+						\node at (4,1) {$c$};
+
+						\node at (2.5,0) {$a'$};
+						\node at (3.5,0) {$b$};
+
+						\node at (2.5,-1) {$a$};
+						\node at (3.5,-1) {$c'$};
+
+						\draw (1,0) -- (1,1) -- (1.7,1)  (2.3,1) -- (2.7,1)  (3.3,1) -- (3.7,1) (4.3,1) -- (5,1) -- (5,0);
+						\draw (1,0) -- (1,-1) -- (2.2,-1)  (2.8,-1) -- (3.2,-1)  (3.8,-1) -- (5,-1) -- (5,0);
+						\draw (0,0) -- (2.2,0)  (2.8,0) -- (3.2,0)  (3.8,0) -- (6,0);
+
+						\node at (9,1) {$a$};
+						\node at (9,-1) {$a$};
+						\node at (10,1) {$b$};
+						\node at (10,-1) {$c'$};
+
+						\draw (8,0) -- (8,1) -- (8.7,1)  (9.3,1) -- (9.7,1) (10.3,1) -- (11,1) -- (11,0);
+						\draw (8,0) -- (8,-1) -- (8.7,-1)  (9.3,-1) -- (9.7,-1) (10.3,-1) -- (11,-1) -- (11,0);
+						\draw (7,0) -- (8,0) (11,0) -- (12,0);
+						\end{tikzpicture}
+					
+
+				</div></div></div>
+<div class="solutions"><a href="" class="hint-knowl original" data-knowl="./knowl/hint-172-hidden.html" title="Pista 19.4.8.1"><span class="type">Pista</span><span class="period">.</span></a></div></article><span class="incontext"><a href="exercises-boolean.html#exercise-684" class="internal">en contexto</a></span>
 </body>
 </html>

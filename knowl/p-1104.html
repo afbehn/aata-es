@@ -12,21 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para logical">
-<div class="para">Supongamos que recibimos un mensaje que sabemos fue encriptado usando un desplazamiento en las 26 letras del alfabeto. Para determinar el desplazamiento ocupado, debemos encontrar <span class="process-math">\(b\)</span> en la ecuación <span class="process-math">\(f(p) = p + b \bmod 26\text{.}\)</span> Podemos hacer esto usando análisis de frecuencia.  La letra <span class="process-math">\(\text{E} = 04\)</span> es la más frecuente en el idioma inglés. Supongamos que <span class="process-math">\(\text{S} = 18\)</span> es la letra que ocurre con más frecuencia en el texto-cifrado.  Entonces tenemos una buena razón para sospechar que <span class="process-math">\(18 = 4 + b \bmod 26\text{,}\)</span> y <span class="process-math">\(b= 14\text{.}\)</span> Por lo tanto, la función encriptadora más probable es</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f(p) = p + 14 \bmod 26.
-\end{equation*}
-</div>
-<div class="para">La correspondiente función decriptadora es</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f^{-1}(p) = p + 12 \bmod 26.
-\end{equation*}
-</div>
-<div class="para">En este punto es fácil determinar si la sospecha es o no correcta.</div>
-</div>
-<span class="incontext"><a href="section-private-key-crypt.html#p-1104" class="internal">en contexto</a></span>
+<div class="para">Matemáticamente, necesitamos conjuntos, pero Sage está trabajando con listas ordenadas, y el orden importa.  Sin embargo, si sabemos que nuestras listas no contienen duplicados (el método <code class="code-inline tex2jax_ignore">.cosets()</code> nunca producirá duplicados) entonces podemos ordenar las listas y la verificación de igualdad tendrá el resultado esperado.  Los elementos de un grupo de permutaciones tienen un orden definido para ellos — no es tan importante <em class="emphasis">cuál</em> es ese orden, solo que <em class="emphasis">algún</em> orden está definido.  La función <code class="code-inline tex2jax_ignore">sorted()</code> tomará cualquier lista devolviendo una versión ordenada.  Así para cada lista de clases laterales, ordenaremos las clases individuales y luego ordenaremos la lista de clases ordenadas.  Esta es una maniobra típica, aunque un poco complicada para las listas anidadas.</div>
+<span class="incontext"><a href="cosets-sage.html#zng" class="internal">en contexto</a></span>
 </body>
 </html>

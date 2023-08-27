@@ -13,14 +13,29 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
 <div class="para logical">
-<div class="para">Compruebe que</div>
+<div class="para">Como <span class="process-math">\(\det(A A^\transpose) = \det(I) = 1\)</span> y <span class="process-math">\(\det(A) = \det( A^\transpose )\text{,}\)</span> el determinante de cualquier matriz ortogonal es  <span class="process-math">\(1\)</span> o <span class="process-math">\(-1\text{.}\)</span> Considere los vectores columna</div>
 <div class="displaymath process-math">
 \begin{equation*}
-E(n) = \{(A, {\mathbf x}) : A \in O(n) \text{ y } {\mathbf x} \in {\mathbb R}^n \}
+{\mathbf a}_j =
+\begin{pmatrix}
+a_{1j} \\ a_{2j} \\ \vdots \\ a_{nj}
+\end{pmatrix}
 \end{equation*}
 </div>
-<div class="para">es un grupo.</div>
+<div class="para">de la matriz ortogonal <span class="process-math">\(A= (a_{ij})\text{.}\)</span> Since <span class="process-math">\(AA^\transpose = I\text{,}\)</span> <span class="process-math">\(\langle {\mathbf a}_r, {\mathbf a}_s \rangle = \delta_{rs}\text{,}\)</span> donde</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\delta_{rs}
+=
+\begin{cases}
+1 &amp; r = s \\
+0 &amp; r \neq s
+\end{cases}
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-matrix.html#p-1897" class="internal">en contexto</a></span>
+<div class="para">es la delta de Kronecker. Así, los vectores columna de una matriz ortogonal todos tienen longitud 1; y el producto interno Euclideano de vectores columna distintos es cero. Cualquier conjunto de vectores que satisface esta propiedad se llama <dfn class="terminology">conjunto ortonormal</dfn>. Recíprocamente, dada una matriz <span class="process-math">\(A\)</span> de <span class="process-math">\(n \times n\)</span> cuyas columnas forman un conjunto ortonormal, se tiene que <span class="process-math">\(A^{-1} = A^\transpose\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="matrix-section-groups.html#pFQ" class="internal">en contexto</a></span>
 </body>
 </html>

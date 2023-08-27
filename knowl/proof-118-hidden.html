@@ -11,18 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">Supongamos que tenemos dos polinomios distintos de cero</div>
+<div class="para">Sean <span class="process-math">\(p(x) = \sum_{i = 0}^n a_i x^i\)</span> y <span class="process-math">\(q(x) = \sum_{i = 0}^m b_i x^i\text{.}\)</span>  Es fácil mostrar que <span class="process-math">\(\phi_{\alpha}(p(x) + q(x)) = \phi_{\alpha}(p(x))  + \phi_{\alpha}(q(x))\text{.}\)</span>  Para mostrar que la multiplicación es preservada por la función <span class="process-math">\(\phi_{\alpha}\text{,}\)</span> observemos que</div>
 <div class="displaymath process-math">
-\begin{equation*}
-p(x) = a_m x^m + \cdots + a_1 x + a_0
-\end{equation*}
+\begin{align*}
+\phi_{\alpha} (p(x) ) \phi_{\alpha} (q(x)) &amp; = p( \alpha ) q(\alpha)\\
+&amp; = \left( \sum_{i = 0}^n a_i \alpha^i \right) \left( \sum_{i = 0}^m b_i \alpha^i \right)\\
+&amp; = \sum_{i = 0}^{m + n} \left( \sum_{k = 0}^i a_k b_{i - k} \right) \alpha^i\\
+&amp; = \phi_{\alpha} (p(x) q(x))\text{.}
+\end{align*}
 </div>
-<div class="para">y</div>
-<div class="displaymath process-math">
-\begin{equation*}
-q(x) = b_n x^n + \cdots + b_1 x + b_0
-\end{equation*}
-</div>
-<div class="para">con <span class="process-math">\(a_m \neq 0\)</span> y <span class="process-math">\(b_n \neq 0\text{.}\)</span> Los grados de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\)</span> son <span class="process-math">\(m\)</span> y <span class="process-math">\(n\text{,}\)</span> respectivamente.  El término líder de <span class="process-math">\(p(x) q(x)\)</span> es <span class="process-math">\(a_m b_n x^{m + n}\text{,}\)</span> que no puede ser cero pues <span class="process-math">\(R\)</span> es un dominio integral; Vemos que el grado de <span class="process-math">\(p(x) q(x)\)</span> es <span class="process-math">\(m + n\text{,}\)</span> y <span class="process-math">\(p(x)q(x) \neq 0\text{.}\)</span>  Como <span class="process-math">\(p(x) \neq 0\)</span> y <span class="process-math">\(q(x) \neq 0\)</span> implica que <span class="process-math">\(p(x)q(x) \neq 0\text{,}\)</span> concluimos que <span class="process-math">\(R[x]\)</span> también es un dominio integral.</div>
 </div></article></body>
 </html>

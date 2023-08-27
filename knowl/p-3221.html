@@ -11,39 +11,9 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para logical">
-<div class="para">Sea <span class="process-math">\(p(x) = x^2 + x + 1 \in {\mathbb Z}_2[x]\text{.}\)</span> Como ni 0 ni 1 es una raíz de este polinomio, sabemos que <span class="process-math">\(p(x)\)</span> es irreducible sobre <span class="process-math">\({\mathbb Z}_2\text{.}\)</span> Construiremos una extensión del cuerpo <span class="process-math">\({\mathbb Z}_2\)</span> que contenga un elemento <span class="process-math">\(\alpha\)</span> tal que <span class="process-math">\(p(\alpha) = 0\text{.}\)</span> Por el Teorema <a href="" class="xref" data-knowl="./knowl/theorem-max-ideal-poly.html" title="Teorema 17.3.12">17.3.12</a>, el ideal <span class="process-math">\(\langle p(x) \rangle\)</span> generado por <span class="process-math">\(p(x)\)</span> es maximal; luego, <span class="process-math">\({\mathbb Z}_2[x] / \langle p(x) \rangle\)</span> es un cuerpo.  Sea <span class="process-math">\(f(x) + \langle p(x) \rangle\)</span> un elemento arbitrario de <span class="process-math">\({\mathbb Z}_2[x] / \langle p(x) \rangle\text{.}\)</span> Por el algoritmo de la división,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-max-ideal-poly.html">
-\begin{equation*}
-f(x) = (x^2 + x + 1) q(x) + r(x),
-\end{equation*}
+<h3 class="heading"><span class="type">Párrafo</span></h3>
+<div class="para">Un conjunto <span class="process-math">\(\{ e_1, e_2, \ldots, e_n \}\)</span> de vectores en un espacio vectorial <span class="process-math">\(V\)</span> se llama <dfn class="terminology">base</dfn> para <span class="process-math">\(V\)</span> si <span class="process-math">\(\{ e_1, e_2, \ldots, e_n \}\)</span> es un conjunto linealmente independiente que genera <span class="process-math">\(V\text{.}\)</span>
 </div>
-<div class="para">donde el grado de <span class="process-math">\(r(x)\)</span> es menor al grado de <span class="process-math">\(x^2 + x + 1\text{.}\)</span> Por lo tanto,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-max-ideal-poly.html">
-\begin{equation*}
-f(x) + \langle x^2 + x + 1 \rangle = r(x) + \langle x^2 + x + 1 \rangle.
-\end{equation*}
-</div>
-<div class="para">Las únicas posibilidades para <span class="process-math">\(r(x)\)</span> son entonces <span class="process-math">\(0\text{,}\)</span> <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(x\text{,}\)</span> y <span class="process-math">\(1 + x\text{.}\)</span> En consecuencia, <span class="process-math">\(E = {\mathbb Z}_2[x] / \langle x^2 + x + 1 \rangle\)</span> es un cuerpo con cuatro elementos y debe ser una extensión de  <span class="process-math">\({\mathbb Z}_2\text{,}\)</span> que contiene un cero <span class="process-math">\(\alpha\)</span> de <span class="process-math">\(p(x)\text{.}\)</span> El cuerpo <span class="process-math">\({\mathbb Z}_2(  \alpha)\)</span> consiste de los elementos</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-max-ideal-poly.html">
-\begin{align*}
-0 + 0 \alpha &amp; = 0\\
-1 + 0 \alpha &amp; = 1\\
-0 + 1 \alpha &amp; = \alpha\\
-1 + 1 \alpha &amp; = 1 + \alpha.
-\end{align*}
-</div>
-<div class="para">Notemos que <span class="process-math">\({\alpha}^2 + {\alpha} + 1 = 0\text{;}\)</span> por lo que, si calculamos <span class="process-math">\((1 + \alpha)^2\text{,}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/theorem-max-ideal-poly.html">
-\begin{equation*}
-(1 + \alpha)(1 + \alpha)= 1 + \alpha + \alpha + (\alpha)^2 = \alpha.
-\end{equation*}
-</div>
-<div class="para">Otros cálculos se realizan de forma similar.  Resumimos estos resultados en las siguientes tablas, que nos dicen cómo sumar y multiplicar elementos en <span class="process-math">\(E\text{.}\)</span>
-</div>
-</div>
-<span class="incontext"><a href="section-extension-fields.html#p-3221" class="internal">en contexto</a></span>
+<span class="incontext"><a href="vect-section-linear-independence.html#Sgv" class="internal">en contexto</a></span>
 </body>
 </html>

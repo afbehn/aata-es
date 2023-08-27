@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">22.2.1</span><span class="period">.</span>
+</h3>
+<div class="para logical">
+<div class="para">Considere los código lineales <span class="process-math">\((6,3)\)</span>generados por las dos matrices</div>
+<div class="displaymath process-math">
+\begin{equation*}
+G_1 
+= 
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 
+\end{pmatrix}
+\quad
+\text{and}
+\quad
+G_2 = 
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+1 &amp; 1 &amp; 0 \\
+1 &amp; 1 &amp; 1 \\
+1 &amp; 1 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 1
+\end{pmatrix}\text{.}
+\end{equation*}
+</div>
+<div class="para">Los mensajes del primero se codifican como sigue:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{rclccrcl}
+(000) &amp; \mapsto &amp; (000000) &amp; &amp; &amp; (100) &amp; \mapsto &amp; (100100) \\
+(001) &amp; \mapsto &amp; (001001) &amp; &amp; &amp; (101) &amp; \mapsto &amp; (101101) \\
+(010) &amp; \mapsto &amp; (010010) &amp; &amp; &amp; (110) &amp; \mapsto &amp; (110110) \\
+(011) &amp; \mapsto &amp; (011011) &amp; &amp; &amp; (111) &amp; \mapsto &amp; (111111).
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Es fácil ver que las palabras del código forman un código cíclico.  En el segundo, las 3-tuplas se codifican de la siguiente manera:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{rclccrcl}
+(000) &amp; \mapsto &amp; (000000) &amp; &amp; &amp; (100) &amp; \mapsto &amp; (111100) \\
+(001) &amp; \mapsto &amp; (001111) &amp; &amp; &amp; (101) &amp; \mapsto &amp; (110011) \\
+(010) &amp; \mapsto &amp; (011110) &amp; &amp; &amp; (110) &amp; \mapsto &amp; (100010) \\
+(011) &amp; \mapsto &amp; (010001) &amp; &amp; &amp; (111) &amp; \mapsto &amp; (101101).
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Este código no es cíclico, pues <span class="process-math">\((101101)\)</span> es una palabra del código pero  <span class="process-math">\((011011)\)</span> no lo es.</div>
+</div></article><span class="incontext"><a href="finite-section-poly-codes.html#sxS" class="internal">en contexto</a></span>
+</body>
+</html>

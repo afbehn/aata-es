@@ -12,7 +12,24 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Párrafo</span></h4>
-<div class="para">El principio de Inducción implica que <span class="process-math">\(1\)</span> es el menor número natural positivo.</div>
-<span class="incontext"><a href="section-math-induction.html#p-245" class="internal">en contexto</a></span>
+<div class="para logical">
+<div class="para">Los enteros <span class="process-math">\(10^{n + 1} + 3 \cdot 10^n + 5\)</span> son divisibles por <span class="process-math">\(9\)</span> para todo <span class="process-math">\(n \in {\mathbb N}\text{.}\)</span>  Para <span class="process-math">\(n = 1\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+10^{1 + 1} + 3 \cdot 10 + 5 = 135 = 9 \cdot 15
+\end{equation*}
+</div>
+<div class="para">es divisible por <span class="process-math">\(9\text{.}\)</span>  Supongamos que <span class="process-math">\(10^{k + 1} + 3 \cdot 10^k + 5\)</span> es divisible por <span class="process-math">\(9\)</span> para <span class="process-math">\(k \geq 1\text{.}\)</span>  Entonces</div>
+<div class="displaymath process-math">
+\begin{align*}
+10^{(k + 1) + 1} + 3 \cdot 10^{k + 1} + 5&amp; = 10^{k + 2} + 3 \cdot 10^{k + 1} + 50 - 45\\
+&amp; = 10 (10^{k + 1} + 3 \cdot 10^{k} + 5) - 45
+\end{align*}
+</div>
+<div class="para">es divisible por <span class="process-math">\(9\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="integers-section-math-induction.html#Xsr" class="internal">en contexto</a></span>
 </body>
 </html>
