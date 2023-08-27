@@ -44,7 +44,10 @@
           <li permid="Vya"><p permid="YHb"><m>2x = 6</m> si y solo si <m>x = 4</m>.
     </p></li>
    
-          <li permid="BFj"><p permid="EOk">Si <m>ax^2 + bx + c = 0</m> y <m>a \neq 0</m>, entonces <me permid="IAb">x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</me>.
+          <li permid="BFj"><p permid="EOk">Si <m>ax^2 + bx + c = 0</m> y <m>a \neq 0</m>, entonces 
+            <me permid="IAb">
+              x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+            </me>.
     </p></li>
    
           <li permid="hMs"><p permid="kVt"><m>x^3 - 4x^2 + 5 x - 6</m>.
