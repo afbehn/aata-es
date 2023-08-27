@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para logical">
+<div class="para">La respuesta es usar la estructura de espacio vectorial de la torre aplanada.  Como es una extensión de grado <span class="process-math">\(8\)</span> de los racionales, las primeras <span class="process-math">\(8\)</span> potencias de un elemento primitivo <code class="code-inline tex2jax_ignore">c</code> forman una base cuando el cuerpo se ve como un espacio vectorial con los racionales como escalares.  Es suficiente saber como cada automorfismo de cuerpos actúa en esta base para completamente especificar la definición del automorfismo.  Esto es,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\tau(x)&amp;=\tau\left(\sum_{i=0}^7\,q_ic^i\right)&amp;&amp;q_i\in{\mathbb Q}\\
+&amp;=\sum_{i=0}^7\,\tau(q_i)\tau(c^i)&amp;&amp;\tau\text{ es un automorfismo de cuerpos}\\
+&amp;=\sum_{i=0}^7\,q_i\tau(c^i)&amp;&amp;\text{los racionales quedan fijos}
+\end{align*}
+</div>
+<div class="para">Así podemos calcular el valor de un automorfismo de cuerpos en cualquier combinación lineal de potencias del elemento primitivo como combinación lineal de los valores del automorfismo de cuerpos solo en las potencias del elemento primitivo.  Esta se conoce como “base de potencias”, lo que podemos obtener simplemente con el método <code class="code-inline tex2jax_ignore">.power_basis()</code>.  Empezaremos con un ejemplo de como usar esta base.  Ilustraremos con el cuarto automorfismo del grupo de Galois.  Note que el método <code class="code-inline tex2jax_ignore">.vector()</code> es conveniente en tanto transforma una combinación lineal de potencias de <code class="code-inline tex2jax_ignore">c</code> en un vector que solo retiene los coeficientes.  (Note además que  <span class="process-math">\(\tau\)</span> está completamente definido por el valor de <span class="process-math">\(\tau(c)\text{,}\)</span>  pues como es un automorfismo de cuerpos <span class="process-math">\(\tau(c^k)=(\tau(c))^k\text{.}\)</span>  Sin embargo, igual debemos trabajar con la base de potencias completa para aprovechar la estructura de espacio vectorial.)</div>
+</div>
+<span class="incontext"><a href="galois-sage.html#gqe" class="internal">en contexto</a></span>
+</body>
+</html>

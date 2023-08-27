@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="example example-like"><div class="para logical">
+<div class="para">Dada la matriz binaria</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H =
+\begin{pmatrix}
+1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para">y las <span class="process-math">\(5\)</span>-tuplas <span class="process-math">\({\mathbf x} = (11011)^\transpose\)</span> y <span class="process-math">\({\mathbf y} = (01011)^\transpose\text{,}\)</span> podemos calcular</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H{\mathbf x} =
+\begin{pmatrix}
+0 \\ 0 \\ 0 
+\end{pmatrix}
+\qquad
+\text{and}
+\qquad
+H{\mathbf y} =
+\begin{pmatrix}
+1 \\ 0 \\ 1 
+\end{pmatrix}\text{.}
+\end{equation*}
+</div>
+<div class="para">Luego, <span class="process-math">\({\mathbf x}\)</span> es una palabra del código e <span class="process-math">\({\mathbf y}\)</span> no lo es, pues <span class="process-math">\({\mathbf x}\)</span> está en el espacio nulo e <span class="process-math">\({\mathbf y}\)</span> no lo está. Notemos que <span class="process-math">\(H{\mathbf y}\)</span> es idéntica a la primera columna de <span class="process-math">\(H\text{.}\)</span> De hecho, es ahí donde ocurrió el error. Si cambiamos el primer bit en <span class="process-math">\({\mathbf y}\)</span> de <span class="process-math">\(0\)</span> a <span class="process-math">\(1\text{,}\)</span> obtenemos <span class="process-math">\({\mathbf x}\text{.}\)</span>
+</div>
+</div></article></body>
+</html>

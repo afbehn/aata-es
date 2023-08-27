@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">Procederemos por inducción sobre el orden de <span class="process-math">\(G\)</span> una vez más.  Si <span class="process-math">\(|G| = p\text{,}\)</span> entonces estamos listos. Ahora supongamos que el orden de <span class="process-math">\(G\)</span> es <span class="process-math">\(n\)</span> con <span class="process-math">\(n \gt p\)</span> y que el teorema es verdadero para todos los grupos de orden menor a <span class="process-math">\(n\text{,}\)</span> donde <span class="process-math">\(p\)</span> divide a <span class="process-math">\(n\text{.}\)</span> Usaremos la ecuación de clase una vez más:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|G| = |Z(G)| + [G: C(x_1) ] + \cdots + [ G: C(x_k)]\text{.}
+\end{equation*}
+</div>
+<div class="para">Supongamos primero que <span class="process-math">\(p\)</span> no divide a <span class="process-math">\([G:C(x_i)]\)</span> para algún <span class="process-math">\(i\text{.}\)</span> Entonces <span class="process-math">\(p^r \mid |C(x_i)|\text{,}\)</span> pues <span class="process-math">\(p^r\)</span> divide a <span class="process-math">\(|G| = |C(x_i)| \cdot [G:C(x_i)]\text{.}\)</span> Podemos aplicar la hipótesis de inducción a <span class="process-math">\(C(x_i)\text{.}\)</span>
+</div>
+</div> <div class="para">Por lo tanto, podemos suponer que <span class="process-math">\(p\)</span> divide a <span class="process-math">\([G:C(x_i)]\)</span> para todos los <span class="process-math">\(i\text{.}\)</span> Como <span class="process-math">\(p\)</span> divide a <span class="process-math">\(|G|\text{,}\)</span> la ecuación de clase dice que <span class="process-math">\(p\)</span> divide a <span class="process-math">\(|Z(G)|\text{;}\)</span> luego, por el teorema de Cauchy, <span class="process-math">\(Z(G)\)</span> tiene un elemento de orden <span class="process-math">\(p\text{,}\)</span> digamos <span class="process-math">\(g\text{.}\)</span> Sea <span class="process-math">\(N\)</span> el grupo generado por <span class="process-math">\(g\text{.}\)</span> Claramente, <span class="process-math">\(N\)</span> es un subgrupo normal de <span class="process-math">\(Z(G)\)</span> pues <span class="process-math">\(Z(G)\)</span> es abeliano; por lo tanto, <span class="process-math">\(N\)</span> es normal en <span class="process-math">\(G\)</span> pues todo elemento en <span class="process-math">\(Z(G)\)</span> conmuta con todo elemento en <span class="process-math">\(G\text{.}\)</span> Ahora consideremos el grupo cociente <span class="process-math">\(G/N\)</span> de orden <span class="process-math">\(|G|/p\text{.}\)</span> Por la hipótesis de indicción, <span class="process-math">\(G/N\)</span> contiene un subgrupo <span class="process-math">\(H\)</span> de orden <span class="process-math">\(p^{r- 1}\text{.}\)</span> La preimagen de <span class="process-math">\(H\)</span> bajo el homomorfismo canónico <span class="process-math">\(\phi : G \rightarrow G/N\)</span> es un subgrupo de orden <span class="process-math">\(p^r\)</span> en <span class="process-math">\(G\text{.}\)</span>
+</div></article></body>
+</html>

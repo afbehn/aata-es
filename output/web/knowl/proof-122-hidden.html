@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">Sea <span class="process-math">\(d(x)\)</span> el polinomio mónico de menor grado en el conjunto</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S = \{ f(x) p(x) + g(x) q(x) : f(x), g(x) \in F[x]  \}\text{.}
+\end{equation*}
+</div>
+<div class="para">Podemos escribir <span class="process-math">\(d(x) = r(x) p(x) + s(x) q(x)\)</span> para dos polinomios  <span class="process-math">\(r(x)\)</span> y <span class="process-math">\(s(x)\)</span> en <span class="process-math">\(F[x]\text{.}\)</span> Debemos demostrar que <span class="process-math">\(d(x)\)</span> divide a <span class="process-math">\(p(x)\)</span> y a <span class="process-math">\(q(x)\text{.}\)</span> Primero mostraremos que <span class="process-math">\(d(x)\)</span> divide a <span class="process-math">\(p(x)\text{.}\)</span> Por el algoritmo de división, existen polinomios <span class="process-math">\(a(x)\)</span> y <span class="process-math">\(b(x)\)</span> tales que <span class="process-math">\(p(x) = a(x) d(x) + b(x)\text{,}\)</span> donde <span class="process-math">\(b(x)\)</span> es el polinomio cero o <span class="process-math">\(\deg b(x) \lt \deg d(x)\text{.}\)</span>  Por lo tanto,</div>
+<div class="displaymath process-math">
+\begin{align*}
+b(x) &amp; = p(x) - a(x) d(x)\\
+&amp; = p(x) - a(x)( r(x) p(x) + s(x) q(x)) \\
+&amp; = p(x) - a(x) r(x) p(x) - a(x)  s(x) q(x)\\
+&amp; = p(x)( 1  - a(x) r(x) ) + q(x) ( - a(x)  s(x) )
+\end{align*}
+</div>
+<div class="para">es una combinación lineal de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\)</span> y por lo tanto está en <span class="process-math">\(S\text{.}\)</span> Entonces, <span class="process-math">\(b(x)\)</span> debe ser el polinomio cero pues <span class="process-math">\(d(x)\)</span> fue elegido de grado minimal; Concluimos que <span class="process-math">\(d(x)\)</span> divide a <span class="process-math">\(p(x)\text{.}\)</span>  Un argumento simétrico muestra que <span class="process-math">\(d(x)\)</span> también divide a <span class="process-math">\(q(x)\text{;}\)</span> luego, <span class="process-math">\(d(x)\)</span> es un divisor común de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Para mostrar que <span class="process-math">\(d(x)\)</span> es un máximo común divisor de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{,}\)</span> supongamos que <span class="process-math">\(d'(x)\)</span> es otro divisor común de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{.}\)</span> Mostraremos que <span class="process-math">\(d'(x) \mid d(x)\text{.}\)</span>  Como <span class="process-math">\(d'(x)\)</span> es un divisor común de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{,}\)</span> existen polinomios <span class="process-math">\(u(x)\)</span> y <span class="process-math">\(v(x)\)</span> tales que <span class="process-math">\(p(x) = u(x) d'(x)\)</span> y <span class="process-math">\(q(x) = v(x) d'(x)\text{.}\)</span> Por lo tanto,</div>
+<div class="displaymath process-math">
+\begin{align*}
+d(x) &amp; = r(x) p(x) + s(x) q(x)\\
+&amp; =  r(x) u(x) d'(x) + s(x) v(x) d'(x)\\
+&amp; = d'(x) [r(x) u(x) + s(x) v(x)]\text{.}
+\end{align*}
+</div>
+<div class="para">Como <span class="process-math">\(d'(x) \mid d(x)\text{,}\)</span> <span class="process-math">\(d(x)\)</span> es un máximo común divisor de <span class="process-math">\(p(x)\)</span>  y <span class="process-math">\(q(x)\text{.}\)</span>
+</div>
+</div>    <div class="para logical">
+<div class="para">Finalmente, debemos mostrar que el máximo común divisor de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\)</span> es único. Supongamos que <span class="process-math">\(d'(x)\)</span> también es un máximo común divisor de <span class="process-math">\(p(x)\)</span> y <span class="process-math">\(q(x)\text{.}\)</span> Acabamos de mostrar que existen polinomios <span class="process-math">\(u(x)\)</span> y <span class="process-math">\(v(x)\)</span> en <span class="process-math">\(F[x]\)</span> tales que <span class="process-math">\(d(x) = d'(x)[r(x) u(x) + s(x) v(x)]\text{.}\)</span> Como</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\deg d(x) =  \deg d'(x) + \deg[r(x) u(x) + s(x) v(x)]
+\end{equation*}
+</div>
+<div class="para">y <span class="process-math">\(d(x)\)</span> y <span class="process-math">\(d'(x)\)</span> son ambos máximo común divisor, <span class="process-math">\(\deg d(x) = \deg d'(x)\text{.}\)</span> Como <span class="process-math">\(d(x)\)</span> y <span class="process-math">\(d'(x)\)</span> son ambos polinomios mónicos del mismo grado, se debe tener que <span class="process-math">\(d(x) = d'(x)\text{.}\)</span>
+</div>
+</div></article></body>
+</html>

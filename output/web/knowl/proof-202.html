@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
+<div class="para">(1) Supongamos que <span class="process-math">\(G(E/K) = G(E/L) = G\text{.}\)</span> Tanto <span class="process-math">\(K\)</span> como <span class="process-math">\(L\)</span> son cuerpos fijos de <span class="process-math">\(G\text{;}\)</span> luego, <span class="process-math">\(K=L\)</span> y la función definida por <span class="process-math">\(K \mapsto G(E/K)\)</span> es 1-1. PAra mostrar que la función es sobreyectiva, sea <span class="process-math">\(G\)</span> un subgrupo de <span class="process-math">\(G(E/F)\)</span> y sea <span class="process-math">\(K\)</span> el cuerpo fijo por <span class="process-math">\(G\text{.}\)</span> Entonces <span class="process-math">\(F \subset K \subset E\text{;}\)</span> Así, <span class="process-math">\(E\)</span> es una extensión normal de <span class="process-math">\(K\text{.}\)</span> Luego, <span class="process-math">\(G(E/K) = G\)</span> y la función <span class="process-math">\(K \mapsto G(E/K)\)</span> es una biyección.</div> <div class="para logical">
+<div class="para">(2) Por el Teorema<a href="" class="xref" data-knowl="./knowl/galois-theorem-extension-order.html" title="Teorema 23.1.7">Teorema 23.1.7</a>, <span class="process-math">\(|G(E/K)| = [E:K]\text{;}\)</span> por lo tanto,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/galois-theorem-extension-order.html">
+\begin{equation*}
+|G(E/F)| = [G(E/F):G(E/K)] \cdot |G(E/K)| = [E:F] = [E:K][K:F]\text{.}
+\end{equation*}
+</div>
+<div class="para">Luego, <span class="process-math">\([K:F] = [G(E/F):G(E/K)]\text{.}\)</span>
+</div>
+</div> <div class="para">(3) La proposición se ilustra en la <a href="" class="xref" data-knowl="./knowl/galois-figure-2.html" title="Figura 23.2.11">Figura 23.2.11</a>. Dejamos su demostración como un ejercicio.</div> <div class="para">(4) Esto requiere un poco más de trabajo. Sea <span class="process-math">\(K\)</span> una extensión normal de <span class="process-math">\(F\text{.}\)</span> Si <span class="process-math">\(\sigma\)</span> está en <span class="process-math">\(G(E/F)\)</span> y <span class="process-math">\(\tau\)</span> está en <span class="process-math">\(G(E/K)\text{,}\)</span> debemos demostrar que <span class="process-math">\(\sigma^{-1} \tau \sigma\)</span> está en <span class="process-math">\(G(E/K)\text{;}\)</span> es decir, debemos mostrar que <span class="process-math">\(\sigma^{-1} \tau \sigma( \alpha) = \alpha\)</span> para todo <span class="process-math">\(\alpha \in K\text{.}\)</span> Supongamos que <span class="process-math">\(f(x)\)</span> es el polinomio minimal de <span class="process-math">\(\alpha\)</span> sobre <span class="process-math">\(F\text{.}\)</span> Entonces <span class="process-math">\(\sigma( \alpha )\)</span> también es una raíz de <span class="process-math">\(f(x)\)</span> que está en <span class="process-math">\(K\text{,}\)</span> pues <span class="process-math">\(K\)</span> es una extensión normal de <span class="process-math">\(F\text{.}\)</span> Luego, <span class="process-math">\(\tau( \sigma( \alpha )) = \sigma( \alpha )\)</span> y <span class="process-math">\(\sigma^{-1} \tau \sigma( \alpha) = \alpha\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Recíprocamente, sea <span class="process-math">\(G(E/K)\)</span> un subgrupo normal de <span class="process-math">\(G(E/F)\text{.}\)</span> Debemos demostrar que <span class="process-math">\(F = K_{G(K/F)}\text{.}\)</span> Sea <span class="process-math">\(\tau \in G(E/K)\text{.}\)</span> Para todo <span class="process-math">\(\sigma \in G(E/F)\)</span> existe <span class="process-math">\(\overline{\tau} \in G(E/K)\)</span> tal que <span class="process-math">\(\tau \sigma = \sigma \overline{\tau}\text{.}\)</span>  De esta manera, para todo <span class="process-math">\(\alpha \in K\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tau( \sigma( \alpha ) ) = \sigma( \overline{\tau}( \alpha ) ) = \sigma( \alpha );
+\end{equation*}
+</div>
+<div class="para">luego, <span class="process-math">\(\sigma( \alpha )\)</span> es el cuerpo fijo de <span class="process-math">\(G(E/K)\text{.}\)</span> Sea <span class="process-math">\(\overline{\sigma}\)</span> la restricción de <span class="process-math">\(\sigma\)</span> a <span class="process-math">\(K\text{.}\)</span> Entonces <span class="process-math">\(\overline{\sigma}\)</span> es un automorfismo de <span class="process-math">\(K\)</span> que fija <span class="process-math">\(F\text{,}\)</span> pues <span class="process-math">\(\sigma( \alpha ) \in K\)</span> para todo <span class="process-math">\(\alpha \in K\text{;}\)</span> luego, <span class="process-math">\(\overline{\sigma} \in G(K/F)\text{.}\)</span> A continuación, mostraremos que el cuerpo fijo de <span class="process-math">\(G(K/F)\)</span> es <span class="process-math">\(F\text{.}\)</span> Sea <span class="process-math">\(\beta\)</span> un elemento en <span class="process-math">\(K\)</span> que queda fijo por todos los automorfismos en <span class="process-math">\(G(K/F)\text{.}\)</span>  En particular, <span class="process-math">\(\overline{\sigma}(\beta) = \beta\)</span> para todo <span class="process-math">\(\sigma \in G(E/F)\text{.}\)</span>  Por lo tanto, <span class="process-math">\(\beta\)</span> pertenece al cuerpo fijo <span class="process-math">\(F\)</span> de <span class="process-math">\(G(E/F)\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Finalmente, debemos mostrar que si <span class="process-math">\(K\)</span> es una extensión normal de <span class="process-math">\(F\text{,}\)</span> entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+G(K/F) \cong G(E/F) / G(E/K)\text{.}
+\end{equation*}
+</div>
+<div class="para">Sea <span class="process-math">\(\sigma \in G(E/F)\text{,}\)</span> y sea <span class="process-math">\(\sigma_K\)</span> el automorfismo de <span class="process-math">\(K\)</span> obtenido restringiendo <span class="process-math">\(\sigma\)</span> a <span class="process-math">\(K\text{.}\)</span> Como <span class="process-math">\(K\)</span> es una extensión normal, el argumento del párrafo precedente muestra que <span class="process-math">\(\sigma_K \in G( K/F)\text{.}\)</span> Tenemos así una función <span class="process-math">\(\phi:G(E/F) \rightarrow G(K/F)\)</span> definida por <span class="process-math">\(\sigma \mapsto \sigma_K\text{.}\)</span> Esta función es un homomorfismo de grupos pues</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi( \sigma \tau )  = (\sigma \tau)_K  = \sigma_K \tau_K  = \phi( \sigma) \phi( \tau )\text{.}
+\end{equation*}
+</div>
+<div class="para">El núcleo de <span class="process-math">\(\phi\)</span> es <span class="process-math">\(G(E/K)\text{.}\)</span>  Por (2),</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|G(E/F)| / |G(E/K)| = [K:F] = |G(K/F)|\text{.}
+\end{equation*}
+</div>
+<div class="para">Luego, la imagen de <span class="process-math">\(\phi\)</span> es <span class="process-math">\(G(K/F)\)</span> y <span class="process-math">\(\phi\)</span> es sobreyectiva. Por el Primer Teorema de Isomorfía, tenemos</div>
+<div class="displaymath process-math">
+\begin{equation*}
+G(K/F) \cong G(E/F) / G( E/K )\text{.}
+\end{equation*}
+</div>
+</div></article><span class="incontext"><a href="galois-section-fund-theorem-galois-theory.html#QwZ" class="internal">en contexto</a></span>
+</body>
+</html>

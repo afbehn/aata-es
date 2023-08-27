@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h3 class="heading"><span class="type">Demostración</span></h3>
+<div class="para logical">
+<div class="para">Los posibles movimientos de un <span class="process-math">\(n\)</span>-gon regular son reflexiones o rotaciones. (<a href="" class="xref" data-knowl="./knowl/permute-figure-rotations.html" title="Figura 5.2.4">Figura 5.2.4</a>). Hay exactamente <span class="process-math">\(n\)</span> rotaciones posibles:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/permute-figure-rotations.html">
+\begin{equation*}
+\identity, \frac{360^{\circ} }{n}, 2 \cdot \frac{360^{\circ} }{n}, \ldots, (n-1) \cdot \frac{360^{\circ} }{n}\text{.}
+\end{equation*}
+</div>
+<div class="para">Denotaremos la rotación <span class="process-math">\(360^{\circ} /n\)</span> por <span class="process-math">\(r\text{.}\)</span> La rotación <span class="process-math">\(r\)</span> genera todas las demás rotaciones. Eso es,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/permute-figure-rotations.html">
+\begin{equation*}
+r^k = k \cdot \frac{360^{\circ} }{n}\text{.}
+\end{equation*}
+</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/permute-motions-ngon.svg" role="img" class="contained" alt="Rotaciones y reflejos de un octágono. Donde el octágono superior (1 (arriba), 2, 3, 4, 5, 6, 7, 8) se gira a un octágono (2 (arriba), 3, 4, 5, 6, 7, 8, 1), y el octágono de abajo (1 (arriba), 2, 3, 4, 5, 6, 7, 8) se refleja alrededor de un eje vertical hacia (1 (arriba), 8, 7, 6, 5, 4, 3, 2 )."></div>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">5.2.4<span class="period">.</span></span><span class="space"> </span>Rotaciones y reflexiones de un <span class="process-math">\(n\)</span>-ágono regular</figcaption></figure> <div class="para logical">
+<div class="para">Etiquete las reflexiones <span class="process-math">\(n\)</span> <span class="process-math">\(s_1, s_2, \ldots, s_n\text{,}\)</span> donde <span class="process-math">\(s_k\)</span> es la reflexión que sale del vértice <span class="process-math">\(k\)</span> fijado. Hay dos casos de reflexiones, dependiendo de si <span class="process-math">\(n\)</span> es par o impar. Si hay un número par de vértices, entonces dos vértices quedan fijos mediante una reflexión, y <span class="process-math">\(s_1 = s_{n/2 + 1}, s_2 = s_{n/2 + 2}, \ldots, s_{ n/2} = s_n\text{.}\)</span> Si hay un número impar de vértices, entonces solo un vértice queda fijo mediante una reflexión y <span class="process-math">\(s_1, s_2, \ldots, s_n\)</span> son distintos (<a href="" class="xref" data-knowl="./knowl/permute-figure-types.html" title="Figura 5.2.5">Figura 5.2.5</a>). En cualquier caso, el orden de cada <span class="process-math">\(s_k\)</span> es dos. Sea <span class="process-math">\(s = s_1\text{.}\)</span> Entonces <span class="process-math">\(s^2 = 1\)</span> y <span class="process-math">\(r^n = 1\text{.}\)</span> Dado que cualquier movimiento rígido <span class="process-math">\(t\)</span> del <span class="process-math">\(n\)</span>-gon reemplaza el primer vértice por el vértice <span class="process-math">\(k\text{,}\)</span> el segundo vértice debe ser reemplazado por <span class="process-math">\(k+1\)</span> o por <span class="process-math">\(k-1\text{.}\)</span> Si el segundo vértice se reemplaza por <span class="process-math">\(k+1\text{,}\)</span> entonces <span class="process-math">\(t = r^k\text{.}\)</span> Si el segundo vértice se reemplaza por <span class="process-math">\(k-1\text{,}\)</span> entonces <span class="process-math">\(t = r^k s\text{.}\)</span><a href="" class="fn-knowl original" data-knowl="./knowl/fn-5-hidden.html" title="Nota a pie de página 5.2.1"><sup> 1 </sup></a> Por lo tanto, <span class="process-math">\(r\)</span> y <span class="process-math">\(s\)</span> generan <span class="process-math">\(D_n\text{.}\)</span> Es decir, <span class="process-math">\(D_n\)</span> consta de todos los productos finitos de <span class="process-math">\(r\)</span> y <span class="process-math">\(s\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/permute-figure-types.html">
+\begin{equation*}
+D_n = \{1, r, r^2, \ldots, r^{n-1}, s, rs, r^2 s, \ldots, r^{n-1} s\}\text{.}
+\end{equation*}
+</div>
+<div class="para">Dejaremos la demostración de que <span class="process-math">\(srs = r^{-1}\)</span> como ejercicio.</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/permute-reflections-ngon.svg" role="img" class="contained" alt="El hexágono superior (1 (arriba), 2, 3, 4, 5, 6) se refleja en (1 (arriba), 6, 5, 4, 3, 2). El pentágono inferior (1 (arriba), 2, 3, 4, 5) se refleja para convertirse en (1 (arriba), 5, 4, 3, 2)."></div>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">5.2.5<span class="period">.</span></span><span class="space"> </span>Tipos de reflexiones de un <span class="process-math">\(n\)</span>-ágono regular</figcaption></figure></article><span class="incontext"><a href="permute-section-dihedral-groups.html#Bex" class="internal">en contexto</a></span>
+</body>
+</html>

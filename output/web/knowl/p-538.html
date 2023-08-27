@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para logical">
+<div class="para">El Código Universal de Productos (<abbr class="acronym">UPC</abbr> por su sigla en inglés) se encuentra en la mayoría de los productos de supermercados y tiendas del retail. El <abbr class="acronym">UPC</abbr> es un código de 12 dígitos que identifica al fabricante de un producto y al producto mismo (<a href="" class="xref" data-knowl="./knowl/groups-figure-upc-codes.html" title="Figura 3.6.1">Figura 3.6.1</a>). Los primeros 11 dígitos contienen información sobre el producto; el último dígito se usa para la detección de errores. Si <span class="process-math">\(d_1 d_2 \cdots d_{12}\)</span> es un número <abbr class="acronym">UPC</abbr> válido, entonces</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/groups-figure-upc-codes.html ./knowl/groups-figure-upc-codes.html">
+\begin{equation*}
+3 \cdot d_1 + 1 \cdot d_2 + 3 \cdot d_3 + \cdots + 3 \cdot d_{11} + 1 \cdot d_{12} \equiv 0 \pmod{10}\text{.}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li><div class="para">Muestre que el número <abbr class="acronym">UPC</abbr> 0-50000-30042-6, que aparece en la <a href="" class="xref" data-knowl="./knowl/groups-figure-upc-codes.html" title="Figura 3.6.1">Figura 3.6.1</a>, es un número <abbr class="acronym">UPC</abbr> válido.</div></li>
+<li><div class="para">Muestre que el número 0-50000-30043-6 no es un número <abbr class="acronym">UPC</abbr> válido.</div></li>
+<li><div class="para">Escriba una fórmula para calcular el dígito verificador, <span class="process-math">\(d_{12}\text{,}\)</span> de un número <abbr class="acronym">UPC</abbr>.</div></li>
+<li><div class="para">El método de detección de errores del <abbr class="acronym">UPC</abbr> puede detectar la mayor parte de los errores de transposición; es decir, puede tereminar si dos dígitos fueron intercambiados.  Muestre que el error de transposición 0-05000-30042-6 no es detectado.  Encuentre un error de transposición que sí sea detectado. ¿Puede encontrar una regla general sobre cuáles son los errores de transposición que son detectados?</div></li>
+<li><div class="para">Escriba un programa que determina si un número <abbr class="acronym">UPC</abbr> es válido.</div></li>
+</ol>
+</div>
+<span class="incontext"><a href="groups-exercises-detecting-errors.html#PWJ" class="internal">en contexto</a></span>
+</body>
+</html>

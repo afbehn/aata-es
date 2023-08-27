@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="example example-like"><div class="para logical">
+<div class="para">Un posible mecanismo de codificación sería enviar el mensaje múltiples veces y comparar las copias recibidas entre ellas. Supongamos que el mensaje a codificar es una <span class="process-math">\(n\)</span>-tupla binaria <span class="process-math">\((x_{1}, x_{2}, \ldots, x_{n})\text{.}\)</span> El mensaje se codifica en una <span class="process-math">\(3n\)</span>-tupla binaria simplemente repitiendo el mensaje tres veces:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x_{1}, x_{2}, \ldots, x_{n}) \mapsto (x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n})\text{.}
+\end{equation*}
+</div>
+<div class="para">Para decodificar el mensaje, escogemos como el <span class="process-math">\(i\)</span>-ésimo dígito el que aparezca en la <span class="process-math">\(i\)</span>-ésima posición de al menos dos de las tres transmisiones. Por ejemplo, si el mensaje original es <span class="process-math">\((0110)\text{,}\)</span> entonces el mensaje transmitido será <span class="process-math">\((0110\;  0110\;  0110)\text{.}\)</span> Si hay un error de transmisión en el quinto dígito, entonces la palabra recibida será <span class="process-math">\((0110\;  1110\;  0110)\text{,}\)</span> la que será correctamente decodificada como <span class="process-math">\((0110)\text{.}\)</span><a href="" class="fn-knowl original" data-knowl="./knowl/fn-10-hidden.html" title="Nota a pie de página 8.1.1"><sup> 1 </sup></a>  Este método de repetición-triple automáticamente detecta y corrige todos los errores individuales, pero es lento e ineficiente: para enviar un mensaje que consista de <span class="process-math">\(n\)</span> bits, se requieren <span class="process-math">\(2n\)</span> bits adicionales, y solo podemos detectar y corregir errores individuales. Veremos que es posible encontrar mecanismos de codificación que codifiquen un mensaje de <span class="process-math">\(n\)</span> bits en uno de <span class="process-math">\(m\)</span> bits con <span class="process-math">\(m\)</span> mucho menor a <span class="process-math">\(3n\text{.}\)</span>
+</div>
+</div></article></body>
+</html>

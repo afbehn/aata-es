@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span>
+</h3>
+<div class="para">La subsección <a href="fields-section-extension-fields.html#VUq" class="internal" title="Subsección 21.1.1: Elementos Algebraicos">Elementos Algebraicos</a> se basa en álgebra lineal y contiene el <a href="" class="xref" data-knowl="./knowl/fields-theorem-finite-extension.html" title="Teorema 21.1.15">Teorema 21.1.15</a>: toda extensión finita es una extensión algebraica.  Este ejercicio le ayudará a entender esa demostración.</div> <div class="para">El polinomio <span class="process-math">\(r(x)=x^4+2x+2\)</span> es irreducible sobre los racionales (Criterio de Eisenstein con primo <span class="process-math">\(p=2\)</span>).  Construya un cuerpo de números que contenga una raíz de <span class="process-math">\(r(x)\text{.}\)</span>  Por el <a href="" class="xref" data-knowl="./knowl/fields-theorem-finite-extension.html" title="Teorema 21.1.15">Teorema 21.1.15</a>, y la observación que le sigue, todo elemento de esta extensión finita es un número algebraico, y por ende satisface algún polinomio sobre el cuerpo base (es el polinomio que Sage produce con el método <code class="code-inline tex2jax_ignore">.minpoly()</code>).  Este ejercicio le mostrará cómo podemos usar álgebra lineal para determinar este polinomio minimal.</div> <div class="para">Supongamos que <code class="code-inline tex2jax_ignore">a</code> es el generador del cuerpo de números que acaba de crear con <span class="process-math">\(r(x)\text{.}\)</span>  Determinaremos el polinomio minimal de  <code class="code-inline tex2jax_ignore">t = 3a + 1</code> usando solamente álgebra lineal.  De acuerdo a la demostración, las primeras cinco potencias de <code class="code-inline tex2jax_ignore">t</code> (empiece contando de cero) serán linealmente dependientes.  (¿Por qué?)  De esta manera una relación de dependencia lineal de estas potencias entregará los coeficientes de un polinomio con  <code class="code-inline tex2jax_ignore">t</code> como raíz.  Calcule estas cinco potencias, luego construya el sistema lineal apropiado para determinar los coeficientes del polinomio minimal, resuelva el sistema, e interprete sus soluciones.</div> <div class="para">Ayudas:  Los comandos <code class="code-inline tex2jax_ignore">vector()</code> y <code class="code-inline tex2jax_ignore">matrix()</code> crearán  vectores y matrices, y el método <code class="code-inline tex2jax_ignore">.solve_right()</code> para  matrices puede ser usado para encontrar  soluciones. Dado un elemento del cuerpo de números, que necesariamente corresponderá a un polinomio en el generador <code class="code-inline tex2jax_ignore">a</code>, el método <code class="code-inline tex2jax_ignore">.vector()</code> del elemento, entregará los coeficientes de este polinomio en una lista.</div></article><span class="incontext"><a href="fields-sage-exercises.html#sWi" class="internal">en contexto</a></span>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h4 class="heading"><span class="type">Demostración</span></h4>
+<div class="para logical">
+<div class="para">Supongamos que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{equation*}
+g( \omega^r) = g(\omega^{r + 1}) = \cdots = g( \omega^{r + s - 1}) = 0\text{.}
+\end{equation*}
+</div>
+<div class="para">Sea <span class="process-math">\(f(x)\)</span> algún polinomio en <span class="process-math">\(C\)</span> con <span class="process-math">\(s\)</span> o menos coeficientes distintos de cero.  Podemos suponer que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{equation*}
+f(x) = a_{i_0} x^{i_0} + a_{i_1} x^{i_1} + \cdots + a_{i_{s - 1}} x^{i_{s - 1}}
+\end{equation*}
+</div>
+<div class="para">es algún polinomio en <span class="process-math">\(C\text{.}\)</span> Es suficiente con demostrar que todos los <span class="process-math">\(a_i\)</span> tienen que ser cero.  Como</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{equation*}
+g( \omega^r) = g(\omega^{r + 1}) = \cdots = g( \omega^{r + s - 1}) = 0
+\end{equation*}
+</div>
+<div class="para">y <span class="process-math">\(g(x)\)</span> divide a <span class="process-math">\(f(x)\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{equation*}
+f( \omega^r) = f(\omega^{r + 1}) = \cdots = f( \omega^{r + s - 1}) = 0\text{.}
+\end{equation*}
+</div>
+<div class="para">Equivalentemente, tenemos el siguiente sistema de ecuaciones:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{align*}
+a_{i_0} (\omega^r)^{i_0} + a_{i_1} (\omega^r)^{i_1} + \cdots + a_{i_{s - 1}} (\omega^r)^{i_{s - 1}} &amp; = 0\\
+a_{i_0} (\omega^{r + 1})^{i_0} + a_{i_1} (\omega^{r + 1})^{i_2} + \cdots + a_{i_{s-1}} (\omega^{r+1})^{i_{s-1}} &amp; = 0\\
+&amp; \vdots \\
+a_{i_0} (\omega^{r + s - 1})^{i_0} + a_{i_1} (\omega^{r + s - 1})^{i_1} + \cdots + a_{i_{s - 1}} (\omega^{r + s - 1})^{i_{s - 1}} &amp; = 0\text{.}
+\end{align*}
+</div>
+<div class="para">Por lo tanto, <span class="process-math">\((a_{i_0}, a_{i_1}, \ldots, a_{i_{s - 1}})\)</span> es una solución del sistema de ecuaciones lineales homogéneo</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{align*}
+(\omega^{i_0})^r x_0 + (\omega^{i_1})^r x_1 + \cdots + (\omega^{i_{s - 1}})^r x_{n - 1} &amp; = 0\\
+(\omega^{i_0})^{r + 1} x_0 + (\omega^{i_1})^{r + 1} x_1 + \cdots + (\omega^{i_{s - 1}})^{r + 1} x_{n - 1} &amp; = 0\\
+&amp; \vdots \\
+(\omega^{i_0})^{r + s - 1} x_0 + (\omega^{i_1})^{r + s - 1} x_1 + \cdots + (\omega^{i_{s - 1}})^{r + s - 1} x_{n - 1} &amp; = 0\text{.}
+\end{align*}
+</div>
+<div class="para">Pero este sistema tiene solución única, pues el determinante de la matriz</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/finite-lemma-vandermode-det.html">
+\begin{equation*}
+\begin{pmatrix}
+(\omega^{i_0})^r &amp; (\omega^{i_1})^r &amp; \cdots &amp; (\omega^{i_{s-1}})^r \\
+(\omega^{i_0})^{r+1} &amp; (\omega^{i_1})^{r+1} &amp; \cdots &amp;
+(\omega^{i_{s-1}})^{r+1} \\
+\vdots &amp; \vdots         &amp; \ddots &amp; \vdots \\
+(\omega^{i_0})^{r+s-1} &amp; (\omega^{i_1})^{r+s-1} &amp; \cdots &amp;
+(\omega^{i_{s-1}})^{r+s-1} 
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para">no es cero por el <a href="" class="xref" data-knowl="./knowl/finite-lemma-vandermode-det.html" title="Lema 22.2.7">Lema 22.2.7</a> y las propiedades básicas de los determinantes (Ejercicio). Por lo tanto, esta solución es <span class="process-math">\(a_{i_0} = a_{i_1} = \cdots = a_{i_{s - 1}} = 0\text{.}\)</span>
+</div>
+</div></article><span class="incontext"><a href="finite-section-poly-codes.html#pDm" class="internal">en contexto</a></span>
+</body>
+</html>

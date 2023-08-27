@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para logical">
+<div class="para">Hay un problema de verificación de mensajes en los criptosistemas de clave pública. Como la clave codificadora es de público conocimiento, cualquiera tiene la capacidad de enviar un mensaje codificado.  Si Alice recibe un mensaje de Bob, a ella le gustaría poder verificar que realmente fue Bob quien envió el mensaje. Supongamos que la clave encriptadora de Bob es <span class="process-math">\((n', E')\)</span> y su clave decriptadora es <span class="process-math">\((n', D')\text{.}\)</span>  Además, supongamos que la clave encriptadora de Alice es <span class="process-math">\((n, E)\)</span> y que su clave decriptadora es <span class="process-math">\((n, D)\text{.}\)</span>  Como las claves encriptadoras son de conocimiento público, ambos pueden intercambiar mensajes cuando lo deseen.  Bob quiere poder asegurarle a Alice que el mensaje que le está enviando es auténtico. Antes de enviar el mensaje <span class="process-math">\(x\)</span> a Alice, Bob decripta <span class="process-math">\(x\)</span> con su propia clave secreta:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x' = x ^{D'} \bmod n'\text{.}
+\end{equation*}
+</div>
+<div class="para">Cualquiera puede transformar <span class="process-math">\(x'\)</span> de vuelta a <span class="process-math">\(x\)</span> encriptando, pero solo Bob tiene la habilidad de formar <span class="process-math">\(x'\text{.}\)</span> Ahora Bob encripta <span class="process-math">\(x'\)</span> con la clave pública de Alice formando</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y' = {x'}^E  \bmod n\text{,}
+\end{equation*}
+</div>
+<div class="para">un mensaje que solo Alice puede decriptar.  Alice decripta el mensaje y luego encripta el resultado con la clave de encriptación de Bob para leer el mensaje original, un mensaje que solo puede haber sido enviado por Bob.</div>
+</div>
+<span class="incontext"><a href="crypt-section-public-key.html#bWg" class="internal">en contexto</a></span>
+</body>
+</html>

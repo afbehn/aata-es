@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h4 class="heading"><span class="type">Demostración</span></h4>
+<article class="case"><h5 class="heading">Existencia de una factorización.</h5> <div class="para logical">
+<div class="para">Sea <span class="process-math">\(D\)</span> un <abbr class="acronym">DIP</abbr> y sea <span class="process-math">\(a\)</span> un elemento distinto de cero en <span class="process-math">\(D\)</span> que no sea una unidad. Si <span class="process-math">\(a\)</span> es irreducible, no hay más que probar. Si no, entonces existe una factorización <span class="process-math">\(a = a_1 b_1\text{,}\)</span> donde ni  <span class="process-math">\(a_1\)</span> ni <span class="process-math">\(b_1\)</span> son unidades. Por ende, <span class="process-math">\(\langle a \rangle \subset \langle a_1 \rangle\text{.}\)</span> Por el <a href="" class="xref" data-knowl="./knowl/domains-lemma-principal-ideal.html" title="Lema 18.2.4">Lema 18.2.4</a>, sabemos que <span class="process-math">\(\langle a \rangle \neq \langle a_1 \rangle\text{;}\)</span> de lo contrario, <span class="process-math">\(a\)</span> y <span class="process-math">\(a_1\)</span> serían asociados y <span class="process-math">\(b_1\)</span> sería una unidad, lo que sería una contradicción. Ahora supongamos que <span class="process-math">\(a_1 =  a_2 b_2\text{,}\)</span> donde ni <span class="process-math">\(a_2\)</span> ni <span class="process-math">\(b_2\)</span> son unidades. Por el mismo argumento de antes, <span class="process-math">\(\langle a_1 \rangle \subset \langle a_2 \rangle\text{.}\)</span>  Podemos continuar esta construcción para obtener una cadena ascendente de ideales</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/domains-lemma-principal-ideal.html ./knowl/domains-lemma-acc.html">
+\begin{equation*}
+\langle a \rangle \subset \langle a_1 \rangle \subset \langle a_2 \rangle \subset \cdots\text{.}
+\end{equation*}
+</div>
+<div class="para">Por el <a href="" class="xref" data-knowl="./knowl/domains-lemma-acc.html" title="Lema 18.2.7">Lema 18.2.7</a>, existe un entero positivo <span class="process-math">\(N\)</span> tal que <span class="process-math">\(\langle a_n \rangle = \langle a_N \rangle\)</span> para todo <span class="process-math">\(n \geq N\text{.}\)</span> En consecuencia, <span class="process-math">\(a_N\)</span> debe ser irreducible. Hemos mostrado que <span class="process-math">\(a\)</span> es producto de dos elementos, uno de los cuáles tiene que ser irreducible.</div>
+</div>   <div class="para logical">
+<div class="para">Ahora supongamos que <span class="process-math">\(a = c_1 p_1\text{,}\)</span> donde <span class="process-math">\(p_1\)</span> es irreducible. Si <span class="process-math">\(c_1\)</span> no es una  unidad, podemos repetir el argumento anterior para concluir que <span class="process-math">\(\langle a \rangle \subset \langle c_1 \rangle\text{.}\)</span> Ya sea <span class="process-math">\(c_1\)</span> es irreducible o <span class="process-math">\(c_1 = c_2 p_2\text{,}\)</span> donde <span class="process-math">\(p_2\)</span> es irreducible y <span class="process-math">\(c_2\)</span> no es una unidad.  Continuando de esta manera, obtenemos otra cadena de ideales</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\langle a \rangle \subset \langle c_1 \rangle \subset \langle c_2 \rangle \subset \cdots\text{.}
+\end{equation*}
+</div>
+<div class="para">Esta cadena debe satisfacer la condición de cadenas ascendentes; por lo tanto,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a = p_1 p_2 \cdots p_r
+\end{equation*}
+</div>
+<div class="para">para elementos irreducibles <span class="process-math">\(p_1, \ldots, p_r\text{.}\)</span>
+</div>
+</div></article> <article class="case"><h5 class="heading">Uniqueness of the factorization.</h5> <div class="para logical">
+<div class="para">Para mostrar la unicidad, sea</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/domains-corollary-irreducible-pid.html">
+\begin{equation*}
+a = p_1 p_2 \cdots p_r = q_1 q_2 \cdots q_s\text{,}
+\end{equation*}
+</div>
+<div class="para">donde cada <span class="process-math">\(p_i\)</span> y cada <span class="process-math">\(q_i\)</span> es irreducible.  Sin pérdida de generalidad, podemos suponer que <span class="process-math">\(r \lt s\text{.}\)</span> Como <span class="process-math">\(p_1\)</span> divide a <span class="process-math">\(q_1 q_2 \cdots q_s\text{,}\)</span> por el <a href="" class="xref" data-knowl="./knowl/domains-corollary-irreducible-pid.html" title="Corolario 18.2.6">Corolario 18.2.6</a> debe dividir a algún <span class="process-math">\(q_i\text{.}\)</span> Reordenando los <span class="process-math">\(q_i\text{,}\)</span> podemos suponer que <span class="process-math">\(p_1 \mid q_1\text{;}\)</span> así, <span class="process-math">\(q_1 = u_1 p_1\)</span> para alguna unidad <span class="process-math">\(u_1\)</span> en <span class="process-math">\(D\text{.}\)</span> Por lo tanto,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/domains-corollary-irreducible-pid.html">
+\begin{equation*}
+a = p_1 p_2 \cdots p_r = u_1 p_1 q_2 \cdots q_s
+\end{equation*}
+</div>
+<div class="para">o</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/domains-corollary-irreducible-pid.html">
+\begin{equation*}
+p_2 \cdots p_r = u_1 q_2 \cdots q_s\text{.}
+\end{equation*}
+</div>
+<div class="para">Continuando de esta manera, podemos reordenar los <span class="process-math">\(q_i\)</span> tal que <span class="process-math">\(p_2 = q_2, p_3 = q_3, \ldots,
+p_r = q_r\text{,}\)</span> para obtener</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/domains-corollary-irreducible-pid.html">
+\begin{equation*}
+u_1 u_2 \cdots u_r q_{r+1} \cdots q_s = 1\text{.}
+\end{equation*}
+</div>
+<div class="para">En este caso <span class="process-math">\(q_{r + 1} \cdots q_s\)</span> es una unidad, lo que contradice el hecho de que <span class="process-math">\(q_{r + 1}, \ldots, q_s\)</span> son irreducibles. Por lo tanto, <span class="process-math">\(r = s\)</span> y la factorización de <span class="process-math">\(a\)</span> es única.</div>
+</div></article></article><span class="incontext"><a href="domains-section-factorization-domains.html#twH" class="internal">en contexto</a></span>
+</body>
+</html>

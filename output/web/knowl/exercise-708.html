@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Ejercicio</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span>
+</h3>
+<div class="para">“Los polinomios de Conway” son polinomios irreducibles sobre <span class="process-math">\({\mathbb Z}_p\)</span> que Sage (y otros programas) usa para construir ideales maximales en anillos de polinomio, y por ende anillos cociente que son cuerpos. A grosso modo, son  elecciones <div class="para">canónicas</div>, para cada grado y para cada primo.  El comando <code class="code-inline tex2jax_ignore">conway_polynomial(p, n)</code> entrega un polinomio irreducible de grado <span class="process-math">\(n\)</span> sobre <span class="process-math">\({\mathbb Z}_p\text{.}\)</span>
+</div> <div class="para">Ejecute el comando <code class="code-inline tex2jax_ignore">conway_polynomial(5, 4)</code> para obtener un polinomio presuntamente irreducible de grado 4 sobre <span class="process-math">\({\mathbb Z}_5\text{:}\)</span>  <span class="process-math">\(p = x^{4} + 4x^{2} + 4x + 2\text{.}\)</span>  Construya el anillo de polinomios apropiado (i.e., en la indeterminada <span class="process-math">\(x\)</span>) y verifique que <code class="code-inline tex2jax_ignore">p</code> realmente es un elemento de ese anillo de polinomios.</div> <div class="para">Primero verifique que <span class="process-math">\(p\)</span> no tiene factores lineales.  La única posibilidad que queda es que <code class="code-inline tex2jax_ignore">p</code> se factorice como producto de dos polinomios cuadráticos sobre <span class="process-math">\({\mathbb Z}_5\text{.}\)</span>  Use una lista con <em class="emphasis">tres</em> <code class="code-inline tex2jax_ignore">for</code> para crear <em class="emphasis">todos</em> los posibles polinomios cuadráticos sobre <span class="process-math">\({\mathbb Z}_5\text{.}\)</span>  Ahora use esta lista para crear todos los posibles productos de dos polinomios cuadráticos y compruebe si <code class="code-inline tex2jax_ignore">p</code> está en esta lista.</div> <div class="para">Puede encontrar más información sobre los polinomios de Conway en el <a class="external" href="http://www.math.rwth-aachen.de/~Frank.Luebeck/data/ConwayPol/index.html" target="_blank">sitio de Frank Lübeck</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-16-hidden.html" title="Nota a pie de página 17.8.1"><sup> 1 </sup></a>.</div></article><span class="incontext"><a href="poly-sage-exercises.html#exercise-708" class="internal">en contexto</a></span>
+</body>
+</html>

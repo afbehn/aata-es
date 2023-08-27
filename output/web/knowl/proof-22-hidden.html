@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Las principales herramientas usadas en esta demostración son el algoritmo de división y el principio del buen orden. Sea <span class="process-math">\(G\)</span> un grupo cíclico generado por <span class="process-math">\(a\)</span> y supongamos que <span class="process-math">\(H\)</span> es un subgrupo de <span class="process-math">\(G\text{.}\)</span> Si <span class="process-math">\(H = \{ e \}\text{,}\)</span> entonces  <span class="process-math">\(H\)</span> es cíclico trivialmente. Supongamos que <span class="process-math">\(H\)</span> contiene algún otro elemento  <span class="process-math">\(g\)</span> distinto de la identidad. Entonces <span class="process-math">\(g\)</span> puede ser escrito como <span class="process-math">\(a^n\)</span> para algún entero <span class="process-math">\(n\text{.}\)</span> Como  <span class="process-math">\(H\)</span> es un subgrupo, <span class="process-math">\(g^{-1} = a^{-n}\)</span> también debe estar en <span class="process-math">\(H\text{.}\)</span>  Como  <span class="process-math">\(n\)</span> o <span class="process-math">\(-n\)</span> es positivo, podemos suponer que <span class="process-math">\(H\)</span> contiene potencias positivas de <span class="process-math">\(a\)</span> y que <span class="process-math">\(n \gt 0\text{.}\)</span> Sea <span class="process-math">\(m\)</span> el menor número natural tal que <span class="process-math">\(a^m \in H\text{.}\)</span> Tal <span class="process-math">\(m\)</span> existe por por el principio del buen orden.</div> <div class="para logical">
+<div class="para">Afirmamos que  <span class="process-math">\(h = a^m\)</span> es un generador para <span class="process-math">\(H\text{.}\)</span>  Debemos demostrar que todo <span class="process-math">\(h' \in H\)</span> puede ser escrito como una potencia de <span class="process-math">\(h\text{.}\)</span> Como <span class="process-math">\(h' \in H\)</span> y <span class="process-math">\(H\)</span> es un subgrupo de <span class="process-math">\(G\text{,}\)</span> <span class="process-math">\(h' = a^k\)</span> para algún entero <span class="process-math">\(k\text{.}\)</span> Usando el algoritmo de la división, podemos encontrar <span class="process-math">\(q\)</span> y <span class="process-math">\(r\)</span> tales que <span class="process-math">\(k = mq +r\)</span> con <span class="process-math">\(0 \leq r \lt m\text{;}\)</span> luego,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a^k = a^{mq +r} = (a^m)^q a^r = h^q a^r\text{.}
+\end{equation*}
+</div>
+<div class="para">Así <span class="process-math">\(a^r = a^k h^{-q}\text{.}\)</span> Como <span class="process-math">\(a^k\)</span> y <span class="process-math">\(h^{-q}\)</span> están en  <span class="process-math">\(H\text{,}\)</span> <span class="process-math">\(a^r\)</span> también debe estar en <span class="process-math">\(H\text{.}\)</span>  Pero <span class="process-math">\(m\)</span> era el menor número positivo tal que <span class="process-math">\(a^m\)</span> está en <span class="process-math">\(H\text{;}\)</span> por lo tanto, <span class="process-math">\(r=0\)</span> y  <span class="process-math">\(k=mq\text{.}\)</span> Luego,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+h' = a^k = a^{mq} =  h^q
+\end{equation*}
+</div>
+<div class="para">y <span class="process-math">\(H\)</span> está generado por <span class="process-math">\(h\text{.}\)</span>
+</div>
+</div></article></body>
+</html>

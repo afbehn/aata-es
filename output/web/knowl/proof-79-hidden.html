@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">Simplemente necesitamos encontrar todos los subgrupos finitos <span class="process-math">\(G\)</span> de <span class="process-math">\(E(2)\text{.}\)</span> Cualquier grupo de simetría finito <span class="process-math">\(G\)</span> en <span class="process-math">\({\mathbb R}^2\)</span> debe fijar el origen y debe ser un subgrupo finito de <span class="process-math">\(O(2)\text{,}\)</span> ya que las traslaciones y las reflexiones con deslizamiento tienen un orden infinito. Por <a href="" class="xref" data-knowl="./knowl/matrix-example-o2.html" title="Ejemplo 12.1.10">Ejemplo 12.1.10</a>, los elementos en <span class="process-math">\(O(2)\)</span> son rotaciones de la forma</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/matrix-example-o2.html">
+\begin{equation*}
+R_{\theta}
+=
+\begin{pmatrix}
+\cos \theta &amp; - \sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para">o reflexiones de la forma</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/matrix-example-o2.html">
+\begin{equation*}
+T_{\phi}
+=
+\begin{pmatrix}
+\cos \phi &amp;  - \sin \phi \\
+\sin \phi &amp; \cos \phi
+\end{pmatrix}
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cos \phi &amp;  \sin \phi \\
+\sin \phi &amp; - \cos \phi
+\end{pmatrix}\text{.}
+\end{equation*}
+</div>
+<div class="para">Notemos que <span class="process-math">\(\det(R_{\theta})=1\text{,}\)</span> <span class="process-math">\(\det(T_{\phi})=-1\text{,}\)</span> y <span class="process-math">\(T_{\phi}^2=I\text{.}\)</span> Podemos dividir la demostración en dos casos. En el primer caso, todos los elementos de <span class="process-math">\(G\)</span> tienen determinante uno. En el segundo caso, existe al menos un elemento en <span class="process-math">\(G\)</span> con determinante <span class="process-math">\(-1\text{.}\)</span>
+</div>
+</div> <article class="case"><h4 class="heading">Caso 1.</h4> <div class="para">El determinante de cada elemento en <span class="process-math">\(G\)</span> es uno. En este caso cada elemento en <span class="process-math">\(G\)</span> debe ser una rotación. Como <span class="process-math">\(G\)</span> es finito, hay un ángulo más pequeño, digamos <span class="process-math">\(\theta_0\text{,}\)</span> tal que el elemento correspondiente <span class="process-math">\(R_{\theta_0}\)</span> es la rotación más pequeña en la dirección positiva. Afirmamos que <span class="process-math">\(R_{\theta_0}\)</span> genera <span class="process-math">\(G\text{.}\)</span> Si no, entonces para algún entero positivo <span class="process-math">\(n\)</span> hay un ángulo <span class="process-math">\(\theta_1\)</span> entre <span class="process-math">\(n \theta_0\)</span> y <span class="process-math">\((n+1) \ theta_0\text{.}\)</span> Si es así, entonces <span class="process-math">\((n+1) \theta_0 - \theta_1\)</span> corresponde a una rotación menor que <span class="process-math">\(\theta_0\text{,}\)</span> lo que contradice la minimalidad de <span class="process-math">\(\theta_0\text{.}\)</span>
+</div></article> <article class="case"><h4 class="heading">Caso 2.</h4> <div class="para logical">
+<div class="para">El grupo <span class="process-math">\(G\)</span> contiene una reflexión <span class="process-math">\(T\text{.}\)</span> El núcleo del homomorfismo <span class="process-math">\(\phi : G \rightarrow \{-1, 1\}\)</span> dado por <span class="process-math">\(A \mapsto \det(A)\)</span> consta de elementos cuyo determinante es 1 . Por lo tanto, <span class="process-math">\(|G/ \ker \phi|=2\text{.}\)</span> Sabemos que el núcleo es cíclico en el primer caso y es un subgrupo de <span class="process-math">\(G\)</span> de, digamos, orden <span class="process-math">\(n\text{.}\)</span> Por lo tanto, <span class="process-math">\(|G| = 2n\text{.}\)</span> Los elementos de <span class="process-math">\(G\)</span> son</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R_{\theta}, \ldots, R_{\theta}^{n-1},  TR_{\theta}, \ldots, TR_{\theta}^{n-1}\text{.}
+\end{equation*}
+</div>
+<div class="para">Estos elementos satisfacen la relación</div>
+<div class="displaymath process-math">
+\begin{equation*}
+TR_{\theta}T = R_{\theta}^{-1}\text{.}
+\end{equation*}
+</div>
+<div class="para">En consecuencia, <span class="process-math">\(G\)</span> debe ser isomorfo a <span class="process-math">\(D_n\)</span> en este caso.</div>
+</div></article></article></body>
+</html>

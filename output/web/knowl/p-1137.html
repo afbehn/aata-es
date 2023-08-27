@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para logical">
+<div class="para">Uno de los primeros y más famosos criptosistemas fue el código de desplazamiento usado por Julio César.  Primero convertimos el alfabeto en números haciendo <span class="process-math">\(\text{A}  = 00, \text{B}  = 01, \ldots, \text{Z} = 25\text{.}\)</span> La función codificadora será</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(p) = p + 3 \bmod 26;
+\end{equation*}
+</div>
+<div class="para">es decir, <span class="process-math">\(A \mapsto D, B \mapsto E, \ldots, Z \mapsto C\text{.}\)</span> La función decodificadora es entonces</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^{-1}(p) = p - 3 \bmod 26 = p + 23 \bmod 26\text{.}
+\end{equation*}
+</div>
+<div class="para">Supongamos que recibimos el mensaje encriptado DOJHEUD. Para decriptar este mensaje, lo convertimos a números:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3, 14, 9, 7, 4, 20, 3\text{.}
+\end{equation*}
+</div>
+<div class="para">Luego le aplicamos la transformación inversa para obtener</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0, 11, 6, 4, 1, 17, 0\text{,}
+\end{equation*}
+</div>
+<div class="para">es decir ALGEBRA. Note que no hay nada especial en los números <span class="process-math">\(3\)</span> y <span class="process-math">\(26\text{,}\)</span> podríamos usar un alfabeto mayor o un desplazamiento diferente.</div>
+</div>
+<span class="incontext"><a href="crypt-section-private-key.html#RSA" class="internal">en contexto</a></span>
+</body>
+</html>

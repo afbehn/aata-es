@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para logical">
+<div class="para">Consideremos el criptosistema afín <span class="process-math">\(f(p) = ap + b \bmod 26\text{.}\)</span> Para que este criptosistema funcione, debemos elegir <span class="process-math">\(a \in {\mathbb Z}_{26}\)</span> que sea invertible. Esto solo es posible si <span class="process-math">\(\gcd(a, 26) = 1\text{.}\)</span> Reconociendo este hecho,  elegiremos <span class="process-math">\(a = 5\)</span> pues <span class="process-math">\(\gcd(5, 26) = 1\text{.}\)</span> Es muy fácil ver que <span class="process-math">\(a^{-1} = 21\text{.}\)</span> Por lo tanto, podemos definir nuestra función de encriptación como <span class="process-math">\(f(p) = 5p + 3 \bmod 26\text{.}\)</span> Luego, ALGEBRA se encripta como <span class="process-math">\(3, 6, 7, 23, 8, 10, 3\text{,}\)</span> o DGHXIKD. La función decriptadora será</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^{-1}(p) = 21 p - 21 \cdot 3 \bmod 26 = 21 p + 15 \bmod 26\text{.}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="crypt-section-private-key.html#egS" class="internal">en contexto</a></span>
+</body>
+</html>

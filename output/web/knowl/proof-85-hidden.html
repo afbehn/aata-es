@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Procederemos por inducción sobre el largo de la serie de composición.  Si el largo de una serie de composición es 1, entonces <span class="process-math">\(G\)</span> debe ser un grupo simple.  En este caso cualquiera dos series de composición son isomorfas.</div> <div class="para logical">
+<div class="para">Supongamos que el teorema es verdadero para todos los grupos que tengan una serie de composición de largo <span class="process-math">\(k\text{,}\)</span> donde <span class="process-math">\(1 \leq k \lt n\text{.}\)</span> Sean</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{gather*}
+G = H_n \supset H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}\\
+G = K_m \supset K_{m-1} \supset \cdots \supset K_1 \supset K_0 = \{ e \}
+\end{gather*}
+</div>
+<div class="para">dos series de composición para <span class="process-math">\(G\text{.}\)</span>  Podemos formar dos nuevas series subnormales para  <span class="process-math">\(G\)</span> pues <span class="process-math">\(H_i \cap K_{m-1}\)</span> es normal en <span class="process-math">\(H_{i+1} \cap K_{m-1}\)</span> y <span class="process-math">\(K_j \cap H_{n-1}\)</span> es normal en <span class="process-math">\(K_{j+1} \cap H_{n-1}\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{gather*}
+G = H_n \supset H_{n-1} \supset H_{n-1} \cap K_{m-1} \supset \cdots \supset H_0 \cap K_{m-1} = \{ e \}\\
+G = K_m \supset K_{m-1} \supset K_{m-1} \cap H_{n-1} \supset \cdots \supset K_0 \cap H_{n-1} = \{ e \}\text{.}
+\end{gather*}
+</div>
+<div class="para">Como <span class="process-math">\(H_i \cap K_{m-1}\)</span> es normal en <span class="process-math">\(H_{i+1} \cap K_{m-1}\text{,}\)</span> el Segundo Teorema de Isomorfía (<a href="" class="xref" data-knowl="./knowl/homomorph-theorem-second-isomorphism.html" title="Teorema 11.2.3: Segundo Teorema de Isomorfía">Teorema 11.2.3</a>) implica que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{align*}
+(H_{i+1} \cap K_{m-1}) / (H_i \cap K_{m-1}) &amp; =  (H_{i+1} \cap K_{m-1}) / (H_i \cap ( H_{i+1} \cap K_{m-1} ))\\
+&amp; \cong  H_i (H_{i+1} \cap K_{m-1})/ H_i\text{,}
+\end{align*}
+</div>
+<div class="para">donde <span class="process-math">\(H_i\)</span> es normal en <span class="process-math">\(H_i (H_{i+1} \cap K_{m-1})\text{.}\)</span> Como <span class="process-math">\(\{ H_i \}\)</span>  es una serie de composición, <span class="process-math">\(H_{i+1} / H_i\)</span> es simple; en consecuencia, <span class="process-math">\(H_i (H_{i+1} \cap K_{m-1})/ H_i\)</span> es ya sea <span class="process-math">\(H_{i+1}/H_i\)</span> o <span class="process-math">\(H_i/H_i\text{.}\)</span>  Es decir, <span class="process-math">\(H_i (H_{i+1} \cap K_{m-1})\)</span> debe ser <span class="process-math">\(H_i\)</span> o <span class="process-math">\(H_{i+1}\text{.}\)</span> Removiendo las inclusiones impropias de las series</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{equation*}
+H_{n-1} \supset H_{n-1} \cap K_{m-1} \supset \cdots \supset H_0 \cap K_{m-1} = \{ e \}\text{,}
+\end{equation*}
+</div>
+<div class="para">tenemos una serie de composición para <span class="process-math">\(H_{n-1}\text{.}\)</span> La hipótesis de inducción dice que esta serie es equivalente a la serie de composición</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{equation*}
+H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}\text{.}
+\end{equation*}
+</div>
+<div class="para">Luego, las series de composición</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{equation*}
+G = H_n \supset H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}
+\end{equation*}
+</div>
+<div class="para">y</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{equation*}
+G = H_n \supset H_{n-1} \supset H_{n-1} \cap K_{m-1} \supset \cdots \supset H_0 \cap K_{m-1} = \{ e \}
+\end{equation*}
+</div>
+<div class="para">son equivalentes. Si <span class="process-math">\(H_{n-1} = K_{m-1}\text{,}\)</span> entonces las series de composición <span class="process-math">\(\{H_i \}\)</span> y <span class="process-math">\(\{ K_j \}\)</span> son equivalentes y estamos listos; de lo contrario, <span class="process-math">\(H_{n-1} K_{m-1}\)</span>  es un subgrupo normal de <span class="process-math">\(G\)</span> que contiene propiamente a <span class="process-math">\(H_{n-1}\text{.}\)</span>  En este caso <span class="process-math">\(H_{n-1} K_{m-1} = G\)</span> y podemos volver a aplicar el Segundo Teorema de Isomorfía; esto es,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{equation*}
+K_{m-1} / (K_{m-1} \cap H_{n-1}) \cong (H_{n-1} K_{m-1}) / H_{n-1} = G/H_{n-1}\text{.}
+\end{equation*}
+</div>
+<div class="para">Por lo tanto,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{equation*}
+G = H_n \supset H_{n-1} \supset H_{n-1} \cap K_{m-1} \supset \cdots \supset H_0 \cap K_{m-1} = \{ e \}
+\end{equation*}
+</div>
+<div class="para">y</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/homomorph-theorem-second-isomorphism.html">
+\begin{equation*}
+G = K_m \supset K_{m-1} \supset K_{m-1} \cap H_{n-1} \supset \cdots \supset K_0 \cap H_{n-1} = \{ e \}
+\end{equation*}
+</div>
+<div class="para">son equivalentes completando la demostración del teorema.</div>
+</div></article></body>
+</html>

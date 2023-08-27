@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">16.1.7</span><span class="period">.</span>
+</h3>
+<div class="para logical">
+<div class="para">Para un ejemplo de un anillo de división no conmutativo, sea</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 = 
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{pmatrix},
+\quad
+{\mathbf i}
+=
+\begin{pmatrix}
+0 &amp; 1 \\
+-1 &amp; 0
+\end{pmatrix},
+\quad
+{\mathbf j} =
+\begin{pmatrix}
+0 &amp; i \\
+i &amp; 0
+\end{pmatrix},
+\quad
+{\mathbf k} = 
+\begin{pmatrix}
+i &amp; 0 \\
+0 &amp; -i
+\end{pmatrix}\text{,}
+\end{equation*}
+</div>
+<div class="para">con <span class="process-math">\(i^2 = -1\text{.}\)</span> Estos elementos satisfacen las siguientes relaciones:</div>
+<div class="displaymath process-math">
+\begin{align*}
+{\mathbf i}^2 = {\mathbf j}^2 &amp; =  {\mathbf k}^2 = -1\\
+{\mathbf i}  {\mathbf j} &amp; =  {\mathbf k} \\
+{\mathbf j}  {\mathbf k} &amp; =  {\mathbf i} \\
+{\mathbf k}  {\mathbf i} &amp; =  {\mathbf j} \\
+{\mathbf j}  {\mathbf i} &amp; =  - {\mathbf k} \\
+{\mathbf k}  {\mathbf j} &amp; =  - {\mathbf i} \\
+{\mathbf i}  {\mathbf k} &amp; =  - {\mathbf j} \text{.}
+\end{align*}
+</div>
+<div class="para">Sea <span class="process-math">\({\mathbb H}\)</span> el conjunto de todos los elementos de la forma <span class="process-math">\(a + b {\mathbf i}  + c {\mathbf j} +d {\mathbf k}\text{,}\)</span> donde <span class="process-math">\(a, b , c, d\)</span> son números reales. Equivalentemente, <span class="process-math">\({\mathbb H}\)</span> se puede considerar como el conjunto de todas las matrices de <span class="process-math">\(2 \times 2\)</span> de la forma  </div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{pmatrix}
+\alpha &amp; \beta \\
+-\overline{\beta} &amp; \overline{\alpha }
+\end{pmatrix}\text{,}
+\end{equation*}
+</div>
+<div class="para">donde <span class="process-math">\(\alpha = a + di\)</span> y <span class="process-math">\(\beta = b+ci\)</span> son números complejos. Podemos definir la suma y la multiplicación en <span class="process-math">\({\mathbb H}\)</span> en términos de la multiplicación usual de matrices o en términos de sus generadores <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\({\mathbf i}\text{,}\)</span> <span class="process-math">\({\mathbf j}\text{,}\)</span> y <span class="process-math">\({\mathbf k}\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{gather*}
+(a_1 + b_1 {\mathbf i}  + c_1 {\mathbf j} +d_1 {\mathbf k} ) + ( a_2 + b_2 {\mathbf i}  + c_2 {\mathbf j} +d_2 {\mathbf k} )\\
+= (a_1 + a_2) + ( b_1 + b_2) {\mathbf i}  + ( c_1 + c_2) \mathbf j + (d_1 + d_2) \mathbf k
+\end{gather*}
+</div>
+<div class="para">y</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(a_1 + b_1 {\mathbf i}  + c_1 {\mathbf j} +d_1 {\mathbf k} ) ( a_2 + b_2 {\mathbf i}  + c_2 {\mathbf j} +d_2 {\mathbf k} ) = \alpha + \beta {\mathbf i}  + \gamma {\mathbf j} + \delta {\mathbf k}\text{,}
+\end{equation*}
+</div>
+<div class="para">donde</div>
+<div class="displaymath process-math">
+\begin{align*}
+\alpha &amp; =  a_1 a_2 - b_1 b_2 - c_1 c_2 -d_1 d_2\\
+\beta &amp; =  a_1 b_2 + a_2 b_1 + c_1 d_2 - d_1 c_2\\
+\gamma &amp; =  a_1 c_2 - b_1 d_2 + c_1 a_2 + d_1 b_2\\
+\delta &amp; =  a_1 d_2 + b_1 c_2 - c_1 b_2 + d_1 a_2\text{.}
+\end{align*}
+</div>
+<div class="para">Aunque la multiplicación se ve complicada, en realidad es un un cálculo directo si recordamos que sumamos y multiplicamos elementos en <span class="process-math">\({\mathbb H}\)</span> como polinomios teniendo en consideración las relaciones entre los generadores <span class="process-math">\({\mathbf i}\text{,}\)</span> <span class="process-math">\({\mathbf j}\text{,}\)</span> y <span class="process-math">\({\mathbf k}\text{.}\)</span> El anillo <span class="process-math">\({\mathbb H}\)</span> se llama anillo de <dfn class="terminology">cuaterniones</dfn>.</div>
+</div>   <div class="para logical">
+<div class="para">Para mostrar que los cuaterniones forman un anillo de división, debemos ser capaces de encontrar un inverso para cada elemento distinto de cero. Note que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+( a + b {\mathbf i}  + c {\mathbf j} +d {\mathbf k} )( a - b {\mathbf i}  - c {\mathbf j} -d {\mathbf k} ) = a^2 + b^2 + c^2 + d^2\text{.}
+\end{equation*}
+</div>
+<div class="para">Este elemento es cero solo si <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> y <span class="process-math">\(d\)</span> son todos cero. Así si <span class="process-math">\(a + b {\mathbf i}  + c {\mathbf j} +d {\mathbf k} \neq 0\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+( a + b {\mathbf i}  + c {\mathbf j} +d {\mathbf k} )\left( \frac{a - b {\mathbf i} - c {\mathbf j} - d {\mathbf k} }{ a^2 + b^2 + c^2 + d^2 } \right) = 1\text{.}
+\end{equation*}
+</div>
+</div></article><span class="incontext"><a href="rings-section-definitions.html#jat" class="internal">en contexto</a></span>
+</body>
+</html>

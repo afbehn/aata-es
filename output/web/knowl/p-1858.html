@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para logical">
+<div class="para">La principal forma de crear un homomorfismo es especificando las imágenes para el conjunto de generadores del dominio.  Considere grupos cíclicos de órdenes <span class="process-math">\(12\)</span> y <span class="process-math">\(20\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+G &amp;= \{a^i\vert a^{12}=e\} &amp; H &amp;= \{x^i\vert x^{20}=e\}
+\end{align*}
+</div>
+<div class="para">y defina un homomorfismo simplemente especificando la imagen para un generador de <span class="process-math">\(G\text{,}\)</span> y extendiendo la función al resto del grupo vía la propiedad de preservación de la operación de un homomorfismo.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi: G\rightarrow H, &amp;\quad\phi(a)=x^5\\
+\Rightarrow           &amp;\quad\phi(a^i) = \phi(a)^i = (x^5)^i = x ^{5i}
+\end{align*}
+</div>
+<div class="para">El constructor <code class="code-inline tex2jax_ignore">PermutationGroupMorphism</code> requiere los dos grupos, luego una lista de imágenes para cada generador (¡en orden!), y entonces creará el homomorfismo.  Note que podemos usar el resultado como una función.  En el ejemplo abajo, primero verificamos que <code class="code-inline tex2jax_ignore">C12</code> tiene un único generador (ninguna novedad), el cuál enviamos a un elemento particular de orden  <span class="process-math">\(4\)</span> en el codominio.  Sage entonces construye el único homomorfismo consistente con este requisito.</div>
+</div>
+<span class="incontext"><a href="homomorph-sage.html#LUk" class="internal">en contexto</a></span>
+</body>
+</html>

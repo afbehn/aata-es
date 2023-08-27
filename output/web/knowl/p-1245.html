@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Párrafo</span></h4>
+<div class="para logical">
+<div class="para">
+<dfn class="terminology">La paridad</dfn>, un mecanismo de codificación usual, es mucho más eficiente que la simple repetición. El código <abbr class="acronym">ASCII</abbr> (American Standard Code for Information Interchange) usa <span class="process-math">\(8\)</span>-tuplas binarias, dando lugar a <span class="process-math">\(2^{8} = 256\)</span> <span class="process-math">\(8\)</span>-tuplas posibles. Pero, solo se necesitan siete bits pues solo hay <span class="process-math">\(2^7 = 128\)</span> caracteres <abbr class="acronym">ASCII</abbr>. ¿Qué se puede o debe hacer con el bit restante? Usando los ocho dígitos, podemos detectar un error individual de transmisión. Por ejemplo, los códigos <abbr class="acronym">ASCII</abbr> para A, B, y C son</div>
+<div class="displaymath process-math">
+\begin{align*}
+\text{A} &amp; = 65_{10} = 01000001_{2},\\
+\text{B} &amp; = 66_{10} = 01000010_{2},\\
+\text{C} &amp; = 67_{10} = 01000011_{2}\text{.}
+\end{align*}
+</div>
+<div class="para">Note que el bit de más a la izquierda siempre es 0; es decir, los <span class="process-math">\(128\)</span> caracteres <abbr class="acronym">ASCII</abbr> tienen códigos</div>
+<div class="displaymath process-math">
+\begin{align*}
+00000000_{2} &amp; = 0_{10},\\
+&amp; \vdots\\
+01111111_{2} &amp; = 127_{10}\text{.}
+\end{align*}
+</div>
+<div class="para">El bit puede ser usado para controlar errores en los otros siete bits. Se pone como <span class="process-math">\(0\)</span> o <span class="process-math">\(1\)</span> de manera que el número total de bits <span class="process-math">\(1\)</span> en la representación del caracter sea par. Usando paridad, los códigos para A, B, y C se convierten en</div>
+<div class="displaymath process-math">
+\begin{align*}
+\text{A} &amp; = 01000001_{2},\\
+\text{B} &amp; = 01000010_{2},\\
+\text{C} &amp; = 11000011_{2}\text{.}
+\end{align*}
+</div>
+<div class="para">Supongamos que se envía una A y ocurre un error de transmisión en el sexto bit de manera que se recibe <span class="process-math">\((0100\; 0101)\text{.}\)</span> Sabemos que se produjo un error pues se recibió un número impar de <span class="process-math">\(1\)</span>s, y podemos pedir que la palabra sea retransmitida. Cuando se usa para detectar errores, el bit de más a la izquierda se llama <dfn class="terminology">bit de control de paridad</dfn>.</div>
+</div>
+<span class="incontext"><a href="algcodes-section-error-detecting-correcting-codes.html#RQa" class="internal">en contexto</a></span>
+</body>
+</html>
