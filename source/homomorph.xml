@@ -1,26 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<!-- This file is part of the book                 -->
-<!--                                               -->
-<!--   Abstract Algebra: Theory and Applications   -->
-<!--                                               -->
-<!-- Copyright (C) 1997-2017  Thomas W. Judson     -->
-<!-- See the file COPYING for copying conditions.  -->
-
-<!-- This file is part of the book                 -->
-<!--                                               -->
-<!--   Abstract Algebra: Theory and Applications   -->
-<!--                                               -->
-<!-- Copyright (C) 2010-2014  Robert A. Beezer     -->
-<!-- See the file COPYING for copying conditions.  -->
-
-
-
-<chapter xml:id="homomorph" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- Abstract Algebra: Theory and Applications        -->
+<!--                                                  -->
+<!-- Text: Copyright (C) 1997-2023  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2023 Robert A. Beezer  -->
+<!-- See the file COPYING for copying conditions.     -->
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- See the file COPYING for copying conditions.     -->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homomorph" permid="JXG">
   <title>Homomorfismos</title>
 
-  <introduction>
-    <p>Una de las ideas clásicas del álgebra es el concepto de homomorfismo, una generalización natural de isomorfismo. Si relajamos el requerimiento de que un isomorfismo sea biyectivo, obtenemos un homomorfismo.
+  <introduction permid="aAs">
+    <p permid="ato">Una de las ideas clásicas del álgebra es el concepto de homomorfismo, una generalización natural de isomorfismo. Si relajamos el requerimiento de que un isomorfismo sea biyectivo, obtenemos un homomorfismo.
     </p>
   </introduction>
 
@@ -29,49 +22,54 @@
 <!-- % two chapters: (10) NORMAL SUBGROUPS AND FACTOR GROUPS -->
 <!-- % (11) HOMOMORPHISMS -->
 
-  <section xml:id="section-group-homomorphisms">
+  <section xml:id="homomorph-section-group-homomorphisms" permid="uOI">
     <title>Homomofismos de Grupos</title>
  
-    <p>Un <term>homomorfismo</term><idx><h>Grupos</h><h>homomorfismo de</h></idx><idx><h>Homomorfismo</h><h>de grupos</h></idx> entre los grupos <m>(G, \cdot)</m> y <m>(H, \circ)</m> es una función <m>\phi :G \rightarrow H</m> tal que  
-      <me>\phi( g_1 \cdot g_2 ) = \phi( g_1 ) \circ \phi( g_2 )\qquad \forall g_1, g_2 \in G</me>
+    <p permid="pgN">Un <term>homomorfismo</term><idx><h>Grupos</h><h>homomorfismo de</h></idx><idx><h>Homomorfismo</h><h>de grupos</h></idx> entre los grupos <m>(G, \cdot)</m> y <m>(H, \circ)</m> es una función <m>\phi :G \rightarrow H</m> tal que  
+      <me permid="Stq">
+        \phi( g_1 \cdot g_2 ) = \phi( g_1 ) \circ \phi( g_2 )
+      </me>
+      for <m>g_1, g_2 \in G</m>.
     La imagen de <m>\phi</m> en <m>H</m> se llama <term>imagen homomorfa</term><idx><h>Imagen homomorfa</h></idx> de <m>\phi</m>.
     </p>
 
-    <p>Dos grupos están relacionados de la forma más fuerte posible si son isomorfos; sin embargo nua relación más débil puede también existir entre dos grupos.  Por ejemplo, el grupo simétrico <m>S_n</m> y el grupo <m>{\mathbb Z}_2</m> están relacionados por el hecho de que <m>S_n</m> puede ser dividido en permutaciones pares e impares que exhiben una estructura de grupos similar a la de <m>{\mathbb Z}_2</m>, como se muestra en la siguiente tabla de multiplicación.
+    <p permid="VnW">Dos grupos están relacionados de la forma más fuerte posible si son isomorfos; sin embargo nua relación más débil puede también existir entre dos grupos.  Por ejemplo, el grupo simétrico <m>S_n</m> y el grupo <m>{\mathbb Z}_2</m> están relacionados por el hecho de que <m>S_n</m> puede ser dividido en permutaciones pares e impares que exhiben una estructura de grupos similar a la de <m>{\mathbb Z}_2</m>, como se muestra en la siguiente tabla de multiplicación.
     </p>
 
-    <sidebyside width="100%"> <!-- math table -->
-      <p><me>\begin{array}{c|cc}
-              <![CDATA[& \text{even} & \text{odd} \\ \hline
-        \text{even} & \text{even} & \text{odd} \\
-        \text{odd}  & \text{odd}  & \text{even}]]>
-        \end{array}</me></p>
-    </sidebyside>
+    <p permid="umf">
+      <me permid="yAz">
+        \begin{array}{c|cc}
+        &amp; \text{even} &amp; \text{odd} \\ \hline
+        \text{even} &amp; \text{even} &amp; \text{odd} \\
+        \text{odd}  &amp; \text{odd}  &amp; \text{even}
+        \end{array}
+      </me>
+    </p>
 
-    <p>Podemos usar homomorfismos para estudiar relaciones como la que acabamos de describir.
+    <p permid="Bvf">Podemos usar homomorfismos para estudiar relaciones como la que acabamos de describir.
     </p> 
  
-    <example xml:id="example-homomorph-zn">
-      <p>Sea <m>G</m> un grupo y <m>g \in G</m>. Defina una función <m>\phi : {\mathbb Z} \rightarrow G</m> como <m>\phi( n ) = g^n</m>. Entonces <m>\phi</m> es un homomorfismo de grupos, pues 
-        <me>\phi( m + n ) = g^{ m + n} = g^m g^n = \phi( m ) \phi( n )</me>.
+    <example xml:id="homomorph-example-zn" permid="kZx">
+      <p permid="QZC">Sea <m>G</m> un grupo y <m>g \in G</m>. Defina una función <m>\phi : {\mathbb Z} \rightarrow G</m> como <m>\phi( n ) = g^n</m>. Entonces <m>\phi</m> es un homomorfismo de grupos, pues 
+        <me permid="eHI">\phi( m + n ) = g^{ m + n} = g^m g^n = \phi( m ) \phi( n )</me>.
       Este homomorfismo envía a <m>{\mathbb Z}</m> en el subgrupo cíclico de <m>G</m> generado por <m>g</m>.
     </p>
     </example>
  
-    <example xml:id="example-homomorph-gl2">
-      <p>Sea <m>G = GL_2( {\mathbb R })</m>. Si
-        <me>A =
-        \begin{pmatrix}<![CDATA[
-        a & b \\
-        c & d
-        ]]>\end{pmatrix}</me>
+    <example xml:id="homomorph-example-gl2" permid="RgG">
+      <p permid="xgL">Sea <m>G = GL_2( {\mathbb R })</m>. Si
+        <me permid="KOR">A =
+        \begin{pmatrix}
+        a &amp; b \\
+        c &amp; d
+        \end{pmatrix}</me>
       está en <m>G</m>, entonces el determinante es distinto de cero; es decir, <m>\det(A) = ad - bc \neq 0</m>.  Además, para dos elementos <m>A</m> y <m>B</m> en <m>G</m>, <m>\det(AB) = \det(A) \det(B)</m>. Usando el determinante, podemos definir un homomorfismo <m>\phi : GL_2( {\mathbb R }) \rightarrow {\mathbb R}^\ast</m> como <m>A \mapsto \det(A)</m>.
     </p>
     </example>
  
-    <example xml:id="example-homomorph-circle-group">
-      <p>Recuerde que el grupo de la circunferencia <m>{ \mathbb T}</m> consiste de todos los números complejos <m>z</m> tales que <m>|z|=1</m>. Podemos definir un homomorfismo <m>\phi</m> del grupo aditivo de los números reales <m>{\mathbb R}</m> a <m>{\mathbb T}</m> por <m>\phi : \theta \mapsto \cos \theta + i \sin \theta</m>. De hecho, 
-        <md>
+    <example xml:id="homomorph-example-circle-group" permid="xnP">
+      <p permid="dnU">Recuerde que el grupo de la circunferencia <m>{ \mathbb T}</m> consiste de todos los números complejos <m>z</m> tales que <m>|z|=1</m>. Podemos definir un homomorfismo <m>\phi</m> del grupo aditivo de los números reales <m>{\mathbb R}</m> a <m>{\mathbb T}</m> por <m>\phi : \theta \mapsto \cos \theta + i \sin \theta</m>. De hecho, 
+        <md permid="qWa">
           <mrow>\phi( \alpha + \beta ) &amp; = \cos( \alpha + \beta ) + i \sin( \alpha + \beta )</mrow>
           <mrow>&amp; = (\cos \alpha \cos \beta - \sin \alpha \sin \beta)  + i( \sin \alpha  \cos \beta + \cos \alpha \sin \beta )</mrow>
           <mrow>&amp; = (\cos \alpha + i \sin \alpha )(\cos \beta + i \sin \beta)</mrow>
@@ -81,22 +79,22 @@
     </p>
     </example>
     
-    <p>La siguiente proposición lista algunas propiedades básicas de los homomorfismos de grupos.
+    <p permid="hCo">La siguiente proposición lista algunas propiedades básicas de los homomorfismos de grupos.
     </p>
  
-    <proposition xml:id="proposition-homorphism-subgroup">
+    <proposition xml:id="homomorph-proposition-homorphism-subgroup" permid="ESo">
       <statement>
-        <p>Sea <m>\phi : G_1 \rightarrow G_2</m> un homomorfismo de grupos. Entonces 
-          <ol>
+        <p permid="kSt">Sea <m>\phi : G_1 \rightarrow G_2</m> un homomorfismo de grupos. Entonces 
+          <ol permid="TFN">
           
-            <li><p>Si <m>e</m> es la identidad de <m>G_1</m>, entonces <m>\phi( e)</m> es la identidad de <m>G_2</m>;</p></li> 
+            <li permid="Mbo"><p permid="rde">Si <m>e</m> es la identidad de <m>G_1</m>, entonces <m>\phi( e)</m> es la identidad de <m>G_2</m>;</p></li> 
  
 
-            <li><p>Para cualquier elemento <m>g \in G_1</m>, <m>\phi( g^{-1}) = [\phi( g )]^{- 1}</m>;</p></li>
+            <li permid="six"><p permid="Xkn">Para cualquier elemento <m>g \in G_1</m>, <m>\phi( g^{-1}) = [\phi( g )]^{- 1}</m>;</p></li>
  
-            <li><p>Si <m>H_1</m> es un subgrupo de <m>G_1</m>, entonces <m>\phi( H_1 )</m> es un subgrupo de <m>G_2</m>;</p></li>
+            <li permid="YpG"><p permid="Drw">Si <m>H_1</m> es un subgrupo de <m>G_1</m>, entonces <m>\phi( H_1 )</m> es un subgrupo de <m>G_2</m>;</p></li>
  
-            <li><p>Si <m>H_2</m> es un subgrupo de <m>G_2</m>, entonces <m>\phi^{-1}(H_2) = \{ g \in G _1: \phi(g) \in H_2 \}</m> es un subgrupo de <m>G_1</m>. Más aún, si <m>H_2</m> es normal en <m>G_2</m>, entonces <m>\phi^{-1}(H_2)</m> es normal en <m>G_1</m>.
+            <li permid="EwP"><p permid="jyF">Si <m>H_2</m> es un subgrupo de <m>G_2</m>, entonces <m>\phi^{-1}(H_2) = \{ g \in G _1: \phi(g) \in H_2 \}</m> es un subgrupo de <m>G_1</m>. Más aún, si <m>H_2</m> es normal en <m>G_2</m>, entonces <m>\phi^{-1}(H_2)</m> es normal en <m>G_1</m>.
     </p></li>
 
 <!-- % TWJ, 2011/09/15 -->
@@ -105,92 +103,92 @@
 
           </ol></p>
       </statement>
-      <proof>
-        <p>(1) Supongamos que <m>e</m> y <m>e'</m> son las identidades de <m>G_1</m> y <m>G_2</m>, respectivamente; entonces
-          <me>e' \phi(e) = \phi(e) = \phi(e e) = \phi(e) \phi(e)</me>.
+      <proof permid="fkl">
+        <p permid="etn">(1) Supongamos que <m>e</m> y <m>e'</m> son las identidades de <m>G_1</m> y <m>G_2</m>, respectivamente; entonces
+          <me permid="Xdj">e' \phi(e) = \phi(e) = \phi(e e) = \phi(e) \phi(e)</me>.
         Por cancelación, <m>\phi(e) = e'</m>.
     </p>
  
-        <p>(2) Es consecuencia del hecho que
-          <me>\phi( g^{-1}) \phi(g) = \phi(g^{-1} g) = \phi(e) = e'</me>.
+        <p permid="KAw">(2) Es consecuencia del hecho que
+          <me permid="Dks">\phi( g^{-1}) \phi(g) = \phi(g^{-1} g) = \phi(e) = e'</me>.
     </p>
 
  <!--  Corrected notation error.  Suggested by P. Diethelm.  TWJ 16/8/2013. -->
 
-        <p>(3) El conjunto <m>\phi(H_1)</m> es no vacío pues la identidad de <m>G_2</m> está en <m>\phi(H_1)</m>. Si <m>x</m> e <m>y</m> en <m>\phi(H_1)</m>, entonces existen elementos <m>a, b \in H_1</m> tales que <m>\phi(a) = x</m> y <m>\phi(b)=y</m>. Como 
-          <me>xy^{-1} = \phi(a)[ \phi(b)]^{-1} = \phi(a b^{-1} ) \in \phi(H_1)</me>,
-        <m>\phi(H_1)</m> es un subgrupo de <m>G_2</m> por la <xref ref="proposition-subgroup" />.
+        <p permid="qHF">(3) El conjunto <m>\phi(H_1)</m> es no vacío pues la identidad de <m>G_2</m> está en <m>\phi(H_1)</m>. Supongamos que <m>H_1</m> es un subgrupo de <m>G_1</m> y sean <m>x</m> e <m>y</m> en <m>\phi(H_1)</m>. Existen elementos <m>a, b \in H_1</m> tales que <m>\phi(a) = x</m> y <m>\phi(b)=y</m>. Como 
+          <me permid="jrB">xy^{-1} = \phi(a)[ \phi(b)]^{-1} = \phi(a b^{-1} ) \in \phi(H_1)</me>,
+        <m>\phi(H_1)</m> es un subgrupo de <m>G_2</m> por la <xref ref="groups-proposition-subgroup"/>.
     </p>
 
 <!-- H_2 changed to G_2 in proof.  Suggested by K. Wenholz. -->
 <!-- TWJ - 12/19/2011 -->
  
-        <p>(4) Sea <m>H_2</m> un subgrupo de <m>G_2</m> y defina <m>H_1</m> como <m>\phi^{-1}(H_2)</m>; es decir, <m>H_1</m> es el conjunto de todos los <m>g \in G_1</m> tales que <m>\phi(g) \in H_2</m>.  La identidad está en <m>H_1</m> pues <m>\phi(e) = e'</m>. Si <m>a</m> y <m>b</m> están en <m>H_1</m>, entonces <m>\phi(ab^{-1}) = \phi(a)[ \phi(b) ]^{-1}</m> está en <m>H_2</m> pues <m>H_2</m> es un subgrupo de <m>G_2</m>.  Por lo tanto, <m>ab^{-1} \in H_1</m> y <m>H_1</m> es un subgrupo de <m>G_1</m>. Si <m>H_2</m> es normal en <m>G_2</m>, debemos probar que <m>g^{-1} h g \in H_1</m> para <m>h \in H_1</m> y <m>g \in G_1</m>. Pero 
-          <me>\phi( g^{-1} h g) = [ \phi(g) ]^{-1} \phi( h ) \phi( g ) \in H_2</me>,
+        <p permid="WOO">(4) Sea <m>H_2</m> un subgrupo de <m>G_2</m> y defina <m>H_1</m> como <m>\phi^{-1}(H_2)</m>; es decir, <m>H_1</m> es el conjunto de todos los <m>g \in G_1</m> tales que <m>\phi(g) \in H_2</m>.  La identidad está en <m>H_1</m> pues <m>\phi(e) = e'</m>. Si <m>a</m> y <m>b</m> están en <m>H_1</m>, entonces <m>\phi(ab^{-1}) = \phi(a)[ \phi(b) ]^{-1}</m> está en <m>H_2</m> pues <m>H_2</m> es un subgrupo de <m>G_2</m>.  Por lo tanto, <m>ab^{-1} \in H_1</m> y <m>H_1</m> es un subgrupo de <m>G_1</m>. Si <m>H_2</m> es normal en <m>G_2</m>, debemos probar que <m>g^{-1} h g \in H_1</m> para <m>h \in H_1</m> y <m>g \in G_1</m>. Pero 
+          <me permid="PyK">\phi( g^{-1} h g) = [ \phi(g) ]^{-1} \phi( h ) \phi( g ) \in H_2</me>,
         pues <m>H_2</m> es un subgrupo normal de <m>G_2</m>.  Por lo tanto, <m>g^{-1}hg \in H_1</m>.
     </p>
       </proof>
     </proposition>
  
-    <p>Sea <m>\phi : G \rightarrow H</m> un homomorfismo de grupos y supongamos que <m>e</m> es la identidad de <m>H</m>. Por la <xref ref="proposition-homorphism-subgroup" />, <m>\phi^{-1} ( \{ e \} )</m> es un subgrupo de <m>G</m>. Este subgrupo se llama <term>núcleo</term><idx><h>Núcleo</h><h>de un homomorfismo de grupos</h></idx><idx><h>Homomorfismo de grupos</h><h>núcleo de un</h></idx> de <m>\phi</m> y se denotará por <m>\ker \phi</m>. <notation><usage><m>\ker \phi</m></usage><description>núcleo de <m>\phi</m></description></notation> De hecho, este subgrupo es un subgrupo normal de <m>G</m> pues el subgrupo trivial es normal en <m>H</m>.  Enunciamos este resultado en el siguiente teorema, que dice que a cada homomorfismo de grupos podemos asociar de forma natural un subgrupo normal.
+    <p permid="NJx">Sea <m>\phi : G \rightarrow H</m> un homomorfismo de grupos y supongamos que <m>e</m> es la identidad de <m>H</m>. Por la <xref ref="homomorph-proposition-homorphism-subgroup"/>, <m>\phi^{-1} ( \{ e \} )</m> es un subgrupo de <m>G</m>. Este subgrupo se llama <term>núcleo</term><idx><h>Núcleo</h><h>de un homomorfismo de grupos</h></idx><idx><h>Homomorfismo de grupos</h><h>núcleo de un</h></idx> de <m>\phi</m> y se denotará por <m>\ker \phi</m>. <notation><usage><m>\ker \phi</m></usage><description>núcleo de <m>\phi</m></description></notation> De hecho, este subgrupo es un subgrupo normal de <m>G</m> pues el subgrupo trivial es normal en <m>H</m>.  Enunciamos este resultado en el siguiente teorema, que dice que a cada homomorfismo de grupos podemos asociar de forma natural un subgrupo normal.
     </p> 
  
-    <theorem>
+    <theorem permid="Aiv">
       <statement>
-        <p>Sea <m>\phi : G \rightarrow H</m> un homomorfismo de grupos. Entonces el núcleo de <m>\phi</m> es un subgrupo normal de <m>G</m>.
+        <p permid="giA">Sea <m>\phi : G \rightarrow H</m> un homomorfismo de grupos. Entonces el núcleo de <m>\phi</m> es un subgrupo normal de <m>G</m>.
     </p>
       </statement>
     </theorem>
  
-    <example xml:id="example-homomorph-g2-to-r">
-      <p>Examinemos el homorfismo <m>\phi : GL_2( {\mathbb R }) \rightarrow {\mathbb R}^\ast</m> definido por <m>A \mapsto \det( A )</m>. Como 1 es la identidad de <m>{\mathbb R}^\ast</m>, el núcleo de este homomorfismo consiste de toda las matrices de <m>2 \times 2</m> que tienen determinante uno. Es decir, <m>\ker \phi = SL_2( {\mathbb R })</m>.
+    <example xml:id="homomorph-example-g2-to-r" permid="duY">
+      <p permid="Jvd">Examinemos el homorfismo <m>\phi : GL_2( {\mathbb R }) \rightarrow {\mathbb R}^\ast</m> definido por <m>A \mapsto \det( A )</m>. Como <m>1</m> es la identidad de <m>{\mathbb R}^\ast</m>, el núcleo de este homomorfismo consiste de toda las matrices de <m>2 \times 2</m> que tienen determinante uno. Es decir, <m>\ker \phi = SL_2( {\mathbb R })</m>.
     </p>
     </example>
  
-    <example xml:id="example-homomorph-kernel">
-      <p>El núcleo del homomorfismo de grupos <m>\phi : {\mathbb R} \rightarrow {\mathbb C}^\ast</m> definido por <m>\phi( \theta ) = \cos \theta + i \sin \theta</m> es <m>\{ 2 \pi n : n \in {\mathbb Z} \}</m>. Notemos que <m>\ker \phi \cong {\mathbb Z}</m>.
+    <example xml:id="homomorph-example-kernel" permid="JCh">
+      <p permid="pCm">El núcleo del homomorfismo de grupos <m>\phi : {\mathbb R} \rightarrow {\mathbb C}^\ast</m> definido por <m>\phi( \theta ) = \cos \theta + i \sin \theta</m> es <m>\{ 2 \pi n : n \in {\mathbb Z} \}</m>. Notemos que <m>\ker \phi \cong {\mathbb Z}</m>.
     </p>
     </example>
  
-    <example xml:id="example-homomorph-z7">
-      <p>Supongamos que queremos determinar todos los posibles homomorfismos <m>\phi</m> de <m>{\mathbb Z}_7</m> a  <m>{\mathbb Z}_{12}</m>. Como el núcleo de <m>\phi</m> debe ser un subgrupo de <m>{\mathbb Z}_7</m>, solo hay dos núcleos posibles, <m>\{ 0 \}</m> y todo <m>{\mathbb Z}_7</m>.  La imagen de un subgrupo de <m>{\mathbb Z}_7</m> debe ser un subgrupo de <m>{\mathbb Z}_{12}</m>. Luego, no hay homomorfismos inyectivos; de lo contrario, <m>{\mathbb Z}_{12}</m> tendría un subgrupo de orden 7, lo que es imposible. Por lo tanto, el único homomorfismo posible de <m>{\mathbb Z}_7</m> a  <m>{\mathbb Z}_{12}</m> es el que envía todos los elementos cero.
+    <example xml:id="homomorph-example-z7" permid="pJq">
+      <p permid="VJv">Supongamos que queremos determinar todos los posibles homomorfismos <m>\phi</m> de <m>{\mathbb Z}_7</m> a  <m>{\mathbb Z}_{12}</m>. Como el núcleo de <m>\phi</m> debe ser un subgrupo de <m>{\mathbb Z}_7</m>, solo hay dos núcleos posibles, <m>\{ 0 \}</m> y todo <m>{\mathbb Z}_7</m>.  La imagen de un subgrupo de <m>{\mathbb Z}_7</m> debe ser un subgrupo de <m>{\mathbb Z}_{12}</m>. Luego, no hay homomorfismos inyectivos; de lo contrario, <m>{\mathbb Z}_{12}</m> tendría un subgrupo de orden <m>7</m>, lo que es imposible. Por lo tanto, el único homomorfismo posible de <m>{\mathbb Z}_7</m> a  <m>{\mathbb Z}_{12}</m> es el que envía todos los elementos cero.
     </p>
     </example>
  
-    <example xml:id="example-homomorph-gn">
-      <p>Sea <m>G</m> un grupo. Supongamos que <m>g \in G</m> y <m>\phi</m> es el homomorfismo de <m>{\mathbb Z}</m> a <m>G</m> dado por <m>\phi( n ) = g^n</m>. Si el orden de <m>g</m> es infinito, entonces el núcleo de este homomorfismo es <m>\{ 0 \}</m> pues <m>\phi</m> envía <m>{\mathbb Z}</m> en el subgrupo cíclico de <m>G</m> generado por <m>g</m>. Si en cambio, el orden de <m>g</m> es finito, digamos <m>n</m>, entonces el núcleo de <m>\phi</m> es <m>n {\mathbb Z}</m>.
+    <example xml:id="homomorph-example-gn" permid="VQz">
+      <p permid="BQE">Sea <m>G</m> un grupo. Supongamos que <m>g \in G</m> y <m>\phi</m> es el homomorfismo de <m>{\mathbb Z}</m> a <m>G</m> dado por <m>\phi( n ) = g^n</m>. Si el orden de <m>g</m> es infinito, entonces el núcleo de este homomorfismo es <m>\{ 0 \}</m> pues <m>\phi</m> envía <m>{\mathbb Z}</m> en el subgrupo cíclico de <m>G</m> generado por <m>g</m>. Si en cambio, el orden de <m>g</m> es finito, digamos <m>n</m>, entonces el núcleo de <m>\phi</m> es <m>n {\mathbb Z}</m>.
     </p>
     </example>
 
   </section>
 
-  <section xml:id="section-group-isomorphism-theorems">
+  <section xml:id="homomorph-section-group-isomorphism-theorems" permid="aVR">
     <title>Los Teoremas de Isomorfía</title>
  
-    <p>Si bien no es evidente al comienzo, los grupos cociente corresponden exactamente con las imágenes homomorfas, y podemos usar grupos cociente para estudiar homomorfismos. Ya sabemos que con cada homomorfismo de grupos <m>\phi: G \rightarrow H</m> podemos asociar un subgrupo normal de <m>G</m>, <m>\ker \phi</m>.  El recíproco también es cierto; es decir, todo subgrupo normal de un grupo  <m>G</m> da lugar a un homomorfismo de grupos.
+    <p permid="tQG">Si bien no es evidente al comienzo, los grupos cociente corresponden exactamente con las imágenes homomorfas, y podemos usar grupos cociente para estudiar homomorfismos. Ya sabemos que con cada homomorfismo de grupos <m>\phi: G \rightarrow H</m> podemos asociar un subgrupo normal de <m>G</m>, <m>\ker \phi</m>.  El recíproco también es cierto; es decir, todo subgrupo normal de un grupo  <m>G</m> da lugar a un homomorfismo de grupos.
     </p>
  
-    <p>Sea <m>H</m> un subgrupo normal de <m>G</m>. Defina el <term>homorfismo natural</term><idx><h>Natural</h><h>homomorfismo</h></idx> o <term>homomorfismo canónico</term><idx><h>Canónico</h><h>homomorfismo</h></idx>  
-      <me>\phi : G \rightarrow G/H</me>
+    <p permid="ZXP">Sea <m>H</m> un subgrupo normal de <m>G</m>. Defina el <term>homorfismo natural</term><idx><h>Natural</h><h>homomorfismo</h></idx> o <term>homomorfismo canónico</term><idx><h>Canónico</h><h>homomorfismo</h></idx>  
+      <me permid="vFT">\phi : G \rightarrow G/H</me>
     por
-      <me>\phi(g) = gH</me>.
+      <me permid="bNc">\phi(g) = gH</me>.
     Este de hecho es un homomorfismo, pues
-      <me>\phi( g_1 g_2 ) = g_1 g_2 H =  g_1 H g_2 H = \phi( g_1) \phi( g_2 )</me>.
+      <me permid="HUl">\phi( g_1 g_2 ) = g_1 g_2 H =  g_1 H g_2 H = \phi( g_1) \phi( g_2 )</me>.
     El núcleo de este homomorfismo es <m>H</m>. Los siguientes teoremas describen la relación entre homomorfismos de grupos, subgrupos normales, y grupos cociente.
     </p>
 
-    <theorem xml:id="theorem-first-isomorphism">
+    <theorem xml:id="homomorph-theorem-first-isomorphism" permid="gpE">
       <title>Primer Teorema de Isomorfía</title>
       <idx><h>Primer Teorema de Isomorfía</h><h>para grupos</h></idx>
       <statement>
-        <p>Si <m>\psi : G \rightarrow H</m> es un homomorfismo de grupos con <m>K =\ker \psi</m>, entonces <m>K</m> es normal en <m>G</m>. Sea <m>\phi: G \rightarrow G/K</m> el homomorfismo canónico.  Entonce eciste un único isomorfismo <m>\eta: G/K \rightarrow \psi(G)</m> tal que <m>\psi =  \eta \phi</m>.
+        <p permid="MpJ">Si <m>\psi : G \rightarrow H</m> es un homomorfismo de grupos con <m>K =\ker \psi</m>, entonces <m>K</m> es normal en <m>G</m>. Sea <m>\phi: G \rightarrow G/K</m> el homomorfismo canónico.  Entonce eciste un único isomorfismo <m>\eta: G/K \rightarrow \psi(G)</m> tal que <m>\psi =  \eta \phi</m>.
     </p>
       </statement>
-      <proof>
-        <p>Ya vimos que <m>K</m> es normal en <m>G</m>. Defina <m>\eta: G/K \rightarrow \psi(G)</m> por <m>\eta(gK) = \psi(g)</m>.  Primero demostraremos que <m>\eta</m> es una función bien definida.  Si <m>g_1 K =g_2 K</m>, entonces existe <m>k \in K</m>, tal que <m>g_1 k=g_2</m>; por lo tanto, 
-          <me>\eta(g_1 K) = \psi(g_1) = \psi(g_1) \psi(k) = \psi(g_1k) = \psi(g_2) = \eta(g_2 K)</me>.
+      <proof permid="mOK">
+        <p permid="CVX">Ya vimos que <m>K</m> es normal en <m>G</m>. Defina <m>\eta: G/K \rightarrow \psi(G)</m> por <m>\eta(gK) = \psi(g)</m>.  Primero demostraremos que <m>\eta</m> es una función bien definida.  Si <m>g_1 K =g_2 K</m>, entonces existe <m>k \in K</m>, tal que <m>g_1 k=g_2</m>; por lo tanto, 
+          <me permid="obu">\eta(g_1 K) = \psi(g_1) = \psi(g_1) \psi(k) = \psi(g_1k) = \psi(g_2) = \eta(g_2 K)</me>.
         Luego, <m>\eta</m> no depende de la elección de representante de la clase lateral y la función <m>\eta: G/K \rightarrow \psi(G)</m> está únicamente definida pues <m>\psi =  \eta \phi</m>. Debemos mostrar además que <m>\eta</m> es un homomorfismo, pero 
-          <md>
+          <md permid="UiD">
             <mrow>\eta( g_1K g_2K ) &amp; = \eta(g_1 g_2K)</mrow>
             <mrow> &amp; = \psi(g_1 g_2)</mrow>
             <mrow>&amp; = \psi(g_1) \psi(g_2)</mrow>
@@ -202,80 +200,69 @@
  
  <!--  Proof rewritten for clarification.  Suggested by P. Diethelm.  TWJ 16/8/2013. -->
 
-    <p>Los matemáticos a menudo usamos diagramas llamados <term>diagramas conmutativos</term><idx><h>Diagramas conmutativos</h></idx> par describir teoremas como este.  El siguiente diagrama <q>conmuta</q> pues <m>\psi = \eta \phi</m>.
+    <p permid="GeY">Los matemáticos a menudo usamos diagramas llamados <term>diagramas conmutativos</term><idx><h>Diagramas conmutativos</h></idx> par describir teoremas como este.  El siguiente diagrama <q>conmuta</q> pues <m>\psi = \eta \phi</m>.
     </p>
 
-    <sidebyside width="40%" margins="auto"> <!-- duplicate widths? -->
-      <image width="40%" xml:id="homomorphs-first-isomorphism">
-        <latex-image-code><![CDATA[
-          \begin{tikzpicture}[scale=0.8]
+    <image width="40%" xml:id="homomorphs-first-isomorphism" permid="AZG">
+      <description>A diagram with G mapped with an arrow to H by psi on the top row.  G gets mapped with an arrow down and right to G/K by phi.  G/K gets mapped with an arrow up and right to H by eta. </description>
+      <latex-image>
+          <xi:include href="tikz/homomorphs-first-isomorphism.tex" parse="text"/>
+      </latex-image>
+</image>
 
-          \node at (1.5,2) [above] {$\psi$};
-          \node at (0.25,0.65) {$\phi$};
-          \node at (2.75,0.65) {$\eta$};
-          \draw [->] (0,2)  node [left] {$G$} -- (3,2) node [right] {$H$};
-          \node at (1.5,0) [below] {$G/K$};
-          \draw [->] (0,1.7) -- (1.3,0);
-          \draw [->] (1.7,0) -- (3,1.7);
-
-          \end{tikzpicture}]]>
-        </latex-image-code>
-      </image>
-    </sidebyside>
-
-    <example xml:id="homo_cyclic">
-      <p>Sea <m>G</m> un grupo cíclico con generador <m>g</m>. Definamos una función <m>\phi : {\mathbb Z} \rightarrow G</m> por <m>n \mapsto g^n</m>.  Esta función es un homomorfismo epiyectivo pues  
-        <me>\phi( m + n) = g^{m+n} = g^m g^n = \phi(m) \phi(n)</me>.
+    <example xml:id="homo_cyclic" permid="BXI">
+      <p permid="hXN">Sea <m>G</m> un grupo cíclico con generador <m>g</m>. Definamos una función <m>\phi : {\mathbb Z} \rightarrow G</m> por <m>n \mapsto g^n</m>.  Esta función es un homomorfismo epiyectivo pues  
+        <me permid="ApM">\phi( m + n) = g^{m+n} = g^m g^n = \phi(m) \phi(n)</me>.
       Claramente <m>\phi</m> es sobre. Si <m>|g| = m</m>, entonces  <m>g^m = e</m>. Luego, <m>\ker \phi = m {\mathbb Z}</m> y <m>{\mathbb Z} / \ker \phi =  {\mathbb Z} / m {\mathbb Z} \cong G</m>. Por otra parte, si el orden de <m>g</m> es infinito, entonces <m>\ker \phi = 0</m> y <m>\phi</m> es un isomorfismo de <m>G</m> en <m>{\mathbb Z}</m>. Luego, dos grupos cíclicos son isomorfos exactamente cuando tienen el mismo orden. Salvo isomorfismo, los únicos grupos cíclicos son <m>{\mathbb Z}</m> y <m>{\mathbb Z}_n</m>.
     </p>
     </example>
 
-    <theorem xml:id="theorem-second-isomorphism">
+    <theorem xml:id="homomorph-theorem-second-isomorphism" permid="MwN">
       <title>Segundo Teorema de Isomorfía</title>
       <idx><h>Segundo Teorema de Isomorfía</h><h>para grupos</h></idx>
       <statement>
-        <p>Sea  <m>H</m> un subgrupo de <m>G</m> (no necesariamente normal) y sea <m>N</m> un subgrupo normal de <m>G</m>.  Entonces <m>HN</m> es un subgrupo de <m>G</m>, <m>H \cap N</m> es un subgrupo normal de <m>H</m>, y  
-          <me>H / H \cap N \cong HN /N</me>.
+        <p permid="swS">Sea  <m>H</m> un subgrupo de <m>G</m> (no necesariamente normal en <m>G</m>) y sea <m>N</m> un subgrupo normal de <m>G</m>.  Entonces <m>HN</m> es un subgrupo de <m>G</m>, <m>H \cap N</m> es un subgrupo normal de <m>H</m>, y  
+          <me permid="gwV">H / H \cap N \cong HN /N</me>.
     </p>
       </statement>
-      <proof>
-        <p>Demostraremos primero que <m>HN = \{ hn : h \in H, n \in N \}</m> es un subgrupo de <m>G</m>.  Supongamos que  <m>h_1 n_1, h_2 n_2 \in HN</m>. Como <m>N</m> es normal, <m>(h_2)^{-1} n_1 h_2 \in N</m>. Así 
-          <me>(h_1 n_1)(h_2 n_2) = h_1 h_2 ( (h_2)^{-1} n_1 h_2 )n_2</me>
+      <proof permid="SVT">
+        <p permid="jdg">Demostraremos primero que <m>HN = \{ hn : h \in H, n \in N \}</m> es un subgrupo de <m>G</m>.  Supongamos que  <m>h_1 n_1, h_2 n_2 \in HN</m>. Como <m>N</m> es normal, <m>(h_2)^{-1} n_1 h_2 \in N</m>. Así 
+          <me permid="MEe">(h_1 n_1)(h_2 n_2) = h_1 h_2 ( (h_2)^{-1} n_1 h_2 )n_2</me>
         está en <m>HN</m>. El inverso de <m>hn \in HN</m> está en <m>HN</m> pues
-          <me>( hn )^{-1} = n^{-1 } h^{-1} = h^{-1} (h n^{-1} h^{-1} )</me>.
+          <me permid="sLn">( hn )^{-1} = n^{-1 } h^{-1} = h^{-1} (h n^{-1} h^{-1} )</me>.
     </p>
  
-        <p>A continuación, demostraremos que <m>H \cap N</m> es normal en <m>H</m>. Sea <m>h \in H</m> y <m>n \in H \cap N</m>. Entonces <m>h^{-1} n h \in H</m> pues cada elemento está en <m>H</m>. Además, <m>h^{-1} n h \in N</m> pues <m>N</m> es normal en <m>G</m>; por lo tanto, <m>h^{-1} n h \in H \cap N</m>.
+        <p permid="Pkp">A continuación, demostraremos que <m>H \cap N</m> es normal en <m>H</m>. Sea <m>h \in H</m> y <m>n \in H \cap N</m>. Entonces <m>h^{-1} n h \in H</m> pues cada elemento está en <m>H</m>. Además, <m>h^{-1} n h \in N</m> pues <m>N</m> es normal en <m>G</m>; por lo tanto, <m>h^{-1} n h \in H \cap N</m>.
     </p>
  
-        <p>Ahora defina una función <m>\phi</m> de <m>H</m> a <m> HN / N</m> por <m>h \mapsto h N</m>. La función  <m>\phi</m> es sobreyectiva, pues cualquier clase lateral <m>h n N = h N</m> es la imagen de <m>h</m> en <m>H</m>. También sabemos que <m>\phi</m> es un homomorfismo pues 
-          <me>\phi( h  h')  = h h' N =  h N h' N =  \phi( h ) \phi( h')</me>.
+        <p permid="vry">Ahora defina una función <m>\phi</m> de <m>H</m> a <m> HN / N</m> por <m>h \mapsto h N</m>. La función  <m>\phi</m> es sobreyectiva, pues cualquier clase lateral <m>h n N = h N</m> es la imagen de <m>h</m> en <m>H</m>. También sabemos que <m>\phi</m> es un homomorfismo pues 
+          <me permid="YSw">\phi( h  h')  = h h' N =  h N h' N =  \phi( h ) \phi( h')</me>.
         Por el Primer Teorema de Isomorfía, la imagen de <m>\phi</m> es isomorfa a <m>H / \ker \phi</m>; es decir,
-          <me>HN/N = \phi(H) \cong H / \ker \phi</me>.
+          <me permid="EZF">HN/N = \phi(H) \cong H / \ker \phi</me>.
         Como
-          <me>\ker \phi = \{ h \in H : h \in N \} = H \cap N</me>,
+          <me permid="lgO">\ker \phi = \{ h \in H : h \in N \} = H \cap N</me>,
         <m>HN/N = \phi(H) \cong H / H \cap N</m>.
     </p>
       </proof>
     </theorem>
  
-    <theorem xml:id="theorem-correspondence">
+    <theorem xml:id="homomorph-theorem-correspondence" permid="sDW">
       <title>Teorema de Correspondencia</title>
       <idx><h>Teorema de Correspondencia</h><h>para grupos</h></idx>
       <statement>
-        <p>Sea <m>N</m> un subgrupo normal de un grupo <m>G</m>. Entonces <m>H \mapsto H/N</m> es una correspondencia 1-1 entre el conjunto de subgrupos <m>H</m> que contienen a <m>N</m>  y el conjunto de subgrupos de <m>G/N</m>. Más aún, los subgrupos normales de <m>G</m> que contienen a <m>N</m> corresponden a los subgrupos normales de <m>G/N</m>.
+        <p permid="YEb">Sea <m>N</m> un subgrupo normal de un grupo <m>G</m>. Entonces <m>H \mapsto H/N</m> es una correspondencia 1-1 entre el conjunto de subgrupos <m>H</m> de <m>G</m> que contienen a <m>N</m>  y el conjunto de subgrupos de <m>G/N</m>. Más aún, los subgrupos normales de <m>G</m> que contienen a <m>N</m> corresponden a los subgrupos normales de <m>G/N</m>.
     </p>
       </statement>
-      <proof>
-        <p>Sea <m>H</m> un subgrupo de <m>G</m> que contiene a <m>N</m>. Como <m>N</m> es normal en <m>H</m>, <m>H/N</m> tiene sentido.  Sean  <m>aN</m> y <m>bN</m> elementos de <m>H/N</m>. Entonces <m>(aN)( b^{-1} N )= ab^{-1}N \in H/N</m>; luego, <m>H/N</m> es un subgrupo de <m>G/N</m>.
+      <proof permid="zdc">
+        <p permid="byH">Sea <m>H</m> un subgrupo de <m>G</m> que contiene a <m>N</m>. Como <m>N</m> es normal en <m>H</m>, <m>H/N</m> tiene sentido.  Sean  <m>aN</m> y <m>bN</m> elementos de <m>H/N</m>. Entonces <m>(aN)( b^{-1} N )= ab^{-1}N \in H/N</m>; luego, <m>H/N</m> es un subgrupo de <m>G/N</m>.
     </p>
 
-        <p>Sea <m>S</m> un subgrupo debe <m>G/N</m>. Este subgrupo es un conjunto de clases laterales de <m>N</m>.  Si  <m>H= \{ g \in G : gN \in S \}</m>, entonces para <m>h_1, h_2 \in H</m>, tenemos que <m>(h_1 N)( h_2 N )= h_1 h_2 N \in S</m> y <m>h_1^{-1} N \in S</m>. Por lo tanto, <m>H</m> debe ser un subgrupo de <m>G</m>. Claramente, <m>H</m> contiene a <m>N</m>. Por lo tanto, <m>S = H / N</m>. Concluimos que, la función <m>H \mapsto H/N</m> es sobreyectiva.
+        <p permid="HFQ">Sea <m>S</m> un subgrupo debe <m>G/N</m>. Este subgrupo es un conjunto de clases laterales de <m>N</m>.  Si  <m>H= \{ g \in G : gN \in S \}</m>, entonces para <m>h_1, h_2 \in H</m>, tenemos que <m>(h_1 N)( h_2 N )= h_1 h_2 N \in S</m> y <m>h_1^{-1} N \in S</m>. Por lo tanto, <m>H</m> debe ser un subgrupo de <m>G</m>. Claramente, <m>H</m> contiene a <m>N</m>. Por lo tanto, <m>S = H / N</m>. Concluimos que, la función <m>H \mapsto H/N</m> es sobreyectiva.
     </p>
 
 <!--  Notation error corrected.  Suggested by P. Diethelm.  TWJ 16/8/2013. -->
     
-        <p>Supongamos que <m>H_1</m> y <m>H_2</m> son subgrupos de <m>G</m> que contienen a <m>N</m> tales que <m>H_1/N = H_2/N</m>. Si <m>h_1 \in H_1</m>, entonces <m>h_1 N \in H_1/N</m>. Luego, <m>h_1 N = h_2 N \subset H_2</m> para algún <m>h_2</m> en <m>H_2</m>. Pero, como <m>N</m> está contenido en <m>H_2</m>, sabemos que <m>h_1 \in H_2</m> o <m>H_1 \subset H_2</m>. Similarmente, <m>H_2 \subset H_1</m>.  Como <m>H_1 = H_2</m>, la función  <m>H \mapsto H/N</m> es 1-1.
+        <p permid="nMZ">Supongamos que <m>H_1</m> y <m>H_2</m> son subgrupos de <m>G</m> que contienen a <m>N</m> tales que <m>H_1/N = H_2/N</m>. Si <m>h_1 \in H_1</m>, entonces <m>h_1 N \in H_1/N</m>. Luego, <m>h_1 N = h_2 N \subset H_2</m> para algún <m>h_2</m> en <m>H_2</m>. Pero, como <m>N</m> está contenido en <m>H_2</m>, sabemos que <m>h_1 \in H_2</m> o <m>H_1 \subset H_2</m>. Similarmente, <m>H_2 \subset H_1</m>.  Como <m>H_1 = H_2</m>, la función  <m>H \mapsto H/N</m> es 1-1.
     </p>
 
 <!-- H/N changed to N/H.  Suggested by S. Engle. -->
@@ -284,11 +271,11 @@
 <!-- Changed it back.  What was I thinking?  Suggested by R. Beezer. -->
 <!-- TWJ - 11/29/2012 -->
  
-        <p>Supongamos que <m>H</m> es normal en <m>G</m> y que <m>N</m> es un subgrupo de  <m>H</m>.  Entonces es fácil verificar que la función <m>G/N \rightarrow G/H</m> definida por <m>gN \mapsto gH</m> es un homomorfismo.  El núncleo de este homomorfismo es  <m>H/N</m>, lo que demuestra que <m>H/N</m> es normal en <m>G/N</m>.
+        <p permid="TUi">Supongamos que <m>H</m> es normal en <m>G</m> y que <m>N</m> es un subgrupo de  <m>H</m>.  Entonces es fácil verificar que la función <m>G/N \rightarrow G/H</m> definida por <m>gN \mapsto gH</m> es un homomorfismo.  El núncleo de este homomorfismo es  <m>H/N</m>, lo que demuestra que <m>H/N</m> es normal en <m>G/N</m>.
     </p>
  
-        <p>Recíprocamente, supongamos que <m>H/N</m> es normal en <m>G/N</m>. El homomorfismo dado por  
-          <me>G \rightarrow G/N \rightarrow \frac{G/N}{H/N}</me>
+        <p permid="Abr">Recíprocamente, supongamos que <m>H/N</m> es normal en <m>G/N</m>. El homomorfismo dado por  
+          <me permid="RnX">G \rightarrow G/N \rightarrow \frac{G/N}{H/N}</me>
         tiene núcleo <m>H</m>. Luego, <m>H</m> es normal en <m>G</m>.
     </p>
       </proof>
@@ -296,30 +283,30 @@
 
 <!--  Statement of the Correspondence Theorem corrected.  Suggested by P. Diethelm.  TWJ 16/8/2013. -->
  
-    <p>Notemos que en la demostración del <xref ref="theorem-correspondence" />, también hemos demostrado el siguiente teorema.
+    <p permid="mmh">Notemos que en la demostración del <xref ref="homomorph-theorem-correspondence"/>, también hemos demostrado el siguiente teorema.
     </p>
  
-    <theorem xml:id="theorem-third-isomorphism">
+    <theorem xml:id="homomorph-theorem-third-isomorphism" permid="YLf">
       <title>Tercer Teorema de Isomorfía</title>
       <idx><h>Tercer Teorema de Isomorfía</h><h>para grupos</h></idx>
       <statement>
-        <p>Sea <m>G</m> un grupo y sean <m>N</m> y <m>H</m> subgrupos normales de <m>G</m> con <m>N \subset H</m>.  Entonces 
-          <me>G/H \cong \frac{G/N}{H/N}</me>.
+        <p permid="ELk">Sea <m>G</m> un grupo y sean <m>N</m> y <m>H</m> subgrupos normales de <m>G</m> con <m>N \subset H</m>.  Entonces 
+          <me permid="xvg">G/H \cong \frac{G/N}{H/N}</me>.
     </p>
       </statement>
     </theorem>
  
-    <example xml:id="example-homomorph-third-isomorphism">
-      <p>Por el Tercer Teorema de Isomorfía,
-        <me>{\mathbb Z} / m {\mathbb Z} \cong ({\mathbb Z}/ mn {\mathbb Z})/ (m {\mathbb Z}/ mn {\mathbb Z})</me>.
+    <example xml:id="homomorph-example-third-isomorphism" permid="ieR">
+      <p permid="OeW">Por el Tercer Teorema de Isomorfía,
+        <me permid="dCp">{\mathbb Z} / m {\mathbb Z} \cong ({\mathbb Z}/ mn {\mathbb Z})/ (m {\mathbb Z}/ mn {\mathbb Z})</me>.
       Como <m>| {\mathbb Z} / mn {\mathbb Z} | = mn</m> y  <m>|{\mathbb Z} / m{\mathbb Z}| = m</m>, tenemos <m>| m {\mathbb Z} / mn {\mathbb Z}| = n</m>.
     </p>
     </example>
  
-    <paragraphs>
+    <paragraphs component="sage-blurb" permid="OHz">
       <title>Sage</title>
     
-      <p>Sage puede crear homomorfismos entre grupos, los que pueden ser usados directamente como funciones, y cuya imagen y núcleo pueden ser consultados.  Hay así gran potencial para explorar las muchas relaciones fundamentales entre grupos, subgrupos normales, grupos cociente y propiedades de homomorfismos.
+      <p permid="IZE">Sage puede crear homomorfismos entre grupos, los que pueden ser usados directamente como funciones, y cuya imagen y núcleo pueden ser consultados.  Hay así gran potencial para explorar las muchas relaciones fundamentales entre grupos, subgrupos normales, grupos cociente y propiedades de homomorfismos.
     </p>
     </paragraphs>
   </section> 
@@ -381,34 +368,34 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
   <exercises xml:id="homomorph-exercises" filenamebase="homomorph" permid="WlY">
     <title>Ejercicios</title>
   
-    <exercise number="1">
+    <exercise number="1" permid="nkj" xml:id="homomorph-exercise-det-homomorph">
       <statement>
-        <p>Demuestre que <m>\det( AB) = \det(A) \det(B)</m> para <m>A, B \in GL_2( {\mathbb R} )</m>. Esto muestra que el determinante es un homomorfismo de <m>GL_2( {\mathbb R} )</m> a <m>{\mathbb R}^*</m>. </p>
+        <p permid="mHG">Demuestre que <m>\det( AB) = \det(A) \det(B)</m> para <m>A, B \in GL_2( {\mathbb R} )</m>. Esto muestra que el determinante es un homomorfismo de <m>GL_2( {\mathbb R} )</m> a <m>{\mathbb R}^*</m>. </p>
       </statement>
       
     </exercise>
   
-    <exercise number="2">
+    <exercise number="2" permid="Trs" xml:id="homomorph-exercise-which-are-homomorph">
       <statement>
-        <p>¿Cuál de las siguientes funciones son homomorfismos? Si la función es un homomorfismo, cuál es el núcleo? 
-          <ol>
+        <p permid="SOP">¿Cuál de las siguientes funciones son homomorfismos? Si la función es un homomorfismo, cuál es el núcleo? 
+          <ol permid="zMW">
    
-            <li><p><m>\phi : {\mathbb R}^\ast \rightarrow GL_2 ( {\mathbb R})</m> definida como
-              <me>\phi( a ) =
+            <li permid="kDY"><p permid="PFO"><m>\phi : {\mathbb R}^\ast \rightarrow GL_2 ( {\mathbb R})</m> definida como
+              <me permid="CeZ">\phi( a ) =
               \begin{pmatrix}
               1 &amp; 0 \\
               0 &amp; a
               \end{pmatrix}</me></p></li>
    
-            <li><p><m>\phi : {\mathbb R} \rightarrow GL_2 ( {\mathbb R})</m> definida como
-              <me>\phi( a ) =
+            <li permid="QLh"><p permid="vMX"><m>\phi : {\mathbb R} \rightarrow GL_2 ( {\mathbb R})</m> definida como
+              <me permid="imi">\phi( a ) =
               \begin{pmatrix}
               1 &amp; 0 \\
               a &amp; 1
               \end{pmatrix}</me></p></li>
    
-            <li><p><m>\phi : GL_2 ({\mathbb R})   \rightarrow {\mathbb R}</m> definida como
-              <me>\phi
+            <li permid="wSq"><p permid="bUg"><m>\phi : GL_2 ({\mathbb R})   \rightarrow {\mathbb R}</m> definida como
+              <me permid="Otr">\phi
               \left(
               \begin{pmatrix}
               a &amp; b \\
@@ -417,8 +404,8 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
               \right)
               = a + d</me></p></li>
    
-            <li><p><m>\phi : GL_2 ( {\mathbb R})   \rightarrow {\mathbb R}^\ast</m> definida como 
-              <me>\phi
+            <li permid="cZz"><p permid="Ibp"><m>\phi : GL_2 ( {\mathbb R})   \rightarrow {\mathbb R}^\ast</m> definida como 
+              <me permid="uAA">\phi
               \left(
               \begin{pmatrix}
               a &amp; b \\
@@ -427,8 +414,8 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
               \right)
               = ad - bc</me></p></li>
    
-            <li><p><m>\phi : {\mathbb M}_2( {\mathbb R}) \rightarrow {\mathbb R}</m> definida como
-              <me>\phi
+            <li permid="JgI"><p permid="oiy"><m>\phi : {\mathbb M}_2( {\mathbb R}) \rightarrow {\mathbb R}</m> definida como
+              <me permid="aHJ">\phi
               \left(
               \begin{pmatrix}
               a &amp; b \\
@@ -441,38 +428,38 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
    
           </ol></p>
       </statement>
-      <hint>
-        <p>(a) es un homomorfismo con núcleo <m>\{ 1 \}</m>; (c) no es un homomorfismo.
+      <hint permid="XFM">
+        <p permid="ZJu">(a) es un homomorfismo con núcleo <m>\{ 1 \}</m>; (c) no es un homomorfismo.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="3">
+    <exercise number="3" permid="zyB" xml:id="homomorph-exercise-matrix-mult">
       <statement>
-        <p>Sea <m>A</m> una matriz de <m>m \times n</m>.  Muestre que la multiplicación de matrices, <m>x \mapsto Ax</m>, define un homomorfismo <m>\phi : {\mathbb R}^n \rightarrow {\mathbb R}^m</m>. </p>
+        <p permid="yVY">Sea <m>A</m> una matriz de <m>m \times n</m>.  Muestre que la multiplicación de matrices, <m>x \mapsto Ax</m>, define un homomorfismo <m>\phi : {\mathbb R}^n \rightarrow {\mathbb R}^m</m>. </p>
       </statement>
       
     </exercise>
   
-    <exercise number="4">
+    <exercise number="4" permid="fFK" xml:id="homomorph-exercise-n-to-7n">
       <statement>
-        <p>Sea <m>\phi : {\mathbb Z} \rightarrow {\mathbb Z}</m> dada por <m>\phi(n) = 7n</m>. Demuestre que <m>\phi</m> es un homomorfismo de grupos. Encuentre el núcleo y la imagen de <m>\phi</m>.
+        <p permid="fdh">Sea <m>\phi : {\mathbb Z} \rightarrow {\mathbb Z}</m> dada por <m>\phi(n) = 7n</m>. Demuestre que <m>\phi</m> es un homomorfismo de grupos. Encuentre el núcleo y la imagen de <m>\phi</m>.
     </p>
       </statement>
-      <hint>
-        <p>Como <m>\phi(m + n) = 7(m+n) = 7m + 7n = \phi(m) + \phi(n)</m>, <m>\phi</m> es un homomorfismo.
+      <hint permid="Qbn">
+        <p permid="FQD">Como <m>\phi(m + n) = 7(m+n) = 7m + 7n = \phi(m) + \phi(n)</m>, <m>\phi</m> es un homomorfismo.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="5">
+    <exercise number="5" permid="LMT" xml:id="homomorph-exercise-Z24-to-Z18">
     <statement>
-        <p>Describa todos los homomorfismos de <m>{\mathbb Z}_{24}</m> a <m>{\mathbb Z}_{18}</m>. </p>
+        <p permid="Lkq">Describa todos los homomorfismos de <m>{\mathbb Z}_{24}</m> a <m>{\mathbb Z}_{18}</m>. </p>
       </statement>
-      <hint>
-        <p>Para cualquier homomorfismo <m>\phi : {\mathbb Z}_{24} \rightarrow {\mathbb Z}_{18}</m>, el núcleo de <m>\phi</m> es un subgrupo de <m>{\mathbb Z}_{24}</m> y la imagen de <m>\phi</m> es un subgrupo de <m>{\mathbb Z}_{18}</m>. Ahora use el hecho de que la imagen de un generador es un generador.
+      <hint permid="cpF">
+        <p permid="lXM">Para cualquier homomorfismo <m>\phi : {\mathbb Z}_{24} \rightarrow {\mathbb Z}_{18}</m>, el núcleo de <m>\phi</m> es un subgrupo de <m>{\mathbb Z}_{24}</m> y la imagen de <m>\phi</m> es un subgrupo de <m>{\mathbb Z}_{18}</m>. Ahora use el hecho de que la imagen de un generador es un generador.
     </p>
       </hint>
       
@@ -480,28 +467,28 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
   
       <!--Todo Fix the solution to Exercise 5.-->
   
-    <exercise number="6">
+    <exercise number="6" permid="rUc" xml:id="homomorph-exercise-Z-to-Z12">
       <statement>
-        <p>Describa todos los homomorfismos de <m>{\mathbb Z}</m> a <m>{\mathbb Z}_{12}</m>.
+        <p permid="rrz">Describa todos los homomorfismos de <m>{\mathbb Z}</m> a <m>{\mathbb Z}_{12}</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="7">
+    <exercise number="7" permid="Ybl" xml:id="homomorph-exercise-second-isomorph-ther">
       <statement>
-        <p>En el grupo <m>{\mathbb Z}_{24}</m>, sean <m>H = \langle 4 \rangle</m> y <m>N = \langle 6 \rangle</m>. 
-          <ol>
+        <p permid="XyI">En el grupo <m>{\mathbb Z}_{24}</m>, sean <m>H = \langle 4 \rangle</m> y <m>N = \langle 6 \rangle</m>. 
+          <ol permid="fUf">
            
-            <li><p>Liste los elementos en <m>HN</m> (usualmente escribimos  <m>H + N</m> para estos grupos aditivos) y <m>H \cap N</m>.
+            <li permid="tXK"><p permid="YZA">Liste los elementos en <m>HN</m> (usualmente escribimos  <m>H + N</m> para estos grupos aditivos) y <m>H \cap N</m>.
     </p></li>
              
-            <li><p>Liste las clases laterales en <m>HN/N</m>, mostrando los elementos en cada una de ellas.
+            <li permid="aeT"><p permid="FgJ">Liste las clases laterales en <m>HN/N</m>, mostrando los elementos en cada una de ellas.
     </p></li>
              
-            <li><p>Liste las clases laterales en <m>H/(H \cap N)</m>, mostrando los elementos en cada una de ellas. </p></li>
+            <li permid="Gmc"><p permid="lnS">Liste las clases laterales en <m>H/(H \cap N)</m>, mostrando los elementos en cada una de ellas. </p></li>
              
-            <li><p>Indique la correspondecia entre <m>HN/N</m> y <m>H/(H \cap N)</m> descrita en la demostración del Segundo Teorema de Isomorfía.
+            <li permid="mtl"><p permid="Rvb">Indique la correspondecia entre <m>HN/N</m> y <m>H/(H \cap N)</m> descrita en la demostración del Segundo Teorema de Isomorfía.
     </p></li>
            
           </ol></p>
@@ -511,36 +498,36 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
   
     <!--Todo Double check the solution to Exercise 7.-->
   
-    <exercise number="8">
+    <exercise number="8" permid="Eiu" xml:id="homomorph-exercise-g-to-gn">
       <statement>
-        <p>Si <m>G</m> es un grupo abeliano y <m>n \in {\mathbb N}</m>, demuestre que <m>\phi : G \rightarrow G</m>  definida como <m>g \mapsto g^n</m> es un homomorfismo de grupos. </p>
+        <p permid="DFR">Si <m>G</m> es un grupo abeliano y <m>n \in {\mathbb N}</m>, demuestre que <m>\phi : G \rightarrow G</m>  definida como <m>g \mapsto g^n</m> es un homomorfismo de grupos. </p>
       </statement>
       
     </exercise>
   
-    <exercise number="9">
+    <exercise number="9" permid="kpD" xml:id="homomorph-exercise-phi-G-abelian">
       <statement>
-        <p>Si <m>\phi : G \rightarrow H</m> es un homomorfismo de grupos y <m>G</m> es abeliano, demuestre que <m>\phi(G)</m> también es abeliano.
+        <p permid="jNa">Si <m>\phi : G \rightarrow H</m> es un homomorfismo de grupos y <m>G</m> es abeliano, demuestre que <m>\phi(G)</m> también es abeliano.
     </p>
       </statement>
-      <hint>
-        <p>Sean <m>a, b \in G</m>. Entonces <m>\phi(a) \phi(b) = \phi(ab) = \phi(ba) = \phi(b)\phi(a)</m>.
+      <hint permid="gZy">
+        <p permid="SeV">Sean <m>a, b \in G</m>. Entonces <m>\phi(a) \phi(b) = \phi(ab) = \phi(ba) = \phi(b)\phi(a)</m>.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="10">
+    <exercise number="10" permid="QwM" xml:id="homomorph-exercise-phi-G-cyclic">
       <statement>
-        <p>Si <m>\phi : G \rightarrow H</m> es un homomorfismo de grupos y <m>G</m> es cíclico, demuestre que  <m>\phi(G)</m> también es cíclico.
+        <p permid="PUj">Si <m>\phi : G \rightarrow H</m> es un homomorfismo de grupos y <m>G</m> es cíclico, demuestre que  <m>\phi(G)</m> también es cíclico.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="11">
+    <exercise number="11" permid="wDV" xml:id="homomorph-exercise-cyclic-homomorph-generator">
       <statement>
-        <p>Muestre que un homomorfismo definido en un grupo cíclico está completamente determinado por su acción en el generador del grupo.
+        <p permid="wbs">Muestre que un homomorfismo definido en un grupo cíclico está completamente determinado por su acción en el generador del grupo.
     </p>
       </statement>
       
@@ -559,69 +546,69 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
     </exercise>
   -->
   
-    <exercise number="12">
+    <exercise number="12" permid="cLe" xml:id="homomorph-exercise-one-subgroup-normal">
       <statement>
-        <p>Si un grupo <m>G</m> tiene exactamente un subgrupo <m>H</m> de orden <m>k</m>, demuestre que <m>H</m> es normal en <m>G</m>.
+        <p permid="ciB">Si un grupo <m>G</m> tiene exactamente un subgrupo <m>H</m> de orden <m>k</m>, demuestre que <m>H</m> es normal en <m>G</m>.
     </p>
       </statement>
       
       </exercise>
   
-    <exercise number="13">
+    <exercise number="13" permid="ISn" xml:id="homomorph-exercise-QmodZ-Q">
       <statement>
-        <p>Demuestre o refute: <m>{\mathbb Q} / {\mathbb Z} \cong {\mathbb Q}</m>.
+        <p permid="IpK">Demuestre o refute: <m>{\mathbb Q} / {\mathbb Z} \cong {\mathbb Q}</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="14">
+    <exercise number="14" permid="oZw" xml:id="homomorph-exercise-G-finitie-N-normal">
       <statement>
-        <p>Sea <m>G</m> un grupo finito y sea <m>N</m> un subgrupo normal de <m>G</m>. Si <m>H</m> es un subgrupo de <m>G/N</m>, demuestre que <m>\phi^{-1}(H)</m> es un subgrupo de <m>G</m> de orden <m>|H| \cdot |N|</m>, donde <m>\phi : G \rightarrow G/N</m> es el homomorfismo canónico.
+        <p permid="owT">Sea <m>G</m> un grupo finito y sea <m>N</m> un subgrupo normal de <m>G</m>. Si <m>H</m> es un subgrupo de <m>G/N</m>, demuestre que <m>\phi^{-1}(H)</m> es un subgrupo de <m>G</m> de orden <m>|H| \cdot |N|</m>, donde <m>\phi : G \rightarrow G/N</m> es el homomorfismo canónico.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="15">
+    <exercise number="15" permid="VgF" xml:id="homomorph-exercise-quotient-to-quatient">
       <statement>
-        <p>Sean <m>G_1</m> y <m>G_2</m> grupos, y sean <m>H_1</m> y <m>H_2</m> subgrupos normales de <m>G_1</m> y <m>G_2</m> respectivamente. Sea <m>\phi : G_1 \rightarrow G_2</m> un homomorfismo. Muestre que <m>\phi</m> induce un homomorfismo natural <m>\overline{\phi} : (G_1/H_1) \rightarrow (G_2/H_2)</m> si <m>\phi(H_1) \subset H_2</m>.
+        <p permid="UEc">Sean <m>G_1</m> y <m>G_2</m> grupos, y sean <m>H_1</m> y <m>H_2</m> subgrupos normales de <m>G_1</m> y <m>G_2</m> respectivamente. Sea <m>\phi : G_1 \rightarrow G_2</m> un homomorfismo. Muestre que <m>\phi</m> induce un homomorfismo natural <m>\overline{\phi} : (G_1/H_1) \rightarrow (G_2/H_2)</m> si <m>\phi(H_1) \subset H_2</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="16">
+    <exercise number="16" permid="BnO" xml:id="homomorph-exercise-H-K-normal">
       <statement>
-        <p>Si <m>H</m> y <m>K</m> son subgrupos normales de <m>G</m> y <m>H \cap K = \{ e \}</m>, demuestre que <m>G</m> es isomorfo a un subgrupo de <m>G/H \times G/K</m>.
+        <p permid="ALl">Si <m>H</m> y <m>K</m> son subgrupos normales de <m>G</m> y <m>H \cap K = \{ e \}</m>, demuestre que <m>G</m> es isomorfo a un subgrupo de <m>G/H \times G/K</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="17">
+    <exercise number="17" permid="huX" xml:id="homomorph-exercise-isomorphic-quotients">
       <statement>
-        <p>Sea <m>\phi : G_1 \rightarrow G_2</m> un epimorfismo de grupos. Sea <m>H_1</m> un subgrupo normal de <m>G_1</m> y supongamos que <m>\phi(H_1) = H_2</m>.  Demuestre o refute que <m>G_1/H_1 \cong G_2/H_2</m>.
+        <p permid="gSu">Sea <m>\phi : G_1 \rightarrow G_2</m> un epimorfismo de grupos. Sea <m>H_1</m> un subgrupo normal de <m>G_1</m> y supongamos que <m>\phi(H_1) = H_2</m>.  Demuestre o refute que <m>G_1/H_1 \cong G_2/H_2</m>.
     </p>
       </statement>
-      <hint>
-        <p>Encuentre un contraejemplo.
+      <hint permid="Kmb">
+        <p permid="yme">Encuentre un contraejemplo.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="18" xml:id="exercise-trivial-kernel">
+    <exercise number="18" xml:id="homomorph-exercise-trivial-kernel" permid="NCg">
       <statement>
-        <p>Sea <m>\phi : G \rightarrow H</m> un homomorfismo de grupos.  Muestre que <m>\phi</m> es 1-1 si y solo si <m>\phi^{-1}(e) = \{ e \}</m>.
+        <p permid="MZD">Sea <m>\phi : G \rightarrow H</m> un homomorfismo de grupos.  Muestre que <m>\phi</m> es 1-1 si y solo si <m>\phi^{-1}(e) = \{ e \}</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="19">
+    <exercise number="19" permid="tJp" xml:id="homomorph-exercise-equivalence-relation">
       <statement>
-        <p>Dado un homomorfismo <m>\phi :G \rightarrow H</m> defina una relación <m>\sim</m> en <m>G</m> como <m>a \sim b</m> si <m>\phi(a) = \phi(b)</m>.  Muestre que esta relación es de equivalencia y describa las clases de equivalencia. </p>
+        <p permid="tgM">Dado un homomorfismo <m>\phi :G \rightarrow H</m> defina una relación <m>\sim</m> en <m>G</m> como <m>a \sim b</m> si <m>\phi(a) = \phi(b)</m> para <m>a, b \in G</m>.  Muestre que esta relación es de equivalencia y describa las clases de equivalencia. </p>
       </statement>
       
     </exercise>
@@ -629,120 +616,120 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
   </exercises>
   
 
-  <exercises xml:id="homomorph-exercises-automorphisms">
+  <exercises xml:id="homomorph-exercises-automorphisms" permid="Cth">
     <title>Ejercicios adicionales: Automorfismos</title>
 
-    <exercise>
+    <exercise permid="ZQy" xml:id="homomorph-exercise-aut-G">
       <statement>
-        <p>Sea <m>\aut(G)</m> el conjunto de todos los automorfismos de <m>G</m>; es decir, isomorfismos de <m>G</m> en sí mismo. Demuestre que este conjunto forma un grupo y que es un subgrupo del grupo de permutaciones de <m>G</m>; es decir, <m>\aut(G) \leq S_G</m>.
+        <p permid="ZnV">Sea <m>\aut(G)</m> el conjunto de todos los automorfismos de <m>G</m>; es decir, isomorfismos de <m>G</m> en sí mismo. Demuestre que este conjunto forma un grupo y que es un subgrupo del grupo de permutaciones de <m>G</m>; es decir, <m>\aut(G) \leq S_G</m>.
     </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="FXH" xml:id="homomorph-exercise-inner-aut">
       <statement>
-        <p>Un <term>automorfismo interno</term><idx><h>Interno</h><h>automorfismo</h></idx> de <m>G</m>,
-          <me>i_g : G \rightarrow G</me>,
+        <p permid="Fve">Un <term>automorfismo interno</term><idx><h>Interno</h><h>automorfismo</h></idx> de <m>G</m>,
+          <me permid="kbv">i_g : G \rightarrow G</me>,
         está definido por la  función
-          <me>i_g(x) = g x g^{-1}</me>,
+          <me permid="QiE">i_g(x) = g x g^{-1}</me>,
         para <m>g \in G</m>. Demuestre que <m>i_g \in \aut(G)</m>.
     </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="meQ" xml:id="homomorph-exercise-Inn-G">
       <statement>
-        <p>El conjunto de todos los automorfismos internos se denota por <m>\inn(G)</m>. Muestre que <m>\inn(G)</m> es un subgrupo de  <m>\aut(G)</m>.
+        <p permid="lCn">El conjunto de todos los automorfismos internos se denota por <m>\inn(G)</m>. Muestre que <m>\inn(G)</m> es un subgrupo de  <m>\aut(G)</m>.
     </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="SlZ" xml:id="homomorph-exercise-auto-not-inner">
       <statement>
-        <p>Encuentre un automorfismo de un grupo <m>G</m> que no sea un automorfismo interno.
+        <p permid="RJw">Encuentre un automorfismo de un grupo <m>G</m> que no sea un automorfismo interno.
     </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="yti" xml:id="homomorph-exercise-ZG-inner">
       <statement>
-        <p>Sea <m>G</m> un grupo y sea <m>i_g</m> un automorfismo interno de <m>G</m>. Defina la función  
-          <me>G \rightarrow \aut(G)</me>
+        <p permid="xQF">Sea <m>G</m> un grupo y sea <m>i_g</m> un automorfismo interno de <m>G</m>. Defina la función  
+          <me permid="wpN">G \rightarrow \aut(G)</me>
         por
-          <me>g \mapsto i_g</me>.
+          <me permid="cwW">g \mapsto i_g</me>.
         Demuestre que esta función es un homomorfismo con imagen <m>\inn(G)</m> y núcleo <m>Z(G)</m>. Use este resultado para concluir que  
-          <me>G/Z(G) \cong \inn(G)</me>.
+          <me permid="IEf">G/Z(G) \cong \inn(G)</me>.
     </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="eAr" xml:id="homomorph-exercise-aut-S3">
       <statement>
-        <p>Calcule <m>\aut(S_3)</m> y <m>\inn(S_3)</m>.  Haga lo mismo para <m>D_4</m>.
+        <p permid="dXO">Calcule <m>\aut(S_3)</m> y <m>\inn(S_3)</m>.  Haga lo mismo para <m>D_4</m>.
     </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="KHA" xml:id="homomorph-exercise-aut-Z">
       <statement>
-        <p>Encuentre todos los homomorfismos <m>\phi : {\mathbb Z} \rightarrow {\mathbb Z}</m>. ¿Qué es <m>\aut({\mathbb Z})</m>? </p>
+        <p permid="KeX">Encuentre todos los homomorfismos <m>\phi : {\mathbb Z} \rightarrow {\mathbb Z}</m>. ¿Qué es <m>\aut({\mathbb Z})</m>? </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="qOJ" xml:id="homomorph-exercise-aut-Z8">
       <statement>
-        <p>Encuentre todos los automorfismos de <m>{\mathbb Z}_8</m>.  Demuestre que <m>\aut({\mathbb Z}_8) \cong U(8)</m>.
+        <p permid="qmg">Encuentre todos los automorfismos de <m>{\mathbb Z}_8</m>.  Demuestre que <m>\aut({\mathbb Z}_8) \cong U(8)</m>.
     </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="WVS" xml:id="homomorph-exercise-a-to-ka">
       <statement>
-        <p>Para <m>k \in {\mathbb Z}_n</m>, defina una función <m>\phi_k : {\mathbb Z}_n \rightarrow {\mathbb Z}_n</m> por <m>a \mapsto ka</m>.  Demuestre que <m>\phi_k</m> es un homomorfismo. </p>
+        <p permid="Wtp">Para <m>k \in {\mathbb Z}_n</m>, defina una función <m>\phi_k : {\mathbb Z}_n \rightarrow {\mathbb Z}_n</m> por <m>a \mapsto ka</m>.  Demuestre que <m>\phi_k</m> es un homomorfismo. </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="Ddb" xml:id="homomorph-exercise-phi-k-Zn">
       <statement>
-        <p>Demuestre que <m>\phi_k</m> es un isomorfismo si y solo si <m>k</m> es un generador de <m>{\mathbb Z}_n</m>. </p>
+        <p permid="CAy">Demuestre que <m>\phi_k</m> es un isomorfismo si y solo si <m>k</m> es un generador de <m>{\mathbb Z}_n</m>. </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="jkk" xml:id="homomorph-exercise-aut-Zn">
       <statement>
-        <p>Muestre que todo automorfismo de <m>{\mathbb Z}_n</m> es de la forma <m>\phi_k</m>, con <m>k</m> un generador de <m>{\mathbb Z}_n</m>. </p>
+        <p permid="iHH">Muestre que todo automorfismo de <m>{\mathbb Z}_n</m> es de la forma <m>\phi_k</m>, con <m>k</m> un generador de <m>{\mathbb Z}_n</m>. </p>
       </statement>
     </exercise>
  
-    <exercise>
+    <exercise permid="Prt" xml:id="homomorph-exercise-Un-aut-Zn">
       <statement>
-        <p>Demuestre que <m>\psi : U(n) \rightarrow \aut({\mathbb Z}_n)</m> es un isomorfismo, donde <m>\psi : k \mapsto \phi_k</m>. </p>
+        <p permid="OOQ">Demuestre que <m>\psi : U(n) \rightarrow \aut({\mathbb Z}_n)</m> es un isomorfismo, donde <m>\psi : k \mapsto \phi_k</m>. </p>
       </statement>
     </exercise>
  
   </exercises>
 
 
-  <section xml:id="homomorph-sage">
+  <section xml:id="homomorph-sage" component="sage-info" permid="Hda">
     <title>Sage</title>
   
-    <introduction>
-      <p>Sage es capaz de crear homomorfismos (y por ende, isomorfismos y automorfismos) entre grupos finitos de permutaciones.  Hay pocos comandos disponibles para manipular estas funciones, pero aún así podremos ilustrar muchas de las ideas de este capítulo.
+    <introduction permid="GHB">
+      <p permid="GAx">Sage es capaz de crear homomorfismos (y por ende, isomorfismos y automorfismos) entre grupos finitos de permutaciones.  Hay pocos comandos disponibles para manipular estas funciones, pero aún así podremos ilustrar muchas de las ideas de este capítulo.
     </p>
     </introduction>
   
-    <subsection>
+    <subsection permid="qeP">
       <title>Homomorfismos</title>
   
-      <p>La principal forma de crear un homomorfismo es especificando las imágenes para el conjunto de generadores del dominio.  Considere grupos cíclicos de órdenes <m>12</m> y <m>20</m>:<md>
+      <p permid="LUk">La principal forma de crear un homomorfismo es especificando las imágenes para el conjunto de generadores del dominio.  Considere grupos cíclicos de órdenes <m>12</m> y <m>20</m>:<md permid="oLo">
         <mrow>G &amp;= \{a^i\vert a^{12}=e\} &amp; H &amp;= \{x^i\vert x^{20}=e\}</mrow>
-      </md> y defina un homomorfismo simplemente especificando la imagen para un generador de <m>G</m>, y extendiendo la función al resto del grupo vía la propiedad de preservación de la operación de un homomorfismo. <md>
+      </md> y defina un homomorfismo simplemente especificando la imagen para un generador de <m>G</m>, y extendiendo la función al resto del grupo vía la propiedad de preservación de la operación de un homomorfismo. <md permid="USx">
         <mrow>\phi: G\rightarrow H, &amp;\quad\phi(a)=x^5</mrow>
         <mrow>\Rightarrow           &amp;\quad\phi(a^i) = \phi(a)^i = (x^5)^i = x ^{5i}</mrow>
       </md>  El constructor <c>PermutationGroupMorphism</c> requiere los dos grupos, luego una lista de imágenes para cada generador (¡en orden!), y entonces creará el homomorfismo.  Note que podemos usar el resultado como una función.  En el ejemplo abajo, primero verificamos que <c>C12</c> tiene un único generador (ninguna novedad), el cuál enviamos a un elemento particular de orden  <m>4</m> en el codominio.  Sage entonces construye el único homomorfismo consistente con este requisito.
     </p>
   
-      <sage>
+      <sage permid="uZM">
       <input>
       C12 = CyclicPermutationGroup(12)
       C20 = CyclicPermutationGroup(20)
@@ -754,7 +741,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="bgV">
       <input>
       x = C20.gen(0)
       y = x^5
@@ -765,7 +752,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="Hoe">
       <input>
       phi = PermutationGroupMorphism(C12, C20, [y])
       phi
@@ -774,12 +761,12 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       Permutation group morphism:
         From: Cyclic group of order 12 as a permutation group
         To:   Cyclic group of order 20 as a permutation group
-        Defn: [(1,2,3,4,5,6,7,8,9,10,11,12)] ->
+        Defn: [(1,2,3,4,5,6,7,8,9,10,11,12)] -&gt;
           [(1,6,11,16)(2,7,12,17)(3,8,13,18)(4,9,14,19)(5,10,15,20)]
       </output>
       </sage>
   
-      <sage>
+      <sage permid="nvn">
       <input>
       a = C12("(1,6,11,4,9,2,7,12,5,10,3,8)")
       phi(a)
@@ -789,7 +776,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="TCw">
       <input>
       b = C12("(1,3,5,7,9,11)(2,4,6,8,10,12)")
       phi(b)
@@ -799,7 +786,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="zJF">
       <input>
       c = C12("(1,9,5)(2,10,6)(3,11,7)(4,12,8)")
       phi(c)
@@ -809,68 +796,66 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <p>Note que el elemento <c>c</c> debe por lo tanto estar en el núcleo de <c>phi</c>.
+      <p permid="sbt">Note que el elemento <c>c</c> debe por lo tanto estar en el núcleo de <c>phi</c>.
     </p>
   
-      <p>Podemos calcular el subgrupo del dominio que es el núcleo, y en este caso un grupo cíclico de orden  <m>3</m> al interior del grupo cíclico de orden  <m>12</m>.  Podemos calcular la imagen de  <em>cualquier</em> subgrupo, pero acá construiremos la imagen homomorfa completa entregándole el dominio completo al método <c>.image()</c>.  La imagen es un subgrupo cíclico de orden  <m>4</m> dentro del grupo cíclico de orden  <m>20</m>.  Además verificaremos el Primer Teorema de Isomorfía.
+      <p permid="YiC">Podemos calcular el subgrupo del dominio que es el núcleo, y en este caso un grupo cíclico de orden  <m>3</m> al interior del grupo cíclico de orden  <m>12</m>.  Podemos calcular la imagen de  <em>cualquier</em> subgrupo, pero acá construiremos la imagen homomorfa completa entregándole el dominio completo al método <c>.image()</c>.  La imagen es un subgrupo cíclico de orden  <m>4</m> dentro del grupo cíclico de orden  <m>20</m>.  Además verificaremos el Primer Teorema de Isomorfía.
     </p>
   
-      <sage>
+    <sage permid="fQO">
       <input>
-      K = phi.kernel(); K
-      </input>
+K = phi.kernel(); K
+</input>
       <output>
-      Subgroup of (Cyclic group of order 12 as a permutation group)
-      generated by [(1,5,9)(2,6,10)(3,7,11)(4,8,12)]
-      </output>
-      </sage>
-  
-      <sage>
+Subgroup generated by [(1,5,9)(2,6,10)(3,7,11)(4,8,12)]
+of (Cyclic group of order 12 as a permutation group)
+</output>
+  </sage>
+  <sage permid="LXX">
       <input>
-      Im = phi.image(C12); Im
-      </input>
+Im = phi.image(C12); Im
+</input>
       <output>
-      Subgroup of (Cyclic group of order 20 as a permutation group)
-      generated by [(1,6,11,16)(2,7,12,17)(3,8,13,18)(4,9,14,19)(5,10,15,20)]
-      </output>
-      </sage>
-  
-      <sage>
+Subgroup generated by [(1,6,11,16)(2,7,12,17)(3,8,13,18)(4,9,14,19)(5,10,15,20)]
+of (Cyclic group of order 20 as a permutation group)
+</output>
+  </sage>
+  <sage permid="sfg">
       <input>
-      Im.is_isomorphic(C12.quotient(K))
-      </input>
+Im.is_isomorphic(C12.quotient(K))
+</input>
       <output>
-      True
-      </output>
-      </sage>
+True
+</output>
+  </sage>
   
-      <p>Ahora un ejemplo ligeramente más complicado.  El grupo dihedral <m>D_{20}</m> es el grupo de simetrías de un polígono regular de 20 lados.  Dentro de este grupo hay un subgrupo que es isomorfo al grupo de simetrías de un pentágono regular.  ¿Es una sorpresa o es obvio?  Acá hay una forma de precisar la afirmación de que <q><m>D_{20}</m> contiene una copia de <m>D_{5}</m>.</q></p>
+      <p permid="EpL">Ahora un ejemplo ligeramente más complicado.  El grupo dihedral <m>D_{20}</m> es el grupo de simetrías de un polígono regular de <m>20</m> lados.  Dentro de este grupo hay un subgrupo que es isomorfo al grupo de simetrías de un pentágono regular (<m>5</m> lados).  ¿Es una sorpresa o es obvio?  Acá hay una forma de precisar la afirmación de que <q><m>D_{20}</m> contiene una copia de <m>D_{5}</m>.</q></p>
   
-      <p>Construimos el dominio y encontramos sus generadores, así sabemos cuántas imágenes proveer en la definición del homomorfismo.  Después construimos el codominio, en el que construiremos imágenes.  Nuestra elección acá es enviar una reflexión en una reflexión, y una rotación en una rotación.  Pero las rotaciones deben ambas tener orden <m>5</m>, y ambas ser rotaciones en <m>72</m> grados.
+      <p permid="kwU">Construimos el dominio y encontramos sus generadores, así sabemos cuántas imágenes proveer en la definición del homomorfismo.  Después construimos el codominio, en el que construiremos imágenes.  Nuestra elección acá es enviar una reflexión en una reflexión, y una rotación en una rotación.  Pero las rotaciones deben ambas tener orden <m>5</m>, y ambas ser rotaciones en <m>72</m> grados.
     </p>
   
-      <sage>
+      <sage permid="Ymp">
       <input>
       G = DihedralGroup(5)
       H = DihedralGroup(20)
       G.gens()
       </input>
       <output>
-      [(1,2,3,4,5), (1,5)(2,4)]
+      ((1,2,3,4,5), (1,5)(2,4))
       </output>
       </sage>
   
-      <sage>
+      <sage permid="Ety">
       <input>
       H.gens()
       </input>
       <output>
-      [(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20),
-       (1,20)(2,19)(3,18)(4,17)(5,16)(6,15)(7,14)(8,13)(9,12)(10,11)]
+      ((1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20),
+       (1,20)(2,19)(3,18)(4,17)(5,16)(6,15)(7,14)(8,13)(9,12)(10,11))
       </output>
       </sage>
   
-      <sage>
+      <sage permid="kAH">
       <input>
       x = H.gen(0)^4
       y = H.gen(1)
@@ -878,27 +863,24 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       rho.kernel()
       </input>
       <output>
-      Subgroup of (Dihedral group of order 10 as a permutation group)
-      generated by [()]
+        Subgroup generated by [()] of (Dihedral group of order 10 as a permutation group)
       </output>
       </sage>
   
-      <p>Como el núcleo es trivial, <c>rho</c> es una función 1-1 (ver el <xref ref="exercise-trivial-kernel" />).  Pero más importante, por el Primer Teorema de Isomorfía, <c>G</c> es isomorfo a la imagen del homomorfismo.  Calcularemos la imagen para verificar la afirmación.
+      <p permid="QEd">Como el núcleo es trivial, <c>rho</c> es una función 1-1 (ver el <xref ref="homomorph-exercise-trivial-kernel"/>).  Pero más importante, por el Primer Teorema de Isomorfía, <c>G</c> es isomorfo a la imagen del homomorfismo.  Calcularemos la imagen para verificar la afirmación.
     </p>
   
-      <sage>
+      <sage permid="QHQ">
       <input>
       Im = rho.image(G); Im
       </input>
       <output>
-      Subgroup of (Dihedral group of order 40 as a permutation group)
-      generated by
-      [(1,5,9,13,17)(2,6,10,14,18)(3,7,11,15,19)(4,8,12,16,20),
-      (1,20)(2,19)(3,18)(4,17)(5,16)(6,15)(7,14)(8,13)(9,12)(10,11)]
+        Subgroup generated by [(1,5,9,13,17)(2,6,10,14,18)(3,7,11,15,19)(4,8,12,16,20), (1,20)(2,19)(3,18)(4,17)(5,16)(6,15)(7,14)(8,13)(9,12)(10,11)] 
+        of (Dihedral group of order 40 as a permutation group)
       </output>
       </sage>
   
-      <sage>
+      <sage permid="wOZ">
       <input>
       Im.is_subgroup(H)
       </input>
@@ -907,7 +889,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="cWi">
       <input>
       Im.is_isomorphic(G)
       </input>
@@ -916,10 +898,10 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <p>Simplemente dando una lista de imágenes para los generadores del dominio no es una garantía de que la función pueda extenderse a un homomorfismo.  Para empezar, el orden de cada imagen debe dividir al orden de la preimagen correspondiente.  (¿Puede demostrar esto?)  Similarmente, si el dominio es abeliano, entonces la imagen debe también ser abeliana, así en este caso las imágenes no debiesen generar un subgrupo no abeliano.  Por ejemplo,  no hay homomorfismos de un grupo cíclico de orden  <m>7</m> a un grupo cíclico de orden <m>4</m> (salvo la función trivial que lleva a todos los elementos a la identidad).  Para ver esto, considere los posibles órdenes del núcleo, y de las dos posibilidades, vea que una es imposible y que la otra se realiza con el homomorfismo trivial.  Desafortunadamente, Sage actúa como si no hubiera nada malo en crear un homomorfismo entre estos dos grupos, pero lo que Sage crea es inútil y produce errores si trata de usarlo.
+      <p permid="wLm">Simplemente dando una lista de imágenes para los generadores del dominio no es una garantía de que la función pueda extenderse a un homomorfismo.  Para empezar, el orden de cada imagen debe dividir al orden de la preimagen correspondiente.  (¿Puede demostrar esto?)  Similarmente, si el dominio es abeliano, entonces la imagen debe también ser abeliana, así en este caso las imágenes no debiesen generar un subgrupo no abeliano.  Por ejemplo,  no hay homomorfismos de un grupo cíclico de orden  <m>7</m> a un grupo cíclico de orden <m>4</m> (salvo la función trivial que lleva a todos los elementos a la identidad).  Para ver esto, considere los posibles órdenes del núcleo, y de las dos posibilidades, vea que una es imposible y que la otra se realiza con el homomorfismo trivial.  Desafortunadamente, Sage actúa como si no hubiera nada malo en crear un homomorfismo entre estos dos grupos, pero lo que Sage crea es inútil y produce errores si trata de usarlo.
     </p>
   
-      <sage>
+      <sage permid="Jdr">
       <input>
       G = CyclicPermutationGroup(7)
       H = CyclicPermutationGroup(4)
@@ -930,11 +912,11 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       Permutation group morphism:
         From: Cyclic group of order 7 as a permutation group
         To:   Cyclic group of order 4 as a permutation group
-        Defn: [(1,2,3,4,5,6,7)] -> [(1,2,3,4)]
+        Defn: [(1,2,3,4,5,6,7)] -&gt; [(1,2,3,4)]
       </output>
       </sage>
   
-      <sage>
+      <sage permid="pkA">
       <input>
       tau.kernel()
       </input>
@@ -946,10 +928,10 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <p>En lugar de crear homomorfismos por nosotros mismos, en ciertas situaciones Sage sabe de la existencia de homomorfismos naturales y los creará para nosotros.  Un caso de estos es la construcción del producto directo.  Dado un grupo  <c>G</c>, el método  <c>.direct_product(H)</c> creará el producto directo <m>G\times H</m>.  (Este no es el mismo comando que la función  <c>direct_product_permgroups()</c> de antes.)  Este comando no solo crea el producto directo, sino que además construye <em>cuatro</em> homomorfismos, uno con dominio <m>G</m>, uno con dominio <m>H</m> y dos con dominio <m>G\times H</m>.  Así la salida consiste de cinco objetos, el primero de los cuales es el grupo en sí, y los restantes son homomorfismos.  Mostraremos un ejemplo acá y dejaremos una investigación más exhaustiva para los ejercicios.
+      <p permid="cSv">En lugar de crear homomorfismos por nosotros mismos, en ciertas situaciones Sage sabe de la existencia de homomorfismos naturales y los creará para nosotros.  Un caso de estos es la construcción del producto directo.  Dado un grupo  <c>G</c>, el método  <c>.direct_product(H)</c> creará el producto directo <m>G\times H</m>.  (Este no es el mismo comando que la función  <c>direct_product_permgroups()</c> de antes.)  Este comando no solo crea el producto directo, sino que además construye <em>cuatro</em> homomorfismos, uno con dominio <m>G</m>, uno con dominio <m>H</m> y dos con dominio <m>G\times H</m>.  Así la salida consiste de cinco objetos, el primero de los cuales es el grupo en sí, y los restantes son homomorfismos.  Mostraremos un ejemplo acá y dejaremos una investigación más exhaustiva para los ejercicios.
     </p>
   
-      <sage>
+      <sage permid="VrJ">
       <input>
       G = CyclicPermutationGroup(3)
       H = DihedralGroup(4)
@@ -961,7 +943,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="ByS">
       <input>
       results[1]
       </input>
@@ -974,7 +956,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="hGb">
       <input>
       results[2]
       </input>
@@ -987,7 +969,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="NNk">
       <input>
       results[3]
       </input>
@@ -1001,7 +983,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       </sage>
   
   
-      <sage>
+      <sage permid="tUt">
       <input>
       results[4]
       </input>
@@ -1017,26 +999,26 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
     </subsection>
   
   </section>
-  <exercises xml:id="homomorph-sage-exercises">
+  <exercises xml:id="homomorph-sage-exercises" component="sage-exercises" permid="iAq">
     <title>Ejercicios Sage</title>
   
-    <exercise number="1">
+    <exercise number="1" permid="vyC" xml:id="homomorph-sage-exercise-automorphism">
       <statement>
-        <p>Un automorfismo es un isomorfismo de un grupo en sí mismo.  La función identidad (<m>x\mapsto x</m>) siempre es un isomorfismo, que consideramos trivial.  Use Sage para construir un automorfismo no trivial del grupo cíclico de orden <m>12</m>.  Verfique que la función es biyectiva calculando su imagen y su núcleo y realizando pruebas en estos subgrupos.  Ahora construya todos los posibles automorfismos del grupos cíclico de orden  <m>12</m> sin repeticiones.
+        <p permid="uVZ">Un automorfismo es un isomorfismo de un grupo en sí mismo.  La función identidad (<m>x\mapsto x</m>) siempre es un isomorfismo, que consideramos trivial.  Use Sage para construir un automorfismo no trivial del grupo cíclico de orden <m>12</m>.  Verfique que la función es biyectiva calculando su imagen y su núcleo y realizando pruebas en estos subgrupos.  Ahora construya todos los posibles automorfismos del grupos cíclico de orden  <m>12</m> sin repeticiones.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="2">
+    <exercise number="2" permid="bFL" xml:id="homomorph-sage-exercise-GxH">
       <statement>
-        <p>Los cuatro homomorfismos creados por la construcción del producto directo son cada uno un ejemplo de una construcción más general de homomorfismos que involucran los grupos  <m>G</m>, <m>H</m> y <m>G\times H</m>.  Usando los mismos grupos del ejemplo en la subsección anterior, vea si puede descubrir y describir estas construcciones  con definiciones exactas de los cuatro homomorfismos en general.
+        <p permid="bdi">Los cuatro homomorfismos creados por la construcción del producto directo son cada uno un ejemplo de una construcción más general de homomorfismos que involucran los grupos  <m>G</m>, <m>H</m> y <m>G\times H</m>.  Usando los mismos grupos del ejemplo en la subsección anterior, vea si puede descubrir y describir estas construcciones  con definiciones exactas de los cuatro homomorfismos en general.
     </p>
   
-        <p>Las herramientas para investigar homomorfismos de grupos en Sage son limitadas, se puede tomar cada generador del dominio y ver cuál es su imagen.  A continuación  un ejemplo de este tipo de cálculo que puede realizar repetidamente.  Investigaremos el segundo homomorfismo.  El dominio es el grupo dihedral, y calcularemos la imagen del primer generador.
+        <p permid="Hkr">Las herramientas para investigar homomorfismos de grupos en Sage son limitadas, se puede tomar cada generador del dominio y ver cuál es su imagen.  A continuación  un ejemplo de este tipo de cálculo que puede realizar repetidamente.  Investigaremos el segundo homomorfismo.  El dominio es el grupo dihedral, y calcularemos la imagen del primer generador.
     </p>
   
-        <sage>
+        <sage permid="abC">
         <input>
         G = CyclicPermutationGroup(3)
         H = DihedralGroup(4)
@@ -1045,11 +1027,11 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
         H.gens()
         </input>
         <output>
-        [(1,2,3,4), (1,4)(2,3)]
+          ((1,2,3,4), (1,4)(2,3))
         </output>
         </sage>
   
-        <sage>
+        <sage permid="GiL">
         <input>
         a = H.gen(0); a
         </input>
@@ -1058,7 +1040,7 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
         </output>
         </sage>
   
-        <sage>
+        <sage permid="mpU">
         <input>
         phi(a)
         </input>
@@ -1070,40 +1052,40 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
       
     </exercise>
   
-    <exercise number="3">
+    <exercise number="3" permid="HMU" xml:id="homomorph-sage-exercise-S7-S12">
       <statement>
-        <p>Considere dos grupos de permutaciones.  El primero es el subgrupo de <m>S_7</m> generado por <m>(1, 2, 3)</m> y <m>(4, 5, 6, 7)</m>.  El segundo es el subgrupo de  <m>S_{12}</m> generado por <m>(1, 2, 3)(4, 5, 6)(7, 8, 9)(10, 11, 12)</m> y <m>(1, 10, 7, 4)(2, 11, 8, 5)(3, 12, 9, 6)</m>.  Construya estos dos grupos y use el comando Sage apropiado para ver que son isomorfos.  Después construya un homomorfismo entre estos dos grupos que sea un isomorfismo e incluya suficientes detalles para verificar que la función es realmente un isomorfismo.
+        <p permid="nrA">Considere dos grupos de permutaciones.  El primero es el subgrupo de <m>S_7</m> generado por <m>(1, 2, 3)</m> y <m>(4, 5, 6, 7)</m>.  El segundo es el subgrupo de  <m>S_{12}</m> generado por <m>(1, 2, 3)(4, 5, 6)(7, 8, 9)(10, 11, 12)</m> y <m>(1, 10, 7, 4)(2, 11, 8, 5)(3, 12, 9, 6)</m>.  Construya estos dos grupos y use el comando Sage apropiado para ver que son isomorfos.  Después construya un homomorfismo entre estos dos grupos que sea un isomorfismo e incluya suficientes detalles para verificar que la función es realmente un isomorfismo.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="4">
+    <exercise number="4" permid="nUd" xml:id="homomorph-sage-exercise-Sn-Z2">
       <statement>
   
-        <p>El segundo párrafo de este capítulo describe informalmente un homomorfismo de  <m>S_n</m> a <m>{\mathbb Z}_2</m>, donde las permutaciones pares se envían todas en uno de los elementos y las impares en el otro elemento.  Reemplace <m>S_n</m> por <m>S_6</m> y reemplace <m>{\mathbb Z}_2</m> por la versión permutacional del grupo cíclico de orden  <m>2</m>, y construya un homomorfismo no trivial entre estos dos grupos.  Evalúe su homomorfismo en suficientes permutaciones pares e impares para convencerse de que está correcto.  Después construya el núcleo y verifique que es el grupo que espera que sea.
+        <p permid="TyJ">El segundo párrafo de este capítulo describe informalmente un homomorfismo de  <m>S_n</m> a <m>{\mathbb Z}_2</m>, donde las permutaciones pares se envían todas en uno de los elementos y las impares en el otro elemento.  Reemplace <m>S_n</m> por <m>S_6</m> y reemplace <m>{\mathbb Z}_2</m> por la versión permutacional del grupo cíclico de orden  <m>2</m>, y construya un homomorfismo no trivial entre estos dos grupos.  Evalúe su homomorfismo en suficientes permutaciones pares e impares para convencerse de que está correcto.  Después construya el núcleo y verifique que es el grupo que espera que sea.
     </p>
   
-        <p>Hints:  Primero, decida que elementos del grupo de orden  <m>2</m> estará asociado con las permutaciones pares y cuál con las impares.  Examine los generadores de  <m>S_6</m> para ayudarle a decidir como definir el homomorfismo.
+        <p permid="zFS">Hints:  Primero, decida que elementos del grupo de orden  <m>2</m> estará asociado con las permutaciones pares y cuál con las impares.  Examine los generadores de  <m>S_6</m> para ayudarle a decidir como definir el homomorfismo.
     </p>
       </statement>
   
       
     </exercise>
   
-    <exercise number="5">
+    <exercise number="5" permid="Ubm" xml:id="homomorph-sage-exercise-D20">
       <statement>
   
-        <p>El grupo dihedral  <m>D_{20}</m> tiene varios subgrupos normales, como se ve más abajo.  Cada uno de estos es el núcleo de un homomorfismo cuyo dominio es  <m>D_{20}</m>.  Para cada subgrupo normal de  <m>D_{20}</m> construya un homomorfismo de <m>D_{20}</m> a <m>D_{20}</m> que tenga el subgrupo normal como su núcleo.   Incluya verificaciones en su trabajo de que está obteniendo los núcleos deseados. Hay un patrón en muchos de estos, pero los tres de orden  <m>20</m> serán un desafío.
+        <p permid="fNb">El grupo dihedral  <m>D_{20}</m> tiene varios subgrupos normales, como se ve más abajo.  Cada uno de estos es el núcleo de un homomorfismo cuyo dominio es  <m>D_{20}</m>.  Para cada subgrupo normal de  <m>D_{20}</m> construya un homomorfismo de <m>D_{20}</m> a <m>D_{20}</m> que tenga el subgrupo normal como su núcleo.   Incluya verificaciones en su trabajo de que está obteniendo los núcleos deseados. Hay un patrón en muchos de estos, pero los tres de orden  <m>20</m> serán un desafío.
     </p>
   
-        <sage>
+        <sage permid="Sxd">
         <input>
         G = DihedralGroup(20)
         [H.order() for H in G.normal_subgroups()]
         </input>
         <output>
-        [1, 2, 4, 5, 10, 20, 20, 20, 40]
+          [40, 20, 20, 20, 10, 4, 2, 5, 1]
         </output>
         </sage>
   
@@ -1118,7 +1100,3 @@ Demuestre que <m>\phi</m> es un homomorfismo de grupos.
   </exercises>
 
 </chapter>
- 
- 
- 
- 

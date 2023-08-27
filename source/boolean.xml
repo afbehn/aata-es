@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!-- This file is part of the book                    -->
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
@@ -12,49 +12,49 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="boolean" permid="dAp">
   <title>Reticulados y Álgebras Booleanas</title>
 
-  <introduction>
-    <p>Los axiomas de un anillo dan estructura a las operaciones de adición y multiplicación en un conjunto. Pero, podemos construir estructuras algebraicas, conocidas como reticulados y álgebras Booleanas, que generalizan otro tipo de operaciones. Por ejemplo, las operaciones importantes en conjuntos son inclusión, unión e intersección. Los reticulados son generalizaciones de relaciones de orden en espacios algebraicos, tal como la inclusión en teoría de conjuntos y la desigualdad en los sistemas de números familiares <m>{\mathbb N}</m>, <m>{\mathbb Z}</m>, <m>{\mathbb Q}</m>, y <m>{\mathbb R}</m>.  Las álgebras Booleanas generalizan las opraciones de intersección y unión. Los reticulados y las álgebras Booleanas han encontrado aplicaciones en lógica, teoría de circuitos, y probabilidades.
+  <introduction permid="bZx">
+    <p permid="dWb">Los axiomas de un anillo dan estructura a las operaciones de adición y multiplicación en un conjunto. Pero, podemos construir estructuras algebraicas, conocidas como reticulados y álgebras Booleanas, que generalizan otro tipo de operaciones. Por ejemplo, las operaciones importantes en conjuntos son inclusión, unión e intersección. Los reticulados son generalizaciones de relaciones de orden en espacios algebraicos, tal como la inclusión en teoría de conjuntos y la desigualdad en los sistemas de números familiares <m>{\mathbb N}</m>, <m>{\mathbb Z}</m>, <m>{\mathbb Q}</m>, y <m>{\mathbb R}</m>.  Las álgebras Booleanas generalizan las opraciones de intersección y unión. Los reticulados y las álgebras Booleanas han encontrado aplicaciones en lógica, teoría de circuitos, y probabilidades.
         </p>
   </introduction>
 
-  <section xml:id="section-boolean-lattices">
+  <section xml:id="boolean-section-lattices" permid="Tbk">
     <title>Reticulados</title>
 
-    <subsection xml:id="boolean-subsection-poset">
+    <subsection xml:id="boolean-subsection-poset" permid="JHy">
       <title>Conjuntos Parcialmente Ordenados</title>
 
-      <p>Comenzamos nuestro estudio de los reticulados y las álgebras Booleanas generalizando la idea de desigualdad. Recordemos que una <term>relación</term> en un conjunto <m>X</m> es un subconjunto de <m>X \times X</m>.  Una relación <m>P</m> en <m>X</m> se denomina <term>orden parcial</term><idx><h>Orden parcial</h></idx> de <m>X</m> si satisface los siguientes axiomas.
-        <ol>
+      <p permid="sJA">Comenzamos nuestro estudio de los reticulados y las álgebras Booleanas generalizando la idea de desigualdad. Recordemos que una <term>relación</term> en un conjunto <m>X</m> es un subconjunto de <m>X \times X</m>.  Una relación <m>P</m> en <m>X</m> se denomina <term>orden parcial</term><idx><h>Orden parcial</h></idx> de <m>X</m> si satisface los siguientes axiomas.
+        <ol permid="sCj">
 
-          <li><p>La relación es <term>refleja</term>: <m>(a, a) \in P</m> para todo <m>a \in X</m>.
+          <li permid="YJs"><p permid="biz">La relación es <term>refleja</term>: <m>(a, a) \in P</m> para todo <m>a \in X</m>.
         </p></li>
 
-          <li><p>La relación es <term>antisimétrica</term>: si <m>(a,b) \in P</m> y <m>(b,a) \in P</m>, entonces <m>a = b</m>.
+          <li permid="EQB"><p permid="HpI">La relación es <term>antisimétrica</term>: si <m>(a,b) \in P</m> y <m>(b,a) \in P</m>, entonces <m>a = b</m>.
         </p></li>
 
-          <li><p>La relación es <term>transitiva</term>: si <m>(a, b) \in P</m> y <m>(b, c) \in P</m>, entonces <m>(a, c) \in P</m>.
+          <li permid="kXK"><p permid="nwR">La relación es <term>transitiva</term>: si <m>(a, b) \in P</m> y <m>(b, c) \in P</m>, entonces <m>(a, c) \in P</m>.
         </p></li>
 
         </ol>
       Usualmente escribiremos <m>a \preceq b</m> si <m>(a, b) \in P</m> salvo que algún símbolo esté naturalmente asociado a un orden parcial en particular, tal como <m>a \leq b</m> para los enteros <m>a</m> y <m>b</m>, o <m>A \subset B</m> para conjuntos <m>A</m> y <m>B</m>. Un conjunto <m>X</m> junto a un orden parcial <m>\preceq</m> se denomina <idx><h>Conjunto parcialmente ordenado</h></idx> <term>conjunto parcialmente ordenado</term>, o <idx><h>Poset</h><h>definición de</h></idx><term>poset</term>. 
       <notation><usage><m>a \preceq b</m></usage><description><m>a</m> es menor a <m>b</m></description></notation></p>
 
-      <example xml:id="example-boolean-z-less-equal">
-        <p>El conjunto de los enteros (o racionales  o reales) es un conjunto parcialmente ordenado donde <m>a \leq  b</m> tiene el significado usual para dos enteros <m>a</m> y <m>b</m> en <m>{\mathbb Z}</m>.
+      <example xml:id="boolean-example-z-less-equal" permid="QgE">
+        <p permid="UCp">El conjunto de los enteros (o racionales  o reales) es un conjunto parcialmente ordenado donde <m>a \leq  b</m> tiene el significado usual para dos enteros <m>a</m> y <m>b</m> en <m>{\mathbb Z}</m>.
         </p>
       </example>
 
-      <example xml:id="example-boolean-power-set-subset">
-        <p>Sea <m>X</m> un conjunto cualquiera.  Definiremos el <term>conjunto potencia</term><idx><h>Conjunto potencia</h></idx> de <m>X</m> como el conjunto de todos los subconjuntos de <m>X</m>. Denotaremos el conjunto potencia de <m>X</m> como <m>{\mathcal P}(X)</m>. Por ejemplo, sea <m>X = \{ a, b, c \}</m>.  Entonces <m>{\mathcal P}(X)</m> es el conjunto de todos los subconjuntos del conjunto <m>\{ a, b, c \}</m>: 
-          <md>
+      <example xml:id="boolean-example-power-set-subset" permid="wnN">
+        <p permid="AJy">Sea <m>X</m> un conjunto cualquiera.  Definiremos el <term>conjunto potencia</term><idx><h>Conjunto potencia</h></idx> de <m>X</m> como el conjunto de todos los subconjuntos de <m>X</m>. Denotaremos el conjunto potencia de <m>X</m> como <m>{\mathcal P}(X)</m>. Por ejemplo, sea <m>X = \{ a, b, c \}</m>.  Entonces <m>{\mathcal P}(X)</m> es el conjunto de todos los subconjuntos del conjunto <m>\{ a, b, c \}</m>: 
+          <md permid="qyO">
             <mrow>&amp; \emptyset &amp; &amp; \{ a \} &amp; &amp; \{ b \} &amp; &amp; \{ c \} &amp;</mrow>
             <mrow>&amp; \{ a, b \} &amp; &amp; \{ a, c\} &amp; &amp;\{ b, c\} &amp; &amp; \{ a, b, c \}. &amp;</mrow>
           </md>
-        En el conjunto potencia de cualquier conjunto <m>X</m>, la inclusión conjuntista, <m>\subset</m>, es un orden parcial.  Podemos representar el orden en <m>\{ a, b, c \}</m> esquemáticamente con un diagrama como el de la <xref ref="figure-partial-order" />.
+        En el conjunto potencia de cualquier conjunto <m>X</m>, la inclusión conjuntista, <m>\subset</m>, es un orden parcial.  Podemos representar el orden en <m>\{ a, b, c \}</m> esquemáticamente con un diagrama como el de la <xref ref="boolean-figure-partial-order"/>.
         </p>
       </example>
 
-      <figure xml:id="figure-partial-order">
+      <figure xml:id="boolean-figure-partial-order" permid="JHL">
         <caption>Orden parcial en <m>\mathcal P( \{ a, b, c \})</m></caption>
 
         <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/17/2010 -->
@@ -66,22 +66,22 @@
         </image>
       </figure>
 
-      <example xml:id="example-boolean-subgroup-poset">
-        <p>Sea <m>G</m> un grupo. El conjunto de los subgrupos de <m>G</m> es un conjunto parcialmente ordenado, donde el orden parcial es la inclusión conjuntista.
+      <example xml:id="boolean-example-subgroup-poset" permid="cuW">
+        <p permid="gQH">Sea <m>G</m> un grupo. El conjunto de los subgrupos de <m>G</m> es un conjunto parcialmente ordenado, donde el orden parcial es la inclusión conjuntista.
         </p>
       </example>
 
-      <example xml:id="example-boolean-p-order-not-unique">
-        <p>Puede haber más de un orden parcial en un conjunto dado.  Podemos formar un orden parcial en <m>{\mathbb N}</m> por <m>a \preceq b</m> si <m>a \mid b</m>.  La relación es ciertamente refleja pues <m>a \mid a</m> para todo <m>a \in {\mathbb N}</m>.  Si <m>m \mid n</m> y <m>n \mid m</m>, entonces <m>m = n</m>; luego, la relación también es antisimétrica.  La relación es transitiva, pues si <m>m \mid n</m> y <m>n \mid p</m>, entonces <m>m \mid p</m>.
+      <example xml:id="boolean-example-p-order-not-unique" permid="ICf">
+        <p permid="MXQ">Puede haber más de un orden parcial en un conjunto dado.  Podemos formar un orden parcial en <m>{\mathbb N}</m> por <m>a \preceq b</m> si <m>a \mid b</m>.  La relación es ciertamente refleja pues <m>a \mid a</m> para todo <m>a \in {\mathbb N}</m>.  Si <m>m \mid n</m> y <m>n \mid m</m>, entonces <m>m = n</m>; luego, la relación también es antisimétrica.  La relación es transitiva, pues si <m>m \mid n</m> y <m>n \mid p</m>, entonces <m>m \mid p</m>.
         </p>
       </example>
 
-      <example xml:id="example-boolean-poset-divisors-24">
-        <p>Sea <m>X = \{ 1, 2, 3, 4, 6, 8, 12, 24 \}</m> el conjunto de los divisores de <m>24</m> con el orden parcial definido en el <xref ref="example-boolean-p-order-not-unique" />. La <xref ref="figure-poset-divisors-24" /> muestra el orden parcial en <m>X</m>.
+      <example xml:id="boolean-example-poset-divisors-24" permid="oJo">
+        <p permid="teZ">Sea <m>X = \{ 1, 2, 3, 4, 6, 8, 12, 24 \}</m> el conjunto de los divisores de <m>24</m> con el orden parcial definido en el <xref ref="boolean-example-p-order-not-unique"/>. La <xref ref="boolean-figure-poset-divisors-24"/> muestra el orden parcial en <m>X</m>.
         </p>
       </example>
 
-      <figure xml:id="figure-poset-divisors-24">
+      <figure xml:id="boolean-figure-poset-divisors-24" permid="pOU">
         <caption>Un orden parcial en los divisores de <m>24</m></caption>
 
         <!-- Replaced figure with tikz figure - TWJ 8/17/2010 -->
@@ -94,109 +94,109 @@
 
       </figure>
 
-      <p>Sea <m>Y</m> un subconjunto de un conjunto parcialmente ordenado <m>X</m>. Un elemento <m>u</m> en <m>X</m> es una <term>cota superior</term><idx><h>Cota superior</h></idx> de <m>Y</m> si <m>a \preceq u</m> para cada elemento <m>a \in Y</m>. Si <m>u</m> es una cota superior de <m>Y</m> tal que <m>u \preceq v</m> para cualquier cota superior <m>v</m> de <m>Y</m>, entonces <m>u</m> es la <term>menor de las cotas superiores</term><idx><h>Menor cota superior</h></idx> o <term>supremo</term><idx><h>Supremo</h></idx> de <m>Y</m>. Un elemento <m>l</m> en <m>X</m> se dice <term>cota inferior</term><idx><h>Cota inferior</h></idx> de <m>Y</m> si <m>l \preceq a</m> para todo <m>a \in Y</m>. Si <m>l</m> es una cota inferior de <m>Y</m> tal que <m>k \preceq l</m> para toda cota inferior <m>k</m> de <m>Y</m>, entonces <m>l</m> es la <term>mayor cota inferior</term><idx><h>Mayor cota inferior</h></idx> o <term>ínfimo</term><idx><h>Ínfimo</h></idx> de <m>Y</m>.
+      <p permid="YQJ">Sea <m>Y</m> un subconjunto de un conjunto parcialmente ordenado <m>X</m>. Un elemento <m>u</m> en <m>X</m> es una <term>cota superior</term><idx><h>Cota superior</h></idx> de <m>Y</m> si <m>a \preceq u</m> para cada elemento <m>a \in Y</m>. Si <m>u</m> es una cota superior de <m>Y</m> tal que <m>u \preceq v</m> para cualquier cota superior <m>v</m> de <m>Y</m>, entonces <m>u</m> es la <term>menor de las cotas superiores</term><idx><h>Menor cota superior</h></idx> o <term>supremo</term><idx><h>Supremo</h></idx> de <m>Y</m>. Un elemento <m>l</m> en <m>X</m> se dice <term>cota inferior</term><idx><h>Cota inferior</h></idx> de <m>Y</m> si <m>l \preceq a</m> para todo <m>a \in Y</m>. Si <m>l</m> es una cota inferior de <m>Y</m> tal que <m>k \preceq l</m> para toda cota inferior <m>k</m> de <m>Y</m>, entonces <m>l</m> es la <term>mayor cota inferior</term><idx><h>Mayor cota inferior</h></idx> o <term>ínfimo</term><idx><h>Ínfimo</h></idx> de <m>Y</m>.
         </p>
 
-      <example xml:id="example-boolean-poset-gcd">
-        <p>Sea <m>Y = \{  2, 3, 4, 6 \}</m> contenido en el conjunto <m>X</m> del <xref ref="example-boolean-poset-divisors-24" />.  Entonces <m>Y</m> tiene cotas superiores <m>12</m> y <m>24</m>, con <m>12</m> una menor cota superior.  La única cota inferior es <m>1</m>; luego, debe ser una mayor cota inferior.
+      <example xml:id="boolean-example-poset-gcd" permid="UQx">
+        <p permid="Zmi">Sea <m>Y = \{  2, 3, 4, 6 \}</m> contenido en el conjunto <m>X</m> del <xref ref="boolean-example-poset-divisors-24"/>.  Entonces <m>Y</m> tiene cotas superiores <m>12</m> y <m>24</m>, con <m>12</m> una menor cota superior.  La única cota inferior es <m>1</m>; luego, debe ser una mayor cota inferior.
         </p>
       </example>
 
-      <p>Resulta que, la mayor cota inferior y la menor cota superior resultan ser únicas cuando existen.
+      <p permid="EXS">Resulta que, la mayor cota inferior y la menor cota superior resultan ser únicas cuando existen.
         </p>
 
-      <theorem>
+      <theorem permid="rDU">
         <statement>
-          <p>Sea <m>Y</m> un subconjunto no vacío de un conjunto parcialmente ordenado <m>X</m>. Si <m>Y</m> tiene una menor cota superior, entonces <m>Y</m> tiene una única menor cota superior. Si <m>Y</m> tiene una mayor cota inferior, entonces <m>Y</m> tiene una única mayor cota inferior.
+          <p permid="GyK">Sea <m>Y</m> un subconjunto no vacío de un conjunto parcialmente ordenado <m>X</m>. Si <m>Y</m> tiene una menor cota superior, entonces <m>Y</m> tiene una única menor cota superior. Si <m>Y</m> tiene una mayor cota inferior, entonces <m>Y</m> tiene una única mayor cota inferior.
         </p>
         </statement>
-        <proof>
-          <p>Sean <m>u_1</m> y <m>u_2</m> menores cotas superiores para <m>Y</m>. Por la definición de menor cota superior, <m>u_1 \preceq u</m> para toda cota superior <m>u</m> de <m>Y</m>. En particular, <m>u_1 \preceq u_2</m>. Similarmente, <m>u_2 \preceq u_1</m>. Por lo tanto, <m>u_1 = u_2</m> por antisimetría.  Un argumento similar muestra que la mayor cota inferior es única.
+        <proof permid="ACh">
+          <p permid="PiC">Sean <m>u_1</m> y <m>u_2</m> menores cotas superiores para <m>Y</m>. Por la definición de menor cota superior, <m>u_1 \preceq u</m> para toda cota superior <m>u</m> de <m>Y</m>. En particular, <m>u_1 \preceq u_2</m>. Similarmente, <m>u_2 \preceq u_1</m>. Por lo tanto, <m>u_1 = u_2</m> por antisimetría.  Un argumento similar muestra que la mayor cota inferior es única.
         </p>
         </proof>
       </theorem> 
  
-      <p>En muchos conjuntos parcialmente ordenados es posible definir operaciones binarias usando la menor cota superior y la mayor cota inferior de dos elementos. Un <term>reticulado</term><idx><h>Reticulado</h><h>definición de</h></idx> es un conjunto parcialmente ordenado <m>L</m> tal que cada par de elementos en <m>L</m> tiene una menor cota superior y una mayor cota inferior. La menor cota superior de <m>a, b \in L</m> se llama el <term>supremo</term><idx><h>Supremo</h></idx> de <m>a</m> y <m>b</m> y se denota por <m>a \vee b</m>.  <notation><usage><m>a \vee b</m></usage><description>supremo de <m>a</m> y <m>b</m></description></notation> La mayor cota inferior de <m>a, b \in L</m> se llama el <term>ínfimo</term><idx><h>Ínfimo</h></idx> de <m>a</m> y <m>b</m> y se denota por <m>a \wedge b</m>.  <notation><usage><m>a \wedge b</m></usage><description>ínfimo de <m>a</m> y <m>b</m></description></notation></p>
+      <p permid="lfb">En muchos conjuntos parcialmente ordenados es posible definir operaciones binarias usando la menor cota superior y la mayor cota inferior de dos elementos. Un <term>reticulado</term><idx><h>Reticulado</h><h>definición de</h></idx> es un conjunto parcialmente ordenado <m>L</m> tal que cada par de elementos en <m>L</m> tiene una menor cota superior y una mayor cota inferior. La menor cota superior de <m>a, b \in L</m> se llama el <term>supremo</term><idx><h>Supremo</h></idx> de <m>a</m> y <m>b</m> y se denota por <m>a \vee b</m>.  <notation><usage><m>a \vee b</m></usage><description>supremo de <m>a</m> y <m>b</m></description></notation> La mayor cota inferior de <m>a, b \in L</m> se llama el <term>ínfimo</term><idx><h>Ínfimo</h></idx> de <m>a</m> y <m>b</m> y se denota por <m>a \wedge b</m>.  <notation><usage><m>a \wedge b</m></usage><description>ínfimo de <m>a</m> y <m>b</m></description></notation></p>
 
-      <example xml:id="example-boolean-lub-glb">
-        <p>Sea <m>X</m> un conjunto. Entonces el conjunto potencia de <m>X</m>, <m>{\mathcal P}(X)</m>, es un reticulado. Para dos conjuntos <m>A</m> y <m>B</m> en <m>{\mathcal P}(X)</m>, el supremo de <m>A</m> y <m>B</m> es <m>A \cup B</m>. Ciertamente <m>A \cup B</m> es una cota superior de <m>A</m> y <m>B</m>, pues <m>A \subset A \cup B</m> y <m>B \subset A \cup B</m>.  Si <m>C</m> es algún conjunto que contiene tanto a <m>A</m> como a <m>B</m>, entonces <m>C</m> contiene a <m>A \cup B</m>; luego, <m>A \cup B</m> es la menor de las cotas superiores de <m>A</m> y <m>B</m>. Similarmente,  el ínfimo de <m>A</m> y <m>B</m> es <m>A \cap B</m>.
+      <example xml:id="boolean-example-lub-glb" permid="AXG">
+        <p permid="Ftr">Sea <m>X</m> un conjunto. Entonces el conjunto potencia de <m>X</m>, <m>{\mathcal P}(X)</m>, es un reticulado. Para dos conjuntos <m>A</m> y <m>B</m> en <m>{\mathcal P}(X)</m>, el supremo de <m>A</m> y <m>B</m> es <m>A \cup B</m>. Ciertamente <m>A \cup B</m> es una cota superior de <m>A</m> y <m>B</m>, pues <m>A \subset A \cup B</m> y <m>B \subset A \cup B</m>.  Si <m>C</m> es algún conjunto que contiene tanto a <m>A</m> como a <m>B</m>, entonces <m>C</m> contiene a <m>A \cup B</m>; luego, <m>A \cup B</m> es la menor de las cotas superiores de <m>A</m> y <m>B</m>. Similarmente,  el ínfimo de <m>A</m> y <m>B</m> es <m>A \cap B</m>.
         </p>
       </example>
 
-      <example xml:id="example-boolean-subgroup-lattice">
-        <p>Sea <m>G</m> un grupo y supongamos que <m>X</m> es el conjunto de subgrupos de <m>G</m>.  Entonces <m>X</m> es un conjunto parcialmente ordenado por inclusión conjuntista, <m>\subset</m>.  El conjunto de subgrupos de <m>G</m> también es un reticulado.  Si <m>H</m> y <m>K</m> son subgrupos de <m>G</m>, el ínfimo de <m>H</m> y <m>K</m> es <m>H \cap K</m>. El conjunto <m>H \cup K</m> puede no ser un subgrupo de <m>G</m>.  Dejamos como ejercicio demostrar que el supremo de <m>H</m> y <m>K</m> es el subgrupo generado por <m>H \cup K</m>.
+      <example xml:id="boolean-example-subgroup-lattice" permid="heP">
+        <p permid="lAA">Sea <m>G</m> un grupo y supongamos que <m>X</m> es el conjunto de subgrupos de <m>G</m>.  Entonces <m>X</m> es un conjunto parcialmente ordenado por inclusión conjuntista, <m>\subset</m>.  El conjunto de subgrupos de <m>G</m> también es un reticulado.  Si <m>H</m> y <m>K</m> son subgrupos de <m>G</m>, el ínfimo de <m>H</m> y <m>K</m> es <m>H \cap K</m>. El conjunto <m>H \cup K</m> puede no ser un subgrupo de <m>G</m>.  Dejamos como ejercicio demostrar que el supremo de <m>H</m> y <m>K</m> es el subgrupo generado por <m>H \cup K</m>.
         </p>
       </example>
  
-      <p>En teoría de conjuntos tenemos ciertas condiciones de dualidad. Por ejemplo, por las leyes de De Morgan, todo enunciado sobre conjuntos que sea válido para <m>(A \cup B)'</m> también debe ser válido para <m>A' \cap B'</m>. También tenemos un principio de dualidad para reticulados.
+      <p permid="Rmk">En teoría de conjuntos tenemos ciertas condiciones de dualidad. Por ejemplo, por las leyes de De Morgan, todo enunciado sobre conjuntos que sea válido para <m>(A \cup B)'</m> también debe ser válido para <m>A' \cap B'</m>. También tenemos un principio de dualidad para reticulados.
         </p>
  
-      <axiom>
+      <axiom permid="jZv">
         <title>Principio de Dualidad</title>
         <idx><h>Reticulados, Principio de Dualidad para</h></idx>
         <statement>
-          <p>Cualquier enunciado que sea verdadero para todos los reticulados, sigue siendo verdadero se reemplazamos <m>\preceq</m> por <m>\succeq</m> e intercambiamos <m>\vee</m> y <m>\wedge</m> en todo el enunciado.
+          <p permid="ovg">Cualquier enunciado que sea verdadero para todos los reticulados, sigue siendo verdadero se reemplazamos <m>\preceq</m> por <m>\succeq</m> e intercambiamos <m>\vee</m> y <m>\wedge</m> en todo el enunciado.
         </p>
         </statement>
       </axiom>
  
-      <p>El siguiente teorema nos dice que un reticulado es una estructura algebraica con dos operaciones bianria que satisfacen ciertos axiomas.
+      <p permid="xtt">El siguiente teorema nos dice que un reticulado es una estructura algebraica con dos operaciones bianria que satisfacen ciertos axiomas.
         </p>               
-      <theorem>
+      <theorem permid="XLd">
         <statement>
-          <p>Si <m>L</m> es un reticulado, entonces las operaciones binarias <m>\vee</m> y <m>\wedge</m> satisfacen las siguientes propiedades para <m>a, b, c \in L</m>.
-            <ol>
+          <p permid="mFT">Si <m>L</m> es un reticulado, entonces las operaciones binarias <m>\vee</m> y <m>\wedge</m> satisfacen las siguientes propiedades para <m>a, b, c \in L</m>.
+            <ol permid="jix">
 
-              <li><p>Leyes conmutativas: <m>a \vee b = b \vee a</m> y <m>a \wedge b = b \wedge a</m>.
+              <li permid="ReT"><p permid="TEa">Leyes conmutativas: <m>a \vee b = b \vee a</m> y <m>a \wedge b = b \wedge a</m>.
         </p></li>
  
-              <li><p>Leyes asociativas: <m>a \vee ( b \vee c) = (a \vee b) \vee c</m> y <m>a \wedge (b \wedge c) = (a \wedge b) \wedge c</m>.
+              <li permid="xmc"><p permid="zLj">Leyes asociativas: <m>a \vee ( b \vee c) = (a \vee b) \vee c</m> y <m>a \wedge (b \wedge c) = (a \wedge b) \wedge c</m>.
         </p></li>
  
-              <li><p>Leyes idempotentes: <m>a \vee a = a</m> y <m>a \wedge a = a</m>.
+              <li permid="dtl"><p permid="fSs">Leyes idempotentes: <m>a \vee a = a</m> y <m>a \wedge a = a</m>.
         </p></li>
  
-              <li><p>Leyes de absorción: <m>a \vee (a \wedge b) = a</m> y <m>a \wedge ( a \vee b ) =a</m>.
+              <li permid="JAu"><p permid="LZB">Leyes de absorción: <m>a \vee (a \wedge b) = a</m> y <m>a \wedge ( a \vee b ) =a</m>.
         </p></li>
 
             </ol></p>
         </statement>
-        <proof>
-          <p>Por el Principio de Dualidad, solo debemos demostrar el primer enunciado de cada parte.
+        <proof permid="gJq">
+          <p permid="vpL">Por el Principio de Dualidad, solo debemos demostrar el primer enunciado de cada parte.
         </p>
 
-          <p>(1)   Por definición <m>a \vee b</m> es el supremo de <m>\{ a, b\}</m>, y <m>b \vee a</m> es el supremo de <m>\{ b, a \}</m>; pero, <m>\{ a, b\}  = \{ b, a \}</m>.
+          <p permid="bwU">(1)   Por definición <m>a \vee b</m> es el supremo de <m>\{ a, b\}</m>, y <m>b \vee a</m> es el supremo de <m>\{ b, a \}</m>; pero, <m>\{ a, b\}  = \{ b, a \}</m>.
         </p>
  
-          <p>(2) Mostraremos que <m>a \vee ( b \vee c)</m> y <m>(a \vee b) \vee c</m> son ambos ínfimos de <m>\{ a, b, c \}</m>. Sea <m>d =  a \vee b</m>. Entonces <m>c \preceq  d \vee c = (a \vee b) \vee c</m>. También sabemos que 
-            <me>a \preceq  a \vee b =d \preceq  d \vee c = (a \vee b) \vee c</me>.
+          <p permid="HEd">(2) Mostraremos que <m>a \vee ( b \vee c)</m> y <m>(a \vee b) \vee c</m> son ambos ínfimos de <m>\{ a, b, c \}</m>. Sea <m>d =  a \vee b</m>. Entonces <m>c \preceq  d \vee c = (a \vee b) \vee c</m>. También sabemos que 
+            <me permid="WFX">a \preceq  a \vee b =d \preceq  d \vee c = (a \vee b) \vee c</me>.
           Un argumento similar demuestra que <m>b \preceq (a \vee b) \vee c</m>. Por lo tanto, <m>(a \vee b) \vee c</m> es una cota superior de <m>\{ a, b, c \}</m>. Ahora debemos mostrar que <m>(a \vee b) \vee c</m> es el supremo de <m>\{ a, b, c\}</m>. Sea <m>u</m> alguna cota superior para <m>\{ a, b, c \}</m>.  Entonces <m>a \preceq u</m> y <m>b \preceq u</m>; luego, <m>d = a \vee b \preceq u</m>. Como <m>c \preceq u</m>, sigue que <m>(a \vee b) \vee c = d \vee c \preceq u</m>. Por lo tanto, <m>(a \vee b) \vee c</m> es el supremo de <m>\{ a, b, c\}</m>. El argumento que muestra que <m>a \vee ( b \vee c)</m> es el supremos de <m>\{ a, b, c \}</m> es igual.  En consecuencia, <m>a \vee ( b \vee c) = (a \vee b) \vee c</m>.
         </p>
  
-          <p>(3) El supremo de <m>a</m> y <m>a</m> es el supremo de <m>\{ a \}</m>; luego, <m>a \vee a = a</m>.
+          <p permid="nLm">(3) El supremo de <m>a</m> y <m>a</m> es el supremo de <m>\{ a \}</m>; luego, <m>a \vee a = a</m>.
         </p>
  
-          <p>(4) Sea <m>d = a \wedge b</m>. Entonces <m>a \preceq a \vee d</m>. Por otra parte, <m>d = a \wedge b \preceq a</m>, y así <m>a \vee d \preceq a</m>. Por lo tanto, <m>a \vee ( a \wedge b) = a</m>.
+          <p permid="TSv">(4) Sea <m>d = a \wedge b</m>. Entonces <m>a \preceq a \vee d</m>. Por otra parte, <m>d = a \wedge b \preceq a</m>, y así <m>a \vee d \preceq a</m>. Por lo tanto, <m>a \vee ( a \wedge b) = a</m>.
         </p>
         </proof>
       </theorem>
  
-      <p>Dado cualquier conjunto <m>L</m> con las operaciones <m>\vee</m> y <m>\wedge</m>, que satisfacen las condiciones del teorema previo, es natural preguntarse si este conjunto proviene o no de un reticulado. El siguiente teorema dice que esto siempre es así.
+      <p permid="dAC">Dado cualquier conjunto <m>L</m> con las operaciones <m>\vee</m> y <m>\wedge</m>, que satisfacen las condiciones del teorema previo, es natural preguntarse si este conjunto proviene o no de un reticulado. El siguiente teorema dice que esto siempre es así.
         </p>
  
-      <theorem xml:id="theorem-partial-order">
+      <theorem xml:id="boolean-theorem-partial-order" permid="DSm">
         <statement>
-          <p> Sea <m>L</m> un conjunto no-vacío con dos operaciones binarias <m>\vee</m> y <m>\wedge</m> que satisfacen las leyes conmutativa, asociativa, idempotente, y de absorción.  Podemos definir un orden parcial en <m>L</m> por <m>a \preceq b</m> si <m>a \vee b = b</m>. Más aún, <m>L</m> es un reticulado respecto a <m>\preceq</m> si para todo <m>a, b \in L</m>, definimos un supremo y un ínfimo de <m>a</m> y <m>b</m> por <m>a \vee b</m> y <m>a \wedge b</m>, respectivamente.
+          <p permid="SNc"> Sea <m>L</m> un conjunto no-vacío con dos operaciones binarias <m>\vee</m> y <m>\wedge</m> que satisfacen las leyes conmutativa, asociativa, idempotente, y de absorción.  Podemos definir un orden parcial en <m>L</m> por <m>a \preceq b</m> si <m>a \vee b = b</m>. Más aún, <m>L</m> es un reticulado respecto a <m>\preceq</m> si para todo <m>a, b \in L</m>, definimos un supremo y un ínfimo de <m>a</m> y <m>b</m> por <m>a \vee b</m> y <m>a \wedge b</m>, respectivamente.
         </p>
         </statement>
-        <proof>
-          <p>Mostraremos primero que <m>L</m> es un conjunto parcialmente ordenado por <m>\preceq</m>. Como <m>a \vee a = a</m>, <m>a \preceq a</m> y tenemos que <m>\preceq</m> es refleja. Para mostrar que <m>\preceq</m> es antisimétrica, sean <m>a \preceq b</m> y <m>b \preceq a</m>. Entonces <m>a \vee b = b</m> y <m>b \vee a = a</m>. Por la ley conmutativa, <m>b = a \vee b = b \vee a = a</m>.   Finalmente, debemos mostrar que <m>\preceq</m> es transitiva. Sean <m>a \preceq b</m> y <m>b \preceq c</m>. Entonces <m>a \vee b = b</m> y <m>b \vee c = c</m>.  Luego,
-            <me>a \vee c = a \vee (b \vee c ) = ( a \vee b) \vee c = b \vee c = c</me>,
+        <proof permid="MQz">
+          <p permid="zZE">Mostraremos primero que <m>L</m> es un conjunto parcialmente ordenado por <m>\preceq</m>. Como <m>a \vee a = a</m>, <m>a \preceq a</m> y tenemos que <m>\preceq</m> es refleja. Para mostrar que <m>\preceq</m> es antisimétrica, sean <m>a \preceq b</m> y <m>b \preceq a</m>. Entonces <m>a \vee b = b</m> y <m>b \vee a = a</m>. Por la ley conmutativa, <m>b = a \vee b = b \vee a = a</m>.   Finalmente, debemos mostrar que <m>\preceq</m> es transitiva. Sean <m>a \preceq b</m> y <m>b \preceq c</m>. Entonces <m>a \vee b = b</m> y <m>b \vee c = c</m>.  Luego,
+            <me permid="CNg">a \vee c = a \vee (b \vee c ) = ( a \vee b) \vee c = b \vee c = c</me>,
           y <m>a \preceq c</m>.
         </p>
  
-          <p>Para mostrar que <m>L</m> es un reticulado, debemos demostrar que <m>a \vee b</m> y <m>a \wedge b</m> son, respectivamente, el supremo y el ínfimo de <m>a</m> y <m>b</m>. Como <m>a=(a \vee b) \wedge a = a \wedge (a \vee b)</m>, concluimos que <m>a \preceq a \vee b</m>.  Similarmente, <m>b \preceq a \vee b</m>. Por lo tanto, <m>a \vee b</m> es una cota superior para <m>a</m> y <m>b</m>. Sea <m>u</m> cualquier cota superior para <m>a</m> y <m>b</m>. Entonces <m>a \preceq u</m> y <m>b \preceq u</m>. Pero <m>a \vee b \preceq u</m> pues 
-            <me>(a \vee b) \vee u = a \vee (b \vee u) = a \vee u = u</me>.
+          <p permid="ggN">Para mostrar que <m>L</m> es un reticulado, debemos demostrar que <m>a \vee b</m> y <m>a \wedge b</m> son, respectivamente, el supremo y el ínfimo de <m>a</m> y <m>b</m>. Como <m>a=(a \vee b) \wedge a = a \wedge (a \vee b)</m>, concluimos que <m>a \preceq a \vee b</m>.  Similarmente, <m>b \preceq a \vee b</m>. Por lo tanto, <m>a \vee b</m> es una cota superior para <m>a</m> y <m>b</m>. Sea <m>u</m> cualquier cota superior para <m>a</m> y <m>b</m>. Entonces <m>a \preceq u</m> y <m>b \preceq u</m>. Pero <m>a \vee b \preceq u</m> pues 
+            <me permid="iUp">(a \vee b) \vee u = a \vee (b \vee u) = a \vee u = u</me>.
           La demostración de que <m>a \wedge b</m> es el ínfimo de <m>a</m> y <m>b</m> se deja como ejercicio.
         </p>
         </proof>
@@ -206,36 +206,36 @@
 
   </section>
 
-  <section xml:id="section-boolean-algebras">
+  <section xml:id="boolean-section-boolean-algebras" permid="zit">
     <title>Álgebras Booleanas</title>
  
-     <introduction>
+     <introduction permid="IgG">
 
-      <p>Investiguemos el ejemplo del conjunto potencia, <m>{\mathcal P}(X)</m>, de un conjunto <m>X</m> en mayor detalle. El conjunto potencia es un reticulado ordenado por inclusión. Por la definición de conjunto potencias, el mayor elemento en <m>{\mathcal P}(X)</m> es <m>X</m> mismo y el menor elemento es <m>\emptyset</m>, el conjunto vacío. Para cualquier conjunto <m>A</m> en <m>{\mathcal P}(X)</m>, sabemos que <m>A \cap X = A</m> y <m>A \cup \emptyset = A</m>. Esto sugiere la siguiente definición para reticulados. Un elemento <m>I</m> en un conjunto parcialmente ordenado <m>X</m> es un <term>elemento mayor</term><idx><h>Conjunto parcialmente ordenado</h><h>elemento mayor en</h></idx> si <m>a \preceq I</m> para todo <m>a \in X</m>.  <notation><usage><m>I</m></usage><description>elemento mayor en un reticulado</description></notation> Un elemento <m>O</m> es un <term>elemento menor</term><idx><h>Conjunto parcialmente ordenado</h><h>elemento menor en</h></idx> de <m>X</m> si <m>O \preceq a</m> para todo <m>a \in X</m>. <notation><usage><m>O</m></usage><description>menor elemento en un reticulado</description></notation></p>
+      <p permid="Kdk">Investiguemos el ejemplo del conjunto potencia, <m>{\mathcal P}(X)</m>, de un conjunto <m>X</m> en mayor detalle. El conjunto potencia es un reticulado ordenado por inclusión. Por la definición de conjunto potencias, el mayor elemento en <m>{\mathcal P}(X)</m> es <m>X</m> mismo y el menor elemento es <m>\emptyset</m>, el conjunto vacío. Para cualquier conjunto <m>A</m> en <m>{\mathcal P}(X)</m>, sabemos que <m>A \cap X = A</m> y <m>A \cup \emptyset = A</m>. Esto sugiere la siguiente definición para reticulados. Un elemento <m>I</m> en un conjunto parcialmente ordenado <m>X</m> es un <term>elemento mayor</term><idx><h>Conjunto parcialmente ordenado</h><h>elemento mayor en</h></idx> si <m>a \preceq I</m> para todo <m>a \in X</m>.  <notation><usage><m>I</m></usage><description>elemento mayor en un reticulado</description></notation> Un elemento <m>O</m> es un <term>elemento menor</term><idx><h>Conjunto parcialmente ordenado</h><h>elemento menor en</h></idx> de <m>X</m> si <m>O \preceq a</m> para todo <m>a \in X</m>. <notation><usage><m>O</m></usage><description>menor elemento en un reticulado</description></notation></p>
 
-      <p>Sea <m>A</m> en <m>{\mathcal P}(X)</m>. Recuerde que el complemento de <m>A</m> es
-        <me>A' = X \setminus A = \{ x : x \in X \text{ y } x \notin A \}</me>.
+      <p permid="qkt">Sea <m>A</m> en <m>{\mathcal P}(X)</m>. Recuerde que el complemento de <m>A</m> es
+        <me permid="Pby">A' = X \setminus A = \{ x : x \in X \text{ y } x \notin A \}</me>.
       Sabemos que <m>A \cup A' = X</m> y <m>A \cap A' = \emptyset</m>. Podemos generalizar este ejemplo a reticulados. Un reticulado <m>L</m> con mayor elemento <m>I</m> y menor elemento <m>O</m> es <term>complementado</term><idx><h>Reticulado</h><h>complementado</h></idx> si para cada <m>a \in L</m>, existe un <m>a'</m> tal que <m>a \vee a' = I</m> y <m>a \wedge a' = O</m>. <notation><usage><m>a'</m></usage><description>complemento de <m>a</m> en un reticulado</description></notation></p>
    
-      <p>En un reticulado <m>L</m>, las operaciones binarias <m>\vee</m> y <m>\wedge</m> satisfacen leyes conmutativas y asociativas; pero, no necesariamente satisfacen la ley distributiva
-        <me>a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c );</me>
+      <p permid="WrC">En un reticulado <m>L</m>, las operaciones binarias <m>\vee</m> y <m>\wedge</m> satisfacen leyes conmutativas y asociativas; pero, no necesariamente satisfacen la ley distributiva
+        <me permid="viH">a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c );</me>
       sin embargo, en <m>{\mathcal P}(X)</m> la ley distributiva se satisface pues
-        <me>A \cap ( B \cup C ) = (A \cap B ) \cup ( A \cap C )</me>
+        <me permid="bpQ">A \cap ( B \cup C ) = (A \cap B ) \cup ( A \cap C )</me>
       para <m>A, B, C \in {\mathcal P}(X)</m>. Diremos que un reticulado <m>L</m> es <term>distributivo</term><idx><h>Reticulado</h><h>distributivo</h></idx> si se satisfacen las siguientes leyes distributivas:
-        <me>a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c )</me>
+        <me permid="HwZ">a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c )</me>
       para todo <m>a, b, c \in L</m>.
         </p>
    
-      <theorem xml:id="theorem-distributive-lattice">
+      <theorem xml:id="boolean-theorem-distributive-lattice" permid="riv">
         <statement>
-          <p>Un reticulado <m>L</m> es distributivo si y solo si
-            <me>a \vee ( b \wedge c ) = ( a \vee b ) \wedge ( a \vee c )</me>
+          <p permid="yUl">Un reticulado <m>L</m> es distributivo si y solo si
+            <me permid="nEi">a \vee ( b \wedge c ) = ( a \vee b ) \wedge ( a \vee c )</me>
           para todo <m>a, b, c \in L</m>.
         </p>
         </statement>
-        <proof>
-          <p>Supongamos que <m>L</m> es un reticulado distributivo.
-            <md>
+        <proof permid="sXI">
+          <p permid="MnW">Supongamos que <m>L</m> es un reticulado distributivo.
+            <md permid="TLr">
               <mrow>a \vee ( b \wedge c ) &amp; = [a \vee (a \wedge c) ] \vee ( b \wedge c )</mrow>
               <mrow>&amp; = a \vee [(a \wedge c)  \vee ( b \wedge c )]</mrow>
               <mrow>&amp; = a \vee [(c \wedge a)  \vee ( c \wedge b )]</mrow>
@@ -249,34 +249,34 @@
         </proof>
       </theorem>
    
-      <p>Un <term>álgebra Booleana</term><idx><h>Álgebra Booleana</h><h>definición de</h></idx> es un reticulado <m>B</m> con elemento mayor <m>I</m> y elemento menor <m>O</m> tal que <m>B</m> es distributivo y complementado. El conjunto potencia de <m>X</m>, <m>{\mathcal P}(X)</m>, es nuestro prototipo de álgebra Booleana.  Resulta, que es además una de las álgebras Booleanas más importantes. El siguiente teorema nos permite caracterizar las álgebras Booleanas en términos de las relaciones binarias <m>\vee</m> y <m>\wedge</m> sin mencionar el hecho de que un álgebra Booleana es un conjunto parcialmente ordenado.
+      <p permid="CyL">Un <term>álgebra Booleana</term><idx><h>Álgebra Booleana</h><h>definición de</h></idx> es un reticulado <m>B</m> con elemento mayor <m>I</m> y elemento menor <m>O</m> tal que <m>B</m> es distributivo y complementado. El conjunto potencia de <m>X</m>, <m>{\mathcal P}(X)</m>, es nuestro prototipo de álgebra Booleana.  Resulta, que es además una de las álgebras Booleanas más importantes. El siguiente teorema nos permite caracterizar las álgebras Booleanas en términos de las relaciones binarias <m>\vee</m> y <m>\wedge</m> sin mencionar el hecho de que un álgebra Booleana es un conjunto parcialmente ordenado.
         </p>
 
-      <theorem>
+      <theorem permid="XpE">
         <statement>
-          <p>Un conjunto <m>B</m> es un álgebra Booleana si y solo si existen operaciones binarias <m>\vee</m> y <m>\wedge</m> en <m>B</m> que satisfacen los siguientes axiomas.
-            <ol>
+          <p permid="fbu">Un conjunto <m>B</m> es un álgebra Booleana si y solo si existen operaciones binarias <m>\vee</m> y <m>\wedge</m> en <m>B</m> que satisfacen los siguientes axiomas.
+            <ol permid="PpG">
 
-              <li><p><m>a \vee b = b \vee a</m> y <m>a \wedge b = b \wedge a</m> para <m>a, b \in B</m>.
+              <li permid="pHD"><p permid="sgK"><m>a \vee b = b \vee a</m> y <m>a \wedge b = b \wedge a</m> para <m>a, b \in B</m>.
         </p></li>
    
-              <li><p><m>a \vee ( b \vee c) = (a \vee b) \vee c</m> y <m>a \wedge ( b \wedge c) = (a \wedge b) \wedge c</m> para <m>a, b, c \in B</m>.
+              <li permid="VOM"><p permid="YnT"><m>a \vee ( b \vee c) = (a \vee b) \vee c</m> y <m>a \wedge ( b \wedge c) = (a \wedge b) \wedge c</m> para <m>a, b, c \in B</m>.
         </p></li>
    
-              <li><p><m>a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c )</m> y <m>a \vee ( b \wedge c ) = (a \vee b ) \wedge ( a \vee c )</m>  para <m>a, b, c \in B</m>.
+              <li permid="BVV"><p permid="Evc"><m>a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c )</m> y <m>a \vee ( b \wedge c ) = (a \vee b ) \wedge ( a \vee c )</m>  para <m>a, b, c \in B</m>.
         </p></li>
    
-              <li><p>Existen elementos <m>I</m> y <m>O</m> tales que <m>a \vee O = a</m> y <m>a \wedge I = a</m> para todo <m>a \in B</m>.
+              <li permid="ide"><p permid="kCl">Existen elementos <m>I</m> y <m>O</m> tales que <m>a \vee O = a</m> y <m>a \wedge I = a</m> para todo <m>a \in B</m>.
         </p></li>
    
-              <li><p>Para todo <m>a \in B</m> existe <m>a' \in B</m> tal que <m>a \vee a' = I</m> y <m>a \wedge a' = O</m>.
+              <li permid="Okn"><p permid="QJu">Para todo <m>a \in B</m> existe <m>a' \in B</m> tal que <m>a \vee a' = I</m> y <m>a \wedge a' = O</m>.
         </p></li>
 
             </ol></p>
         </statement>
-        <proof>
-          <p>Sea <m>B</m> un conjunto que satisface (1)<ndash />(5) en el teorema. Una de las leyes idempotentes se satisface pues
-            <md>
+        <proof permid="ZeR">
+          <p permid="svf">Sea <m>B</m> un conjunto que satisface (1)<ndash/>(5) en el teorema. Una de las leyes idempotentes se satisface pues
+            <md permid="fZJ">
               <mrow>a &amp; = a \vee O</mrow>
               <mrow>&amp; = a \vee (a \wedge a')</mrow>
               <mrow>&amp; = (a \vee a) \wedge (a \vee a')</mrow>
@@ -284,58 +284,58 @@
               <mrow>&amp; = a \vee a</mrow>
             </md>.
           Observemos que 
-            <me>I \vee b = (b \vee b' ) \vee b = (b' \vee b ) \vee b = b' \vee (b \vee b) = b' \vee b = I</me>.
+            <me permid="zSA">I \vee b = (b \vee b' ) \vee b = (b' \vee b ) \vee b = b' \vee (b \vee b) = b' \vee b = I</me>.
           Concluimos que se satisface la primera de las dos leyes de absorción, pues
-            <md>
+            <md permid="MgS">
               <mrow>a \vee (a \wedge b) &amp; = (a \wedge I) \vee (a \wedge b)</mrow>
               <mrow>&amp; = a \wedge (I \vee b)</mrow>
               <mrow>&amp; = a  \wedge I</mrow>
               <mrow>&amp; = a</mrow>
             </md>.
-          La otra ley idempotente y de absorción se demuestran de forma similar. Como <m>B</m> también satisface (1)<ndash />(3), se cumplen las condiciones del <xref ref="theorem-partial-order" />; por lo tanto, <m>B</m> es un reticulado.  La condición (4) nos dice que <m>B</m> es un reticulado distributivo.
+          La otra ley idempotente y de absorción se demuestran de forma similar. Como <m>B</m> también satisface (1)<ndash/>(3), se cumplen las condiciones del <xref ref="boolean-theorem-partial-order"/>; por lo tanto, <m>B</m> es un reticulado.  La condición (4) nos dice que <m>B</m> es un reticulado distributivo.
         </p>
    
-          <p>Para <m>a \in B</m>, <m>O \vee a = a</m>; luego, <m>O \preceq a</m> y <m>O</m> es el menor elemento en <m>B</m>. Para mostrar que <m>I</m> es el mayor elemento en <m>B</m>, mostraremos primero que <m>a \vee b = b</m> es equivalente a <m>a \wedge b = a</m>.  Como <m>a \vee I = a</m> para todo <m>a \in B</m>, usando las leyes de absorción podemos determinar que 
-            <me>a \vee I =(a \wedge I) \vee I = I \vee ( I \wedge a) = I</me>
+          <p permid="YCo">Para <m>a \in B</m>, <m>O \vee a = a</m>; luego, <m>O \preceq a</m> y <m>O</m> es el menor elemento en <m>B</m>. Para mostrar que <m>I</m> es el mayor elemento en <m>B</m>, mostraremos primero que <m>a \vee b = b</m> es equivalente a <m>a \wedge b = a</m>.  Como <m>a \vee I = a</m> para todo <m>a \in B</m>, usando las leyes de absorción podemos determinar que 
+            <me permid="Yvk">a \vee I =(a \wedge I) \vee I = I \vee ( I \wedge a) = I</me>
           y <m>a \preceq I</m> para todo <m>a</m> in <m>B</m>. Finalmente, como sabemos que <m>B</m> es complementado por (5), <m>B</m> es un álgebra Booleana.
         </p>
    
-          <p>Recíprocamente, supongamos que <m>B</m> es un álgebra Booleana. Sean <m>I</m> y <m>O</m> el elemento mayor y el elemento menor en <m>B</m>, respectivamente.  Si definimos <m>a \vee b</m> y <m>a \wedge b</m> como el supremo y el ínfimo de <m>\{ a, b\}</m> respectivamente, entonces <m>B</m> es un álgebra booleana por <xref ref="theorem-partial-order"/>, <xref ref="theorem-distributive-lattice"/>, y nuestra hipótesis.
+          <p permid="EJx">Recíprocamente, supongamos que <m>B</m> es un álgebra Booleana. Sean <m>I</m> y <m>O</m> el elemento mayor y el elemento menor en <m>B</m>, respectivamente.  Si definimos <m>a \vee b</m> y <m>a \wedge b</m> como el supremo y el ínfimo de <m>\{ a, b\}</m> respectivamente, entonces <m>B</m> es un álgebra booleana por <xref ref="boolean-theorem-partial-order"/>, <xref ref="boolean-theorem-distributive-lattice"/>, y nuestra hipótesis.
         </p>
         </proof>
       </theorem>
    
-      <p>Muchas otras identidades se satisfacen en las álgebras Booleanas. Algunas de estas identidades están listada en el siguiente teorema.
+      <p permid="iFU">Muchas otras identidades se satisfacen en las álgebras Booleanas. Algunas de estas identidades están listada en el siguiente teorema.
         </p>
    
-      <theorem>
+      <theorem permid="DwN">
         <statement>
-          <p>Sea <m>B</m> un álgebra Booleana. Entonces
-            <ol>
+          <p permid="LiD">Sea <m>B</m> un álgebra Booleana. Entonces
+            <ol permid="vwP">
 
-              <li><p><m>a \vee I = I</m> y <m>a \wedge O = O</m> para todo <m>a \in B</m>.
+              <li permid="urw"><p permid="wQD"><m>a \vee I = I</m> y <m>a \wedge O = O</m> para todo <m>a \in B</m>.
         </p></li>
 
-              <li><p>Si <m>a \vee b = a \vee c</m> y <m>a \wedge b = a \wedge c</m> para <m>a, b, c \in B</m>, entonces <m>b = c</m>.
+              <li permid="ayF"><p permid="cXM">Si <m>a \vee b = a \vee c</m> y <m>a \wedge b = a \wedge c</m> para <m>a, b, c \in B</m>, entonces <m>b = c</m>.
         </p></li>
    
-              <li><p>Si <m>a \vee b = I</m> y <m>a \wedge b = O</m>, entonces <m>b = a'</m>.
+              <li permid="GFO"><p permid="JeV">Si <m>a \vee b = I</m> y <m>a \wedge b = O</m>, entonces <m>b = a'</m>.
         </p></li>
 
-              <li><p><m>(a')'=a</m> para todo <m>a \in B</m>.
+              <li permid="mMX"><p permid="pme"><m>(a')'=a</m> para todo <m>a \in B</m>.
         </p></li>
 
-              <li><p><m>I' = O</m> y <m>O' = I</m>.
+              <li permid="SUg"><p permid="Vtn"><m>I' = O</m> y <m>O' = I</m>.
         </p></li>
    
-              <li><p><m>(a \vee b)' = a' \wedge b'</m> y <m>(a \wedge b)' = a' \vee b'</m> (Leyes de De Morgan)<idx><h>Leyes de De Morgan</h><h>para álgebras Booleanas</h></idx>.
+              <li permid="zbp"><p permid="BAw"><m>(a \vee b)' = a' \wedge b'</m> y <m>(a \wedge b)' = a' \vee b'</m> (Leyes de De Morgan)<idx><h>Leyes de De Morgan</h><h>para álgebras Booleanas</h></idx>.
         </p></li>
 
             </ol></p>
          </statement>
-         <proof>
-           <p>Solo demostraremos (2). El resto de las identidades las dejamos como ejercicios. Para <m>a \vee b = a \vee c</m> y <m>a \wedge b = a \wedge c</m>, tenemos  
-            <md>
+         <proof permid="Fma">
+           <p permid="kQG">Solo demostraremos (2). El resto de las identidades las dejamos como ejercicios. Para <m>a \vee b = a \vee c</m> y <m>a \wedge b = a \wedge c</m>, tenemos  
+            <md permid="ECt">
               <mrow>b &amp; = b \vee (b \wedge a) </mrow>
               <mrow>&amp; =  b \vee (a \wedge b) </mrow>
               <mrow>&amp; =  b \vee (a \wedge c) </mrow>
@@ -354,14 +354,14 @@
 
      </introduction>
    
-    <subsection xml:id="boolean-subsection-finite-algebras">
+    <subsection xml:id="boolean-subsection-finite-algebras" permid="pOH">
       <title>Álgebras Booleanas Finitas</title>
  
-      <p>Un álgebra Booleana es un <term>álgebra Booleana finita</term><idx><h>Álgebra Booleana</h><h>finita</h></idx> si contiene un número finito de elementos como conjunto. Las álgebras Booleanas finitas son particularmente amigables, pues las podemos clasificar módulo isomorfismo.
+      <p permid="VWd">Un álgebra Booleana es un <term>álgebra Booleana finita</term><idx><h>Álgebra Booleana</h><h>finita</h></idx> si contiene un número finito de elementos como conjunto. Las álgebras Booleanas finitas son particularmente amigables, pues las podemos clasificar módulo isomorfismo.
         </p>
  
-      <p>Sean <m>B</m> y <m>C</m> álgebras Booleanas. Una función biyectiva <m>\phi : B \rightarrow C</m> es un <term>isomorfismo</term><idx><h>Isomorfismo</h><h>de álgebras Booleanas</h></idx><idx><h>Álgebras Booleanas</h><h>isomorfismo de</h></idx> de álgebras Booleanas si
-        <md>
+      <p permid="Cdm">Sean <m>B</m> y <m>C</m> álgebras Booleanas. Una función biyectiva <m>\phi : B \rightarrow C</m> es un <term>isomorfismo</term><idx><h>Isomorfismo</h><h>de álgebras Booleanas</h></idx><idx><h>Álgebras Booleanas</h><h>isomorfismo de</h></idx> de álgebras Booleanas si
+        <md permid="kJC">
           <mrow>\phi( a \vee b )  &amp; = \phi(a) \vee \phi(b)</mrow>
           <mrow>\phi( a \wedge b )  &amp; = \phi(a) \wedge \phi(b)</mrow>
         </md>
@@ -371,52 +371,52 @@
 <!--  2010/05/18 R Beezer, added a "nonzero" to  b  in definition of an atom -->
 <!--  Identified by Ricky Roy, U of Puget Sound -->
 
-      <p>Mostraremos que cualquier álgebra Booleana finita es isomorfa al álgebra Booleana obtenida de tomar el conjunto potencia de algún conjunto finito <m>X</m>. Necesitaremos algunos lemas y definiciones antes de demostrar este resultado. Sea <m>B</m> un álgebra Booleana finita. Un elemento <m>a \in B</m> es un <term>átomo</term><idx><h>Átomo</h></idx><idx><h>Álgebra Booleana</h><h>átomo en un</h></idx> de <m>B</m> si <m>a \neq O</m> y <m>a \wedge b = a</m> para todo <m>b \in B</m> con <m>b \neq O</m>. Equivalentemente, <m>a</m> es un átomo de <m>B</m> si no existe <m>b \in B</m> con <m>b \neq O</m> distinto de <m>a</m> tal que <m>O \preceq b \preceq a</m>.
+      <p permid="ikv">Mostraremos que cualquier álgebra Booleana finita es isomorfa al álgebra Booleana obtenida de tomar el conjunto potencia de algún conjunto finito <m>X</m>. Necesitaremos algunos lemas y definiciones antes de demostrar este resultado. Sea <m>B</m> un álgebra Booleana finita. Un elemento <m>a \in B</m> es un <term>átomo</term><idx><h>Átomo</h></idx><idx><h>Álgebra Booleana</h><h>átomo en un</h></idx> de <m>B</m> si <m>a \neq O</m> y <m>a \wedge b = a</m> para todo <m>b \in B</m> con <m>b \neq O</m>. Equivalentemente, <m>a</m> es un átomo de <m>B</m> si no existe <m>b \in B</m> con <m>b \neq O</m> distinto de <m>a</m> tal que <m>O \preceq b \preceq a</m>.
         </p>
  
-      <lemma>
+      <lemma permid="tth">
         <statement>
-          <p>Sea <m>B</m> un álgebra Booleana finita. Si <m>b</m> es un elemento de <m>B</m> con <m>b \neq O</m>, entonces existe un átomo <m>a</m> en <m>B</m> tal que <m>a \preceq b</m>.
+          <p permid="DEe">Sea <m>B</m> un álgebra Booleana finita. Si <m>b</m> es un elemento de <m>B</m> con <m>b \neq O</m>, entonces existe un átomo <m>a</m> en <m>B</m> tal que <m>a \preceq b</m>.
         </p>
         </statement>
-        <proof>
-          <p>Si <m>b</m> es un átomo, sea <m>a =b</m>. De lo contrario, elija un elemento <m>b_1</m>, distinto de <m>O</m> y de <m>b</m>, tal que <m>b_1 \preceq b</m>. Estamos seguros que esto es posible ya que <m>b</m> no es un átomo. Si <m>b_1</m> es un átomo, entonces estamos listos.  Si no, elegimos <m>b_2</m>, distinto de <m>O</m> y de <m>b_1</m>, tal que  <m>b_2 \preceq b_1</m>. Nuevamente, si <m>b_2</m> es un átomo, sea <m>a = b_2</m>. Continuando este proceso, obtenemos una cadena 
-            <me>O \preceq \cdots \preceq b_3 \preceq b_2 \preceq b_1 \preceq b</me>.
+        <proof permid="RAs">
+          <p permid="QXP">Si <m>b</m> es un átomo, sea <m>a =b</m>. De lo contrario, elija un elemento <m>b_1</m>, distinto de <m>O</m> y de <m>b</m>, tal que <m>b_1 \preceq b</m>. Estamos seguros que esto es posible ya que <m>b</m> no es un átomo. Si <m>b_1</m> es un átomo, entonces estamos listos.  Si no, elegimos <m>b_2</m>, distinto de <m>O</m> y de <m>b_1</m>, tal que  <m>b_2 \preceq b_1</m>. Nuevamente, si <m>b_2</m> es un átomo, sea <m>a = b_2</m>. Continuando este proceso, obtenemos una cadena 
+            <me permid="QQL">O \preceq \cdots \preceq b_3 \preceq b_2 \preceq b_1 \preceq b</me>.
           Como <m>B</m> es un álgenra Booleana finita, esta cadena debe ser finita.  Es decir, para algún <m>k</m>, <m>b_k</m> es un átomo. Sea <m>a = b_k</m>.
         </p>
         </proof>
       </lemma>
  
-      <lemma xml:id="lemma-zero-vee">
+      <lemma xml:id="boolean-lemma-zero-vee" permid="ZAq">
         <statement>
-          <p>Sean <m>a</m> y <m>b</m> átomos en un álgebra Booleana finita <m>B</m> tales que <m>a \neq b</m>. Entonces <m>a \wedge b = O</m>.
+          <p permid="jLn">Sean <m>a</m> y <m>b</m> átomos en un álgebra Booleana finita <m>B</m> tales que <m>a \neq b</m>. Entonces <m>a \wedge b = O</m>.
         </p>
         </statement>
-        <proof>
-          <p>Como <m>a \wedge b</m> es el ínfimo de <m>a</m> y <m>b</m>, sabemos que <m>a \wedge b \preceq a</m>.  Luego, ya sea <m>a \wedge b = a</m> o <m>a \wedge b = O</m>. Pero, si <m>a \wedge b = a</m>, entonces ya sea <m>a \preceq b</m> o <m>a = O</m>.  En cualquier caso tenemos una contradicción pues <m>a</m> y <m>b</m> son ambos átomos; por lo tanto, <m>a \wedge b = O</m>.
+        <proof permid="xHB">
+          <p permid="xeY">Como <m>a \wedge b</m> es el ínfimo de <m>a</m> y <m>b</m>, sabemos que <m>a \wedge b \preceq a</m>.  Luego, ya sea <m>a \wedge b = a</m> o <m>a \wedge b = O</m>. Pero, si <m>a \wedge b = a</m>, entonces ya sea <m>a \preceq b</m> o <m>a = O</m>.  En cualquier caso tenemos una contradicción pues <m>a</m> y <m>b</m> son ambos átomos; por lo tanto, <m>a \wedge b = O</m>.
         </p>
         </proof>
       </lemma>
  
-      <lemma xml:id="lemma-partial-order-equivalence">
+      <lemma xml:id="boolean-lemma-partial-order-equivalence" permid="FHz">
         <statement>
-          <p>Sea <m>B</m> un álgebra Booleana y <m>a, b \in B</m>. Los siguientes enunciados son equivalentes.
-            <ol>
+          <p permid="PSw">Sea <m>B</m> un álgebra Booleana y <m>a, b \in B</m>. Los siguientes enunciados son equivalentes.
+            <ol permid="bDY">
 
-              <li><p><m>a \preceq b</m>.
+              <li permid="fiy"><p permid="hHF"><m>a \preceq b</m>.
         </p></li>
  
-              <li><p><m>a \wedge b' = O</m>.
+              <li permid="LpH"><p permid="NOO"><m>a \wedge b' = O</m>.
         </p></li>
  
-              <li><p><m>a' \vee b = I</m>.
+              <li permid="rwQ"><p permid="tVX"><m>a' \vee b = I</m>.
         </p></li>
 
             </ol></p>
          </statement>
-         <proof>
-           <p>(1) <m>\Rightarrow</m> (2). Si <m>a \preceq b</m>, entonces <m>a \vee b = b</m>. Por lo tanto,
-            <md>
+         <proof permid="dOK">
+           <p permid="dmh">(1) <m>\Rightarrow</m> (2). Si <m>a \preceq b</m>, entonces <m>a \vee b = b</m>. Por lo tanto,
+            <md permid="wXU">
               <mrow>a \wedge b' &amp; = a \wedge (a \vee b)'</mrow>
               <mrow>&amp; = a \wedge ( a' \wedge b')</mrow>
               <mrow>&amp; = ( a \wedge a') \wedge b'</mrow>
@@ -425,11 +425,11 @@
             </md>. 
           </p>
  
-          <p>(2) <m>\Rightarrow</m> (3). Si <m>a \wedge b' = O</m>, entonces <m>a' \vee b = (a \wedge b')' = O' = I</m>.
+          <p permid="Jtq">(2) <m>\Rightarrow</m> (3). Si <m>a \wedge b' = O</m>, entonces <m>a' \vee b = (a \wedge b')' = O' = I</m>.
         </p>
  
-          <p>(3) <m>\Rightarrow</m> (1). Si <m>a' \vee b = I</m>, entonces
-            <md>
+          <p permid="pAz">(3) <m>\Rightarrow</m> (1). Si <m>a' \vee b = I</m>, entonces
+            <md permid="dfd">
               <mrow>a &amp; =  a \wedge (a' \vee b) </mrow>
               <mrow>&amp; =  (a \wedge a') \vee (a  \wedge  b)</mrow>
               <mrow>&amp; = O \vee (a  \wedge  b)</mrow>
@@ -440,49 +440,49 @@
         </proof>
       </lemma>
 
-      <lemma>
+      <lemma permid="lOI">
         <statement>
-          <p>Sea <m>B</m> un álgera Booleana y sean <m>b</m> y <m>c</m> elementos en <m>B</m> tales que <m>b \not\preceq c</m>. Entonces existe un átomo <m>a \in B</m> tal que <m>a \preceq b</m> y <m>a \not\preceq c</m>.
+          <p permid="vZF">Sea <m>B</m> un álgera Booleana y sean <m>b</m> y <m>c</m> elementos en <m>B</m> tales que <m>b \not\preceq c</m>. Entonces existe un átomo <m>a \in B</m> tal que <m>a \preceq b</m> y <m>a \not\preceq c</m>.
         </p>
         </statement>
-        <proof>
-          <p>Por el <xref ref="lemma-partial-order-equivalence" />, <m>b \wedge c' \neq O</m>. Luego, existe un átomo <m>a</m> tal que <m>a \preceq b \wedge c'</m>. Concluimos que <m>a \preceq b</m> y <m>a \not\preceq c</m>.
+        <proof permid="JVT">
+          <p permid="VHI">Por el <xref ref="boolean-lemma-partial-order-equivalence"/>, <m>b \wedge c' \neq O</m>. Luego, existe un átomo <m>a</m> tal que <m>a \preceq b \wedge c'</m>. Concluimos que <m>a \preceq b</m> y <m>a \not\preceq c</m>.
         </p>
         </proof>
       </lemma>
  
-      <lemma xml:id="lemma-atoms">
+      <lemma xml:id="lemma-atoms" permid="RVR">
         <statement>
-          <p>Sea <m>b \in B</m> y sean <m>a_1, \ldots, a_n</m> los átomos de <m>B</m> tales que <m>a_i \preceq b</m>. Entonces <m>b = a_1 \vee \cdots \vee a_n</m>. Más aún, si <m>a, a_1, \ldots, a_n</m> son átomos de <m>B</m> tales que <m>a \preceq b</m>, <m>a_i \preceq b</m>, y <m>b = a \vee a_1 \vee \cdots \vee a_n</m>, entonces <m>a = a_i</m> para algún <m>i = 1, \ldots, n</m>.
+          <p permid="cgO">Sea <m>b \in B</m> y sean <m>a_1, \ldots, a_n</m> los átomos de <m>B</m> tales que <m>a_i \preceq b</m>. Entonces <m>b = a_1 \vee \cdots \vee a_n</m>. Más aún, si <m>a, a_1, \ldots, a_n</m> son átomos de <m>B</m> tales que <m>a \preceq b</m>, <m>a_i \preceq b</m>, y <m>b = a \vee a_1 \vee \cdots \vee a_n</m>, entonces <m>a = a_i</m> para algún <m>i = 1, \ldots, n</m>.
         </p>
         </statement>
-        <proof>
-          <p>Sea <m>b_1 =   a_1 \vee \cdots \vee a_n</m>. Como <m>a_i \preceq b</m> para cada <m>i</m>, sabemos que <m>b_1 \preceq b</m>.  Si podemos mostrar que <m>b \preceq b_1</m>, entonces el lema se cumple por la antisimetría.  Supongamos que <m>b \not\preceq b_1</m>. Entonces existe un átomo <m>a</m> tal que <m>a \preceq b</m> y <m>a \not\preceq b_1</m>.  Como <m>a</m> es un átomo y <m>a \preceq b</m>, deducimos que <m>a = a_i</m> para algún <m>a_i</m>. Pero esto es imposible pues <m>a \preceq b_1</m>. Por lo tanto, <m>b \preceq b_1</m>.
+        <proof permid="qdc">
+          <p permid="BOR">Sea <m>b_1 =   a_1 \vee \cdots \vee a_n</m>. Como <m>a_i \preceq b</m> para cada <m>i</m>, sabemos que <m>b_1 \preceq b</m>.  Si podemos mostrar que <m>b \preceq b_1</m>, entonces el lema se cumple por la antisimetría.  Supongamos que <m>b \not\preceq b_1</m>. Entonces existe un átomo <m>a</m> tal que <m>a \preceq b</m> y <m>a \not\preceq b_1</m>.  Como <m>a</m> es un átomo y <m>a \preceq b</m>, deducimos que <m>a = a_i</m> para algún <m>a_i</m>. Pero esto es imposible pues <m>a \preceq b_1</m>. Por lo tanto, <m>b \preceq b_1</m>.
         </p>
  
-          <p>Ahora supongamos que <m>b = a_1 \vee \cdots \vee a_n</m>. Si <m>a</m> es un átomo menor que <m>b</m>, 
-            <me>a = a \wedge b  = a \wedge( a_1 \vee \cdots \vee a_n ) = (a \wedge a_1) \vee \cdots \vee ( a \wedge a_n )</me>.
-          Pero cada término es <m>O</m> o <m>a</m> con <m>a \wedge a_i</m> solo para un <m>a_i</m>. Luego, por el <xref ref="lemma-zero-vee" />, <m>a = a_i</m> para algún <m>i</m>.
+          <p permid="hWa">Ahora supongamos que <m>b = a_1 \vee \cdots \vee a_n</m>. Si <m>a</m> es un átomo menor que <m>b</m>, 
+            <me permid="Jmm">a = a \wedge b  = a \wedge( a_1 \vee \cdots \vee a_n ) = (a \wedge a_1) \vee \cdots \vee ( a \wedge a_n )</me>.
+          Pero cada término es <m>O</m> o <m>a</m> con <m>a \wedge a_i</m> solo para un <m>a_i</m>. Luego, por el <xref ref="boolean-lemma-zero-vee"/>, <m>a = a_i</m> para algún <m>i</m>.
         </p>
         </proof>
       </lemma>
  
-      <theorem xml:id="theorem-classification-boolean-algebra">
+      <theorem xml:id="boolean-theorem-classification-boolean-algebra" permid="NlY">
         <statement>
-          <p>Sea <m>B</m> un álgebra Booleana finita.  Entonces existe un conjunto <m>X</m> tal que <m>B</m> es isomorfo a <m>{\mathcal P}(X)</m>.
+          <p permid="rpM">Sea <m>B</m> un álgebra Booleana finita.  Entonces existe un conjunto <m>X</m> tal que <m>B</m> es isomorfo a <m>{\mathcal P}(X)</m>.
         </p>
         </statement>
-        <proof>
-          <p>Mostraremos que <m>B</m> es isomorfo a <m>{\mathcal P}(X)</m>, donde <m>X</m> es el conjunto de átomos de <m>B</m>. Sea <m>a \in B</m>. Por el <xref ref="lemma-atoms" />, podemos escribir <m>a</m> de forma única como <m>a = a_1 \vee \cdots \vee a_n</m> para <m>a_1, \ldots, a_n \in X</m>. Concluimos que es posible definir una función <m>\phi : B \rightarrow {\mathcal P}(X)</m> por  
-            <me>\phi(a) = \phi(  a_1 \vee \cdots \vee a_n ) = \{a_1, \ldots, a_n \}</me>.
+        <proof permid="ltj">
+          <p permid="Odj">Mostraremos que <m>B</m> es isomorfo a <m>{\mathcal P}(X)</m>, donde <m>X</m> es el conjunto de átomos de <m>B</m>. Sea <m>a \in B</m>. Por el <xref ref="lemma-atoms"/>, podemos escribir <m>a</m> de forma única como <m>a = a_1 \vee \cdots \vee a_n</m> para <m>a_1, \ldots, a_n \in X</m>. Concluimos que es posible definir una función <m>\phi : B \rightarrow {\mathcal P}(X)</m> por  
+            <me permid="ptv">\phi(a) = \phi(  a_1 \vee \cdots \vee a_n ) = \{a_1, \ldots, a_n \}</me>.
           Claramente, <m>\phi</m> es sobre.
         </p>
  
-          <p>Ahora sean <m>a = a_1 \vee \cdots \vee a_n</m> y <m>b = b_1 \vee \cdots \vee b_m</m> elementos en <m>B</m>, donde cada <m>a_i</m> y cada <m>b_i</m> es un átomo. Si <m>\phi(a) = \phi(b)</m>, entonces <m>\{a_1, \ldots, a_n \} = \{b_1, \ldots, b_m \}</m> y <m>a = b</m>. Concluimos que <m>\phi</m> es inyectiva.
+          <p permid="uks">Ahora sean <m>a = a_1 \vee \cdots \vee a_n</m> y <m>b = b_1 \vee \cdots \vee b_m</m> elementos en <m>B</m>, donde cada <m>a_i</m> y cada <m>b_i</m> es un átomo. Si <m>\phi(a) = \phi(b)</m>, entonces <m>\{a_1, \ldots, a_n \} = \{b_1, \ldots, b_m \}</m> y <m>a = b</m>. Concluimos que <m>\phi</m> es inyectiva.
         </p>
  
-          <p>El supremo de <m>a</m> y <m>b</m> es preservado por <m>\phi</m> pues
-            <md>
+          <p permid="arB">El supremo de <m>a</m> y <m>b</m> es preservado por <m>\phi</m> pues
+            <md permid="VAE">
               <mrow>\phi(a \vee b) &amp; = \phi( a_1 \vee \cdots \vee a_n \vee b_1 \vee \cdots \vee b_m )</mrow>
               <mrow>&amp; = \{ a_1, \ldots, a_n, b_1, \ldots, b_m \}</mrow>
               <mrow>&amp; = \{ a_1, \ldots, a_n \} \cup \{ b_1, \ldots, b_m \}</mrow>
@@ -494,12 +494,12 @@
         </proof>
       </theorem> 
 
-      <p>Dejaremos la demostración del siguiente corolario como un ejercicio.
+      <p permid="OrE">Dejaremos la demostración del siguiente corolario como un ejercicio.
         </p>
  
-      <corollary>
+      <corollary permid="yda">
         <statement>
-          <p>El orden de cualquier álgebra Booleana finita es <m>2^n</m> para algún entero positivo <m>n</m>.
+          <p permid="InX">El orden de cualquier álgebra Booleana finita es <m>2^n</m> para algún entero positivo <m>n</m>.
         </p>
         </statement>
       </corollary>
@@ -508,21 +508,21 @@
 
   </section>
     
-  <section xml:id="section-algebra-of-circuits">
+  <section xml:id="boolean-section-algebra-of-circuits" permid="fpC">
     <title>El Álgebra de los Circuitos Eléctricos</title>
 
-    <introduction>
+    <introduction permid="onP">
  
-      <p>La utilidad de las álgebras Booleanas se ha vuelto cada vez más clara en las últimas décadas con el desarrollo del computador moderno. El diseño de circuitos integrados se puede expresar en términos de álgebras Booleanas. En esta sección desarrollaremos el álgebra Booleana de los circuitos eléctricos y de los conmutadores; pero, estos resultados se generalizan fácilmente al diseños de circuitos integrados para computadores.
+      <p permid="ONd">La utilidad de las álgebras Booleanas se ha vuelto cada vez más clara en las últimas décadas con el desarrollo del computador moderno. El diseño de circuitos integrados se puede expresar en términos de álgebras Booleanas. En esta sección desarrollaremos el álgebra Booleana de los circuitos eléctricos y de los conmutadores; pero, estos resultados se generalizan fácilmente al diseños de circuitos integrados para computadores.
         </p>
    
-      <p>Un <term>conmutador</term><idx><h>Conmutador</h><h>definición de</h></idx> es un artefacto, ubicado en algún punto de un circuito eléctrico, que controla el flujo de la corriente a través del circuito. Cada conmutador tiene dos estados posibles: puede estar <idx><h>Conmutador</h><h>abierto</h></idx> <term>abierto</term>, y no permitir el paso de la corriente a través del circuito,  o puede estar <idx><h>Conmutador</h><h>cerrado</h></idx><term>cerrado</term>, y permitir el paso de corriente. Estos estados son mutuamente excluyentes. Requerimos que todo conmutador esté en un estado o en el otro<mdash />un conmutador no puede estar abierto y cerrado simultáneamente.  Además, si un conmutador está siempre en el mismo estado que otro, los denotaremos a ambos por la misma letra; es decir, dos circuitos que etiquetados con la misma letra <m>a</m> estarán abiertos a la vez y cerrados a la vez.
+      <p permid="uUm">Un <term>conmutador</term><idx><h>Conmutador</h><h>definición de</h></idx> es un artefacto, ubicado en algún punto de un circuito eléctrico, que controla el flujo de la corriente a través del circuito. Cada conmutador tiene dos estados posibles: puede estar <idx><h>Conmutador</h><h>abierto</h></idx> <term>abierto</term>, y no permitir el paso de la corriente a través del circuito,  o puede estar <idx><h>Conmutador</h><h>cerrado</h></idx><term>cerrado</term>, y permitir el paso de corriente. Estos estados son mutuamente excluyentes. Requerimos que todo conmutador esté en un estado o en el otro<mdash/>un conmutador no puede estar abierto y cerrado simultáneamente.  Además, si un conmutador está siempre en el mismo estado que otro, los denotaremos a ambos por la misma letra; es decir, dos circuitos que etiquetados con la misma letra <m>a</m> estarán abiertos a la vez y cerrados a la vez.
         </p>
 
-      <p>Dados dos conmutadores, podemos construir dos tipos fundamentales de circuitos. Dos conmutadores <m>a</m> y <m>b</m> están en <term>serie</term><idx><h>Conmutadores</h><h>en serie</h></idx> si forman un circuito del tipo ilustrado en la <xref ref="figure-a-wedge-b" />. La corriente puede pasar entre los terminales <m>A</m> y <m>B</m> de un circuito en serie si y solo si ambos conmutadores <m>a</m> y <m>b</m> están cerrados. Denotaremos esta combinación de conmutadores por <m>a \wedge b</m>. Dos conmutadores <m>a</m> y <m>b</m> están en <term>paralelo</term><idx><h>Circuito</h><h>paralelo</h></idx> si forman un circuito del tipo que aparece en la <xref ref="figure-a-vee-b" />.  En el caso de un circuito paralelo, la corriente puede pasar entre <m>A</m> y <m>B</m> si alguno de los dos conmutadores está cerrado.  Denotaremos una combinación paralela de circuitos <m>a</m> y <m>b</m> por <m>a \vee b</m>.
+      <p permid="bbv">Dados dos conmutadores, podemos construir dos tipos fundamentales de circuitos. Dos conmutadores <m>a</m> y <m>b</m> están en <term>serie</term><idx><h>Conmutadores</h><h>en serie</h></idx> si forman un circuito del tipo ilustrado en la <xref ref="boolean-figure-a-wedge-b"/>. La corriente puede pasar entre los terminales <m>A</m> y <m>B</m> de un circuito en serie si y solo si ambos conmutadores <m>a</m> y <m>b</m> están cerrados. Denotaremos esta combinación de conmutadores por <m>a \wedge b</m>. Dos conmutadores <m>a</m> y <m>b</m> están en <term>paralelo</term><idx><h>Circuito</h><h>paralelo</h></idx> si forman un circuito del tipo que aparece en la <xref ref="boolean-figure-a-vee-b"/>.  En el caso de un circuito paralelo, la corriente puede pasar entre <m>A</m> y <m>B</m> si alguno de los dos conmutadores está cerrado.  Denotaremos una combinación paralela de circuitos <m>a</m> y <m>b</m> por <m>a \vee b</m>.
         </p>
 
-      <figure xml:id="figure-a-wedge-b">
+      <figure xml:id="boolean-figure-a-wedge-b" permid="fLo">
         <caption><m>a \wedge b</m></caption>
 
         <!-- Replaced figure with tikz figure - TWJ 8/17/2010 -->
@@ -534,7 +534,7 @@
         </image>
       </figure>
 
-      <figure xml:id="figure-a-vee-b">
+      <figure xml:id="boolean-figure-a-vee-b" permid="LSx">
         <caption><m>a \vee b</m></caption>
 
         <!-- Replaced figure with tikz figure - TWJ 8/17/2010 -->
@@ -548,13 +548,13 @@
 
       </figure>
 
-      <p>Podemos construir circuitos eléctrico más complicados a partir de circuitos en serie o en paralelo reemplazando cualquiera de los conmutadores por uno de estos tipos fundamentales de circuitos. Los circuitos construido de esta manera se llaman <idx><h>Circuito</h><h>paralelo-serial</h></idx><term>circuitos paralelo-seriales</term>.
+      <p permid="HiE">Podemos construir circuitos eléctrico más complicados a partir de circuitos en serie o en paralelo reemplazando cualquiera de los conmutadores por uno de estos tipos fundamentales de circuitos. Los circuitos construido de esta manera se llaman <idx><h>Circuito</h><h>paralelo-serial</h></idx><term>circuitos paralelo-seriales</term>.
         </p>
    
-      <p>Consideramos que dos circuitos son equivalentes si actúan igual. Es decir, si ponemos los conmutadores en circuitos equivalentes en exactamente los mismos estados, entonces obtendremos el mismo resultado.  Por ejemplo, un circuito serial <m>a \wedge b</m> es exactamente el mismo que <m>b \wedge a</m>.  Notemos que esta es exactamente la ley conmutativa para álgebras Booleanas. De hecho, el conjunto de todos los circuitos paralelo-seriales forma un álgebra Booleana bajo las operaciones <m>\vee</m> y <m>\wedge</m>. Podemos usar diagramas para verificar los distintos axiomas de un álgebra Booleana. La ley distributiva, <m>a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c )</m>, está ilustrada en la <xref ref="figure-boolean-distributive" />.  Si <m>a</m> es un conmutador, entonces <m>a'</m> es el conmutador que siempre está abierto cuando <m>a</m> está cerrado y siempre está cerrado cuando <m>a</m> está abierto. Un circuito que siempre está cerrado es <m>I</m> en nuestra álgebra; un circuito que siempre está abierto es <m>O</m>. Las leyes de <m>a \wedge a' = O</m> y <m>a \vee a' = I</m> se muestran en la <xref ref="boolean-figure-boolean-i-and-o-a"/> y la <xref ref="boolean-figure-boolean-i-and-o-b"/>, respectivamente.
+      <p permid="npN">Consideramos que dos circuitos son equivalentes si actúan igual. Es decir, si ponemos los conmutadores en circuitos equivalentes en exactamente los mismos estados, entonces obtendremos el mismo resultado.  Por ejemplo, un circuito serial <m>a \wedge b</m> es exactamente el mismo que <m>b \wedge a</m>.  Notemos que esta es exactamente la ley conmutativa para álgebras Booleanas. De hecho, el conjunto de todos los circuitos paralelo-seriales forma un álgebra Booleana bajo las operaciones <m>\vee</m> y <m>\wedge</m>. Podemos usar diagramas para verificar los distintos axiomas de un álgebra Booleana. La ley distributiva, <m>a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c )</m>, está ilustrada en la <xref ref="boolean-figure-boolean-distributive"/>.  Si <m>a</m> es un conmutador, entonces <m>a'</m> es el conmutador que siempre está abierto cuando <m>a</m> está cerrado y siempre está cerrado cuando <m>a</m> está abierto. Un circuito que siempre está cerrado es <m>I</m> en nuestra álgebra; un circuito que siempre está abierto es <m>O</m>. Las leyes de <m>a \wedge a' = O</m> y <m>a \vee a' = I</m> se muestran en la <xref ref="boolean-figure-boolean-i-and-o-a"/> y la <xref ref="boolean-figure-boolean-i-and-o-b"/>, respectivamente.
         </p>
 
-      <figure xml:id="figure-boolean-distributive">
+      <figure xml:id="boolean-figure-boolean-distributive" permid="rZG">
         <caption><m>a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c )</m></caption> 
 
         <!-- Replaced figure with tikz figure - TWJ 8/17/2010 -->
@@ -642,25 +642,25 @@
     
         </figure>
 
-      <paragraphs>
+      <paragraphs component="sage-blurb" permid="mUb">
         <title>Sage</title>
         
-        <p>Sage tiene una buena implementación de funciones para trabajar con conjuntos parcialmente ordenados y con reticulados, todo como parte de una gran batería de funciones de combinatoria.  No hay mucho en este capítulo que no pueda ser investigado usando Sage.
+        <p permid="zEf">Sage tiene una buena implementación de funciones para trabajar con conjuntos parcialmente ordenados y con reticulados, todo como parte de una gran batería de funciones de combinatoria.  No hay mucho en este capítulo que no pueda ser investigado usando Sage.
         </p>
       </paragraphs>
 
     </introduction>
 
-     <subsection xml:id="boolean-subsection-historical-note">
+     <subsection xml:id="boolean-subsection-historical-note" permid="VVQ">
       <title>Nota Histórica</title>
  
-       <p>George Boole<idx><h>Boole, George</h></idx> (1815<ndash />1864) fue la primera persona en estudiar reticulados. En 1847, publicó <em>The Investigation of the Laws of Thought</em>, un libro en el que usó reticulados para formalizar la lógica y el cálculo de proposiciones. Boole pensaba que las matemáticas eran el estudio de forma más que de contenido; es decir, no estaba tan preocupado en qué estaba calculando sino en cómo lo estaba calculando.  El trabajo de Boole fue contiuado por su amigo Augustus De Morgan<idx><h>De Morgan, Augustus</h></idx> (1806<ndash />1871).  De Morgan observó  que el Principio de Dualidad se cumplía en la Teoría de Conjuntos, como se ilustra por las leyes de De Morgan. Pensaba, como Boole, que las matemáticas eran el estudio de símbolos y operaciones abstractas.
+       <p permid="uyN">George Boole<idx><h>Boole, George</h></idx> (1815<ndash/>1864) fue la primera persona en estudiar reticulados. En 1847, publicó <em>The Investigation of the Laws of Thought</em>, un libro en el que usó reticulados para formalizar la lógica y el cálculo de proposiciones. Boole pensaba que las matemáticas eran el estudio de forma más que de contenido; es decir, no estaba tan preocupado en qué estaba calculando sino en cómo lo estaba calculando.  El trabajo de Boole fue contiuado por su amigo Augustus De Morgan<idx><h>De Morgan, Augustus</h></idx> (1806<ndash/>1871).  De Morgan observó  que el Principio de Dualidad se cumplía en la Teoría de Conjuntos, como se ilustra por las leyes de De Morgan. Pensaba, como Boole, que las matemáticas eran el estudio de símbolos y operaciones abstractas.
         </p>
  
-      <p>La teoría de conjuntos y la lógica fueron avanzados postriormente por matemáticos tales como Alfred North Whitehead<idx><h>Whitehead, Alfred North</h></idx> (1861<ndash />1947), Bertrand Russell<idx><h>Russell, Bertrand</h></idx> (1872<ndash />1970), y David Hilbert<idx><h>Hilbert, David</h></idx> (1862<ndash />1943). En <em>Principia Mathematica</em>, Whitehead y Russell intentaron mostrar la conexión entre matemáticas y lógica mediante la deducción del sistema de números naturales a partir de las reglas de la lógica formal. Si los números naturales podían ser determinados a partir de la lógica misma, entonces también podría serlo buena parte del resto de las matemáticas. Sus planes sufrieron un golpe mortal por parte de Kurt Gödel<idx><h>Gödel, Kurt</h></idx> (1906<ndash />1978), quien demostró que siempre existirán problemas <q>indecidibles</q> en cualquier sistema axiomático lo suficientemente rico; es decir, en cualquier sistema matemático de alguna importancia, siempre habrá enunciados que no puedan ser demostrados ni refutados.
+      <p permid="aFW">La teoría de conjuntos y la lógica fueron avanzados postriormente por matemáticos tales como Alfred North Whitehead<idx><h>Whitehead, Alfred North</h></idx> (1861<ndash/>1947), Bertrand Russell<idx><h>Russell, Bertrand</h></idx> (1872<ndash/>1970), y David Hilbert<idx><h>Hilbert, David</h></idx> (1862<ndash/>1943). En <em>Principia Mathematica</em>, Whitehead y Russell intentaron mostrar la conexión entre matemáticas y lógica mediante la deducción del sistema de números naturales a partir de las reglas de la lógica formal. Si los números naturales podían ser determinados a partir de la lógica misma, entonces también podría serlo buena parte del resto de las matemáticas. Sus planes sufrieron un golpe mortal por parte de Kurt Gödel<idx><h>Gödel, Kurt</h></idx> (1906<ndash/>1978), quien demostró que siempre existirán problemas <q>indecidibles</q> en cualquier sistema axiomático lo suficientemente rico; es decir, en cualquier sistema matemático de alguna importancia, siempre habrá enunciados que no puedan ser demostrados ni refutados.
         </p>
  
-       <p>Como ocurre con frecuencia, esta investigación básica en matemáticas puras posteriormente se volvió indispensable en una amplia gama de aplicaciones. El álgebra Booleana y la lógica se volvieron esenciales en el diseño de circuitos integrados a gra escala que se encuentran en los chips de computadores hoy. Los sociólogos han usado reticulados y álgebras Booleanas para modelar jerarquías sociales; los biólogos las han usado para dscribir sistemas biológicos.
+       <p permid="GNf">Como ocurre con frecuencia, esta investigación básica en matemáticas puras posteriormente se volvió indispensable en una amplia gama de aplicaciones. El álgebra Booleana y la lógica se volvieron esenciales en el diseño de circuitos integrados a gra escala que se encuentran en los chips de computadores hoy. Los sociólogos han usado reticulados y álgebras Booleanas para modelar jerarquías sociales; los biólogos las han usado para dscribir sistemas biológicos.
         </p>
      </subsection>
    </section>
@@ -724,18 +724,18 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
   <title>Ejercicios</title>
 
-  <exercise number="1">
+  <exercise number="1" permid="bpD" xml:id="boolean-exercise-lattice-power-set">
     <statement>
-      <p>Dibuje el diagrama del reticulado para el conjunto potencia de <m>X = \{ a, b, c, d \}</m> con la relación de inclusión conjuntista, <m>\subset</m>. </p>
+      <p permid="QCq">Dibuje el diagrama del reticulado para el conjunto potencia de <m>X = \{ a, b, c, d \}</m> con la relación de inclusión conjuntista, <m>\subset</m>. </p>
     </statement>
     
   </exercise>
 
-  <exercise number="2">
+  <exercise number="2" permid="HwM" xml:id="boolean-exercise-lattice-divisors-of-30">
     <statement>
-      <p>Dibuje el diagrama para el conjunto de enteros positivos que son divisores de <m>30</m>. ¿Es este conjunto parcialmente ordenado un álgebra Booleana?</p>
+      <p permid="wJz">Dibuje el diagrama para el conjunto de enteros positivos que son divisores de <m>30</m>. ¿Es este conjunto parcialmente ordenado un álgebra Booleana?</p>
     </statement>
-    <hint>
+    <hint permid="iyD">
       <image width="40%" xml:id="hint-divisors-30" permid="jEj">
           <description>Un grafo con 30 en el nivel superior que está conectado con 10 y 15 en el segundo nivel. El tercer nivel tiene 2, que está conectado a 30 y 10, 5, que está conectado a 10 y 15, y 3 que está conectado a 15. El nivel inferior es 1, que está conectado a 2, 3 y 5.</description>
           <latex-image>
@@ -746,9 +746,9 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
     
   </exercise>
 
-  <exercise number="3">
+  <exercise number="3" permid="nDV" xml:id="boolean-exercise-lattice-subgroups-Z12">
     <statement>
-      <p>Dibuje un diagrama del reticulado de subgrupos de <m>{\mathbb Z}_{12}</m>.
+      <p permid="cQI">Dibuje un diagrama del reticulado de subgrupos de <m>{\mathbb Z}_{12}</m>.
         </p>
     </statement>
     
@@ -771,35 +771,35 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
     </exercise>
   
 
-  <exercise number="5">
+  <exercise number="5" permid="zSn" xml:id="boolean-exercise-Z-poset">
     <statement>
-      <p>Demuestre o refute: <m>{\mathbb Z}</m> es un conjunto parcialmente ordenado por la relación <m>a \preceq b</m> si <m>a \mid b</m>.
+      <p permid="pfa">Demuestre o refute: <m>{\mathbb Z}</m> es un conjunto parcialmente ordenado por la relación <m>a \preceq b</m> si <m>a \mid b</m>.
         </p>
     </statement>
-    <hint>
-      <p>Falso.
+    <hint permid="Hbn">
+      <p permid="Sdi">Falso.
         </p>
     </hint>
     
   </exercise>
 
-  <exercise number="6">
+  <exercise number="6" permid="fZw" xml:id="boolean-exercise-boolean-switching-circuit">
     <statement>
-      <p>Dibuje el circuito de conmutación para cada una de las siguientes expresiones Booleanas.
-        <ol cols="2">
+      <p permid="Vmj">Dibuje el circuito de conmutación para cada una de las siguientes expresiones Booleanas.
+        <ol cols="2" permid="HLh">
 
-          <li><p><m>(a \vee b \vee a') \wedge a</m></p></li>
+          <li permid="XDZ"><p permid="adg"><m>(a \vee b \vee a') \wedge a</m></p></li>
 
-          <li><p><m>(a \vee b)' \wedge (a \vee b)</m></p></li>
+          <li permid="DLi"><p permid="Gkp"><m>(a \vee b)' \wedge (a \vee b)</m></p></li>
 
-          <li><p><m>a \vee (a \wedge b)</m></p></li>
+          <li permid="jSr"><p permid="mry"><m>a \vee (a \wedge b)</m></p></li>
 
-          <li><p><m>(c \vee a \vee b) \wedge c' \wedge (a \vee b)'</m></p></li>
+          <li permid="PZA"><p permid="SyH"><m>(c \vee a \vee b) \wedge c' \wedge (a \vee b)'</m></p></li>
 
         </ol></p>
     </statement>
-    <hint>
-      <p>(a) <m>(a \vee b \vee a') \wedge a</m></p>
+    <hint permid="TpF">
+      <p permid="ykr">(a) <m>(a \vee b \vee a') \wedge a</m></p>
 
       
         <image width="50%" xml:id="hint-switching-circuit-part-a" permid="PLs">
@@ -809,7 +809,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
           </latex-image>
           </image>
 
-      <p>(c) <m>a \vee (a \wedge b)</m></p>
+      <p permid="erA">(c) <m>a \vee (a \wedge b)</m></p>
 
         <image width="50%" xml:id="hint-switching-circuit-part-c" permid="vSB">
           <description>Un grafo de izquierda a derecha que se divide en dos caminos y luego se vuelve a unir. El camino superior es a y luego b. El camino inferior es a.</description>
@@ -823,17 +823,17 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
   <!--Todo Complete this solution.-->
 
-  <exercise number="7">
+  <exercise number="7" permid="MgF" xml:id="boolean-exercise-circuit-3-switches">
     <statement>
-      <p>Dibuje un circuito que se cierre exactamente cuando solo uno de los tres interruptores <m>a</m>, <m>b</m>, o <m>c</m> esté cerrado.
+      <p permid="Bts">Dibuje un circuito que se cierre exactamente cuando solo uno de los tres interruptores <m>a</m>, <m>b</m>, o <m>c</m> esté cerrado.
         </p>
     </statement>
     
   </exercise>
 
-  <exercise number="8">
+  <exercise number="8" permid="snO" xml:id="boolean-exercise-equivalent-circuits">
     <statement>
-      <p>Demuestre o refute que los dos circuitos mostrados son equivalentes.
+      <p permid="hAB">Demuestre o refute que los dos circuitos mostrados son equivalentes.
         </p>
 
         <image width="80%" xml:id="exercise-equivalent-circuits" permid="bZK">
@@ -843,8 +843,8 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
           </latex-image>
           </image>
     </statement>
-    <hint>
-      <p>No son equivalentes.
+    <hint permid="LLg">
+      <p permid="KyJ">No son equivalentes.
         </p>
     </hint>
     
@@ -852,17 +852,17 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
   <!--Todo Complete this solution.-->
 
-  <exercise number="9">
+  <exercise number="9" permid="YuX" xml:id="boolean-exercise-power-set-cardinality">
     <statement>
-      <p>Sea <m>X</m> un conjunto finito con <m>n</m> elementos.  Demuestre que <m>|{\cal P}(X)| = 2^n</m>. Concluya que el orden de cualquier álgebra Booleana finita es <m>2^n</m> para algún <m>n \in {\mathbb N}</m>.
+      <p permid="NHK">Sea <m>X</m> un conjunto finito con <m>n</m> elementos.  Demuestre que <m>|{\cal P}(X)| = 2^n</m>. Concluya que el orden de cualquier álgebra Booleana finita es <m>2^n</m> para algún <m>n \in {\mathbb N}</m>.
         </p>
     </statement>
     
   </exercise>
 
-  <exercise number="10">
+  <exercise number="10" permid="ECg" xml:id="boolean-exercise-circuit-to-boolean">
     <statement>
-      <p>Para cada uno de los siguientes circuitos, escriba una expresión Booleana. Si el circuito puede ser reemplazado por uno con menos interruptores, dé la expresión Booleana y dibuje un diagrama para el nuevo circuito.
+      <p permid="tOT">Para cada uno de los siguientes circuitos, escriba una expresión Booleana. Si el circuito puede ser reemplazado por uno con menos interruptores, dé la expresión Booleana y dibuje un diagrama para el nuevo circuito.
         </p>
 
         <image width="50%" xml:id="exercise-boolean-circuit" permid="IgT">
@@ -872,24 +872,24 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
           </latex-image>
           </image>
     </statement>
-    <hint>
-      <p>(a) <m>a' \wedge [(a \wedge b') \vee b] = a \wedge (a \vee b) </m>.
+    <hint permid="EgH">
+      <p permid="qFS">(a) <m>a' \wedge [(a \wedge b') \vee b] = a \wedge (a \vee b) </m>.
         </p>
     </hint>
     
   </exercise>
 
-  <exercise number="11">
+  <exercise number="11" permid="kJp" xml:id="boolean-exercise-lattice-nonzero-integers">
     <statement>
-      <p>Demuestre o refute: El conjunto de todos los enteros distintos de cero es un reticulado, donde <m>a \preceq b</m> se define como <m>a \mid b</m>.
+      <p permid="ZWc">Demuestre o refute: El conjunto de todos los enteros distintos de cero es un reticulado, donde <m>a \preceq b</m> se define como <m>a \mid b</m>.
         </p>
     </statement>
     
   </exercise>
 
-  <exercise number="12">
+  <exercise number="12" permid="QQy" xml:id="boolean-exercise-partial-order">
     <statement>
-      <p>Sea <m>L</m> un conjunto no vacío con dos operaciones binarias <m>\vee</m> y <m>\wedge</m> que satisfagan la leyes conmutativa, associativa, idempotente, y de absorción.  Podemos definir un orden parcial en <m>L</m>, como en el <xref ref="theorem-partial-order"/>, por <m>a \preceq b</m> si <m>a \vee b = b</m>. Demuestre que el ínfimo de <m>a</m> y <m>b</m> es <m>a \wedge b</m>.
+      <p permid="Gdl">Sea <m>L</m> un conjunto no vacío con dos operaciones binarias <m>\vee</m> y <m>\wedge</m> que satisfagan la leyes conmutativa, associativa, idempotente, y de absorción.  Podemos definir un orden parcial en <m>L</m>, como en el <xref ref="boolean-theorem-partial-order"/>, por <m>a \preceq b</m> si <m>a \vee b = b</m>. Demuestre que el ínfimo de <m>a</m> y <m>b</m> es <m>a \wedge b</m>.
         </p>
     </statement>
     
@@ -897,9 +897,9 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
   <!--Todo Finish solution.-->
 
-  <exercise number="13">
+  <exercise number="13" permid="wXH" xml:id="boolean-exercise-LUB-subgroups-H-K">
     <statement>
-      <p>Sea <m>G</m> un grupo y <m>X</m> el conjunto de subgrupos de <m>G</m> ordenados por inclusión conjuntista. Si <m>H</m> y <m>K</m> son subgrupos de <m>G</m>, muestre que el supremo de <m>H</m> y <m>K</m> es el subgrupo generado por <m>H \cup K</m>.
+      <p permid="mku">Sea <m>G</m> un grupo y <m>X</m> el conjunto de subgrupos de <m>G</m> ordenados por inclusión conjuntista. Si <m>H</m> y <m>K</m> son subgrupos de <m>G</m>, muestre que el supremo de <m>H</m> y <m>K</m> es el subgrupo generado por <m>H \cup K</m>.
         </p>
     </statement>
     
@@ -907,36 +907,36 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
   <!--Todo Finish solution.-->
 
-  <exercise number="14">
+  <exercise number="14" permid="deQ" xml:id="boolean-exercise-ideals-poset">
     <statement>
-      <p>Sea <m>R</m> un anillo y suponga que <m>X</m> es el conjunto de ideales de <m>R</m>.  Muestre que <m>X</m> es un conjunto parcialmente ordenado por inclusión, <m>\subset</m>. Defina el ínfimo de dos ideales <m>I</m> y <m>J</m> en <m>X</m> como <m>I \cap J</m> y el supremo de  <m>I</m> y <m>J</m> como <m>I + J</m>. Demuestre que el conjunto de los ideales de <m>R</m> forma un reticulado bajo estas operaciones.
+      <p permid="SrD">Sea <m>R</m> un anillo y suponga que <m>X</m> es el conjunto de ideales de <m>R</m>.  Muestre que <m>X</m> es un conjunto parcialmente ordenado por inclusión, <m>\subset</m>. Defina el ínfimo de dos ideales <m>I</m> y <m>J</m> en <m>X</m> como <m>I \cap J</m> y el supremo de  <m>I</m> y <m>J</m> como <m>I + J</m>. Demuestre que el conjunto de los ideales de <m>R</m> forma un reticulado bajo estas operaciones.
         </p>
     </statement>
-    <hint>
-      <p>Sean <m>I, J</m> ideales en <m>R</m>. Debemos mostrar que <m>I + J = \{ r + s : r \in I \text{ y } s \in J  \}</m> es el menor ideal en <m>R</m> que contiene tanto a <m>I</m> como <m>J</m>. Si <m>r_1, r_2 \in I</m> y <m>s_1, s_2 \in J</m>, entonces <m>(r_1 + s_1) + (r_2 + s_2) = (r_1 + r_2) +(s_1 + s_2)</m> está en <m>I + J</m>. Para <m>a \in R</m>, <m>a(r_1 + s_1) = ar_1 + as_1 \in I + J</m>; luego, <m>I + J</m> es un ideal en <m>R</m>.
+    <hint permid="IQA">
+      <p permid="WNb">Sean <m>I, J</m> ideales en <m>R</m>. Debemos mostrar que <m>I + J = \{ r + s : r \in I \text{ y } s \in J  \}</m> es el menor ideal en <m>R</m> que contiene tanto a <m>I</m> como <m>J</m>. Si <m>r_1, r_2 \in I</m> y <m>s_1, s_2 \in J</m>, entonces <m>(r_1 + s_1) + (r_2 + s_2) = (r_1 + r_2) +(s_1 + s_2)</m> está en <m>I + J</m>. Para <m>a \in R</m>, <m>a(r_1 + s_1) = ar_1 + as_1 \in I + J</m>; luego, <m>I + J</m> es un ideal en <m>R</m>.
         </p>
     </hint>
     
   </exercise>
 
-  <exercise number="15">
+  <exercise number="15" permid="JlZ" xml:id="boolean-exercise-boolean-identities">
     <statement>
-      <p>Sea <m>B</m> un álgebra Booleana. Demuestre cada una de las siguientes identidades.
-        <ol>
+      <p permid="yyM">Sea <m>B</m> un álgebra Booleana. Demuestre cada una de las siguientes identidades.
+        <ol permid="nSq">
          
-          <li><p><m>a \vee I = I</m> y <m>a \wedge O = O</m> para todo <m>a \in B</m>.
+          <li permid="wgJ"><p permid="yFQ"><m>a \vee I = I</m> y <m>a \wedge O = O</m> para todo <m>a \in B</m>.
         </p></li>
            
-          <li><p>Si <m>a \vee b = I</m> y <m>a \wedge b = O</m>, entonces <m>b = a'</m>.
+          <li permid="cnS"><p permid="eMZ">Si <m>a \vee b = I</m> y <m>a \wedge b = O</m>, entonces <m>b = a'</m>.
         </p></li>
            
-          <li><p><m>(a')'=a</m> para todo <m>a \in B</m>.
+          <li permid="Ivb"><p permid="KUi"><m>(a')'=a</m> para todo <m>a \in B</m>.
         </p></li>
            
-          <li><p><m>I' = O</m> y <m>O' = I</m>.
+          <li permid="oCk"><p permid="rbr"><m>I' = O</m> y <m>O' = I</m>.
         </p></li>
            
-          <li><p><m>(a \vee b)' = a' \wedge b'</m> y <m>(a \wedge b)' = a' \vee b'</m> (Leyes de De Morgan).
+          <li permid="UJt"><p permid="XiA"><m>(a \vee b)' = a' \wedge b'</m> y <m>(a \wedge b)' = a' \vee b'</m> (Leyes de De Morgan).
         </p></li>
          
         </ol></p>
@@ -946,9 +946,9 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
   <!--Todo Finish solution.-->
 
-  <exercise number="16">
+  <exercise number="16" permid="pti" xml:id="boolean-exercise-sitching-functions-boolean-algebra">
     <statement>
-      <p>Dibujando los diagramas apropiados, complete la demostración del <xref ref="theorem-circuit"/> para mostrar que las funciones de conmutación forman un álgebra Booleana.
+      <p permid="eFV">Dibujando los diagramas apropiados, complete la demostración del <xref ref="boolean-theorem-circuit"/> para mostrar que las funciones de conmutación forman un álgebra Booleana.
         </p>
     </statement>
     
@@ -956,10 +956,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
   <!--Todo Finish solution.-->
 
-  <exercise number="17">
+  <exercise number="17" permid="VAr" xml:id="boolean-exercise-binary-ops-boolean-alg">
     <statement>
-      <p>Sea <m>B</m> un álgebra Booleana. Defina operaciones binarias <m>+</m> y <m>\cdot</m> en <m>B</m> como
-        <md>
+      <p permid="KNe">Sea <m>B</m> un álgebra Booleana. Defina operaciones binarias <m>+</m> y <m>\cdot</m> en <m>B</m> como
+        <md permid="hOW">
           <mrow>a + b &amp; = (a \wedge b') \vee (a' \wedge b)</mrow>
           <mrow>a \cdot b &amp; = a \wedge b</mrow>
         </md>.
@@ -971,20 +971,20 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
   <!--Todo Finish solution.-->
 
-  <exercise number="18">
+  <exercise number="18" permid="BHA" xml:id="boolean-exercise-totally-ordered">
     <statement>
-      <p>Sea <m>X</m>  un conjunto parcialmente ordenado tal que para todo <m>a</m> y <m>b</m> en <m>X</m>, ya sea <m>a \preceq  b</m> o <m>b \preceq a</m>. Entonces <m>X</m> es un <term>conjunto totalmente ordenado</term>.
-      <ol>
+      <p permid="qUn">Sea <m>X</m>  un conjunto parcialmente ordenado tal que para todo <m>a</m> y <m>b</m> en <m>X</m>, ya sea <m>a \preceq  b</m> o <m>b \preceq a</m>. Entonces <m>X</m> es un <term>conjunto totalmente ordenado</term>.
+      <ol permid="TZz">
 
-        <li><p>Es <m>a \mid b</m> un orden total en <m>{\mathbb N}</m>?</p></li>
+        <li permid="FAv"><p permid="HZC">Es <m>a \mid b</m> un orden total en <m>{\mathbb N}</m>?</p></li>
          
-        <li><p>Demuestre que <m>{\mathbb N}</m>, <m>{\mathbb Z}</m>, <m>{\mathbb Q}</m>, y <m>{\mathbb R}</m> son conjuntos totalmente ordenados con el orden usual <m>\leq</m>.
+        <li permid="lHE"><p permid="ogL">Demuestre que <m>{\mathbb N}</m>, <m>{\mathbb Z}</m>, <m>{\mathbb Q}</m>, y <m>{\mathbb R}</m> son conjuntos totalmente ordenados con el orden usual <m>\leq</m>.
         </p></li>
        
       </ol></p>
     </statement>
-    <hint>
-      <p>(a) No.
+    <hint permid="NAt">
+      <p permid="CUk">(a) No.
         </p>
     </hint>
     
@@ -992,37 +992,37 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
   <!--Todo Finish solution.-->
 
-  <exercise number="19">
+  <exercise number="19" permid="hOJ" xml:id="boolean-exercise-order-perserving">
     <statement>
-      <p>Sean <m>X</m> e <m>Y</m> conjuntos parcialmente ordenados.  Se dice que una función <m>\phi : X \rightarrow Y</m>  <term>preserva el orden</term> si <m>a \preceq b</m> implica que <m>\phi(a) \preceq \phi(b)</m>.  Sean <m>L</m> y <m>M</m> reticulados. Una función <m>\psi: L \rightarrow M</m> es un <term>homomorfismo de reticulados</term> si <m>\psi( a \vee b ) = \psi(a) \vee \psi(b)</m> y <m>\psi( a \wedge b ) = \psi(a) \wedge \psi(b)</m>. Muestre que todo homormorfismo de reticulados preserva el orden, pero que no toda función que preserva el orden es un homomorfismo de reticulados.
+      <p permid="Xbw">Sean <m>X</m> e <m>Y</m> conjuntos parcialmente ordenados.  Se dice que una función <m>\phi : X \rightarrow Y</m>  <term>preserva el orden</term> si <m>a \preceq b</m> implica que <m>\phi(a) \preceq \phi(b)</m>.  Sean <m>L</m> y <m>M</m> reticulados. Una función <m>\psi: L \rightarrow M</m> es un <term>homomorfismo de reticulados</term> si <m>\psi( a \vee b ) = \psi(a) \vee \psi(b)</m> y <m>\psi( a \wedge b ) = \psi(a) \wedge \psi(b)</m>. Muestre que todo homormorfismo de reticulados preserva el orden, pero que no toda función que preserva el orden es un homomorfismo de reticulados.
         </p>
     </statement>
     
   </exercise>
 
-  <exercise number="20">
+  <exercise number="20" permid="NVS" xml:id="boolean-exercise-identity-a-equal-b">
     <statement>
-      <p>Sea <m>B</m> un álgebra Booleana. Demeustre que <m>a = b</m> si y solo si <m>(a \wedge b') \vee ( a' \wedge b) = O</m> para todo <m>a, b \in B</m>.
+      <p permid="DiF">Sea <m>B</m> un álgebra Booleana. Demeustre que <m>a = b</m> si y solo si <m>(a \wedge b') \vee ( a' \wedge b) = O</m> para todo <m>a, b \in B</m>.
         </p>
     </statement>
-    <hint>
-      <p><m>( \Rightarrow)</m>. <m>a = b \Rightarrow (a \wedge b') \vee (a' \wedge b) = (a \wedge a') \vee (a' \wedge a) = O \vee O = O</m>. <m>( \Leftarrow)</m>. <m>( a \wedge b') \vee (a' \wedge b) = O \Rightarrow a \vee b = (a \vee a) \vee b = a \vee (a \vee b) = a \vee [I \wedge (a \vee b)] = a \vee [(a \vee a') \wedge (a \vee b)] = [a \vee (a \wedge b')] \vee [a \vee (a' \wedge b)] = a \vee [(a \wedge b') \vee (a' \wedge b)] = a \vee 0 = a</m>.  Un argumento simétrico muestra que <m>a \vee b = b</m>.
+    <hint permid="FVU">
+      <p permid="jbt"><m>( \Rightarrow)</m>. <m>a = b \Rightarrow (a \wedge b') \vee (a' \wedge b) = (a \wedge a') \vee (a' \wedge a) = O \vee O = O</m>. <m>( \Leftarrow)</m>. <m>( a \wedge b') \vee (a' \wedge b) = O \Rightarrow a \vee b = (a \vee a) \vee b = a \vee (a \vee b) = a \vee [I \wedge (a \vee b)] = a \vee [(a \vee a') \wedge (a \vee b)] = [a \vee (a \wedge b')] \vee [a \vee (a' \wedge b)] = a \vee [(a \wedge b') \vee (a' \wedge b)] = a \vee 0 = a</m>.  Un argumento simétrico muestra que <m>a \vee b = b</m>.
         </p>
     </hint>
     
   </exercise>
 
-  <exercise number="21">
+  <exercise number="21" permid="udb" xml:id="boolean-exercise-identity-a-equal-0">
     <statement>
-      <p>Sea <m>B</m> un álgebra Booleana. Demuestre que <m>a = O</m> si y solo si <m>(a \wedge b') \vee ( a' \wedge b) = b</m> para todo <m>b \in B</m>.
+      <p permid="jpO">Sea <m>B</m> un álgebra Booleana. Demuestre que <m>a = O</m> si y solo si <m>(a \wedge b') \vee ( a' \wedge b) = b</m> para todo <m>b \in B</m>.
         </p>
     </statement>
     
   </exercise>
 
-  <exercise number="22">
+  <exercise number="22" permid="akk" xml:id="boolean-exercise-product">
     <statement>
-      <p>Sean <m>L</m> y <m>M</m> reticulados. Defina un orden en <m>L \times M</m> por <m>( a, b) \preceq (c, d)</m> si <m>a \preceq c</m> y <m>b \preceq d</m>. Muestre que <m>L \times M</m> es un reticulado bajo este orden parcial.
+      <p permid="PwX">Sean <m>L</m> y <m>M</m> reticulados. Defina un orden en <m>L \times M</m> por <m>( a, b) \preceq (c, d)</m> si <m>a \preceq c</m> y <m>b \preceq d</m>. Muestre que <m>L \times M</m> es un reticulado bajo este orden parcial.
         </p>
     </statement>
     
@@ -1030,12 +1030,12 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
 </exercises>
 
-   <exercises xml:id="boolean-exercises-programming">
+   <exercises xml:id="boolean-exercises-programming" permid="aFJ">
     <title>Ejercicios de Programación</title>
  
-    <exercise>
+    <exercise permid="Grt" xml:id="boolean-programming-exercise-boolean-polys">
       <statement>
-        <p>Una <term>Función Booleana</term><idx><h>Función Booleana</h></idx><idx><h>Booleana</h><h>Función</h></idx> o <term>función de conmutación en <m>n</m> variables</term><idx><h>Función de conmutación</h></idx><idx><h>Conmutación</h><h>función de</h></idx> es una función <m>f : \{O, I\}^n \rightarrow \{ 0, I\}</m>. Un polinomio Booleano es un tipo especial de función Booleana: es cualquier tipo de expresión Booleana formada por una combinación finita de variables <m>x_1, \ldots, x_n</m> junto a <m>O</m> y <m>I</m>, usando las operaciones <m>\vee</m>, <m>\wedge</m>, y <m>'</m>. Los valores de las funciones están definidos en la <xref ref="table-boolean-polynomials" />. Escriba un programa para evaluar polinomios Booleanos.
+        <p permid="vEg">Una <term>Función Booleana</term><idx><h>Función Booleana</h></idx><idx><h>Booleana</h><h>Función</h></idx> o <term>función de conmutación en <m>n</m> variables</term><idx><h>Función de conmutación</h></idx><idx><h>Conmutación</h><h>función de</h></idx> es una función <m>f : \{O, I\}^n \rightarrow \{ 0, I\}</m>. Un polinomio Booleano es un tipo especial de función Booleana: es cualquier tipo de expresión Booleana formada por una combinación finita de variables <m>x_1, \ldots, x_n</m> junto a <m>O</m> y <m>I</m>, usando las operaciones <m>\vee</m>, <m>\wedge</m>, y <m>'</m>. Los valores de las funciones están definidos en la <xref ref="table-boolean-polynomials"/>. Escriba un programa para evaluar polinomios Booleanos.
         </p>
 
         <table xml:id="table-boolean-polynomials" permid="ooc">
@@ -1112,55 +1112,55 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
 
 -->
  
-  <references xml:id="boolean-references">
+  <references xml:id="boolean-references" permid="QcR">
     <title>Referencias y Lecturas Recomendadas</title>
 <!-- %TWJ 8/19/2010 - References checked. -->
 
-    <biblio type="raw"> <!-- was [1] -->
+    <biblio type="raw" permid="wka"> <!-- was [1] -->
  <!-- Out of print - TWJ 8/19/2010 -->
     Donnellan, T. <title>Lattice Theory</title>. Pergamon Press, Oxford, 1968.
   </biblio>
  
-    <biblio type="raw"> <!-- was [2] -->
-    Halmos, P. R. <q>The Basic Concepts of Algebraic Logic,</q> <title>American Mathematical Monthly</title> <volume>53</volume>(1956), 363<ndash />87.
+    <biblio type="raw" permid="crj"> <!-- was [2] -->
+    Halmos, P. R. <q>The Basic Concepts of Algebraic Logic,</q> <title>American Mathematical Monthly</title> <volume>53</volume>(1956), 363<ndash/>87.
   </biblio>
 
-    <biblio type="raw"> <!-- was [3] -->
-    Hohn, F. <q>Some Mathematical Aspects of Switching,</q> <title>American Mathematical Monthly</title> <volume>62</volume>(1955), 75<ndash />90.
+    <biblio type="raw" permid="Iys"> <!-- was [3] -->
+    Hohn, F. <q>Some Mathematical Aspects of Switching,</q> <title>American Mathematical Monthly</title> <volume>62</volume>(1955), 75<ndash/>90.
   </biblio>
 
-    <biblio type="raw"> <!-- was [4] -->
+    <biblio type="raw" permid="oFB"> <!-- was [4] -->
 <!-- Out of print - TWJ 8/19/2010 -->
     Hohn, F. <title>Applied Boolean Algebra</title>. 2nd ed. Macmillan, New York, 1966.
   </biblio>
 
-    <biblio type="raw"> <!-- was [5] -->
+    <biblio type="raw" permid="UMK"> <!-- was [5] -->
 <!-- Reference updated - TWJ 8/19/2010 -->
     Lidl, R. and Pilz, G.  <title>Applied Abstract Algebra</title>. 2nd ed. Springer, New York, 1998.
   </biblio>
 
-    <biblio type="raw"> <!-- was [6] -->
+    <biblio type="raw" permid="ATT"> <!-- was [6] -->
 <!-- Reference updated - TWJ 8/19/2010 -->
     Whitesitt, J. <title>Boolean Algebra and Its Applications</title>. Dover, Mineola, NY, 2010.
   </biblio>
 
   </references>
 
-  <section xml:id="boolean-sage">
+  <section xml:id="boolean-sage" component="sage-info" permid="LwL">
     <title>Sage</title>
   
-    <introduction>
-      <p>Sage tiene implementaciones de conjuntos parcialmente ordenados (<q>posets</q>) y de reticulados, proveyendo representaciones gráficas para ambos.
+    <introduction permid="UuY">
+      <p permid="kvh">Sage tiene implementaciones de conjuntos parcialmente ordenados (<q>posets</q>) y de reticulados, proveyendo representaciones gráficas para ambos.
         </p>
     </introduction>
   
-    <subsection>
+    <subsection permid="CcZ">
       <title>Creando Conjuntos Parcialmente Ordenados</title>
   
-      <p>El <xref ref="example-boolean-poset-divisors-24" /> en el  texto, es un buen ejemplo para repetirlo como demostración de comandos Sage.  Primero definimos los elementos del conjunto <m>X</m>.
+      <p permid="mUo">El <xref ref="boolean-example-poset-divisors-24"/> en el  texto, es un buen ejemplo para repetirlo como demostración de comandos Sage.  Primero definimos los elementos del conjunto <m>X</m>.
         </p>
   
-      <sage>
+      <sage permid="QOU">
       <input>
       X = (24).divisors()
       X
@@ -1170,10 +1170,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Una posibilidad para crear la relación es especificando <em>cada</em> instancia donde un elemento es comparable con otro.  Para ello construimos una lista de pares, donde cada par contiene elementos comparables, con el menor primero.  Este es el conjunto de relaciones.
+      <p permid="Tbx">Una posibilidad para crear la relación es especificando <em>cada</em> instancia donde un elemento es comparable con otro.  Para ello construimos una lista de pares, donde cada par contiene elementos comparables, con el menor primero.  Este es el conjunto de relaciones.
         </p>
   
-      <sage>
+      <sage permid="wWd">
       <input>
       R = [(a,b) for a in X for b in X if a.divides(b)]; R
       </input>
@@ -1185,10 +1185,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Construimos el conjunto parcialmente ordenado entregándole al constructor <c>Poset</c> una lista con todos los elementos y las relaciones.  Luego podemos obtener una visualización del conjunto parcialmente ordenado.  Notemos que el método <q>plot</q> solo muestra las <q>relaciones de cobertura</q> <mdash /> un conjunto minimal de comparaciones que por transitividad permiten recuperar todas las relaciones.
+      <p permid="ziG">Construimos el conjunto parcialmente ordenado entregándole al constructor <c>Poset</c> una lista con todos los elementos y las relaciones.  Luego podemos obtener una visualización del conjunto parcialmente ordenado.  Notemos que el método <q>plot</q> solo muestra las <q>relaciones de cobertura</q> <mdash/> un conjunto minimal de comparaciones que por transitividad permiten recuperar todas las relaciones.
         </p>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="bnZ">
       <input>
       D = Poset([X, R])
       D.plot()
@@ -1197,10 +1197,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Otra posibilidad para crear un <c>Poset</c> es dejar que el constructor de conjuntos parcialmente ordenados recorra todos los pares de elementos, y lo único que le debemos entregar al constructor es una forma de comprobar si dos elementos son comparables.  Nuestra función de comparación debe requerir dos elementos y devolver <c>True</c> o <c>False</c>.  Una función <q>lambda</q> es una forma de construir una tal función rápidamente.  Esta puede ser una idea nueva para usted, pero el dominio de las funciones lambda puede ser muy conveniente.  Notemos que <q>lambda</q> es una palabra reservada precisamente para este propósito (así, por ejemplo, <c>lambda</c> es una elección prohibida para el valor propio de una matriz).  Hay otras maneras de definir funciones en Sage, pero una función lambda es lo más rápido cuando la función es simple.
+      <p permid="fpP">Otra posibilidad para crear un <c>Poset</c> es dejar que el constructor de conjuntos parcialmente ordenados recorra todos los pares de elementos, y lo único que le debemos entregar al constructor es una forma de comprobar si dos elementos son comparables.  Nuestra función de comparación debe requerir dos elementos y devolver <c>True</c> o <c>False</c>.  Una función <q>lambda</q> es una forma de construir una tal función rápidamente.  Esta puede ser una idea nueva para usted, pero el dominio de las funciones lambda puede ser muy conveniente.  Notemos que <q>lambda</q> es una palabra reservada precisamente para este propósito (así, por ejemplo, <c>lambda</c> es una elección prohibida para el valor propio de una matriz).  Hay otras maneras de definir funciones en Sage, pero una función lambda es lo más rápido cuando la función es simple.
         </p>
   
-      <sage>
+      <sage permid="ddm">
       <input>
       divisible = lambda x, y: x.divides(y)
       L = Poset([X, divisible])
@@ -1211,13 +1211,13 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="Hvi">
       <input>
       L.plot()
       </input>
       </sage>
   
-      <p>Sage ya tiene una colección de conjuntos parcialmente ordenados.  Algunos se construyen directamente, mientras otros pertenecen a familias parametrizadas.  Use completación con TAB en <c>Posets.</c> para ver la lista completa.  Acá hay algunos ejemplo.
+      <p permid="LwY">Sage ya tiene una colección de conjuntos parcialmente ordenados.  Algunos se construyen directamente, mientras otros pertenecen a familias parametrizadas.  Use completación con TAB en <c>Posets.</c> para ver la lista completa.  Acá hay algunos ejemplo.
         </p>
   
         <p permid="rEh">
@@ -1225,7 +1225,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
           Quizás lo que esperaría, aunque podría haber otras alternativas igualmente plausibles.
           </p>
     
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="nCr">
       <input>
       Q = Posets.PentagonPoset()
       Q.plot()
@@ -1234,19 +1234,19 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Ahora una familia parametrizada.  Este es un ejemplo clásico donde los elementos son subconjuntos de un conjunto de <m>n</m> elementos y la relación es <q>subconjunto de.</q></p>
+      <p permid="XLq">Ahora una familia parametrizada.  Este es un ejemplo clásico donde los elementos son subconjuntos de un conjunto de <m>n</m> elementos y la relación es <q>subconjunto de.</q></p>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="TJA">
       <input>
       S = Posets.BooleanLattice(4)
       S.plot()
       </input>
       </sage>
   
-      <p>Y conjuntos parcialmente ordenados aleatorios.  Estos pueden ser útiles para experimentos o comprobaciones, pero es poco probable que aparezcan con propiedades especiales que puedan ser importantes.  Puede intentar el siguiente comando varias veces, variando el segundo argumento  que es una cota superior para la probabilidad de que dos elementos cualquiera sean comparables. Recuerde que plot solo muestra las relaciones de cobertura.  Mientras más elementos comparables haya, más <q>estirado verticalmente</q> será el grafo.
+      <p permid="DSz">Y conjuntos parcialmente ordenados aleatorios.  Estos pueden ser útiles para experimentos o comprobaciones, pero es poco probable que aparezcan con propiedades especiales que puedan ser importantes.  Puede intentar el siguiente comando varias veces, variando el segundo argumento  que es una cota superior para la probabilidad de que dos elementos cualquiera sean comparables. Recuerde que plot solo muestra las relaciones de cobertura.  Mientras más elementos comparables haya, más <q>estirado verticalmente</q> será el grafo.
         </p>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="zQJ">
       <input>
       T = Posets.RandomPoset(20,0.05)
       T.plot()
@@ -1254,13 +1254,13 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </sage>
     </subsection>
   
-    <subsection>
+    <subsection permid="iki">
       <title>Propiedades de un conjunto parcialmente ordenado</title>
   
-      <p>Una vez que tenemos un conjunto parcialmente ordenado, ¿qué podemos hacer con él?  Volvamos a nuestro primer ejemplo, <c>D</c>.  Por supuesto podemos determinar si un elemento es menor a otro, que es la estructura fundamental de un conjunto parcialmente ordenado.
+      <p permid="jZI">Una vez que tenemos un conjunto parcialmente ordenado, ¿qué podemos hacer con él?  Volvamos a nuestro primer ejemplo, <c>D</c>.  Por supuesto podemos determinar si un elemento es menor a otro, que es la estructura fundamental de un conjunto parcialmente ordenado.
         </p>
   
-      <sage>
+      <sage permid="Jkv">
       <input>
       D.is_lequal(4, 8)
       </input>
@@ -1269,7 +1269,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="prE">
       <input>
       D.is_lequal(4, 4)
       </input>
@@ -1278,7 +1278,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="VyN">
       <input>
       D.is_less_than(4, 8)
       </input>
@@ -1287,7 +1287,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="BFW">
       <input>
       D.is_less_than(4, 4)
       </input>
@@ -1296,7 +1296,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="hNf">
       <input>
       D.is_lequal(6, 8)
       </input>
@@ -1305,7 +1305,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="NUo">
       <input>
       D.is_lequal(8, 6)
       </input>
@@ -1314,10 +1314,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Notemos que <c>6</c> y <c>8</c> no son comparables en este conjunto parcialmente ordenado  (es un orden <em>parcial</em>).  Los métodos <c>.is_gequal()</c>  y <c>.is_greater_than()</c> funcionan de forma similar, pero devuelven <c>True</c>  si el primer elemento es mayor (o igual).
+      <p permid="QgR">Notemos que <c>6</c> y <c>8</c> no son comparables en este conjunto parcialmente ordenado  (es un orden <em>parcial</em>).  Los métodos <c>.is_gequal()</c>  y <c>.is_greater_than()</c> funcionan de forma similar, pero devuelven <c>True</c>  si el primer elemento es mayor (o igual).
         </p>
   
-      <sage>
+      <sage permid="ubx">
       <input>
       D.is_gequal(8, 4)
       </input>
@@ -1326,7 +1326,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="aiG">
       <input>
       D.is_greater_than(4, 8)
       </input>
@@ -1335,10 +1335,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Podemo encontrar elementos maximales o minimales de un conjunto parcialmente ordenado.  Este es un conjunto parcialmente ordenado aleatorio construido con una probabilidad de 10%, pero copiado acá para ser repetible.
+      <p permid="woa">Podemo encontrar elementos maximales o minimales de un conjunto parcialmente ordenado.  Este es un conjunto parcialmente ordenado aleatorio construido con una probabilidad de 10%, pero copiado acá para ser repetible.
         </p>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="fXS">
       <input>
       X = range(20)
       C = [[18, 7],  [9, 11], [9, 10], [11, 8], [6, 10],
@@ -1350,7 +1350,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </input>
       </sage>
   
-      <sage>
+      <sage permid="GpP">
       <input>
       P.minimal_elements()
       </input>
@@ -1359,7 +1359,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="mwY">
       <input>
       P.maximal_elements()
       </input>
@@ -1368,10 +1368,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Los elementos de un conjunto parcialmente ordenado pueden ser particionados en conjuntos de nivel.  En las gráficas de los conjuntos parcialmente ordenados, los elementos del mismo nivel se muestran a la misma altura.  Cada nivel se obtiene removiendo todos los elementos de los niveles anteriores y escogiendo los elementos minimales del resultado.
+      <p permid="cvj">Los elementos de un conjunto parcialmente ordenado pueden ser particionados en conjuntos de nivel.  En las gráficas de los conjuntos parcialmente ordenados, los elementos del mismo nivel se muestran a la misma altura.  Cada nivel se obtiene removiendo todos los elementos de los niveles anteriores y escogiendo los elementos minimales del resultado.
         </p>
   
-      <sage>
+      <sage permid="SEh">
       <input>
       P.level_sets()
       </input>
@@ -1381,9 +1381,9 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Si hacemos que dos elementos de  <c>R</c> sean comparables cuando antes no lo eran, eso constituye una extensión de <c>R</c>.  Consideremos todas las posibles extensiones de un conjunto parcialmente ordenado <mdash /> podemos construir un conjunto parcialmente ordenado a partir de ellas, donde la relación es la de inclusión conjuntista.  Una extensión lineal es un elemento maximal en este conjunto parcialmente ordenado de conjuntos parcialmente ordenados.  Informalmente, estamos agregando tantas relaciones como sea posible, de manera consistente con el conjunto parcialmente ordenado original y tal que el resultado es un orden total.  En otras palabra, hay un orden de los elementos que es consistente con el orden en el conjunto parcialmente ordenado.  Podemos construir una cosa así, pero la salida no es  más que una lista de elementos en el orden lineal.  Un informático se inclinaría por llamar a esto un <q> ordenamiento topológico.</q></p>
+      <p permid="ICs">Si hacemos que dos elementos de  <c>R</c> sean comparables cuando antes no lo eran, eso constituye una extensión de <c>R</c>.  Consideremos todas las posibles extensiones de un conjunto parcialmente ordenado <mdash/> podemos construir un conjunto parcialmente ordenado a partir de ellas, donde la relación es la de inclusión conjuntista.  Una extensión lineal es un elemento maximal en este conjunto parcialmente ordenado de conjuntos parcialmente ordenados.  Informalmente, estamos agregando tantas relaciones como sea posible, de manera consistente con el conjunto parcialmente ordenado original y tal que el resultado es un orden total.  En otras palabra, hay un orden de los elementos que es consistente con el orden en el conjunto parcialmente ordenado.  Podemos construir una cosa así, pero la salida no es  más que una lista de elementos en el orden lineal.  Un informático se inclinaría por llamar a esto un <q> ordenamiento topológico.</q></p>
   
-      <sage>
+      <sage permid="yLq">
       <input>
       linear = P.linear_extension(); linear
       </input>
@@ -1393,10 +1393,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Podemos construir subposets a partir de un subconjunto de los elementos con el orden inducido para producir un conjunto parcialmente ordenado nuevo.  Acá tomamos aproximadamente la <q>mitad inferior</q> del conjunto parcialmente ordenado aleatorio <c>P</c>  induciendo el orden en la unión de algunos de los conjuntos de nivel.
+      <p permid="oJB">Podemos construir subposets a partir de un subconjunto de los elementos con el orden inducido para producir un conjunto parcialmente ordenado nuevo.  Acá tomamos aproximadamente la <q>mitad inferior</q> del conjunto parcialmente ordenado aleatorio <c>P</c>  induciendo el orden en la unión de algunos de los conjuntos de nivel.
         </p>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="Mfb">
       <input>
       level = P.level_sets()
       bottomhalf = sum([level[i] for i in range(5)], [])
@@ -1405,19 +1405,19 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </input>
       </sage>
   
-      <p>El dual de un conjunto parcialmente ordenado mantiene todos sus elementos e invierte sus comparaciones.
+      <p permid="UQK">El dual de un conjunto parcialmente ordenado mantiene todos sus elementos e invierte sus comparaciones.
         </p>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="smk">
       <input>
       Pdual = P.dual()
       Pdual.plot()
       </input>
       </sage>
   
-      <p>El dual del conjunto parcialmente ordenado de divisibilidad del <xref ref="example-boolean-poset-divisors-24" /> es como cambiar la relación por <q>es múltiplo de.</q></p>
+      <p permid="AXT">El dual del conjunto parcialmente ordenado de divisibilidad del <xref ref="boolean-example-poset-divisors-24"/> es como cambiar la relación por <q>es múltiplo de.</q></p>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="Ytt">
       <input>
       Ddual = D.dual()
       Ddual.plot()
@@ -1425,13 +1425,13 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </sage>
     </subsection>
   
-    <subsection>
+    <subsection permid="Orr">
       <title>Reticulados</title>
   
-      <p>Cada reticulado es conjunto parcialmente ordenado, de manera que todos los comandos de arriba funcionan igualmente bien para un reticulado.  Pero, ¿cómo se construye un reticulado? Fácil <mdash /> primero creamos un conjunto parcialmente ordenado y luego lo pasamos al constructor <c>LatticePoset()</c>.  Pero nos daremos cuenta que simplemente por darle un conjunto parcialmente ordenado a este constructor, no significa que lo que salga sea un reticulado.  Solo si el conjunto parcialmente ordenado <em>ya es</em> un reticulado el resultado será un reticulado para Sage y obtendremos el error <c>ValueError</c> si el cambio de estatus es imposible.  Finalmente, notemos que algunos de los conjuntos parcialmente ordenados que construye Sage ya son reconocidos como reticulados, tal como el prototípico <c>BooleanLattice</c>.
+      <p permid="hfc">Cada reticulado es conjunto parcialmente ordenado, de manera que todos los comandos de arriba funcionan igualmente bien para un reticulado.  Pero, ¿cómo se construye un reticulado? Fácil <mdash/> primero creamos un conjunto parcialmente ordenado y luego lo pasamos al constructor <c>LatticePoset()</c>.  Pero nos daremos cuenta que simplemente por darle un conjunto parcialmente ordenado a este constructor, no significa que lo que salga sea un reticulado.  Solo si el conjunto parcialmente ordenado <em>ya es</em> un reticulado el resultado será un reticulado para Sage y obtendremos el error <c>ValueError</c> si el cambio de estatus es imposible.  Finalmente, notemos que algunos de los conjuntos parcialmente ordenados que construye Sage ya son reconocidos como reticulados, tal como el prototípico <c>BooleanLattice</c>.
         </p>
   
-      <sage>
+      <sage permid="eSz">
       <input>
       P = Posets.AntichainPoset(8)
       P.is_lattice()
@@ -1439,7 +1439,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       <output>False</output>
       </sage>
   
-      <sage>
+      <sage permid="KZI">
       <input>
       LatticePoset(P)
       </input>
@@ -1450,10 +1450,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Una composición entera de <m>n</m> es una lista de enteros positivos que suman <m>n</m>.  Una composición <m>C_1</m> cubre a una composición <m>C_2</m> si <m>C_2</m> se puede formar a partir de <m>C_1</m> sumando partes consecutivas.  Por ejemplo, <m>C_1 = [2, 1, 2] \succeq [3, 2] = C_2</m>.  Con esta relación, el conjunto de todas las composiciones enteras de un entero fijo <m>n</m> en un conjunto parcialmente ordenado que también es un reticulado.
+      <p permid="Nml">Una composición entera de <m>n</m> es una lista de enteros positivos que suman <m>n</m>.  Una composición <m>C_1</m> cubre a una composición <m>C_2</m> si <m>C_2</m> se puede formar a partir de <m>C_1</m> sumando partes consecutivas.  Por ejemplo, <m>C_1 = [2, 1, 2] \succeq [3, 2] = C_2</m>.  Con esta relación, el conjunto de todas las composiciones enteras de un entero fijo <m>n</m> en un conjunto parcialmente ordenado que también es un reticulado.
         </p>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="EAC">
       <input>
       CP = Posets.IntegerCompositions(5)
       C = LatticePoset(CP)
@@ -1461,7 +1461,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </input>
       </sage>
   
-      <p>El ínfimo (meet) y el supremo (join) son operaciones fundamentales en un reticulado.
+      <p permid="ttu">El ínfimo (meet) y el supremo (join) son operaciones fundamentales en un reticulado.
         </p>
   
       <!-- % RAB 2012/08/11, Sage 5.2 -->
@@ -1469,7 +1469,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       <!-- RAB 2015/05/20, 6.7 -->
       <!-- Should try to fix this coercion -->
   
-      <sage>
+      <sage permid="rgR">
       <input>
       par = C.an_element().parent()
       a = par([1, 1, 1, 2])
@@ -1481,7 +1481,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="Xoa">
       <input>
       C.meet(a, b)
       </input>
@@ -1490,7 +1490,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="Dvj">
       <input>
       c = par([1, 4])
       d = par([2, 3])
@@ -1501,7 +1501,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="jCs">
       <input>
       C.join(c, d)
       </input>
@@ -1510,13 +1510,13 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Una vez que un conjunto parcialmente ordenado adquiere el estatus de reticulado, disponemos de comandos adicionales, o cambian las características de sus resultados.
+      <p permid="ZAD">Una vez que un conjunto parcialmente ordenado adquiere el estatus de reticulado, disponemos de comandos adicionales, o cambian las características de sus resultados.
         </p>
   
-      <p>Un ejemplo de lo primero es el método <c>.is_distributive()</c>.
+      <p permid="FHM">Un ejemplo de lo primero es el método <c>.is_distributive()</c>.
         </p>
   
-      <sage>
+      <sage permid="PJB">
       <input>
       C.is_distributive()
       </input>
@@ -1525,10 +1525,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Un ejemplo de lo segundo es el método <c>.top()</c>.  Lo que en el texto se llama elemento máximo y elemento mínimo, Sage los llama top y bottom.  Para un conjunto parcialmente ordenado, <c>.top()</c> y <c>.bottom()</c> pueden entregar un elemento o no (devolviendo <c>None</c>), pero para un reticulado se garantiza la obtención de exactamente un elemento.
+      <p permid="lOV">Un ejemplo de lo segundo es el método <c>.top()</c>.  Lo que en el texto se llama elemento máximo y elemento mínimo, Sage los llama top y bottom.  Para un conjunto parcialmente ordenado, <c>.top()</c> y <c>.bottom()</c> pueden entregar un elemento o no (devolviendo <c>None</c>), pero para un reticulado se garantiza la obtención de exactamente un elemento.
         </p>
   
-      <sage>
+      <sage permid="vQK">
       <input>
       C.top()
       </input>
@@ -1537,7 +1537,7 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="bXT">
       <input>
       C.bottom()
       </input>
@@ -1546,12 +1546,12 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>Notemos que los valores retornados son todos elementos del reticulado, es este caso listas ordenadas de enteros que suman <m>5</m>.
+      <p permid="RWe">Notemos que los valores retornados son todos elementos del reticulado, es este caso listas ordenadas de enteros que suman <m>5</m>.
         </p>
   
-      <p>Los complementos tienen sentido en un reticulado.  El resultado del método <c>.complements()</c> es un diccionario que tiene elementos del reticulado como índices (keys).  Decimos que el diccionario está <q>indexado</q> por los elementos del reticulado.  El resultado es una lista de complementos del elemento.  A esto lo llamamos el <q>valor</q> del par índice-valor.  (Puede que conozca los diccionarios como <q>arreglos asociativos</q>, pero en realidad no son más que funciones sofisticadas.)</p>
+      <p permid="ydn">Los complementos tienen sentido en un reticulado.  El resultado del método <c>.complements()</c> es un diccionario que tiene elementos del reticulado como índices (keys).  Decimos que el diccionario está <q>indexado</q> por los elementos del reticulado.  El resultado es una lista de complementos del elemento.  A esto lo llamamos el <q>valor</q> del par índice-valor.  (Puede que conozca los diccionarios como <q>arreglos asociativos</q>, pero en realidad no son más que funciones sofisticadas.)</p>
   
-      <sage>
+      <sage permid="Ifc">
       <input>
       comp = C.complements()
       comp[par([1, 1, 1, 2])]
@@ -1561,10 +1561,10 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <p>El reticulado de composiciones enteras es un reticulado complementado, como podemos observar por el hecho de que cada elemento tiene un complemento único, evidenciado por las listas de largo <m>1</m> en los valores del diccionario.  O podemos preguntarle a Sage por medio de <c>.is_complemented()</c>.  Los diccionarios no tienen un orden inherente, de manera que es posible obtener una salida distinta cada vez que se inspeccione el diccionario.
+      <p permid="ekw">El reticulado de composiciones enteras es un reticulado complementado, como podemos observar por el hecho de que cada elemento tiene un complemento único, evidenciado por las listas de largo <m>1</m> en los valores del diccionario.  O podemos preguntarle a Sage por medio de <c>.is_complemented()</c>.  Los diccionarios no tienen un orden inherente, de manera que es posible obtener una salida distinta cada vez que se inspeccione el diccionario.
         </p>
   
-      <sage doctest="not tested">
+      <sage doctest="not tested" permid="kHL">
       <input>
       comp
       </input>
@@ -1588,35 +1588,35 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
       </output>
       </sage>
   
-      <sage>
+      <sage permid="oml">
       <input>
       [len(e[1]) for e in comp.items()]
       </input>
       <output>[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</output>
       </sage>
   
-      <sage>
+      <sage permid="Utu">
       <input>
       C.is_complemented()
       </input>
       <output>True</output>
       </sage>
   
-      <p>Hay muchos más comandos para conjuntos parcialmente ordenados y erticulados.  Construya algunos y use completación con TAB para explorar las posibilidades.  Hay mucho más de lo que podemos cubrir en un solo capítulo, pero ya tenemos las herramientas básicas para estudiar conjuntos parcialmente ordenados y reticulados en Sage.
+      <p permid="KrF">Hay muchos más comandos para conjuntos parcialmente ordenados y erticulados.  Construya algunos y use completación con TAB para explorar las posibilidades.  Hay mucho más de lo que podemos cubrir en un solo capítulo, pero ya tenemos las herramientas básicas para estudiar conjuntos parcialmente ordenados y reticulados en Sage.
         </p>
     </subsection>
   
   </section>
-  <exercises xml:id="boolean-sage-exercises">
+  <exercises xml:id="boolean-sage-exercises" component="sage-exercises" permid="GMS">
     <title>Ejercicios en Sage</title>
   
-    <exercise number="1">
+    <exercise number="1" permid="myC" xml:id="boolean-sage-exercise-construct-poset">
       <statement>
-        <p>Use  <c>R = Posets.RandomPoset(30,0.05)</c> para construir on conjunto parcialmente ordenado (poset) aleatorio.  Use <c>R.plot()</c> para tener una idea de lo que ubtuvo.
+        <p permid="bLp">Use  <c>R = Posets.RandomPoset(30,0.05)</c> para construir on conjunto parcialmente ordenado (poset) aleatorio.  Use <c>R.plot()</c> para tener una idea de lo que ubtuvo.
         </p>
   
-        <ol>
-          <li><p>Ilustre el uso de los siguientes métodos de poset:
+        <ol permid="AgI">
+          <li permid="RON"><p permid="UnU">Ilustre el uso de los siguientes métodos de poset:
           <c>.is_lequal()</c>,
           <c>.is_less_than()</c>,
           <c>.is_gequal()</c>, and
@@ -1624,13 +1624,13 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
           para determinar si dos elementos específicos (de su elección) están relacionados o son incomparables.
         </p></li>
   
-          <li><p>Use <c>.minimal_elements()</c> y <c>.maximal_elements()</c> para encontrar tanto el menor como el mayor elemento de su conjunto parcialmente ordenado.
+          <li permid="xVW"><p permid="Avd">Use <c>.minimal_elements()</c> y <c>.maximal_elements()</c> para encontrar tanto el menor como el mayor elemento de su conjunto parcialmente ordenado.
         </p></li>
   
-          <li><p>Use <c>LatticePoset(R)</c> para ver si el conjunto parcialmente ordenado <c>R</c> es un reticulado intentando convertirlo en un reticulado.
+          <li permid="edf"><p permid="gCm">Use <c>LatticePoset(R)</c> para ver si el conjunto parcialmente ordenado <c>R</c> es un reticulado intentando convertirlo en un reticulado.
         </p></li>
   
-          <li><p>Encuentre una extensión lineal de su conjunto parcialmente ordenado.  Confirme que cualquier par de elementos comparables en el conjunto parcialmente ordenado original siguen siendo comparables de la misma forma en la extensión lineal.
+          <li permid="Kko"><p permid="MJv">Encuentre una extensión lineal de su conjunto parcialmente ordenado.  Confirme que cualquier par de elementos comparables en el conjunto parcialmente ordenado original siguen siendo comparables de la misma forma en la extensión lineal.
         </p></li>
         </ol>
       </statement>
@@ -1639,62 +1639,62 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
   
     </exercise>
   
-    <exercise number="2">
+    <exercise number="2" permid="SFL" xml:id="boolean-sage-exercise-divisors-72">
       <statement>
-        <p>Construya el conjunto parcialmente ordenado de los divisores enteros de <m>72=2^3\cdot 3^2</m> con la relación de divisibilidad, y conviértalo en un reticulado.
+        <p permid="HSy">Construya el conjunto parcialmente ordenado de los divisores enteros de <m>72=2^3\cdot 3^2</m> con la relación de divisibilidad, y conviértalo en un reticulado.
         </p>
   
-        <ol>
+        <ol permid="gnR">
   
-          <li><p>Determine el elemento cero y el elemento uno usando <c>.top()</c> y <c>.bottom()</c>.
+          <li permid="qrx"><p permid="sQE">Determine el elemento cero y el elemento uno usando <c>.top()</c> y <c>.bottom()</c>.
         </p></li>
   
-          <li><p>Determine todos los pares de elementos del reticulado que son complementarios <em>sin</em> usar el método <c>.complement()</c>, sino solamente los métodos <c>.meet()</c> y <c>.join()</c>.  Mejor si cada par aparece solo una vez.
+          <li permid="WyG"><p permid="YXN">Determine todos los pares de elementos del reticulado que son complementarios <em>sin</em> usar el método <c>.complement()</c>, sino solamente los métodos <c>.meet()</c> y <c>.join()</c>.  Mejor si cada par aparece solo una vez.
         </p></li>
   
-          <li><p>Determine si el reticulado es distributivo usando solo los métodos <c>.meet()</c> and <c>.join()</c>, y no el método <c>.is_distributive()</c>.
+          <li permid="CFP"><p permid="FeW">Determine si el reticulado es distributivo usando solo los métodos <c>.meet()</c> and <c>.join()</c>, y no el método <c>.is_distributive()</c>.
         </p></li>
-        </ol>
-      </statement>
-  
-      
-    </exercise>
-  
-    <exercise number="3">
-      <statement>
-        <p>Construya varios reticulados diamante con <c>Posets.DiamondPoset(n)</c> haciendo variar el valor de <c>n</c>.  Una vez que le parezca tener suficiente evidencia empírica, responda, con justificaciones, las siguientes preguntas para valores <em>arbitrarios</em> de <m>n</m>, basado en observaciones obtenidas de sus experimentos con Sage.
-        </p>
-  
-        <ol>
-          <li><p>¿Cuáles son los elementos que tienen complemento y cuáles no lo tienen? ¿Por qué?</p></li>
-  
-          <li><p>Lea la documentación del método <c>.antichains()</c> para aaprender lo que es una anticadena.  ¿Cuántas anticadenas hay?</p></li>
-  
-          <li><p>¿Es distributivo el reticulado?</p></li>
         </ol>
       </statement>
   
       
     </exercise>
   
-    <exercise number="4">
+    <exercise number="3" permid="yMU" xml:id="boolean-sage-exercise-diamond-lattices">
       <statement>
-        <p>Use <c>Posets.BooleanLattice(4)</c> para construir una instancia del álgebra Booleana prototípica en <m>16</m> elementos (<ie/>, todos los subconjuntos de un conjunto de <m>4</m> elementos).
+        <p permid="nZH">Construya varios reticulados diamante con <c>Posets.DiamondPoset(n)</c> haciendo variar el valor de <c>n</c>.  Una vez que le parezca tener suficiente evidencia empírica, responda, con justificaciones, las siguientes preguntas para valores <em>arbitrarios</em> de <m>n</m>, basado en observaciones obtenidas de sus experimentos con Sage.
         </p>
   
-        <p>Luego use <c>Posets.IntegerCompositions(5)</c> para construir el conjunto parcialmente ordenado cuyos <m>16</m> elementos son las composiciones del entero <m>5</m>.  Vimos arriba que el reticulado de composición de entero es distributivo y complementado, por lo que forma un álgbera Booleana.  Por el <xref ref="theorem-classification-boolean-algebra"/> podemos concluir que esta dos álgebras Booleanas son isomorfas.
+        <ol permid="Mva">
+          <li permid="iMY"><p permid="lmf">¿Cuáles son los elementos que tienen complemento y cuáles no lo tienen? ¿Por qué?</p></li>
+  
+          <li permid="OUh"><p permid="Rto">Lea la documentación del método <c>.antichains()</c> para aaprender lo que es una anticadena.  ¿Cuántas anticadenas hay?</p></li>
+  
+          <li permid="vbq"><p permid="xAx">¿Es distributivo el reticulado?</p></li>
+        </ol>
+      </statement>
+  
+      
+    </exercise>
+  
+    <exercise number="4" permid="eUd" xml:id="boolean-sage-exercise-algebra-16-elements">
+      <statement>
+        <p permid="UgQ">Use <c>Posets.BooleanLattice(4)</c> para construir una instancia del álgebra Booleana prototípica en <m>16</m> elementos (<ie/>, todos los subconjuntos de un conjunto de <m>4</m> elementos).
         </p>
   
-        <p>Use el método <c>.plot()</c> para visualizar la similaridad.  Luego use el método <c>.hasse_diagram()</c> en cada reticulado para obtener un grafo dirigido (que también puede dibujar, aunque la incrustación en el plano puede que no sea tan informativa).  Emplee el método <c>.is_isomorphic()</c> del grafo para verificar que estos dos diagramas de Hasse son realmente <q>iguales.</q></p>
+        <p permid="AnZ">Luego use <c>Posets.IntegerCompositions(5)</c> para construir el conjunto parcialmente ordenado cuyos <m>16</m> elementos son las composiciones del entero <m>5</m>.  Vimos arriba que el reticulado de composición de entero es distributivo y complementado, por lo que forma un álgbera Booleana.  Por el <xref ref="boolean-theorem-classification-boolean-algebra"/> podemos concluir que esta dos álgebras Booleanas son isomorfas.
+        </p>
+  
+        <p permid="gvi">Use el método <c>.plot()</c> para visualizar la similaridad.  Luego use el método <c>.hasse_diagram()</c> en cada reticulado para obtener un grafo dirigido (que también puede dibujar, aunque la incrustación en el plano puede que no sea tan informativa).  Emplee el método <c>.is_isomorphic()</c> del grafo para verificar que estos dos diagramas de Hasse son realmente <q>iguales.</q></p>
       </statement>
   
       
     </exercise>
   
   
-    <exercise number="5">
+    <exercise number="5" permid="Lbm" xml:id="boolean-sage-exercise-isomorphism">
       <statement>
-        <p>(Avanzado) Para la pregunta anterior, construya un isomorfismo <em>explícito</em> entre las dos álgebras Booleanas.  Esto es una biyección (construída con el comando <c>def</c>) que convierta composiciones en conjuntos (o si lo prefiere, conjuntos en composiciones) y que respete las operaciones de ínfimo y supremo (meet y join).  Puede poner a prueba e ilustrar su función por su interacción con elementos específicos evaluados en las operaciones de ínfimo y supremo, como está descrito en la definición de isomorfismo de álgebras Boleanas.
+        <p permid="MCr">(Avanzado) Para la pregunta anterior, construya un isomorfismo <em>explícito</em> entre las dos álgebras Booleanas.  Esto es una biyección (construída con el comando <c>def</c>) que convierta composiciones en conjuntos (o si lo prefiere, conjuntos en composiciones) y que respete las operaciones de ínfimo y supremo (meet y join).  Puede poner a prueba e ilustrar su función por su interacción con elementos específicos evaluados en las operaciones de ínfimo y supremo, como está descrito en la definición de isomorfismo de álgebras Boleanas.
         </p>
       </statement>
   
@@ -1705,4 +1705,3 @@ Nuevamente, responda esto en el espíritu de las dos preguntas anteriores.
   </exercises>
   
 </chapter>
- 

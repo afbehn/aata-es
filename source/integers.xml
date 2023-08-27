@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!-- This file is part of the book                    -->
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
@@ -9,28 +9,26 @@
 <!-- This file is part of the book                    -->
 <!--                                                  -->
 <!-- See the file COPYING for copying conditions.     -->
-
-
-<chapter xml:id="integers" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="integers" permid="mtY">
   <title>Los Enteros</title>
 
-  <introduction>
-      <p>El conjunto de los números enteros es un componente básico de las matemáticas. En este capítulo investigaremos las propiedades fundamentales de los enteros, incluyendo el principio de inducción matemática, el algoritmo de división, y el Teorema Fundamental de la Aritmética.
+  <introduction permid="Ace">
+      <p permid="vVb">El conjunto de los números enteros es un componente básico de las matemáticas. En este capítulo investigaremos las propiedades fundamentales de los enteros, incluyendo el principio de inducción matemática, el algoritmo de división, y el Teorema Fundamental de la Aritmética.
     </p>
   </introduction>
 
-  <section xml:id="section-math-induction">
+  <section xml:id="integers-section-math-induction" permid="bUT">
     <title>Principio de Inducción</title>
 
-    <p>Supongamos que queremos demostrar que
-      <me>1 + 2 + \cdots + n = \frac{n(n + 1)}{2}</me>
+    <p permid="xoP">Supongamos que queremos demostrar que
+      <me permid="Ona">1 + 2 + \cdots + n = \frac{n(n + 1)}{2}</me>
     para cualquier número natural  <m>n</m>. Esta fórmula se puede verificar fácilmente para números pequeños tales como <m>n = 1</m>, <m>2</m>, <m>3</m>, or <m>4</m>, pero es imposible de verificar para todos los número naturales uno por uno.  Para demostrar que la fórmula es verdadera en general, se requiere un método más genérico.
     </p>
 
-    <p>Supongamos que hemos verificado la ecuación para los primeros <m>n</m> casos.  Intentaremos demostrar que podemos generar una fórmula para el caso <m>(n + 1)</m> a partir de este conocimiento.  La fórmula es verdadera para <m>n = 1</m> pues 
-      <me>1 = \frac{1(1 + 1)}{2}</me>.
+    <p permid="dvY">Supongamos que hemos verificado la ecuación para los primeros <m>n</m> casos.  Intentaremos demostrar que podemos generar una fórmula para el caso <m>(n + 1)</m> a partir de este conocimiento.  La fórmula es verdadera para <m>n = 1</m> pues 
+      <me permid="uuj">1 = \frac{1(1 + 1)}{2}</me>.
     Si hemos verificado los primeros <m>n</m> casos, entonces
-      <md>
+      <md permid="aBs">
         <mrow>1 + 2 + \cdots + n + (n + 1) &amp; = \frac{n(n + 1)}{2} + n + 1</mrow>
         <mrow>&amp; = \frac{n^2 + 3n + 2}{2}</mrow>
         <mrow>&amp; = \frac{(n + 1)[(n + 1) + 1]}{2}</mrow>
@@ -38,34 +36,34 @@
     Esto corresponde exactamente a la fórmula para el caso <m>(n + 1)</m>.
     </p>
      
-    <p>Este método de demostración se conoce como <term>inducción matemática</term>.  En lugar de intentar verificar una proposición sobre un subconjunto <m>S</m> de los enteros positivos <m>{\mathbb N}</m> uno por uno, una tarea imposible si <m>S</m> es un conjunto infinito, entregamos una demostración directa para el primer entero considerado, seguida de un argumento genérico mostrando que si la proposición se cumple en un cierto caso, entonces también se cumple para el siguiente caso en la sucesión.  Resumimos la inducción matemática en el siguiente axioma. </p>
+    <p permid="JDh">Este método de demostración se conoce como <term>inducción matemática</term>.  En lugar de intentar verificar una proposición sobre un subconjunto <m>S</m> de los enteros positivos <m>{\mathbb N}</m> uno por uno, una tarea imposible si <m>S</m> es un conjunto infinito, entregamos una demostración directa para el primer entero considerado, seguida de un argumento genérico mostrando que si la proposición se cumple en un cierto caso, entonces también se cumple para el siguiente caso en la sucesión.  Resumimos la inducción matemática en el siguiente axioma. </p>
 
-    <principle xml:id="principle-integers-first-pmi">
+    <principle xml:id="integers-principle-first-pmi" permid="Plc">
       <title>Primer Principio de Inducción</title>
       <idx><h>Inducción</h><h>primer principio de</h></idx>
       <statement>
-        <p>Sea <m>S(n)</m> una proposición sobre números enteros para <m>n \in {\mathbb N}</m> y supongamos que <m>S(n_0)</m> es verdadera para algún entero <m>n_0</m>.  Si para todos los enteros <m>k</m> con <m>k \geq n_0</m>, <m>S(k)</m> implica <m>S(k+1)</m>, es verdadera, entonces <m>S(n)</m> es verdadera para todos los enteros <m>n</m> mayores o iguales a <m>n_0</m>.
+        <p permid="yPH">Sea <m>S(n)</m> una proposición sobre números enteros para <m>n \in {\mathbb N}</m> y supongamos que <m>S(n_0)</m> es verdadera para algún entero <m>n_0</m>.  Si para todos los enteros <m>k</m> con <m>k \geq n_0</m>, <m>S(k)</m> implica <m>S(k+1)</m>, es verdadera, entonces <m>S(n)</m> es verdadera para todos los enteros <m>n</m> mayores o iguales a <m>n_0</m>.
     </p>
       </statement>
     </principle>    
         
 <!-- wording change.  Suggested by P. Diethelm.  TWJ 22/4/2013 -->
 
-    <example xml:id="example-integers-induction-greater-than">
-      <p>Para todos los enteros <m>n \geq 3</m>, <m>2^n \gt n + 4</m>. Como
-        <me>8 = 2^3 \gt 3 + 4 = 7</me>,
+    <example xml:id="integers-example-induction-greater-than" permid="HGD">
+      <p permid="rli">Para todos los enteros <m>n \geq 3</m>, <m>2^n \gt n + 4</m>. Como
+        <me permid="GIB">8 = 2^3 \gt 3 + 4 = 7</me>,
       la afirmación es verdadera para <m>n_0 = 3</m>.  Supongamos que <m>2^k \gt k + 4</m> para <m>k \geq 3</m>.  Entonces <m>2^{k + 1} = 2 \cdot 2^{k} \gt 2(k + 4)</m>.  Pero
-        <me>2(k + 4) = 2k + 8 \gt k + 5 = (k + 1) + 4</me>
+        <me permid="mPK">2(k + 4) = 2k + 8 \gt k + 5 = (k + 1) + 4</me>
       pues <m>k</m> es positivo.  Luego, por inducción, la afirmación se cumple para todos los enteros <m>n \geq 3</m>.
     </p>
     </example>
 
 
-    <example xml:id="example-integers-induction-divisible">
-      <p>Los enteros <m>10^{n + 1} + 3 \cdot 10^n + 5</m> son divisibles por <m>9</m> para todo <m>n \in {\mathbb N}</m>.  Para <m>n = 1</m>, 
-        <me>10^{1 + 1} + 3 \cdot 10 + 5 = 135 = 9 \cdot 15</me>
+    <example xml:id="integers-example-induction-divisible" permid="nNM">
+      <p permid="Xsr">Los enteros <m>10^{n + 1} + 3 \cdot 10^n + 5</m> son divisibles por <m>9</m> para todo <m>n \in {\mathbb N}</m>.  Para <m>n = 1</m>, 
+        <me permid="SWT">10^{1 + 1} + 3 \cdot 10 + 5 = 135 = 9 \cdot 15</me>
       es divisible por <m>9</m>.  Supongamos que <m>10^{k + 1} + 3 \cdot 10^k + 5</m> es divisible por <m>9</m> para <m>k \geq 1</m>.  Entonces 
-        <md>
+        <md permid="zec">
           <mrow>10^{(k + 1) + 1} + 3 \cdot 10^{k + 1} + 5&amp; = 10^{k + 2} + 3 \cdot 10^{k + 1} + 50 - 45</mrow>
           <mrow>&amp; = 10 (10^{k + 1} + 3 \cdot 10^{k} + 5) - 45</mrow>
         </md>
@@ -73,21 +71,21 @@
     </p>
     </example>
 
-    <example xml:id="example-integers-binomial-theorem">
-      <p>Demostraremos el teorema del binomio por inducción; es decir, 
-        <me>(a + b)^n = \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k}</me>,
+    <example xml:id="integers-example-binomial-theorem" permid="TUV">
+      <p permid="DzA">Demostraremos el teorema del binomio por inducción; es decir, 
+        <me permid="fll">(a + b)^n = \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k}</me>,
       donde <m>a</m> y <m>b</m> son números reales, <m>n \in \mathbb{N}</m>, y
-        <me>\binom{n}{k} = \frac{n!}{k! (n - k)!}</me>
+        <me permid="Lsu">\binom{n}{k} = \frac{n!}{k! (n - k)!}</me>
       es el coeficiente binomial.  <notation><usage><m>n!</m></usage><description><m>n</m> factorial</description></notation><notation><usage><m>\binom{n}{k}</m></usage><description>coeficiente binomial <m>n!/(k!(n-k)!)</m></description></notation> Primero mostraremos que
-        <me>\binom{n + 1}{k} = \binom{n}{k} + \binom{n}{k - 1}</me>.
+        <me permid="rzD">\binom{n + 1}{k} = \binom{n}{k} + \binom{n}{k - 1}</me>.
       Este resultado es consecuencia de 
-        <md>
+        <md permid="XGM">
           <mrow>\binom{n}{k} + \binom{n}{k - 1} &amp; = \frac{n!}{k!(n - k)!} +\frac{n!}{(k-1)!(n - k + 1)!}</mrow>
           <mrow>&amp; = \frac{(n + 1)!}{k!(n + 1 - k)!}</mrow>
           <mrow>&amp; =\binom{n + 1}{k}</mrow>
         </md>.
       Si <m>n = 1</m>, el teorema del binomio es fácil de verificar. Ahora supongamos que el resultado es verdadero para  <m>n</m> mayor o igual a <m>1</m>.  Entonces
-        <md>
+        <md permid="DNV">
           <mrow>(a + b)^{n + 1} &amp; = (a + b)(a + b)^n</mrow>
           <mrow>&amp; = (a + b) \left( \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k}\right)</mrow>
           <mrow>&amp; = \sum_{k = 0}^{n} \binom{n}{k} a^{k + 1} b^{n - k} + \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n + 1 - k}</mrow>
@@ -98,42 +96,42 @@
     </p>
     </example>
  
-    <p>Tenemos una proposición equivalente al Primer Principio de Inducción que en ocasiones será necesaria.
+    <p permid="pKq">Tenemos una proposición equivalente al Primer Principio de Inducción que en ocasiones será necesaria.
     </p>
  
 
-    <principle xml:id="principle-integers-second-pmi">
+    <principle xml:id="integers-principle-second-pmi" permid="vsl">
       <title>Segundo Principio de Inducción</title>
       <idx><h>Induccion</h><h>segundo principio de</h></idx>
       <statement>
-        <p>Sea <m>S(n)</m> una afirmación sobre enteros para <m>n \in {\mathbb N}</m> y supongamos que <m>S(n_0)</m> es verdadera para algún entero  <m>n_0</m>.  Si <m>S(n_0), S(n_0 + 1), \ldots, S(k)</m> implican <m>S(k + 1)</m> para <m>k \geq n_0</m>, entonces <m>S(n)</m> es verdadera para todos los enteros <m>n \geq n_0</m>. </p>
+        <p permid="eWQ">Sea <m>S(n)</m> una afirmación sobre enteros para <m>n \in {\mathbb N}</m> y supongamos que <m>S(n_0)</m> es verdadera para algún entero  <m>n_0</m>.  Si <m>S(n_0), S(n_0 + 1), \ldots, S(k)</m> implican <m>S(k + 1)</m> para <m>k \geq n_0</m>, entonces <m>S(n)</m> es verdadera para todos los enteros <m>n \geq n_0</m>. </p>
       </statement>
     </principle>    
 
 <!-- wording change.  Suggested by P. Diethelm.  TWJ 22/4/2013 -->
  
-    <p>Un subconjunto <m>S</m> de <m>{\mathbb Z}</m> está <term>bien-ordenado</term><idx><h>Conjunto bien-ordenado</h></idx> si todo subconjunto no vacío de <m>S</m> contiene un menor elemento.  Note que el conjunto <m>{\mathbb Z}</m> no está bien-ordenado pues no contiene un elemento mínimo.  Los números naturales sin ambargo, sí están bien-ordenados.
+    <p permid="VRz">Un subconjunto <m>S</m> de <m>{\mathbb Z}</m> está <term>bien-ordenado</term><idx><h>Conjunto bien-ordenado</h></idx> si todo subconjunto no vacío de <m>S</m> contiene un menor elemento.  Note que el conjunto <m>{\mathbb Z}</m> no está bien-ordenado pues no contiene un elemento mínimo.  Los números naturales sin ambargo, sí están bien-ordenados.
     </p> 
  
-    <principle>
+    <principle permid="bzu">
       <title>Principio del Buen-Orden</title>
       <statement>
-        <p>El conjunto de los números naturales está bien-ordenado.
+        <p permid="LdZ">El conjunto de los números naturales está bien-ordenado.
     </p>
       </statement>
     </principle>    
  
-    <p>El Principio del Buen-Orden es equivalente al Principio de Inducción.
+    <p permid="BYI">El Principio del Buen-Orden es equivalente al Principio de Inducción.
     </p> 
  
 
-    <lemma xml:id="lemma-integers-smallest-number">
+    <lemma xml:id="integers-lemma-smallest-number" permid="CWK">
       <statement>
-        <p>El principio de Inducción implica que <m>1</m> es el menor número natural positivo.
+        <p permid="Gug">El principio de Inducción implica que <m>1</m> es el menor número natural positivo.
     </p>
       </statement>
-      <proof>
-        <p>Sea <m>S = \{ n \in {\mathbb N} : n \geq 1 \}</m>. Entonces <m>1 \in S</m>. Supongamos que <m>n \in S</m>. Como <m>0 \lt 1</m>, se debe tener que <m>n = n + 0 \lt n + 1</m>.  Por lo tanto, <m>1 \leq n \lt n + 1</m>.  Así, si <m>n \in S</m>, entonces <m>n + 1</m> también debe estar en <m>S</m>, y por el Principio de Inducción,  <m>S = \mathbb N</m>.
+      <proof permid="xhy">
+        <p permid="Mjs">Sea <m>S = \{ n \in {\mathbb N} : n \geq 1 \}</m>. Entonces <m>1 \in S</m>. Supongamos que <m>n \in S</m>. Como <m>0 \lt 1</m>, se debe tener que <m>n = n + 0 \lt n + 1</m>.  Por lo tanto, <m>1 \leq n \lt n + 1</m>.  Así, si <m>n \in S</m>, entonces <m>n + 1</m> también debe estar en <m>S</m>, y por el Principio de Inducción,  <m>S = \mathbb N</m>.
     </p>
       </proof>
     </lemma>
@@ -141,27 +139,27 @@
 <!--  Theorem reworded for clarity.  TWJ 12/17/2011 -->
 <!--  Suggested by K. Halasz and R. Beezer. -->
 
-    <theorem xml:id="theorem-integers-pmi-implies-pwo">
+    <theorem xml:id="integers-theorem-pmi-implies-pwo" permid="KBj">
       <statement>
-        <p>El Principio de Inducción implica el Principio del Buen-Orden.  Es decir, todo subconjunto no vacío de <m>\mathbb N</m> contiene un menor elemento.
+        <p permid="BKn">El Principio de Inducción implica el Principio del Buen-Orden.  Es decir, todo subconjunto no vacío de <m>\mathbb N</m> contiene un menor elemento.
     </p>
       </statement>
-      <proof>
-        <p>Debemos mostrar que si <m>S</m> es un subconjunto no vacío de los números naturales, entonces <m>S</m> contiene un elemento mínimo.  
-          Si <m>S</m> contiene a  1, el teorema es verdadero por el <xref ref="lemma-integers-smallest-number" />. Supongamos que si <m>S</m> contiene un entero <m>k</m> tal que <m>1 \leq k \leq n</m>, entonces <m>S</m> contiene un elemento mínimo. Mostraremos que si un conjunto <m>S</m> contiene un entero menor o igual a <m>n + 1</m>, entonces <m>S</m> tiene un elemento mínimo.  Si <m>S</m> no contiene un elemento menor a <m>n+1</m>, entonces <m>n+1</m> es el menor entero en  <m>S</m>.  De  lo contrario, ya que <m>S</m> no es vacío, <m>S</m> debe contener un entero menor o igual a <m>n</m>. En ese caso, por la hipótesis de inducción, <m>S</m> contiene un elemento mínimo.
+      <proof permid="sxF">
+        <p permid="sqB">Debemos mostrar que si <m>S</m> es un subconjunto no vacío de los números naturales, entonces <m>S</m> contiene un elemento mínimo.  
+          Si <m>S</m> contiene a  1, el teorema es verdadero por el <xref ref="integers-lemma-smallest-number"/>. Supongamos que si <m>S</m> contiene un entero <m>k</m> tal que <m>1 \leq k \leq n</m>, entonces <m>S</m> contiene un elemento mínimo. Mostraremos que si un conjunto <m>S</m> contiene un entero menor o igual a <m>n + 1</m>, entonces <m>S</m> tiene un elemento mínimo.  Si <m>S</m> no contiene un elemento menor a <m>n+1</m>, entonces <m>n+1</m> es el menor entero en  <m>S</m>.  De  lo contrario, ya que <m>S</m> no es vacío, <m>S</m> debe contener un entero menor o igual a <m>n</m>. En ese caso, por la hipótesis de inducción, <m>S</m> contiene un elemento mínimo.
     </p>
       </proof>
     </theorem>
 
 <!-- wording change.  Suggested by P. Diethelm.  TWJ 22/4/2013 -->
  
-    <p>La Inducción puede ser muy útil en la formulación de definiciones. Por ejemplo, hay dos formas de definir <m>n!</m>, el factorial de un entero positivo <m>n</m>. 
-      <ul>
+    <p permid="ifR">La Inducción puede ser muy útil en la formulación de definiciones. Por ejemplo, hay dos formas de definir <m>n!</m>, el factorial de un entero positivo <m>n</m>. 
+      <ul permid="Yjp">
  
-         <li><p>La definición <em>explícita</em>: <m>n! = 1 \cdot 2 \cdot 3 \cdots (n - 1) \cdot n</m>.
+         <li permid="Eqy"><p permid="Dlf">La definición <em>explícita</em>: <m>n! = 1 \cdot 2 \cdot 3 \cdots (n - 1) \cdot n</m>.
     </p></li>  
  
-        <li><p>La definición <em>inductiva</em> o <em>recursiva</em>: <m>1! = 1</m> y <m>n! = n(n - 1)!</m> para <m>n \gt 1</m>.
+        <li permid="kxH"><p permid="jso">La definición <em>inductiva</em> o <em>recursiva</em>: <m>1! = 1</m> y <m>n! = n(n - 1)!</m> para <m>n \gt 1</m>.
     </p></li> 
  
     </ul>
@@ -171,41 +169,41 @@
 
   </section>
 
-  <section xml:id="section-division-algorithm">
+  <section xml:id="integers-section-division-algorithm" permid="Icc">
     <title>El Algoritmo de División</title>
 
-    <introduction>
+    <introduction permid="gjn">
 
-      <p>Una aplicación del Principio del Buen-Orden que usaremos frecuentemente es el algoritmo de división.
+      <p permid="cck">Una aplicación del Principio del Buen-Orden que usaremos frecuentemente es el algoritmo de división.
     </p> 
 
-      <theorem xml:id="theorem-integers-division_algorithm">
+      <theorem xml:id="integers-theorem-division_algorithm" permid="qIs">
         <title>Algoritmo de División</title>
         <idx><h>Algoritmo de división</h><h>para enteros</h></idx>
         <statement>
-          <p>Sean <m>a</m> y <m>b</m> números enteros, con <m>b \gt 0</m>.  Entonces existen enteros únicos <m>q</m> y <m>r</m> tales que 
-            <me>a = bq + r</me>
+          <p permid="hRw">Sean <m>a</m> y <m>b</m> números enteros, con <m>b \gt 0</m>.  Entonces existen enteros únicos <m>q</m> y <m>r</m> tales que 
+            <me permid="jVe">a = bq + r</me>
           donde <m>0 \leq r \lt b</m>.
     </p>
         </statement>
-        <proof>
-          <p>Este es un ejemplo perfecto de una demostración de existencia y unicidad.  Debemos primero demostrar que los números <m>q</m> y <m>r</m> realmente existen. Después debemos mostrar que si  <m>q'</m> y <m>r'</m> también son tales números, entonces <m>q = q'</m> y <m>r = r'</m>.
+        <proof permid="YEO">
+          <p permid="YxK">Este es un ejemplo perfecto de una demostración de existencia y unicidad.  Debemos primero demostrar que los números <m>q</m> y <m>r</m> realmente existen. Después debemos mostrar que si  <m>q'</m> y <m>r'</m> también son tales números, entonces <m>q = q'</m> y <m>r = r'</m>.
     </p>
           
           <case>
             <title>Existencia de <m>q</m> y <m>r</m></title>
-            <p>
+            <p permid="EET">
             Sea
-              <me>S = \{ a - bk : k \in {\mathbb Z} \text{ y } a - bk \geq 0 \}</me>.
+              <me permid="Qcn">S = \{ a - bk : k \in {\mathbb Z} \text{ y } a - bk \geq 0 \}</me>.
             Si <m>0 \in S</m>, entonces <m>b</m> divide a <m>a</m>, y podemos tomar <m>q = a/b</m> y <m>r = 0</m>.  Si <m>0 \notin S</m>, podemos usar el Principio del Buen-Orden.  Debemos primero mostrar que <m>S</m> es no vacío.  Si <m>a \gt 0</m>, entonces <m>a - b \cdot 0 \in S</m>. Si <m>a \lt 0</m>, entonces <m>a - b(2a) = a(1 - 2b) \in S</m>.  En cualquier caso <m>S \neq \emptyset</m>.  Por el Principio del Buen-Orden, <m>S</m> tiene un elemento mínimo, digamos <m>r = a - bq</m>. Por lo tanto, <m>a = bq + r</m>, <m>r \geq 0</m>. Mostremos ahora que <m>r \lt b</m>. Supongamos que <m>r \gt b</m>. Entonces   
-              <me>a - b(q + 1)= a - bq - b = r - b \gt 0</me>.
+              <me permid="wjw">a - b(q + 1)= a - bq - b = r - b \gt 0</me>.
             En este caso tendríamos <m>a - b(q + 1)</m> en el conjunto <m>S</m>. Pero entonces <m>a - b(q + 1) \lt a - bq</m>, lo que llevaría a una contradicción del hecho que  <m>r = a - bq</m> es el menor elemento de <m>S</m>. Así <m>r \leq b</m>.  Como <m>0 \notin S</m>, <m>r \neq b</m> y así <m>r \lt b</m>.
     </p>
           </case>
           <case>
             <title>Unicidad de <m>q</m> y <m>r</m></title> 
-          <p>Supongamos que existen enteros <m>r</m>, <m>r'</m>, <m>q</m>, y <m>q'</m> tales que
-            <me>a = bq + r, 0 \leq r \lt b \quad \text{y}\quad a = bq' + r', 0 \leq r' \lt b</me>.
+          <p permid="kMc">Supongamos que existen enteros <m>r</m>, <m>r'</m>, <m>q</m>, y <m>q'</m> tales que
+            <me permid="cqF">a = bq + r, 0 \leq r \lt b \quad \text{y}\quad a = bq' + r', 0 \leq r' \lt b</me>.
           Entonces <m> bq + r =  bq' + r'</m>.  Supongamos que <m>r' \geq r</m>.  De la última ecuación tenemos <m>b(q - q') = r' - r</m>; por lo tanto, <m>b</m> debe dividir a <m>r' - r</m> y <m>0 \leq r'- r \leq r' \lt b</m>.  Estos es posible solo si <m>r' - r = 0</m>.  Luego, <m>r = r'</m> y  <m>q = q'</m>.
     </p>
           </case>
@@ -213,58 +211,58 @@
         </proof>
       </theorem>
 
-      <p>Sean <m>a</m> y <m>b</m> enteros.  Si <m>b = ak</m> para algún entero <m>k</m>, escribiremos <m>a \mid b</m>.  Un entero <m>d</m> se llama <term>divisor común</term> de <m>a</m> y <m>b</m> si <m>d \mid a</m> y <m>d \mid b</m>.  El <term>máximo común divisor</term><idx><h>Máximo común divisor</h><h>de dos enteros</h></idx> de los enteros <m>a</m> y <m>b</m> es un entero positivo <m>d</m> tal que <m>d</m> es un divisor común de <m>a</m> y <m>b</m> y si <m>d'</m> es cualquier otro divisor común de <m>a</m> y <m>b</m>, entonces <m>d' \mid d</m>. <notation><usage><m>a \mid b</m></usage><description><m>a</m> divide a <m>b</m></description></notation><notation><usage><m>\gcd(a, b)</m></usage><description>máximo común divisor de <m>a</m> y <m>b</m></description></notation>  Escribiremos <m>d = \gcd(a, b)</m>; por ejemplo, <m>\gcd( 24, 36) = 12</m> y <m>\gcd(120, 102) = 6</m>.  Decimos que dos enteros <m>a</m> y <m>b</m> son <term>relativamente primos </term> si <m>\gcd( a, b ) = 1</m>.
+      <p permid="Ijt">Sean <m>a</m> y <m>b</m> enteros.  Si <m>b = ak</m> para algún entero <m>k</m>, escribiremos <m>a \mid b</m>.  Un entero <m>d</m> se llama <term>divisor común</term> de <m>a</m> y <m>b</m> si <m>d \mid a</m> y <m>d \mid b</m>.  El <term>máximo común divisor</term><idx><h>Máximo común divisor</h><h>de dos enteros</h></idx> de los enteros <m>a</m> y <m>b</m> es un entero positivo <m>d</m> tal que <m>d</m> es un divisor común de <m>a</m> y <m>b</m> y si <m>d'</m> es cualquier otro divisor común de <m>a</m> y <m>b</m>, entonces <m>d' \mid d</m>. <notation><usage><m>a \mid b</m></usage><description><m>a</m> divide a <m>b</m></description></notation><notation><usage><m>\gcd(a, b)</m></usage><description>máximo común divisor de <m>a</m> y <m>b</m></description></notation>  Escribiremos <m>d = \gcd(a, b)</m>; por ejemplo, <m>\gcd( 24, 36) = 12</m> y <m>\gcd(120, 102) = 6</m>.  Decimos que dos enteros <m>a</m> y <m>b</m> son <term>relativamente primos </term> si <m>\gcd( a, b ) = 1</m>.
     </p>
 
       
 
-      <theorem xml:id="theorem-integers-gcd">
+      <theorem xml:id="integers-theorem-gcd" permid="WPB">
         <statement>
-          <p>Sean <m>a</m> y <m>b</m> enteros distintos de cero. Entonces existen enteros <m>r</m> y <m>s</m> tales que
-            <me>\gcd( a, b) = ar + bs</me>.
+          <p permid="NYF">Sean <m>a</m> y <m>b</m> enteros distintos de cero. Entonces existen enteros <m>r</m> y <m>s</m> tales que
+            <me permid="IxO">\gcd( a, b) = ar + bs</me>.
           Más aún, el máximo común divisor de <m>a</m> y <m>b</m> es único.
     </p>
         </statement>
-        <proof>
-          <p>Sea
-            <me>S = \{ am + bn : m, n \in {\mathbb Z} \text{ y } am + bn \gt 0 \}</me>.
+        <proof permid="ELX">
+          <p permid="QTl">Sea
+            <me permid="oEX">S = \{ am + bn : m, n \in {\mathbb Z} \text{ y } am + bn \gt 0 \}</me>.
           Claramente, el conjunto <m>S</m> es no-vacío; luego, por el Principio del Buen-Orden <m>S</m> tiene un elemento mínimo, digamos <m>d = ar + bs</m>.  Afirmamos que <m>d = \gcd( a, b)</m>.  Escriba <m>a = dq + r'</m> con  <m>0 \leq r' \lt d</m>. Si <m>r' \gt 0</m>, entonces <!-- r changed to r' - TWJ 1/31/2011 -->
-            <md>
+            <md permid="UMg">
               <mrow>r'&amp; = a - dq</mrow>
               <mrow>&amp; = a - (ar + bs)q</mrow>
               <mrow>&amp; = a - arq - bsq</mrow>
-              <mrow>&amp; = a( 1 - rq ) + b( -sq ),</mrow>
-            </md>
+              <mrow>&amp; = a( 1 - rq ) + b( -sq )</mrow>
+            </md>,
           que está en <m>S</m>.  Pero esto estaría en contradicción con el hecho de que <m>d</m> es el menor  miembro de <m>S</m>.  Luego, <m>r' = 0</m> y <m>d</m> divide a <m>a</m>.  Un argumento similar muestra que <m>d</m> divide a <m>b</m>.  Por lo tanto, <m>d</m> es un divisor común de <m>a</m> y <m>b</m>.
     </p>
 
-          <p>Supongamos que <m>d'</m> es otro divisor común de <m>a</m> y <m>b</m>, y queremos mostrar que <m>d' \mid d</m>. Si <m>a = d'h</m> y <m>b = d'k</m>, entonces
-            <me>d = ar + bs = d'hr + d'ks = d'(hr + ks)</me>.
+          <p permid="xau">Supongamos que <m>d'</m> es otro divisor común de <m>a</m> y <m>b</m>, y queremos mostrar que <m>d' \mid d</m>. Si <m>a = d'h</m> y <m>b = d'k</m>, entonces
+            <me permid="ATp">d = ar + bs = d'hr + d'ks = d'(hr + ks)</me>.
           Es decir <m>d'</m> divide a <m>d</m>. Luego, <m>d</m> es el único máximo común divisor de <m>a</m> y <m>b</m>.
     </p>
         </proof>
         <!-- Notation error in proof fixed (pointed out by Rocco Rossi) - TWJ 9/13/2010 -->
       </theorem>
 
-      <corollary xml:id="corollary-integers-coprime">
+      <corollary xml:id="integers-corollary-coprime" permid="jdT">
         <statement>
-          <p>Sean <m>a</m> y <m>b</m> enteros relativamente primos. Entonces existen enteros <m>r</m> y <m>s</m> tales que <m>ar + bs = 1</m>.
+          <p permid="SIy">Sean <m>a</m> y <m>b</m> enteros relativamente primos. Entonces existen enteros <m>r</m> y <m>s</m> tales que <m>ar + bs = 1</m>.
     </p>
         </statement>
       </corollary>
 
     </introduction>
 
-    <subsection xml:id="integers-subsection-euclidean-algorithm">
+    <subsection xml:id="integers-subsection-euclidean-algorithm" permid="SBh">
       <title>El Algoritmo de Euclides</title>
 
-      <p>Entre otras cosas, el <xref ref="theorem-integers-gcd" /> nos permite calcular el máximo común divisor de dos enteros.
+      <p permid="mfQ">Entre otras cosas, el <xref ref="integers-theorem-gcd"/> nos permite calcular el máximo común divisor de dos enteros.
     </p>
 
 
-      <example xml:id="example-integers-gcd">
-        <p>Calculemos el máximo común divisor de <m>945</m> y <m>2415</m>.  Primero observemos que
-          <md>
+      <example xml:id="integers-example-gcd" permid="Uqu">
+        <p permid="jGJ">Calculemos el máximo común divisor de <m>945</m> y <m>2415</m>.  Primero observemos que
+          <md permid="hay">
             <mrow>2415 &amp; = 945 \cdot 2 + 525</mrow>
             <mrow>945 &amp; = 525 \cdot 1 + 420</mrow>
             <mrow>525 &amp; = 420 \cdot 1 + 105</mrow>
@@ -280,8 +278,8 @@ entonces <m>d</m> también tendría que dividir a <m>105</m>.
 Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
     </p>
 
-        <p>Volviendo a recorrer las ecuaciones anteriores de abajo para arriba, podemos obtener números enteros <m>r</m> y <m>s</m> tales que <m>945 r + 2415 s = 105</m>.  Note que  
-          <md>
+        <p permid="PNS">Volviendo a recorrer las ecuaciones anteriores de abajo para arriba, podemos obtener números enteros <m>r</m> y <m>s</m> tales que <m>945 r + 2415 s = 105</m>.  Note que  
+          <md permid="NhH">
             <mrow>105 &amp; = 525 + (-1) \cdot 420</mrow>
             <mrow>&amp; = 525 + (-1) \cdot [945 + (-1) \cdot 525]</mrow>
             <mrow>&amp; = 2 \cdot 525 + (-1) \cdot 945</mrow>
@@ -292,8 +290,8 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
     </p>
       </example>
 
-      <p>Para calcular <m>\gcd(a,b) = d</m>, estamos usando sucesivas divisiones para obtener una sucesión decreciente de enteros positivos <m>r_1 \gt r_2 \gt \cdots \gt r_n = d</m>; es decir,
-        <md><mrow>b &amp; = a q_1 + r_1</mrow>
+      <p permid="SmZ">Para calcular <m>\gcd(a,b) = d</m>, estamos usando sucesivas divisiones para obtener una sucesión decreciente de enteros positivos <m>r_1 \gt r_2 \gt \cdots \gt r_n = d</m>; es decir,
+        <md permid="toQ"><mrow>b &amp; = a q_1 + r_1</mrow>
           <mrow>a &amp; = r_1 q_2 + r_2</mrow>
           <mrow>r_1 &amp; = r_2 q_3 + r_3</mrow>
           <mrow>&amp; \vdots </mrow>
@@ -301,7 +299,7 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
           <mrow>r_{n - 1} &amp; = r_n q_{n + 1}</mrow>
         </md>.
       Para encontrar <m>r</m> y <m>s</m> tales que <m>ar + bs = d</m>, empezamos con la última ecuación y sustituímos los resultados obtenidos de las ecuaciones anteriores:
-        <md>
+        <md permid="ZvZ">
           <mrow>d &amp; = r_n</mrow>
           <mrow>&amp; = r_{n - 2} - r_{n - 1} q_n</mrow>
           <mrow>&amp; = r_{n - 2} - q_n( r_{n - 3} - q_{n - 1} r_{n - 2} )</mrow>
@@ -314,72 +312,72 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
 
     </subsection>
 
-    <subsection  xml:id="integers-subsection-prime-numbers">
+    <subsection xml:id="integers-subsection-prime-numbers" permid="yIq">
       <title>Números Primos</title>
 
-      <p>Sea <m>p</m> un entero tal que <m>p \gt 1</m>.  Decimos que <m>p</m> es un <term>número primo</term><idx><h>Entero primo</h></idx>, o simplemente <m>p</m> es <term>primo</term>, si y solo si los únicos números enteros positivos que dividen a <m>p</m> son <m>1</m> y el mismo <m>p</m>.  Un entero <m>n \gt 1</m> que no es primo se llama <idx><h>Entero compuesto</h></idx><term>compuesto</term>.
+      <p permid="yui">Sea <m>p</m> un entero tal que <m>p \gt 1</m>.  Decimos que <m>p</m> es un <term>número primo</term><idx><h>Entero primo</h></idx>, o simplemente <m>p</m> es <term>primo</term>, si y solo si los únicos números enteros positivos que dividen a <m>p</m> son <m>1</m> y el mismo <m>p</m>.  Un entero <m>n \gt 1</m> que no es primo se llama <idx><h>Entero compuesto</h></idx><term>compuesto</term>.
     </p>
 
-      <lemma xml:id="theorem-integers-prime-divisor">
+      <lemma xml:id="integers-theorem-prime-divisor" permid="MLV">
         <title>Euclides</title>
         
         <statement>
-          <p>Sean <m>a</m> y <m>b</m> enteros y <m>p</m> un número primo.  Si <m>p \mid ab</m>, entonces ya sea <m>p \mid a</m> o <m>p \mid b</m>.
+          <p permid="mBp">Sean <m>a</m> y <m>b</m> enteros y <m>p</m> un número primo.  Si <m>p \mid ab</m>, entonces ya sea <m>p \mid a</m> o <m>p \mid b</m>.
     </p>
         </statement>
-        <proof>
-          <p>Supongamos que <m>p</m> no divide a <m>a</m>.  Debemos mostrar que <m>p \mid b</m>. Como <m>\gcd( a, p ) = 1</m>, existen enteros <m>r</m> y <m>s</m> tales que <m>ar + ps = 1</m>.  Así
-            <me>b = b(ar + ps) = (ab)r + p(bs)</me>.
+        <proof permid="doH">
+          <p permid="dhD">Supongamos que <m>p</m> no divide a <m>a</m>.  Debemos mostrar que <m>p \mid b</m>. Como <m>\gcd( a, p ) = 1</m>, existen enteros <m>r</m> y <m>s</m> tales que <m>ar + ps = 1</m>.  Así
+            <me permid="FDi">b = b(ar + ps) = (ab)r + p(bs)</me>.
           Como <m>p</m> divide tanto a <m>ab</m> como a sí mismo, <m>p</m> divide a <m>b = (ab)r + p(bs)</m>.
     </p>
         </proof>
       </lemma>
 
-      <theorem xml:id="theorem-integers-infinite-primes">
+      <theorem xml:id="integers-theorem-infinite-primes" permid="AxD">
         <title>Euclides</title>
         <statement>
-          <p>Existe una cantidad infinita de números primos.
+          <p permid="ufO">Existe una cantidad infinita de números primos.
     </p>
         </statement>
-        <proof>
-          <p>Demostraremos este teorema por contradicción.  Supongamos que existe solo una cantidad finita de primos, digamos <m>p_1, p_2, \ldots, p_n</m>.  Sea <m>P = p_1  p_2  \cdots  p_n + 1</m>.    Entonces <m>P</m> debe ser divisible por algún <m>p_i</m> con <m>1 \leq i \leq n</m>. En este caso, <m>p_i</m> debe dividir a <m>P - p_1 p_2 \cdots p_n = 1</m>, lo que es una contradicción.  Luego, ya sea  <m>P</m> es primo o existe un primo adicional <m>p \neq p_i</m> que divide a <m>P</m>.
+        <proof permid="kTg">
+          <p permid="JoM">Demostraremos este teorema por contradicción.  Supongamos que existe solo una cantidad finita de primos, digamos <m>p_1, p_2, \ldots, p_n</m>.  Sea <m>P = p_1  p_2  \cdots  p_n + 1</m>.    Entonces <m>P</m> debe ser divisible por algún <m>p_i</m> con <m>1 \leq i \leq n</m>. En este caso, <m>p_i</m> debe dividir a <m>P - p_1 p_2 \cdots p_n = 1</m>, lo que es una contradicción.  Luego, ya sea  <m>P</m> es primo o existe un primo adicional <m>p \neq p_i</m> que divide a <m>P</m>.
     </p>
         </proof>
       </theorem>
 
 <!-- Error in proof fixed.  Suggested by R. Rossi.  TWJ 12/19/2011 -->
 
-      <theorem xml:id="theorem-fund-theorem-arithmetic">
+      <theorem xml:id="integers-theorem-fund-theorem-arithmetic" permid="gEM">
         <title>Teorema Fundamental de la Aritmética</title>
         <idx><h>Teorema Fundamental</h><h>de la Aritmética</h></idx>
         <statement>
-          <p>Sea <m>n</m> un entero tal que <m>n \gt 1</m>. Entonces
-            <me>n = p_1 p_2 \cdots p_k</me>,
+          <p permid="amX">Sea <m>n</m> un entero tal que <m>n \gt 1</m>. Entonces
+            <me permid="lKr">n = p_1 p_2 \cdots p_k</me>,
           con <m>p_1, \ldots, p_k</m> primos (no necesariamente distintos).  Más aún, esta factorización es única; es decir, si 
-            <me>n = q_1 q_2 \cdots q_l</me>,
+            <me permid="RRA">n = q_1 q_2 \cdots q_l</me>,
           entonces <m>k = l</m> y los <m>q_i</m> son iguales a los <m>p_i</m> posiblemente en otro orden.
     </p>
         </statement>
-        <proof>
+        <proof permid="Rap">
           <case>
             <title>Unicidad.</title>
-            <p>  Para demostrar la unicidad procederemos por inducción en <m>n</m>. El teorema es claramente verdadero para <m>n = 2</m> pues en este caso <m>n</m> es primo.  Ahora supongamos que el resultado se cumple para todos los enteros <m>m</m> tales que <m>1 \leq m \lt n</m>, y 
-              <me>n = p_1 p_2 \cdots p_k = q_1 q_2 \cdots q_l</me>,
-            con <m>p_1 \leq p_2 \leq \cdots \leq p_k</m> y <m>q_1 \leq q_2 \leq \cdots \leq q_l</m>. Por el <xref ref="theorem-integers-prime-divisor" />, <m>p_1  \mid  q_i</m> para ciertos <m>i = 1, \ldots, l</m> y <m>q_1  \mid  p_j</m> para ciertos <m>j = 1, \ldots, k</m>.  Como todos los <m>p_i</m> y los <m>q_i</m> son primos, <m>p_1 = q_i</m> y  <m>q_1 = p_j</m>. Luego, <m>p_1 = q_1</m> pues <m>p_1 \leq p_j = q_1 \leq q_i = p_1</m>.  Por la hipótesis de inducción, 
-              <me>n' = p_2 \cdots p_k = q_2 \cdots q_l</me>
+            <p permid="pvV">  Para demostrar la unicidad procederemos por inducción en <m>n</m>. El teorema es claramente verdadero para <m>n = 2</m> pues en este caso <m>n</m> es primo.  Ahora supongamos que el resultado se cumple para todos los enteros <m>m</m> tales que <m>1 \leq m \lt n</m>, y 
+              <me permid="xYJ">n = p_1 p_2 \cdots p_k = q_1 q_2 \cdots q_l</me>,
+            con <m>p_1 \leq p_2 \leq \cdots \leq p_k</m> y <m>q_1 \leq q_2 \leq \cdots \leq q_l</m>. Por el <xref ref="integers-theorem-prime-divisor"/>, <m>p_1  \mid  q_i</m> para ciertos <m>i = 1, \ldots, l</m> y <m>q_1  \mid  p_j</m> para ciertos <m>j = 1, \ldots, k</m>.  Como todos los <m>p_i</m> y los <m>q_i</m> son primos, <m>p_1 = q_i</m> y  <m>q_1 = p_j</m>. Luego, <m>p_1 = q_1</m> pues <m>p_1 \leq p_j = q_1 \leq q_i = p_1</m>.  Por la hipótesis de inducción, 
+              <me permid="efS">n' = p_2 \cdots p_k = q_2 \cdots q_l</me>
             tiene una factorización única.  Luego, <m>k = l</m> y <m>q_i = p_i</m> para <m>i = 1, \ldots, k</m>.
     </p>
           </case>
           
           <case>
             <title>Existencia.</title>
-            <p> Para demostrar la existencia, supongamos que existe algún entero que no puede ser escrito como producto de primos.  Sea <m>S</m> el conjunto de tales números.  Por el Principio del Buen-Orden, <m>S</m> contiene un elemento mínimo, digamos <m>a</m>.  Si los únicos factores positivos de <m>a</m> son <m>a</m> y <m>1</m>, entonces <m>a</m> es primo, lo que es una contradicción.  Luego, <m>a = a_1 a_2</m> con <m>1 \lt a_1 \lt a</m> y <m>1 \lt a_2 \lt a</m>.  Ni <m>a_1\in S</m> ni <m>a_2 \in S</m>, pues <m>a</m> es el menor elemento de <m>S</m>.  Así 
-            <md>
+            <p permid="VDe"> Para demostrar la existencia, supongamos que existe algún entero que no puede ser escrito como producto de primos.  Sea <m>S</m> el conjunto de tales números.  Por el Principio del Buen-Orden, <m>S</m> contiene un elemento mínimo, digamos <m>a</m>.  Si los únicos factores positivos de <m>a</m> son <m>a</m> y <m>1</m>, entonces <m>a</m> es primo, lo que es una contradicción.  Luego, <m>a = a_1 a_2</m> con <m>1 \lt a_1 \lt a</m> y <m>1 \lt a_2 \lt a</m>.  Ni <m>a_1\in S</m> ni <m>a_2 \in S</m>, pues <m>a</m> es el menor elemento de <m>S</m>.  Así 
+            <md permid="quk">
               <mrow>a_1 &amp; = p_1 \cdots p_r</mrow>
               <mrow>a_2 &amp; = q_1 \cdots q_s</mrow>
             </md>.
           Por lo tanto,
-            <me>a = a_1 a_2 = p_1 \cdots p_r q_1 \cdots q_s</me>.
+            <me permid="Knb">a = a_1 a_2 = p_1 \cdots p_r q_1 \cdots q_s</me>.
           Así <m>a \notin S</m>, lo que es una contradicción.
     </p></case>
           
@@ -388,10 +386,10 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
 
     </subsection>
 
-    <subsection  xml:id="integers-subsection-historical-note">
+    <subsection xml:id="integers-subsection-historical-note" permid="ePz">
       <title>Nota Histórica</title>
       
-      <p>Los números primos ya fueron estudiados por los antiguos Griegos.  Dos resultados importantes de la Antigüedad son la demostración de Euclides de que existe una infinidad de primos y la criba de Ertóstenes, un método para calcular todos los números primos menores a un entero positivo <m>n</m> dado.  Un problema en teoría de números es encontrar una función <m>f</m> tal que <m>f(n)</m> es primo para cada entero <m>n</m>. Pierre Fermat (1601?<ndash />1665) conjeturó que <m>2^{2^n} + 1</m> era primo para todo <m>n</m>, pero posteriormente Leonhard Euler (1707<ndash />1783) demostró que
+      <p permid="eBr">Los números primos ya fueron estudiados por los antiguos Griegos.  Dos resultados importantes de la Antigüedad son la demostración de Euclides de que existe una infinidad de primos y la criba de Ertóstenes, un método para calcular todos los números primos menores a un entero positivo <m>n</m> dado.  Un problema en teoría de números es encontrar una función <m>f</m> tal que <m>f(n)</m> es primo para cada entero <m>n</m>. Pierre Fermat (1601?<ndash/>1665) conjeturó que <m>2^{2^n} + 1</m> era primo para todo <m>n</m>, pero posteriormente Leonhard Euler (1707<ndash/>1783) demostró que
         <me permid="WBt">
           2^{2^5} + 1 = 4{,}294{,}967{,}297
           </me>
@@ -467,162 +465,162 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
   <exercises xml:id="integers-exercises" filenamebase="integers" permid="Dsj">
     <title>Ejercicios</title>
   
-    <exercise number="1">
+    <exercise number="1" permid="sTe" xml:id="integers-exercise-pmi-sum-squares">
       <statement>
-        <p>Demuestre que
-          <me>1^2 + 2^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6}</me>
+        <p permid="AEU">Demuestre que
+          <me permid="CIC">1^2 + 2^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6}</me>
         para <m>n \in {\mathbb N}</m>.
     </p>
       </statement>
-      <hint>
-        <p>El caso base, <m>S(1): [1(1 + 1)(2(1) + 1)]/6 = 1 = 1^2</m> es verdadero. Supongamos que <m>S(k): 1^2 + 2^2 + \cdots + k^2 = [k(k + 1)(2k + 1)]/6</m> es verdadero. Entonces 
-          <md>
+      <hint permid="pCZ">
+        <p permid="iWP">El caso base, <m>S(1): [1(1 + 1)(2(1) + 1)]/6 = 1 = 1^2</m> es verdadero. Supongamos que <m>S(k): 1^2 + 2^2 + \cdots + k^2 = [k(k + 1)(2k + 1)]/6</m> es verdadero. Entonces 
+          <md permid="iPL">
             <mrow>1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 &amp; = [k(k + 1)(2k + 1)]/6 + (k + 1)^2</mrow>
-            <mrow>&amp; = [(k + 1)((k + 1) + 1)(2(k + 1) + 1)]/6,</mrow>
-          </md>
+            <mrow>&amp; = [(k + 1)((k + 1) + 1)(2(k + 1) + 1)]/6</mrow>
+          </md>,
         y así <m>S(k + 1)</m> es verdadero. Luego, <m>S(n)</m> es verdadero para todos los enteros positivos <m>n</m>.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="2">
+    <exercise number="2" permid="Zan" xml:id="integers-exercise-pmi-sum-cubes">
       <statement>
-        <p>Demuestre que
-          <me>1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n + 1)^2}{4}</me>
+        <p permid="gMd">Demuestre que
+          <me permid="ved">1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n + 1)^2}{4}</me>
         para <m>n \in {\mathbb N}</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="3">
+    <exercise number="3" permid="Fhw" xml:id="integers-exercise-pmi-factorial">
       <statement>
-        <p>Demuestre que <m>n! \gt 2^n</m> para <m>n \geq 4</m>.
+        <p permid="MTm">Demuestre que <m>n! \gt 2^n</m> para <m>n \geq 4</m>.
     </p>
       </statement>
-      <hint>
-        <p>El caso base, <m>S(4): 4! = 24 \gt 16 =2^4</m> es verdadero. Supongamos que <m>S(k): k! \gt 2^k</m> es verdadero. Entonces <m>(k + 1)! = k! (k + 1) \gt 2^k \cdot 2 = 2^{k + 1}</m>, así <m>S(k + 1)</m> es verdadero. Luego, <m>S(n)</m> es verdadero para todos los enteros positivos <m>n</m>.
+      <hint permid="hYA">
+        <p permid="PdY">El caso base, <m>S(4): 4! = 24 \gt 16 =2^4</m> es verdadero. Supongamos que <m>S(k): k! \gt 2^k</m> es verdadero. Entonces <m>(k + 1)! = k! (k + 1) \gt 2^k \cdot 2 = 2^{k + 1}</m>, así <m>S(k + 1)</m> es verdadero. Luego, <m>S(n)</m> es verdadero para todos los enteros positivos <m>n</m>.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="4">
+    <exercise number="4" permid="loF" xml:id="integers-exercise-pmi-odd-times-x">
     <statement>
-      <p>Demuestre que
-        <me>x + 4x + 7x + \cdots + (3n - 2)x = \frac{n(3n - 1)x}{2}</me>
+      <p permid="tav">Demuestre que
+        <me permid="blm">x + 4x + 7x + \cdots + (3n - 2)x = \frac{n(3n - 1)x}{2}</me>
       para todo <m>n \in {\mathbb N}</m>.
     </p>
     </statement>
     
     </exercise>
   
-    <exercise number="5">
+    <exercise number="5" permid="RvO" xml:id="integers-exercise-pmi-divisible-by-3">
       <statement>
-        <p>Demuestre que <m>10^{n + 1} + 10^n + 1</m> es divisible por <m>3</m> para todo <m>n \in {\mathbb N}</m>.
+        <p permid="ZhE">Demuestre que <m>10^{n + 1} + 10^n + 1</m> es divisible por <m>3</m> para todo <m>n \in {\mathbb N}</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="6">
+    <exercise number="6" permid="xCX" xml:id="integers-exercise-pmi-divisible-by-99">
       <statement>
-        <p>Demuestre que <m>4 \cdot 10^{2n} + 9 \cdot 10^{2n - 1} + 5</m> es divisible por <m>99</m> para todo <m>n \in {\mathbb N}</m>.
+        <p permid="FoN">Demuestre que <m>4 \cdot 10^{2n} + 9 \cdot 10^{2n - 1} + 5</m> es divisible por <m>99</m> para todo <m>n \in {\mathbb N}</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="7">
+    <exercise number="7" permid="dKg" xml:id="integers-exercise-pmi-geometric-arithmetic-mean">
       <statement>
-        <p>Muestre que
-          <me>\sqrt[n]{a_1 a_2 \cdots a_n} \leq \frac{1}{n} \sum_{k = 1}^{n} a_k</me>.
+        <p permid="lvW">Muestre que
+          <me permid="nzE">\sqrt[n]{a_1 a_2 \cdots a_n} \leq \frac{1}{n} \sum_{k = 1}^{n} a_k</me>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="8">
+    <exercise number="8" permid="JRp" xml:id="integers-exercise-pmi-leibniz">
       <statement>
-        <p>Demuestre la regla de Leibniz para <m>f^{(n)} (x)</m>, donde <m>f^{(n)}</m> es la <m>n</m>-ésima derivada de <m>f</m>; es decir, muestre que 
-          <me>(fg)^{(n)}(x) = \sum_{k = 0}^{n} \binom{n}{k} f^{(k)}(x) g^{(n - k)}(x)</me>.
+        <p permid="RDf">Demuestre la regla de Leibniz para <m>f^{(n)} (x)</m>, donde <m>f^{(n)}</m> es la <m>n</m>-ésima derivada de <m>f</m>; es decir, muestre que 
+          <me permid="Mco">(fg)^{(n)}(x) = \sum_{k = 0}^{n} \binom{n}{k} f^{(k)}(x) g^{(n - k)}(x)</me>.
     </p>
       </statement>
-      <hint>
-        <p>Siga la demostración el <xref ref="example-integers-binomial-theorem"/>.
+      <hint permid="SPC">
+        <p permid="vlh">Siga la demostración el <xref ref="integers-example-binomial-theorem"/>.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="9">
+    <exercise number="9" permid="pYy" xml:id="integers-exercise-pmi-sum-powers-of-2">
       <statement>
-        <p>Use inducción para demostrar que <m>1 + 2 + 2^2 + \cdots + 2^n = 2^{n + 1} - 1</m> para todo <m>n \in {\mathbb N}</m>.
+        <p permid="xKo">Use inducción para demostrar que <m>1 + 2 + 2^2 + \cdots + 2^n = 2^{n + 1} - 1</m> para todo <m>n \in {\mathbb N}</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="10">
+    <exercise number="10" permid="WfH" xml:id="integers-exercise-pmi-sum-n-over-n-plus-one">
       <statement>
-        <p>Demuestre que
-          <me>\frac{1}{2}+ \frac{1}{6} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1} </me>
+        <p permid="dRx">Demuestre que
+          <me permid="sjx">\frac{1}{2}+ \frac{1}{6} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1} </me>
         para todo <m>n \in {\mathbb N}</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="11">
+    <exercise number="11" permid="CmQ" xml:id="integers-exercise-pmi-less-than-nx">
       <statement>
-        <p>Si <m>x</m> es un número real no negativo, demuestre que <m>(1 + x)^n - 1 \geq nx</m> para <m>n = 0, 1, 2, \ldots</m>.
+        <p permid="JYG">Si <m>x</m> es un número real no negativo, demuestre que <m>(1 + x)^n - 1 \geq nx</m> para <m>n = 0, 1, 2, \ldots</m>.
     </p>
       </statement>
-      <hint>
-        <p>El caso base, <m>S(0): (1 + x)^0 - 1 = 0 \geq 0 = 0 \cdot x</m> es verdadero. Supongamos que <m>S(k): (1 + x)^k -1 \geq kx</m> es verdadero. Entonces 
-          <md>
+      <hint permid="rsm">
+        <p permid="bsq">El caso base, <m>S(0): (1 + x)^0 - 1 = 0 \geq 0 = 0 \cdot x</m> es verdadero. Supongamos que <m>S(k): (1 + x)^k -1 \geq kx</m> es verdadero. Entonces 
+          <md permid="kEY">
             <mrow>(1 + x)^{k + 1} - 1 &amp; = (1 + x)(1 + x)^k -1</mrow>
             <mrow>&amp; = (1 + x)^k + x(1 + x)^k - 1</mrow>
             <mrow>&amp; \geq kx + x(1 + x)^k</mrow>
             <mrow>&amp; \geq kx + x</mrow>
-            <mrow>&amp; = (k + 1)x,</mrow>
-          </md> así <m>S(k + 1)</m> es verdadero. Por lo tanto, <m>S(n)</m> es verdadero para todos los enteros positivos <m>n</m>.
+            <mrow>&amp; = (k + 1)x</mrow>
+          </md>, así <m>S(k + 1)</m> es verdadero. Por lo tanto, <m>S(n)</m> es verdadero para todos los enteros positivos <m>n</m>.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="12">
+    <exercise number="12" permid="itZ" xml:id="integers-exercise-power-sets">
       <title>Conjunto Potencia</title>
       <statement>
-        <p>Sea <m>X</m> un conjunto. Defina el <term>conjunto potencia</term> de <m>X</m>, denotado <m>{\mathcal P}(X)</m>, como el conjunto de todos los subconjuntos de <m>X</m>.  <notation><usage><m>\mathcal P(X)</m></usage><description>conjunto potencia de <m>X</m></description></notation> Por ejemplo,  
-          <me>{\mathcal P}( \{a, b\} ) = \{ \emptyset, \{a\}, \{b\}, \{a, b\} \}</me>.
+        <p permid="qfP">Sea <m>X</m> un conjunto. Defina el <term>conjunto potencia</term> de <m>X</m>, denotado <m>{\mathcal P}(X)</m>, como el conjunto de todos los subconjuntos de <m>X</m>.  <notation><usage><m>\mathcal P(X)</m></usage><description>conjunto potencia de <m>X</m></description></notation> Por ejemplo,  
+          <me permid="wTq">{\mathcal P}( \{a, b\} ) = \{ \emptyset, \{a\}, \{b\}, \{a, b\} \}</me>.
         Para todo entero positivo <m>n</m>, muestre que un conjunto con exactamente <m>n</m> elementos tiene un conjunto potencia con exactamente <m>2^n</m> elementos.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="13">
+    <exercise number="13" permid="OBi" xml:id="integers-exercise-pmi-equivalent">
       <statement>
-        <p>Demuestre que que los dos Principios de Inducción enunciados en la Sección<xref ref="section-math-induction"/> son equivalentes.
+        <p permid="WmY">Demuestre que que los dos Principios de Inducción enunciados en la Sección<xref ref="integers-section-math-induction"/> son equivalentes.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="14">
+    <exercise number="14" permid="uIr" xml:id="integers-exercise-smallest-natural-number">
       <statement>
-        <p>Muestre que el Principio del Buen-Orden para los números naturales implica que 1 es el menor número natural.  Use este resultado para mostrar que el Principio del Buen-Orden implica el Principio de Inducción; es decir, muestre que si <m>S \subset {\mathbb N}</m> tal que <m>1 \in S</m> y <m>n + 1 \in S</m> cada vez que <m>n \in S</m>, entonces <m>S = {\mathbb N}</m>.
+        <p permid="Cuh">Muestre que el Principio del Buen-Orden para los números naturales implica que 1 es el menor número natural.  Use este resultado para mostrar que el Principio del Buen-Orden implica el Principio de Inducción; es decir, muestre que si <m>S \subset {\mathbb N}</m> tal que <m>1 \in S</m> y <m>n + 1 \in S</m> cada vez que <m>n \in S</m>, entonces <m>S = {\mathbb N}</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="15">
+    <exercise number="15" permid="aPA" xml:id="integers-exercise--gcd-linear-combination">
       <statement>
-        <p>Para cada uno de  los siguientes pares de números <m>a</m> y <m>b</m>, calcule <m>\gcd(a,b)</m> y encuentre enteros <m>r</m> y <m>s</m> tales que  <m>\gcd(a,b) = ra + sb</m>.
+        <p permid="iBq">Para cada uno de  los siguientes pares de números <m>a</m> y <m>b</m>, calcule <m>\gcd(a,b)</m> y encuentre enteros <m>r</m> y <m>s</m> tales que  <m>\gcd(a,b) = ra + sb</m>.
           <ol cols="2" permid="LUX">
             <li permid="cTi">
               <p permid="bNP">
@@ -664,9 +662,9 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
       
     </exercise>
   
-    <exercise number="16" xml:id="exercise-integers-gcd-1">
+    <exercise number="16" xml:id="integers-exercise-gcd-1" permid="GWJ">
       <statement>
-        <p>Sean <m>a</m> y <m>b</m> enteros distintos de cero. Si existen enteros <m>r</m> y <m>s</m> tales que <m>ar + bs =1</m>, muestre que <m>a</m> y <m>b</m> son relativamente primos.
+        <p permid="OIz">Sean <m>a</m> y <m>b</m> enteros distintos de cero. Si existen enteros <m>r</m> y <m>s</m> tales que <m>ar + bs =1</m>, muestre que <m>a</m> y <m>b</m> son relativamente primos.
     </p>
       </statement>
       
@@ -674,71 +672,71 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
   
   <!--Todo Check references to the Fibonacci numbers-->
   
-    <exercise number="17">
+    <exercise number="17" permid="ndS" xml:id="integers-exercise-fibonacci">
       <title>Números de Fibonacci</title>
       <statement>
-        <p>Los Números de Fibonacci son
-          <me>1, 1, 2, 3, 5, 8, 13, 21, \ldots</me>.
+        <p permid="uPI">Los Números de Fibonacci son
+          <me permid="daz">1, 1, 2, 3, 5, 8, 13, 21, \ldots</me>.
         Podemos definirlos recursivamente como <m>f_1 = 1</m>, <m>f_2 = 1</m>, y <m>f_{n + 2} = f_{n + 1} + f_n</m> para <m>n \in {\mathbb N}</m>. 
-          <ol>
+          <ol permid="scg">
          
-            <li><p>Demuestre que <m>f_n \lt 2^n</m>.
+            <li permid="yBm"><p permid="xvT">Demuestre que <m>f_n \lt 2^n</m>.
     </p></li>
              
-            <li><p>Demuestre que <m>f_{n + 1} f_{n - 1} = f^2_n + (-1)^n</m>, <m>n \geq 2</m>.
+            <li permid="eIv"><p permid="dDc">Demuestre que <m>f_{n + 1} f_{n - 1} = f^2_n + (-1)^n</m>, <m>n \geq 2</m>.
     </p></li>
              
-            <li><p>Demuestre que <m>f_n = [(1 + \sqrt{5}\, )^n - (1 - \sqrt{5}\, )^n]/ 2^n \sqrt{5}</m>.
+            <li permid="KPE"><p permid="JKl">Demuestre que <m>f_n = [(1 + \sqrt{5}\, )^n - (1 - \sqrt{5}\, )^n]/ 2^n \sqrt{5}</m>.
     </p></li>
              
-            <li><p>Muestre que <m>\phi = \lim_{n \rightarrow \infty}  f_{n + 1} / f_n  = (\sqrt{5} + 1)/2</m>.  La constante <m>\phi</m> se conoce como <term>proporción áurea</term>.
+            <li permid="qWN"><p permid="pRu">Muestre que <m>\phi = \lim_{n \rightarrow \infty}  f_{n + 1} / f_n  = (\sqrt{5} + 1)/2</m>.  La constante <m>\phi</m> se conoce como <term>proporción áurea</term>.
     </p></li>
              
-            <li><p>Demuestre que <m>f_n</m> y <m>f_{n + 1}</m> son relativamente primos.
+            <li permid="XdW"><p permid="VYD">Demuestre que <m>f_n</m> y <m>f_{n + 1}</m> son relativamente primos.
     </p></li>
          
           </ol></p>
       </statement>
-      <hint>
-        <p>Para (a) y (b) use inducción. (c) Muestre que <m>f_1 = 1</m>, <m>f_2 = 1</m>, y <m>f_{n + 2} = f_{n + 1} + f_n</m>. (d)  Use la parte (c). (e) Use la parte (b) y el <xref ref="exercise-integers-gcd-1"/>.
+      <hint permid="Iqx">
+        <p permid="Hzz">Para (a) y (b) use inducción. (c) Muestre que <m>f_1 = 1</m>, <m>f_2 = 1</m>, y <m>f_{n + 2} = f_{n + 1} + f_n</m>. (d)  Use la parte (c). (e) Use la parte (b) y el <xref ref="integers-exercise-gcd-1"/>.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="18">
+    <exercise number="18" permid="Tlb" xml:id="integers-exercise-coprime-gcd-as-rb-rs">
       <statement>
-        <p>Sean <m>a</m> y <m>b</m> enteros tales que <m>\gcd(a,b) = 1</m>.  Sean <m>r</m> y <m>s</m> enteros tales que <m>ar + bs =1</m>.  Demuestre que 
-          <me>\gcd(a,s) = \gcd(r,b) = \gcd(r,s) =  1</me>.
+        <p permid="aWR">Sean <m>a</m> y <m>b</m> enteros tales que <m>\gcd(a,b) = 1</m>.  Sean <m>r</m> y <m>s</m> enteros tales que <m>ar + bs =1</m>.  Demuestre que 
+          <me permid="JhI">\gcd(a,s) = \gcd(r,b) = \gcd(r,s) =  1</me>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="19">
+    <exercise number="19" permid="zsk" xml:id="integers-exercise-coprime-perfect-squares">
       <statement>
-        <p>Sean <m>x, y \in {\mathbb N}</m> relativamente primos.  Si <m>xy</m> es un cuadrado perfecto, demuestre que <m>x</m> e <m>y</m> son ambos cuadrados perfectos.
+        <p permid="Hea">Sean <m>x, y \in {\mathbb N}</m> relativamente primos.  Si <m>xy</m> es un cuadrado perfecto, demuestre que <m>x</m> e <m>y</m> son ambos cuadrados perfectos.
     </p>
       </statement>
-      <hint>
-        <p>Use el Teorema Fundamental de la Aritmética.
+      <hint permid="ALY">
+        <p permid="nGI">Use el Teorema Fundamental de la Aritmética.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="20">
+    <exercise number="20" permid="fzt" xml:id="integers-exercise-perfect-square-4k">
       <statement>
-        <p>Usando el  algoritmo de división, muestre que todo cuadrado perfecto es de la forma <m>4k</m> o <m>4k + 1</m> para algún entero no negativo <m>k</m>.
+        <p permid="nlj">Usando el  algoritmo de división, muestre que todo cuadrado perfecto es de la forma <m>4k</m> o <m>4k + 1</m> para algún entero no negativo <m>k</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="21">
+    <exercise number="21" permid="LGC" xml:id="integers-exercise-relatively-prime-squares">
       <statement>
-        <p>Supongamos que <m>a, b, r, s</m> son relativamente primos de a pares y que
-          <md>
+        <p permid="Tss">Supongamos que <m>a, b, r, s</m> son relativamente primos de a pares y que
+          <md permid="poR">
             <mrow>a^2 + b^2 &amp; = r^2</mrow>
             <mrow>a^2 - b^2 &amp; = s^2</mrow>
           </md>.
@@ -748,92 +746,92 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
       
     </exercise>
   
-    <exercise number="22">
+    <exercise number="22" permid="rNL" xml:id="integers-exercise-Zn-conguence">
       <statement>
-        <p>Sea <m>n \in {\mathbb N}</m>.  Use el algoritmo de división para demostrar que todo entero es congruente mód <m>n</m> a exactamente uno de los enteros <m>0, 1, \ldots, n-1</m>. Concluya que si <m>r</m> es un entero, entonces hay exactamente un <m>s</m> en <m>{\mathbb Z}</m> tal que <m>0 \leq s \lt n</m> y <m>[r] = [s]</m>. Luego, los enteros están efectivamente particionados por la relación de congruencia mód <m>n</m>.
+        <p permid="zzB">Sea <m>n \in {\mathbb N}</m>.  Use el algoritmo de división para demostrar que todo entero es congruente mód <m>n</m> a exactamente uno de los enteros <m>0, 1, \ldots, n-1</m>. Concluya que si <m>r</m> es un entero, entonces hay exactamente un <m>s</m> en <m>{\mathbb Z}</m> tal que <m>0 \leq s \lt n</m> y <m>[r] = [s]</m>. Luego, los enteros están efectivamente particionados por la relación de congruencia mód <m>n</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="23">
+    <exercise number="23" permid="XUU" xml:id="integers-exercise-lcm">
       <statement>
-        <p>Defina el <term>mínimo común múltiplo</term> de dos enteros distintos de cero <m>a</m> y <m>b</m>, denotado por <m>\lcm(a,b)</m>, como el entero positivo <m>m</m> tal que tanto <m>a</m> como <m>b</m> dividen a <m>m</m>, y si <m>a</m> y <m>b</m>  dividen a otro entero <m>n</m>, entonces <m>m</m> también divide a <m>n</m>. <notation><usage><m>\lcm(m,n)</m></usage><description>el mínimo común múltiplo de <m>m</m> y <m>n</m></description></notation> Demuestre que existe un único mínimo común múltiplo para cualquiera dos enteros <m>a</m> y <m>b</m> distintos de cero.
+        <p permid="fGK">Defina el <term>mínimo común múltiplo</term> de dos enteros distintos de cero <m>a</m> y <m>b</m>, denotado por <m>\lcm(a,b)</m>, como el entero positivo <m>m</m> tal que tanto <m>a</m> como <m>b</m> dividen a <m>m</m>, y si <m>a</m> y <m>b</m>  dividen a otro entero <m>n</m>, entonces <m>m</m> también divide a <m>n</m>. <notation><usage><m>\lcm(m,n)</m></usage><description>el mínimo común múltiplo de <m>m</m> y <m>n</m></description></notation> Demuestre que existe un único mínimo común múltiplo para cualquiera dos enteros <m>a</m> y <m>b</m> distintos de cero.
     </p>
       </statement>
-      <hint>
-        <p>Use el Principio del Buen-Orden y el algoritmo de división.
+      <hint permid="FvR">
+        <p permid="TNR">Use el Principio del Buen-Orden y el algoritmo de división.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="24" xml:id="exercise-integers-lcm-gcd">
+    <exercise number="24" xml:id="integers-exercise-lcm-gcd" permid="Ecd">
       <statement>
-        <p>Si <m>d= \gcd(a, b)</m> y <m>m = \lcm(a, b)</m>, demuestre que <m>dm = |ab|</m>.
+        <p permid="LNT">Si <m>d= \gcd(a, b)</m> y <m>m = \lcm(a, b)</m>, demuestre que <m>dm = |ab|</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="25">
+    <exercise number="25" permid="kjm" xml:id="integers-exercise-coprime-lcd">
       <statement>
-        <p>Muestre que <m>\lcm(a,b) = ab</m> si y solo si <m>\gcd(a,b) = 1</m>.
+        <p permid="rVc">Muestre que <m>\lcm(a,b) = ab</m> si y solo si <m>\gcd(a,b) = 1</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="26" xml:id="exercise-integers-gcd-products">
+    <exercise number="26" xml:id="integers-exercise-gcd-products" permid="Qqv">
       <statement>
-        <p>Demuestre que <m>\gcd(a,c) = \gcd(b,c) =1</m> si y solo si <m>\gcd(ab,c) = 1</m> para todos los enteros <m>a</m>, <m>b</m>, y <m>c</m>.
+        <p permid="Ycl">Demuestre que <m>\gcd(a,c) = \gcd(b,c) =1</m> si y solo si <m>\gcd(ab,c) = 1</m> para todos los enteros <m>a</m>, <m>b</m>, y <m>c</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="27">
+    <exercise number="27" permid="wxE" xml:id="integers-exercise-coprime-divides-factor">
       <statement>
-        <p>Sean <m>a, b, c \in {\mathbb Z}</m>.  Demuestre que si <m>\gcd(a,b) = 1</m> y <m>a  \mid bc</m>, entonces <m>a  \mid  c</m>.
+        <p permid="Eju">Sean <m>a, b, c \in {\mathbb Z}</m>.  Demuestre que si <m>\gcd(a,b) = 1</m> y <m>a  \mid bc</m>, entonces <m>a  \mid  c</m>.
     </p>
       </statement>
-      <hint>
-        <p>Como <m>\gcd(a,b) = 1</m>, existen enteros <m>r</m> y <m>s</m> tales que <m>ar + bs = 1</m>.   Luego, <m>acr + bcs = c</m>.
+      <hint permid="KfK">
+        <p permid="zVa">Como <m>\gcd(a,b) = 1</m>, existen enteros <m>r</m> y <m>s</m> tales que <m>ar + bs = 1</m>.   Luego, <m>acr + bcs = c</m>.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="28">
+    <exercise number="28" permid="cEN" xml:id="integers-exercise-2-hat-p-minus-1-prime">
       <statement>
-        <p>Sea <m>p \geq 2</m>.  Demuestre que si <m>2^p - 1</m> es primo, entonces <m>p</m> también es primo.
+        <p permid="kqD">Sea <m>p \geq 2</m>.  Demuestre que si <m>2^p - 1</m> es primo, entonces <m>p</m> también es primo.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="29">
+    <exercise number="29" permid="ILW" xml:id="integers-exercise-prime-6n-plus-5">
       <statement>
-        <p>Demuestre que hay infinitos primos de la forma <m>6n + 5</m>. </p>
+        <p permid="QxM">Demuestre que hay infinitos primos de la forma <m>6n + 5</m>. </p>
       </statement>
-      <hint>
-        <p>Todo primo es de la forma <m>2</m>, <m>3</m>, <m>6n + 1</m>, o <m>6n + 5</m>.   Suponga que solo hay un número finito de primos de la forma <m>6k + 5</m>.
+      <hint permid="CBl">
+        <p permid="gcj">Todo primo es de la forma <m>2</m>, <m>3</m>, <m>6n + 1</m>, o <m>6n + 5</m>.   Suponga que solo hay un número finito de primos de la forma <m>6k + 5</m>.
     </p>
       </hint>
       
     </exercise>
   
-    <exercise number="30">
+    <exercise number="30" permid="oTf" xml:id="integers-exercise-infinite-primes-4n-1">
       <statement>
-        <p>Demuestre que hay infinitos primos de la forma <m>4n - 1</m>.
+        <p permid="wEV">Demuestre que hay infinitos primos de la forma <m>4n - 1</m>.
     </p>
       </statement>
       
     </exercise>
   
-    <exercise number="31">
+    <exercise number="31" permid="Vao" xml:id="integers-exercise-sqrt-2-irrational">
     <statement>
-      <p>Usando el hecho que <m>2</m> es primo, muestre que no existen enteros <m>p</m> y <m>q</m> tales que <m>p^2 = 2 q^2</m>. Demuestre que por lo tanto <m>\sqrt{2}</m> no puede ser un número racional.
+      <p permid="cMe">Usando el hecho que <m>2</m> es primo, muestre que no existen enteros <m>p</m> y <m>q</m> tales que <m>p^2 = 2 q^2</m>. Demuestre que por lo tanto <m>\sqrt{2}</m> no puede ser un número racional.
     </p>
     </statement>
     
@@ -841,22 +839,22 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
   
   </exercises>
 
-  <exercises xml:id="integers-exercises-programming">
+  <exercises xml:id="integers-exercises-programming" permid="jzs">
     <title>Ejercicios de Programación</title>
  
-    <exercise>
+    <exercise permid="Bhx" xml:id="integers-exercise-eratosthenes">
       <title>La Criba de Eratóstenes</title>
       <idx><h>Criba de Eratóstenes</h></idx>  
       <statement>
-        <p>Un método para calcular todos los números primos menores a un cierto entero positivo dado <m>N</m> es listar todos los números <m>n</m> tales que <m>1 \lt n \lt N</m>.  Comience eleminando todos los múltiplos de <m>2</m>.  Después elimine todos los múltiplos de <m>3</m>. Ahora elimine todos los múltiplos de <m>5</m>.  Note que <m>4</m> ya ha sido eliminado.  Continúe de esta manera, notando que no es necesario llegar hasta <m>N</m>; es suficiente con parar en <m>\sqrt{N}</m>. Usando este método, calcule todos los números primos menores a <m>N = 250</m>.  También podemos usar este método para encontrar todos los enteros que son relativamente primos a un entero <m>N</m>.  Simplemente elimine los factores primos de <m>N</m> y todos sus múltiplos.  Usando este método, encuentre todos los números que son relativamente primos con <m>N= 120</m>.  Usando la Criba de Eratóstenes, escriba un programa que calcule todos los primos menores que un entero <m>N</m>. </p>
+        <p permid="ITn">Un método para calcular todos los números primos menores a un cierto entero positivo dado <m>N</m> es listar todos los números <m>n</m> tales que <m>1 \lt n \lt N</m>.  Comience eleminando todos los múltiplos de <m>2</m>.  Después elimine todos los múltiplos de <m>3</m>. Ahora elimine todos los múltiplos de <m>5</m>.  Note que <m>4</m> ya ha sido eliminado.  Continúe de esta manera, notando que no es necesario llegar hasta <m>N</m>; es suficiente con parar en <m>\sqrt{N}</m>. Usando este método, calcule todos los números primos menores a <m>N = 250</m>.  También podemos usar este método para encontrar todos los enteros que son relativamente primos a un entero <m>N</m>.  Simplemente elimine los factores primos de <m>N</m> y todos sus múltiplos.  Usando este método, encuentre todos los números que son relativamente primos con <m>N= 120</m>.  Usando la Criba de Eratóstenes, escriba un programa que calcule todos los primos menores que un entero <m>N</m>. </p>
       </statement>
     </exercise>
 
-    <exercise>
+    <exercise permid="hoG" xml:id="integers-exercise-ackermann">
       <idx><h>Función de Ackermann</h></idx>
       <statement>
-        <p>Sea <m>{\mathbb N}^0 = {\mathbb N} \cup \{ 0 \}</m>. La función de Ackermann es la función <m>A :{\mathbb N}^0 \times {\mathbb N}^0 \rightarrow {\mathbb N}^0</m> definida por las ecuaciones
-          <md>
+        <p permid="paw">Sea <m>{\mathbb N}^0 = {\mathbb N} \cup \{ 0 \}</m>. La función de Ackermann es la función <m>A :{\mathbb N}^0 \times {\mathbb N}^0 \rightarrow {\mathbb N}^0</m> definida por las ecuaciones
+          <md permid="tYK">
             <mrow>A(0, y) &amp; = y + 1,</mrow>
             <mrow>A(x + 1, 0) &amp; = A(x, 1),</mrow>
             <mrow>A(x + 1, y + 1) &amp; = A(x, A(x + 1, y))</mrow>
@@ -865,10 +863,10 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
       </statement>
     </exercise>
 
-    <exercise>
+    <exercise permid="NvP" xml:id="integers-exercise-program-euclidean-algorithm">
       <statement>
-        <p>Escriba un programa que implemente el algoritmo de Euclides.  El programa debiese aceptar dos enteros positivos <m>a</m> y <m>b</m> como entrada y la salida debiese ser tanto <m>\gcd( a,b)</m> como enteros <m>r</m> y <m>s</m> tales que 
-          <me>\gcd( a,b) = ra + sb</me>.
+        <p permid="VhF">Escriba un programa que implemente el algoritmo de Euclides.  El programa debiese aceptar dos enteros positivos <m>a</m> y <m>b</m> como entrada y la salida debiese ser tanto <m>\gcd( a,b)</m> como enteros <m>r</m> y <m>s</m> tales que 
+          <me permid="afT">\gcd( a,b) = ra + sb</me>.
     </p>
       </statement>
     </exercise>
@@ -877,7 +875,7 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
  
 <!--Todo Fix intro to references-->
 
-  <references xml:id="integers-references">
+  <references xml:id="integers-references" permid="Dta">
       <title>Referencias y Lecturas Recomendadas</title>
 <!-- References updated - TWJ 5/4/2010 -->
 
@@ -885,20 +883,20 @@ Por lo tanto, <m>\gcd( 945, 2415 ) = 105</m>.
 theory.
     </p> -->
 
-    <biblio type="raw"> <!-- was [1] -->
+    <biblio type="raw" permid="jAj"> <!-- was [1] -->
     Brookshear, J. G. <title>Theory of Computation: Formal Languages, Automata, and Complexity</title>.  Benjamin/Cummings, Redwood City, CA, 1989. Muestra la relación entre computación teórica y teoría de conjuntos.
     </biblio>
 
-     <biblio type="raw"> <!-- was [2] -->
+     <biblio type="raw" permid="PHs"> <!-- was [2] -->
     <!-- Updated - TWJ 5/4/2010 -->
     Hardy, G. H. and Wright, E. M. <title>An Introduction to the Theory of Numbers</title>.  6th ed. Oxford University Press, New York, 2008. </biblio>
 
-    <biblio type="raw"> <!-- was [3] -->
+    <biblio type="raw" permid="vOB"> <!-- was [3] -->
     <!-- Checked reference - TWJ 5/4/2010 -->
     Niven, I. and Zuckerman, H. S. <title>An Introduction to the Theory of Numbers</title>.  5th ed. Wiley, New York, 1991.
     </biblio>
 
-    <biblio type="raw"> <!-- was [4] -->
+    <biblio type="raw" permid="bVK"> <!-- was [4] -->
     <!-- Checked reference - TWJ 5/4/2010 -->
     Vanden Eynden, C. <title>Elementary Number Theory</title>. 2nd ed.  Waveland Press, Long Grove IL, 2001.
     </biblio>
@@ -908,16 +906,17 @@ theory.
   <section xml:id="integers-sage" component="sage-info" permid="ojl">
     <title>Sage</title>
     <introduction permid="Mqw">
-  <p>Muchas de las propiedades de los objetos algebraicos que estudiaremos se pueden determinar a partir de propiedades de los enteros asociados.  Sage tiene muchas y poderosas funciones para trabajar con enteros.
+  <p permid="oqC">Muchas de las propiedades de los objetos algebraicos que estudiaremos se pueden determinar a partir de propiedades de los enteros asociados.  Sage tiene muchas y poderosas funciones para trabajar con enteros.
     </p>
 </introduction>
 
-<subsection>
+<subsection permid="KWI">
   <title>Algoritmo de División</title>
 
-  <p>La instrucción <c>a % b</c> entregará el resto de la división de <m>a</m> entre <m>b</m>.  En otras palabras, el resultado es el entero  <m>r</m> (único) tal que (1) <m>0\leq r\lt b</m>, y (2) <m>a=bq+r</m> para algún entero <m>q</m> (el cociente), como está garantizado por el Algoritmo de la División (<xref ref="theorem-integers-division_algorithm" />).  Entonces <m>(a-r)/b</m> será igual a <m>q</m>.  Por ejemplo,</p>
+  <p permid="qPJ">La instrucción <c>a % b</c> entregará el resto de la división de <m>a</m> entre <m>b</m>.  En otras palabras, el resultado es el entero  <m>r</m> (único) tal que (1) <m>0\leq r\lt b</m>, y (2) <m>a=bq+r</m> para algún entero <m>q</m> (el cociente), como está garantizado por el Algoritmo de la División (<xref ref="integers-theorem-division_algorithm"/>).  Entonces <m>(a-r)/b</m> será igual a <m>q</m>.  Por ejemplo 
+  </p>
 
-  <sage>
+  <sage permid="ySH">
     <input>
     r = 14 % 3
     r
@@ -925,7 +924,7 @@ theory.
     <output>2</output>
   </sage>
 
-  <sage>
+  <sage permid="eZQ">
     <input>
     q = (14 - r)/3
     q
@@ -933,10 +932,10 @@ theory.
     <output>4</output>
   </sage>
 
-  <p>También es posible obtener el cociente y el resto de forma simultánea con el método <c>.quo_rem()</c> (cociente y resto).
+  <p permid="WWS">También es posible obtener el cociente y el resto de forma simultánea con el método <c>.quo_rem()</c> (cociente y resto).
     </p>
 
-  <sage>
+  <sage permid="LgZ">
     <input>
     a = 14
     b = 3
@@ -945,23 +944,23 @@ theory.
     <output>(4, 2)</output>
   </sage>
 
-  <p>Un resto cero indica divisibilidad.  Así <c>(a % b) == 0</c> resulta <c>True</c> (verdadero) si <m>b</m> divide a <m>a</m>, y de otro modo resultará <c>False</c> (falso).
+  <p permid="Deb">Un resto cero indica divisibilidad.  Así <c>(a % b) == 0</c> resulta <c>True</c> (verdadero) si <m>b</m> divide a <m>a</m>, y de otro modo resultará <c>False</c> (falso).
     </p>
 
-  <sage>
+  <sage permid="roi">
     <input>(20 % 5) == 0</input>
     <output>True</output>
   </sage>
 
-  <sage>
+  <sage permid="Xvr">
     <input>(17 % 4) == 0</input>
     <output>False</output>
   </sage>
 
-  <p>El método <c>.divides()</c> es otra opción.
+  <p permid="jlk">El método <c>.divides()</c> es otra opción.
     </p>
 
-  <sage>
+  <sage permid="DCA">
     <input>
     c = 5
     c.divides(20)
@@ -969,7 +968,7 @@ theory.
     <output>True</output>
   </sage>
 
-  <sage>
+  <sage permid="jJJ">
     <input>
     d = 4
     d.divides(17)
@@ -978,20 +977,21 @@ theory.
   </sage>
 </subsection>
 
-<subsection>
+<subsection permid="rdR">
   <title>Máximo Común Divisor</title>
 
-  <p>El máximo común divisor de <m>a</m> y <m>b</m> se obtiene con el comando <c>gcd(a, b)</c>, donde por ahora, <m>a</m> y <m>b</m> son enteros.  Más tarde, <m>a</m> y <m>b</m> podrán ser otros objetos con una noción de divisibilidad y <q>tamaño,</q> tales como los polinomios.  Por ejemplo,</p>
+  <p permid="Pst">El máximo común divisor de <m>a</m> y <m>b</m> se obtiene con el comando <c>gcd(a, b)</c>, donde por ahora, <m>a</m> y <m>b</m> son enteros.  Más tarde, <m>a</m> y <m>b</m> podrán ser otros objetos con una noción de divisibilidad y <q>tamaño,</q> tales como los polinomios.  Por ejemplo,
+  </p>
 
-  <sage>
+  <sage permid="PQS">
     <input>gcd(2776, 2452)</input>
     <output>4</output>
   </sage>
 
-  <p>Podemos usar el comando <c>gcd</c> para determinar si un par de enteros son relativamente primos.
+  <p permid="vzC">Podemos usar el comando <c>gcd</c> para determinar si un par de enteros son relativamente primos.
     </p>
 
-  <sage>
+  <sage permid="vYb">
     <input>
     a = 31049
     b = 2105
@@ -1000,7 +1000,7 @@ theory.
     <output>True</output>
   </sage>
 
-  <sage>
+  <sage permid="cfk">
     <input>
     a = 3563
     b = 2947
@@ -1009,18 +1009,18 @@ theory.
     <output>False</output>
   </sage>
 
-  <p>El comando <c>xgcd(a,b)</c> (<q>eXtended GCD</q>) entrega un trío donde el primer elemento es el máximo común divisor de <m>a</m> y <m>b</m> (como con el comando <c>gcd(a,b)</c>), y los siguientes dos elementos son valores de <m>r</m> y <m>s</m> tales que <m>ra+sb=\gcd(a,b)</m>.
+  <p permid="bGL">El comando <c>xgcd(a,b)</c> (<q>eXtended GCD</q>) entrega un trío donde el primer elemento es el máximo común divisor de <m>a</m> y <m>b</m> (como con el comando <c>gcd(a,b)</c>), y los siguientes dos elementos son valores de <m>r</m> y <m>s</m> tales que <m>ra+sb=\gcd(a,b)</m>.
     </p>
 
-  <sage>
+  <sage permid="Imt">
     <input>xgcd(633,331)</input>
     <output>(1, -137, 262)</output>
   </sage>
 
-  <p>Partes del trío pueden ser extraídas usando <c>[ ]</c> (<q>indexando</q>) para acceder a los elementos del trío, empezando con el primero como índice <c>0</c>.  Por ejemplo, Lo siguiente siempre debiese resultar en <c>True</c>, aunque usted cambie los valores de <c>a</c> y <c>b</c>.  Intente cambiando los valores de <c>a</c> y <c>b</c> abajo, para ver que el resultado siempre es <c>True</c>.
+  <p permid="HNU">Partes del trío pueden ser extraídas usando <c>[ ]</c> (<q>indexando</q>) para acceder a los elementos del trío, empezando con el primero como índice <c>0</c>.  Por ejemplo, Lo siguiente siempre debiese resultar en <c>True</c>, aunque usted cambie los valores de <c>a</c> y <c>b</c>.  Intente cambiando los valores de <c>a</c> y <c>b</c> abajo, para ver que el resultado siempre es <c>True</c>.
     </p>
 
-  <sage>
+  <sage permid="otC">
     <input>
     a = 633
     b = 331
@@ -1033,17 +1033,17 @@ theory.
     <output>True</output>
   </sage>
 
-  <p>Estudiar este bloque de código le permitirá descubrir formas de beneficiarse de las respuestas entregadas por Sage.  Note que <c>=</c> es la forma de <em>asignar</em> un valor a una variable, mientras que en la última línea, <c>==</c> es la forma de comparar si dos objetos son <em>iguales</em>.
+  <p permid="nVd">Estudiar este bloque de código le permitirá descubrir formas de beneficiarse de las respuestas entregadas por Sage.  Note que <c>=</c> es la forma de <em>asignar</em> un valor a una variable, mientras que en la última línea, <c>==</c> es la forma de comparar si dos objetos son <em>iguales</em>.
     </p>
 
   </subsection>
-  <subsection>
+  <subsection permid="Xla">
   <title>Primos y Factorización</title>
 
-  <p>El método <c>.is_prime()</c> determinará si un entero es primo o no.
+  <p permid="Ucm">El método <c>.is_prime()</c> determinará si un entero es primo o no.
     </p>
 
-  <sage>
+  <sage permid="UAL">
     <input>
     a = 117371
     a.is_prime()
@@ -1051,7 +1051,7 @@ theory.
     <output>True</output>
   </sage>
 
-  <sage>
+  <sage permid="AHU">
     <input>
     b = 14547073
     b.is_prime()
@@ -1059,14 +1059,14 @@ theory.
     <output>False</output>
   </sage>
 
-  <sage>
+  <sage permid="gPd">
     <input>b == 1597 * 9109</input>
     <output>True</output>
   </sage>
 
-  <p>El comando <c>random_prime(a, proof=True)</c> generará un número primo aleatorio entre <m>2</m> y <m>a</m>. Experimente ejecutando las celdas siguientes varias veces.  (Reemplazando <c>proof=True</c> por <c>proof=False</c> acelerará la búsqueda, pero existirá una pequeñísima probabilidad de que el resultado no sea primo.)</p>
+  <p permid="Ajv">El comando <c>random_prime(a, proof=True)</c> generará un número primo aleatorio entre <m>2</m> y <m>a</m>. Experimente ejecutando las celdas siguientes varias veces.  (Reemplazando <c>proof=True</c> por <c>proof=False</c> acelerará la búsqueda, pero existirá una pequeñísima probabilidad de que el resultado no sea primo.)</p>
 
-  <sage doctest="random">
+  <sage doctest="random" permid="SLy">
     <input>
     a = random_prime(10^21, proof=True)
     a
@@ -1074,26 +1074,27 @@ theory.
     <output>424729101793542195193</output>
   </sage>
 
-  <sage>
+  <sage permid="MWm">
     <input>a.is_prime()</input>
     <output>True</output>
   </sage>
 
-  <p>El comando <c>prime_range(a, b)</c> entrega una lista ordenada de todos los primos entre <m>a</m> y <m>b-1</m>, incluyendo posiblemente los extremos.  Por ejemplo,</p>
+  <p permid="gqE">El comando <c>prime_range(a, b)</c> entrega una lista ordenada de todos los primos entre <m>a</m> y <m>b-1</m>, incluyendo posiblemente los extremos.  Por ejemplo,
+  </p>
 
-  <sage>
-    <input>prime_range(503, 550)</input>
+  <sage permid="tdv">
+    <input>prime_range(500, 550)</input>
     <output>[503, 509, 521, 523, 541, 547]</output>
   </sage>
 
-  <p>Los comandos <c>next_prime(a)</c> y <c>previous_prime(a)</c> son otras formas de obtener un primo de un tamaño deseado.  Experimente en la celda siguiente (si la hay).  (El símbolo  <c>#</c>, se usa para indicar un <q>comentario</q>, que no será evaluado por Sage.  Puede borrar esta línea o empezar en la línea siguiente.)</p>
+  <p permid="MxN">Los comandos <c>next_prime(a)</c> y <c>previous_prime(a)</c> son otras formas de obtener un primo de un tamaño deseado.  Experimente en la celda siguiente (si la hay).  (El símbolo  <c>#</c>, se usa para indicar un <q>comentario</q>, que no será evaluado por Sage.  Puede borrar esta línea o empezar en la línea siguiente.)</p>
 
   <sage type="practice"/>
 
-  <p>Además de verificar si un entero es primo, o generar números primos, Sage también puede descomponer un número entero en sus factores primos, como se decribe en el Teorema Fundamental de la Aritmética (<xref ref="theorem-fund-theorem-arithmetic" />).
+  <p permid="sEW">Además de verificar si un entero es primo, o generar números primos, Sage también puede descomponer un número entero en sus factores primos, como se decribe en el Teorema Fundamental de la Aritmética (<xref ref="integers-theorem-fund-theorem-arithmetic"/>).
     </p>
 
-  <sage>
+  <sage permid="ZkE">
     <input>
     a = 2600
     a.factor()
@@ -1101,13 +1102,13 @@ theory.
     <output>2^3 * 5^2 * 13</output>
   </sage>
 
-  <p>Así <m>2600 = 2^3\times 5^2\times 13</m> y esta es la única forma de escribir <m>2600</m> como producto de números primos (aparte de reordenar los primos en el producto).
+  <p permid="YMf">Así <m>2600 = 2^3\times 5^2\times 13</m> y esta es la única forma de escribir <m>2600</m> como producto de números primos (aparte de reordenar los primos en el producto).
     </p>
 
-  <p>Si bien Sage muestra la factorización de una forma que entendemos fácilmente, internamente la guarda como una lista de pares de enteros, consistiendo cada par de una base (un primo) y un exponente (entero positivo).  Analice detalladamente los siguientes comandos, pues es un buen ejemplo para entender los resultados de Sage en forma de listas.
+  <p permid="ETo">Si bien Sage muestra la factorización de una forma que entendemos fácilmente, internamente la guarda como una lista de pares de enteros, consistiendo cada par de una base (un primo) y un exponente (entero positivo).  Analice detalladamente los siguientes comandos, pues es un buen ejemplo para entender los resultados de Sage en forma de listas.
     </p>
 
-  <sage>
+  <sage permid="FrN">
     <input>
     a = 2600
     factored = a.factor()
@@ -1117,7 +1118,7 @@ theory.
     <output>(2, 3)</output>
   </sage>
 
-  <sage>
+  <sage permid="lyW">
     <input>
     second_term = factored[1]
     second_term
@@ -1125,7 +1126,7 @@ theory.
     <output>(5, 2)</output>
   </sage>
 
-  <sage>
+  <sage permid="RGf">
     <input>
     third_term = factored[2]
     third_term
@@ -1133,7 +1134,7 @@ theory.
     <output>(13, 1)</output>
   </sage>
 
-  <sage>
+  <sage permid="xNo">
     <input>
     first_prime = first_term[0]
     first_prime
@@ -1141,7 +1142,7 @@ theory.
     <output>2</output>
   </sage>
 
-  <sage>
+  <sage permid="dUx">
     <input>
     first_exponent = first_term[1]
     first_exponent
@@ -1149,77 +1150,77 @@ theory.
     <output>3</output>
   </sage>
 
-  <p>La siguiente celda revela la estructura interna de la factorización pidiendo la lista como tal. y mostramos como puede determinar el número de términos en la factorización usando el comando <c>len()</c> (largo).
+  <p permid="lax">La siguiente celda revela la estructura interna de la factorización pidiendo la lista como tal. y mostramos como puede determinar el número de términos en la factorización usando el comando <c>len()</c> (largo).
     </p>
 
-  <sage>
+  <sage permid="KbG">
     <input>list(factored)</input>
     <output>[(2, 3), (5, 2), (13, 1)]</output>
   </sage>
 
-  <sage>
+  <sage permid="qiP">
     <input>len(factored)</input>
     <output>3</output>
   </sage>
 
-  <p>¿Puede extraer de <c>a</c> los siguientes dos primos y sus exponentes?</p>
+  <p permid="RhG">¿Puede extraer de <c>a</c> los siguientes dos primos y sus exponentes?</p>
 
   <sage type="practice"/>
 </subsection>
 
 </section>
 
-<exercises xml:id="integers-sage-exercises">
+<exercises xml:id="integers-sage-exercises" component="sage-exercises" permid="PGB">
   <title>Ejercicios en Sage</title>
 
-  <introduction>
-    <p>Estos ejercicios se tratan de investigar propiedades básicas de los enteros, algo que frecuentemente haremos al investigar grupos.  Las hojas de trabajo de Sage tienen extensas capacidades para hacer celdas con texto cuidadosamente formateado, incluyendo la posibilidad de usar comandos <latex/> para expresar matemáticas.  Así si una pregunta pide explicaciones o comentarios, haga una nueva celda y comuníquese claramente con su audiencia.
+  <introduction permid="tCY">
+    <p permid="UxL">Estos ejercicios se tratan de investigar propiedades básicas de los enteros, algo que frecuentemente haremos al investigar grupos.  Las hojas de trabajo de Sage tienen extensas capacidades para hacer celdas con texto cuidadosamente formateado, incluyendo la posibilidad de usar comandos <latex/> para expresar matemáticas.  Así si una pregunta pide explicaciones o comentarios, haga una nueva celda y comuníquese claramente con su audiencia.
     </p>
   </introduction>
 
-  <exercise number="1">
+  <exercise number="1" permid="ZKh" xml:id="integers-sage-exercise-next-prime">
     <statement>
-      <p>Use el comando <c>next_prime()</c> para construir dos primos diferentes de 8 dígitos cada uno y guárdelos en variables llamadas <c>a</c> y <c>b</c>.
+      <p permid="BoO">Use el comando <c>next_prime()</c> para construir dos primos diferentes de 8 dígitos cada uno y guárdelos en variables llamadas <c>a</c> y <c>b</c>.
     </p>
     </statement>
     
   </exercise>
 
-  <exercise number="2">
+  <exercise number="2" permid="FRq" xml:id="integers-sage-exercise-is-prime">
     <statement>
-      <p>Use el método <c>.is_prime()</c> para verificar que sus primos <c>a</c> y <c>b</c> son realmente primos.
+      <p permid="hvX">Use el método <c>.is_prime()</c> para verificar que sus primos <c>a</c> y <c>b</c> son realmente primos.
     </p>
     </statement>
   </exercise>
 
-  <exercise number="3">
+  <exercise number="3" permid="lYz" xml:id="integers-sage-exercise-gcd">
     <statement>
-      <p>Verifique que  <m>1</m> es el máximo común divisor de los dos primos de los ejercicios anteriores.
-    </p>
-    </statement>
-    
-  </exercise>
-
-  <exercise number="4">
-    <statement>
-      <p>Encuentre dos enteros que formen una <q>combinación lineal</q> entera de los dos primos que sea igual a  <m>1</m>.  Incluya una verificación de su resultado.
+      <p permid="NDg">Verifique que  <m>1</m> es el máximo común divisor de los dos primos de los ejercicios anteriores.
     </p>
     </statement>
     
   </exercise>
 
-
-  <exercise number="5">
+  <exercise number="4" permid="SfI" xml:id="integers-sage-exercise-gcd-linear-combination">
     <statement>
-      <p>Determine una factorización en potencias de primos para <m>c=4\,598\,037\,234</m>.
+      <p permid="tKp">Encuentre dos enteros que formen una <q>combinación lineal</q> entera de los dos primos que sea igual a  <m>1</m>.  Incluya una verificación de su resultado.
     </p>
     </statement>
     
   </exercise>
 
-  <exercise number="6">
+
+  <exercise number="5" permid="ymR" xml:id="integers-sage-exercise-prime-factorization">
     <statement>
-      <p>Escriba una celda que defina nuevamente el mismo valor de  <c>c</c>, y luego defina un candidato a divisor de <c>c</c> llamado <c>d</c>.  La tercera línea de la celda debiera retornar  <c>True</c> si y solo si  <c>d</c> es un divisor de  <c>c</c>.  Ilustre el uso de su celda testeando su código con  <m>d=7</m> y en una nueva copia de la celda, testeando su código con <m>d=11</m>.
+      <p permid="ZRy">Determine una factorización en potencias de primos para <m>c=4\,598\,037\,234</m>.
+    </p>
+    </statement>
+    
+  </exercise>
+
+  <exercise number="6" permid="eua" xml:id="integers-sage-exercise-divisor">
+    <statement>
+      <p permid="FYH">Escriba una celda que defina nuevamente el mismo valor de  <c>c</c>, y luego defina un candidato a divisor de <c>c</c> llamado <c>d</c>.  La tercera línea de la celda debiera retornar  <c>True</c> si y solo si  <c>d</c> es un divisor de  <c>c</c>.  Ilustre el uso de su celda testeando su código con  <m>d=7</m> y en una nueva copia de la celda, testeando su código con <m>d=11</m>.
     </p>
     </statement>
     
