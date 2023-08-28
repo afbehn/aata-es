@@ -10,16 +10,6 @@
 <!--                                                  -->
 <!-- See the file COPYING for copying conditions.     -->
 <pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
-
-  <docinfo>
-    <macros>
-      \newcommand{\R}{\mathbb R}
-    </macros>
-    <latex-image-preamble>
-      \usepackage{tikz}
-    </latex-image-preamble>
-  </docinfo>
-
   <xi:include href="./bookinfo.xml" /> <!-- ISBN, website, other metadata -->
     
     <book xml:id="aata">
